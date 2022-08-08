@@ -1,0 +1,21 @@
+{
+    "renderingHosts": {
+        "playwebsite": {
+            "path": "./src/rendering",
+            "nodeVersion": "16.15.1",
+            "jssDeploymentSecret":"511cdfab92b7440db866ac0fb817b490",
+            "enabled": true,
+            "type": "sxa"
+        }
+    },
+    "transforms": [
+      {
+        "xdtPath": "/xdts/App_Config/",
+        "targetPath": "/App_Config/"
+      },
+      {
+        "xdtPath": "/xdts/",
+        "targetPath": "/"
+      }
+    ]
+}

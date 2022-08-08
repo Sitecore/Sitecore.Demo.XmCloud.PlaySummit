@@ -1,0 +1,81 @@
+# may contain OAuth secrets, do not commit
+.sitecore/user.json
+
+# NuGet cache for Sitecore CLI
+.sitecore/package-cache/
+
+# Ephemeral index caches used by serialization, do not commit
+.scindex
+
+# Don't commit packages
+*.itempackage
+*.sicpackage
+
+#Ignore thumbnails created by Windows
+Thumbs.db
+#Ignore files built by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+!docker/build/**/[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+.vs/
+#Nuget packages folder
+packages/
+
+# temporary workaround
+/docker/data/cm/*
+!/docker/data/cm/.gitkeep
+/docker/data/cd/*
+!/docker/data/cd/.gitkeep
+/docker/data/sql/*
+!/docker/data/sql/.gitkeep
+/docker/data/solr/*
+!/docker/data/solr/.gitkeep
+/docker/deploy/platform/*
+!/docker/deploy/platform/.gitkeep
+/docker/traefik/certs/*.pem
+/src/rendering/node_modules
+/src/rendering/coverage
+/src/rendering/.next*/
+/src/rendering/out/
+/src/rendering/.generated
+/src/rendering/*.graphql.d.ts
+/src/rendering/*.graphqls.d.ts
+/src/rendering/.DS_Store
+/src/rendering/.env.local
+/src/rendering/.env.*.local
+/src/rendering/*.log*
+/src/rendering/.vercel
+/src/rendering/**/*.graphql.d.ts
+/src/rendering/**/*.graphqls.d.ts
+/src/rendering/**/.DS_Store
+/src/rendering/**/.env.local
+/src/rendering/**/.env.*.local
+/src/rendering/**/*.log*
+/src/rendering/.vercel
+/src/rendering/src/temp/*
+/src/rendering/src/temp/!.gitignore
+/src/rendering/src/temp/!GraphQLFragmentTypes.json
+/src/rendering/src/temp/!GraphQLIntrospectionResult.json

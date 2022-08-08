@@ -1,0 +1,14 @@
+header {
+  @apply sticky top-0 w-full;
+
+  z-index: 9999;
+
+  /* Required for the Experience Editor floating toolbar to display above the header when the first component below the header is selected. */
+  &.experience-editor-active {
+    position: unset;
+  }
+}
+
+footer {
+  @apply bg-gradient-to-br from-black to-black-dark;
+}

@@ -1,0 +1,33 @@
+﻿---
+ID: "dffee92b-0441-45a4-9207-67810b72bd46"
+Parent: "895e25c4-12b2-4b2c-8233-82f3b79eef53"
+Template: "bc71d442-3e4f-46ba-887c-746e54f9bb83"
+Path: /sitecore/system/Settings/Services/Rendering Hosts/Default
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220614T103029Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "534823f7-0115-4c63-9475-ea9186efd273"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\scm@sitecore.net
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220802T184832Z
+    - ID: "e32c1801-79b3-4fc1-a9c4-3c6e6c2968ae"
+      Hint: ServerSideRenderingEngineApplicationUrl
+      Value: "http://rendering:3000"
+    - ID: "fc76919b-0d7c-4732-865d-2af795fb38a4"
+      Hint: ServerSideRenderingEngineEndpointUrl
+      Value: "http://rendering:3000/api/editing/render"

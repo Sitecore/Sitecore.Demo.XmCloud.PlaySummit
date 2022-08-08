@@ -1,0 +1,12 @@
+{
+    "namespace": "RenderingHost",
+    "items": {
+        "includes": [
+            {
+                "name": "DefaultRenderingHost",
+                "path": "/sitecore/system/Settings/Services/Rendering Hosts/Default",
+                "scope": "singleItem"
+            }
+        ]
+    }
+}

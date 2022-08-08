@@ -1,0 +1,23 @@
+.header-eyebrow {
+  @apply bg-black-lightest text-white;
+
+  .content {
+    @apply flex flex-wrap justify-end content-center px-4 h-7;
+    @apply lg:container lg:mx-auto;
+    @apply xl:h-6;
+
+    a {
+      @apply text-base ml-2 leading-5;
+      @apply lg:text-sm;
+      @apply xl:text-xs;
+    }
+
+    .languagePicker {
+      @apply bg-black-lightest  text-right w-fit text-xs;
+
+      .languageItem {
+        @apply bg-black-lightest  p-3;
+      }
+    }
+  }
+}

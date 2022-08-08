@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  These props are used by Central Package Versions to ensure consistent NuGet
+  package versions in your Visual Studio projects.
+  https://github.com/microsoft/MSBuildSdks/tree/master/src/CentralPackageVersions
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PlatformVersion>0.*</PlatformVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Update="Sitecore.XmCloud.Kernel" Version="$(PlatformVersion)" />
+    <PackageReference Update="Sitecore.XmCloud.ContentSearch" Version="$(PlatformVersion)" />
+    <PackageReference Update="Sitecore.XmCloud.ContentSearch.Linq" Version="$(PlatformVersion)" />
+    <PackageReference Update="Sitecore.XmCloud.LayoutService" Version="$(PlatformVersion)" />
+    <PackageReference Update="Sitecore.XmCloud.Assemblies" Version="$(PlatformVersion)" />
+    <PackageReference Update="Sitecore.Assemblies.SitecoreHeadlessServicesServer" Version="19.*" />
+    <PackageReference Update="Sitecore.JavaScriptServices.ViewEngine" Version="20.0.0" />
+    <PackageReference Update="Sitecore.Services.GraphQL" Version="6.1.0" />
+    <PackageReference Update="Sitecore.Services.GraphQL.EdgeSchema" Version="6.0.0" />
+    <PackageReference Update="Sitecore.Connector.CMP" Version="5.*" />
+    <PackageReference Update="Sitecore.Connector.CMP.TaxonomyProvider" Version="5.*" />
+    <PackageReference Update="Sitecore.Connector.ContentHub.DAM" Version="5.*" />
+    <PackageReference Update="Stylelabs.M.Sdk.WebClient" Version="4.1.*" />
+  </ItemGroup>
+</Project>

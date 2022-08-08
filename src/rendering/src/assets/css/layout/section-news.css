@@ -1,0 +1,13 @@
+.section__news {
+  @apply bg-cover bg-center bg-no-repeat bg-pattern-dark;
+
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .section__content__p {
+    @apply hidden;
+  }
+}

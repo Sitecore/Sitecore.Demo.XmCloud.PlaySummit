@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<connectionStrings configBuilders="SitecoreConnectionStringsBuilder" xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <add name="CMP.ContentHub" connectionString="ClientId={client_id};ClientSecret={client_secret};UserName={username};Password={password};URI={uri};" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+  <add name="CMP.ServiceBusEntityPathIn" connectionString="{Azure Service Bus connection string with incoming topic}" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+  <add name="CMP.ServiceBusSubscription" connectionString="{Subscription name}" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+  <add name="CMP.ServiceBusEntityPathOut" connectionString="{Azure Service Bus connection string with outcoming topic}" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+  <add name="DAM.ContentHub" connectionString="ClientId={client_id};ClientSecret={client_secret};UserName={username};Password={password};URI={uri};" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+  <add name="DAM.SearchPage" connectionString="{Content Hub search page URI}" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+  <add name="DAM.ExternalRedirectKey" connectionString="{External redirect key}" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing" />
+</connectionStrings>

@@ -1,0 +1,82 @@
+﻿---
+ID: "66c99e47-7bbf-52d1-b1d7-4662b850744a"
+Parent: "2d1d7aca-9597-5ca6-85b2-9b04907e4298"
+Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Path: /sitecore/content/PLAY/playwebsite/home/sponsors
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{3B884B30-54C1-464C-AADD-F8BD94E7C38E}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <p
+          uid="{163E0283-B986-57A3-BEB9-0FDA01E0FCD2}"
+          p:after="p[@uid='{8C6B98B5-1E4D-5868-9019-BF85141D3ABC}']" />
+        <p
+          uid="{C679C0A2-921C-5D4C-B3CB-946E0484E6F9}"
+          p:after="p[@uid='{163E0283-B986-57A3-BEB9-0FDA01E0FCD2}']" />
+        <p
+          uid="{ED118F1D-A09D-4C65-9C17-C78B9AF7D3A1}"
+          p:after="p[@uid='{C679C0A2-921C-5D4C-B3CB-946E0484E6F9}']" />
+        <r
+          uid="{98F39024-766B-5184-B064-9E36B39D25DC}"
+          p:after="r[@uid='{7CDC810E-AE54-5B4B-BA7D-128CF6F96EDA}']"
+          s:rname="HeroImage"
+          s:ds="{E521A6F1-9C1B-50FD-AB79-333F31AF229A}"
+          s:id="{2C13DBC0-415C-5DAA-A7D9-56928F1271C4}"
+          s:par=""
+          s:ph="/jss-main" />
+        <r
+          uid="{18DD5D0E-19AA-48C7-881C-C33ED88DE3B2}"
+          p:after="r[@uid='{98F39024-766B-5184-B064-9E36B39D25DC}']"
+          s:ds="{66C99E47-7BBF-52D1-B1D7-4662B850744A}"
+          s:id="{98F79B86-92EF-4699-A2F0-D9ECF79A70EF}"
+          s:par=""
+          s:ph="jss-main"
+          s:ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Sponsors
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210625T201845Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\superuser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\superuser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fa192297-3558-43ad-8b5b-e5067221403c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\jel@sitecore.net
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220706T153733Z
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: Sponsors

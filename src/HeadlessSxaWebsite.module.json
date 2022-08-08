@@ -1,0 +1,48 @@
+{
+    "namespace": "HeadlessSxaWebsite",
+    "references": [ "InitItems" ],
+    "items": {
+        "includes": [
+            {
+                "name": "layouts",
+                "path": "/sitecore/layout/Layouts/Project/PLAY"
+            },
+            {
+                "name": "sxa-renderings",
+                "path": "/sitecore/layout/Renderings/Project/PLAY"
+            },
+            {
+                "name": "sxa-placeholders",
+                "path": "/sitecore/layout/Placeholder Settings/Project/PLAY"
+            },
+            {
+                "name": "rendering-contents-resolvers",
+                "path": "/sitecore/system/Modules/Layout Service/Rendering Contents Resolvers/PLAY Rendering Contents Resolvers"
+            },
+            {
+                "name": "powershell-scripts",
+                "path": "/sitecore/system/Modules/PowerShell/Script Library/SPE/Reporting/Content Reports/Reports/PLAY"
+            },
+            {
+                "name": "cmp-config",
+                "path": "/sitecore/system/Modules/CMP/Config"
+            },
+            {
+                "name": "demo-workflow",
+                "path": "/sitecore/system/Workflows/Demo Workflow"
+            },
+            {
+                "name": "templates",
+                "path": "/sitecore/templates/Project/PLAY"
+            },
+            {
+                "name": "branches",
+                "path": "/sitecore/templates/Branches/Project/PLAY"
+            },
+            {
+                "name": "standard-template-fallback",
+                "path": "/sitecore/templates/System/Templates/Standard template"
+            }
+        ]
+    }
+}
