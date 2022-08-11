@@ -8,7 +8,7 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 
-export type PromoProps = ComponentProps & {
+export type FullWidthPromoProps = ComponentProps & {
   fields: {
     cssClass: Field<string>;
     position: Field<string>;
@@ -19,7 +19,7 @@ export type PromoProps = ComponentProps & {
   };
 };
 
-const Promo = ({ fields }: PromoProps): JSX.Element => {
+const FullWidthPromo = ({ fields }: FullWidthPromoProps): JSX.Element => {
   const sectionCssClasses = `section section__promo ${fields.cssClass.value}`;
   const positionCssClasses = `section__content section__promo__content section__promo__content--${fields.position.value} container`;
 
@@ -38,4 +38,4 @@ const Promo = ({ fields }: PromoProps): JSX.Element => {
   );
 };
 
-export default withDatasourceCheck()<PromoProps>(Promo);
+export default withDatasourceCheck()<FullWidthPromoProps>(FullWidthPromo);

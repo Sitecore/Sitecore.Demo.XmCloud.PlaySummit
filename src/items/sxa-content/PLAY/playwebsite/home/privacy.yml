@@ -20,7 +20,7 @@ SharedFields:
           s:ds="{2434D7D4-060C-4BC0-9EA4-815FBBEC8AAC}"
           s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
           s:par=""
-          s:ph="/jss-main"
+          s:ph="/headless-main"
           s:ccb="Clear on publish" />
       </d>
     </r>
@@ -46,14 +46,14 @@ Languages:
         sitecore\superuser
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1f7bcf91-158c-4f12-afe5-c74b2430965c"
+      Value: "a9af3a1f-161c-4df2-b362-0579dedfdf64"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\superuser
+        sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211116T225701Z
+      Value: 20220811T070703Z
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Privacy Policy

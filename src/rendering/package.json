@@ -6,9 +6,9 @@
   "config": {
     "appName": "playwebsite",
     "rootPlaceholders": [
-      "jss-header",
-      "jss-main",
-      "jss-footer"
+      "headless-header",
+      "headless-main",
+      "headless-footer"
     ],
     "sitecoreConfigPath": "/App_Config/Include/zzz",
     "graphQLEndpointPath": "/sitecore/api/graph/edge",

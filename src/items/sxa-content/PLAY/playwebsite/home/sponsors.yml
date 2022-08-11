@@ -33,14 +33,14 @@ SharedFields:
           s:ds="{E521A6F1-9C1B-50FD-AB79-333F31AF229A}"
           s:id="{2C13DBC0-415C-5DAA-A7D9-56928F1271C4}"
           s:par=""
-          s:ph="/jss-main" />
+          s:ph="/headless-main" />
         <r
           uid="{18DD5D0E-19AA-48C7-881C-C33ED88DE3B2}"
           p:after="r[@uid='{98F39024-766B-5184-B064-9E36B39D25DC}']"
           s:ds="{66C99E47-7BBF-52D1-B1D7-4662B850744A}"
           s:id="{98F79B86-92EF-4699-A2F0-D9ECF79A70EF}"
           s:par=""
-          s:ph="jss-main"
+          s:ph="headless-main"
           s:ccb="Clear on publish" />
       </d>
     </r>
@@ -69,14 +69,14 @@ Languages:
         sitecore\superuser
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "fa192297-3558-43ad-8b5b-e5067221403c"
+      Value: "7912b52a-6aa8-49d5-a0cd-60ca7c2bf537"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\jel@sitecore.net
+        sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220706T153733Z
+      Value: 20220811T070703Z
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Sponsors

@@ -51,14 +51,14 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
   const content = route && (
     <>
       <header className={isExperienceEditorActiveCssClass}>
-        <Placeholder name="jss-header" rendering={route} />
+        <Placeholder name="headless-header" rendering={route} />
       </header>
       <main className={isExperienceEditorActiveCssClass}>
         <HeaderCdpMessageBar />
-        <Placeholder name="jss-main" rendering={route} />
+        <Placeholder name="headless-main" rendering={route} />
       </main>
       <footer>
-        <Placeholder name="jss-footer" rendering={route} />
+        <Placeholder name="headless-footer" rendering={route} />
       </footer>
     </>
   );

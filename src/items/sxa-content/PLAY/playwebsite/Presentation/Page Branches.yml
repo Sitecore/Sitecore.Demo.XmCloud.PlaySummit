@@ -3,6 +3,26 @@ ID: "4499d0fb-ac41-48a3-bdf1-9483305d086b"
 Parent: "8fb503df-d132-4fc1-a096-18c8b8f19873"
 Template: "fbc802e5-4b9e-480f-93da-3f2a80cae5cb"
 Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches
+SharedFields:
+- ID: "bb3391dd-f8be-4b2e-ae9f-47bb63c166ce"
+  Hint: Rule
+  Value: |
+    <ruleset>
+      <rule
+        uid="{0C673BD6-F3DA-4096-98E4-0CD409315288}">
+        <conditions>
+          <condition
+            id="{188A8AB5-30C2-4EB8-8AA6-9FD83591F9BE}"
+            uid="5100E826E57C4B6FB12589B549EAB2DF" />
+        </conditions>
+        <actions>
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="A86F09E0B35847638F97EF971943F75D"
+            PageBranchId="{03897603-E3EB-4777-B0B1-F106FDA3FF91}" />
+        </actions>
+      </rule>
+    </ruleset>
 Languages:
 - Language: en
   Versions:
@@ -21,11 +41,11 @@ Languages:
         sitecore\sitecoredemo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "36ae8cbb-2579-4123-8a8a-96d0294d193f"
+      Value: "f6cca295-ccab-4416-a3e2-fbf36922e170"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\sitecoredemo@sitecore.com
+        sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220511T192050Z
+      Value: 20220811T093836Z

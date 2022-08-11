@@ -1,14 +1,16 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Promo, { PromoProps } from '../../components/PageContent/Promo';
+import FullWidthPromo, { FullWidthPromoProps } from '../../components/PageContent/FullWidthPromo';
 
 export default {
-  title: 'Components/PageContent/Promo',
-  component: Promo,
-} as ComponentMeta<typeof Promo>;
+  title: 'Components/PageContent/FullWidthPromo',
+  component: FullWidthPromo,
+} as ComponentMeta<typeof FullWidthPromo>;
 
-const Template: ComponentStory<typeof Promo> = (args: PromoProps) => <Promo {...args} />;
+const Template: ComponentStory<typeof FullWidthPromo> = (args: FullWidthPromoProps) => (
+  <FullWidthPromo {...args} />
+);
 
 export const Default = Template.bind({});
 Default.args = {
@@ -39,4 +41,4 @@ Default.args = {
     componentName: 'Rendering',
     dataSource: '/sitecore',
   },
-} as PromoProps;
+} as FullWidthPromoProps;

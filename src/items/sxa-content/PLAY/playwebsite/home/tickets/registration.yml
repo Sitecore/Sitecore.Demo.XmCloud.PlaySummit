@@ -18,7 +18,7 @@ SharedFields:
           s:ds="{BD786D95-3316-5B3B-8224-BECD301935A5}"
           s:id="{FC5B8C36-8C49-54FD-94F3-C5AD21446CC4}"
           s:par=""
-          s:ph="/jss-main" />
+          s:ph="/headless-main" />
       </d>
     </r>
 Languages:
@@ -43,14 +43,14 @@ Languages:
         sitecore\superuser
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5091bc78-ceb4-44cc-b566-ed26f9f92fb8"
+      Value: "b9681750-5375-4c92-9215-cdbdacbee204"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\superuser
+        sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20211213T164918Z
+      Value: 20220811T070703Z
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Registration

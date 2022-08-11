@@ -24,10 +24,6 @@ SharedFields:
           <p:d />
         </r>
         <r
-          uid="{02AD34D4-C2B4-55FA-8854-F6BFEC2A8C0F}">
-          <p:d />
-        </r>
-        <r
           uid="{0761E527-92C1-596B-914B-DD9C282DA709}">
           <p:d />
         </r>
@@ -59,14 +55,14 @@ SharedFields:
           s:rname="Header"
           s:id="{0FC536D1-7D7C-579C-953B-454A308B4390}"
           s:par=""
-          s:ph="/jss-header" />
+          s:ph="/headless-header" />
         <r
           uid="{ED4A5CB9-75EF-55E2-AF2B-023BE6352A42}"
           p:after="r[@uid='{B9D9CB3A-734D-51BD-B67B-F72AB1BFF427}']"
           s:rname="MainNavigation"
           s:id="{09516A66-F92F-5638-B073-8F9A79765778}"
           s:par=""
-          s:ph="/jss-header/jss-header-content-{B9D9CB3A-734D-51BD-B67B-F72AB1BFF427}-0" />
+          s:ph="/headless-header/jss-header-content-{B9D9CB3A-734D-51BD-B67B-F72AB1BFF427}-0" />
         <r
           uid="{68B377B9-8357-5E7C-B9CC-76765D5BB50D}"
           p:after="r[@uid='{ED4A5CB9-75EF-55E2-AF2B-023BE6352A42}']"
@@ -74,35 +70,35 @@ SharedFields:
           s:ds="{8CCD7EBC-7A09-5359-B2F1-7727F37970AE}"
           s:id="{FC5B8C36-8C49-54FD-94F3-C5AD21446CC4}"
           s:par=""
-          s:ph="/jss-main" />
+          s:ph="/headless-main" />
         <r
           uid="{2FA4F61D-E97D-5CEB-948D-990E49B61C3D}"
-          p:after="r[@uid='{2B2065DB-5D18-53F5-8605-B5F7CC9ADEBB}']"
+          p:after="r[@uid='{68B377B9-8357-5E7C-B9CC-76765D5BB50D}']"
           s:rname="Section"
           s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
           s:par=""
-          s:ph="/jss-main" />
+          s:ph="/headless-main" />
         <r
           uid="{6F01DD61-F3A5-4134-A044-98926CD4658C}"
           p:after="r[@uid='{2FA4F61D-E97D-5CEB-948D-990E49B61C3D}']"
           s:ds="{5E80F4BE-2CDE-454A-9DE0-F062A1490F65}"
           s:id="{118A1550-728A-5324-8DF3-9AF7D252E89B}"
-          s:ph="/jss-main/jss-section-content-{2FA4F61D-E97D-5CEB-948D-990E49B61C3D}-0" />
+          s:ph="/headless-main/jss-section-content-{2FA4F61D-E97D-5CEB-948D-990E49B61C3D}-0" />
         <r
           uid="{D67366CF-9958-52E7-A9B1-7C38A02E06EE}"
           p:after="r[@uid='{6F01DD61-F3A5-4134-A044-98926CD4658C}']"
           s:rname="AttendeeForm"
           s:id="{9D27B323-AD63-54C8-A9BD-2DED29DFAF1D}"
           s:par=""
-          s:ph="/jss-main/jss-section-content-{2FA4F61D-E97D-5CEB-948D-990E49B61C3D}-0" />
+          s:ph="/headless-main/jss-section-content-{2FA4F61D-E97D-5CEB-948D-990E49B61C3D}-0" />
         <r
           uid="{F503ED27-48D6-5198-9B04-64136F91868B}"
-          p:after="r[@uid='{31D2B39F-656D-5821-9EDA-30F8FCB41910}']"
+          p:after="r[@uid='{D67366CF-9958-52E7-A9B1-7C38A02E06EE}']"
           s:rname="FullImageSection"
           s:ds="{3FDC9247-F940-5DE3-BB56-9242835DD87B}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
           s:par=""
-          s:ph="/jss-main" />
+          s:ph="/headless-main" />
         <r
           uid="{539A33B7-FA3F-5E86-90CA-EF4EDEB4468C}"
           p:after="r[@uid='{F503ED27-48D6-5198-9B04-64136F91868B}']"
@@ -110,7 +106,7 @@ SharedFields:
           s:ds=""
           s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
           s:par=""
-          s:ph="/jss-main" />
+          s:ph="/headless-main" />
         <r
           uid="{A244C1C4-34A1-5196-A27B-6B787A759794}"
           p:after="r[@uid='{539A33B7-FA3F-5E86-90CA-EF4EDEB4468C}']"
@@ -118,7 +114,7 @@ SharedFields:
           s:ds="{B103F115-DB4E-4D12-A6F1-0D058B98CFC4}"
           s:id="{CB6FAEE6-2A59-5114-B898-1147AA0FE82F}"
           s:par=""
-          s:ph="/jss-main"
+          s:ph="/headless-main"
           s:ccb="Clear on publish" />
         <r
           uid="{047AB2B7-8C19-5D8F-A0A7-EF1F84F40224}"
@@ -127,7 +123,7 @@ SharedFields:
           s:ds="{174A7AFC-D923-58F3-BEF8-AD8CAAD8C5B9}"
           s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
           s:par=""
-          s:ph="/jss-main" />
+          s:ph="/headless-main" />
         <r
           uid="{2BE9597F-BD91-57D2-BA9B-4A9F5058DE74}"
           p:after="r[@uid='{047AB2B7-8C19-5D8F-A0A7-EF1F84F40224}']"
@@ -135,14 +131,14 @@ SharedFields:
           s:ds="{F8952B14-1095-45FB-B7D9-6AE55AB2934D}"
           s:id="{4C6CFD83-311B-5EA6-8F55-AA03251D5232}"
           s:par=""
-          s:ph="/jss-main/jss-section-content-{047AB2B7-8C19-5D8F-A0A7-EF1F84F40224}-0" />
+          s:ph="/headless-main/jss-section-content-{047AB2B7-8C19-5D8F-A0A7-EF1F84F40224}-0" />
         <r
           uid="{0AECC14D-E4D7-56AB-9626-6592D41FCCD0}"
           p:after="*[1=2]"
           s:rname="Footer"
           s:id="{ADBF0452-8883-5D03-877B-9F5C2E89725C}"
           s:par=""
-          s:ph="/jss-footer" />
+          s:ph="/headless-footer" />
       </d>
     </r>
 Languages:
@@ -170,14 +166,14 @@ Languages:
         sitecore\superuser
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c44112b3-b968-4c99-a656-238fda9a5770"
+      Value: "76d3cc57-0adb-4397-a2a5-8b80afa5a14f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\superuser
+        sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210928T172044Z
+      Value: 20220811T070703Z
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Attendee
