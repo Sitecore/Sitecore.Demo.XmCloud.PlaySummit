@@ -88,3 +88,7 @@
 .scEmptyPlaceholder {
   @apply w-full h-20;
 }
+
+.section-spacing {
+  @apply my-20;
+}

@@ -54,5 +54,3 @@ export const Default = (props: PageContentProps): JSX.Element => {
     </ComponentContent>
   );
 };
-
-// export default Default;

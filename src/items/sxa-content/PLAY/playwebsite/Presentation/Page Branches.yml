@@ -12,14 +12,19 @@ SharedFields:
         uid="{0C673BD6-F3DA-4096-98E4-0CD409315288}">
         <conditions>
           <condition
-            id="{188A8AB5-30C2-4EB8-8AA6-9FD83591F9BE}"
-            uid="5100E826E57C4B6FB12589B549EAB2DF" />
+            id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+            uid="C5AA8DB5A87546B590D68D34213CD1BC"
+            itemid="{4D587C56-3717-41CB-936C-5D0412A50B6B}" />
         </conditions>
         <actions>
           <action
             id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
             uid="A86F09E0B35847638F97EF971943F75D"
             PageBranchId="{03897603-E3EB-4777-B0B1-F106FDA3FF91}" />
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="FAD5E2F7DE7A46FFA11C40AC59632D3D"
+            PageBranchId="{6C07C9A2-87C4-418F-AA22-9E5D6C382E9E}" />
         </actions>
       </rule>
     </ruleset>
@@ -41,11 +46,11 @@ Languages:
         sitecore\sitecoredemo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f6cca295-ccab-4416-a3e2-fbf36922e170"
+      Value: "30ca1dd9-aa43-4fba-ba7a-659ec5c8cbe2"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220811T093836Z
+      Value: 20220815T112501Z

@@ -21,7 +21,7 @@ interface Fields {
 type NavigationProps = {
   params?: { [key: string]: string };
   fields: Fields;
-  handleClick: (event?: React.MouseEvent<HTMLElement>) => void;
+  handleClick?: (event?: React.MouseEvent<HTMLElement>) => void;
   relativeLevel: number;
 };
 
@@ -150,4 +150,32 @@ const getLinkTitle = (props: NavigationProps): string | undefined => {
   }
 
   return title;
+};
+
+export const LandingPagesNavigation = (props: NavigationProps): JSX.Element => {
+  if (!Object.values(props.fields).length) {
+    return (
+      <div className={`component navigation`}>
+        <div className="component-content">[Navigation]</div>
+      </div>
+    );
+  }
+
+  const list = Object.values(props.fields)
+    .filter((element) => element)
+    .map((element: Fields, key: number) => (
+      <NavigationList key={`${key}${element.Id}`} fields={element} relativeLevel={1} />
+    ));
+  const styles =
+    props.params != null ? `${props.params.GridParameters} ${props.params.Styles}` : null;
+
+  return (
+    <div className={`component navigation landing-pages-navigation ${styles}`}>
+      <div className="component-content">
+        <nav>
+          <ul className="clearfix">{list}</ul>
+        </nav>
+      </div>
+    </div>
+  );
 };

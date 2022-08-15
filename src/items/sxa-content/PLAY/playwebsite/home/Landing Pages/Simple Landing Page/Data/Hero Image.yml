@@ -1,0 +1,40 @@
+﻿---
+ID: "b9b05302-7c91-4e58-b46a-63946fb03f36"
+Parent: "3148271e-e136-4f0e-8f39-789daa5b0d86"
+Template: "3ee5e476-e843-51f1-a351-d2c3b198475a"
+Path: /sitecore/content/PLAY/playwebsite/home/Landing Pages/Simple Landing Page/Data/Hero Image
+BranchID: "6c07c9a2-87c4-418f-aa22-9e5d6c382e9e"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{3D4C836F-BD5E-4AC4-BC8D-BC35230A3D64}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220815T112517Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "7f1d47cf-4525-5f3e-b8fe-4c6ddbcefa39"
+      Hint: hero
+      Value: |
+        <image mediaid="{94156736-7BB8-4523-8F0E-9C74D52357A8}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f4da607b-63e5-4903-b7c6-37129cfa8d96"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220815T112517Z

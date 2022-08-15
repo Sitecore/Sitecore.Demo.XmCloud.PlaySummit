@@ -1,0 +1,16 @@
+﻿---
+ID: "d0b8e95c-6ced-4423-bc03-4f5b140d9b00"
+Parent: "7abd67cb-78b2-42a2-85ab-da3cb9985583"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/layout/Placeholder Settings/Foundation/JSS Experience Accelerator/Placeholder Settings
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220428T091239Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4a20e8b1-d51d-4dcc-8dde-a95fc13849ee"

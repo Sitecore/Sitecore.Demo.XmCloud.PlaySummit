@@ -1,0 +1,28 @@
+.component.promo {
+  > .component-content {
+    @apply flex flex-col items-center gap-8;
+    @apply lg:flex-row;
+
+    > div {
+      @apply lg:basis-1/2;
+    }
+  }
+
+  &.promo-reversed {
+    > .component-content {
+      @apply lg:flex-row-reverse;
+    }
+  }
+
+  .field-promotext {
+    @apply text-3xl font-bold uppercase mb-4;
+  }
+
+  .field-promotext3 {
+    @apply uppercase text-blue-light font-bold;
+  }
+
+  .field-promolink {
+    @apply mt-6;
+  }
+}
