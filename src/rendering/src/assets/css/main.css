@@ -74,6 +74,11 @@
 @import './components/Navigation/ShopBreadcrumb.css';
 @import './components/Navigation/ShopNavigation.css';
 
+/* nextjs-sxa */
+@import './components/nextjs-sxa/Navigation.css';
+@import './components/nextjs-sxa/Promo.css';
+@import './components/nextjs-sxa/Title.css';
+
 /* News */
 @import './components/News/NewsDetail.css';
 @import './components/News/NewsGrid.css';
@@ -137,11 +142,6 @@
 
 /* Sponsors */
 @import './components/Sponsors/SponsorsGrid.css';
-
-/* Sxa Starter */
-@import './components/SxaStarter/Navigation.css';
-@import './components/SxaStarter/Promo.css';
-@import './components/SxaStarter/Title.css';
 
 /* Widgets */
 @import './components/Widgets/RecommendedProducts.css';
