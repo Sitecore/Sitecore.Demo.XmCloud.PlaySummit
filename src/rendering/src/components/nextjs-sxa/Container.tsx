@@ -27,15 +27,15 @@ export const Default = (props: ComponentProps): JSX.Element => {
   if (backgroundImage) {
     const prefix = `${sitecoreContext.pageState !== 'normal' ? '/sitecore/shell' : ''}/-/media/`;
     backgroundImage = `${backgroundImage?.match(BACKGROUND_REG_EXP)?.pop()?.replace(/-/gi, '')}`;
-    backgroundClass = 'not-empty-placholder';
+    backgroundClass = 'not-empty-placeholder';
     backgroundStyle = {
       backgroundImage: `url('${prefix}${backgroundImage}')`,
     };
   }
 
   return (
-    <div className={`component container ${styles}`}>
-      <div className={`component-content ${backgroundClass}`} style={backgroundStyle}>
+    <div className={`component container ${styles}`} style={backgroundStyle}>
+      <div className={`component-content ${backgroundClass}`}>
         <div className="row">
           <Placeholder name={phKey} rendering={props.rendering} />
         </div>

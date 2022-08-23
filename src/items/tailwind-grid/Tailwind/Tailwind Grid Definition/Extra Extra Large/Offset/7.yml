@@ -1,0 +1,34 @@
+﻿---
+ID: "9c113c07-1618-4ccf-a082-bd37fd9febb5"
+Parent: "beeedb7a-b106-4fb0-9c9d-f9c9d462b23f"
+Template: "cb3b3906-be80-4d9b-a2a4-038193da5422"
+Path: /sitecore/system/Settings/Feature/Experience Accelerator/Tailwind/Tailwind Grid Definition/Extra Extra Large/Offset/7
+SharedFields:
+- ID: "591c584f-08a7-4dc6-9d58-1de178c404a2"
+  Hint: Class
+  Value: "xxl:offset-7"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 700
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161216T082352Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e0c68108-9423-4361-b98b-ad3fb44b636d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220822T120514Z

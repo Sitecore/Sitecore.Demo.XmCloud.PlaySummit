@@ -16,3 +16,7 @@ footer {
 .container.container-narrow {
   @apply max-w-3xl;
 }
+
+.container.container-fullwidth {
+  @apply max-w-full;
+}

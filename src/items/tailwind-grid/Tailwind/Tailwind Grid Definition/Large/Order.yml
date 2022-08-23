@@ -1,0 +1,143 @@
+﻿---
+ID: "8f79fef2-012f-457b-a3bf-e3b71a8c55bd"
+Parent: "68104381-3c5c-4f78-abf9-7bb7c09b418f"
+Template: "5e32e75f-446a-412c-8ed8-922320ae9031"
+Path: /sitecore/system/Settings/Feature/Experience Accelerator/Tailwind/Tailwind Grid Definition/Large/Order
+SharedFields:
+- ID: "07a98f74-131f-4ba1-9c00-88416c2832a4"
+  Hint: Advanced
+  Value: 1
+- ID: "62ca1c9e-71a4-465f-835e-55bda7bb270b"
+  Hint: Type
+  Value: slider
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 150
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Ordre
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: Fastlægger rækkefølgen af komponenter på en bestemt enhed.
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Bestellung
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b99458b7-889b-46a9-8ca3-06e80885e4e3"
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: Bestimmt die Reihenfolge der Komponenten auf einem bestimmten Gerät.
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220817T074711Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161216T082225Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ce3c10ea-40c7-4044-862d-6ca13db601f2"
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: Determines the order of components on a particular device.
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220817T094003Z
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 並び順
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b99458b7-889b-46a9-8ca3-06e80885e4e3"
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: 特定のデバイス上でコンポーネントの順序を決定します。
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220817T074711Z
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 订购
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b99458b7-889b-46a9-8ca3-06e80885e4e3"
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: 确定特定设备上组件的顺序。
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220817T074711Z

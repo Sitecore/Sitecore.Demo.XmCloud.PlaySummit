@@ -46,6 +46,10 @@
             {
                 "name": "standard-template-fallback",
                 "path": "/sitecore/templates/System/Templates/Standard template"
+            },
+            {
+                "name": "tailwind-grid",
+                "path": "/sitecore/system/Settings/Feature/Experience Accelerator/Tailwind"
             }
         ]
     }

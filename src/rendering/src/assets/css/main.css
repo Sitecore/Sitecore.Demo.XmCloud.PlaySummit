@@ -28,6 +28,7 @@
 @import './layout/section-news.css';
 @import './layout/section-speakers.css';
 @import './layout/section-sponsors.css';
+@import './layout/sxaLayout.css';
 @import './layout/text.css';
 
 /* Tailwindify other components and pages from rest.css here */
@@ -77,6 +78,7 @@
 /* nextjs-sxa */
 @import './components/nextjs-sxa/Navigation.css';
 @import './components/nextjs-sxa/Promo.css';
+@import './components/nextjs-sxa/RichText.css';
 @import './components/nextjs-sxa/Title.css';
 
 /* News */
