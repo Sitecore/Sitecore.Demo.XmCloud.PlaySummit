@@ -1,15 +1,12 @@
 ﻿---
-ID: "e56290b7-daeb-4355-8c07-974ceb0d7941"
-Parent: "acee8ee1-8f3a-4901-982e-40d501989f64"
+ID: "816f91b6-bdd2-4bcc-81fd-d6092f8eb3e7"
+Parent: "df1e7793-5333-49f5-b626-f113d2ea42e0"
 Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
-Path: /sitecore/content/PLAY/playwebsite/Presentation/Partial Designs/Header
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Partial Designs/Common Content/Premium Sponsors
 SharedFields:
 - ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
   Hint: Signature
-  Value: header
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 300
+  Value: "premium-sponsors"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -18,17 +15,19 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{8AE6E35D-21E3-49A4-9728-29308CF51606}"
+          uid="{AC7C7AC6-05F8-4535-82DF-82DAC45827DD}"
           p:before="*"
-          s:id="{09516A66-F92F-5638-B073-8F9A79765778}"
+          s:ds="{F8952B14-1095-45FB-B7D9-6AE55AB2934D}"
+          s:id="{4C6CFD83-311B-5EA6-8F55-AA03251D5232}"
           s:par="CacheClearingBehavior=Clear on publish"
-          s:ph="/headless-header/jss-header-content-{57CAE663-BE95-417F-AD72-49F8F498A71D}-0" />
+          s:ph="/headless-main/jss-section-content-{EBD6D82B-66EE-4728-9451-A79E36D791FF}-0" />
         <r
-          uid="{57CAE663-BE95-417F-AD72-49F8F498A71D}"
+          uid="{EBD6D82B-66EE-4728-9451-A79E36D791FF}"
           p:after="*[1=2]"
-          s:id="{0FC536D1-7D7C-579C-953B-454A308B4390}"
+          s:ds="{174A7AFC-D923-58F3-BEF8-AD8CAAD8C5B9}"
+          s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
           s:par="CacheClearingBehavior=Clear on publish"
-          s:ph="headless-header" />
+          s:ph="headless-main" />
       </d>
     </r>
 Languages:
@@ -41,18 +40,18 @@ Languages:
       Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20220809T123113Z
+      Value: 20220826T063118Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\nko@sitecore.net
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e5e2ab9a-36ce-4a72-95de-d4e4b23b0d19"
+      Value: "1cf5a466-f8b8-4cd5-9ac2-9905dd187aa7"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220825T093956Z
+      Value: 20220826T063240Z

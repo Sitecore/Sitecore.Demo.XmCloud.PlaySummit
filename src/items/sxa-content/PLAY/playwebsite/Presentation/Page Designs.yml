@@ -5,6 +5,26 @@ Template: "7756380e-cb33-4213-b486-b73092696756"
 Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Designs
 BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
 SharedFields:
+- ID: "23c23f7b-2c76-4d3c-9b88-16b7a6d52d89"
+  Hint: DesignRules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{AD675FC4-4FDC-4A13-B3C8-D8BC5502451C}">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="BD3F9750DBBF4BACB958C3A0061BDCD0"
+            templateid="{D8AA73E1-C275-4EEE-BB9D-333925E51952}" />
+        </conditions>
+        <actions>
+          <action
+            id="{5DC0A863-11FE-4A26-9F09-D8EADEA81E9A}"
+            uid="AC13223C4F5D4649B60A48C9AC00743C"
+            pagedesignid="{5864BD63-B393-4F44-885D-C1242C5ABA5A}" />
+        </actions>
+      </rule>
+    </ruleset>
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{2EA756FA-AED6-4599-83B7-36FEFE229B31}"
@@ -26,11 +46,11 @@ Languages:
         sitecore\sitecoredemo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c546ce00-4fb0-4ee5-a625-10c13d176449"
+      Value: "44600cbb-0bde-472a-80d4-b362bd2277e3"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\sitecoredemo@sitecore.com
+        sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220511T192048Z
+      Value: 20220824T140614Z

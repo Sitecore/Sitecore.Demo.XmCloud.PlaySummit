@@ -1,15 +1,12 @@
 ﻿---
-ID: "e56290b7-daeb-4355-8c07-974ceb0d7941"
-Parent: "acee8ee1-8f3a-4901-982e-40d501989f64"
+ID: "260e87fb-acbe-424e-8418-a0de36c49cef"
+Parent: "df1e7793-5333-49f5-b626-f113d2ea42e0"
 Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
-Path: /sitecore/content/PLAY/playwebsite/Presentation/Partial Designs/Header
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Partial Designs/Common Content/News and Media
 SharedFields:
 - ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
   Hint: Signature
-  Value: header
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 300
+  Value: "pre-footer"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -18,17 +15,20 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{8AE6E35D-21E3-49A4-9728-29308CF51606}"
+          uid="{579AC53A-BBFC-4116-ACB4-148FDDE689EB}"
           p:before="*"
-          s:id="{09516A66-F92F-5638-B073-8F9A79765778}"
-          s:par="CacheClearingBehavior=Clear on publish"
-          s:ph="/headless-header/jss-header-content-{57CAE663-BE95-417F-AD72-49F8F498A71D}-0" />
+          s:ds="{0E4A63DA-7496-557E-BF80-5BD52255E431}"
+          s:id="{82A8BF89-B0DD-59EE-BC00-B1EF4525A6FD}"
+          s:par=""
+          s:ph="/headless-main/jss-section-content-{99FAEA44-A067-47E4-87E0-300CCAF6A8AE}-0"
+          s:ccb="Clear on publish" />
         <r
-          uid="{57CAE663-BE95-417F-AD72-49F8F498A71D}"
+          uid="{99FAEA44-A067-47E4-87E0-300CCAF6A8AE}"
           p:after="*[1=2]"
-          s:id="{0FC536D1-7D7C-579C-953B-454A308B4390}"
+          s:ds="{23C00813-F14B-5E8D-9102-EB409B5E1878}"
+          s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
           s:par="CacheClearingBehavior=Clear on publish"
-          s:ph="headless-header" />
+          s:ph="headless-main" />
       </d>
     </r>
 Languages:
@@ -41,18 +41,18 @@ Languages:
       Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20220809T123113Z
+      Value: 20220825T094006Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\nko@sitecore.net
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e5e2ab9a-36ce-4a72-95de-d4e4b23b0d19"
+      Value: "edf5d342-c1f2-45eb-b78a-224fd3f0b4f4"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220825T093956Z
+      Value: 20220826T055158Z
