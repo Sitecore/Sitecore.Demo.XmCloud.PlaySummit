@@ -2,14 +2,12 @@ const jssConfig = require('./src/temp/config');
 const packageConfig = require('./package.json').config;
 const { getPublicUrl } = require('@sitecore-jss/sitecore-jss-nextjs');
 const plugins = require('./src/temp/next-config-plugins') || {};
-// DEMO TEAM CUSTOMIZATION - Add Next bundle analyzer
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-});
-// END CUSTOMIZATION
 
 const publicUrl = getPublicUrl();
 
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
   // Set assetPrefix to our public URL
   assetPrefix: publicUrl,
@@ -25,17 +23,144 @@ const nextConfig = {
   i18n: {
     // These are all the locales you want to support in your application.
     // These should generally match (or at least be a subset of) those in Sitecore.
-    // DEMO TEAM CUSTOMIZATION - Add languages
+    // DEMO TEAM CUSTOMIZATION - Add ALL the languages!
     locales: [
       'en',
+      'af-ZA',
+      'ar-AE',
+      'ar-BH',
+      'ar-EG',
+      'ar-IQ',
+      'ar-JO',
+      'ar-KW',
+      'ar-LB',
+      'ar-LY',
+      'ar-MA',
+      'ar-OM',
+      'ar-QA',
+      'ar-SA',
+      'ar-SY',
+      'ar-TN',
+      'ar-YE',
+      'be-BY',
+      'bg-BG',
+      'ca-ES',
+      'cs-CZ',
+      'da',
+      'de-AT',
+      'de-CH',
+      'de-DE',
+      'de-LI',
+      'de-LU',
+      'el-GR',
+      'en-AU',
+      'en-BZ',
+      'en-CA',
+      'en-GB',
+      'en-IE',
+      'en-JM',
+      'en-NZ',
+      'en-PH',
+      'en-TT',
+      'en-US',
+      'en-ZA',
+      'en-ZW',
+      'es-AR',
+      'es-BO',
+      'es-CL',
+      'es-CO',
+      'es-CR',
+      'es-DO',
+      'es-EC',
+      'es-ES',
+      'es-GT',
+      'es-HN',
+      'es-MX',
+      'es-NI',
+      'es-PA',
+      'es-PE',
+      'es-PR',
+      'es-PY',
+      'es-SV',
+      'es-UY',
+      'es-VE',
+      'et-EE',
+      'eu-ES',
+      'fa-IR',
+      'fi-FI',
+      'fo-FO',
+      'fr-BE',
       'fr-CA',
+      'fr-CH',
+      'fr-FR',
+      'fr-LU',
+      'fr-MC',
+      'gl-ES',
+      'gu-IN',
+      'he-IL',
+      'hi-IN',
+      'hr-BA',
+      'hr-HR',
+      'hu-HU',
+      'hy-AM',
+      'id-ID',
+      'is-IS',
+      'it-CH',
+      'it-IT',
+      'ja-JP',
+      'ka-GE',
+      'kk-KZ',
+      'kn-IN',
+      'ko-KR',
+      'ky-KG',
+      'lt-LT',
+      'lv-LV',
+      'mi-NZ',
+      'mk-MK',
+      'mn-MN',
+      'mr-IN',
+      'ms-BN',
+      'ms-MY',
+      'mt-MT',
+      'nb-NO',
+      'nl-BE',
+      'nl-NL',
+      'nn-NO',
+      'pa-IN',
+      'pl-PL',
+      'pt-BR',
+      'pt-PT',
+      'ro-RO',
+      'ru-RU',
+      'sa-IN',
+      'se-FI',
+      'se-NO',
+      'se-SE',
+      'sk-SK',
+      'sl-SI',
+      'sq-AL',
+      'sv-FI',
+      'sv-SE',
+      'sw-KE',
+      'ta-IN',
+      'th-TH',
+      'tn-ZA',
+      'tr-TR',
+      'tt-RU',
+      'uk-UA',
+      'ur-PK',
+      'vi-VN',
+      'xh-ZA',
+      'zh-CN',
+      'zh-SG',
+      'zh-TW',
+      'zu-ZA',
     ],
     // END CUSTOMIZATION
     // This is the locale that will be used when visiting a non-locale
     // prefixed path e.g. `/styleguide`.
     defaultLocale: packageConfig.language,
-    // DEMO TEAM CUSTOMIZATION - Add localeDetection
-    localeDetection: false,
+    localeDetection: false, // DEMO TEAM CUSTOMIZATION - Disable locale detection
   },
   
   // Enable React Strict Mode
@@ -65,6 +190,5 @@ const nextConfig = {
 
 module.exports = () => {
   // Run the base config through any configured plugins
-  // DEMO TEAM CUSTOMIZATION - Add Next bundle analyzer
-  return withBundleAnalyzer(Object.values(plugins).reduce((acc, plugin) => plugin(acc), nextConfig));
+  return Object.values(plugins).reduce((acc, plugin) => plugin(acc), nextConfig);
 }
