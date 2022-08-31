@@ -37,7 +37,8 @@ const SpeakerInformationPageHero = (props: SpeakerInformationPageHeroProps): JSX
     InstagramProfileLink: fields.InstagramProfileLink,
     LinkedinProfileLink: fields.LinkedinProfileLink,
   };
-  const qualificative = props.fields.Featured.value ? 'featured' : '';
+
+  const qualificative = props.fields.Featured?.value ? 'featured' : '';
 
   const informations =
     props.fields.JobTitle?.value ||

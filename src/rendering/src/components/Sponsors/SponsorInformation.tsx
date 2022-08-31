@@ -18,7 +18,7 @@ export type SponsorInformationProps = ComponentProps & {
 
 const SponsorInformation = (props: SponsorInformationProps): JSX.Element => {
   const SessionListSidebar =
-    props.fields.data.contextItem.sessions.targetItems.length > 0 ? (
+    props.fields.data?.contextItem?.sessions?.targetItems?.length > 0 ? (
       <>
         <div className="column-title">Sessions:</div>
         <SessionList

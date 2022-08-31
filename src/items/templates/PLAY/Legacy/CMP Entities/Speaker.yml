@@ -14,6 +14,8 @@ SharedFields:
     {1930BBEB-7805-471A-A3BE-4858AC7CF696}
     {39442D44-9F0F-426B-AB2A-4F6CED73DD73}
     {6DB09CEF-64A8-52A3-A980-38408109C4D7}
+    {47151711-26CA-434E-8132-D3E0B7D26683}
+    {6650FB34-7EA1-4245-A919-5CC0F002A6D7}
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 100
@@ -38,11 +40,11 @@ Languages:
         sitecore\superuser
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ce6f2ea9-a326-4977-a70c-34c67a2393c4"
+      Value: "fe81b5b4-b46f-4784-9a01-f88cae6085af"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\superuser
+        sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20210907T113825Z
+      Value: 20220830T122033Z
