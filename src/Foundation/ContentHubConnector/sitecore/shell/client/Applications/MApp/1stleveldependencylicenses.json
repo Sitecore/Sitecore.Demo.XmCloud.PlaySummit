@@ -1,0 +1,153 @@
+{
+	"@angular/animations@4.4.7": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/angular"
+	},
+	"@angular/cli@1.4.10": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/angular-cli"
+	},
+	"@angular/common@4.4.7": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/angular"
+	},
+	"@angular/compiler-cli@4.4.7": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/angular"
+	},
+	"@angular/compiler@4.4.7": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/angular"
+	},
+	"@angular/core@4.4.7": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/angular"
+	},
+	"@angular/forms@4.4.7": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/angular"
+	},
+	"@angular/http@4.4.7": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/angular"
+	},
+	"@angular/language-service@4.4.7": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/angular"
+	},
+	"@angular/platform-browser-dynamic@4.4.7": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/angular"
+	},
+	"@angular/platform-browser@4.4.7": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/angular"
+	},
+	"@angular/router@4.4.7": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/angular"
+	},
+	"@speak/ng-bcl@0.7.2": {
+		"licenses": "Custom: https://doc.sitecore.net/speak/speak",
+		"repository": "http://tfs4dk1.dk.sitecore.net/tfs/PD-Products-01/Products/_git/SPEAK3.Components"
+	},
+	"@speak/ng-sc-cli@0.3.3": {
+		"licenses": "UNKNOWN"
+	},
+	"@speak/ng-sc@0.3.3": {
+		"licenses": "Custom: https://doc.sitecore.net/speak/speak",
+		"repository": "http://tfs4dk1.dk.sitecore.net/tfs/PD-Products-01/Products/_git/SPEAK3.Integration"
+	},
+	"@speak/styling@0.8.3": {
+		"licenses": "Custom: https://doc.sitecore.net/speak/speak",
+		"repository": "http://tfs4dk1.dk.sitecore.net/tfs/PD-Products-01/Products/_git/Sitecore.Styling"
+	},
+	"@types/jasmine@2.5.54": {
+		"licenses": "MIT",
+		"repository": "https://github.com/DefinitelyTyped/DefinitelyTyped"
+	},
+	"@types/jasminewd2@2.0.6": {
+		"licenses": "MIT",
+		"repository": "https://github.com/DefinitelyTyped/DefinitelyTyped"
+	},
+	"@types/node@6.0.118": {
+		"licenses": "MIT",
+		"repository": "https://github.com/DefinitelyTyped/DefinitelyTyped"
+	},
+	"codelyzer@3.2.2": {
+		"licenses": "MIT",
+		"repository": "https://github.com/mgechev/codelyzer"
+	},
+	"core-js@2.6.2": {
+		"licenses": "MIT",
+		"repository": "https://github.com/zloirock/core-js"
+	},
+	"jasmine-core@2.6.4": {
+		"licenses": "MIT",
+		"repository": "https://github.com/jasmine/jasmine"
+	},
+	"jasmine-core@2.99.1": {
+		"licenses": "MIT",
+		"repository": "https://github.com/jasmine/jasmine"
+	},
+	"jasmine-spec-reporter@4.1.1": {
+		"licenses": "Apache-2.0",
+		"repository": "https://github.com/bcaudan/jasmine-spec-reporter"
+	},
+	"karma-chrome-launcher@2.1.1": {
+		"licenses": "MIT",
+		"repository": "https://github.com/karma-runner/karma-chrome-launcher"
+	},
+	"karma-cli@1.0.1": {
+		"licenses": "MIT",
+		"repository": "https://github.com/karma-runner/karma-cli"
+	},
+	"karma-coverage-istanbul-reporter@1.4.3": {
+		"licenses": "MIT",
+		"repository": "https://github.com/mattlewis92/karma-coverage-istanbul-reporter"
+	},
+	"karma-jasmine-html-reporter@0.2.2": {
+		"licenses": "MIT",
+		"repository": "https://github.com/taras42/karma-jasmine-html-reporter"
+	},
+	"karma-jasmine@1.1.2": {
+		"licenses": "MIT",
+		"repository": "https://github.com/karma-runner/karma-jasmine"
+	},
+	"karma-source-map-support@1.3.0": {
+		"licenses": "MIT",
+		"repository": "https://github.com/tschaub/karma-source-map-support"
+	},
+	"karma@1.7.1": {
+		"licenses": "MIT",
+		"repository": "https://github.com/karma-runner/karma"
+	},
+	"protractor@5.1.2": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/protractor"
+	},
+	"rxjs@5.5.12": {
+		"licenses": "Apache-2.0",
+		"repository": "https://github.com/ReactiveX/RxJS"
+	},
+	"ts-node@3.2.2": {
+		"licenses": "MIT",
+		"repository": "https://github.com/TypeStrong/ts-node"
+	},
+	"tslint@5.7.0": {
+		"licenses": "Apache-2.0",
+		"repository": "https://github.com/palantir/tslint"
+	},
+	"typescript@2.3.4": {
+		"licenses": "Apache-2.0",
+		"repository": "https://github.com/Microsoft/TypeScript"
+	},
+	"typescript@2.6.2": {
+		"licenses": "Apache-2.0",
+		"repository": "https://github.com/Microsoft/TypeScript"
+	},
+	"zone.js@0.8.26": {
+		"licenses": "MIT",
+		"repository": "https://github.com/angular/zone.js"
+	}
+}
