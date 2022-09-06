@@ -50,6 +50,9 @@
     <Content Include="App_Config\Modules\Sitecore.Connector.CMP\Sitecore.Connector.CMP.config" />
     <Content Include="App_Config\Modules\Sitecore.Connector.CMP\Sitecore.Connector.CMP.TaxonomyProvider.config" />
     <Content Include="App_Config\Modules\Sitecore.Connector.ContentHub.DAM\Sitecore.Connector.ContentHub.DAM.config" />
+    <Content Include="sitecore modules\items\core\items.core.chub.dat" />
+    <Content Include="sitecore modules\items\master\items.master.chub.dat" />
+    <Content Include="sitecore modules\items\web\items.web.chub.dat" />
     <Content Include="sitecore\Copyrights\Nito.AsyncEx_MIT.txt" />
     <Content Include="sitecore\Copyrights\scch\Microsoft.Azure.Amqp_MIT.txt" />
     <Content Include="sitecore\Copyrights\scch\Microsoft.Azure.ServiceBus_MIT.txt" />
@@ -64,6 +67,7 @@
     <Content Include="sitecore\Copyrights\scch\Remotion.Linq_Apache.txt" />
     <Content Include="sitecore\Copyrights\scch\System.Diagnostics.DiagnosticSource_MIT.txt" />
     <Content Include="sitecore\Copyrights\Tavis.UriTemplates_Apache.txt" />
+    <Content Include="sitecore\shell\client\Applications\MApp\1stleveldependencylicenses.json" />
     <Content Include="sitecore\shell\client\Applications\MApp\favicon.ico" />
     <Content Include="sitecore\shell\client\Applications\MApp\index.aspx" />
     <Content Include="sitecore\shell\client\Applications\MApp\inline.bundle.js" />
@@ -75,18 +79,8 @@
     <Content Include="sitecore\shell\Themes\Standard\STYLELABS\16x16\logo.png" />
     <Content Include="sitecore\shell\Themes\Standard\STYLELABS\32x32\logo.png" />
     <Content Include="sitecore\shell\Themes\Standard\STYLELABS\48x48\logo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="xdts\App_Config\ConnectionStrings.config.xdt" />
     <Content Include="xdts\Web.config.xdt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="sitecore modules\items\core\items.core.chub.dat" />
-    <Content Include="sitecore modules\items\master\items.master.chub.dat" />
-    <Content Include="sitecore modules\items\web\items.web.chub.dat" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="sitecore\shell\client\Applications\MApp\1stleveldependencylicenses.json" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
