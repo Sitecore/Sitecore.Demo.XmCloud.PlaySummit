@@ -83,6 +83,11 @@
     <Content Include="xdts\Web.config.xdt" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Sitecore.Connector.CMP" />
+    <PackageReference Include="Sitecore.Connector.CMP.TaxonomyProvider" />
+    <PackageReference Include="Sitecore.Connector.ContentHub.DAM" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>
   <PropertyGroup>
