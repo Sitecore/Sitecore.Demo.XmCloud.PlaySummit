@@ -116,7 +116,7 @@ services:
         SOLUTION_IMAGE: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-solution:${SITECORE_VERSION}-${DEMO_VERSION}
         TOOLS_IMAGE: ${TOOLS_IMAGE}
         # DEMO TEAM CUSTOMIZATION - Content Hub module
-        # CONTENTHUB_ASSETS_IMAGE: ${SITECORE_NONPRODUCTION_DOCKER_REGISTRY}modules/sitecore-chub-assets:5.0.0-${NANOSERVER_VERSION}
+        CONTENTHUB_ASSETS_IMAGE: ${SITECORE_NONPRODUCTION_DOCKER_REGISTRY}modules/sitecore-chub-assets:5.0.0-${NANOSERVER_VERSION}
     depends_on:
       - solution
     volumes:
