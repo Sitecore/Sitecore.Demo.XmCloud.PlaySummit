@@ -97,6 +97,7 @@
     <Content Include="sitecore\shell\client\Applications\MApp\styles.bundle.js" />
     <Content Include="sitecore\shell\client\Applications\MApp\vendor.bundle.js" />
     <Content Include="sitecore\shell\Controls\Rich Text Editor\Sitecore.Connector.ContentHub.DAM\Sitecore.Connector.ContentHub.DAM.Commands.js" />
+    <Content Include="sitecore\shell\Themes\Standard\EdgeIcons.zip" />
     <Content Include="sitecore\shell\Themes\Standard\STYLELABS\16x16\logo.png" />
     <Content Include="sitecore\shell\Themes\Standard\STYLELABS\32x32\logo.png" />
     <Content Include="sitecore\shell\Themes\Standard\STYLELABS\48x48\logo.png" />
