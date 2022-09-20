@@ -1,7 +1,7 @@
 /**
  * This Layout needs for SXA example.
  */
-import React, { useEffect } from 'react'; // DEMO TEAM CUSTOMIZATION - CDP integration
+import React, { useEffect } from 'react'; // DEMO TEAM CUSTOMIZATION - Log page views in CDP
 import Head from 'next/head';
 // DEMO TEAM CUSTOMIZATION - Remove VisitorIdentification, Add LayoutServicePageState
 import {
@@ -30,7 +30,7 @@ interface RouteFields {
 }
 
 const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
-  const { route } = layoutData.sitecore;
+  const { route, context } = layoutData.sitecore; // DEMO TEAM CUSTOMIZATION - Add context to destructuring
   const fields = route?.fields as RouteFields;
   const isPageEditing = layoutData.sitecore.context.pageEditing;
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
@@ -42,7 +42,6 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
   // END CUSTOMIZATION
 
   // DEMO TEAM CUSTOMIZATION - Add CSS classes when Sitecore editors are active
-  const { context } = layoutData.sitecore;
   const isExperienceEditorActiveCssClass =
     context.pageState === LayoutServicePageState.Edit ||
     context.pageState === LayoutServicePageState.Preview
@@ -56,6 +55,7 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
   if (fields?.pageTitle?.value.toString()) {
     pageTitle += ` - ${fields.pageTitle.value.toString()}`;
   } else if (fields?.Title?.value.toString()) {
+    // Only needed on XM Cloud with SXA
     pageTitle += ` - ${fields.Title.value.toString()}`;
   }
   // END CUSTOMIZATION
@@ -66,12 +66,13 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
         {/* DEMO TEAM CUSTOMIZATION - Use event name from context as the page title */}
         <title>{pageTitle}</title>
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
+        <meta name="robots" content="noindex" />
       </Head>
 
       {/* DEMO TEAM CUSTOMIZATION - Remove VisitorIdentification */}
 
       {/* root placeholder for the app, which we add components to using route data */}
-      {/* DEMO TEAM CUSTOMIZATION - Add CSS classes when Sitecore editors are active. Remove sections inner divs. Add HeaderCdpMessageBar. Custom placeholder names. */}
+      {/* DEMO TEAM CUSTOMIZATION - Add CSS classes when Sitecore editors are active. Add HeaderCdpMessageBar. Custom placeholder names. Remove sections inner divs. */}
       <div className={mainClassPageEditing}>
         <header className={isExperienceEditorActiveCssClass}>
           {route && <Placeholder name="jss-header" rendering={route} />}

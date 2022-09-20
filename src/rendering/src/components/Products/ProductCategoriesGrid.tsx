@@ -16,7 +16,7 @@ const ProductCategoriesGrid = (props: ProductCategoriesProps): JSX.Element => {
     props.fields.Categories &&
     Array.isArray(props.fields.Categories) &&
     props.fields.Categories.map((category, index) => (
-      <div key={index} className="section__products__grid__product">
+      <div key={index} className="product-categories-grid-product">
         <Link href="/shop/products">
           <a>
             <figure>
@@ -28,7 +28,7 @@ const ProductCategoriesGrid = (props: ProductCategoriesProps): JSX.Element => {
                 loading="lazy"
               />
             </figure>
-            <h3 className="product__category">
+            <h3 className="product-category">
               <Text field={category.fields.Title} />
             </h3>
           </a>
@@ -36,7 +36,7 @@ const ProductCategoriesGrid = (props: ProductCategoriesProps): JSX.Element => {
       </div>
     ));
 
-  return <div className="section__products__grid">{categories}</div>;
+  return <div className="product-categories-grid">{categories}</div>;
 };
 
 export default withDatasourceCheck()<ProductCategoriesProps>(ProductCategoriesGrid);

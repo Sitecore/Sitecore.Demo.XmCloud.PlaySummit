@@ -1,9 +1,8 @@
 import type { AppProps } from 'next/app';
 import { I18nProvider } from 'next-localization';
-// DEMO TEAM CUSTOMIZATION - CDP integration, FontAwesome, Head
-import Router from 'next/router';
-import Head from 'next/head';
+// DEMO TEAM CUSTOMIZATION - CDP integration. Per page layouts. Fonts and icons. etc.
 import { ReactElement, useEffect } from 'react';
+import Head from 'next/head';
 import { CdpScripts, identifyVisitor } from '../services/CdpService';
 import { KeypressHandler } from 'src/services/KeypressHandlerService';
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -11,7 +10,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
 // END CUSTOMIZATION
 
-import 'assets/css/main.css'; // DEMO TEAM CUSTOMIZATION - Changes CSS file
+import 'assets/css/main.css'; // DEMO TEAM CUSTOMIZATION - Different CSS file name.
 
 // DEMO TEAM CUSTOMIZATION - Implement per page layouts to conditionally load commerce on some pages https://nextjs.org/docs/basic-features/layouts#per-page-layouts
 import { NextPage } from 'next';
@@ -25,7 +24,7 @@ type AppPropsWithLayout = AppProps & {
 };
 // END CUSTOMIZATION
 
-// DEMO TEAM CUSTOMIZATION (next line) - Different prop type, add router prop
+// DEMO TEAM CUSTOMIZATION (next line) - Different prop type. Add router.
 function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element {
   // DEMO TEAM CUSTOMIZATION - Identify the user from an email address from the query string to handle clicks on email links. Also register a key press handler to close CDP sessions and forget CDP guests.
   useEffect(() => {

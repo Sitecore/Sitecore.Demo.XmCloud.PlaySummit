@@ -28,3 +28,10 @@ import './generate-component-factory';
    PLUGINS GENERATION
 */
 import './generate-plugins';
+
+/*
+  DEMO TEAM CUSTOMIZATION
+  Generates the /src/temp/categoriesData.ts file in order to be used
+  by the CategoryBreadcrumb component
+*/
+import './generate-categories-data';
