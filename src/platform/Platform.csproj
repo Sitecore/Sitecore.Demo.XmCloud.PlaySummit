@@ -126,9 +126,11 @@
     <Compile Include="FieldMapping\DemoFieldTypeFactoryStore.cs" />
     <Compile Include="Hotfixes\MImageCommand.cs" />
     <Compile Include="Hotfixes\MImageControl.cs" />
+    <Compile Include="Pipelines\LoadBalancingSchemeFix.cs" />
     <Compile Include="Pipelines\PublishSyncedItem.cs" />
     <Compile Include="Pipelines\DemoCmpFieldMapping.cs" />
     <Compile Include="Pipelines\DemoContextExtension.cs" />
+    <Compile Include="Pipelines\ParseXml.cs" />
     <Compile Include="Utilities\ClearAllCaches.aspx.cs">
       <DependentUpon>ClearAllCaches.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

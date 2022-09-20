@@ -115,7 +115,7 @@ services:
         # DEMO TEAM CUSTOMIZATION - demo subfolder, custom tag
         SOLUTION_IMAGE: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-solution:${SITECORE_VERSION}-${DEMO_VERSION}
         TOOLS_IMAGE: ${TOOLS_IMAGE}
-        # DEMO TEAM CUSTOMIZATION - Content Hub module
+        # DEMO TEAM CUSTOMIZATION - Add modules
         CONTENTHUB_ASSETS_IMAGE: ${SITECORE_NONPRODUCTION_DOCKER_REGISTRY}modules/sitecore-chub-assets:5.0.0-${NANOSERVER_VERSION}
     depends_on:
       - solution
