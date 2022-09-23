@@ -81,9 +81,7 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
           <HeaderCdpMessageBar />
           {route && <Placeholder name="jss-main" rendering={route} />}
         </main>
-        <footer>
-          {route && <Placeholder name="jss-footer" rendering={route} />}
-        </footer>
+        <footer>{route && <Placeholder name="jss-footer" rendering={route} />}</footer>
       </div>
       {/* END CUSTOMIZATION */}
     </>
