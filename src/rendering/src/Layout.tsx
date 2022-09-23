@@ -27,6 +27,7 @@ interface LayoutProps {
 interface RouteFields {
   [key: string]: unknown;
   Title?: Field;
+  pageTitle?: Field;
 }
 
 const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
