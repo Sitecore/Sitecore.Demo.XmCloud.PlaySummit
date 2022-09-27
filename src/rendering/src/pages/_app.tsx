@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app';
 import { I18nProvider } from 'next-localization';
+import { SitecorePageProps } from 'lib/page-props';
 // DEMO TEAM CUSTOMIZATION - CDP integration. Per page layouts. Fonts and icons. etc.
 import { ReactElement, useEffect } from 'react';
 import Head from 'next/head';
@@ -15,12 +16,12 @@ import 'assets/css/main.css'; // DEMO TEAM CUSTOMIZATION - Different CSS file na
 // DEMO TEAM CUSTOMIZATION - Implement per page layouts to conditionally load commerce on some pages https://nextjs.org/docs/basic-features/layouts#per-page-layouts
 import { NextPage } from 'next';
 
-type NextPageWithLayout = NextPage & {
+type NextPageWithLayout<P = unknown, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactElement;
 };
 
-type AppPropsWithLayout = AppProps & {
-  Component: NextPageWithLayout;
+type AppPropsWithLayout = AppProps<SitecorePageProps> & {
+  Component: NextPageWithLayout<SitecorePageProps>;
 };
 // END CUSTOMIZATION
 
@@ -44,11 +45,11 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
   });
   // END CUSTOMIZATION
 
-  const { dictionary, ...rest } = pageProps;
-
   // DEMO TEAM CUSTOMIZATION - Per page layouts
+  const { dictionary } = pageProps;
+
   const getLayout = Component.getLayout ?? ((page) => page);
-  const component = getLayout(<Component {...rest} />);
+  const component = getLayout(<Component {...pageProps} />);
   // END CUSTOMIZATION
 
   // DEMO TEAM CUSTOMIZATION - Add head section and CDP integration
