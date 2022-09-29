@@ -1,6 +1,6 @@
 ﻿---
-ID: "2ba6c26d-76de-4ba5-bbb1-008aa85f423b"
-Parent: "a696e0bd-a926-4e29-9469-23d5844ff3e9"
+ID: "90cda7f5-f84b-4101-963c-100a0af66707"
+Parent: "45627908-3c0e-4849-a9e1-6f161a7b7514"
 Template: "7ff7c2d7-f5e1-57f1-a3f3-812418ac08aa"
 Path: /sitecore/content/PLAY/playwebsite/home/Landing Pages/Landing Page with Additional Content/Data/Three Col CTA
 BranchID: "03897603-e3eb-4777-b0b1-f106fda3ff91"
@@ -18,7 +18,7 @@ Languages:
       Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20220815T112640Z
+      Value: 20220830T111911Z
     - ID: "3f8b5931-7a77-5142-b1f0-60e70c054056"
       Hint: rightHeading
       Value: 100+
@@ -41,7 +41,7 @@ Languages:
       Value: Class aptent taciti
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a46f4ecb-44f9-48cf-8f5d-1c50cb5b7dc4"
+      Value: "9129508d-96e6-4987-817c-f5d707fdd51d"
     - ID: "9067f7da-50eb-5d2f-bd0d-157b59412cfa"
       Hint: rightDescription
       Value: eleifend nunc
@@ -54,4 +54,4 @@ Languages:
         sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220815T112640Z
+      Value: 20220830T111911Z

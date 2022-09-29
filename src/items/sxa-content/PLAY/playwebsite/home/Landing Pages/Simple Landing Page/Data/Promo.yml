@@ -1,6 +1,6 @@
 ﻿---
-ID: "bf9f4ae6-cb59-4340-b18f-b6d12b1b5363"
-Parent: "3148271e-e136-4f0e-8f39-789daa5b0d86"
+ID: "ff3fb7f6-9be6-42aa-ab20-70875ff12595"
+Parent: "5f571676-b69b-42d6-a9f7-6382d097afbd"
 Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
 Path: /sitecore/content/PLAY/playwebsite/home/Landing Pages/Simple Landing Page/Data/Promo
 BranchID: "6c07c9a2-87c4-418f-aa22-9e5d6c382e9e"
@@ -13,15 +13,18 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
       Hint: PromoText2
-      Value: Sed commodo eu ex ut consequat. Sed consectetur, magna a gravida convallis, turpis sem egestas ipsum, eget tincidunt ex nisl in sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas mattis, metus id efficitur porta, risus tellus feugiat enim, vitae tempor dolor eros at nisl. Nam egestas ante eu aliquam sollicitudin.
+      Value: Sed commodo eu ex ut consequat. Sed consectetur, magna a gravida convallis, turpis sem egestas.&nbsp;
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20220815T112517Z
+      Value: 20220830T111857Z
     - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
       Hint: PromoText
-      Value: In massa augue, lacinia sed imperdiet vel, fringilla id enim.
+      Value: In massa augue, lacinia sed imperdiet vel, fringilla id enim.&nbsp;Maecenas mattis, metus id efficitur porta.
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -33,20 +36,23 @@ Languages:
     - ID: "739c6cc2-0031-463d-9599-13478fd50ee3"
       Hint: PromoIcon2
       Value: |
-        <image mediaid="{16BD098F-8441-43C9-A08F-3E2251D0F18E}" />
+        <image mediaid="{CCAA3DA2-F72A-4AED-8B44-674BBD9DC5A6}" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "eb554c61-cf5a-42e2-ae72-496575b0725c"
+      Value: "c51e76b6-58e4-4002-9e97-b87636c53e5a"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\nko@sitecore.net
     - ID: "c6e604c3-5371-4e67-83df-a09a5ea66249"
       Hint: PromoText3
-      Value: Cras tortor nulla, mollis ut feugiat ac.
+      Value: |
+        Cras tortor nulla, mollis ut feugiat ac.&nbsp;
+        
+        Nam egestas ante eu aliquam sollicitudin.&nbsp;Sed consetur.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220815T112517Z
+      Value: 20220830T111857Z
     - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
       Hint: PromoLink
       Value: |
@@ -54,4 +60,4 @@ Languages:
     - ID: "f94b9858-c439-4291-863b-757b536c8b65"
       Hint: PromoIcon
       Value: |
-        <image mediaid="{08DB49A9-9B48-42FE-8E62-882CC6346891}" />
+        <image mediaid="{08DB49A9-9B48-42FE-8E62-882CC6346891}" ></image>

@@ -1,6 +1,6 @@
 ﻿---
-ID: "bf2e1f62-5f4f-4d00-bb15-d57e26aa545c"
-Parent: "a696e0bd-a926-4e29-9469-23d5844ff3e9"
+ID: "3b30072a-14f9-4cfa-8a6b-0fb8a45f60d7"
+Parent: "45627908-3c0e-4849-a9e1-6f161a7b7514"
 Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
 Path: /sitecore/content/PLAY/playwebsite/home/Landing Pages/Landing Page with Additional Content/Data/Promo 2
 BranchID: "03897603-e3eb-4777-b0b1-f106fda3ff91"
@@ -21,7 +21,7 @@ Languages:
       Value: Phasellus aliquet, nunc non condimentum euismod, orci magna rhoncus lectus, at faucibus libero risus vitae magna. Mauris pretium eleifend ante bibendum imperdiet. Fusce iaculis lacus augue, ac venenatis magna pharetra at. Proin tristique sem eu arcu tempus, vitae hendrerit nulla bibendum. Pellentesque elementum mauris et dolor interdum accumsan.
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20220815T112640Z
+      Value: 20220830T111911Z
     - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
       Hint: PromoText
       Value: Sed consectetur, magna a gravida convallis, turpis sem.
@@ -33,13 +33,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\nko@sitecore.net
-    - ID: "739c6cc2-0031-463d-9599-13478fd50ee3"
-      Hint: PromoIcon2
-      Value: |
-        <image mediaid="{16BD098F-8441-43C9-A08F-3E2251D0F18E}" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9b0e6286-f213-44da-972a-2a5131366fff"
+      Value: "e69c1ceb-9e13-40ef-abc9-4eb8b8a58fca"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -49,7 +45,7 @@ Languages:
       Value: Cras tortor nulla, mollis ut feugiat ac.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220815T112640Z
+      Value: 20220830T111911Z
     - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
       Hint: PromoLink
       Value: |
@@ -57,4 +53,4 @@ Languages:
     - ID: "f94b9858-c439-4291-863b-757b536c8b65"
       Hint: PromoIcon
       Value: |
-        <image mediaid="{16BD098F-8441-43C9-A08F-3E2251D0F18E}" />
+        <image mediaid="{16BD098F-8441-43C9-A08F-3E2251D0F18E}" ></image>

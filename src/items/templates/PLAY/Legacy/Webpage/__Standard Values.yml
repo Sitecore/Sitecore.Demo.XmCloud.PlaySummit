@@ -33,7 +33,7 @@ SharedFields:
           md="{C8C6EFD2-E574-4FD9-8833-4C5D6A23042F}" />
         <p
           uid="{A1C3B825-8C7A-5D67-85AF-D877DA0A1816}"
-          key=""
+          key="headless-header"
           md="{2BDBF7A5-2830-586D-BADB-95A33FA429A3}" />
         <p
           uid="{4C73E177-7D69-56C2-86DA-2945966D7A9A}"
@@ -41,7 +41,7 @@ SharedFields:
           md="{284D388A-9D4E-4742-A298-EC6871592D4B}" />
         <p
           uid="{8C6B98B5-1E4D-5868-9019-BF85141D3ABC}"
-          key=""
+          key="headless-footer"
           md="{CC2CF2D1-033E-5D27-BA34-254D30F146CD}" />
         <r
           rname="Header"

@@ -1,13 +1,15 @@
 ﻿---
-ID: "45627908-3c0e-4849-a9e1-6f161a7b7514"
-Parent: "511d8f7b-c879-4abb-927b-808bf97e64af"
-Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
-Path: /sitecore/content/PLAY/playwebsite/home/Landing Pages/Landing Page with Additional Content/Data
-BranchID: "03897603-e3eb-4777-b0b1-f106fda3ff91"
+ID: "f2f5520e-36f0-4d8a-b4e6-35e0edc712f1"
+Parent: "36d4f20f-d002-4a83-8749-1cc8f47b27d0"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Styles/Promo/Promo Accent Orange
 SharedFields:
-- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
-  Hint: __Originator
-  Value: "{760B622D-24D8-4B41-99A0-4A8DCF1966E5}"
+- ID: "09147fb2-ebfb-4949-8c8e-26a424409d5e"
+  Hint: Value
+  Value: "accent-orange"
+- ID: "69bb49f3-da64-4b0e-abd6-184b832ff6ab"
+  Hint: Allowed Renderings
+  Value: "{2492BAC4-DA07-4C86-87F0-9873D40E2276}"
 Languages:
 - Language: en
   Versions:
@@ -15,7 +17,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20220830T111910Z
+      Value: 20220811T132144Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -26,11 +28,11 @@ Languages:
         sitecore\nko@sitecore.net
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "341a1bff-9ee7-4a6b-8019-30c02550c351"
+      Value: "fbf9f949-2d64-480a-b321-b2c7e6070e3a"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220830T111910Z
+      Value: 20220826T100823Z
