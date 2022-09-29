@@ -44,8 +44,12 @@
                 "path": "/sitecore/templates/Branches/Project/PLAY"
             },
             {
-                "name": "standard-template-fallback",
-                "path": "/sitecore/templates/System/Templates/Standard template"
+                "name": "content-hub-default-template",
+                "path": "/sitecore/templates/CMP/Content Hub Entity"
+            },
+            {
+                "name": "enable-language-fallback-default",
+                "path": "/sitecore/templates/System/Templates/Sections/Advanced/Advanced/__Enable item fallback"
             }
         ]
     }
