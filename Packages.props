@@ -18,9 +18,11 @@
     <PackageReference Update="Sitecore.JavaScriptServices.ViewEngine" Version="20.0.0" />
     <PackageReference Update="Sitecore.Services.GraphQL" Version="6.1.0" />
     <PackageReference Update="Sitecore.Services.GraphQL.EdgeSchema" Version="6.0.0" />
+    <!-- DEMO TEAM CUSTOMIZATION - Add Content Hub references -->
     <PackageReference Update="Sitecore.Connector.CMP" Version="5.*" />
     <PackageReference Update="Sitecore.Connector.CMP.TaxonomyProvider" Version="5.*" />
     <PackageReference Update="Sitecore.Connector.ContentHub.DAM" Version="5.*" />
     <PackageReference Update="Stylelabs.M.Sdk.WebClient" Version="4.1.*" />
+    <!-- END CUSTOMIZATION -->
   </ItemGroup>
 </Project>

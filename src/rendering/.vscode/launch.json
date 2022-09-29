@@ -11,6 +11,7 @@
       "skipFiles": ["<node_internals>/**"],
       "port": 9229
     },
+    // DEMO TEAM CUSTOMIZATION - Add configurations
     {
       "name": "Next.js: debug server-side",
       "type": "node-terminal",
@@ -35,5 +36,6 @@
         "action": "debugWithChrome"
       }
     }
+    // END CUSTOMIZATION
   ]
 }
