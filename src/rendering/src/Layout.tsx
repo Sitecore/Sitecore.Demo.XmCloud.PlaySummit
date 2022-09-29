@@ -76,13 +76,13 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
       {/* DEMO TEAM CUSTOMIZATION - Add CSS classes when Sitecore editors are active. Add HeaderCdpMessageBar. Custom placeholder names. Remove sections inner divs. */}
       <div className={mainClassPageEditing}>
         <header className={isExperienceEditorActiveCssClass}>
-          {route && <Placeholder name="jss-header" rendering={route} />}
+          {route && <Placeholder name="headless-header" rendering={route} />}
         </header>
         <main className={isExperienceEditorActiveCssClass}>
           <HeaderCdpMessageBar />
-          {route && <Placeholder name="jss-main" rendering={route} />}
+          {route && <Placeholder name="headless-main" rendering={route} />}
         </main>
-        <footer>{route && <Placeholder name="jss-footer" rendering={route} />}</footer>
+        <footer>{route && <Placeholder name="headless-footer" rendering={route} />}</footer>
       </div>
       {/* END CUSTOMIZATION */}
     </>
