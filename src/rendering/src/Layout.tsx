@@ -80,9 +80,9 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
         </header>
         <main className={isExperienceEditorActiveCssClass}>
           <HeaderCdpMessageBar />
-            {route && <Placeholder name="headless-main" rendering={route} />}
+          {route && <Placeholder name="headless-main" rendering={route} />}
         </main>
-            <footer>{route && <Placeholder name="headless-footer" rendering={route} />}</footer>
+        <footer>{route && <Placeholder name="headless-footer" rendering={route} />}</footer>
       </div>
       {/* END CUSTOMIZATION */}
     </>
