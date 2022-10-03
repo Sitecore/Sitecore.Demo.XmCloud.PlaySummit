@@ -73,6 +73,13 @@ services:
       - nodejs
     labels:
       - "traefik.enable=true"
+      # DEMO TEAM CUSTOMIZATION - Add CORS headers to fix CORS issues in Experience Editor with Next.js 12.2 and newer
+      - "traefik.http.middlewares.rendering-headers.headers.forceSTSHeader=true"
+      - "traefik.http.middlewares.rendering-headers.headers.stsSeconds=31536000"
+      - "traefik.http.middlewares.rendering-headers.headers.accesscontrolallowmethods=GET,POST,OPTIONS"
+      - "traefik.http.middlewares.rendering-headers.headers.accesscontrolalloworiginlist=https://${CM_HOST}"
+      - "traefik.http.routers.rendering-secure.middlewares=rendering-headers"
+      # END CUSTOMIZATION
       - "traefik.http.routers.rendering-secure.entrypoints=websecure"
       - "traefik.http.routers.rendering-secure.rule=Host(`${RENDERING_HOST}`)"
       - "traefik.http.routers.rendering-secure.tls=true"
