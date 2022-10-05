@@ -57,4 +57,4 @@ const Section = (props: SectionProps): JSX.Element => {
   );
 };
 
-export default Section;
+export const Default = Section;
