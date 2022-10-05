@@ -7,6 +7,9 @@ SharedFields:
 - ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
   Hint: Signature
   Value: footer
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -38,11 +41,11 @@ Languages:
         sitecore\nko@sitecore.net
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7c430e01-a1b6-4d0e-9c11-02227113c625"
+      Value: "d4d6e95d-02c6-4d09-b0a1-2ac122d4c83d"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220810T141929Z
+      Value: 20220825T093956Z
