@@ -33,7 +33,7 @@ Languages:
       Hint: __Revision
       Value: "d0d06af9-f08e-4d29-948a-282091eafe96"
     - ID: "957519d5-5c6b-40c0-b462-b1dac8f12a03"
-      Hint: Eyebrow
+      Hint: Eyebrow Title
       Value: $name
     - ID: "b536aa73-95d3-4472-95ec-cc02dfdc0633"
       Hint: ImageTransformation
