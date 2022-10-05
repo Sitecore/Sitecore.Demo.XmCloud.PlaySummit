@@ -97,8 +97,9 @@ SharedFields:
           s:rname="FullImageSection"
           s:ds="{BD8B0390-574A-57F3-B801-1C3A4F42B3D6}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par=""
-          s:ph="/headless-main" />
+          s:par="FieldNames&amp;Styles=%7B3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7D%7C%7BFF6391E2-EFC2-436F-85B1-C2AFA0A5F6D1%7D&amp;RenderingIdentifier"
+          s:ph="/headless-main"
+          s:ccb="Clear on publish" />
         <r
           uid="{FC631CCF-A3F7-597E-A43B-40D711F20F27}"
           p:after="r[@uid='{C7E7C2C7-EA54-5F17-BFF1-D4E624B9AD9E}']"
@@ -149,14 +150,14 @@ Languages:
         sitecore\superuser
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "338418c9-6362-4426-86f6-fdf0b9e562c5"
+      Value: "ecab1a1d-fdca-4e3d-81b1-eed85e0b867f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220811T070703Z
+      Value: 20221005T083033Z
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Payment Confirmed

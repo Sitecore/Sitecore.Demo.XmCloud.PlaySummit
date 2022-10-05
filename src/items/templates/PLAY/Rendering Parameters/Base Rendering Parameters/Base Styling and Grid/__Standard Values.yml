@@ -1,0 +1,27 @@
+﻿---
+ID: "cbb8008b-0063-4229-805e-c4993b258ceb"
+Parent: "7dd20ecb-6ac1-49ed-a6e2-c5d5327a0833"
+Template: "7dd20ecb-6ac1-49ed-a6e2-c5d5327a0833"
+Path: /sitecore/templates/Project/PLAY/Rendering Parameters/Base Rendering Parameters/Base Styling and Grid/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210520T085436Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d246b53f-01b5-43ea-88ad-f0e4627238c8"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221004T131154Z

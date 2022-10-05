@@ -13,18 +13,11 @@ SharedFields:
     <r xmlns:p="p" xmlns:s="s"
       p:p="1">
       <d
-        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
-        s:l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}">
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <p
           uid="{ED118F1D-A09D-4C65-9C17-C78B9AF7D3A1}">
           <p:d />
         </p>
-        <p
-          uid="{A1C3B825-8C7A-5D67-85AF-D877DA0A1816}"
-          s:key="headless-header" />
-        <p
-          uid="{8C6B98B5-1E4D-5868-9019-BF85141D3ABC}"
-          s:key="headless-footer" />
         <r
           uid="{1CB49545-D7F4-538D-9748-FAAD4753D3CB}">
           <p:d />
@@ -102,8 +95,9 @@ SharedFields:
           s:rname="FullImageSection"
           s:ds="{BD8B0390-574A-57F3-B801-1C3A4F42B3D6}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par=""
-          s:ph="/headless-main" />
+          s:par="FieldNames&amp;Styles=%7B3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7D%7C%7BFF6391E2-EFC2-436F-85B1-C2AFA0A5F6D1%7D&amp;RenderingIdentifier"
+          s:ph="/headless-main"
+          s:ccb="Clear on publish" />
         <r
           uid="{7CE7FF1B-EE7C-5885-B4C6-9560F0828013}"
           p:after="r[@uid='{34CDA3FD-BFC5-583D-8720-100D5EE194D7}']"
@@ -161,14 +155,14 @@ Languages:
         sitecore\superuser
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "64b10154-9a15-4fb9-81e6-72ca9a2e4c9c"
+      Value: "e67b6044-c6ef-445d-9119-48f35f91085f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220811T070703Z
+      Value: 20221005T082920Z
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Tickets

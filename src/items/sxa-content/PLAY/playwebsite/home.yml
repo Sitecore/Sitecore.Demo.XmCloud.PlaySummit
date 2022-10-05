@@ -60,8 +60,9 @@ SharedFields:
           s:rname="FullImageSection"
           s:ds="{BD8B0390-574A-57F3-B801-1C3A4F42B3D6}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par=""
-          s:ph="/headless-main" />
+          s:par="FieldNames&amp;Styles=%7B3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7D%7C%7BFF6391E2-EFC2-436F-85B1-C2AFA0A5F6D1%7D&amp;RenderingIdentifier"
+          s:ph="/headless-main"
+          s:ccb="Clear on publish" />
         <r
           uid="{004EEEA1-32B0-4582-BD0C-FA7EFFB14182}"
           p:after="r[@uid='{45FCA8EC-2A99-531D-B270-0389AB473563}']"
@@ -74,8 +75,9 @@ SharedFields:
           s:rname="FullImageSection"
           s:ds="{3FDC9247-F940-5DE3-BB56-9242835DD87B}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par=""
-          s:ph="/headless-main" />
+          s:par="FieldNames&amp;Styles=%7B3BC9EBFD-3ACD-4994-8D61-0BFEF358A70E%7D%7C%7B0CE71288-8AEB-4160-A418-3227CDC2402B%7D&amp;RenderingIdentifier"
+          s:ph="/headless-main"
+          s:ccb="Clear on publish" />
         <r
           uid="{47F9A467-6F47-5D35-9F6F-70D4FA338EC6}"
           p:after="r[@uid='{9FEB8407-087F-50FC-BCDD-4741F69796CC}']"
@@ -125,14 +127,14 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3fc19c4e-1d9e-4b6f-acde-f97116d3ef09"
+      Value: "2b913f6f-1872-4bfa-ac1a-bc28c4eeb9ca"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220811T070703Z
+      Value: 20221005T082512Z
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Home
