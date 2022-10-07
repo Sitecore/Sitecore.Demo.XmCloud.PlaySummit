@@ -53,7 +53,8 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
   let paths: StaticPath[] = [];
   let fallback: boolean | 'blocking' = 'blocking';
 
-  if (process.env.NODE_ENV !== 'development') {
+  // DEMO TEAM CUSTOMIZATION (next line) - Add DISABLE_SSG_FETCH environment variable check from JSS v21 to avoid SSG in the XM Cloud editing rendering host
+  if (process.env.NODE_ENV !== 'development' && !process.env.DISABLE_SSG_FETCH) {
     try {
       // Note: Next.js runs export in production mode
       paths = await sitemapFetcher.fetch(context);
