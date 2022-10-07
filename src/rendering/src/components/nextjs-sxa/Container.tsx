@@ -20,6 +20,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
   const containerStyles = props.params && props.params.Styles ? props.params.Styles : '';
   const styles = `${props.params.GridParameters} ${containerStyles}`.trimEnd();
   const phKey = `container-${props.params.DynamicPlaceholderId}`;
+  const id = props.params.RenderingIdentifier;
   let backgroundImage = props.params.BackgroundImage as string;
   let backgroundStyle: { [key: string]: string } = { backgroundImage: '' };
   let backgroundClass = '';
@@ -34,7 +35,7 @@ export const Default = (props: ComponentProps): JSX.Element => {
   }
 
   return (
-    <div className={`component container ${styles}`}>
+    <div className={`component container ${styles}`} id={id ? id : undefined}>
       <div className={`component-content ${backgroundClass}`} style={backgroundStyle}>
         <div className="row">
           <Placeholder name={phKey} rendering={props.rendering} />

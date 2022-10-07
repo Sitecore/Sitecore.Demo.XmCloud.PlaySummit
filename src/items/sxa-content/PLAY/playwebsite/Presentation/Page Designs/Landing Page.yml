@@ -6,7 +6,7 @@ Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Designs/Landing Page
 SharedFields:
 - ID: "0966b999-0d0e-4278-acc9-9da69d461fe6"
   Hint: PartialDesigns
-  Value: "{E56290B7-DAEB-4355-8C07-974CEB0D7941}|{4716C6D3-6452-4B7E-9F43-DA97E4CF0A14}|{462EFF9E-C56A-414A-9DE3-F0E913233070}"
+  Value: "{E56290B7-DAEB-4355-8C07-974CEB0D7941}|{462EFF9E-C56A-414A-9DE3-F0E913233070}"
 Languages:
 - Language: en
   Versions:
@@ -25,11 +25,11 @@ Languages:
         sitecore\nko@sitecore.net
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2732cabb-6f3b-4e76-8453-06e56801a282"
+      Value: "f8b1eb86-c40b-4c38-9bae-9ea1758a1844"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\nko@sitecore.net
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20220809T123703Z
+      Value: 20221005T121321Z
