@@ -16,3 +16,11 @@ footer {
 .container.container-narrow {
   @apply max-w-3xl;
 }
+
+#headless-main-empty {
+  @apply max-w-none px-0;
+
+  > .component-content > .row {
+    @apply block mx-0;
+  }
+}
