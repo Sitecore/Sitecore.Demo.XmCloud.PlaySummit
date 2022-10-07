@@ -21,9 +21,3 @@ Languages:
     - ID: "3df1996f-e6b3-52c9-82c7-c8ba54147c1f"
       Hint: callToActionLink
       Value: 
-    - ID: "c274d170-774b-58b5-9081-55c07aa74e5e"
-      Hint: cssClass
-      Value: section
-    - ID: "c33a502b-efa9-5058-a491-317ee68f743d"
-      Hint: brightness
-      Value: light

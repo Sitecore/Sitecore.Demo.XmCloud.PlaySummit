@@ -13,7 +13,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{6C69C92A-785B-4B73-B42E-D2BC043B241B}" />
+    <image mediaid="{46E05B4F-12AE-4231-8FDF-B9E6CA17F1FE}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -23,7 +23,7 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
           uid="{D0AEC7E7-7E64-5C7E-97EF-6C36273BBFC2}"
-          p:after="r[@uid='{A6605F66-C45A-5874-AE8B-06D8163F6E99}']"
+          p:before="*"
           s:rname="HeaderBanner"
           s:ds="{D7AFB185-3FDE-54E1-A990-0DC6D7294A4B}"
           s:id="{FC5B8C36-8C49-54FD-94F3-C5AD21446CC4}"
@@ -35,8 +35,9 @@ SharedFields:
           s:rname="Section"
           s:ds="{6E850146-8A03-5747-9A7C-B1C8F6AC9295}"
           s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
-          s:par=""
-          s:ph="/headless-main/sxa-main/container-1" />
+          s:par="FieldNames&amp;Styles=%7BAAD7C78F-EA7A-464F-9289-334EA001F38A%7D%7C%7B98006F93-D19D-44C8-A25D-CEC93528F129%7D&amp;RenderingIdentifier"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
         <r
           uid="{DE75C067-CF50-599C-97E7-A02BB1E3712A}"
           p:after="r[@uid='{816710CB-9F03-5860-8E7C-5938120B08F3}']"
@@ -58,8 +59,9 @@ SharedFields:
           s:rname="Section"
           s:ds="{F1F5E547-7884-548C-9EF5-6C122EA327F9}"
           s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
-          s:par=""
-          s:ph="/headless-main/sxa-main/container-1" />
+          s:par="FieldNames&amp;Styles=%7B98006F93-D19D-44C8-A25D-CEC93528F129%7D&amp;RenderingIdentifier"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
         <r
           uid="{0329B5A3-6404-5286-BB63-8670949781D0}"
           p:after="r[@uid='{EACCECDD-63DE-525D-ACD9-17943F70386E}']"
@@ -105,11 +107,12 @@ SharedFields:
           s:rname="Section"
           s:ds="{049289A3-D30D-5C40-8D66-F9B263C924C7}"
           s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
-          s:par=""
-          s:ph="/headless-main/sxa-main/container-1" />
+          s:par="FieldNames&amp;Styles&amp;RenderingIdentifier"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
         <r
           uid="{711722BD-8C6B-5F9E-A7A4-63E3EE0F5487}"
-          p:after="r[@uid='{D42B2686-19A9-5C64-B74B-423A08BDA2D7}']"
+          p:after="*[1=2]"
           s:rname="RequestInfoForm"
           s:id="{89A5B1C7-993A-58EF-BE4C-C3A171979277}"
           s:par=""

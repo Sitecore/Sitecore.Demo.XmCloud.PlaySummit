@@ -26,8 +26,9 @@ SharedFields:
           p:after="*[1=2]"
           s:ds="{174A7AFC-D923-58F3-BEF8-AD8CAAD8C5B9}"
           s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
-          s:par="CacheClearingBehavior=Clear on publish"
-          s:ph="headless-main" />
+          s:par="FieldNames&amp;Styles=%7B98006F93-D19D-44C8-A25D-CEC93528F129%7D%7C%7B1F69B9FA-24A7-435F-AFE5-16E05F34A21A%7D&amp;RenderingIdentifier"
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
       </d>
     </r>
 Languages:
@@ -38,20 +39,3 @@ Languages:
     - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
       Hint: __Lock
       Value: <r />
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20220826T063118Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\nko@sitecore.net
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "1cf5a466-f8b8-4cd5-9ac2-9905dd187aa7"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\nko@sitecore.net
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20220826T063240Z

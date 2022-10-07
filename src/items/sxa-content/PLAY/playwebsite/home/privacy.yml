@@ -13,7 +13,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{ADB6B0BF-641F-4918-9E73-98FE56630602}" />
+    <image mediaid="{4C54AE5D-CB14-48B3-88C7-28CBDD3BDB6D}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -25,7 +25,7 @@ SharedFields:
           uid="{B3825B6C-5987-4747-90A3-8B469AEFB642}"
           s:ds="{2434D7D4-060C-4BC0-9EA4-815FBBEC8AAC}"
           s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
-          s:par=""
+          s:par="FieldNames&amp;Styles=%7BAAD7C78F-EA7A-464F-9289-334EA001F38A%7D%7C%7B98006F93-D19D-44C8-A25D-CEC93528F129%7D&amp;RenderingIdentifier"
           s:ph="/headless-main/sxa-main/container-1"
           s:ccb="Clear on publish" />
       </d>

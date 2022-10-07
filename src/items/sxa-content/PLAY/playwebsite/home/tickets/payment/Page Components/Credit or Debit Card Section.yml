@@ -11,9 +11,3 @@ Languages:
     - ID: "05607296-e17f-567f-898f-46bb9665d619"
       Hint: title
       Value: Credit / Debit Card
-    - ID: "c274d170-774b-58b5-9081-55c07aa74e5e"
-      Hint: cssClass
-      Value: "section-news"
-    - ID: "c33a502b-efa9-5058-a491-317ee68f743d"
-      Hint: brightness
-      Value: dark

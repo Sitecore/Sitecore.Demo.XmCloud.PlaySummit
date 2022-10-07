@@ -17,9 +17,3 @@ Languages:
     - ID: "348777e9-0329-5c42-a43d-3db7d8a7a748"
       Hint: content
       Value: Our featured speakers showcase global industry leaders, offering insights into the technologies changing the sports world and our lives.
-    - ID: "c274d170-774b-58b5-9081-55c07aa74e5e"
-      Hint: cssClass
-      Value: "section-dark-pattern"
-    - ID: "c33a502b-efa9-5058-a491-317ee68f743d"
-      Hint: brightness
-      Value: dark

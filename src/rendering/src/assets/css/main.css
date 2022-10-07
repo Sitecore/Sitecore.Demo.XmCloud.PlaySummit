@@ -25,9 +25,6 @@
 @import './layout/grids.css';
 @import './layout/information-section.css';
 @import './layout/sections.css';
-@import './layout/section-news.css';
-@import './layout/section-speakers.css';
-@import './layout/section-sponsors.css';
 @import './layout/text.css';
 
 /* Tailwindify other components and pages from rest.css here */
