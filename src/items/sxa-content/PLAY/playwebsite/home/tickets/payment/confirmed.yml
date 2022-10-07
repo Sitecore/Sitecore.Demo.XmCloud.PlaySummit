@@ -7,7 +7,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{08F78470-1CE4-4BB0-BBCF-B5AF2E9BA654}" />
+    <image mediaid="{34C5D7E3-44C3-4202-86F1-8773B2DC1C70}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -17,7 +17,7 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
           uid="{E0626D73-FB56-55FA-A243-28F346FA84A1}"
-          p:after="r[@uid='{CAF7A494-424F-5FD7-9CBF-C57E4DC7F960}']"
+          p:before="*"
           s:rname="HeaderBanner"
           s:ds="{5D0B4957-862A-5712-B292-8E6910C175FA}"
           s:id="{FC5B8C36-8C49-54FD-94F3-C5AD21446CC4}"
@@ -46,12 +46,13 @@ SharedFields:
           s:ph="/headless-main/sxa-main/container-1/jss-section-content-{748A61CF-32EF-56DD-9EAC-4BEC7E82087E}-0" />
         <r
           uid="{C7E7C2C7-EA54-5F17-BFF1-D4E624B9AD9E}"
-          p:after="r[@uid='{B990ED4E-133F-5882-85D9-029C3FC927A5}']"
+          p:after="*[1=2]"
           s:rname="FullImageSection"
           s:ds="{BD8B0390-574A-57F3-B801-1C3A4F42B3D6}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par=""
-          s:ph="/headless-main/sxa-main/container-1" />
+          s:par="FieldNames&amp;Styles=%7B3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7D%7C%7BFF6391E2-EFC2-436F-85B1-C2AFA0A5F6D1%7D&amp;RenderingIdentifier"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
       </d>
     </r>
 Languages:

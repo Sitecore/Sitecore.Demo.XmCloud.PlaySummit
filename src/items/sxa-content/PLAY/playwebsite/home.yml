@@ -16,7 +16,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{4BF6EB1F-E1DB-4A7E-8817-C21BE4C6C427}" />
+    <image mediaid="{7D33C3E9-2ACC-4BE3-A5FD-C4BF1451FDA8}" />
 - ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
   Hint: __Security
   Value: |
@@ -66,8 +66,9 @@ SharedFields:
           s:rname="FullImageSection"
           s:ds="{BD8B0390-574A-57F3-B801-1C3A4F42B3D6}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par=""
-          s:ph="/headless-main/sxa-main/container-1" />
+          s:par="FieldNames&amp;Styles=%7B3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7D%7C%7BFF6391E2-EFC2-436F-85B1-C2AFA0A5F6D1%7D&amp;RenderingIdentifier"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
         <r
           uid="{004EEEA1-32B0-4582-BD0C-FA7EFFB14182}"
           p:after="r[@uid='{45FCA8EC-2A99-531D-B270-0389AB473563}']"
@@ -81,8 +82,9 @@ SharedFields:
           s:rname="FullImageSection"
           s:ds="{3FDC9247-F940-5DE3-BB56-9242835DD87B}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par=""
-          s:ph="/headless-main/sxa-main/container-1" />
+          s:par="FieldNames&amp;Styles=%7B3BC9EBFD-3ACD-4994-8D61-0BFEF358A70E%7D%7C%7B0CE71288-8AEB-4160-A418-3227CDC2402B%7D&amp;RenderingIdentifier"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
         <r
           uid="{47F9A467-6F47-5D35-9F6F-70D4FA338EC6}"
           p:after="r[@uid='{9FEB8407-087F-50FC-BCDD-4741F69796CC}']"
