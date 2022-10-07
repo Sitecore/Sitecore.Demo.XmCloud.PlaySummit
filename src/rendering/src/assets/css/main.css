@@ -25,6 +25,7 @@
 @import './layout/grids.css';
 @import './layout/information-section.css';
 @import './layout/sections.css';
+@import './layout/sxaLayout.css';
 @import './layout/text.css';
 
 /* Tailwindify other components and pages from rest.css here */
@@ -75,6 +76,7 @@
 /* nextjs-sxa */
 @import './components/nextjs-sxa/Navigation.css';
 @import './components/nextjs-sxa/Promo.css';
+@import './components/nextjs-sxa/RichText.css';
 @import './components/nextjs-sxa/Title.css';
 
 /* News */

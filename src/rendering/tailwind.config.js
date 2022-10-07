@@ -9,7 +9,33 @@ module.exports = {
   safelist: [
     'scChromeData',
     'scpm',
-    'bg-blue', // For CategoryBreadcrumb.stories.tsx
+    '!px-0',
+    {
+      pattern: /basis-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
+    {
+      pattern: /self-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
+    {
+      pattern: /order-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
+    {
+      pattern: /grow/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
+    {
+      pattern: /(m|p)(y|x|t|b|l|r)-/,
+      variants: ['sm', 'md', 'lg', 'xl', '2xl'],
+    },
+    {
+      pattern: /bg-/,
+    },
+    {
+      pattern: /text-/,
+    },
     'hidden'
   ],
   theme: {
