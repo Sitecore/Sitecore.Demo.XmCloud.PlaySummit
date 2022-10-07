@@ -40,9 +40,7 @@ const HeroSection = (props: HeroProps): JSX.Element => {
 
   const withoutCdp = !isCdpConfigured && (
     <>
-      <style scoped suppressHydrationWarning>
-        {css}
-      </style>
+      <style suppressHydrationWarning>{css}</style>
       <section className={`hero-section hero_${props.rendering.uid}`}>
         <div className="hero-background"></div>
         <div className="hero-container container">
