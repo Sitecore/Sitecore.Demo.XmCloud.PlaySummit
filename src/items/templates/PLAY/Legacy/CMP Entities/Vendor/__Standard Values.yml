@@ -81,11 +81,11 @@ SharedFields:
           ccb="Clear on publish" />
         <r
           rname="SelectedSponsorsGrid"
+          ds="{F8952B14-1095-45FB-B7D9-6AE55AB2934D}"
           id="{4C6CFD83-311B-5EA6-8F55-AA03251D5232}"
           par=""
           ph="/jss-main/jss-section-content-{CB0223C1-28B6-5F72-9FDC-50A7E3F4390F}-0"
           uid="{7F6D3984-3875-54C9-A6A6-7AFC7E9D3C6D}"
-          ds="{F8952B14-1095-45FB-B7D9-6AE55AB2934D}"
           ccb="Clear on publish" />
         <r
           rname="Footer"
@@ -100,36 +100,15 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20190614T161122Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
-    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
-      Hint: __Owner
-      Value: |
-        sitecore\Admin
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\Admin
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "ee922d9f-1858-4a93-81e3-122f4c9f0086"
     - ID: "a73286b1-7c15-46cf-b3c1-af1dc7e43afe"
       Hint: LogoTransformation
       Value: medium
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\sitecoredemo@sitecore.com
     - ID: "d57b5629-9801-4418-9088-8a8dfa8fc84c"
       Hint: Name
       Value: $name
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20220617T171500Z
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: $name

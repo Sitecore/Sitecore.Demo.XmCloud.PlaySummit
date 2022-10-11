@@ -25,7 +25,10 @@
 # Log files
 *.log*
 
+# sitecore
+# DEMO TEAM CUSTOMIZATION - Keep scjssconfig.json under source control
+# scjssconfig.json
+*.deploysecret.config
 
 # vercel
 .vercel
-# DEMO TEAM CUSTOMIZATION - Keep scjssconfig.json under source control
