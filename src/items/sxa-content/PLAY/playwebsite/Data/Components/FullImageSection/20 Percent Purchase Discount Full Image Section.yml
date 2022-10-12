@@ -12,6 +12,9 @@ Languages:
       Hint: callToActionLink
       Value: |
         <link text="Get Discount Code" linktype="external" url="/shop" anchor="" target="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221012T133251Z
     - ID: "46dd92a7-c1e9-566c-99e7-1b63c9eeafcf"
       Hint: position
       Value: left
