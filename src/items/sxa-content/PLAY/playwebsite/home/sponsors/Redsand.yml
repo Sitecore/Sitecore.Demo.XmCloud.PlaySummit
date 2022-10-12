@@ -23,6 +23,9 @@ Languages:
       Hint: Logo
       Value: |
         <image stylelabs-content-id="36821" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/36821/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/07e77ec5309c45a284a2ee3ef841e222?v=367250b7" mediaid="" stylelabs-content-type="Image" alt="Redsand logo" height="1200" width="1200" ></image>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221012T133248Z
     - ID: "5a1f6707-d155-4618-b051-966216449b1c"
       Hint: Description
       Value: |
