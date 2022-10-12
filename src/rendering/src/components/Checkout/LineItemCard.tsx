@@ -13,6 +13,7 @@ import { logAddToCart } from '../../services/CdpService';
 import Skeleton from 'react-loading-skeleton';
 import { getImageUrl, getProductSpecs } from '../../helpers/LineItemsHelpers';
 import Link from 'next/link';
+import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs';
 
 type LineItemCardProps = {
   lineItem: DLineItem;
@@ -25,6 +26,8 @@ const LineItemCard = (props: LineItemCardProps): JSX.Element => {
   const [removeLoading, setRemoveLoading] = useState(false);
 
   const product = useOcProduct(props.lineItem.ProductID);
+
+  const publicUrl = getPublicUrl();
 
   const handleRemoveLineItem = useCallback(async () => {
     setRemoveLoading(true);
@@ -65,7 +68,7 @@ const LineItemCard = (props: LineItemCardProps): JSX.Element => {
 
   const productImage = (
     <img
-      src={getImageUrl(props.lineItem) || '/assets/img/shop/category-placeholder.png'}
+      src={getImageUrl(props.lineItem) || `${publicUrl}/assets/img/shop/category-placeholder.png`}
       alt={props.lineItem.Product.Name}
     ></img>
   );
