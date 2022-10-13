@@ -1,6 +1,16 @@
 .section {
   @apply py-20 px-0;
 
+  &.section-full-left {
+    .section-content {
+      @apply max-w-[50em] my-0 mx-auto items-start;
+
+      .section-content-p {
+        @apply w-full text-left;
+      }
+    }
+  }
+
   .section-content {
     @include flex--center--column;
 
@@ -23,34 +33,17 @@
       }
     }
 
+    /* used in HeaderBanner */
     &-left {
       @apply items-start justify-start;
       @apply sm:pl-10 sm:w-full;
       @apply md:w-3/5 md:ml-0;
     }
 
+    /* used in NewsDetail */
     &.left-content {
       .section-content-p {
         @apply text-left;
-      }
-    }
-
-    &.full-content {
-      @apply w-full bg-cover bg-center bg-no-repeat;
-
-      .section-content-p {
-        @apply w-full text-left;
-      }
-    }
-
-    &.left-full-content {
-      max-width: 50em;
-      margin: 0 auto;
-      align-items: start;
-      justify-content: left;
-
-      .section-content-p {
-        @apply w-full text-left;
       }
     }
   }

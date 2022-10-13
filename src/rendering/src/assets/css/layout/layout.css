@@ -12,3 +12,19 @@ header {
 footer {
   @apply bg-gradient-to-br from-black to-black-dark;
 }
+
+.container.container-narrow {
+  @apply max-w-3xl;
+}
+
+.container.container-fullwidth {
+  @apply max-w-full;
+}
+
+#headless-main-empty {
+  @apply max-w-full px-0;
+
+  > .component-content > .row {
+    @apply block mx-0;
+  }
+}

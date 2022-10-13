@@ -32,9 +32,3 @@ Languages:
       Hint: callToActionLink
       Value: |
         <link id="{2D1D7ACA-9597-5CA6-85B2-9B04907E4298}" linktype="internal" text="Vendor Registration" querystring="" url="/PLAY/playwebsite/home" />
-    - ID: "c274d170-774b-58b5-9081-55c07aa74e5e"
-      Hint: cssClass
-      Value: "left-full"
-    - ID: "c33a502b-efa9-5058-a491-317ee68f743d"
-      Hint: brightness
-      Value: light

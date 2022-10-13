@@ -21,9 +21,3 @@ Languages:
       Hint: callToActionLink
       Value: |
         <link class="" id="{6CF37FF6-755C-5B1A-B5EB-63F03481DB4A}" querystring="" anchor="" title="" linktype="internal" text="Become a Sponsor" url="/PLAY/playwebsite/home/sponsors/Become a sponsor" />
-    - ID: "c274d170-774b-58b5-9081-55c07aa74e5e"
-      Hint: cssClass
-      Value: "section-sponsors"
-    - ID: "c33a502b-efa9-5058-a491-317ee68f743d"
-      Hint: brightness
-      Value: light

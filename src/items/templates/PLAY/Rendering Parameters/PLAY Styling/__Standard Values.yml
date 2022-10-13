@@ -1,0 +1,27 @@
+﻿---
+ID: "63878fd4-39e0-40ea-b01a-c64294587e4c"
+Parent: "3c13bf6c-32dd-4f40-bcc9-208b47f21bb5"
+Template: "3c13bf6c-32dd-4f40-bcc9-208b47f21bb5"
+Path: /sitecore/templates/Project/PLAY/Rendering Parameters/PLAY Styling/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "90057b93-41c2-4192-aee3-eba57ac6af7a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221004T132211Z
