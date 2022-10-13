@@ -1,7 +1,7 @@
-import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 const ThankYouHero = (): JSX.Element => {
-  const publicUrl = getPublicUrl();
+  const publicUrl = getPublicAssetUrl();
 
   return (
     <section className="thank-you-hero">

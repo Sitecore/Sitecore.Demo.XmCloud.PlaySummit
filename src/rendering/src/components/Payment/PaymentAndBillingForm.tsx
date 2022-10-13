@@ -1,10 +1,10 @@
 import { FormEvent } from 'react';
 import Router from 'next/router';
 import { logTicketPurchase } from '../../services/CdpService';
-import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 const PaymentAndBillingForm = (): JSX.Element => {
-  const publicUrl = getPublicUrl();
+  const publicUrl = getPublicAssetUrl();
 
   const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();

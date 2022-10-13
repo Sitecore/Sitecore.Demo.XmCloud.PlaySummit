@@ -11,7 +11,7 @@ import { isAuthenticationEnabled } from '../../services/AuthenticationService';
 import ClickOutside from '../ShopCommon/ClickOutside';
 import AccountPopup from './AccountPopup';
 import { dispatchDiscoverCartStatusListActionEvent } from '../../helpers/discover/CartStatusDispatcher';
-import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 export type ShopNavigationProps = {
   previewSearchProps?: PreviewSearchProps; // For Storybook support
@@ -30,7 +30,7 @@ const ShopNavigation = (props: ShopNavigationProps): JSX.Element => {
   const closeAccountPopup = () => setIsAccountPopupOpen(false);
   ClickOutside([accountPopupRef], closeAccountPopup);
 
-  const publicUrl = getPublicUrl();
+  const publicUrl = getPublicAssetUrl();
 
   const accountPopupActiveClass = isAccountPopupOpen ? 'active' : '';
   const accountPopupOpenClass = isAccountPopupOpen ? 'open' : '';

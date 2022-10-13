@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Category } from '../../models/Category';
 import CategoryBreadcrumb from '../../components/Navigation/CategoryBreadcrumb';
 import { getCategoryChildrenByCcid } from '../../helpers/CategoriesDataHelper';
-import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 type CategoryHeroProps = {
   category: Category;
@@ -13,7 +13,7 @@ const CategoryHero = ({ category }: CategoryHeroProps): JSX.Element => {
     return null;
   }
 
-  const publicUrl = getPublicUrl();
+  const publicUrl = getPublicAssetUrl();
   const categoryDisplayName = category.title ? category.title : category.name;
 
   const categoryChildren = getCategoryChildrenByCcid(category.ccid);

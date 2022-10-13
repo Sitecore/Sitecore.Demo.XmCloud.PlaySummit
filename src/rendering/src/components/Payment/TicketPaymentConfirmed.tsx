@@ -1,8 +1,8 @@
-import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs';
 import Link from 'next/link';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 const TicketPaymentConfirmed = (): JSX.Element => {
-  const publicUrl = getPublicUrl();
+  const publicUrl = getPublicAssetUrl();
 
   return (
     <div className="ticket-payment-confirmed">

@@ -13,7 +13,7 @@ import { logAddToCart } from '../../services/CdpService';
 import Skeleton from 'react-loading-skeleton';
 import { getImageUrl, getProductSpecs } from '../../helpers/LineItemsHelpers';
 import Link from 'next/link';
-import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 type LineItemCardProps = {
   lineItem: DLineItem;
@@ -27,7 +27,7 @@ const LineItemCard = (props: LineItemCardProps): JSX.Element => {
 
   const product = useOcProduct(props.lineItem.ProductID);
 
-  const publicUrl = getPublicUrl();
+  const publicUrl = getPublicAssetUrl();
 
   const handleRemoveLineItem = useCallback(async () => {
     setRemoveLoading(true);

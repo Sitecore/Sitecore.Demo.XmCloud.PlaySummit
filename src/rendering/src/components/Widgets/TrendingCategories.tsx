@@ -5,7 +5,7 @@ import { Action } from '@sitecore-discover/react';
 import { PreviewSearchWidgetProps } from '@sitecore-discover/ui';
 import Link from 'next/link';
 import { getCategoryByUrlPath } from '../../helpers/CategoriesDataHelper';
-import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 type Category = {
   id: string;
@@ -24,7 +24,7 @@ const TrendingCategories = ({
   trendingCategories,
   dispatch,
 }: TrendingCategoriesProps): JSX.Element => {
-  const publicUrl = getPublicUrl();
+  const publicUrl = getPublicAssetUrl();
 
   const changeKeyphrase: (text: string) => void = debounce(
     (text) => {

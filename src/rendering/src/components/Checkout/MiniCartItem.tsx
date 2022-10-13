@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt } from '@fortawesome/free-regular-svg-icons';
 import { getImageUrl, getProductSpecs } from '../../helpers/LineItemsHelpers';
 import { logAddToCart } from '../../services/CdpService';
-import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 type MiniCartItemProps = {
   lineItem: DLineItem;
@@ -17,7 +17,7 @@ const MiniCartItem = (props: MiniCartItemProps): JSX.Element => {
   const dispatch = useAppDispatch();
   const [loading, setLoading] = useState(false);
 
-  const publicUrl = getPublicUrl();
+  const publicUrl = getPublicAssetUrl();
 
   const handleRemoveItem = useCallback(async () => {
     setLoading(true);
