@@ -64,7 +64,6 @@
     <PackageReference Include="Sitecore.XmCloud.Assemblies" />
     <PackageReference Include="Sitecore.Assemblies.SitecoreHeadlessServicesServer" />
     <PackageReference Include="Sitecore.Connector.CMP" />
-    <PackageReference Include="Sitecore.Connector.ContentHub.DAM" />
     <PackageReference Include="Sitecore.JavaScriptServices.ViewEngine" />
     <PackageReference Include="Sitecore.Services.GraphQL" />
     <PackageReference Include="Sitecore.Services.GraphQL.EdgeSchema" />
