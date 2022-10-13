@@ -12,10 +12,6 @@
     },
     "transforms": [
         {
-            "xdtPath": "/xdts/App_Config/",
-            "targetPath": "/App_Config/"
-        },
-        {
             "xdtPath": "/xdts/",
             "targetPath": "/"
         }
