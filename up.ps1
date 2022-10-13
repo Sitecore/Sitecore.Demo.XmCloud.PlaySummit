@@ -142,6 +142,7 @@ if ($LASTEXITCODE -ne 0) {
     Write-Error "Serialization push failed, see errors above."
 }
 
+# DEMO TEAM CUSTOMIZATION - Restart CM after deserialization to clear the caches
 Invoke-WebRequest https://$xmCloudHost/Utilities/Restart.aspx
 
 # DEMO TEAM CUSTOMIZATION - Moved index rebuild here.
