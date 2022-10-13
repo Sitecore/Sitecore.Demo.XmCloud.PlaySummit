@@ -5,10 +5,10 @@ import {
   withDatasourceCheck,
   LayoutServicePageState,
   useSitecoreContext,
-  getPublicUrl,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { News } from 'src/types/news';
+import { getPublicImgUrl } from '../../../src/helpers/PublicUrlHelper';
 
 type NewsGridProps = ComponentProps & {
   fields: {
@@ -21,7 +21,7 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
 
   const isPageEditing = sitecoreContext.pageState === LayoutServicePageState.Edit;
   const hasNews = !!props.fields;
-  const publicUrl = getPublicUrl();
+  const publicUrl = getPublicImgUrl();
 
   !hasNews && console.warn('Missing Datasource Item');
 
