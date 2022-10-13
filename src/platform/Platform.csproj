@@ -74,7 +74,6 @@
     <Content Include="App_Config\Include\Sitecore.Media.config" />
     <Content Include="App_Config\Include\Sitecore.Demo.Edge.Website.config" />
     <Content Include="App_Config\Include\Sitecore.Demo.Edge.Website.Custom.config" />
-    <Content Include="App_Config\Include\Sitecore.Demo.Edge.Website.Hotfixes.MImageCommand.config" />
     <Content Include="sitecore\shell\Themes\Standard\EdgeIcons.zip" />
     <Content Include="Utilities\ClearAllCaches.aspx" />
     <Content Include="Utilities\IndexRebuild.aspx" />
@@ -90,8 +89,6 @@
     <Compile Include="FieldSerializer\DemoImageFieldSerializer.cs" />
     <Compile Include="FieldSerializer\GetDemoImageFieldSerializer.cs" />
     <Compile Include="FieldMapping\DemoFieldTypeFactoryStore.cs" />
-    <Compile Include="Hotfixes\MImageCommand.cs" />
-    <Compile Include="Hotfixes\MImageControl.cs" />
     <Compile Include="Pipelines\LoadBalancingSchemeFix.cs" />
     <Compile Include="Pipelines\PublishSyncedItem.cs" />
     <Compile Include="Pipelines\DemoCmpFieldMapping.cs" />
