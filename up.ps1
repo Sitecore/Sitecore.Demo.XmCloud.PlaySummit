@@ -142,6 +142,8 @@ if ($LASTEXITCODE -ne 0) {
     Write-Error "Serialization push failed, see errors above."
 }
 
+Invoke-WebRequest https://$xmCloudHost/Utilities/Restart.aspx
+
 # DEMO TEAM CUSTOMIZATION - Moved index rebuild here.
 # Rebuild indexes
 Write-Host "Rebuilding indexes ..." -ForegroundColor Green
