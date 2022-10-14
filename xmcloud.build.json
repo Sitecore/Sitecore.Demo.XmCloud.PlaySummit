@@ -9,5 +9,11 @@
             "lintCommand": "lint",
             "startCommand": "start:production"
         }
-    }
+    },
+    "transforms": [
+        {
+            "xdtPath": "/xdts/",
+            "targetPath": "/"
+        }
+    ]
 }

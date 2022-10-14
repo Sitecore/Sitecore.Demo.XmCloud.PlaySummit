@@ -19,6 +19,12 @@
                 "database": "core"
             },
             {
+                "name": "image-field-type",
+                "path": "/sitecore/system/Field types/Simple Types/Image",
+                "scope": "singleItem",
+                "database": "core"
+            },
+            {
                 "name": "languages",
                 "path": "/sitecore/system/Languages",
                 "scope": "descendantsOnly",
