@@ -1,0 +1,27 @@
+﻿---
+ID: "3e1d82db-024b-4f31-a89f-ac012e9941ea"
+Parent: "0a875884-eeec-4165-8603-b21eb47a0c96"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/PLAY/Rendering Parameters/FEAASComponent/Fields/FEAASComponentHTML
+SharedFields:
+- ID: "9cd5874f-0eed-481c-8e75-ae162e613b59"
+  Hint: Exclude From Text Search
+  Value: 1
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: FEAAS Component HTML
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221013T190808Z

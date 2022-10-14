@@ -107,6 +107,17 @@ services:
       SITECORE_FedAuth_dot_Auth0_dot_Domain: ${SITECORE_FedAuth_dot_Auth0_dot_Domain}
       SITECORE_FedAuth_dot_Auth0_dot_Audience: ${SITECORE_FedAuth_dot_Auth0_dot_Audience}
       SITECORE_FedAuth_dot_Auth0_dot_LogoutRedirect: ${SITECORE_FedAuth_dot_Auth0_dot_LogoutRedirect}
+      # DEMO TEAM CUSTOMIZATION - Enable CH connector through an XDT file to support XM Cloud
+      # SITECORE_AppSettings_cmpEnabled__define: ${SITECORE_CMP_ENABLED}
+      # SITECORE_AppSettings_damEnabled__define: ${SITECORE_DAM_ENABLED}
+      # END CUSTOMIZATION
+      Sitecore_ConnectionStrings_CMP_dot_ContentHub: ${SITECORE_CMP_ContentHub}
+      Sitecore_ConnectionStrings_CMP_dot_ServiceBusEntityPathIn: ${SITECORE_CMP_Service_ServiceBusEntityPathIn}
+      Sitecore_ConnectionStrings_CMP_dot_ServiceBusSubscription: ${SITECORE_CMP_Service_ServiceBusSubscription}
+      Sitecore_ConnectionStrings_CMP_dot_ServiceBusEntityPathOut: ${SITECORE_CMP_Service_ServiceBusEntityPathOut}
+      Sitecore_ConnectionStrings_DAM_dot_ContentHub: ${SITECORE_DAM_ContentHub}
+      Sitecore_ConnectionStrings_DAM_dot_SearchPage: ${SITECORE_DAM_SearchPage}
+      Sitecore_ConnectionStrings_DAM_dot_ExternalRedirectKey: ${SITECORE_DAM_ExternalRedirectKey}
     healthcheck:
       test: ["CMD", "powershell", "-command", "C:/Healthchecks/Healthcheck.ps1"]
       timeout: 300s
