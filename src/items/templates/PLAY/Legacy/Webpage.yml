@@ -9,7 +9,10 @@ SharedFields:
   Value: Apps/16x16/routes.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
-  Value: "{B36BA9FD-0DC0-49C8-BEA2-E55D70E6AF28}"
+  Value: |
+    {B36BA9FD-0DC0-49C8-BEA2-E55D70E6AF28}
+    {47151711-26CA-434E-8132-D3E0B7D26683}
+    {6650FB34-7EA1-4245-A919-5CC0F002A6D7}
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 500
@@ -20,3 +23,7 @@ Languages:
 - Language: en
   Versions:
   - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221012T133228Z

@@ -1,0 +1,55 @@
+﻿---
+ID: "a40986e4-01be-45f8-8e64-33995a2abd1a"
+Parent: "13f126f8-089c-4c94-a800-7a73c6659b16"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Partial Designs/Page Content/Sponsor Content
+SharedFields:
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
+  Hint: Signature
+  Value: "sponsor-content"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{84269776-89F6-4897-85D7-C71283E5E0C5}"
+          p:before="*"
+          s:id="{DC5B6248-AD97-440A-AFBD-CC6392F76D9F}"
+          s:par="CacheClearingBehavior=Clear on publish"
+          s:ph="headless-main" />
+        <r
+          uid="{C3759F20-E647-4198-BFD3-122B3A36CCEC}"
+          p:after="*[1=2]"
+          s:id="{FFC3C7F5-A23A-45C9-99F7-48EEB7CD97DF}"
+          s:par="CacheClearingBehavior=Clear on publish"
+          s:ph="headless-main" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220830T132437Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "131bea78-634f-4aa8-b199-c63e3b9c8d2c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220830T133215Z

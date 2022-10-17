@@ -1,0 +1,35 @@
+﻿---
+ID: "faab6710-c1aa-44c7-9f61-5789da2be984"
+Parent: "2dc25a94-3fd5-4a15-88a5-fa038cb3d035"
+Template: "1105b8f8-1e00-426b-bf1f-c840742d827b"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Designs/Webpage without News Grid
+SharedFields:
+- ID: "0966b999-0d0e-4278-acc9-9da69d461fe6"
+  Hint: PartialDesigns
+  Value: "{E56290B7-DAEB-4355-8C07-974CEB0D7941}|{DEC14166-5327-4C62-A637-2F1191F38826}|{816F91B6-BDD2-4BCC-81FD-D6092F8EB3E7}|{462EFF9E-C56A-414A-9DE3-F0E913233070}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221005T103934Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "abdfc5cf-d0a1-4478-8078-00547f54d4ae"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221006T135809Z

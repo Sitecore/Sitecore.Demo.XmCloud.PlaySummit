@@ -144,12 +144,4 @@ services:
       # DEMO TEAM CUSTOMIZATION - Custom variables to allow override in AKS
       RENDERING_HOST_ENDPOINT_URI: "${RENDERING_HOST_INTERNAL_URI}/api/editing/render"
       RENDERING_HOST_PUBLIC_URI: "https://${RENDERING_HOST}"
-      # DEMO TEAM CUSTOMIZATION - Custom integrations
-      Sitecore_ConnectionStrings_CMP.ContentHub: ${CMP_ContentHub}
-      Sitecore_ConnectionStrings_CMP.ServiceBusEntityPathIn: ${CMP_ServiceBusEntityPathIn}
-      Sitecore_ConnectionStrings_CMP.ServiceBusSubscription: ${CMP_ServiceBusSubscription}
-      Sitecore_ConnectionStrings_CMP.ServiceBusEntityPathOut: ${CMP_ServiceBusEntityPathOut}
-      Sitecore_ConnectionStrings_DAM.ContentHub: ${DAM_ContentHub}
-      Sitecore_ConnectionStrings_DAM.SearchPage: ${DAM_SearchPage}
-      Sitecore_ConnectionStrings_DAM.ExternalRedirectKey: ${DAM_ExternalRedirectKey}
     entrypoint: powershell -Command "& C:/tools/entrypoints/iis/Development.ps1"

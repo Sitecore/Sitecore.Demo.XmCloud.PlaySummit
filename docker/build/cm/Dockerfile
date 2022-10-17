@@ -25,10 +25,6 @@ COPY --from=solution /artifacts/sitecore/ ./
 COPY --from=solution /artifacts/src/rendering/public ./
 
 # Perform transforms
-RUN (Get-ChildItem -Path 'C:\\inetpub\\wwwroot\\transforms\\web*.xdt' -Recurse ) | `
+RUN (Get-ChildItem -Path 'C:\\inetpub\\wwwroot\\xdts\\web*.xdt' -Recurse ) | `
     ForEach-Object { & 'C:\\tools\\scripts\\Invoke-XdtTransform.ps1' -Path 'C:\\inetpub\\wwwroot\\web.config' -XdtPath $_.FullName `
-    -XdtDllPath 'C:\\tools\\bin\\Microsoft.Web.XmlTransform.dll'; };
-
-RUN (Get-ChildItem -Path 'C:\\inetpub\\wwwroot\\transforms\\app_config\\ConnectionStrings*.xdt' -Recurse ) | `
-    ForEach-Object { & 'C:\\tools\\scripts\\Invoke-XdtTransform.ps1' -Path 'C:\\inetpub\\wwwroot\\app_config\\ConnectionStrings.config' -XdtPath $_.FullName `
     -XdtDllPath 'C:\\tools\\bin\\Microsoft.Web.XmlTransform.dll'; };

@@ -1,0 +1,155 @@
+﻿---
+ID: "9ca06bd0-cd73-4718-9a3d-d000d07ec771"
+Parent: "e97d6c5a-eac7-4ac9-baba-fa6bb1b1b1d6"
+Template: "a12ef6de-1e2a-4d9b-82b4-dffb70189e52"
+Path: /sitecore/system/Settings/Feature/Experience Accelerator/Tailwind/Tailwind Grid Definition
+SharedFields:
+- ID: "0b4d72a7-be75-4690-805d-ddd564b1dd94"
+  Hint: GridFieldParserType
+  Value: Sitecore.XA.Foundation.Grid.Parser.GridFieldParser,Sitecore.XA.Foundation.Grid
+- ID: "2105078e-c785-4db4-9bbf-ff78f2179a17"
+  Hint: Row Class
+  Value: "row flex flex-wrap -mx-4"
+- ID: "21624c80-7821-4eed-b788-c716c5c1a088"
+  Hint: Name
+  Value: Tailwind
+- ID: "228606ca-de6d-4803-af3c-a420c90f315d"
+  Hint: RenderingParametersFieldType
+  Value: Sitecore.XA.Foundation.Grid.Fields.FieldRenderers.GridRenderingParametersFieldRenderer, Sitecore.XA.Foundation.Grid
+- ID: "2341030d-19ba-46e1-91fe-9df617284932"
+  Hint: Wrapping Tag
+  Value: div
+- ID: "549021d8-f27f-4217-805c-20d686e470d9"
+  Hint: Fixed
+  Value: container
+- ID: "91193e28-c9c9-49eb-916d-87e5af0f1e34"
+  Hint: Flex
+  Value: "container-fullwidth"
+- ID: "bc8986b2-5872-466f-afeb-390c9a3edaa4"
+  Hint: Wrapping Class
+  Value: "row flex flex-wrap -mx-4"
+- ID: "bcee3e9e-e00c-48ae-b723-a0741fed842b"
+  Hint: Row Container Class
+  Value: "container-fullwidth flex flex-wrap -mx-4"
+- ID: "cbb899cd-dad4-4b72-841a-a638e83e5fe5"
+  Hint: DefaultGridParameters
+  Value: "{F61E01E9-711A-4C99-AE30-4E28463E1DF7}"
+- ID: "dc986105-2cd6-4a4f-9b2d-57fbb4858e56"
+  Hint: GridBodyViewPath
+  Value: ~/Views/SxaLayout/Bootstrap5Body.cshtml
+- ID: "e0b0a836-40bd-4526-998a-649d3af28ad5"
+  Hint: Grid Theme
+  Value: "{73953B64-B148-476C-A7E0-C5E7CBD3CA2C}"
+Languages:
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Bootstrap 5
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b99458b7-889b-46a9-8ca3-06e80885e4e3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220817T074711Z
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Tailwind
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161215T094503Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        default\Anonymous
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0c39042a-8309-474a-bc1a-bcda52ab827b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220822T121637Z
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ブートストラップ5
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b99458b7-889b-46a9-8ca3-06e80885e4e3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220817T074711Z
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 引导程序 5
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b99458b7-889b-46a9-8ca3-06e80885e4e3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220817T074711Z

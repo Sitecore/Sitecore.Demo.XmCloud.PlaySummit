@@ -36,7 +36,7 @@ const InformationPageHero = (props: InformationPageHeroProps): JSX.Element => {
       <div className="content">
         <div className="image-container">
           {/* Purposefully not using a JSS Image component here to avoid width/height HTML attributes on the img tag */}
-          <img src={props.fields.Image.value?.src} alt="Image" loading="lazy" />
+          <img src={props.fields.Image?.value?.src} alt="Image" loading="lazy" />
         </div>
         <div className="gradient-container"></div>
         <div className="content-container">

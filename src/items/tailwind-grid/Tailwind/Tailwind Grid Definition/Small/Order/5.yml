@@ -1,0 +1,34 @@
+﻿---
+ID: "169c3e5e-4d56-4a33-af27-f7b318f4d0bd"
+Parent: "7d26899b-9603-41e2-85ba-42ae9d28eaec"
+Template: "cb3b3906-be80-4d9b-a2a4-038193da5422"
+Path: /sitecore/system/Settings/Feature/Experience Accelerator/Tailwind/Tailwind Grid Definition/Small/Order/5
+SharedFields:
+- ID: "591c584f-08a7-4dc6-9d58-1de178c404a2"
+  Hint: Class
+  Value: "sm:order-5"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161216T082352Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "881f3b40-356c-49a1-be3f-68aabc9471db"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220822T065147Z

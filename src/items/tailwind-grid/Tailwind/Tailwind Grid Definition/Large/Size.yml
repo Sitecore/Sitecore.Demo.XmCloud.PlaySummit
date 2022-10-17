@@ -1,0 +1,82 @@
+﻿---
+ID: "99d28df2-ec13-4c08-86f4-66bed53ad3af"
+Parent: "68104381-3c5c-4f78-abf9-7bb7c09b418f"
+Template: "5e32e75f-446a-412c-8ed8-922320ae9031"
+Path: /sitecore/system/Settings/Feature/Experience Accelerator/Tailwind/Tailwind Grid Definition/Large/Size
+SharedFields:
+- ID: "62ca1c9e-71a4-465f-835e-55bda7bb270b"
+  Hint: Type
+  Value: slider
+- ID: "7bb96072-0860-41dc-a908-3ccfdf46d30f"
+  Hint: Allow Empty Value
+  Value: 1
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Størrelse
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221013T172707Z
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: Komponentbredde.
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Größe
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: Komponentenbreite.
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161216T082214Z
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: Component width.
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: サイズ
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: コンポーネントの幅
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 尺寸
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: 组件宽度。

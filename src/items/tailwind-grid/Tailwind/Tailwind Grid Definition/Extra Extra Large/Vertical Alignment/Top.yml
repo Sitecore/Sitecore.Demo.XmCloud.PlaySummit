@@ -1,0 +1,38 @@
+﻿---
+ID: "8a19dfe5-0cdb-43cb-9eae-9bc545a1405b"
+Parent: "b288cea1-4392-4a38-bb5a-bac237f5a278"
+Template: "cb3b3906-be80-4d9b-a2a4-038193da5422"
+Path: /sitecore/system/Settings/Feature/Experience Accelerator/Tailwind/Tailwind Grid Definition/Extra Extra Large/Vertical Alignment/Top
+SharedFields:
+- ID: "55c117ef-46c0-4cdc-a309-82419983fd42"
+  Hint: NonNumeric
+  Value: 1
+- ID: "591c584f-08a7-4dc6-9d58-1de178c404a2"
+  Hint: Class
+  Value: "2xl:self-start"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T131717Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8a51c6f2-3f62-4eaa-a8b3-7ec228924aef"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220822T120126Z
