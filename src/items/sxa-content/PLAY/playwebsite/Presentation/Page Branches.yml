@@ -25,6 +25,10 @@ SharedFields:
             id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
             uid="FAD5E2F7DE7A46FFA11C40AC59632D3D"
             PageBranchId="{6C07C9A2-87C4-418F-AA22-9E5D6C382E9E}" />
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="728F8B4CD7104A9AAAA64CA49BD032C4"
+            PageBranchId="{C21CB9F5-9D4C-4904-B199-538835128FA3}" />
         </actions>
       </rule>
     </ruleset>
