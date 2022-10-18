@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Category } from '../../models/Category';
 import CategoryBreadcrumb from '../../components/Navigation/CategoryBreadcrumb';
 import { getCategoryChildrenByCcid } from '../../helpers/CategoriesDataHelper';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 type CategoryHeroProps = {
   category: Category;
@@ -12,6 +13,7 @@ const CategoryHero = ({ category }: CategoryHeroProps): JSX.Element => {
     return null;
   }
 
+  const publicUrl = getPublicAssetUrl();
   const categoryDisplayName = category.title ? category.title : category.name;
 
   const categoryChildren = getCategoryChildrenByCcid(category.ccid);
@@ -23,7 +25,7 @@ const CategoryHero = ({ category }: CategoryHeroProps): JSX.Element => {
             <Link href={cat.url_path}>
               <a>
                 <img
-                  src={cat?.image_url || '/assets/img/shop/category-placeholder.png'}
+                  src={cat?.image_url || `${publicUrl}/assets/img/shop/category-placeholder.png`}
                   alt="Category"
                 />
                 <h4>{cat?.title || cat.name}</h4>
