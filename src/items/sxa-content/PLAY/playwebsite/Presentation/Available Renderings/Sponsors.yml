@@ -1,0 +1,21 @@
+﻿---
+ID: "bc0b27ca-324a-4d3e-9d43-8c718efe1ba0"
+Parent: "d1d2140c-755e-43f6-8b45-9742188684fa"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Available Renderings/Sponsors
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {4C6CFD83-311B-5EA6-8F55-AA03251D5232}
+    {FFC3C7F5-A23A-45C9-99F7-48EEB7CD97DF}
+    {DC5B6248-AD97-440A-AFBD-CC6392F76D9F}
+    {98F79B86-92EF-4699-A2F0-D9ECF79A70EF}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221018T092636Z

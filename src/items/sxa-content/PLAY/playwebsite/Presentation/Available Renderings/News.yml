@@ -1,0 +1,20 @@
+﻿---
+ID: "7619f3ae-e6ab-4edc-8319-2831a907da11"
+Parent: "d1d2140c-755e-43f6-8b45-9742188684fa"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Available Renderings/News
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {3E02494C-9CB5-5FC4-A78B-C6AF4C44A559}
+    {82A8BF89-B0DD-59EE-BC00-B1EF4525A6FD}
+    {BE6E4210-8CF4-5BD5-B968-103626DBCC1B}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221018T092551Z

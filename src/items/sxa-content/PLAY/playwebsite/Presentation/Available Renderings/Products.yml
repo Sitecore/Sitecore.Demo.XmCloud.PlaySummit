@@ -1,0 +1,19 @@
+﻿---
+ID: "00e16d2e-97c2-45f4-8195-5ef29b46676d"
+Parent: "d1d2140c-755e-43f6-8b45-9742188684fa"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Available Renderings/Products
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {9B5E1E18-FD8D-5E80-8028-861D007DCA15}
+    {9E28A6C1-7D05-5C7F-81AF-1AF94C7A2F4D}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221018T092602Z
