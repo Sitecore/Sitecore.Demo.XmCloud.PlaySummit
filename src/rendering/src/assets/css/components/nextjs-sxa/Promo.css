@@ -1,0 +1,133 @@
+.component.promo {
+  &:not(.promo-columns) {
+    > .component-content {
+      @apply flex flex-col;
+      @apply lg:flex-row lg:pb-24;
+
+      > div {
+        @apply lg:basis-1/2;
+      }
+    }
+
+    &.promo-reversed {
+      > .component-content {
+        @apply lg:flex-row-reverse lg:pt-10;
+      }
+
+      .field-promoicon {
+        @apply relative;
+        @apply lg:right-auto lg:-left-20;
+
+        &::before {
+          @apply -top-10 bottom-10 left-auto -right-16;
+        }
+      }
+
+      div.promo-text {
+        @apply lg:-right-4 lg:left-auto lg:text-right;
+      }
+    }
+
+    &.accent-blue {
+      .field-promoicon::before {
+        @apply bg-blue;
+      }
+    }
+
+    &.accent-orange {
+      .field-promoicon::before {
+        @apply bg-orange;
+      }
+    }
+
+    &.accent-pink {
+      .field-promoicon::before {
+        @apply bg-pink;
+      }
+    }
+
+    .field-promotext {
+      @apply text-3xl font-bold uppercase mb-4;
+    }
+
+    .field-promotext3 {
+      @apply uppercase text-blue-light font-bold;
+    }
+
+    .field-promolink {
+      @apply mt-6;
+    }
+
+    .field-promoicon {
+      @apply relative;
+      @apply lg:-right-20;
+
+      &::before {
+        @apply content-[''] absolute top-10 -bottom-10 -left-16 w-28 bg-yellow z-10;
+      }
+
+      img {
+        @apply relative z-20;
+        @apply lg:absolute lg:object-cover lg:h-full;
+      }
+    }
+
+    div.promo-text {
+      @apply mt-14;
+      @apply lg:relative lg:top-24 lg:-left-4 lg:p-14 lg:mt-0 lg:bg-white-light lg:z-30;
+    }
+  }
+
+  &.promo-columns {
+    > .component-content {
+      @apply flex flex-col;
+      @apply lg:flex-row;
+    }
+
+    &.promo-reversed {
+      > .component-content {
+        @apply lg:flex-row-reverse;
+      }
+
+      .promo-text {
+        @apply lg:-mr-20 lg:ml-0;
+      }
+
+      .field-promolink {
+        @apply lg:text-left;
+      }
+    }
+
+    .field-promolink {
+      @apply text-center pb-8;
+      @apply lg:text-right lg:pb-0;
+    }
+
+    .field-promoicon {
+      @apply basis-2/5 shrink-0;
+
+      img {
+        @apply w-full h-full object-cover;
+      }
+    }
+
+    .promo-text {
+      @apply mx-4 -mt-20;
+      @apply lg:mr-0 lg:mt-0 lg:-ml-20;
+    }
+
+    .text-cols {
+      @apply flex flex-wrap gap-4 pt-8 pb-6;
+      @apply sm:flex-nowrap;
+    }
+
+    div[class^='field-promotext'] {
+      @apply basis-full p-6 bg-white;
+      @apply sm:basis-1/3;
+
+      img {
+        @apply max-w-[4rem] mb-4;
+      }
+    }
+  }
+}

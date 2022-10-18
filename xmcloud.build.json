@@ -5,17 +5,15 @@
             "nodeVersion": "16.15.1",
             "jssDeploymentSecret":"511cdfab92b7440db866ac0fb817b490",
             "enabled": true,
-            "type": "sxa"
+            "type": "sxa",
+            "lintCommand": "lint",
+            "startCommand": "start:production"
         }
     },
     "transforms": [
-      {
-        "xdtPath": "/xdts/App_Config/",
-        "targetPath": "/App_Config/"
-      },
-      {
-        "xdtPath": "/xdts/",
-        "targetPath": "/"
-      }
+        {
+            "xdtPath": "/xdts/",
+            "targetPath": "/"
+        }
     ]
 }

@@ -21,8 +21,10 @@ SharedFields:
     {1059A458-3C21-5A98-ABD0-A65629F4DE1A}
     {7AB4158F-135B-5E9B-8106-C4A898F2F02D}
     {4C6CFD83-311B-5EA6-8F55-AA03251D5232}
-    {D7018D1C-2C83-5661-8377-5376506B551B}
     {AC5D6DE7-AF70-55C1-B251-BC8976892AAA}
+    {CB6FAEE6-2A59-5114-B898-1147AA0FE82F}
+    {4BE56F57-7867-5E91-8991-37464315D86B}
+    {298D16E7-CFB2-5BE9-8B8C-BBC10A72597F}
 Languages:
 - Language: en
   Versions:
@@ -30,22 +32,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20210615T142048Z
-    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
-      Hint: __Owner
-      Value: |
-        sitecore\JssImport
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\JssImport
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "8ccfd8a2-4add-4521-944e-f0c072652bf3"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\sitecoredemo@sitecore.com
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20220621T111243Z
+      Value: 20221012T133220Z

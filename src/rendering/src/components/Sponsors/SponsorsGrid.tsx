@@ -1,7 +1,14 @@
 import Link from 'next/link';
-import { withDatasourceCheck, Image, Text } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  withDatasourceCheck,
+  Image,
+  Text,
+  useSitecoreContext,
+  LayoutServicePageState,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { Sponsor } from 'src/types/sponsor';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 type SponsorsGridProps = ComponentProps & {
   fields: {
@@ -10,8 +17,20 @@ type SponsorsGridProps = ComponentProps & {
 };
 
 const SponsorsGrid = (props: SponsorsGridProps): JSX.Element => {
+  const { sitecoreContext } = useSitecoreContext();
+
+  const publicUrl = getPublicAssetUrl();
+  const isPageEditing = sitecoreContext.pageState === LayoutServicePageState.Edit;
+  const hasSponsors = !!props.fields;
+
+  !hasSponsors && console.warn('Missing Datasource Item');
+
+  const pageEditingMissingDatasource = !hasSponsors && isPageEditing && (
+    <p>Missing Datasource Item</p>
+  );
+
   const sponsors =
-    props.fields.items &&
+    props.fields?.items &&
     props.fields.items.map((sponsor, index) => (
       <Link key={index} href={sponsor.url} passHref>
         <a className="grid-item">
@@ -28,10 +47,12 @@ const SponsorsGrid = (props: SponsorsGridProps): JSX.Element => {
       </Link>
     ));
 
-  return (
+  const downArrow = <img src={`${publicUrl}/assets/img/icons/down-arrow.svg`} alt="^" />;
+
+  const sponsorsGrid = hasSponsors && (
     <section className="section">
-      <div className="section__content container">
-        <h1 className="section__content__title">Explore Sponsors</h1>
+      <div className="section-content container">
+        <h1 className="section-content-title">Explore Sponsors</h1>
         <div className="item-grid">
           <div className="grid-filters">
             <span>Filter by</span>
@@ -44,7 +65,7 @@ const SponsorsGrid = (props: SponsorsGridProps): JSX.Element => {
               aria-label="schedule"
             >
               Schedule
-              <img src="/assets/img/icons/down-arrow.svg" alt="^" />
+              {downArrow}
             </button>
             <button
               type="button"
@@ -55,7 +76,7 @@ const SponsorsGrid = (props: SponsorsGridProps): JSX.Element => {
               aria-label="speakers"
             >
               Speakers
-              <img src="/assets/img/icons/down-arrow.svg" alt="^" />
+              {downArrow}
             </button>
             <button
               type="button"
@@ -66,7 +87,7 @@ const SponsorsGrid = (props: SponsorsGridProps): JSX.Element => {
               aria-label="category"
             >
               Category
-              <img src="/assets/img/icons/down-arrow.svg" alt="^" />
+              {downArrow}
             </button>
             <button
               type="button"
@@ -77,7 +98,7 @@ const SponsorsGrid = (props: SponsorsGridProps): JSX.Element => {
               aria-label="sport"
             >
               Sport
-              <img src="/assets/img/icons/down-arrow.svg" alt="^" />
+              {downArrow}
             </button>
           </div>
 
@@ -85,6 +106,13 @@ const SponsorsGrid = (props: SponsorsGridProps): JSX.Element => {
         </div>
       </div>
     </section>
+  );
+
+  return (
+    <>
+      {sponsorsGrid}
+      {pageEditingMissingDatasource}
+    </>
   );
 };
 

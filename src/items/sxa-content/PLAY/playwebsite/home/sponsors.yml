@@ -10,6 +10,10 @@ SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 500
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{7AF0C3FD-54BD-4FFD-B0C4-21F6E6F7B81A}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -17,30 +21,21 @@ SharedFields:
       p:p="1">
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-        <p
-          uid="{163E0283-B986-57A3-BEB9-0FDA01E0FCD2}"
-          p:after="p[@uid='{8C6B98B5-1E4D-5868-9019-BF85141D3ABC}']" />
-        <p
-          uid="{C679C0A2-921C-5D4C-B3CB-946E0484E6F9}"
-          p:after="p[@uid='{163E0283-B986-57A3-BEB9-0FDA01E0FCD2}']" />
-        <p
-          uid="{ED118F1D-A09D-4C65-9C17-C78B9AF7D3A1}"
-          p:after="p[@uid='{C679C0A2-921C-5D4C-B3CB-946E0484E6F9}']" />
         <r
           uid="{98F39024-766B-5184-B064-9E36B39D25DC}"
-          p:after="r[@uid='{7CDC810E-AE54-5B4B-BA7D-128CF6F96EDA}']"
+          p:before="*"
           s:rname="HeroImage"
           s:ds="{E521A6F1-9C1B-50FD-AB79-333F31AF229A}"
           s:id="{2C13DBC0-415C-5DAA-A7D9-56928F1271C4}"
           s:par=""
-          s:ph="/jss-main" />
+          s:ph="/headless-main/sxa-main/container-1" />
         <r
           uid="{18DD5D0E-19AA-48C7-881C-C33ED88DE3B2}"
-          p:after="r[@uid='{98F39024-766B-5184-B064-9E36B39D25DC}']"
+          p:after="*[1=2]"
           s:ds="{66C99E47-7BBF-52D1-B1D7-4662B850744A}"
           s:id="{98F79B86-92EF-4699-A2F0-D9ECF79A70EF}"
           s:par=""
-          s:ph="jss-main"
+          s:ph="/headless-main/sxa-main/container-1"
           s:ccb="Clear on publish" />
       </d>
     </r>
@@ -58,25 +53,7 @@ Languages:
       Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20210625T201845Z
-    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
-      Hint: __Owner
-      Value: |
-        sitecore\superuser
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\superuser
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "fa192297-3558-43ad-8b5b-e5067221403c"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\jel@sitecore.net
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20220706T153733Z
+      Value: 20221012T133242Z
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Sponsors

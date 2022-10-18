@@ -37,6 +37,15 @@ $xmCloudBuild = Get-Content "xmcloud.build.json" | ConvertFrom-Json
 # DEMO TEAM CUSTOMIZATION - Custom rendering host name.
 Set-EnvFileVariable "NODEJS_VERSION" -Value $xmCloudBuild.renderingHosts.PlayWebsite.nodeVersion
 
+# DEMO TEAM CUSTOMIZATION - Ensure the right NodeJs version is installed
+$currentNodeJsVersion = node -v
+$currentNodeJsVersion = $currentNodeJsVersion.substring(1)
+
+if ($currentNodeJsVersion -ne $xmCloudBuild.renderingHosts.PlayWebsite.nodeVersion) {
+    throw "ERROR: You are currently running NodeJs $currentNodeJsVersion and this project requires a different version. Please switch to NodeJs $($xmCloudBuild.renderingHosts.PlayWebsite.nodeVersion). Then delete the /src/rendering/node_modules folder. Then run this script again."
+}
+# END CUSTOMIZATION
+
 # Double check whether init has been run
 $envCheckVariable = "HOST_LICENSE_FOLDER"
 $envCheck = $envContent | Where-Object { $_ -imatch "^$envCheckVariable=.+" }

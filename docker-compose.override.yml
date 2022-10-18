@@ -73,6 +73,13 @@ services:
       - nodejs
     labels:
       - "traefik.enable=true"
+      # DEMO TEAM CUSTOMIZATION - Add CORS headers to fix CORS issues in Experience Editor with Next.js 12.2 and newer
+      - "traefik.http.middlewares.rendering-headers.headers.forceSTSHeader=true"
+      - "traefik.http.middlewares.rendering-headers.headers.stsSeconds=31536000"
+      - "traefik.http.middlewares.rendering-headers.headers.accesscontrolallowmethods=GET,POST,OPTIONS"
+      - "traefik.http.middlewares.rendering-headers.headers.accesscontrolalloworiginlist=https://${CM_HOST}"
+      - "traefik.http.routers.rendering-secure.middlewares=rendering-headers"
+      # END CUSTOMIZATION
       - "traefik.http.routers.rendering-secure.entrypoints=websecure"
       - "traefik.http.routers.rendering-secure.rule=Host(`${RENDERING_HOST}`)"
       - "traefik.http.routers.rendering-secure.tls=true"
@@ -115,8 +122,6 @@ services:
         # DEMO TEAM CUSTOMIZATION - demo subfolder, custom tag
         SOLUTION_IMAGE: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-solution:${SITECORE_VERSION}-${DEMO_VERSION}
         TOOLS_IMAGE: ${TOOLS_IMAGE}
-        # DEMO TEAM CUSTOMIZATION - Content Hub module
-        CONTENTHUB_ASSETS_IMAGE: ${SITECORE_NONPRODUCTION_DOCKER_REGISTRY}modules/sitecore-chub-assets:5.0.0-${NANOSERVER_VERSION}
     depends_on:
       - solution
     volumes:
@@ -139,12 +144,4 @@ services:
       # DEMO TEAM CUSTOMIZATION - Custom variables to allow override in AKS
       RENDERING_HOST_ENDPOINT_URI: "${RENDERING_HOST_INTERNAL_URI}/api/editing/render"
       RENDERING_HOST_PUBLIC_URI: "https://${RENDERING_HOST}"
-      # DEMO TEAM CUSTOMIZATION - Custom integrations
-      Sitecore_ConnectionStrings_CMP.ContentHub: ${CMP_ContentHub}
-      Sitecore_ConnectionStrings_CMP.ServiceBusEntityPathIn: ${CMP_ServiceBusEntityPathIn}
-      Sitecore_ConnectionStrings_CMP.ServiceBusSubscription: ${CMP_ServiceBusSubscription}
-      Sitecore_ConnectionStrings_CMP.ServiceBusEntityPathOut: ${CMP_ServiceBusEntityPathOut}
-      Sitecore_ConnectionStrings_DAM.ContentHub: ${DAM_ContentHub}
-      Sitecore_ConnectionStrings_DAM.SearchPage: ${DAM_SearchPage}
-      Sitecore_ConnectionStrings_DAM.ExternalRedirectKey: ${DAM_ExternalRedirectKey}
     entrypoint: powershell -Command "& C:/tools/entrypoints/iis/Development.ps1"

@@ -1,14 +1,14 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Section from '../../components/PageContent/Section';
+import { Default } from '../../components/PageContent/Section';
 import SpeakersGrid, { SpeakersGridProps } from '../../components/Speakers/SpeakersGrid';
 import { GraphQLSpeaker } from 'src/types/speaker';
 
 export default {
   title: 'Components/PageContent/Section',
-  component: Section,
-} as ComponentMeta<typeof Section>;
+  component: Default,
+} as ComponentMeta<typeof Default>;
 
 const speakerImage = {
   jsonValue: {
@@ -47,93 +47,18 @@ const speakerProps = {
   },
 } as SpeakersGridProps;
 
-const Template: ComponentStory<typeof Section> = (args) => (
-  <Section {...args}>
+const Template: ComponentStory<typeof Default> = (args) => (
+  <Default {...args}>
     <SpeakersGrid {...speakerProps} />
-  </Section>
+  </Default>
 );
-
-export const LightSpeakers = Template.bind({});
-LightSpeakers.args = {
-  fields: {
-    cssClass: {
-      value: 'section__speakers',
-    },
-    brightness: {
-      value: 'light',
-    },
-    title: {
-      value: 'Section',
-    },
-    content: {
-      value: 'Section Content',
-    },
-    callToActionLink: {
-      value: {
-        href: '/speakers',
-        text: 'View Speakers',
-      },
-    },
-  },
-};
 
 export const Light = Template.bind({});
 Light.args = {
-  fields: {
-    cssClass: {
-      value: '',
-    },
-    brightness: {
-      value: 'light',
-    },
-    title: {
-      value: 'Section',
-    },
-    content: {
-      value: 'Section Content',
-    },
-    callToActionLink: {
-      value: {
-        href: '/speakers',
-        text: 'View Speakers',
-      },
-    },
+  params: {
+    styles: 'section-light',
   },
-};
-
-export const Dark = Template.bind({});
-Dark.args = {
   fields: {
-    cssClass: {
-      value: '',
-    },
-    brightness: {
-      value: 'dark',
-    },
-    title: {
-      value: 'Section',
-    },
-    content: {
-      value: 'Section Content',
-    },
-    callToActionLink: {
-      value: {
-        href: '/speakers',
-        text: 'View Speakers',
-      },
-    },
-  },
-};
-
-export const DarkPatternBackground = Template.bind({});
-DarkPatternBackground.args = {
-  fields: {
-    cssClass: {
-      value: 'section--dark-pattern',
-    },
-    brightness: {
-      value: 'dark',
-    },
     title: {
       value: 'Section',
     },
@@ -151,13 +76,10 @@ DarkPatternBackground.args = {
 
 export const LightPatternBackground = Template.bind({});
 LightPatternBackground.args = {
+  params: {
+    styles: 'section-light section-light-pattern',
+  },
   fields: {
-    cssClass: {
-      value: 'section--light-pattern',
-    },
-    brightness: {
-      value: 'light',
-    },
     title: {
       value: 'Section',
     },
@@ -173,20 +95,60 @@ LightPatternBackground.args = {
   },
 };
 
-export const DarkNews = Template.bind({});
-DarkNews.args = {
+export const Dark = Template.bind({});
+Dark.args = {
+  params: {
+    styles: 'section-dark',
+  },
   fields: {
-    cssClass: {
-      value: 'section__news',
-    },
-    brightness: {
-      value: 'dark',
-    },
     title: {
       value: 'Section',
     },
     content: {
       value: 'Section Content',
+    },
+    callToActionLink: {
+      value: {
+        href: '/speakers',
+        text: 'View Speakers',
+      },
+    },
+  },
+};
+
+export const DarkPatternBackground = Template.bind({});
+DarkPatternBackground.args = {
+  params: {
+    styles: 'section-dark section-dark-pattern',
+  },
+  fields: {
+    title: {
+      value: 'Section',
+    },
+    content: {
+      value: 'Section Content',
+    },
+    callToActionLink: {
+      value: {
+        href: '/speakers',
+        text: 'View Speakers',
+      },
+    },
+  },
+};
+
+export const FullLeft = Template.bind({});
+FullLeft.args = {
+  params: {
+    styles: 'section-full-left',
+  },
+  fields: {
+    title: {
+      value: 'Section',
+    },
+    content: {
+      value:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quis corporis, amet aspernatur, laudantium ducimus voluptatum suscipit quae unde sapiente harum asperiores aperiam perspiciatis eligendi, ratione maiores modi. Dolore, consectetur modi. Quisquam, vero repellat dolorum voluptas, fugiat odit necessitatibus ut iste corporis, a numquam corrupti eligendi non minima. Sunt, placeat?',
     },
     callToActionLink: {
       value: {

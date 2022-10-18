@@ -1,8 +1,11 @@
 import { FormEvent } from 'react';
 import Router from 'next/router';
 import { logTicketPurchase } from '../../services/CdpService';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 const PaymentAndBillingForm = (): JSX.Element => {
+  const publicUrl = getPublicAssetUrl();
+
   const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -32,19 +35,19 @@ const PaymentAndBillingForm = (): JSX.Element => {
       <div className="payment-methods">
         <input type="radio" value="Visa" name="payment" id="visa" />{' '}
         <label htmlFor="visa">
-          <img src="/assets/img/payment/visa.png" alt="payment methods" />
+          <img src={`${publicUrl}/assets/img/payment/visa.png`} alt="payment methods" />
         </label>
         <input type="radio" value="ppal" name="payment" id="ppal" />{' '}
         <label htmlFor="ppal">
-          <img src="/assets/img/payment/paypal.png" alt="payment methods" />
+          <img src={`${publicUrl}/assets/img/payment/paypal.png`} alt="payment methods" />
         </label>
         <input type="radio" value="spay" name="payment" id="apay" />{' '}
         <label htmlFor="apay">
-          <img src="/assets/img/payment/apay.png" alt="payment methods" />
+          <img src={`${publicUrl}/assets/img/payment/apay.png`} alt="payment methods" />
         </label>
         <input type="radio" value="gpay" name="payment" id="gpay" />{' '}
         <label htmlFor="gpay">
-          <img src="/assets/img/payment/gpay.png" alt="payment methods" />
+          <img src={`${publicUrl}/assets/img/payment/gpay.png`} alt="payment methods" />
         </label>
       </div>
       <div className="floating-label-wrap">
@@ -120,7 +123,7 @@ const PaymentAndBillingForm = (): JSX.Element => {
         </p>
       </div>
       <div className="button-area">
-        <button className="btn--main btn--main--round" type="submit">
+        <button className="btn-main" type="submit">
           Confirm Purchase
         </button>
       </div>

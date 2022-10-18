@@ -1,0 +1,44 @@
+﻿---
+ID: "816f91b6-bdd2-4bcc-81fd-d6092f8eb3e7"
+Parent: "df1e7793-5333-49f5-b626-f113d2ea42e0"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Partial Designs/Common Content/Premium Sponsors
+SharedFields:
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
+  Hint: Signature
+  Value: "premium-sponsors"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{AC7C7AC6-05F8-4535-82DF-82DAC45827DD}"
+          p:before="*"
+          s:ds="{F8952B14-1095-45FB-B7D9-6AE55AB2934D}"
+          s:id="{4C6CFD83-311B-5EA6-8F55-AA03251D5232}"
+          s:par="CacheClearingBehavior=Clear on publish"
+          s:ph="/headless-main/jss-section-content-{EBD6D82B-66EE-4728-9451-A79E36D791FF}-0" />
+        <r
+          uid="{EBD6D82B-66EE-4728-9451-A79E36D791FF}"
+          p:after="*[1=2]"
+          s:ds="{174A7AFC-D923-58F3-BEF8-AD8CAAD8C5B9}"
+          s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
+          s:par="FieldNames&amp;Styles=%7B98006F93-D19D-44C8-A25D-CEC93528F129%7D%7C%7B1F69B9FA-24A7-435F-AFE5-16E05F34A21A%7D&amp;RenderingIdentifier"
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221013T172722Z

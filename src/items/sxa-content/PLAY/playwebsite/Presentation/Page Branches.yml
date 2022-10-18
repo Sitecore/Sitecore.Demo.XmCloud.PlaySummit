@@ -3,6 +3,35 @@ ID: "4499d0fb-ac41-48a3-bdf1-9483305d086b"
 Parent: "8fb503df-d132-4fc1-a096-18c8b8f19873"
 Template: "fbc802e5-4b9e-480f-93da-3f2a80cae5cb"
 Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches
+SharedFields:
+- ID: "bb3391dd-f8be-4b2e-ae9f-47bb63c166ce"
+  Hint: Rule
+  Value: |
+    <ruleset>
+      <rule
+        uid="{0C673BD6-F3DA-4096-98E4-0CD409315288}">
+        <conditions>
+          <condition
+            id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+            uid="C5AA8DB5A87546B590D68D34213CD1BC"
+            itemid="{4D587C56-3717-41CB-936C-5D0412A50B6B}" />
+        </conditions>
+        <actions>
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="A86F09E0B35847638F97EF971943F75D"
+            PageBranchId="{03897603-E3EB-4777-B0B1-F106FDA3FF91}" />
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="FAD5E2F7DE7A46FFA11C40AC59632D3D"
+            PageBranchId="{6C07C9A2-87C4-418F-AA22-9E5D6C382E9E}" />
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="728F8B4CD7104A9AAAA64CA49BD032C4"
+            PageBranchId="{C21CB9F5-9D4C-4904-B199-538835128FA3}" />
+        </actions>
+      </rule>
+    </ruleset>
 Languages:
 - Language: en
   Versions:
@@ -10,22 +39,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20220511T192050Z
-    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
-      Hint: __Owner
-      Value: |
-        sitecore\sitecoredemo@sitecore.com
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\sitecoredemo@sitecore.com
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "36ae8cbb-2579-4123-8a8a-96d0294d193f"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\sitecoredemo@sitecore.com
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20220511T192050Z
+      Value: 20221012T133242Z

@@ -1,21 +1,21 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import FullImageSection from '../../components/PageContent/FullImageSection';
+import { Default } from '../../components/PageContent/FullImageSection';
 
 export default {
   title: 'Components/PageContent/FullImageSection',
-  component: FullImageSection,
-} as ComponentMeta<typeof FullImageSection>;
+  component: Default,
+} as ComponentMeta<typeof Default>;
 
-const Template: ComponentStory<typeof FullImageSection> = (args) => <FullImageSection {...args} />;
+const Template: ComponentStory<typeof Default> = (args) => <Default {...args} />;
 
 export const Left = Template.bind({});
 Left.args = {
+  params: {
+    styles: 'full-image-section-left full-image-section-offer',
+  },
   fields: {
-    cssClass: {
-      value: 'section__full-image--offer',
-    },
     callToActionLink: {
       value: {
         href: '/shop/product',
@@ -25,9 +25,6 @@ Left.args = {
     content: {
       value:
         'We’re partnering with over 2000 brands to offer PLAY! Summit attendees a <b>20% discount</b> on all online and in-person purchases made during this year’s event.',
-    },
-    position: {
-      value: 'left',
     },
     subtitle: {
       value: 'Do not miss',
@@ -44,10 +41,10 @@ Left.args = {
 
 export const Right = Template.bind({});
 Right.args = {
+  params: {
+    styles: 'full-image-section-right full-image-section-speaker',
+  },
   fields: {
-    cssClass: {
-      value: 'section__full-image--speaker',
-    },
     callToActionLink: {
       value: {
         href: '/tickets',
@@ -57,9 +54,6 @@ Right.args = {
     content: {
       value:
         'Join <b>Tour de France</b> champion Chris Williams for an exclusive Q & A in which he’ll discuss his professional journey and highlights from his career.',
-    },
-    position: {
-      value: 'right',
     },
     subtitle: {
       value: 'Guest speaker',

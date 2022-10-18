@@ -6,15 +6,17 @@ import {
   SitecoreContext,
   ComponentPropsContext,
   handleEditorFastRefresh,
+  StaticPath,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { SitecorePageProps } from 'lib/page-props';
 import { sitecorePagePropsFactory } from 'lib/page-props-factory';
-import { componentFactory } from 'temp/componentFactory';
+// different componentFactory method will be used based on whether page is being edited
+import { componentFactory, editingComponentFactory } from 'temp/componentFactory';
 import { sitemapFetcher } from 'lib/sitemap-fetcher';
 
 const SitecorePage = ({ notFound, componentProps, layoutData }: SitecorePageProps): JSX.Element => {
   useEffect(() => {
-    // Since Sitecore editors do not support Fast Refresh, need to refresh EE chromes after Fast Refresh finished
+    // Since Sitecore editors do not support Fast Refresh, need to refresh editor chromes after Fast Refresh finished
     handleEditorFastRefresh();
   }, []);
 
@@ -23,9 +25,14 @@ const SitecorePage = ({ notFound, componentProps, layoutData }: SitecorePageProp
     return <NotFound />;
   }
 
+  const isEditing = layoutData.sitecore.context.pageEditing;
+
   return (
     <ComponentPropsContext value={componentProps}>
-      <SitecoreContext componentFactory={componentFactory} layoutData={layoutData}>
+      <SitecoreContext
+        componentFactory={isEditing ? editingComponentFactory : componentFactory}
+        layoutData={layoutData}
+      >
         <Layout layoutData={layoutData} />
       </SitecoreContext>
     </ComponentPropsContext>
@@ -41,23 +48,27 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
   // will be generated on request (development mode in this example).
   // Alternatively, the entire sitemap could be pre-rendered
   // ahead of time (non-development mode in this example).
-  // See https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration
+  // See https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration
 
-  // DEMO TEAM CUSTOMIZATION (next line) - Inverted the condition on NODE_ENV. Also avoid using the sitemap when CI='true' (When building during continuous integration) to build in 100% ISG mode.
-  //if (process.env.NODE_ENV === 'production' && process.env.CI !== 'true') {
-  if (process.env.NODE_ENV !== 'development') {
-    // Note: Next.js runs export in production mode
-    const paths = await sitemapFetcher.fetch(context);
+  let paths: StaticPath[] = [];
+  let fallback: boolean | 'blocking' = 'blocking';
 
-    return {
-      paths,
-      fallback: process.env.EXPORT_MODE ? false : 'blocking',
-    };
+  // DEMO TEAM CUSTOMIZATION (next line) - Add DISABLE_SSG_FETCH environment variable check from JSS v21 to avoid SSG in the XM Cloud editing rendering host
+  if (process.env.NODE_ENV !== 'development' && !process.env.DISABLE_SSG_FETCH) {
+    try {
+      // Note: Next.js runs export in production mode
+      paths = await sitemapFetcher.fetch(context);
+    } catch (error) {
+      console.log('Error occurred while generating static paths');
+      console.log(error);
+    }
+
+    fallback = process.env.EXPORT_MODE ? false : fallback;
   }
 
   return {
-    paths: [],
-    fallback: 'blocking',
+    paths,
+    fallback,
   };
 };
 

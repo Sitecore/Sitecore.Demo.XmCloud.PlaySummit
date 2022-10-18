@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "42ed34a8-7b82-4bd1-839f-b0af1639900e"
 Parent: "3006ec5b-0438-414b-860e-e6754658ea12"
 Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
@@ -23,22 +23,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20210707T172843Z
-    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
-      Hint: __Owner
-      Value: |
-        sitecore\JssImport
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\JssImport
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "ba346f00-958b-484d-9ba7-0942f88566cf"
-    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-      Hint: __Updated by
-      Value: |
-        sitecore\sitecoredemo@sitecore.com
-    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-      Hint: __Updated
-      Value: 20220513T164724Z
+      Value: 20221012T133218Z

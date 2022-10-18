@@ -1,0 +1,20 @@
+﻿---
+ID: "82a7911a-ac1a-4e87-af8e-60c75e15736d"
+Parent: "0d17be5b-ec2a-4296-8d3f-930eb60dfe7c"
+Template: "0d17be5b-ec2a-4296-8d3f-930eb60dfe7c"
+Path: /sitecore/templates/CMP/Content Hub Entity/__Standard Values
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 10100
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221012T133241Z

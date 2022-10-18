@@ -25,9 +25,7 @@
 @import './layout/grids.css';
 @import './layout/information-section.css';
 @import './layout/sections.css';
-@import './layout/section-news.css';
-@import './layout/section-speakers.css';
-@import './layout/section-sponsors.css';
+@import './layout/sxaLayout.css';
 @import './layout/text.css';
 
 /* Tailwindify other components and pages from rest.css here */
@@ -48,6 +46,7 @@
 @import './components/Checkout/CartDetails.css';
 @import './components/Checkout/CheckoutDetails.css';
 @import './components/Checkout/CheckoutSummary.css';
+@import './components/Checkout/LineItemCard.css';
 @import './components/Checkout/MiniCart.css';
 @import './components/Checkout/OrderReviewDetails.css';
 @import './components/Checkout/PreCheckout.css';
@@ -74,6 +73,12 @@
 @import './components/Navigation/ShopBreadcrumb.css';
 @import './components/Navigation/ShopNavigation.css';
 
+/* nextjs-sxa */
+@import './components/nextjs-sxa/Navigation.css';
+@import './components/nextjs-sxa/Promo.css';
+@import './components/nextjs-sxa/RichText.css';
+@import './components/nextjs-sxa/Title.css';
+
 /* News */
 @import './components/News/NewsDetail.css';
 @import './components/News/NewsGrid.css';
@@ -81,6 +86,7 @@
 
 /* NonSitecore */
 @import './components/NonSitecore/InformationPageHero.css';
+@import './components/NonSitecore/Accordion.css';
 
 /* PageContent */
 @import './components/PageContent/DynamicWelcomeMessage.css';
@@ -89,7 +95,6 @@
 @import './components/PageContent/HeaderBanner.css';
 @import './components/PageContent/HeroImage.css';
 @import './components/PageContent/HeroSection.css';
-@import './components/PageContent/Promo.css';
 @import './components/PageContent/SummitFeatures.css';
 @import './components/PageContent/TestimonyList.css';
 @import './components/PageContent/TextCta.css';
@@ -111,9 +116,7 @@
 /* Products */
 @import './components/Products/CategoriesList.css';
 @import './components/Products/CategoryHero.css';
-@import './components/Products/ProductDetail.css';
 @import './components/Products/ProductDetails.css';
-@import './components/Products/ProductOverview.css';
 @import './components/Products/Shop.css';
 
 /* Sessions */
@@ -136,7 +139,7 @@
 @import './components/Speakers/SpeakersGrid.css';
 
 /* Sponsors */
-@import './components/Sponsors/SponsorsGrid.css';
+@import './components/Sponsors/SelectedSponsorsGrid.css';
 
 /* Widgets */
 @import './components/Widgets/RecommendedProducts.css';

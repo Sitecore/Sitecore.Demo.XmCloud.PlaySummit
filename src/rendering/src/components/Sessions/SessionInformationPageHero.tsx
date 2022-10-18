@@ -23,14 +23,14 @@ export type SessionInformationPageHeroProps = ComponentProps & {
   TODO: Try to merge the differences of this component into InformationPageHero.tsx without breaking the SpeakerInformationPageHero.tsx and VendorInformationPageHero.tsx components. Then only add specific content for session page hero in this file. Similar to what is being done in SpeakerInformationPageHero.tsx
 */
 const SessionInformationPageHero = (props: SessionInformationPageHeroProps): JSX.Element => {
-  const premiumSessionQualificative = props.fields.Premium.value ? 'premium' : '';
+  const premiumSessionQualificative = props?.fields?.Premium?.value ? 'premium' : '';
 
   return (
     <section className={`session-information-page-hero ${premiumSessionQualificative}`}>
       <div
         className="background-container"
         style={{
-          backgroundImage: 'url(' + props.fields.Image.value?.src + ')',
+          backgroundImage: 'url(' + props?.fields?.Image?.value?.src + ')',
         }}
       >
         <div className="content">
@@ -49,7 +49,7 @@ const SessionInformationPageHero = (props: SessionInformationPageHeroProps): JSX
                   <span className="information-type">{premiumSessionQualificative}</span> session:
                 </p>
                 <h1 className="name">
-                  <Text field={props.fields.Name} />
+                  <Text field={props?.fields?.Name} />
                 </h1>
               </div>
               <div>
@@ -59,10 +59,12 @@ const SessionInformationPageHero = (props: SessionInformationPageHeroProps): JSX
                   </InfoText>
                 )}
                 <InfoText Icon={faCalendar}>
-                  <span>{getSessionDays(props.fields.Day)}</span>
+                  <span>{props?.fields?.Day && getSessionDays(props?.fields?.Day)}</span>
                 </InfoText>
                 <InfoText Icon={faClock}>
-                  <span>{getSessionTime(props.fields.Timeslots)}</span>
+                  <span>
+                    {props?.fields?.Timeslots && getSessionTime(props?.fields?.Timeslots)}
+                  </span>
                 </InfoText>
               </div>
             </div>
