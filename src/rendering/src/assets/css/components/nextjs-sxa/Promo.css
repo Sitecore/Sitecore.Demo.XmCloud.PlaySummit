@@ -1,4 +1,6 @@
 .component.promo {
+  @apply max-w-full;
+
   &:not(.promo-columns) {
     > .component-content {
       @apply flex flex-col;
@@ -11,7 +13,8 @@
 
     &.promo-reversed {
       > .component-content {
-        @apply lg:flex-row-reverse lg:pt-10;
+        @apply pt-10;
+        @apply lg:flex-row-reverse;
       }
 
       .field-promoicon {

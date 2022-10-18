@@ -8,6 +8,7 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { Vendor } from 'src/types/vendor';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 type VendorsGridProps = ComponentProps & {
   fields: {
@@ -18,6 +19,7 @@ type VendorsGridProps = ComponentProps & {
 const VendorsGrid = (props: VendorsGridProps): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext();
 
+  const publicUrl = getPublicAssetUrl();
   const isPageEditing = sitecoreContext.pageState === LayoutServicePageState.Edit;
   const hasVendors = !!props.fields;
 
@@ -45,6 +47,8 @@ const VendorsGrid = (props: VendorsGridProps): JSX.Element => {
       </Link>
     ));
 
+  const downArrow = <img src={`${publicUrl}/assets/img/icons/down-arrow.svg`} alt="^" />;
+
   const vendorsGrid = hasVendors && (
     <section className="section">
       <div className="section-content container">
@@ -61,7 +65,7 @@ const VendorsGrid = (props: VendorsGridProps): JSX.Element => {
               aria-label="schedule"
             >
               Schedule
-              <img src="/assets/img/icons/down-arrow.svg" alt="^" />
+              {downArrow}
             </button>
             <button
               type="button"
@@ -72,7 +76,7 @@ const VendorsGrid = (props: VendorsGridProps): JSX.Element => {
               aria-label="speakers"
             >
               Speakers
-              <img src="/assets/img/icons/down-arrow.svg" alt="^" />
+              {downArrow}
             </button>
             <button
               type="button"
@@ -83,7 +87,7 @@ const VendorsGrid = (props: VendorsGridProps): JSX.Element => {
               aria-label="category"
             >
               Category
-              <img src="/assets/img/icons/down-arrow.svg" alt="^" />
+              {downArrow}
             </button>
             <button
               type="button"
@@ -94,7 +98,7 @@ const VendorsGrid = (props: VendorsGridProps): JSX.Element => {
               aria-label="sport"
             >
               Sport
-              <img src="/assets/img/icons/down-arrow.svg" alt="^" />
+              {downArrow}
             </button>
           </div>
 

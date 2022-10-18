@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt } from '@fortawesome/free-regular-svg-icons';
 import { getImageUrl, getProductSpecs } from '../../helpers/LineItemsHelpers';
 import { logAddToCart } from '../../services/CdpService';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 type MiniCartItemProps = {
   lineItem: DLineItem;
@@ -15,6 +16,8 @@ type MiniCartItemProps = {
 const MiniCartItem = (props: MiniCartItemProps): JSX.Element => {
   const dispatch = useAppDispatch();
   const [loading, setLoading] = useState(false);
+
+  const publicUrl = getPublicAssetUrl();
 
   const handleRemoveItem = useCallback(async () => {
     setLoading(true);
@@ -38,7 +41,7 @@ const MiniCartItem = (props: MiniCartItemProps): JSX.Element => {
 
   const productImage = (
     <img
-      src={getImageUrl(props.lineItem) || '/assets/img/shop/category-placeholder.png'}
+      src={getImageUrl(props.lineItem) || `${publicUrl}/assets/img/shop/category-placeholder.png`}
       alt={props.lineItem.Product.Name}
     ></img>
   );

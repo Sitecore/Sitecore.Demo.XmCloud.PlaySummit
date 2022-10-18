@@ -11,6 +11,7 @@ import { isAuthenticationEnabled } from '../../services/AuthenticationService';
 import ClickOutside from '../ShopCommon/ClickOutside';
 import AccountPopup from './AccountPopup';
 import { dispatchDiscoverCartStatusListActionEvent } from '../../helpers/discover/CartStatusDispatcher';
+import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 export type ShopNavigationProps = {
   previewSearchProps?: PreviewSearchProps; // For Storybook support
@@ -28,6 +29,8 @@ const ShopNavigation = (props: ShopNavigationProps): JSX.Element => {
   const accountPopupRef = useRef(null);
   const closeAccountPopup = () => setIsAccountPopupOpen(false);
   ClickOutside([accountPopupRef], closeAccountPopup);
+
+  const publicUrl = getPublicAssetUrl();
 
   const accountPopupActiveClass = isAccountPopupOpen ? 'active' : '';
   const accountPopupOpenClass = isAccountPopupOpen ? 'open' : '';
@@ -64,7 +67,7 @@ const ShopNavigation = (props: ShopNavigationProps): JSX.Element => {
         <div className="logo-container">
           <Link href="/shop">
             <a className="logo-link">
-              <img src="/assets/img/shop/play-shop-logo.svg" alt="PLAY! SHOP" />
+              <img src={`${publicUrl}/assets/img/shop/play-shop-logo.svg`} alt="PLAY! SHOP" />
             </a>
           </Link>
         </div>
