@@ -1,0 +1,13 @@
+﻿---
+ID: "0a875884-eeec-4165-8603-b21eb47a0c96"
+Parent: "86dd53eb-e83f-40ea-ade4-73466017fa66"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/PLAY/Rendering Parameters/FEAASComponent/Fields
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221013T190808Z

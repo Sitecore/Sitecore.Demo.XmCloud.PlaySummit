@@ -1,0 +1,92 @@
+﻿---
+ID: "d185dd84-27b8-4716-a24c-79ed16174bb7"
+Parent: "7a1bd48b-c2cb-4f72-abcd-3463940fc556"
+Template: "5e32e75f-446a-412c-8ed8-922320ae9031"
+Path: /sitecore/system/Settings/Feature/Experience Accelerator/Tailwind/Tailwind Grid Definition/Extra Large/Offset
+SharedFields:
+- ID: "07a98f74-131f-4ba1-9c00-88416c2832a4"
+  Hint: Advanced
+  Value: 1
+- ID: "62ca1c9e-71a4-465f-835e-55bda7bb270b"
+  Hint: Type
+  Value: slider
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Forskydning
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221013T172706Z
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: |
+        Angiver, hvor mange tomme kolonner der skal være til venstre for komponenten.
+        Alle komponenter til højre skifter sammen med komponenten.
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Offset
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: |
+        Bestimmt, wie viele leere Spalten links der Komponente sein sollen.
+        Alle rechten Komponenten verlagern sich mit der Komponente.
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161216T082225Z
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: |
+        Determines how many empty columns should there be on the left of the component.
+        All components to the right will be shifting with the component.
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: オフセット
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: |
+        コンポーネントの左側に空の列がいくつあるべきかを決定します。
+        右のすべてのコンポーネントは、コンポーネントと一緒にシフトします。
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 抵消
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
+      Hint: Tooltip
+      Value: |
+        “确定组件左侧应该有多少空列。
+        右边的所有组件都将随着组件而移动。“

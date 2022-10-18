@@ -10,8 +10,6 @@ import { ComponentWithChildrenProps } from 'lib/component-props';
 
 type SectionProps = ComponentWithChildrenProps & {
   fields: {
-    cssClass: Field<string>;
-    brightness: Field<string>;
     title: Field<string>;
     content: Field<string>;
     callToActionLink: LinkField;
@@ -19,14 +17,7 @@ type SectionProps = ComponentWithChildrenProps & {
 };
 
 const Section = (props: SectionProps): JSX.Element => {
-  const brighnessCssClass = props.fields?.brightness?.value
-    ? `section-${props.fields.brightness.value}`
-    : '';
-  const customCssClass = props.fields?.cssClass?.value ? props.fields.cssClass.value : '';
-  const customContentCssClass = customCssClass ? `${customCssClass}-content` : '';
-
-  const sectionCssClasses = `section ${brighnessCssClass} ${customCssClass}`;
-  const sectionContentCssClasses = `section-content ${customContentCssClass} container`;
+  const sectionStyles = `${props.params?.styles || ''}`;
 
   const titleAndContent = props.fields && (
     <>
@@ -46,8 +37,8 @@ const Section = (props: SectionProps): JSX.Element => {
   );
 
   return (
-    <section className={sectionCssClasses}>
-      <div className={sectionContentCssClasses}>
+    <section className={`section ${sectionStyles}`}>
+      <div className="section-content container">
         {titleAndContent}
         {placeholder}
         {props.children}
@@ -57,4 +48,4 @@ const Section = (props: SectionProps): JSX.Element => {
   );
 };
 
-export default Section;
+export const Default = Section;

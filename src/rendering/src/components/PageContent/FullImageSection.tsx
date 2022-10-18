@@ -10,8 +10,6 @@ import { ComponentProps } from 'lib/component-props';
 
 type FullImageSectionProps = ComponentProps & {
   fields: {
-    cssClass: Field<string>;
-    position: Field<string>;
     title: Field<string>;
     subtitle: Field<string>;
     content: Field<string>;
@@ -19,17 +17,16 @@ type FullImageSectionProps = ComponentProps & {
   };
 };
 
-const FullImageSection = ({ fields }: FullImageSectionProps): JSX.Element => {
-  const sectionCssClasses = `section full-image-section ${fields.cssClass.value}`;
-  const positionCssClasses = `section-content full-image-section-content full-image-section-content-${fields.position.value} container`;
+const FullImageSection = ({ fields, params }: FullImageSectionProps): JSX.Element => {
+  const sectionStyles = `${params?.styles || ''}`;
 
   const callToAction = fields.callToActionLink && (
     <Link field={fields.callToActionLink} className="btn-main" />
   );
 
   return (
-    <section className={sectionCssClasses}>
-      <div className={positionCssClasses}>
+    <section className={`section full-image-section ${sectionStyles}`}>
+      <div className="section-content full-image-section-content container">
         <div className="content-card">
           <Text tag="h5" field={fields.subtitle} />
           <Text tag="h2" field={fields.title} />
@@ -41,4 +38,4 @@ const FullImageSection = ({ fields }: FullImageSectionProps): JSX.Element => {
   );
 };
 
-export default withDatasourceCheck()<FullImageSectionProps>(FullImageSection);
+export const Default = withDatasourceCheck()<FullImageSectionProps>(FullImageSection);

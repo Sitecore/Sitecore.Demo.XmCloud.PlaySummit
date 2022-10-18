@@ -25,9 +25,7 @@
 @import './layout/grids.css';
 @import './layout/information-section.css';
 @import './layout/sections.css';
-@import './layout/section-news.css';
-@import './layout/section-speakers.css';
-@import './layout/section-sponsors.css';
+@import './layout/sxaLayout.css';
 @import './layout/text.css';
 
 /* Tailwindify other components and pages from rest.css here */
@@ -75,6 +73,12 @@
 @import './components/Navigation/ShopBreadcrumb.css';
 @import './components/Navigation/ShopNavigation.css';
 
+/* nextjs-sxa */
+@import './components/nextjs-sxa/Navigation.css';
+@import './components/nextjs-sxa/Promo.css';
+@import './components/nextjs-sxa/RichText.css';
+@import './components/nextjs-sxa/Title.css';
+
 /* News */
 @import './components/News/NewsDetail.css';
 @import './components/News/NewsGrid.css';
@@ -91,7 +95,6 @@
 @import './components/PageContent/HeaderBanner.css';
 @import './components/PageContent/HeroImage.css';
 @import './components/PageContent/HeroSection.css';
-@import './components/PageContent/Promo.css';
 @import './components/PageContent/SummitFeatures.css';
 @import './components/PageContent/TestimonyList.css';
 @import './components/PageContent/TextCta.css';

@@ -1,0 +1,55 @@
+﻿---
+ID: "4cb3b9c7-53cb-4cf5-a7c7-e193c2857b4a"
+Parent: "13f126f8-089c-4c94-a800-7a73c6659b16"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Partial Designs/Page Content/Speaker Content
+SharedFields:
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
+  Hint: Signature
+  Value: "speaker-content"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{4DD16346-2B05-4873-B216-807B2CE0DA66}"
+          p:before="*"
+          s:id="{84040441-931E-48AD-AC7F-FD0145ADEB09}"
+          s:par="CacheClearingBehavior=Clear on publish"
+          s:ph="headless-main" />
+        <r
+          uid="{E5A3CBEE-C1B0-474F-9593-D55680DA31B9}"
+          p:after="*[1=2]"
+          s:id="{3767674F-4DB9-5DF7-A52A-0FE34F8453CC}"
+          s:par="CacheClearingBehavior=Clear on publish"
+          s:ph="headless-main" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220830T115444Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ebbc02d0-be7d-45eb-8b20-f73d5ec64054"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\nko@sitecore.net
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220830T121636Z

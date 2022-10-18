@@ -4,16 +4,20 @@
   padding: 7em 0;
   box-shadow: 0 0 10px rgba(23, 23, 23, 0.3);
 
-  &-content {
-    @apply h-full;
-
-    &-left {
+  &-left {
+    .full-image-section-content {
       @include flex--fs-center;
     }
+  }
 
-    &-right {
+  &-right {
+    .full-image-section-content {
       @include flex--fe-center;
     }
+  }
+
+  &-content {
+    @apply h-full;
 
     .content-card {
       @include flex--center--column;

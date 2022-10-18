@@ -1,0 +1,94 @@
+﻿---
+ID: "b5b45efa-c1fc-42a0-bfe5-0231780d2785"
+Parent: "9ca06bd0-cd73-4718-9a3d-d000d07ec771"
+Template: "bca0e629-150f-41dd-893b-f4b65338c0b7"
+Path: /sitecore/system/Settings/Feature/Experience Accelerator/Tailwind/Tailwind Grid Definition/Extra Extra Large
+SharedFields:
+- ID: "39d6d2c4-f31e-4310-ab2d-f6d5c9cb89fd"
+  Hint: BreakpointMax
+  Value: 
+- ID: "3b2c405a-5a69-4ce9-a28a-0e72715f159a"
+  Hint: BreakpointMin
+  Value: 1536
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 350
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Kompakte telefoner
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221013T172705Z
+    - ID: "b55a9065-9589-41d8-997b-9b4592852134"
+      Hint: Tooltip
+      Value: |
+        Layoutindstillinger for telefoner med små skærme.
+        Bruges på større telefoner og større enheder, hvis de ikke tilsidesættes.
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Kompakte Telefone
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "b55a9065-9589-41d8-997b-9b4592852134"
+      Hint: Tooltip
+      Value: |
+        Layout-Einstellungen für kleine Bildschirmtelefone.
+        Wird auf großen Telefonen und größeren Geräten verwendet, wenn nicht überschrieben.
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Desktops
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161216T080538Z
+    - ID: "b55a9065-9589-41d8-997b-9b4592852134"
+      Hint: Tooltip
+      Value: Layout settings for computers with extra large screens. 
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: コンパクトな電話
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "b55a9065-9589-41d8-997b-9b4592852134"
+      Hint: Tooltip
+      Value: |
+        画面の小さい電話用のレイアウト設定。
+        オーバーライドされない場合、大きな電話およびより大きなデバイスで使用されます。
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 紧凑型手机
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20220817T074711Z
+    - ID: "b55a9065-9589-41d8-997b-9b4592852134"
+      Hint: Tooltip
+      Value: |
+        小屏幕手机的布局设置。
+        如果不被覆盖，将用于大型手机和大型设备。
