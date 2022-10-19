@@ -1,0 +1,21 @@
+﻿---
+ID: "61353e71-9650-4421-8341-946820c54d87"
+Parent: "d1d2140c-755e-43f6-8b45-9742188684fa"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Available Renderings/Speakers
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {2DA4EF2D-BADE-52AB-9D3B-82D2EB08C53A}
+    {3767674F-4DB9-5DF7-A52A-0FE34F8453CC}
+    {84040441-931E-48AD-AC7F-FD0145ADEB09}
+    {7AB4158F-135B-5E9B-8106-C4A898F2F02D}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221018T092620Z
