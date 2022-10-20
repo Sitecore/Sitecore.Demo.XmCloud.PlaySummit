@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import React, { PropsWithChildren, ReactElement, useEffect, useState } from 'react';
 import { initializeAuth } from './ocAuth';
 import logout from './ocAuth/logout';
 import { retrieveCart } from './ocCurrentCart';
@@ -7,7 +7,6 @@ import { getUser } from './ocUser';
 import { Configuration, Tokens } from 'ordercloud-javascript-sdk';
 import { isCommerceEnabled } from '../helpers/CommerceHelper';
 import { useRouter } from 'next/router';
-import { Actions, PageController } from '@sitecore-discover/react';
 
 // TODO: Look into decoupling OrderCloud, Auth0, and Discover logic to keep this file for OrderCloud code only
 
@@ -16,7 +15,7 @@ Configuration.Set({
   clientID: process.env.NEXT_PUBLIC_ORDERCLOUD_BUYER_CLIENT_ID,
 });
 
-const OcProvider: FunctionComponent = ({ children }) => {
+const OcProvider = ({ children }: PropsWithChildren): ReactElement => {
   const [hasCheckedForToken, setHasCheckedForToken] = useState(false);
   const router = useRouter();
   const dispatch = useAppDispatch();
@@ -40,17 +39,6 @@ const OcProvider: FunctionComponent = ({ children }) => {
         undefined,
         { shallow: true }
       );
-      const dispatchDiscoverUserLoginEvent = async () => {
-        const user = await dispatch(getUser()).unwrap();
-        PageController.getDispatcher().dispatch({
-          type: Actions.USER_LOGIN,
-          payload: {
-            email: user.Email,
-            id: user.ID,
-          },
-        });
-      };
-      dispatchDiscoverUserLoginEvent();
     }
     setHasCheckedForToken(true);
   }, [dispatch, router]);

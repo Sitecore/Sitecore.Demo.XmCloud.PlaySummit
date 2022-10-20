@@ -4,13 +4,6 @@ Parent: "895e25c4-12b2-4b2c-8233-82f3b79eef53"
 Template: "bc71d442-3e4f-46ba-887c-746e54f9bb83"
 Path: /sitecore/system/Settings/Services/Rendering Hosts/Default
 Languages:
-- Language: "de-DE"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "13896d6e-e80c-4155-a736-b2c98ba81ff1"
 - Language: en
   Versions:
   - Version: 1
@@ -22,19 +15,5 @@ Languages:
       Hint: ServerSideRenderingEngineApplicationUrl
       Value: "http://rendering:3000"
     - ID: "fc76919b-0d7c-4732-865d-2af795fb38a4"
-      Hint: ServerSideRenderingEngineEndpointUrl
+      Hint: serverSideRenderingEngineEndpointUrl
       Value: "http://rendering:3000/api/editing/render"
-- Language: "ja-JP"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "13896d6e-e80c-4155-a736-b2c98ba81ff1"
-- Language: "zh-CN"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "13896d6e-e80c-4155-a736-b2c98ba81ff1"
