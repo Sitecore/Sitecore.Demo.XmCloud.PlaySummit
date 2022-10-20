@@ -1,7 +1,8 @@
-import Link from 'next/link';
-import React, { useState } from 'react';
-import { ImageField, Image } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Image, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
+import SearchInput from 'components/PreviewSearch/SearchInput';
 import { ComponentProps } from 'lib/component-props';
+import Link from 'next/link';
+import { useState } from 'react';
 import { isCommerceEnabled } from '../../helpers/CommerceHelper';
 
 export type MainNavigationProps = ComponentProps & {
@@ -92,6 +93,20 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
             </li>
           </ul>
         </div>
+        <SearchInput
+          keyphrase={''}
+          setSearchString={(value) => {
+            throw new Error('Function not implemented.');
+          }}
+          onFocus={(value) => {
+            throw new Error('Function not implemented.');
+          }}
+          placeholder={''}
+          redirectUrl={''}
+          setOpen={(value) => {
+            throw new Error('Function not implemented.');
+          }}
+        ></SearchInput>
       </div>
     </nav>
   );
