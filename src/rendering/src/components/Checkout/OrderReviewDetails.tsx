@@ -1,13 +1,10 @@
 import { useRouter } from 'next/router';
-import { Actions, PageController } from '@sitecore-discover/react';
 import { submitOrder } from '../../redux/ocCurrentCart';
 import { useAppDispatch } from '../../redux/store';
 import useOcCurrentCart from '../../hooks/useOcCurrentCart';
 import CheckoutSummary from './CheckoutSummary';
 import LineItemList from './LineItemList';
 import { logOrderCheckout } from '../../services/CdpService';
-import mapProductsForDiscover from '../../helpers/discover/ProductMapper';
-import mapUserForDiscover from '../../helpers/discover/UserMapper';
 import {
   calculateEstimatedDeliveryDate,
   getCreditCardExpirationDate,
@@ -80,22 +77,8 @@ const OrderReviewDetails = (): JSX.Element => {
   );
 
   const onOrderSubmitSuccess = () => {
-    dispatchDiscoverOrderConfirmEvent();
     dispatchCdpOrderCheckoutEvent();
     router?.push(`/shop/checkout/order-summary`);
-  };
-
-  const dispatchDiscoverOrderConfirmEvent = () => {
-    PageController.getDispatcher().dispatch({
-      type: Actions.ORDER_CONFIRM,
-      payload: {
-        products: mapProductsForDiscover(lineItems),
-        user: mapUserForDiscover(order.FromUser),
-        orderId: order.ID,
-        total: order.Total,
-        subtotal: order.Subtotal,
-      },
-    });
   };
 
   const dispatchCdpOrderCheckoutEvent = () => {

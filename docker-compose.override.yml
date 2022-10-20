@@ -3,7 +3,7 @@ services:
   # A Windows-based nodejs base image
   nodejs:
     # DEMO TEAM CUSTOMIZATION - demo subfolder, custom tag
-    image: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-nodejs:${SITECORE_VERSION}-${DEMO_VERSION}
+    image: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}-${DEMO_VERSION}
     build:
       context: ./docker/build/nodejs
       args:
@@ -16,7 +16,7 @@ services:
   # include it in the running environment. See Dockerfile for more details.
   solution:
     # DEMO TEAM CUSTOMIZATION - demo subfolder, custom tag
-    image: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-solution:${SITECORE_VERSION}-${DEMO_VERSION}
+    image: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}-${DEMO_VERSION}
     build:
       context: .
       args:
@@ -26,31 +26,36 @@ services:
 
   rendering:
     # DEMO TEAM CUSTOMIZATION - demo subfolder, custom tag
-    image: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-rendering:${SITECORE_VERSION}-${DEMO_VERSION}
+    image: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-rendering:${VERSION:-latest}-${DEMO_VERSION}
     build:
       context: ./docker/build/rendering
       target: ${BUILD_CONFIGURATION}
       args:
         # DEMO TEAM CUSTOMIZATION - demo subfolder, custom tag
-        PARENT_IMAGE: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-nodejs:${SITECORE_VERSION}-${DEMO_VERSION}
+        PARENT_IMAGE: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}-${DEMO_VERSION}
     # DEMO TEAM CUSTOMIZATION - More RAM
     mem_limit: 2GB
     # DEMO TEAM CUSTOMIZATION - Add port mapping to allow opening a ngrok tunnel to the rendering host
     ports:
       - "8099:3000"
     volumes:
+      # DEMO TEAM CUSTOMIZATION - Different mapped folder
       - .\src\rendering:C:\app
     environment:
       SITECORE_API_HOST: "http://cm"
       NEXTJS_DIST_DIR: ".next-container"
       PUBLIC_URL: "https://${RENDERING_HOST}"
       JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
+      # DEMO TEAM CUSTOMIZATION - Different environment variable name
       SITECORE_API_KEY: "${SITECORE_API_KEY_PlayWebsite}"
+      DISABLE_SSG_FETCH: ${DISABLE_SSG_FETCH}
       # DEMO TEAM CUSTOMIZATION - Custom integrations
+      NEXT_PUBLIC_CDP_TARGET_URL: ${CDP_TARGET_URL}
       NEXT_PUBLIC_CDP_CLIENT_KEY: ${CDP_CLIENT_KEY}
-      NEXT_PUBLIC_CDP_API_TARGET_ENDPOINT: ${CDP_API_TARGET_ENDPOINT}/v1.2
-      CDP_API_TOKEN: ${CDP_API_TOKEN}
-      CDP_AUTHENTICATED_API_TARGET_ENDPOINT: ${CDP_API_TARGET_ENDPOINT}/v2
+      NEXT_PUBLIC_CDP_POINTOFSALE: ${CDP_POINTOFSALE}
+      PERSONALIZE_MIDDLEWARE_CDP_TIMEOUT: ${PERSONALIZE_MIDDLEWARE_CDP_TIMEOUT}
+      PERSONALIZE_MIDDLEWARE_EDGE_TIMEOUT: ${PERSONALIZE_MIDDLEWARE_EDGE_TIMEOUT}
+      JSS_APP_NAME: ${JSS_APP_NAME}
       NEXT_PUBLIC_DISCOVER_CUSTOMER_KEY: ${DISCOVER_CUSTOMER_KEY}
       NEXT_PUBLIC_DISCOVER_API_KEY: ${DISCOVER_API_KEY}
       NEXT_PUBLIC_ORDERCLOUD_BUYER_CLIENT_ID: ${ORDERCLOUD_BUYER_CLIENT_ID}
@@ -114,13 +119,13 @@ services:
   # Configure for a mounted license file instead of using SITECORE_LICENSE.
   cm:
     # DEMO TEAM CUSTOMIZATION - demo subfolder, custom tag
-    image: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-cm:${SITECORE_VERSION}-${DEMO_VERSION}
+    image: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-cm:${VERSION:-latest}-${DEMO_VERSION}
     build:
       context: ./docker/build/cm
       args:
         PARENT_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xmcloud-cm:${SITECORE_VERSION}
         # DEMO TEAM CUSTOMIZATION - demo subfolder, custom tag
-        SOLUTION_IMAGE: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-solution:${SITECORE_VERSION}-${DEMO_VERSION}
+        SOLUTION_IMAGE: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}-${DEMO_VERSION}
         TOOLS_IMAGE: ${TOOLS_IMAGE}
     depends_on:
       - solution
