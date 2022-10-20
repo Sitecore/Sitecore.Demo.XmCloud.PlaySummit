@@ -1,0 +1,7 @@
+.search-results {
+  @apply flex flex-col p-4;
+
+  .search-results-header {
+    @apply text-xl mb-1;
+  }
+}

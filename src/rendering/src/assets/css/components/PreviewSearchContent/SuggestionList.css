@@ -1,0 +1,37 @@
+.preview-search-content-container {
+  .suggestion-list {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+
+    .suggestion-list-title {
+      font-weight: bold;
+      width: 10vw;
+    }
+
+    .suggestion-container {
+      flex-direction: row;
+
+      .suggestion-item {
+        background-color: rgb(255 211 28 / var(--tw-bg-opacity));
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 0 10px;
+        padding: 2px 5px;
+
+        &:hover {
+          box-shadow: 1px 1px 10px rgba(23, 23, 23, 0.45);
+          transform: scale(1.05);
+          transition: all 0.1s;
+          border: 1px solid gray;
+        }
+
+        .item-title {
+          font-size: 0.8rem;
+          line-height: 1rem;
+        }
+      }
+    }
+  }
+}

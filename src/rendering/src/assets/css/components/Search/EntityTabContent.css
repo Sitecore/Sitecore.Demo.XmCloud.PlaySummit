@@ -1,0 +1,3 @@
+.entity-tab-content {
+  @apply flex-grow pt-4 outline-0;
+}

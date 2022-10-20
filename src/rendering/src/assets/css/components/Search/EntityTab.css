@@ -1,0 +1,23 @@
+.entity-tab {
+  background-color: white;
+  padding: 0 20px;
+  height: 60px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+
+  &:hover {
+    opacity: 0.9;
+    color: var(--entity-tab-color);
+    font-weight: 600;
+  }
+
+  &[data-state='active'] {
+    color: var(--entity-tab-color);
+    pointer-events: none;
+    box-shadow: inset 0 -5px 0 0 currentColor, 0 5px 0 0 currentColor;
+    font-weight: 600;
+  }
+}

@@ -113,6 +113,29 @@
 /* PreviewSearch */
 @import './components/PreviewSearch/PreviewSearch.css';
 
+/* Discover PreviewSearchContent */
+@import './components/PreviewSearchContent/PreviewSearch.css';
+@import './components/PreviewSearchContent/SearchInput.css';
+@import './components/PreviewSearchContent/SuggestionList.css';
+@import './components/PreviewSearchContent/SessionList.css';
+@import './components/PreviewSearchContent/SessionCard.css';
+@import './components/PreviewSearchContent/SpeakerList.css';
+@import './components/PreviewSearchContent/SpeakerCard.css';
+@import './components/PreviewSearchContent/NewsCard.css';
+@import './components/PreviewSearchContent/NewsList.css';
+
+/* Discover Search */
+@import './components/Search/Search.css';
+@import './components/Search/EntityTabs.css';
+@import './components/Search/EntityTab.css';
+@import './components/Search/EntityTabContent.css';
+@import './components/Search/Filter.css';
+@import './components/Search/Filters.css';
+@import './components/Search/Facets.css';
+@import './components/Search/Results.css';
+@import './components/Search/ResultsTab.css';
+@import './components/Search/Pagination.css';
+
 /* Products */
 @import './components/Products/CategoriesList.css';
 @import './components/Products/CategoryHero.css';

@@ -1,0 +1,32 @@
+.preview-search-content-container {
+  .preview-search-content {
+    .grid-item {
+      cursor: pointer;
+    }
+
+    .item-grid.sessions-grid {
+      .grid-content {
+        .grid-item {
+          .session-info {
+            .icon {
+              height: unset;
+            }
+          }
+        }
+      }
+    }
+
+    .session-list.item-grid.sessions-grid {
+      .grid-item {
+        .image-hover-zoom {
+          height: 100px;
+        }
+
+        .session-info {
+          margin-top: 0.3rem !important;
+          margin-bottom: unset !important;
+        }
+      }
+    }
+  }
+}

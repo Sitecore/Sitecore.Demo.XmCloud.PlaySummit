@@ -1,0 +1,45 @@
+.preview-search-content-container {
+  @apply shadow shadow-lg shadow-black-lightest;
+
+  overflow-y: auto;
+  position: fixed;
+  right: 10rem;
+
+  @media (max-width: 1280px) {
+    display: none;
+  }
+
+  @media (max-width: 2000px) {
+    right: 5rem;
+  }
+
+  .preview-search-content {
+    @apply bg-white border border-white-dark;
+
+    max-width: 1500px;
+
+    .preview-search-content-popup {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+
+div.header-eyebrow~nav.main-navigation .preview-search-content-container {
+  top: 6.15rem;
+}
+
+nav.main-navigation .preview-search-content-container {
+  top: 4.65rem;
+}
+
+.search-input-container {
+  display: block;
+  margin: auto 20px;
+  position: relative;
+
+  @media (max-width: 1280px) {
+    margin: 20px;
+  }
+}

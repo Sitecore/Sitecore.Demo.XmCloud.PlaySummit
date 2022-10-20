@@ -1,6 +1,7 @@
 /**
  * This Layout is needed for Starter Kit.
  */
+import { QueryClientProvider } from '@tanstack/react-query';
 import React, { useEffect } from 'react'; // DEMO TEAM CUSTOMIZATION - Log page views in CDP
 import Head from 'next/head';
 // DEMO TEAM CUSTOMIZATION - Add LayoutServicePageState
@@ -12,6 +13,7 @@ import {
   LayoutServicePageState,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import Scripts from 'src/Scripts';
+import { queryClient } from './helpers/DiscoverHelper';
 // DEMO TEAM CUSTOMIZATION - CDP integration
 import { logViewEvent } from './services/CdpService';
 import HeaderCdpMessageBar from './components/HeaderCdpMessageBar';
@@ -74,16 +76,18 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
 
       {/* root placeholder for the app, which we add components to using route data */}
       {/* DEMO TEAM CUSTOMIZATION - Add CSS classes when Sitecore editors are active. Add HeaderCdpMessageBar. Remove sections inner divs. */}
-      <div className={mainClassPageEditing}>
-        <header className={isExperienceEditorActiveCssClass}>
-          {route && <Placeholder name="headless-header" rendering={route} />}
-        </header>
-        <main className={isExperienceEditorActiveCssClass}>
-          <HeaderCdpMessageBar />
-          {route && <Placeholder name="headless-main" rendering={route} />}
-        </main>
-        <footer>{route && <Placeholder name="headless-footer" rendering={route} />}</footer>
-      </div>
+      <QueryClientProvider client={queryClient}>
+        <div className={mainClassPageEditing}>
+          <header className={isExperienceEditorActiveCssClass}>
+            {route && <Placeholder name="headless-header" rendering={route} />}
+          </header>
+          <main className={isExperienceEditorActiveCssClass}>
+            <HeaderCdpMessageBar />
+            {route && <Placeholder name="headless-main" rendering={route} />}
+          </main>
+          <footer>{route && <Placeholder name="headless-footer" rendering={route} />}</footer>
+        </div>
+      </QueryClientProvider>
       {/* END CUSTOMIZATION */}
     </>
   );

@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { ImageField, Image } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { isCommerceEnabled } from '../../helpers/CommerceHelper';
+import { isContentSearchEnabled } from '../../helpers/ContentSearchHelper';
+import PreviewSearch from '../PreviewSearchContent/PreviewSearch';
 
 export type MainNavigationProps = ComponentProps & {
   fields: {
@@ -48,6 +50,8 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
     </li>
   );
 
+  const previewSearchWidget = isContentSearchEnabled && <PreviewSearch />;
+
   return (
     <nav className="main-navigation">
       <div className="navigation-content">
@@ -91,6 +95,7 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
               </Link>
             </li>
           </ul>
+          <div className="search-input-container">{previewSearchWidget}</div>
         </div>
       </div>
     </nav>
