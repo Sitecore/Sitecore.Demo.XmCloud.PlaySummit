@@ -1,4 +1,3 @@
-import { SearchResponseSortChoiceOrder } from '@sitecore-discover/react';
 import { Category } from '../models/discover/Category';
 import { Product } from '../models/discover/Product';
 import { Suggestion } from '../models/discover/Suggestion';
@@ -171,7 +170,7 @@ export const mockDiscoverData = {
       },
     ],
     sortType: '',
-    sortDirection: SearchResponseSortChoiceOrder.ASC,
+    sortDirection: '',
     totalPages: 1,
   },
 

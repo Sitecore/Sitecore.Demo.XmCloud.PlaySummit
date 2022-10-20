@@ -77,7 +77,7 @@ try {
     }
     Write-Host "Generating Traefik TLS certificate..." -ForegroundColor Green
     & $mkcert -install
-    # DEMO TEAM CUSTOMIZATION - Remove the xmcloudpreview.localhost certificate
+    # DEMO TEAM CUSTOMIZATION - Remove the sxastarter.localhost certificate
     & $mkcert "*.xmcloudcm.localhost"
 
     # stash CAROOT path for messaging at the end of the script

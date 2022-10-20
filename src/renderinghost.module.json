@@ -1,4 +1,5 @@
 {
+    "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
     "namespace": "RenderingHost",
     "items": {
         "includes": [

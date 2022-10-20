@@ -15,13 +15,15 @@ type PageContentProps = {
 };
 
 type ComponentContentProps = {
+  id: string;
   styles: string;
   children: JSX.Element;
 };
 
 const ComponentContent = (props: ComponentContentProps) => {
+  const id = props.id;
   return (
-    <div className={`component content ${props.styles}`}>
+    <div className={`component content ${props.styles}`} id={id ? id : undefined}>
       <div className="component-content">
         <div className="field-content">{props.children}</div>
       </div>
@@ -49,7 +51,7 @@ export const Default = (props: PageContentProps): JSX.Element => {
   ) as RichTextField;
 
   return (
-    <ComponentContent styles={props.params.styles}>
+    <ComponentContent styles={props.params.styles} id={props.params.RenderingIdentifier}>
       <JssRichText field={field} />
     </ComponentContent>
   );
