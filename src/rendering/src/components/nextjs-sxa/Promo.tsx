@@ -11,10 +11,12 @@ import {
 
 interface Fields {
   PromoIcon: ImageField;
+  // DEMO TEAM CUSTOMIZATION - Additional field
   PromoIcon2: ImageField;
   PromoText: Field<string>;
   PromoLink: LinkField;
   PromoText2: Field<string>;
+  // DEMO TEAM CUSTOMIZATION - Additional field
   PromoText3: Field<string>;
 }
 
@@ -32,14 +34,16 @@ const PromoDefaultComponent = (props: PromoProps): JSX.Element => (
 );
 
 export const Default = (props: PromoProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
   if (props.fields) {
     return (
-      <div className={`component promo ${props.params.styles}`}>
+      <div className={`component promo ${props.params.styles}`} id={id ? id : undefined}>
         <div className="component-content">
           <div className="field-promoicon">
             <JssImage field={props.fields.PromoIcon} />
           </div>
           <div className="promo-text">
+            {/* DEMO TEAM CUSTOMIZATION - Add fields */}
             <div className="field-promotext3">
               <Text className="promo-text" field={props.fields.PromoText3} />
             </div>
@@ -49,8 +53,11 @@ export const Default = (props: PromoProps): JSX.Element => {
             <div className="field-promotext2">
               <Text className="promo-text" field={props.fields.PromoText2} />
             </div>
+            {/* END CUSTOMIZATION */}
             <div className="field-promolink">
+              {/* DEMO TEAM CUSTOMIZATION - Custom button classes */}
               <JssLink field={props.fields.PromoLink} className="btn--main btn--main--round" />
+              {/* END CUSTOMIZATION */}
             </div>
           </div>
         </div>
@@ -61,6 +68,34 @@ export const Default = (props: PromoProps): JSX.Element => {
   return <PromoDefaultComponent {...props} />;
 };
 
+export const WithText = (props: PromoProps): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+  if (props.fields) {
+    return (
+      <div className={`component promo ${props.params.styles}`} id={id ? id : undefined}>
+        <div className="component-content">
+          <div className="field-promoicon">
+            <JssImage field={props.fields.PromoIcon} />
+          </div>
+          <div className="promo-text">
+            <div>
+              <div className="field-promotext">
+                <Text className="promo-text" field={props.fields.PromoText} />
+              </div>
+            </div>
+            <div className="field-promotext">
+              <Text className="promo-text" field={props.fields.PromoText2} />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return <PromoDefaultComponent {...props} />;
+};
+
+// DEMO TEAM CUSTOMIZATION - New variant
 export const WithColumns = (props: PromoProps): JSX.Element => {
   if (props.fields) {
     return (
@@ -95,3 +130,4 @@ export const WithColumns = (props: PromoProps): JSX.Element => {
 
   return <PromoDefaultComponent {...props} />;
 };
+// END CUSTOMIZATION

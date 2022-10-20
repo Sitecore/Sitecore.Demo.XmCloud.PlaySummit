@@ -3,9 +3,11 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import NotFound from 'src/NotFound';
 import Layout from 'src/Layout';
 import {
+  RenderingType,
   SitecoreContext,
   ComponentPropsContext,
   handleEditorFastRefresh,
+  EditingComponentPlaceholder,
   StaticPath,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { SitecorePageProps } from 'lib/page-props';
@@ -26,6 +28,8 @@ const SitecorePage = ({ notFound, componentProps, layoutData }: SitecorePageProp
   }
 
   const isEditing = layoutData.sitecore.context.pageEditing;
+  const isComponentRendering =
+    layoutData.sitecore.context.renderingType === RenderingType.Component;
 
   return (
     <ComponentPropsContext value={componentProps}>
@@ -33,7 +37,15 @@ const SitecorePage = ({ notFound, componentProps, layoutData }: SitecorePageProp
         componentFactory={isEditing ? editingComponentFactory : componentFactory}
         layoutData={layoutData}
       >
-        <Layout layoutData={layoutData} />
+        {/*
+          Sitecore Pages supports component rendering to avoid refreshing the entire page during component editing.
+          If you are using Experience Editor only, this logic can be removed, Layout can be left.
+        */}
+        {isComponentRendering ? (
+          <EditingComponentPlaceholder rendering={layoutData.sitecore.route} />
+        ) : (
+          <Layout layoutData={layoutData} />
+        )}
       </SitecoreContext>
     </ComponentPropsContext>
   );
@@ -53,13 +65,12 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
   let paths: StaticPath[] = [];
   let fallback: boolean | 'blocking' = 'blocking';
 
-  // DEMO TEAM CUSTOMIZATION (next line) - Add DISABLE_SSG_FETCH environment variable check from JSS v21 to avoid SSG in the XM Cloud editing rendering host
   if (process.env.NODE_ENV !== 'development' && !process.env.DISABLE_SSG_FETCH) {
     try {
       // Note: Next.js runs export in production mode
       paths = await sitemapFetcher.fetch(context);
     } catch (error) {
-      console.log('Error occurred while generating static paths');
+      console.log('Error occurred while fetching static paths');
       console.log(error);
     }
 
@@ -77,6 +88,13 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
 // revalidation (or fallback) is enabled and a new request comes in.
 export const getStaticProps: GetStaticProps = async (context) => {
   const props = await sitecorePagePropsFactory.create(context);
+
+  // Check if we have a redirect (e.g. custom error page)
+  if (props.redirect) {
+    return {
+      redirect: props.redirect,
+    };
+  }
 
   return {
     props,

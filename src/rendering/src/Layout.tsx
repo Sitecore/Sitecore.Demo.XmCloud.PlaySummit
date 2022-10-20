@@ -1,9 +1,9 @@
 /**
- * This Layout needs for SXA example.
+ * This Layout is needed for Starter Kit.
  */
 import React, { useEffect } from 'react'; // DEMO TEAM CUSTOMIZATION - Log page views in CDP
 import Head from 'next/head';
-// DEMO TEAM CUSTOMIZATION - Remove VisitorIdentification, Add LayoutServicePageState
+// DEMO TEAM CUSTOMIZATION - Add LayoutServicePageState
 import {
   Placeholder,
   getPublicUrl,
@@ -11,6 +11,7 @@ import {
   Field,
   LayoutServicePageState,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import Scripts from 'src/Scripts';
 // DEMO TEAM CUSTOMIZATION - CDP integration
 import { logViewEvent } from './services/CdpService';
 import HeaderCdpMessageBar from './components/HeaderCdpMessageBar';
@@ -27,7 +28,7 @@ interface LayoutProps {
 interface RouteFields {
   [key: string]: unknown;
   Title?: Field;
-  pageTitle?: Field;
+  pageTitle?: Field; // DEMO TEAM CUSTOMIZATION - Add field
 }
 
 const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
@@ -63,6 +64,7 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
 
   return (
     <>
+      <Scripts />
       <Head>
         {/* DEMO TEAM CUSTOMIZATION - Use event name from context as the page title */}
         <title>{pageTitle}</title>
@@ -70,10 +72,8 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
         <meta name="robots" content="noindex" />
       </Head>
 
-      {/* DEMO TEAM CUSTOMIZATION - Remove VisitorIdentification */}
-
       {/* root placeholder for the app, which we add components to using route data */}
-      {/* DEMO TEAM CUSTOMIZATION - Add CSS classes when Sitecore editors are active. Add HeaderCdpMessageBar. Custom placeholder names. Remove sections inner divs. */}
+      {/* DEMO TEAM CUSTOMIZATION - Add CSS classes when Sitecore editors are active. Add HeaderCdpMessageBar. Remove sections inner divs. */}
       <div className={mainClassPageEditing}>
         <header className={isExperienceEditorActiveCssClass}>
           {route && <Placeholder name="headless-header" rendering={route} />}

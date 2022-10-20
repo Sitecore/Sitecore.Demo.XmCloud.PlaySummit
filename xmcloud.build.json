@@ -20,35 +20,35 @@
         "actions":{
           "warmUpCm": {
             "urls": [
-                "/sitecore/shell",
-                "/sitecore/shell/Applications/Content%20Editor.aspx?sc_bw=1",
-                "/sitecore/client/Applications/Launchpad"
-              ]
+              "/sitecore/shell",
+              "/sitecore/shell/Applications/Content%20Editor.aspx?sc_bw=1",
+              "/sitecore/client/Applications/Launchpad"
+            ]
           },
           "populateSchema": {
             "indexNames": [
-                "sitecore_core_index",
-                "sitecore_master_index",
-                "sitecore_horizon_index"
+              "sitecore_core_index",
+              "sitecore_master_index",
+              "sitecore_horizon_index"
             ]
           },
           "reindex": {
             "indexNames": [
-                "sitecore_core_index",
-                "sitecore_master_index",
-                "sitecore_horizon_index"
+              "sitecore_core_index",
+              "sitecore_master_index",
+              "sitecore_horizon_index"
             ]
           },
           "publish": {
             "path": "/sitecore",
             "languages": [
-                "en",
-                "fr-CA"
+              "en",
+              "fr-CA"
             ],
             "itemIds": [],
             "targets": ["Edge"],
             "republish": false
           }
         }
-      }
+    }
 }

@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { trackPDPViewEvent } from '@sitecore-discover/react';
 import useOcProductDetail from '../../hooks/useOcProductDetail';
 import ProductDetailsContent from './ProductDetailsContent';
 
@@ -20,8 +19,6 @@ const ProductDetails = (): JSX.Element => {
     if (!productSku) {
       return;
     }
-
-    trackPDPViewEvent(productSku);
   }, [sku, variantID]);
 
   return (

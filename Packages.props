@@ -15,10 +15,10 @@
     <PackageReference Update="Sitecore.XmCloud.LayoutService" Version="$(PlatformVersion)" />
     <PackageReference Update="Sitecore.XmCloud.Assemblies" Version="$(PlatformVersion)" />
     <PackageReference Update="Sitecore.Assemblies.SitecoreHeadlessServicesServer" Version="19.*" />
+    <!-- DEMO TEAM CUSTOMIZATION - Add JSS, GraphQL, and Content Hub references -->
     <PackageReference Update="Sitecore.JavaScriptServices.ViewEngine" Version="20.0.0" />
     <PackageReference Update="Sitecore.Services.GraphQL" Version="6.1.0" />
     <PackageReference Update="Sitecore.Services.GraphQL.EdgeSchema" Version="6.0.0" />
-    <!-- DEMO TEAM CUSTOMIZATION - Add Content Hub references -->
     <PackageReference Update="Sitecore.Connector.CMP" Version="5.*" />
     <PackageReference Update="Sitecore.Connector.CMP.TaxonomyProvider" Version="5.*" />
     <!-- END CUSTOMIZATION -->

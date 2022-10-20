@@ -13,7 +13,6 @@ import ProductOverview from './ProductOverview';
 import ProductImage from './ProductImage';
 import { logAddToCart } from '../../services/CdpService';
 import ProductBreadcrumb from '../Navigation/ProductBreadcrumb';
-import { Actions, PageController } from '@sitecore-discover/react';
 import Spinner from '../../components/ShopCommon/Spinner';
 import Skeleton from 'react-loading-skeleton';
 
@@ -158,26 +157,6 @@ const ProductDetailsContent = ({
     setSpecValues(tempSpecs);
   };
 
-  const dispatchDiscoverAddToCartEvent = useCallback(
-    (product: BuyerProduct, quantity: number) => {
-      const sku = !!variant ? variant.ID : product.ID;
-
-      PageController.getDispatcher().dispatch({
-        type: Actions.ADD_TO_CART,
-        payload: {
-          page: 'pdp',
-          sku: sku,
-          quantity: quantity,
-          price:
-            product.PriceSchedule.PriceBreaks[0].SalePrice ||
-            product.PriceSchedule.PriceBreaks[0].Price,
-          priceOriginal: product.PriceSchedule.PriceBreaks[0].Price,
-        },
-      });
-    },
-    [variant]
-  );
-
   const handleAddToCart = useCallback(
     async (e: FormEvent) => {
       e.preventDefault();
@@ -205,15 +184,13 @@ const ProductDetailsContent = ({
       );
       setIsLoading(false);
 
-      dispatchDiscoverAddToCartEvent(product, quantity);
-
       // Retrieve the lineitem that was just created
       const resPayload: { LineItems?: LineItem[] } = response?.payload;
       const lineItem = resPayload?.LineItems.find((item) => item.ProductID === product.ID);
 
       logAddToCart(lineItem, quantity);
     },
-    [dispatch, product, specValues, quantity, dispatchDiscoverAddToCartEvent]
+    [dispatch, product, specValues, quantity]
   );
 
   const productImageProps =
