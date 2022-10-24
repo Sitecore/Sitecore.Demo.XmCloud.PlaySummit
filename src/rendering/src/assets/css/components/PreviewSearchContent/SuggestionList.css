@@ -1,0 +1,13 @@
+.suggestion-list {
+  display: flex; 
+  flex-direction: row; 
+  margin: 10px 0;
+}
+
+.suggestion-list-title {
+   width: 10vw;
+}
+
+.suggestion-item {
+  margin: 0 10px;
+}

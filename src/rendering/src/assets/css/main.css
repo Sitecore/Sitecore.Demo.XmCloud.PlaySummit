@@ -113,21 +113,28 @@
 /* PreviewSearch */
 @import './components/PreviewSearch/PreviewSearch.css';
 
+/* PreviewSearchContent */
+@import './components/PreviewSearchContent/ItemCard.css';
+@import './components/PreviewSearchContent/ItemList.css';
+@import './components/PreviewSearchContent/PreviewSearch.css';
+@import './components/PreviewSearchContent/SearchInput.css';
+@import './components/PreviewSearchContent/SuggestionList.css';
+
 /* Products */
 @import './components/Products/CategoriesList.css';
 @import './components/Products/CategoryHero.css';
 @import './components/Products/ProductDetails.css';
 @import './components/Products/Shop.css';
 
-/* Search */
-@import './components/Search/EntityTabs.css';
-@import './components/Search/EntityTab.css';
-@import './components/Search/EntityTabContent.css';
-@import './components/Search/Filter.css';
-@import './components/Search/Filters.css';
-@import './components/Search/Facets.css';
-@import './components/Search/Results.css';
-@import './components/Search/ResultsTab.css';
+/* Search */	
+@import './components/Search/EntityTabs.css';	
+@import './components/Search/EntityTab.css';	
+@import './components/Search/EntityTabContent.css';	
+@import './components/Search/Filter.css';	
+@import './components/Search/Filters.css';	
+@import './components/Search/Facets.css';	
+@import './components/Search/Results.css';	
+@import './components/Search/ResultsTab.css';	
 @import './components/Search/Pagination.css';
 
 /* Sessions */

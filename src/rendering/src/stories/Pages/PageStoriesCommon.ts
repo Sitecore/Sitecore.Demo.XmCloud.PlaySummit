@@ -2,6 +2,7 @@ import { HeaderProps } from '../../components/Navigation/Header';
 import { FooterProps } from '../../components/Navigation/Footer';
 import HeroSectionCta from '../../components/PageContent/HeroSectionCta';
 import MainNavigation from '../../components/Navigation/MainNavigation';
+import { PreviewSearchProps } from 'components/PreviewSearchContent/PreviewSearch';
 
 export const mockMainNavigationFields = {
   data: {
@@ -428,6 +429,105 @@ export const mockFooterProps = {
     dataSource: '/sitecore',
   },
 } as unknown as FooterProps;
+
+export const mockPreviewSearchFields = {
+  rfkId: 'rfkid_6',
+  suggestions: {
+    title: 'Do you mean?',
+    list: [
+      {
+        text: 'Suggestion 1',
+        url: '#',
+      },
+      {
+        text: 'Suggestion 2',
+        url: '#',
+      },
+      {
+        text: 'Suggestion 3',
+        url: '#',
+      },
+    ],
+  },
+  sessions: {
+    title: 'Sessions',
+    list: [
+      {
+        imageSrc:
+          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
+        title: 'Session 1',
+        description: 'Description 1',
+        url: '#',
+      },
+      {
+        imageSrc:
+          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
+        title: 'Session 2',
+        description: 'Description 2',
+        url: '#',
+      },
+      {
+        imageSrc:
+          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
+        title: 'Session 3',
+        description: 'Description 3',
+        url: '#',
+      },
+    ],
+  },
+  speakers: {
+    title: 'Speakers',
+    list: [
+      {
+        imageSrc:
+          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
+        title: 'Speaker 1',
+        description: 'Description 1',
+        url: '#',
+      },
+      {
+        imageSrc:
+          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
+        title: 'Speaker 2',
+        description: 'Description 2',
+        url: '#',
+      },
+      {
+        imageSrc:
+          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
+        title: 'Speaker 3',
+        description: 'Description 3',
+        url: '#',
+      },
+    ],
+  },
+  news: {
+    title: 'News',
+    list: [
+      {
+        imageSrc:
+          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
+        title: 'News 1',
+        description: 'Description 1',
+        url: '#',
+      },
+      {
+        imageSrc:
+          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
+        title: 'News 2',
+        description: 'Description 2',
+        url: '#',
+      },
+      {
+        imageSrc:
+          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
+        title: 'News 3',
+        description: 'Description 3',
+        url: '#',
+      },
+    ],
+  },
+} as unknown as PreviewSearchProps;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const mockComponentFactory = function (componentName: string): any {

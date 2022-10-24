@@ -1,9 +1,12 @@
+import { Action, ActionPropPayload } from '@sitecore-discover/core';
+import { PreviewSearchSuggestionChangedActionPayload, PreviewSearchTrendingCategoryChangedActionPayload, PreviewSearchKeyphraseChangedActionPayload, PreviewSearchCategoryChangedActionPayload } from '@sitecore-discover/widgets';
 import { Image, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
-import SearchInput from 'components/PreviewSearch/SearchInput';
+import PreviewSearch, { PreviewSearchProps } from '../PreviewSearchContent/PreviewSearch';
 import { ComponentProps } from 'lib/component-props';
 import Link from 'next/link';
 import { useState } from 'react';
 import { isCommerceEnabled } from '../../helpers/CommerceHelper';
+import debounce from '../../helpers/Debounce';
 
 export type MainNavigationProps = ComponentProps & {
   fields: {
@@ -37,6 +40,7 @@ export type MainNavigationProps = ComponentProps & {
       };
     };
   };
+  previewSearchProps?: PreviewSearchProps; // For Storybook support
 };
 
 const MainNavigation = (props: MainNavigationProps): JSX.Element => {
@@ -47,6 +51,26 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
         <a>Shop</a>
       </Link>
     </li>
+  );
+
+  const searchContent: (text: string) => void = debounce(
+    (text) => {
+      // TODO PSC: Must add request
+      /*
+      const changeKeyphraseAction: Action = {
+        type: PreviewSearchActions.KEYPHRASE_CHANGED,
+        payload: { keyphrase: text || '' },
+      };
+      */
+      //dispatch(changeKeyphraseAction); //setViewAllUrl(`/shop/products/?q=${text || ''}`);
+    },
+    500,
+    null
+  );
+
+  // TODO PSC: Review component logic
+  const previewSearchWidget = (
+    <PreviewSearch searchContent={searchContent} {...props.previewSearchProps} />
   );
 
   return (
@@ -93,20 +117,9 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
             </li>
           </ul>
         </div>
-        <SearchInput
-          keyphrase={''}
-          setSearchString={(value) => {
-            throw new Error('Function not implemented.');
-          }}
-          onFocus={(value) => {
-            throw new Error('Function not implemented.');
-          }}
-          placeholder={''}
-          redirectUrl={''}
-          setOpen={(value) => {
-            throw new Error('Function not implemented.');
-          }}
-        ></SearchInput>
+        <div className="shop-search-input-container">
+          <div id="search-input-container">{previewSearchWidget}</div>
+        </div>
       </div>
     </nav>
   );

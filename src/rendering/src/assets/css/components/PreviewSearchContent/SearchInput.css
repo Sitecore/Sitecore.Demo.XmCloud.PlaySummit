@@ -1,0 +1,11 @@
+.search-input-play {
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-play-icon {
+  color: rgb(255 211 28 / var(--tw-bg-opacity));
+  margin-left: 5px;
+  cursor: pointer;
+}
