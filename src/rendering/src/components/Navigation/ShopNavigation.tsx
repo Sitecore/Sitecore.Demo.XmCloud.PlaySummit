@@ -1,15 +1,25 @@
 import Link from 'next/link';
 import React, { useRef, useState } from 'react';
+import useOcCurrentCart from '../../hooks/useOcCurrentCart';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import MiniCart from '../Checkout/MiniCart';
 import CartBadge from '../ShopCommon/CartBadge';
+import DiscoverWidget from '../ShopCommon/DiscoverWidget';
+import PreviewSearch, { PreviewSearchProps } from '../PreviewSearch/PreviewSearch';
 import { isAuthenticationEnabled } from '../../services/AuthenticationService';
 import ClickOutside from '../ShopCommon/ClickOutside';
 import AccountPopup from './AccountPopup';
+import { dispatchDiscoverCartStatusListActionEvent } from '../../helpers/discover/CartStatusDispatcher';
 import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
-const ShopNavigation = (): JSX.Element => {
+export type ShopNavigationProps = {
+  previewSearchProps?: PreviewSearchProps; // For Storybook support
+};
+
+const ShopNavigation = (props: ShopNavigationProps): JSX.Element => {
+  const { lineItems } = useOcCurrentCart();
+
   const [isMiniCartOpen, setIsMiniCartOpen] = useState(false);
   const miniCartRef = useRef(null);
   const closeMinicart = () => setIsMiniCartOpen(false);
@@ -36,8 +46,17 @@ const ShopNavigation = (): JSX.Element => {
   );
 
   const handleCartIconClick = () => {
+    if (!isMiniCartOpen && lineItems?.length !== undefined) {
+      dispatchDiscoverCartStatusListActionEvent(lineItems);
+    }
     setIsMiniCartOpen(!isMiniCartOpen);
   };
+
+  const previewSearchWidget = props.previewSearchProps ? (
+    <PreviewSearch {...props.previewSearchProps} />
+  ) : (
+    <DiscoverWidget rfkId="rfkid_6" />
+  );
 
   const miniCartActiveClass = isMiniCartOpen ? 'active' : '';
   const miniCartOpenClass = isMiniCartOpen ? 'open' : '';
@@ -70,7 +89,7 @@ const ShopNavigation = (): JSX.Element => {
           </ul>
         </div>
         <div className="shop-search-input-container">
-          <div id="search-input-container"></div>
+          <div id="search-input-container">{previewSearchWidget}</div>
         </div>
       </div>
     </nav>
