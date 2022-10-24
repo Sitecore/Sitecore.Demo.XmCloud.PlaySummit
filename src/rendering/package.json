@@ -46,6 +46,7 @@
     "@ordercloud/catalyst": "^1.2.0",
     "@ordercloud/portal-javascript-sdk": "0.0.1-beta.19",
     "@reduxjs/toolkit": "^1.8.6",
+    "@sitecore-discover/react": "^0.2.6",
     "@sitecore-feaas/clientside": "^0.0.9",
     "@sitecore-jss/sitecore-jss-nextjs": "^21.0.0",
     "@sitecore/engage": "^0.3.2",

@@ -1,7 +1,9 @@
+import { useEffect } from 'react';
 import useOcCurrentCart from '../../hooks/useOcCurrentCart';
 import LineItemCard from './LineItemCard';
 import NoItemsInCartMessage from '../ShopCommon/NoItemsInCartMessage';
 import Skeleton from 'react-loading-skeleton';
+import { dispatchDiscoverCartStatusListActionEvent } from '../../helpers/discover/CartStatusDispatcher';
 
 type LineItemListProps = {
   editable?: boolean;
@@ -10,6 +12,13 @@ type LineItemListProps = {
 const LineItemList = (props: LineItemListProps): JSX.Element => {
   const { lineItems, initialized } = useOcCurrentCart();
   const skeletonCount = 2;
+
+  useEffect(() => {
+    if (lineItems?.length !== undefined) {
+      dispatchDiscoverCartStatusListActionEvent(lineItems);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lineItems]);
 
   const getContent = () => {
     if (!initialized) {

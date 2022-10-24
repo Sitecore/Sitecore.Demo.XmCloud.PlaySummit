@@ -8,6 +8,7 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
+    "storybook-addon-breakpoints",
     {
       name: "@storybook/addon-postcss",
       options: {
