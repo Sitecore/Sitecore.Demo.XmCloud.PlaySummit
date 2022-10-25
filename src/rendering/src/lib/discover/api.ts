@@ -1,11 +1,15 @@
+import { AxiosDataFetcher } from '@sitecore-jss/sitecore-jss-nextjs';
 import merge from 'lodash.merge';
-import { dataFetcher } from '../data-fetcher';
 
 const domainId = process.env.NEXT_PUBLIC_DISCOVER_API_DOMAIN || '229001437';
 const host = process.env.NEXT_PUBLIC_DISCOVER_API_HOST || 'api-staging.rfksrv.com';
 
 export const doGet = async (widgetId: string, data: unknown): Promise<unknown> => {
-  const response = await dataFetcher(`https://${host}/${domainId}/v1/discover/search-rec`, data);
+  const dataFetcher = new AxiosDataFetcher({ withCredentials: false });
+  const response = await dataFetcher.fetch(
+    `https://${host}/${domainId}/v1/discover/search-rec`,
+    data
+  );
   const {
     data: {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
