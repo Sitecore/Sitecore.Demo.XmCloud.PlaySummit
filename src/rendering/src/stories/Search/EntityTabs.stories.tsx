@@ -2,13 +2,18 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
 
 import EntityTabs from '../../components/Search/EntityTabs';
+import SearchTabProvider from '../../components/Search/SearchTabProvider';
 
 export default {
   title: 'Components/Search/EntityTabs',
   component: EntityTabs,
 } as ComponentMeta<typeof EntityTabs>;
 
-const Template: ComponentStory<typeof EntityTabs> = (args) => <EntityTabs {...args} />;
+const Template: ComponentStory<typeof EntityTabs> = (args) => (
+  <SearchTabProvider>
+    <EntityTabs {...args} />
+  </SearchTabProvider>
+);
 
 export const Default = Template.bind({});
 Default.args = {

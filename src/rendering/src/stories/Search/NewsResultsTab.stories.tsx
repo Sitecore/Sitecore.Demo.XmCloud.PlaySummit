@@ -1,15 +1,18 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
-import { News } from 'src/types/news';
 
-import NewsList from '../../components/News/NewsList';
+import NewsResultsTab from '../../components/Search/NewsResultsTab';
+import { News } from '../../types/news';
+import { facetsProp, filtersProp } from '../mock-discover-data';
 
 export default {
-  title: 'Components/News/PreviewSearchNewsList',
-  component: NewsList,
-} as ComponentMeta<typeof NewsList>;
+  title: 'Components/Search/NewsResultsTab',
+  component: NewsResultsTab,
+} as ComponentMeta<typeof NewsResultsTab>;
 
-const Template: ComponentStory<typeof NewsList> = (args) => <NewsList {...args} />;
+const Template: ComponentStory<typeof NewsResultsTab> = (args) => <NewsResultsTab {...args} />;
+
+export const Default = Template.bind({});
 
 const news1 = {
   name: {
@@ -56,6 +59,10 @@ const news2 = {
       },
     },
   },
+  rendering: {
+    componentName: 'Rendering',
+    dataSource: '/sitecore',
+  },
   url: '/news/item',
 } as News;
 
@@ -83,9 +90,32 @@ const news3 = {
   url: '/news/item',
 } as News;
 
-export const Default = Template.bind({});
-Default.args = {
-  fields: {
-    items: [news1, news2, news3],
+const news4 = {
+  name: {
+    value: 'Tomorrow News',
   },
+  fields: {
+    Title: {
+      value: 'Tomorrow News',
+    },
+    Excerpt: {
+      value:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan posuere orci, placerat tristique quam vulputate non.',
+    },
+    PublishDate: {
+      value: '2021-07-29T06:00:00Z',
+    },
+    Image: {
+      value: {
+        src: '/assets/img/tickets/Banner2.jpg',
+      },
+    },
+  },
+  url: '/news/item',
+} as News;
+
+Default.args = {
+  facets: facetsProp,
+  filters: filtersProp,
+  items: [news1, news2, news3, news4],
 };

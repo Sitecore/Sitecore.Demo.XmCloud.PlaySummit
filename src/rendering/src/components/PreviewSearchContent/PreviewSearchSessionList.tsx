@@ -8,7 +8,7 @@ export type SessionListProps = {
 
 const VIEW_ALL_SESSIONS_URL = '/en/sessions';
 
-const SessionList = (props: SessionListProps): JSX.Element => {
+const PreviewSearchSessionList = (props: SessionListProps): JSX.Element => {
   const { title, list } = props;
   return (
     <section className={`session-list item-grid sessions-grid`}>
@@ -30,4 +30,4 @@ const SessionList = (props: SessionListProps): JSX.Element => {
   );
 };
 
-export default SessionList;
+export default PreviewSearchSessionList;

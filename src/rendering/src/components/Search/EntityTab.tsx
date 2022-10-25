@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { CSSProperties, useCallback } from 'react';
 
 export type EntityTabProps = {
   id: string;
@@ -23,7 +23,7 @@ const EntityTab = (props: EntityTabProps): JSX.Element => {
       tabIndex={props.active ? 0 : -1}
       data-orientation="horizontal"
       onClick={!props.active ? onSelectTabCallback : undefined}
-      style={{ '--entity-tab-color': props.color }}
+      style={props.color ? ({ '--entity-tab-color': props.color } as CSSProperties) : undefined}
     >
       {props.name}
     </button>

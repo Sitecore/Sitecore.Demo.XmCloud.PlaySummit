@@ -8,7 +8,7 @@ export type SpeakerListProps = {
 
 const VIEW_ALL_SPEAKERS_URL = '/speakers';
 
-const SpeakerList = (props: SpeakerListProps): JSX.Element => {
+const PreviewSearchSpeakerList = (props: SpeakerListProps): JSX.Element => {
   const { title, list } = props;
   return (
     <section className={`speaker-list item-grid`}>
@@ -30,4 +30,4 @@ const SpeakerList = (props: SpeakerListProps): JSX.Element => {
   );
 };
 
-export default SpeakerList;
+export default PreviewSearchSpeakerList;

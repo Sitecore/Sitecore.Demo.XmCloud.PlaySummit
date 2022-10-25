@@ -1,12 +1,9 @@
-import { Action, ActionPropPayload } from '@sitecore-discover/core';
-import { PreviewSearchSuggestionChangedActionPayload, PreviewSearchTrendingCategoryChangedActionPayload, PreviewSearchKeyphraseChangedActionPayload, PreviewSearchCategoryChangedActionPayload } from '@sitecore-discover/widgets';
 import { Image, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
-import PreviewSearch, { PreviewSearchProps } from '../PreviewSearchContent/PreviewSearch';
 import { ComponentProps } from 'lib/component-props';
 import Link from 'next/link';
 import { useState } from 'react';
 import { isCommerceEnabled } from '../../helpers/CommerceHelper';
-import debounce from '../../helpers/Debounce';
+import PreviewSearch from '../PreviewSearchContent/PreviewSearch';
 
 export type MainNavigationProps = ComponentProps & {
   fields: {
@@ -40,7 +37,6 @@ export type MainNavigationProps = ComponentProps & {
       };
     };
   };
-  previewSearchProps?: PreviewSearchProps; // For Storybook support
 };
 
 const MainNavigation = (props: MainNavigationProps): JSX.Element => {
@@ -53,25 +49,8 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
     </li>
   );
 
-  const searchContent: (text: string) => void = debounce(
-    (text) => {
-      // TODO PSC: Must add request
-      /*
-      const changeKeyphraseAction: Action = {
-        type: PreviewSearchActions.KEYPHRASE_CHANGED,
-        payload: { keyphrase: text || '' },
-      };
-      dispatch(changeKeyphraseAction); //setViewAllUrl(`/shop/products/?q=${text || ''}`);
-      */
-    },
-    500,
-    null
-  );
-
   // TODO PSC: Review flag to enable or disable feature
-  const previewSearchWidget = (
-    <PreviewSearch searchContent={searchContent} {...props.previewSearchProps} />
-  );
+  const previewSearchWidget = <PreviewSearch />;
 
   return (
     <nav className="main-navigation">

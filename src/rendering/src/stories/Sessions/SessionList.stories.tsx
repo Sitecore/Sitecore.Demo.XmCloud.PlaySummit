@@ -1,11 +1,11 @@
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import SessionList, { SessionListProps } from '../../components/Sessions/SessionList';
 import { SESSIONS } from '../mock-sessions';
 
 export default {
-  title: 'Components/Sessions/SessionList',
+  title: 'Components/Sessions/PreviewSearchSessionList',
   component: SessionList,
 } as ComponentMeta<typeof SessionList>;
 

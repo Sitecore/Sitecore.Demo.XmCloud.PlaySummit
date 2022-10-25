@@ -1,27 +1,36 @@
 import { useRef, useState } from 'react';
-import { PreviewSearchWidgetProps } from '@sitecore-discover/ui';
-import { Action } from '@sitecore-discover/react';
-import { PreviewSearchActions } from '@sitecore-discover/widgets';
-import ClickOutside from '../ShopCommon/ClickOutside';
 import debounce from '../../helpers/Debounce';
+import useDiscoverQueries from '../../hooks/useDiscoverQueries';
+import { DiscoverNews } from '../../interfaces/DiscoverNews';
+import { DiscoverSession } from '../../interfaces/DiscoverSession';
+import { DiscoverSpeaker } from '../../interfaces/DiscoverSpeaker';
+import ClickOutside from '../ShopCommon/ClickOutside';
+import PreviewSearchNewsList from './PreviewSearchNewsList';
+import PreviewSearchSessionList from './PreviewSearchSessionList';
+import PreviewSearchSpeakerList from './PreviewSearchSpeakerList';
 import SearchInput from './SearchInput';
 import SuggestionList from './SuggestionList';
-import SessionList from './SessionList';
-import SpeakerList from './SpeakerList';
-import NewsList from './NewsList';
 
-export interface PreviewSearchProps extends PreviewSearchWidgetProps {
-  rfkId: string;
-}
+export type Result = {
+  title?: string;
+  list: unknown[];
+};
 
-const PreviewSearch = ({
-  sessions,
-  speakers,
-  news,
-  suggestions,
-  searchContent,
-}: PreviewSearchProps): JSX.Element => {
+export type PreviewSearchProps = {
+  sessions: DiscoverSession[];
+  speakers: DiscoverSpeaker[];
+  news: DiscoverNews[];
+  suggestions: Result;
+};
+
+const PreviewSearch = (): JSX.Element => {
   const [keyphrase, setKeyphrase] = useState('');
+  const [news, sessions, speakers, suggestions] = useDiscoverQueries<
+    [DiscoverNews[], DiscoverSession[], DiscoverSpeaker[], Result]
+  >(['content', 'session', 'speaker', 'free'], {
+    keyphrase,
+    widgetId: 'rfkid_6',
+  });
 
   // TODO PSC: Under development
   const changeKeyphrase: (text: string) => void = debounce(
@@ -31,7 +40,7 @@ const PreviewSearch = ({
         type: PreviewSearchActions.KEYPHRASE_CHANGED,
         payload: { keyphrase: text || '' },
       };
-      
+
       dispatch(changeKeyphraseAction); //setViewAllUrl(`/shop/products/?q=${text || ''}`);
       searchContent(text);
       */
@@ -55,9 +64,9 @@ const PreviewSearch = ({
   const openedPopup = open && (
     <div className={`preview-search-content-popup`}>
       {suggestions && suggestions.list?.length > 0 && <SuggestionList {...suggestions} />}
-      {sessions && sessions.list?.length > 0 && <SessionList {...sessions} />}
-      {speakers && speakers.list?.length > 0 && <SpeakerList {...speakers} />}
-      {news && news.list?.length > 0 && <NewsList {...news} />}
+      {sessions && sessions.length > 0 && <PreviewSearchSessionList list={sessions} />}
+      {speakers && speakers.length > 0 && <PreviewSearchSpeakerList list={speakers} />}
+      {news && news.length > 0 && <PreviewSearchNewsList list={news} />}
     </div>
   );
 

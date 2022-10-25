@@ -8,7 +8,7 @@ export type NewsListProps = {
 
 const VIEW_ALL_NEWS_URL = '/en/news';
 
-const NewsList = (props: NewsListProps): JSX.Element => {
+const PreviewSearchNewsList = (props: NewsListProps): JSX.Element => {
   const { title, list } = props;
   return (
     <section className={`news-list item-grid sessions-grid`}>
@@ -30,4 +30,4 @@ const NewsList = (props: NewsListProps): JSX.Element => {
   );
 };
 
-export default NewsList;
+export default PreviewSearchNewsList;

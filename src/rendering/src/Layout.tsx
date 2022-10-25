@@ -1,20 +1,21 @@
 /**
  * This Layout is needed for Starter Kit.
  */
-import React, { useEffect } from 'react'; // DEMO TEAM CUSTOMIZATION - Log page views in CDP
-import Head from 'next/head';
 // DEMO TEAM CUSTOMIZATION - Add LayoutServicePageState
 import {
-  Placeholder,
+  Field,
   getPublicUrl,
   LayoutServiceData,
-  Field,
   LayoutServicePageState,
+  Placeholder,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import Head from 'next/head';
+import React, { useEffect } from 'react'; // DEMO TEAM CUSTOMIZATION - Log page views in CDP
 import Scripts from 'src/Scripts';
+import HeaderCdpMessageBar from './components/HeaderCdpMessageBar';
 // DEMO TEAM CUSTOMIZATION - CDP integration
 import { logViewEvent } from './services/CdpService';
-import HeaderCdpMessageBar from './components/HeaderCdpMessageBar';
 // END CUSTOMIZATION
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
@@ -30,6 +31,8 @@ interface RouteFields {
   Title?: Field;
   pageTitle?: Field; // DEMO TEAM CUSTOMIZATION - Add field
 }
+
+const queryClient = new QueryClient();
 
 const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
   const { route, context } = layoutData.sitecore; // DEMO TEAM CUSTOMIZATION - Add context to destructuring
@@ -74,16 +77,18 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
 
       {/* root placeholder for the app, which we add components to using route data */}
       {/* DEMO TEAM CUSTOMIZATION - Add CSS classes when Sitecore editors are active. Add HeaderCdpMessageBar. Remove sections inner divs. */}
-      <div className={mainClassPageEditing}>
-        <header className={isExperienceEditorActiveCssClass}>
-          {route && <Placeholder name="headless-header" rendering={route} />}
-        </header>
-        <main className={isExperienceEditorActiveCssClass}>
-          <HeaderCdpMessageBar />
-          {route && <Placeholder name="headless-main" rendering={route} />}
-        </main>
-        <footer>{route && <Placeholder name="headless-footer" rendering={route} />}</footer>
-      </div>
+      <QueryClientProvider client={queryClient}>
+        <div className={mainClassPageEditing}>
+          <header className={isExperienceEditorActiveCssClass}>
+            {route && <Placeholder name="headless-header" rendering={route} />}
+          </header>
+          <main className={isExperienceEditorActiveCssClass}>
+            <HeaderCdpMessageBar />
+            {route && <Placeholder name="headless-main" rendering={route} />}
+          </main>
+          <footer>{route && <Placeholder name="headless-footer" rendering={route} />}</footer>
+        </div>
+      </QueryClientProvider>
       {/* END CUSTOMIZATION */}
     </>
   );

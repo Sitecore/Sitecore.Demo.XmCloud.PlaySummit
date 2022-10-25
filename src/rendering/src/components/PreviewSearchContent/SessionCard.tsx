@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { Text } from '@sitecore-jss/sitecore-jss-nextjs';
+import { faCalendar, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faClock, faUser } from '@fortawesome/free-solid-svg-icons';
+import { Text } from '@sitecore-jss/sitecore-jss-nextjs';
+import Link from 'next/link';
 
 export type SessionCardProps = {
   id: string;
@@ -15,7 +15,7 @@ export type SessionCardProps = {
 };
 
 const SessionCard = (props: SessionCardProps): JSX.Element => {
-  const { id, image_url, name, url, days, speakers, time_slots } = props;
+  const { image_url, name, url, days, speakers, time_slots } = props;
 
   const date = days && days.length > 0 && time_slots && time_slots.length > 0 && (
     <p>
