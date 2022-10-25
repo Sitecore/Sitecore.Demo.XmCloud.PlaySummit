@@ -6,7 +6,7 @@ export type SessionListProps = {
   list: SessionCardProps[];
 };
 
-const VIEW_ALL_SESSIONS_URL = '/en/sessions';
+const VIEW_ALL_SESSIONS_URL = '/sessions';
 
 const PreviewSearchSessionList = (props: SessionListProps): JSX.Element => {
   const { title, list } = props;

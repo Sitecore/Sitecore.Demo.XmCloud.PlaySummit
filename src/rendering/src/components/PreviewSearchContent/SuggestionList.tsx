@@ -23,6 +23,7 @@ const Suggestion = (props: Suggestion): JSX.Element => {
 
 const SuggestionList = (props: SuggestionList): JSX.Element => {
   const { title, list } = props;
+
   return (
     <section className={`suggestion-list`}>
       <span className={`suggestion-list-title`}>{title}</span>

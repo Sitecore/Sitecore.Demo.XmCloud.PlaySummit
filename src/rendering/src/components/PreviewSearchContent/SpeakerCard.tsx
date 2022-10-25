@@ -37,7 +37,7 @@ const SessionCard = (props: SpeakerCardProps): JSX.Element => {
   return (
     <Link href={url}>
       <a className={`row-item`}>
-        <img src={image_url} width="150" height="100" alt={`Speaker image`} />
+        <img src={image_url} width="150" alt={`Speaker image`} />
         <div className={`item-details item-details-left`}>
           <Text tag="div" className={`item-title`} field={{ value: name }} />
           {jobTitle}

@@ -25,23 +25,6 @@ const SearchInput = ({
   const router = useRouter();
   const ref = useRef(null);
 
-  // Search: Is needed to fix request
-  useEffect(() => {
-    const searchTermQueryStringValue = router?.query['q'];
-    if (searchTermQueryStringValue) {
-      let searchTerm = '';
-
-      if (typeof searchTermQueryStringValue === 'string') {
-        searchTerm = searchTermQueryStringValue as string;
-      } else if (typeof searchTermQueryStringValue === 'object') {
-        searchTerm = searchTermQueryStringValue[0];
-      }
-
-      (ref.current as HTMLInputElement).value = searchTerm;
-    }
-  }, [router?.query]);
-
-  // ESC & ENTER listeners - redirect or close
   const keyListener = (event: KeyboardEvent): void => {
     switch (event.key) {
       case 'Escape':
@@ -52,24 +35,20 @@ const SearchInput = ({
     }
   };
 
-  // Search request icon click
   const handleSearchIconClick = () => {
     setInputSearchVisibility(!inputSearchVisibility);
   };
 
-  // Search to search page
   const redirectToSearchPage = (searchTerm: string) => {
     setOpen(false);
-    router.push(`${redirectUrl}${searchTerm}`);
+    router.push(`${redirectUrl}?q=${searchTerm}`);
   };
 
-  // Update keyphrase onChange event
   const handleOnChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSearchString(e.target.value || '');
     setOpen(true);
   };
 
-  // OnFocus: Get keyphrase, open PreviewSearch
   const handleOnFocus = (e: FocusEvent<HTMLInputElement>) => {
     const keywords = e.target.value || '';
     onFocus(keywords);

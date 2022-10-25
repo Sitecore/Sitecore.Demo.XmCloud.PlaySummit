@@ -6,7 +6,7 @@ export type NewsListProps = {
   list: NewsCardProps[];
 };
 
-const VIEW_ALL_NEWS_URL = '/en/news';
+const VIEW_ALL_NEWS_URL = '/news';
 
 const PreviewSearchNewsList = (props: NewsListProps): JSX.Element => {
   const { title, list } = props;

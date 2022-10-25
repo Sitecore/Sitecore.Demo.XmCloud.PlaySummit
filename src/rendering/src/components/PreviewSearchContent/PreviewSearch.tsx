@@ -23,6 +23,11 @@ export type PreviewSearchProps = {
   suggestions: Result;
 };
 
+const NEWS_LENGTH = 4,
+  SESSIONS_LENGTH = 4,
+  SPEAKERS_LENGTH = 4,
+  SUGGESTIONS_LENGTH = 4;
+
 const PreviewSearch = (): JSX.Element => {
   const [keyphrase, setKeyphrase] = useState('');
   const [news, sessions, speakers, suggestions] = useDiscoverQueries<
@@ -32,19 +37,9 @@ const PreviewSearch = (): JSX.Element => {
     widgetId: 'rfkid_6',
   });
 
-  // TODO PSC: Under development
   const changeKeyphrase: (text: string) => void = debounce(
     (text) => {
-      /*
-      const changeKeyphraseAction: Action = {
-        type: PreviewSearchActions.KEYPHRASE_CHANGED,
-        payload: { keyphrase: text || '' },
-      };
-
-      dispatch(changeKeyphraseAction); //setViewAllUrl(`/shop/products/?q=${text || ''}`);
-      searchContent(text);
-      */
-      setKeyphrase(text);
+      if (text !== '') setKeyphrase(text);
     },
     500,
     null
@@ -61,14 +56,36 @@ const PreviewSearch = (): JSX.Element => {
   const closePopup = () => setOpen(false);
   ClickOutside([popupRef, inputRef], closePopup);
 
-  const openedPopup = open && (
-    <div className={`preview-search-content-popup`}>
-      {suggestions && suggestions.list?.length > 0 && <SuggestionList {...suggestions} />}
-      {sessions && sessions.length > 0 && <PreviewSearchSessionList list={sessions} />}
-      {speakers && speakers.length > 0 && <PreviewSearchSpeakerList list={speakers} />}
-      {news && news.length > 0 && <PreviewSearchNewsList list={news} />}
-    </div>
-  );
+  const suggestionsAvailable = false, // suggestions && suggestions.data?.content?.length > 0, // TODO: Review suggestions
+    sessionsAvailable = sessions && sessions.data?.content?.length > 0,
+    speakersAvailable = speakers && speakers.data?.content?.length > 0,
+    newsAvailable = news && news.data?.content?.length > 0;
+  const openedPopup = open &&
+    (suggestionsAvailable || sessionsAvailable || speakersAvailable || newsAvailable) && (
+      <div className={`preview-search-content-popup`}>
+        {suggestionsAvailable && (
+          <SuggestionList
+            title={`Do you mean?`}
+            list={suggestions.data.content.slice(0, SUGGESTIONS_LENGTH)}
+          />
+        )}
+        {sessionsAvailable && (
+          <PreviewSearchSessionList
+            title={`Sessions`}
+            list={sessions.data.content.slice(0, SESSIONS_LENGTH)}
+          />
+        )}
+        {speakersAvailable && (
+          <PreviewSearchSpeakerList
+            title={`Speakers`}
+            list={speakers.data.content.slice(0, SPEAKERS_LENGTH)}
+          />
+        )}
+        {newsAvailable && (
+          <PreviewSearchNewsList title={`News`} list={news.data.content.slice(0, NEWS_LENGTH)} />
+        )}
+      </div>
+    );
 
   return (
     <div>
