@@ -453,25 +453,49 @@ export const mockPreviewSearchFields = {
     title: 'Sessions',
     list: [
       {
-        imageSrc:
+        id: '1',
+        image_url:
           'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
-        title: 'Session 1',
+        name: 'Session 1',
         description: 'Description 1',
         url: '#',
+        days: ['Day 1', 'Day 3'],
+        speakers: ['Jalen Williams'],
+        time_slots: ['2 pm'],
       },
       {
-        imageSrc:
+        id: '2',
+        image_url:
           'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
-        title: 'Session 2',
+        name: 'Session 2',
         description: 'Description 2',
         url: '#',
+        days: ['Day 1', 'Day 3', 'Day 4', 'Day 5', 'Day 6'],
+        speakers: ['Jaden Smith', 'Peter Folp'],
+        time_slots: ['2 pm'],
       },
       {
-        imageSrc:
+        id: '3',
+        image_url:
           'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
-        title: 'Session 3',
+        name: 'Session 3',
         description: 'Description 3',
         url: '#',
+        days: ['Day 1'],
+        speakers: ['Chris Rock'],
+        time_slots: ['2 pm', '6 pm'],
+      },
+      ,
+      {
+        id: '3',
+        image_url:
+          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
+        name: 'Session 3',
+        description: 'Description 3',
+        url: '#',
+        days: ['Day 1'],
+        speakers: ['Peter Siegels'],
+        time_slots: ['2 pm', '6 pm'],
       },
     ],
   },
@@ -479,25 +503,24 @@ export const mockPreviewSearchFields = {
     title: 'Speakers',
     list: [
       {
-        imageSrc:
-          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
-        title: 'Speaker 1',
-        description: 'Description 1',
+        id: '1',
+        image_url:
+          'https://playsummit.sitecoresandbox.cloud/api/public/content/3fcb3ce4bc0d4d778da7a3dc66fa1cb2?v=e3d5a7cb',
+        name: 'Speaker 1',
         url: '#',
+        location: 'Canada',
+        company: 'Sitecore',
+        job_title: 'Manager',
       },
       {
-        imageSrc:
-          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
-        title: 'Speaker 2',
-        description: 'Description 2',
+        id: '2',
+        image_url:
+          'https://playsummit.sitecoresandbox.cloud/api/public/content/0fd271e931024667b36c3e21dd3256b1?v=82e3ff67',
+        name: 'Speaker 2',
         url: '#',
-      },
-      {
-        imageSrc:
-          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
-        title: 'Speaker 3',
-        description: 'Description 3',
-        url: '#',
+        location: 'EEUU',
+        company: 'Sitecore',
+        job_title: 'Developer',
       },
     ],
   },
@@ -505,25 +528,28 @@ export const mockPreviewSearchFields = {
     title: 'News',
     list: [
       {
-        imageSrc:
-          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
-        title: 'News 1',
-        description: 'Description 1',
+        image_url: '/assets/img/news/conference-image.jpg',
+        name: 'News 1',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.',
         url: '#',
+        publish_date: 'Thu, July 29, 2021',
       },
       {
-        imageSrc:
-          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
-        title: 'News 2',
-        description: 'Description 2',
+        image_url: '/assets/img/news/conference-image.jpg',
+        name: 'News 2',
+        description:
+          'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
         url: '#',
+        publish_date: 'Thu, July 29, 2021',
       },
       {
-        imageSrc:
-          'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
-        title: 'News 3',
-        description: 'Description 3',
+        image_url: '/assets/img/news/conference-image.jpg',
+        name: 'News 3',
+        description:
+          'Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
         url: '#',
+        publish_date: 'Thu, July 29, 2021',
       },
     ],
   },

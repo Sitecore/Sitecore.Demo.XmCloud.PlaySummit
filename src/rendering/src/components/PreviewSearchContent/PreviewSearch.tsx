@@ -6,7 +6,9 @@ import ClickOutside from '../ShopCommon/ClickOutside';
 import debounce from '../../helpers/Debounce';
 import SearchInput from './SearchInput';
 import SuggestionList from './SuggestionList';
-import ItemList from './ItemList';
+import SessionList from './SessionList';
+import SpeakerList from './SpeakerList';
+import NewsList from './NewsList';
 
 export interface PreviewSearchProps extends PreviewSearchWidgetProps {
   rfkId: string;
@@ -29,9 +31,10 @@ const PreviewSearch = ({
         type: PreviewSearchActions.KEYPHRASE_CHANGED,
         payload: { keyphrase: text || '' },
       };
+      
+      dispatch(changeKeyphraseAction); //setViewAllUrl(`/shop/products/?q=${text || ''}`);
+      searchContent(text);
       */
-      //dispatch(changeKeyphraseAction); //setViewAllUrl(`/shop/products/?q=${text || ''}`);
-      // searchContent(text);
       setKeyphrase(text);
     },
     500,
@@ -50,18 +53,18 @@ const PreviewSearch = ({
   ClickOutside([popupRef, inputRef], closePopup);
 
   const openedPopup = open && (
-    <div className={`preview-search-play-popup`}>
-      <SuggestionList {...suggestions} />
-      <ItemList {...sessions} />
-      <ItemList {...speakers} />
-      <ItemList {...news} />
+    <div className={`preview-search-content-popup`}>
+      {suggestions && suggestions.list?.length > 0 && <SuggestionList {...suggestions} />}
+      {sessions && sessions.list?.length > 0 && <SessionList {...sessions} />}
+      {speakers && speakers.list?.length > 0 && <SpeakerList {...speakers} />}
+      {news && news.list?.length > 0 && <NewsList {...news} />}
     </div>
   );
 
   return (
     <div>
-      <div className={`preview-search-play-container`}>
-        <div className={`preview-search-play`} ref={popupRef}>
+      <div className={`preview-search-content-container`}>
+        <div className={`preview-search-content`} ref={popupRef}>
           {openedPopup}
         </div>
       </div>

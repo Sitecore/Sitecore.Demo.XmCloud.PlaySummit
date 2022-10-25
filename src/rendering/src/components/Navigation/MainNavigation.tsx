@@ -61,14 +61,14 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
         type: PreviewSearchActions.KEYPHRASE_CHANGED,
         payload: { keyphrase: text || '' },
       };
+      dispatch(changeKeyphraseAction); //setViewAllUrl(`/shop/products/?q=${text || ''}`);
       */
-      //dispatch(changeKeyphraseAction); //setViewAllUrl(`/shop/products/?q=${text || ''}`);
     },
     500,
     null
   );
 
-  // TODO PSC: Review component logic
+  // TODO PSC: Review flag to enable or disable feature
   const previewSearchWidget = (
     <PreviewSearch searchContent={searchContent} {...props.previewSearchProps} />
   );

@@ -1,0 +1,13 @@
+.preview-search-content-container
+  .preview-search-content
+  .grid-item {
+  cursor: pointer;
+}
+
+.preview-search-content-container
+  .preview-search-content
+  .session-list.item-grid.sessions-grid
+  .grid-item
+  .image-hover-zoom {
+  height: 100px;
+}

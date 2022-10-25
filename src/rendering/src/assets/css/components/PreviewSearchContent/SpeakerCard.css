@@ -1,0 +1,45 @@
+.preview-search-content-container .preview-search-content .item-title {
+  line-height: 1rem;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: 'center';
+  text-transform: uppercase;
+}
+
+.preview-search-content-container .icon {
+  margin-right: 0.5rem;
+  display: inline;
+  height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(35 35 35 / var(--tw-text-opacity));
+}
+
+.preview-search-content-container .preview-search-content .row-item {
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.preview-search-content-container .preview-search-content .row-item:hover {
+  box-shadow: 1px 1px 10px rgba(23, 23, 23, 0.45);
+  transform: scale(1.05);
+  transition: all 0.1s;
+  border: 1px solid gray;
+}
+
+.preview-search-content-container
+  .preview-search-content
+  .row-item
+  .item-details.item-details-left {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.preview-search-content-container .preview-search-content .info-text {
+  font-size: 15px;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  line-height: 1rem;
+}
+

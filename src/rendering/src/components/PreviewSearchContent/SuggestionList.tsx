@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export type Suggestion = {
   text?: string;
   url?: string;
@@ -9,21 +11,27 @@ export type SuggestionList = {
 };
 
 const Suggestion = (props: Suggestion): JSX.Element => {
+  const { url, text } = props;
   return (
-    <a href={props.url} className={`suggestion-item`}>
-      <span>{props.text}</span>
-    </a>
+    <Link href={url}>
+      <a className={`suggestion-item`}>
+        <span>{text}</span>
+      </a>
+    </Link>
   );
 };
 
 const SuggestionList = (props: SuggestionList): JSX.Element => {
+  const { title, list } = props;
   return (
     <section className={`suggestion-list`}>
-      <span className={`suggestion-list-title`}>{props.title}</span>
-      {props.list.length > 0
-        ? // eslint-disable-next-line react/jsx-key
-          props.list.map((item) => <Suggestion url={item.url} text={item.text}></Suggestion>)
-        : null}
+      <span className={`suggestion-list-title`}>{title}</span>
+      <div className={`suggestion-container`}>
+        {list.length > 0
+          ? // eslint-disable-next-line react/jsx-key
+            list.map((item) => <Suggestion {...item}></Suggestion>)
+          : null}
+      </div>
     </section>
   );
 };

@@ -114,11 +114,15 @@
 @import './components/PreviewSearch/PreviewSearch.css';
 
 /* PreviewSearchContent */
-@import './components/PreviewSearchContent/ItemCard.css';
-@import './components/PreviewSearchContent/ItemList.css';
 @import './components/PreviewSearchContent/PreviewSearch.css';
 @import './components/PreviewSearchContent/SearchInput.css';
 @import './components/PreviewSearchContent/SuggestionList.css';
+@import './components/PreviewSearchContent/SessionList.css';
+@import './components/PreviewSearchContent/SessionCard.css';
+@import './components/PreviewSearchContent/SpeakerList.css';
+@import './components/PreviewSearchContent/SpeakerCard.css';
+@import './components/PreviewSearchContent/NewsCard.css';
+@import './components/PreviewSearchContent/NewsList.css';
 
 /* Products */
 @import './components/Products/CategoriesList.css';
