@@ -3,6 +3,7 @@ import { ComponentProps } from 'lib/component-props';
 import Link from 'next/link';
 import { useState } from 'react';
 import { isCommerceEnabled } from '../../helpers/CommerceHelper';
+import { isContentSearchEnabled } from '../../helpers/ContentSearchHelper';
 import PreviewSearch from '../PreviewSearchContent/PreviewSearch';
 
 export type MainNavigationProps = ComponentProps & {
@@ -49,8 +50,7 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
     </li>
   );
 
-  // TODO PSC: Review flag to enable or disable feature
-  const previewSearchWidget = <PreviewSearch />;
+  const previewSearchWidget = isContentSearchEnabled && <PreviewSearch />;
 
   return (
     <nav className="main-navigation">
