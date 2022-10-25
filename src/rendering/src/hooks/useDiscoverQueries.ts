@@ -19,7 +19,7 @@ const useDiscoverQueries = <T>(
       queryFn: () =>
         api.get(
           { entity: entity === 'free' ? undefined : entity, ...props },
-          custom ? merge({}, props, custom[entity]) : props
+          custom ? merge({}, {}, custom[entity]) : props
         ),
       keepPreviousData: true,
       refetchOnWindowFocus: false,

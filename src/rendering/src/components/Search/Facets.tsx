@@ -1,7 +1,7 @@
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CheckIcon } from '@radix-ui/react-icons';
-import { AccordionFacets } from '@sitecore-discover/ui';
+import * as AccordionFacets from './AccordionFacets/AccordionFacets';
 
 export type FacetValueClickedActionPayload = {
   facetId: string;

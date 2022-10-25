@@ -28,6 +28,7 @@ export const get = async (
   { widgetId, keyphrase, filters = [], facets = [], entity }: DiscoverRequestProps,
   data: unknown = {}
 ): Promise<unknown> => {
+  console.log(data);
   const types = facets
     .map((facet) => ({
       name: facet,
@@ -54,7 +55,7 @@ export const get = async (
         // rfk_flags: ['-cache'],
         entity: entity ?? undefined,
         search: {
-          query: keyphrase ?? { keyphrase },
+          query: keyphrase ? { keyphrase } : undefined,
           facet: {
             sort: { name: 'count', order: 'desc' },
             types: types.length > 0 ? types : undefined,
@@ -66,8 +67,9 @@ export const get = async (
             choices: true,
           },
         },
-      },
-      data
+        widget: { rfkids: [widgetId] },
+      }
+      // data
     )
   );
 };

@@ -1,5 +1,5 @@
 import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons';
-import { Pagination } from '@sitecore-discover/ui';
+import * as Pagination from './PaginationUI/PaginationUI';
 
 export type PaginationProps = {
   currentPage: number;
