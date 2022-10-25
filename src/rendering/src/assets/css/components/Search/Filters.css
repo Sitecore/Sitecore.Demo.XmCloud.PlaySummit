@@ -1,0 +1,16 @@
+.search-filters {
+  @apply mx-auto pt-10 flex items-center pb-5;
+
+  .search-filters-list {
+    @apply flex;
+
+    select {
+      margin: 0 8px;
+    }
+  }
+
+  & > div {
+    padding: 0 8px;
+  }
+}
+

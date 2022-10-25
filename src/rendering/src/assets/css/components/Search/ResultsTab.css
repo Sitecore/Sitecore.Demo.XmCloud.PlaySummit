@@ -1,0 +1,37 @@
+.search-results-tab {
+  @apply flex;
+
+  select {
+    @apply inline-flex justify-center border border-gray-dark shadow-sm px-0.5 py-0.5 bg-white-light font-medium text-black-lightest;
+    @apply hover:bg-gray-lighter;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-lighter focus:ring-blue-lightest;
+  }
+
+  .search-results-tab-filters {
+    @apply w-60;
+  }
+
+  .search-results-tab-content {
+    @apply flex flex-col flex-1 pt-4 pr-8 pl-8;
+
+    .search-results-footer {
+      @apply flex justify-between text-xs mt-6;
+    }
+
+    .search-results-per-page {
+      @apply ml-2;
+    }
+
+    .item-grid.sessions-grid {
+      overflow: unset;
+    }
+
+    .item-grid {
+      @apply flex-1;
+
+      .grid-content {
+        @apply p-0;
+      }
+    }
+  }
+}

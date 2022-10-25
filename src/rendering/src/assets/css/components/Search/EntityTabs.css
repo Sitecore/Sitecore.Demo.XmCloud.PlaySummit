@@ -1,0 +1,12 @@
+.entity-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .entity-tabs-list {
+    width: 80%;
+    align-self: center;
+    flex-shrink: 0;
+    display: flex;
+  }
+}

@@ -1,0 +1,32 @@
+.search-pagination {
+  @apply flex items-baseline;
+
+  .search-pagination-pages {
+    @apply inline;
+  }
+
+  .search-pagination-link {
+    @apply inline;
+  }
+
+  .search-pagination-link {
+    @apply cursor-pointer font-normal hover:font-medium;
+
+    margin: 0 8px;
+
+    &[data-current='true'] {
+      @apply pointer-events-none no-underline;
+      color: gray;
+    }
+  }
+
+  .search-pagination-nav-link {
+    @apply cursor-pointer;
+
+    margin: 0 8px;
+
+    &[data-current='true'] {
+      @apply hidden;
+    }
+  }
+}
