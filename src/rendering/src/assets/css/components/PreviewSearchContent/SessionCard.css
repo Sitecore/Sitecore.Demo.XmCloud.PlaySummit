@@ -1,7 +1,15 @@
+.preview-search-content-container .preview-search-content .grid-item {
+  cursor: pointer;
+}
+
 .preview-search-content-container
   .preview-search-content
-  .grid-item {
-  cursor: pointer;
+  .item-grid.sessions-grid
+  .grid-content
+  .grid-item
+  .session-info
+  .icon {
+  height: unset;
 }
 
 .preview-search-content-container
@@ -19,3 +27,4 @@
   margin-top: 0.3rem !important;
   margin-bottom: unset !important;
 }
+

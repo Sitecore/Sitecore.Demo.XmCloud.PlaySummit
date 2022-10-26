@@ -9,7 +9,6 @@
 .preview-search-content-container .icon {
   margin-right: 0.5rem;
   display: inline;
-  height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(35 35 35 / var(--tw-text-opacity));
 }

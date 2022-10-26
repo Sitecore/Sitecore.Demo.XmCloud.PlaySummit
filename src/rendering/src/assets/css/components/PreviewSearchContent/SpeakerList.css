@@ -1,6 +1,7 @@
 .preview-search-content-container .preview-search-content .speaker-list {
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
 }
 
 .preview-search-content-container .preview-search-content .speaker-list .view-all {
