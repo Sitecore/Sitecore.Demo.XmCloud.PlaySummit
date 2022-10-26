@@ -26,10 +26,11 @@ export type DiscoverRequestProps = {
   entity?: 'session' | 'vendor' | 'content' | 'sponsor' | 'speaker';
   filters?: { facetId: string; facetValueId: string }[];
   facets?: string[];
+  limit?: number;
 };
 
 export const get = async (
-  { widgetId, keyphrase, filters = [], facets = [], entity }: DiscoverRequestProps,
+  { widgetId, keyphrase, filters = [], facets = [], entity, limit }: DiscoverRequestProps,
   data: unknown = {}
 ): Promise<unknown> => {
   console.log(data);
@@ -64,8 +65,9 @@ export const get = async (
             sort: { name: 'count', order: 'desc' },
             types: types.length > 0 ? types : undefined,
           },
+          // suggestion: ['title_context_aware'],
           content: {},
-          limit: 10,
+          limit: limit ? limit : 10,
           offset: 0,
           sort: {
             choices: true,

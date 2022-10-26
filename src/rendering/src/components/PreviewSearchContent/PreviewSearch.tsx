@@ -23,17 +23,13 @@ export type PreviewSearchProps = {
   suggestions: Result;
 };
 
-const NEWS_LENGTH = 4,
-  SESSIONS_LENGTH = 4,
-  SPEAKERS_LENGTH = 4,
-  SUGGESTIONS_LENGTH = 4;
-
 const PreviewSearch = (): JSX.Element => {
   const [keyphrase, setKeyphrase] = useState('');
   const [news, sessions, speakers, suggestions] = useDiscoverQueries<
     [DiscoverNews[], DiscoverSession[], DiscoverSpeaker[], Result]
   >(['content', 'session', 'speaker', 'free'], {
     keyphrase,
+    limit: 4,
     widgetId: 'rfkid_6',
   });
 
@@ -64,26 +60,15 @@ const PreviewSearch = (): JSX.Element => {
     (suggestionsAvailable || sessionsAvailable || speakersAvailable || newsAvailable) && (
       <div className={`preview-search-content-popup`}>
         {suggestionsAvailable && (
-          <SuggestionList
-            title={`Do you mean?`}
-            list={suggestions.data.content.slice(0, SUGGESTIONS_LENGTH)}
-          />
+          <SuggestionList title={`Do you mean?`} list={suggestions.data.content} />
         )}
         {sessionsAvailable && (
-          <PreviewSearchSessionList
-            title={`Sessions`}
-            list={sessions.data.content.slice(0, SESSIONS_LENGTH)}
-          />
+          <PreviewSearchSessionList title={`Sessions`} list={sessions.data.content} />
         )}
         {speakersAvailable && (
-          <PreviewSearchSpeakerList
-            title={`Speakers`}
-            list={speakers.data.content.slice(0, SPEAKERS_LENGTH)}
-          />
+          <PreviewSearchSpeakerList title={`Speakers`} list={speakers.data.content} />
         )}
-        {newsAvailable && (
-          <PreviewSearchNewsList title={`News`} list={news.data.content.slice(0, NEWS_LENGTH)} />
-        )}
+        {newsAvailable && <PreviewSearchNewsList title={`News`} list={news.data.content} />}
       </div>
     );
 
