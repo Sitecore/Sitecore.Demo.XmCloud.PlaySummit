@@ -1,1 +1,2 @@
-export const isContentSearchEnabled = true; // TODO: Add logic to enable or disable content search
+export const isContentSearchEnabled =
+  !!process.env.NEXT_PUBLIC_DISCOVER_API_DOMAIN && !!process.env.NEXT_PUBLIC_DISCOVER_API_HOST;
