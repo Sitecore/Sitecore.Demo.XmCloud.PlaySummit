@@ -461,7 +461,7 @@ export const mockPreviewSearchFields = {
         url: '#',
         days: ['Day 1', 'Day 3'],
         speakers: ['Jalen Williams'],
-        time_slots: ['2 pm'],
+        start_time: '2 pm',
       },
       {
         id: '2',
@@ -472,7 +472,7 @@ export const mockPreviewSearchFields = {
         url: '#',
         days: ['Day 1', 'Day 3', 'Day 4', 'Day 5', 'Day 6'],
         speakers: ['Jaden Smith', 'Peter Folp'],
-        time_slots: ['2 pm'],
+        start_time: '2 pm',
       },
       {
         id: '3',
@@ -483,7 +483,7 @@ export const mockPreviewSearchFields = {
         url: '#',
         days: ['Day 1'],
         speakers: ['Chris Rock'],
-        time_slots: ['2 pm', '6 pm'],
+        start_time: '2 pm',
       },
       ,
       {
@@ -495,7 +495,7 @@ export const mockPreviewSearchFields = {
         url: '#',
         days: ['Day 1'],
         speakers: ['Peter Siegels'],
-        time_slots: ['2 pm', '6 pm'],
+        start_time: '6 pm',
       },
     ],
   },
