@@ -11,3 +11,11 @@
   .image-hover-zoom {
   height: 100px;
 }
+
+.preview-search-content-container
+  .preview-search-content
+  .session-list.item-grid.sessions-grid
+  .session-info {
+  margin-top: 0.3rem !important;
+  margin-bottom: unset !important;
+}

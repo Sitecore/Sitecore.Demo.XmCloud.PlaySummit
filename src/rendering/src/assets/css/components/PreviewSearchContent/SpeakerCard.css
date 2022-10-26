@@ -39,7 +39,7 @@
 
 .preview-search-content-container .preview-search-content .info-text {
   font-size: 15px;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-top: 0.3rem;
   line-height: 1rem;
 }
 

@@ -17,7 +17,7 @@ const SessionCard = (props: NewsCardProps): JSX.Element => {
       <a className={`grid-item news-item`}>
         <div className={`item-details item-details-left`}>
           <Text tag="div" className={`item-title`} field={{ value: name }} />
-          <span className={`news-date`}>{publish_date}</span>
+          <span className={`news-date`}>{new Date(publish_date).toLocaleString()}</span>
         </div>
         <img className={`news-image`} src={image_url} alt={`News image`} height="100" width="100" />
       </a>
