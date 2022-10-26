@@ -30,6 +30,11 @@
   color: rgb(179 179 179 / var(--tw-text-opacity));
 }
 
+.preview-search-content-container .preview-search-content .news-image {
+  height: unset;
+  margin: auto 10px;
+}
+
 .preview-search-content-container .preview-search-content .news-description {
   overflow: hidden;
   -webkit-box-orient: vertical;
