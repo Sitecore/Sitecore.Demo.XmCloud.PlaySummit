@@ -8,6 +8,7 @@ export type Suggestion = {
 export type SuggestionList = {
   title?: string;
   list: Suggestion[];
+  closePopup: () => void;
 };
 
 const Suggestion = (props: Suggestion): JSX.Element => {
@@ -28,10 +29,8 @@ const SuggestionList = (props: SuggestionList): JSX.Element => {
     <section className={`suggestion-list`}>
       <span className={`suggestion-list-title`}>{title}</span>
       <div className={`suggestion-container`}>
-        {list.length > 0
-          ? // eslint-disable-next-line react/jsx-key
-            list.map((item) => <Suggestion {...item}></Suggestion>)
-          : null}
+        {list.length > 0 &&
+          list.map((item, index) => <Suggestion key={index} {...item}></Suggestion>)}
       </div>
     </section>
   );

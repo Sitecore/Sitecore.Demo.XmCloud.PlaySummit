@@ -1,30 +1,36 @@
-import Link from 'next/link';
+import router from 'next/router';
 import SessionCard, { SessionCardProps } from './SessionCard';
 
 export type SessionListProps = {
   title?: string;
   list: SessionCardProps[];
+  closePopup: () => void;
 };
 
 const VIEW_ALL_SESSIONS_URL = '/sessions';
 
 const PreviewSearchSessionList = (props: SessionListProps): JSX.Element => {
-  const { title, list } = props;
+  const { title, list, closePopup } = props;
+
+  const viewAllClick = () => {
+    closePopup();
+    router.push(`${VIEW_ALL_SESSIONS_URL}`);
+  };
+
   return (
     <section className={`session-list item-grid sessions-grid`}>
       <span className={`session-list-title`}>
         {title}
-        <Link href={VIEW_ALL_SESSIONS_URL}>
-          <a className={`view-all`}>View All</a>
-        </Link>
+          <a className={`view-all`} onClick={viewAllClick}>
+            View All
+          </a>
       </span>
       <div className={`grid-content session-list-content`}>
-        {list.length > 0
-          ? list.map((item) => (
-              // eslint-disable-next-line react/jsx-key
-              <SessionCard {...item} />
-            ))
-          : null}
+        {list.length > 0 &&
+          list.map((item) => (
+            // eslint-disable-next-line react/jsx-key
+            <SessionCard {...item} />
+          ))}
       </div>
     </section>
   );

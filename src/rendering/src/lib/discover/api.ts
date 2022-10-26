@@ -67,7 +67,7 @@ export const get = async (
           },
           // suggestion: ['title_context_aware'],
           content: {},
-          limit: limit ? limit : 10,
+          limit: limit ? limit : 10 ,
           offset: 0,
           sort: {
             choices: true,

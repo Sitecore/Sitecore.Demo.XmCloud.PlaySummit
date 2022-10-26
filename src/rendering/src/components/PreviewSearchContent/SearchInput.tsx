@@ -1,7 +1,7 @@
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRouter } from 'next/router';
-import { ChangeEvent, FocusEvent, KeyboardEvent, useEffect, useRef, useState } from 'react';
+import { ChangeEvent, FocusEvent, KeyboardEvent, useCallback, useRef, useState } from 'react';
 
 type SearchInputProps = {
   keyphrase: string;
@@ -19,45 +19,50 @@ const SearchInput = ({
   placeholder,
   redirectUrl,
   setOpen,
-  open,
+  open
 }: SearchInputProps): JSX.Element => {
   const [inputSearchVisibility, setInputSearchVisibility] = useState(false);
   const router = useRouter();
   const ref = useRef(null);
 
-  const keyListener = (event: KeyboardEvent): void => {
-    switch (event.key) {
-      case 'Escape':
-        open ? setOpen(false) : setInputSearchVisibility(false);
-        break;
-      case 'Enter':
-        redirectToSearchPage((event.target as HTMLInputElement).value);
-    }
-  };
+  const keyListener = useCallback(
+    (event: KeyboardEvent): void => {
+      switch (event.key) {
+        case 'Escape':
+          open ?
+          setOpen(false) :
+          setInputSearchVisibility(false);
+          break;
+        case 'Enter':
+          redirectToSearchPage((event.target as HTMLInputElement).value);
+      }
+    },
+    [open]
+  );
 
-  const handleSearchIconClick = () => {
+  const handleSearchIconClick = useCallback(() => {
     setInputSearchVisibility(!inputSearchVisibility);
-  };
+  }, [inputSearchVisibility]);
 
   const redirectToSearchPage = (searchTerm: string) => {
     setOpen(false);
     router.push(`${redirectUrl}?q=${searchTerm}`);
   };
 
-  const handleOnChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleOnChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
     setSearchString(e.target.value || '');
     setOpen(true);
-  };
+  }, []);
 
-  const handleOnFocus = (e: FocusEvent<HTMLInputElement>) => {
+  const handleOnFocus = useCallback((e: FocusEvent<HTMLInputElement>) => {
     const keywords = e.target.value || '';
     onFocus(keywords);
     setOpen(true);
-  };
+  }, []);
 
   return (
     <>
-      {inputSearchVisibility ? (
+      {inputSearchVisibility && (
         <input
           ref={ref}
           onChange={handleOnChange}
@@ -68,8 +73,6 @@ const SearchInput = ({
           autoComplete="off"
           className={`search-input-play`}
         />
-      ) : (
-        ''
       )}
       <FontAwesomeIcon
         className={`search-play-icon`}
