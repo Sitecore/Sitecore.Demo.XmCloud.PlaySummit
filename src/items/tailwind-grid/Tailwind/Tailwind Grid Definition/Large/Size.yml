@@ -22,9 +22,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221013T172707Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fd8964ae-81df-479f-b33c-c42368bbe11e"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: Komponentbredde.
@@ -36,9 +36,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20220817T074711Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b5094a82-8254-4957-b85a-f3bfb902f985"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: Komponentenbreite.
@@ -46,9 +46,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20161216T082214Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a8a4e46f-2715-40f9-8acb-8dd7837f394b"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: Component width.
@@ -60,9 +60,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20220817T074711Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cec0f30d-c108-47df-a724-445ab8f61166"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: コンポーネントの幅
@@ -74,9 +74,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20220817T074711Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d47c67b9-0d42-487f-9389-f402e23b3d5b"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: 组件宽度。

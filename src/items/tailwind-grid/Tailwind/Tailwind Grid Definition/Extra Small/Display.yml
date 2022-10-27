@@ -22,9 +22,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221013T172706Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4052d959-54b3-4596-a8d7-e997c302ab62"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: Synlighed og funktionsmåde for en bestemt enhedsstørrelse.
@@ -36,9 +36,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20220817T074711Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6b61090a-b9c3-4d09-b66e-0f9a66bd1a5d"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: Sichtbarkeit und Verhalten für eine bestimmte Gerätegröße.
@@ -46,9 +46,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20161220T090009Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3bcda8a8-1dce-4757-8c14-7f35ed8ae1a8"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: Visibility and behavior for a particular device size.
@@ -60,9 +60,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20220817T074711Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "159f34c8-b3c8-489a-9b77-4d7158084598"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: 特定のデバイス サイズ向け表示および動作
@@ -74,9 +74,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20220817T074711Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c1eeda17-85e1-4075-b87b-b75be79186be"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: 特定设备大小的可见性和行为。

@@ -20,12 +20,12 @@ Languages:
       Hint: Image
       Value: |
         <image stylelabs-content-id="36203" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/36203/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/9be07d19fc8d43a08dd5ab377f12c0b4?v=0a222754" mediaid="" stylelabs-content-type="Image" alt="Main conference center 1" height="3376" width="6000" />
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133250Z
     - ID: "5526367b-610b-4424-a18b-719ce079f4ad"
       Hint: Size
       Value: 4000
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "104de9f9-38ef-48f4-8e91-ed6cb2daeb33"
     - ID: "91e38983-3229-41b3-9161-c1136039a209"
       Hint: Description
       Value: |

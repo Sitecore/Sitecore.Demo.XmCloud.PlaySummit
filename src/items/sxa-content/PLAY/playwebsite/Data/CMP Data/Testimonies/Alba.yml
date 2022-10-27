@@ -12,9 +12,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133250Z
     - ID: "28c193d1-5cd7-4c20-887d-c68a73b323cd"
       Hint: Testimony
       Value: |
@@ -23,6 +20,9 @@ Languages:
     - ID: "30de01d7-233e-42ac-bb14-751e9d60b1cd"
       Hint: Provider
       Value: Alba
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5e30c199-4422-43a4-b489-944635c8af88"
     - ID: "a4eb8a28-879d-41d9-87c9-2ed2f03d0ae4"
       Hint: Logo
       Value: |

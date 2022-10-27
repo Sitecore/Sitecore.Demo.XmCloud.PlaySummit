@@ -27,9 +27,6 @@ Languages:
       Value: |
         <p>Event organizers and participants collaborate with the&nbsp;community to create an experience that bridges the gap between the physical and mental demands of athletes.&nbsp; A successful cycling event motivates all stakeholders to ensure&nbsp;a fun, safe, and challenging event. Is it possible? This is your chance to learn from experienced veteran organizers.</p>
                        
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133247Z
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{D5033FBA-96EB-47F3-B239-C8F7094464FD}|{209A438A-C1E2-4E02-BC8E-568235F16D1D}"
@@ -52,6 +49,9 @@ Languages:
     - ID: "8c3dff8b-74bc-4a65-af6d-81452a3d9a11"
       Hint: Rooms
       Value: "{374B55AB-B656-4588-A347-A0D28CB2AC99}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0aba085f-7c38-481a-89a0-ec62d8821459"
     - ID: "cb19a833-48b8-4ad4-a841-09769bbef5c6"
       Hint: Sponsors
       Value: "{8C5F5B0A-B6A6-46CE-A34A-6A76E7B4FD2E}"

@@ -8,10 +8,10 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133251Z
     - ID: "7f1d47cf-4525-5f3e-b8fe-4c6ddbcefa39"
       Hint: hero
       Value: |
         <image mediaid="{08DB49A9-9B48-42FE-8E62-882CC6346891}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7cc6132e-642a-44d7-9b6d-7c926d41ed8e"

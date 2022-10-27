@@ -22,9 +22,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221013T172706Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fe17e6d0-7845-4cec-b2b1-19476b5cd6ed"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: Fastlægger rækkefølgen af komponenter på en bestemt enhed.
@@ -36,9 +36,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20220817T074711Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "78818f33-8013-44e4-9a2f-d999af7868b9"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: Bestimmt die Reihenfolge der Komponenten auf einem bestimmten Gerät.
@@ -46,9 +46,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20161216T082225Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4ec5ad82-35d3-447c-a6d2-d7de3ec10de3"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: Determines the order of components on a particular device.
@@ -60,9 +60,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20220817T074711Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c98a30d3-406d-43a8-9a10-b13f187cc04b"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: 特定のデバイス上でコンポーネントの順序を決定します。
@@ -74,9 +74,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20220817T074711Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b0c77e6a-ed22-4392-a364-533543fe1032"
     - ID: "9c7cf235-a456-4320-a156-03f1e0cca6c6"
       Hint: Tooltip
       Value: 确定特定设备上组件的顺序。

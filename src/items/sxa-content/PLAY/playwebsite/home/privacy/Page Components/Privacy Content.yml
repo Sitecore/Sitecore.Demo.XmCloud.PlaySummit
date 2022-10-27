@@ -15,9 +15,6 @@ Languages:
     - ID: "05607296-e17f-567f-898f-46bb9665d619"
       Hint: title
       Value: Privacy policy
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133253Z
     - ID: "348777e9-0329-5c42-a43d-3db7d8a7a748"
       Hint: content
       Value: |
@@ -27,6 +24,9 @@ Languages:
     - ID: "3df1996f-e6b3-52c9-82c7-c8ba54147c1f"
       Hint: callToActionLink
       Value: 
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5ff14975-3210-4954-b406-5013f7a14d35"
 - Language: "fr-CA"
   Versions:
   - Version: 1
@@ -37,9 +37,6 @@ Languages:
     - ID: "05607296-e17f-567f-898f-46bb9665d619"
       Hint: title
       Value: Politique de confidentialité
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133253Z
     - ID: "348777e9-0329-5c42-a43d-3db7d8a7a748"
       Hint: content
       Value: |
@@ -48,3 +45,6 @@ Languages:
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "47b6bebc-7ef0-4bd8-a52d-07d0f482bdce"

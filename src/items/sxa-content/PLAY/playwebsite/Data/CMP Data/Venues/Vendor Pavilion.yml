@@ -20,12 +20,12 @@ Languages:
       Hint: Image
       Value: |
         <image stylelabs-content-id="30916" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/30916/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/7086de82b44d4684afb6ddced7fd1b22?v=f2bedad8" mediaid="" stylelabs-content-type="Image" alt="Parking garage banner" height="3024" width="4032" />
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133250Z
     - ID: "5526367b-610b-4424-a18b-719ce079f4ad"
       Hint: Size
       Value: 2500
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fcf5296d-3fa5-409d-ab6c-1ec52401ea37"
     - ID: "91e38983-3229-41b3-9161-c1136039a209"
       Hint: Description
       Value: |
