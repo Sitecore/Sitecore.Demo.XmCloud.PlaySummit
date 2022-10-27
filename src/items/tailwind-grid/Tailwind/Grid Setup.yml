@@ -16,9 +16,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221013T172705Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "89d687c2-17e4-43fe-9b7e-39784abe4cfd"
     - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
       Hint: Name
       Value: Bootstrap 5
@@ -30,9 +30,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20220817T074711Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "72a73d13-4c59-4db6-bfa8-7bdac0cbf4ab"
     - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
       Hint: Name
       Value: Bootstrap 5
@@ -44,9 +44,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20210219T112526Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "285efaef-60b4-45c5-97c5-e7dfb7b981ac"
     - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
       Hint: Name
       Value: Tailwind
@@ -58,9 +58,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20220817T074711Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e5d25417-e05d-4828-8ccc-0ec6db68af4f"
     - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
       Hint: Name
       Value: ブートストラップ5
@@ -72,9 +72,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20220817T074711Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e687ea6f-d75e-4a5e-936d-6a52d9c1a8b4"
     - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
       Hint: Name
       Value: 引导程序 5

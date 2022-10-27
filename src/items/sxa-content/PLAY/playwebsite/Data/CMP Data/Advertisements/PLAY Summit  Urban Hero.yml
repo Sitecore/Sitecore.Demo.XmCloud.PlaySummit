@@ -16,9 +16,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133248Z
     - ID: "69e8418c-5f11-40a8-9c0d-9e5eacc1229e"
       Hint: Hero
       Value: |
@@ -26,6 +23,9 @@ Languages:
     - ID: "81af116e-235f-44ad-a8e0-794bc3504c7c"
       Hint: Slogan
       Value: "READY | STEADY | PLAY!"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7d9820e1-a995-4f8e-83b4-92aa00866f29"
     - ID: "957519d5-5c6b-40c0-b462-b1dac8f12a03"
       Hint: Eyebrow
       Value: Sports and Recreation Expo

@@ -14,9 +14,6 @@ Languages:
     - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
       Hint: PromoText2
       Value: Sed in velit id nibh sagittis ultricies. Sed facilisis nunc vel vehicula luctus. Sed hendrerit purus eu venenatis bibendum. Proin aliquam consequat urna eget blandit.
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221017T111341Z
     - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
       Hint: PromoText
       Value: Vivamus volutpat imperdiet metus, a lacinia libero consequat in.
@@ -24,6 +21,9 @@ Languages:
       Hint: PromoIcon2
       Value: |
         <image mediaid="{CCAA3DA2-F72A-4AED-8B44-674BBD9DC5A6}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "55059468-5900-4bd5-b4f8-276453de6819"
     - ID: "c6e604c3-5371-4e67-83df-a09a5ea66249"
       Hint: PromoText3
       Value: Pellentesque felis nisi, tempor ac libero non, sollicitudin finibus neque.
