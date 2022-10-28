@@ -3,6 +3,8 @@
 This repository is used for the primary Sitecore DXP demo that uses:
 
 - Sitecore XM Cloud
+  - XM Cloud Pages Personalize
+  - XM Cloud Pages Analyze
 - Sitecore Content Hub DAM and CMP
 - Sitecore JavaScript Services (JSS)
 - Next.js

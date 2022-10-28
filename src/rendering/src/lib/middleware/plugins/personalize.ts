@@ -3,6 +3,7 @@ import { PersonalizeMiddleware } from '@sitecore-jss/sitecore-jss-nextjs/middlew
 import { MiddlewarePlugin } from '..';
 import config from 'temp/config';
 import { PosResolver } from 'lib/pos-resolver';
+import { isCdpEnabled } from '../../../helpers/CdpHelper'; // DEMO TEAM CUSTOMIZATION
 
 /**
  * This is the personalize middleware plugin for Next.js.
@@ -44,7 +45,11 @@ class PersonalizePlugin implements MiddlewarePlugin {
       // IMPORTANT: You should implement based on your cookie consent management solution of choice.
       // You may also wish to disable in development mode (process.env.NODE_ENV === 'development').
       // By default it is always enabled.
-      disabled: () => false,
+      // DEMO TEAM CUSTOMIZATION - Disable if the environment variables are not set
+      disabled: () => {
+        return !isCdpEnabled;
+      },
+      // END CUSTOMIZATION
       // This function determines if a route should be excluded from personalization.
       // Certain paths are ignored by default (e.g. files and Next.js API routes), but you may wish to exclude more.
       // This is an important performance consideration since Next.js Edge middleware runs on every request.
