@@ -11,13 +11,11 @@ import {
 
 interface Fields {
   PromoIcon: ImageField;
-  // DEMO TEAM CUSTOMIZATION - Additional field
-  PromoIcon2: ImageField;
+  PromoIcon2: ImageField; // DEMO TEAM CUSTOMIZATION - Additional field
   PromoText: Field<string>;
   PromoLink: LinkField;
   PromoText2: Field<string>;
-  // DEMO TEAM CUSTOMIZATION - Additional field
-  PromoText3: Field<string>;
+  PromoText3: Field<string>; // DEMO TEAM CUSTOMIZATION - Additional field
 }
 
 type PromoProps = {

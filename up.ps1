@@ -150,8 +150,6 @@ if ($LASTEXITCODE -ne 0) {
     Write-Error "Serialization push failed, see errors above."
 }
 
-# DEMO TEAM CUSTOMIZATION - Removed setting the dynamic Sitecore API key and pushing it to Sitecore. We use a static API key.
-
 # DEMO TEAM CUSTOMIZATION - Restart CM after deserialization to clear the caches
 Invoke-WebRequest https://$xmCloudHost/Utilities/Restart.aspx
 
@@ -162,6 +160,8 @@ dotnet sitecore index rebuild
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Rebuild indexes failed, see errors above."
 }
+
+# DEMO TEAM CUSTOMIZATION - Removed setting the dynamic Sitecore API key and pushing it to Sitecore. We use a static API key.
 
 if ($ClientCredentialsLogin -ne "true") {
     Write-Host "Opening site..." -ForegroundColor Green

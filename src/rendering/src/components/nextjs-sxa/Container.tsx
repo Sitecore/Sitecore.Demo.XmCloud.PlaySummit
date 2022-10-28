@@ -33,8 +33,14 @@ export const Default = (props: ComponentProps): JSX.Element => {
   }
 
   return (
-    <div className={`component container ${styles}`} id={id ? id : undefined}>
-      <div className="component-content" style={backgroundStyle}>
+    // DEMO TEAM CUSTOMIZATION - Move the style={backgroundStyle} attribute from the component-content div to the outer div.
+    <div
+      className={`component container ${styles}`}
+      id={id ? id : undefined}
+      style={backgroundStyle}
+    >
+      <div className="component-content">
+        {/* END CUSTOMIZATION */}
         <div className="row">
           <Placeholder name={phKey} rendering={props.rendering} />
         </div>
