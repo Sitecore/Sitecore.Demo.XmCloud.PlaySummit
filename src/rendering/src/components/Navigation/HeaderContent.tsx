@@ -38,10 +38,7 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
   };
 
   const languageSelector = languageList && (
-    <select
-      onChange={(e) => changeLanguage(e.currentTarget.value)}
-      className="languagePicker"
-    >
+    <select onChange={(e) => changeLanguage(e.currentTarget.value)} className="languagePicker">
       {languageList.map((language, index) => (
         <option
           key={index}
