@@ -18,9 +18,6 @@ Languages:
     - ID: "05607296-e17f-567f-898f-46bb9665d619"
       Hint: title
       Value: Sed vel hendrerit nibh.
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221013T172726Z
     - ID: "348777e9-0329-5c42-a43d-3db7d8a7a748"
       Hint: content
       Value: Nunc pellentesque at lorem vitae malesuada. Fusce fermentum in magna commodo interdum. Suspendisse faucibus erat a libero consequat, ac consectetur sapien feugiat.
@@ -31,3 +28,6 @@ Languages:
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{F103752C-F458-47E0-B322-99785275BDB9}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "203b8f4d-b7e9-4705-82f3-e6d401ede869"

@@ -15,9 +15,6 @@ Languages:
     - ID: "05607296-e17f-567f-898f-46bb9665d619"
       Hint: title
       Value: A global gathering of fitness brands, sports professionals, and you
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133252Z
     - ID: "348777e9-0329-5c42-a43d-3db7d8a7a748"
       Hint: content
       Value: |
@@ -32,3 +29,6 @@ Languages:
       Hint: callToActionLink
       Value: |
         <link id="{2D1D7ACA-9597-5CA6-85B2-9B04907E4298}" linktype="internal" text="Vendor Registration" querystring="" url="/PLAY/playwebsite/home" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0344724d-db68-45e8-a045-a92f071d7474"

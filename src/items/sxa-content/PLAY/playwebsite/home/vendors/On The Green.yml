@@ -22,9 +22,6 @@ Languages:
     - ID: "21bd2ce2-43b1-4a8a-8383-1470d503c504"
       Hint: ActivityType
       Value: "{539CB720-4A96-40C1-B5FC-44F2F776648F}"
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133246Z
     - ID: "2696b94c-fb09-4392-999a-9a7a7223f228"
       Hint: InstagramProfileLink
       Value: "https://www.instagram.com/#"
@@ -38,6 +35,9 @@ Languages:
       Hint: Logo
       Value: |
         <image stylelabs-content-id="34178" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/34178/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/2c6390c36dbc4af0a2033d0b46799643?v=ce0be08d" mediaid="" stylelabs-content-type="Image" alt="OnTheGreen Logo" height="1001" width="1001" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e7d240f2-77ce-41ed-949f-fbf53fc51426"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
       Value: |

@@ -11,9 +11,6 @@ Languages:
     - ID: "05607296-e17f-567f-898f-46bb9665d619"
       Hint: title
       Value: Game Changers
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133248Z
     - ID: "348777e9-0329-5c42-a43d-3db7d8a7a748"
       Hint: content
       Value: Check out over 2000 sports brands and test drive the latest fitness equipment and technology in our interactive demo space.
@@ -21,3 +18,6 @@ Languages:
       Hint: callToActionLink
       Value: |
         <link text="Discover More" linktype="external" url="/shop" anchor="" target="" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ff3fb52d-fe25-4ca5-a7d9-f241cfd49d9b"

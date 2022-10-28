@@ -8,9 +8,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133251Z
     - ID: "453e6795-c512-4c06-a34f-326d1a999e14"
       Hint: Vendors
       Value: |
@@ -24,3 +21,6 @@ Languages:
     - ID: "6c0ffd67-8f13-525a-b487-b7ef41d328bd"
       Hint: Title
       Value: LOREM IPSUM
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "34488eda-c64d-48bc-820e-ce641acbd52c"

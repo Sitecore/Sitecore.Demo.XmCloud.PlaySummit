@@ -15,9 +15,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133240Z
     - ID: "30de01d7-233e-42ac-bb14-751e9d60b1cd"
       Hint: Provider
       Value: $name
@@ -27,3 +24,6 @@ Languages:
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "089f9ce6-0d09-44dd-911a-ce086ad93904"

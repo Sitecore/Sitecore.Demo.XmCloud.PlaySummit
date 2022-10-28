@@ -23,15 +23,15 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133240Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
     - ID: "5452a1d2-a7e3-421c-a6ee-dc69e58bf206"
       Hint: Title
       Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "adfd2429-03fe-48d2-a8ad-4a17b8eedd66"
     - ID: "a186dea1-d336-4aa4-8448-fbdd419c31fe"
       Hint: ImageTransformation
       Value: postcard

@@ -11,9 +11,6 @@ Languages:
     - ID: "05607296-e17f-567f-898f-46bb9665d619"
       Hint: title
       Value: "Speaker Line-up"
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133248Z
     - ID: "348777e9-0329-5c42-a43d-3db7d8a7a748"
       Hint: content
       Value: "Catch up with some of the world’s leading sports professionals, appearing in-person and online for exclusive interviews, workshops, and Q&As."
@@ -21,3 +18,6 @@ Languages:
       Hint: callToActionLink
       Value: |
         <link id="{1F4B781B-F2A5-5647-99DF-C0C369162C4D}" linktype="internal" text="View All Speakers" querystring="" url="/PLAY/playwebsite/home/speakers" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4175cf82-9f8e-4011-abc9-92889998b8d7"

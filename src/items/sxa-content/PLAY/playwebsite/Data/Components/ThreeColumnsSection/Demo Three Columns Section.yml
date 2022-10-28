@@ -24,9 +24,6 @@ Languages:
     - ID: "1db8dbf5-944f-562d-ab5f-66e91325a159"
       Hint: MiddleTitle
       Value: Yoga
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133251Z
     - ID: "2d39d751-cfc9-5e7b-a6b7-036eb48b0241"
       Hint: RightLink
       Value: |
@@ -43,6 +40,9 @@ Languages:
       Hint: LeftLogo
       Value: |
         <image mediaid="{D6AECB2C-9006-450A-ABD7-CFE9AF3C7136}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a38e24e6-9971-4bda-b3fc-a57da38d663c"
     - ID: "a8282684-a5d5-57be-b6f6-a509c6ccdbe3"
       Hint: LeftTitle
       Value: Running
