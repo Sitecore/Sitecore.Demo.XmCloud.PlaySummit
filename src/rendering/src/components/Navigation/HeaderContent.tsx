@@ -29,7 +29,10 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
           query: props.query,
         },
         props.asPath,
-        { locale: lang }
+        {
+          locale: lang,
+          shallow: false,
+        }
       );
     }
   };
@@ -38,7 +41,6 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
     <select
       onChange={(e) => changeLanguage(e.currentTarget.value)}
       className="languagePicker"
-      defaultValue={sitecoreContext.language}
     >
       {languageList.map((language, index) => (
         <option
@@ -46,6 +48,7 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
           value={language['Name']}
           label={languageNames.of(language['Name'])}
           className="languageItem"
+          selected={sitecoreContext.language === language['Name']}
         >
           {languageNames.of(language['Name'])}
         </option>
