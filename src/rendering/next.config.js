@@ -28,6 +28,7 @@ const nextConfig = {
       'en',
       'fr-CA',
       'ja-JP',
+      'es-ES'
     ],
     // END CUSTOMIZATION
     // This is the locale that will be used when visiting a non-locale
