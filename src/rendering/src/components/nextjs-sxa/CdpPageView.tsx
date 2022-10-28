@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import config from 'temp/config';
 import { init } from '@sitecore/engage';
 import { PosResolver } from 'lib/pos-resolver';
+import { isCdpEnabled } from '../../helpers/CdpHelper'; // DEMO TEAM CUSTOMIZATION
 
 /**
  * This is the CDP page view component.
@@ -19,16 +20,12 @@ const CdpPageView = (): JSX.Element => {
     sitecoreContext: { pageState, route, variantId },
   } = useSitecoreContext();
 
-  // DEMO TEAM CUSTOMIZATION - Check whether the environment variablea are set
-  const isCdpConfigured =
-    !!process.env.NEXT_PUBLIC_CDP_CLIENT_KEY && !!process.env.NEXT_PUBLIC_CDP_TARGET_URL;
-
   /**
    * Creates a page view event using the Sitecore Engage SDK.
    */
   const createPageView = async (page: string, language: string, pageVariantId: string) => {
     // DMEO TEAM CUSTOMIZATION - Only initialize if the environment variables are set
-    if (isCdpConfigured) {
+    if (isCdpEnabled) {
       const pointOfSale = PosResolver.resolve(language);
       const engage = await init({
         clientKey: process.env.NEXT_PUBLIC_CDP_CLIENT_KEY || '',
@@ -58,7 +55,7 @@ const CdpPageView = (): JSX.Element => {
    */
   const disabled = () => {
     // DEMO TEAM CUSTOMIZATION - Disable if the environment variables are not set
-    return !isCdpConfigured;
+    return !isCdpEnabled;
   };
 
   useEffect(() => {
