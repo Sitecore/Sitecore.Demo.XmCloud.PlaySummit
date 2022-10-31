@@ -8,10 +8,12 @@ import { isCommerceEnabled } from '../../helpers/CommerceHelper';
 import { Provider } from 'react-redux';
 import reduxStore from '../../redux/store';
 import OcProvider from '../../redux/ocProvider';
-// import { DiscoverService } from '../../services/DiscoverService';
+import { DiscoverService } from '../../services/DiscoverService';
 import { logViewEvent } from '../../services/CdpService';
 
-// DiscoverService();
+if (isCommerceEnabled) {
+  DiscoverService();
+}
 
 export const ShopLayout = (props: PropsWithChildren<unknown>): JSX.Element => {
   useEffect(() => {
