@@ -18,7 +18,7 @@ namespace Sitecore.Demo.Edge.Website.Pipelines
         public override void Process(ImportEntityPipelineArgs args, BaseLog logger)
         {
             var source = args.Item.Database;
-            var target = Factory.GetDatabase("web");
+            var target = Factory.GetDatabase("experienceedge");
 
             PublishOptions publishOptions = new PublishOptions(source, target, PublishMode.SingleItem, args.Item.Language, DateTime.Now)
             {
