@@ -11,12 +11,6 @@ import OcProvider from '../../redux/ocProvider';
 import { DiscoverService } from '../../services/DiscoverService';
 import { logViewEvent } from '../../services/CdpService';
 
-console.log(isCommerceEnabled);
-console.log(process.env.NEXT_PUBLIC_DISCOVER_API_KEY);
-console.log(process.env.NEXT_PUBLIC_DISCOVER_CUSTOMER_KEY);
-console.log(process.env.NEXT_PUBLIC_ORDERCLOUD_BASE_API_URL);
-console.log(process.env.NEXT_PUBLIC_ORDERCLOUD_BUYER_CLIENT_ID);
-
 if (isCommerceEnabled) {
   DiscoverService();
 }
