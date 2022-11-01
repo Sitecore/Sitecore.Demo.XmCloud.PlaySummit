@@ -1,4 +1,4 @@
-import { PropsWithChildren, useEffect } from 'react';
+import { PropsWithChildren, useEffect, useState } from 'react';
 import Head from 'next/head';
 import { UserProvider } from '@auth0/nextjs-auth0';
 import ShopNavigation from '../Navigation/ShopNavigation';
@@ -16,6 +16,13 @@ if (isCommerceEnabled) {
 }
 
 export const ShopLayout = (props: PropsWithChildren<unknown>): JSX.Element => {
+  const [env] = useState([
+    process.env.NEXT_PUBLIC_DISCOVER_API_KEY,
+    process.env.NEXT_PUBLIC_DISCOVER_CUSTOMER_KEY,
+    process.env.NEXT_PUBLIC_ORDERCLOUD_BASE_API_URL,
+    process.env.NEXT_PUBLIC_ORDERCLOUD_BUYER_CLIENT_ID,
+  ]);
+
   useEffect(() => {
     // Log a CDP page view on route change
     const pushState = history.pushState;
@@ -307,6 +314,7 @@ export const ShopLayout = (props: PropsWithChildren<unknown>): JSX.Element => {
     </UserProvider>
   ) : (
     <p className="shop-integration-error">
+      {env.join('|')}
       Shop pages are currently disabled because the commerce integration is not configured
     </p>
   );
