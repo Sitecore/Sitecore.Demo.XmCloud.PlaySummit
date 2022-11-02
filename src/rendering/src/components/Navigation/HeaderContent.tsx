@@ -38,7 +38,11 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
   };
 
   const languageSelector = languageList && (
-    <select onChange={(e) => changeLanguage(e.currentTarget.value)} className="languagePicker" value={sitecoreContext.language}>
+    <select
+      onChange={(e) => changeLanguage(e.currentTarget.value)}
+      className="languagePicker"
+      value={sitecoreContext.language}
+    >
       {languageList.map((language, index) => (
         <option
           key={index}
