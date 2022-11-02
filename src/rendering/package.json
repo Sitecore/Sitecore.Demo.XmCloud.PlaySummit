@@ -125,8 +125,8 @@
     "yaml-loader": "^0.6.0"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -s ./public",
-    "build-storybook": "build-storybook -s ./public",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
     "eslint": "eslint ./src/**/*.tsx ./src/**/*.ts ./scripts/**/*.ts",
     "stylelint": "stylelint ./src/**/*.css",
     "build:local": "cross-env NEXT_PUBLIC_DISCOVER_CUSTOMER_KEY=0-0 NEXT_PUBLIC_DISCOVER_API_KEY=0-0-0 NEXT_PUBLIC_ORDERCLOUD_BUYER_CLIENT_ID=00000000-0000-0000-0000-000000000000 NEXT_PUBLIC_ORDERCLOUD_BASE_API_URL=https://sandboxapi.ordercloud.io npm-run-all build",
