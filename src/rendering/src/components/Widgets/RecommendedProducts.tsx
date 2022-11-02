@@ -9,10 +9,10 @@ interface RecommendedProductsProps extends RecommendationWidgetProps {
 }
 
 const RecommendedProducts = (props: RecommendedProductsProps): JSX.Element => {
-  const { onProductClick, products, rfkID, title, loaded, loading, altTheme } = props;
+  const { onProductClick, products, title, loaded, loading, altTheme } = props;
 
   const handleProductClick = (product: Product) => {
-    onProductClick({ sku: product.sku, rfkId: rfkID });
+    onProductClick({ sku: product.sku });
   };
 
   // TODO: Remove this when the Discover SDK allows us to configure a maximum number of products it returns.

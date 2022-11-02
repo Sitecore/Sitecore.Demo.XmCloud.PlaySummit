@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import React, { PropsWithChildren, ReactElement, useEffect, useState } from 'react';
 import { initializeAuth } from './ocAuth';
 import logout from './ocAuth/logout';
 import { retrieveCart } from './ocCurrentCart';
@@ -16,7 +16,7 @@ Configuration.Set({
   clientID: process.env.NEXT_PUBLIC_ORDERCLOUD_BUYER_CLIENT_ID,
 });
 
-const OcProvider: FunctionComponent = ({ children }) => {
+const OcProvider = ({ children }: PropsWithChildren): ReactElement => {
   const [hasCheckedForToken, setHasCheckedForToken] = useState(false);
   const router = useRouter();
   const dispatch = useAppDispatch();
