@@ -12,7 +12,7 @@ const PreviewSearchNewsList = (props: NewsListProps): JSX.Element => {
     <section className="news-list item-grid sessions-grid">
       <span className="news-list-title">
         News
-        <a href={`${resultsUrl}&tab=news`} className="view-all">
+        <a href={`${resultsUrl}&tab=content`} className="view-all">
           View All
         </a>
       </span>

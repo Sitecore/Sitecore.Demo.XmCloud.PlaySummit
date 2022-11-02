@@ -37,6 +37,26 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
       ],
       language: 'en',
     },
+    rendering: {
+      uid: '8ae6e35d-21e3-49a4-9728-29308cf51606',
+      componentName: 'Header',
+      dataSource: '/dummy',
+      params: {
+        CacheClearingBehavior: 'Clear on publish',
+      },
+      placeholders: {
+        'jss-header-content': [],
+      },
+      fields: {
+        data: {
+          item: {
+            children: {
+              results: [],
+            },
+          },
+        },
+      },
+    },
   } as unknown as HeaderContentProps;
 
   const footerProps = {

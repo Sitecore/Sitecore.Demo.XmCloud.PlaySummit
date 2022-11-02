@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { QueryClientProvider } from '@tanstack/react-query';
 import withQueryParams from 'lib/discover/hocs/withQueryParams';
 import React, { ReactElement } from 'react';
-import SearchResultsContainer from 'components/Search/SearchResults';
+import SearchResultsContainer from 'components/Search/SearchResultsContainer';
 import SummitLayout from '../../components/NonSitecore/SummitLayout';
 import { queryClient } from '../../helpers/DiscoverHelper';
 
