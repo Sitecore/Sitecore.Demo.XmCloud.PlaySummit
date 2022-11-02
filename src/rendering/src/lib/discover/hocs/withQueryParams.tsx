@@ -1,9 +1,10 @@
 import { useRouter } from 'next/router';
 import { ComponentType } from 'react';
 
-export type WithQueryParamsProps = {
+type WithQueryParamsProps = {
   [key in string]: unknown;
 };
+
 const withQueryParams = <T extends WithQueryParamsProps = WithQueryParamsProps>(
   WrappedComponent: ComponentType<T>,
   params: string[]

@@ -58,7 +58,7 @@
 @import './components/Forms/RequestInfoForm.css';
 @import './components/Forms/ShopForms.css';
 
-/* FullPageSearch */
+/* Sitecore Discover - FullPageSearch */
 @import './components/FullPageSearch/FacetList.css';
 @import './components/FullPageSearch/FullPageSearch.css';
 
@@ -110,10 +110,10 @@
 @import './components/Payment/PaymentProgress.css';
 @import './components/Payment/TicketPaymentConfirmed.css';
 
-/* PreviewSearch */
+/* Sitecore Discover - PreviewSearch */
 @import './components/PreviewSearch/PreviewSearch.css';
 
-/* Discover PreviewSearchContent */
+/* Sitecore Search - PreviewSearchContent */
 @import './components/PreviewSearchContent/PreviewSearch.css';
 @import './components/PreviewSearchContent/SearchInput.css';
 @import './components/PreviewSearchContent/SuggestionList.css';
@@ -124,7 +124,7 @@
 @import './components/PreviewSearchContent/NewsCard.css';
 @import './components/PreviewSearchContent/NewsList.css';
 
-/* Discover Search */
+/* Sitecore Search */
 @import './components/Search/Search.css';
 @import './components/Search/EntityTabs.css';
 @import './components/Search/EntityTab.css';
@@ -164,7 +164,7 @@
 /* Sponsors */
 @import './components/Sponsors/SelectedSponsorsGrid.css';
 
-/* Widgets */
+/* Sitecore Discover - Widgets */
 @import './components/Widgets/RecommendedProducts.css';
 
 /* 6. Tailwind components */

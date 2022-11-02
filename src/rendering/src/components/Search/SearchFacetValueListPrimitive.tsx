@@ -28,7 +28,7 @@ type Element = React.ElementRef<typeof RadixPrimitive.Primitive.ul>;
 /**
  * Used in FacetValueList
  */
-export type FacetClickedActionHandlerPayload = {
+type FacetClickedActionHandlerPayload = {
   checked: boolean;
   facetId: string;
   facetValueId: string;
@@ -36,7 +36,7 @@ export type FacetClickedActionHandlerPayload = {
 };
 export type FacetClickedActionHandler = (payload: FacetClickedActionHandlerPayload) => void;
 
-export interface FacetValueListProps extends PrimitiveUlProps {
+interface FacetValueListProps extends PrimitiveUlProps {
   /**
    * The id of the facet who will render the facet value items
    */
@@ -101,29 +101,31 @@ const FacetValueList = React.forwardRef<Element, FacetValueListProps>(
     );
   }
 );
-
 FacetValueList.displayName = FACET_VALUE_LIST_NAME;
+
 const Root = FacetValueList;
 
 /* -------------------------------------------------------------------------------------------------
  * FacetValueListItem
  * ----------------------------------------------------------------------------------------------- */
-
 type FacetValueListItemContextValue = {
   onFacetItemChange: (selected: boolean) => void;
   selected: boolean;
   id: string;
 };
+
 const [FacetValueListItemProvider, useFacetValueListItemContext] =
   createFacetItemContext<FacetValueListItemContextValue>(FACET_VALUE_ITEM_NAME);
 
 type PrimitiveLiProps = Radix.ComponentPropsWithoutRef<typeof RadixPrimitive.Primitive.li>;
 type FacetItemElement = React.ElementRef<typeof RadixPrimitive.Primitive.li>;
-export interface FacetValueListItemProps extends PrimitiveLiProps {
+
+interface FacetValueListItemProps extends PrimitiveLiProps {
   facetValueId: string;
   selected?: boolean;
   defaultSelected?: boolean;
 }
+
 /**
  * This component should be use inside FacetValueList
  */
@@ -182,7 +184,6 @@ const FacetValueListItem = React.forwardRef<FacetItemElement, FacetValueListItem
     );
   }
 );
-
 FacetValueListItem.displayName = FACET_VALUE_ITEM_NAME;
 
 type PrimitiveButtonProps = Radix.ComponentPropsWithoutRef<typeof RadixPrimitive.Primitive.button>;
@@ -204,7 +205,6 @@ const FacetValueListItemLabel = React.forwardRef<FacetItemLabelElement, LabelPri
     return <LabelPrimitive.Root htmlFor={id} {...labelProps} ref={forwardedRef} />;
   }
 );
-
 FacetValueListItemLabel.displayName = FACET_VALUE_ITEM_LABEL_NAME;
 
 /* -------------------------------------------------------------------------------------------------
@@ -240,7 +240,6 @@ const FacetValueListItemCheckbox = React.forwardRef<
     />
   );
 });
-
 FacetValueListItemCheckbox.displayName = FACET_VALUE_ITEM_CHECKBOX_NAME;
 
 /* -------------------------------------------------------------------------------------------------
@@ -286,7 +285,6 @@ const FacetValueListItemToggle = React.forwardRef<
     />
   );
 });
-
 FacetValueListItemToggle.displayName = FACET_VALUE_ITEM_TOGGLE_NAME;
 
 const Item = FacetValueListItem;

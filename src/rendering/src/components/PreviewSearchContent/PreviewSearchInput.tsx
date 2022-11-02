@@ -11,7 +11,7 @@ import {
   useState,
 } from 'react';
 
-type SearchInputProps = {
+type PreviewSearchInputProps = {
   keyphrase: string;
   setSearchString: (value: string) => void;
   onFocus: (value: string) => void;
@@ -21,14 +21,14 @@ type SearchInputProps = {
   open: boolean;
 };
 
-const SearchInput = ({
+const PreviewSearchInput = ({
   setSearchString,
   onFocus,
   placeholder,
   redirectUrl,
   setOpen,
   open,
-}: SearchInputProps): JSX.Element => {
+}: PreviewSearchInputProps): JSX.Element => {
   const [inputSearchVisibility, setInputSearchVisibility] = useState(false);
   const router = useRouter();
   const ref = useRef(null);
@@ -111,4 +111,4 @@ const SearchInput = ({
   );
 };
 
-export default SearchInput;
+export default PreviewSearchInput;

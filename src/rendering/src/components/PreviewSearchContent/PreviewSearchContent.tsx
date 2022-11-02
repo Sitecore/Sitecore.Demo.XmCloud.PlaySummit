@@ -2,10 +2,10 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 import debounce from '../../helpers/Debounce';
 import PreviewSearchContainer from './PreviewSearchContainer';
-import SearchInput from './SearchInput';
+import PreviewSearchInput from './PreviewSearchInput';
 import ClickOutside from '../ShopCommon/ClickOutside';
 
-const PreviewSearch = (): JSX.Element => {
+const PreviewSearchContent = (): JSX.Element => {
   const { events } = useRouter();
   const [openPreviewSearch, setPreviewSearchOpen] = useState(false);
   const [keyphrase, setKeyphrase] = useState('');
@@ -42,7 +42,7 @@ const PreviewSearch = (): JSX.Element => {
       {openPreviewSearch && (
         <PreviewSearchContainer keyphrase={keyphrase} close={() => setPreviewSearchOpen(false)} />
       )}
-      <SearchInput
+      <PreviewSearchInput
         placeholder="Search content"
         redirectUrl="search"
         keyphrase={keyphrase}
@@ -55,4 +55,4 @@ const PreviewSearch = (): JSX.Element => {
   );
 };
 
-export default PreviewSearch;
+export default PreviewSearchContent;

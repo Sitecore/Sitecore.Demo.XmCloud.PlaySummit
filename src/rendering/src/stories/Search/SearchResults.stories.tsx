@@ -3,7 +3,7 @@ import React from 'react';
 
 import SearchProvider from '../../components/Search/SearchProvider';
 import SearchResults from '../../components/Search/SearchResults';
-import { filterOptionsProp } from '../mock-discover-data';
+import { filterOptionsProp } from '../mock-search-data';
 
 export default {
   title: 'Components/Search/SearchResults',

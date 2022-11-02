@@ -74,7 +74,6 @@ const Pagination: React.FC<PaginationProps> = React.forwardRef<PaginationElement
     );
   }
 );
-
 Pagination.displayName = PAGINATION_NAME;
 
 /* -------------------------------------------------------------------------------------------------
@@ -121,7 +120,6 @@ const PaginationFirstPage = React.forwardRef<PrimitiveLinkElement, PaginationFir
     );
   }
 );
-
 PaginationFirstPage.displayName = PAGINATION_FIRST_PAGE;
 
 /* -------------------------------------------------------------------------------------------------
@@ -168,7 +166,6 @@ const PaginationLastPage = React.forwardRef<PrimitiveLinkElement, PaginationLast
     );
   }
 );
-
 PaginationLastPage.displayName = PAGINATION_LAST_PAGE;
 
 /* -------------------------------------------------------------------------------------------------
@@ -215,7 +212,6 @@ const PaginationPrevPage = React.forwardRef<PrimitiveLinkElement, PaginationPrev
     );
   }
 );
-
 PaginationPrevPage.displayName = PAGINATION_PREV_PAGE;
 
 /* -------------------------------------------------------------------------------------------------
@@ -262,7 +258,6 @@ const PaginationNextPage = React.forwardRef<PrimitiveLinkElement, PaginationNext
     );
   }
 );
-
 PaginationNextPage.displayName = PAGINATION_NEXT_PAGE;
 
 /* -------------------------------------------------------------------------------------------------
@@ -291,7 +286,6 @@ const PaginationPages = React.forwardRef<PaginationPagesElement, PaginationPages
     );
   }
 );
-
 PaginationPages.displayName = PAGINATION_PAGES;
 
 /* -------------------------------------------------------------------------------------------------
@@ -332,7 +326,6 @@ const PaginationPage = React.forwardRef<PrimitiveLinkElement, PaginationPageProp
     );
   }
 );
-
 PaginationPage.displayName = PAGINATION_PAGE;
 
 /* -------------------------------------------------------------------------------------------------
@@ -350,7 +343,6 @@ const PaginationTruncate = React.forwardRef<PaginationTruncateElement, Paginatio
     return <Radix.Primitive.span ref={forwardedRef} {...paginationTruncateProps} />;
   }
 );
-
 PaginationTruncate.displayName = PAGINATION_TRUNCATE;
 
 const Root = Pagination;
@@ -382,4 +374,5 @@ export {
   Pages,
   Truncate,
 };
+
 export type { PaginationProps };

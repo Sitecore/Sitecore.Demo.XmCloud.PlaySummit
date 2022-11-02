@@ -28,7 +28,7 @@
 
         min-height: 50vh;
       }
-}
+    }
 
     .search-results-tab-sort {
       label {
@@ -52,7 +52,9 @@
       }
     }
 
-    .section, .section .container, .section .container .content {
+    .section,
+    .section .container,
+    .section .container .content {
       @apply p-0 m-0;
     }
 
@@ -66,7 +68,7 @@
       }
 
       .btn-main {
-        &:after {
+        &::after {
           position: absolute;
           inset: 0;
           display: block;

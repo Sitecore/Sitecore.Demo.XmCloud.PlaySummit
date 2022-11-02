@@ -1,6 +1,6 @@
 import SearchFilter, { Option } from './SearchFilter';
 
-export type FiltersProps = {
+export type SearchFiltersProps = {
   onChange: (id: string, value: string) => void;
   options: Record<'schedule' | 'rooms', Option[]>;
   className?: string;
@@ -17,7 +17,7 @@ const filters: { id: 'schedule' | 'rooms'; name: string }[] = [
   },
 ];
 
-const Filters = (props: FiltersProps): JSX.Element => {
+const SearchFilters = (props: SearchFiltersProps): JSX.Element => {
   return (
     <div className={`search-filters ${props.className || ''}`}>
       <div>Filter by</div>
@@ -35,4 +35,4 @@ const Filters = (props: FiltersProps): JSX.Element => {
   );
 };
 
-export default Filters;
+export default SearchFilters;

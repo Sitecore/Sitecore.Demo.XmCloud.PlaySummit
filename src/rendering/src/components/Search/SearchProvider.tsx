@@ -1,6 +1,6 @@
-import { DiscoverRequestFilter } from 'lib/discover/api';
+import { DiscoverRequestFilter } from '../../lib/discover/api';
 import { createContext, PropsWithChildren, useCallback, useMemo, useState } from 'react';
-import { FiltersProps } from './SearchFilters';
+import { SearchFiltersProps } from './SearchFilters';
 
 type SearchContextType = {
   keyphrase: string;
@@ -9,7 +9,7 @@ type SearchContextType = {
   };
   onUpdate?: (id: string, total: number) => void;
   filters: DiscoverRequestFilter[];
-  onChangeFilter?: FiltersProps['onChange'];
+  onChangeFilter?: SearchFiltersProps['onChange'];
 };
 
 export const SearchContext = createContext<SearchContextType>({
@@ -18,7 +18,7 @@ export const SearchContext = createContext<SearchContextType>({
   totals: {} as SearchContextType['totals'],
 });
 
-export type SearchProviderProps = { keyphrase: string } & PropsWithChildren;
+type SearchProviderProps = { keyphrase: string } & PropsWithChildren;
 
 const SearchProvider = (props: SearchProviderProps): JSX.Element => {
   const { keyphrase } = props;
@@ -61,6 +61,7 @@ const SearchProvider = (props: SearchProviderProps): JSX.Element => {
     }),
     [filters, onChangeFilter, onUpdate, totals, keyphrase]
   );
+
   return <SearchContext.Provider value={value}>{props.children}</SearchContext.Provider>;
 };
 

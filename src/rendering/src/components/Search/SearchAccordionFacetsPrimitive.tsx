@@ -17,7 +17,7 @@ const ACCORDION_FACETS_NAME = 'AccordionFacets';
 type AccordionFacetsElement = React.ElementRef<typeof AccordionPrimitive.Root>;
 type AccordionProps = Radix.ComponentPropsWithoutRef<typeof AccordionPrimitive.Root>;
 
-export type FacetValueClickedActionPayload = {
+type FacetValueClickedActionPayload = {
   facetId: string;
   facetValueId: string;
   facetIndex: number;
@@ -25,7 +25,7 @@ export type FacetValueClickedActionPayload = {
   checked: boolean;
 };
 
-export type FacetValueClickedAction = (payload: FacetValueClickedActionPayload) => void;
+type FacetValueClickedAction = (payload: FacetValueClickedActionPayload) => void;
 
 interface AccordionFacetsProps
   extends Omit<
@@ -110,25 +110,29 @@ const AccordionFacets: React.FC<AccordionFacetsProps> = React.forwardRef<
     </CollectionIndex.Provider>
   );
 });
-
 AccordionFacets.displayName = ACCORDION_FACETS_NAME;
 
 /* -------------------------------------------------------------------------------------------------
  * AccordionFacet
  * ----------------------------------------------------------------------------------------------- */
 const ACCORDION_FACET_NAME = 'AccordionFacet';
+
 interface AccordionFacetItemProps {
   facetId: string;
   children: React.ReactNode;
 }
+
 type AccordionFacetContextValue = {
   facetId: string;
   onFacetItemClick: FacetValueListPrimitive.FacetClickedActionHandler;
 };
+
 type AccordionFacetElement = React.ElementRef<typeof AccordionPrimitive.Item>;
+
 const [createAccordionFacetContext] = RadixContext.createContextScope(ACCORDION_FACET_NAME);
 const [AccordionFacetProvider, useAccordionFacetContext] =
   createAccordionFacetContext<AccordionFacetContextValue>(ACCORDION_FACET_NAME);
+
 /**
  * `AccordionFacet` contains all of the parts of a collapsible section inside of an `Accordion`.
  */
@@ -143,6 +147,7 @@ const AccordionFacet = React.forwardRef<AccordionFacetElement, AccordionFacetIte
       ACCORDION_FACET_NAME,
       __scopeAccordionFacets
     );
+
     const onFacetClickHandler =
       CallbackRefHook.useCallbackRef<FacetValueListPrimitive.FacetClickedActionHandler>(
         ({ facetId, facetValueId, facetValueIndex, checked }) => {
@@ -155,6 +160,7 @@ const AccordionFacet = React.forwardRef<AccordionFacetElement, AccordionFacetIte
           });
         }
       );
+
     return (
       <AccordionFacetProvider
         scope={__scopeAccordionFacets}
@@ -173,7 +179,6 @@ const AccordionFacet = React.forwardRef<AccordionFacetElement, AccordionFacetIte
     );
   }
 );
-
 AccordionFacet.displayName = ACCORDION_FACET_NAME;
 
 /* -------------------------------------------------------------------------------------------------
@@ -195,16 +200,17 @@ const AccordionFacetContent = React.forwardRef<
 
   return <AccordionPrimitive.Content {...accordionScope} {...restProps} ref={forwardedRef} />;
 });
-
 AccordionFacetContent.displayName = ACCORDION_FACET_CONTENT_NAME;
 
 /* -------------------------------------------------------------------------------------------------
  * AccordionFacetValueList
  * ----------------------------------------------------------------------------------------------- */
 const ACCORDION_FACET_VALUE_LIST_NAME = 'AccordionFacetValueList';
+
 type AccordionFacetValueListElement = React.ComponentPropsWithoutRef<
   typeof FacetValueListPrimitive.Root
 >;
+
 type AccordionFacetValueListProps = Omit<
   AccordionFacetValueListElement,
   'facetId' | 'onFacetClick'
@@ -227,7 +233,6 @@ const AccordionFacetValueList = (props: ScopedProps<AccordionFacetValueListProps
     />
   );
 };
-
 AccordionFacetValueList.displayName = ACCORDION_FACET_VALUE_LIST_NAME;
 
 /* -------------------------------------------------------------------------------------------------
@@ -237,6 +242,7 @@ type AccordionFacetValueListItemElement = React.ElementRef<typeof FacetValueList
 type AccordionFacetValueListItemProps = Radix.ComponentPropsWithoutRef<
   typeof FacetValueListPrimitive.Item
 >;
+
 const AccordionFacetValueListItem = React.forwardRef<
   AccordionFacetValueListItemElement,
   AccordionFacetValueListItemProps
@@ -257,6 +263,7 @@ type AccordionFacetValueListItemLabelElement = React.ElementRef<
 type AccordionFacetValueListItemLabelProps = Radix.ComponentPropsWithoutRef<
   typeof FacetValueListPrimitive.Label
 >;
+
 const AccordionFacetValueListItemLabel = React.forwardRef<
   AccordionFacetValueListItemLabelElement,
   AccordionFacetValueListItemLabelProps
@@ -277,6 +284,7 @@ type AccordionFacetValueListItemCheckboxElement = React.ElementRef<
 type AccordionFacetValueListItemCheckboxProps = Radix.ComponentPropsWithoutRef<
   typeof FacetValueListPrimitive.Checkbox
 >;
+
 const AccordionFacetValueListItemCheckbox = React.forwardRef<
   AccordionFacetValueListItemCheckboxElement,
   AccordionFacetValueListItemCheckboxProps
@@ -287,6 +295,7 @@ const AccordionFacetValueListItemCheckbox = React.forwardRef<
   return <FacetValueListPrimitive.Checkbox {...facetListScope} {...restProps} ref={forwardedRef} />;
 });
 AccordionFacetValueListItemCheckbox.displayName = 'AccordionFacetValueListItemCheckbox';
+
 /* -------------------------------------------------------------------------------------------------
  * AccordionFacetValueListItemCheckboxIndicator
  * ----------------------------------------------------------------------------------------------- */
@@ -303,6 +312,7 @@ type AccordionFacetValueListItemItemToggleElement = React.ElementRef<
 type AccordionFacetValueListItemItemToggleProps = Radix.ComponentPropsWithoutRef<
   typeof FacetValueListPrimitive.Toggle
 >;
+
 const AccordionFacetValueListItemItemToggle = React.forwardRef<
   AccordionFacetValueListItemItemToggleElement,
   AccordionFacetValueListItemItemToggleProps
@@ -320,6 +330,7 @@ AccordionFacetValueListItemItemToggle.displayName = 'AccordionFacetValueListItem
 const ACCORDION_FACET_HEADER_NAME = 'AccordionFacetHeader';
 type AccordionFacetHeaderElement = React.ElementRef<typeof AccordionPrimitive.Header>;
 type AccordionFacetHeaderProps = Radix.ComponentPropsWithoutRef<typeof AccordionPrimitive.Header>;
+
 const AccordionFacetHeader = React.forwardRef<
   AccordionFacetHeaderElement,
   AccordionFacetHeaderProps
@@ -340,6 +351,7 @@ type AccordionFacetTriggerElement = React.ElementRef<typeof AccordionPrimitive.A
 type AccordionFacetTriggerProps = Radix.ComponentPropsWithoutRef<
   typeof AccordionPrimitive.AccordionTrigger
 >;
+
 const AccordionFacetTrigger = React.forwardRef<
   AccordionFacetTriggerElement,
   AccordionFacetTriggerProps
@@ -351,7 +363,6 @@ const AccordionFacetTrigger = React.forwardRef<
     <AccordionPrimitive.AccordionTrigger {...accordionScope} {...restProps} ref={forwardedRef} />
   );
 });
-
 AccordionFacetTrigger.displayName = ACCORDION_FACET_TRIGGER_NAME;
 
 const Root = AccordionFacets;
@@ -398,4 +409,5 @@ export {
   ItemCheckboxIndicator,
   ItemToggle,
 };
+
 export type { AccordionFacetsProps };

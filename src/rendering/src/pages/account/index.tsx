@@ -1,7 +1,7 @@
 import UserProfile from '../../components/Account/UserProfile';
 import Head from 'next/head';
 import { ReactElement } from 'react';
-import { ShopLayout } from '../../components/Products/Shop';
+import ShopLayout from '../../components/Products/ShopLayout';
 import { AccountLayout } from '../../components/Account/AccountLayout';
 
 const Account = (): JSX.Element => {

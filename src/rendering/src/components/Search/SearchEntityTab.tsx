@@ -1,6 +1,6 @@
 import { CSSProperties, useCallback } from 'react';
 
-export type EntityTabProps = {
+type SearchEntityTabProps = {
   id: string;
   name: string;
   active: boolean;
@@ -8,7 +8,7 @@ export type EntityTabProps = {
   onSelect?: (id: string) => void;
 };
 
-const SearchEntityTab = (props: EntityTabProps): JSX.Element => {
+const SearchEntityTab = (props: SearchEntityTabProps): JSX.Element => {
   const { id, onSelect } = props;
   const onSelectTabCallback = useCallback(() => {
     onSelect && onSelect(id);

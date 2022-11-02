@@ -3,14 +3,14 @@ export type Option = {
   label: string;
 };
 
-export type FilterProps = {
+type SearchFilterProps = {
   name: string;
   value?: string;
   onChange?: (value: string) => void;
   options?: Option[];
 };
 
-const SearchFilter = (props: FilterProps): JSX.Element => {
+const SearchFilter = (props: SearchFilterProps): JSX.Element => {
   const { options = [] } = props;
   return (
     <select

@@ -7,18 +7,18 @@ import { SearchContext } from '../../components/Search/SearchProvider';
 import { DiscoverRequestFilter } from '../../lib/discover/api';
 import * as AccordionFacets from './SearchAccordionFacetsPrimitive';
 
-export type FacetValue = {
+type FacetValue = {
   id: string;
   text: string;
   count: number;
 };
 
-export type Facet = {
+type Facet = {
   label: string;
   value: FacetValue[];
 };
 
-export type FacetsProps = {
+export type SearchFacetsProps = {
   onFacetValueClick?: (payload: FacetValueClickedActionPayload) => void;
   onClearFilters?: () => void;
   onFilterClick?: (payload: DiscoverRequestFilter & { checked: boolean }) => void;
@@ -37,11 +37,12 @@ const getFacetLabel = ({ text }: FacetValue): string => {
   return text;
 };
 
-const SearchFacets = (props: FacetsProps): JSX.Element => {
+const SearchFacets = (props: SearchFacetsProps): JSX.Element => {
   const { filters } = useContext(SearchContext);
   const filterIds = filters.map(({ facetId }) => facetId);
   const facetNames = Object.keys(props.facets);
   const appliedFilters = props.filters.filter(({ facetId }) => !filterIds.includes(facetId));
+
   return (
     <>
       {appliedFilters.length > 0 && (

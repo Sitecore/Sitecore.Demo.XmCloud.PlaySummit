@@ -1,11 +1,11 @@
 import { PropsWithChildren } from 'react';
 
-export type EntityTabProps = PropsWithChildren & {
+type SearchEntityTabContentProps = PropsWithChildren & {
   name?: string;
   active?: boolean;
 };
 
-const EntityTab = (props: EntityTabProps): JSX.Element => {
+const SearchEntityTabContent = (props: SearchEntityTabContentProps): JSX.Element => {
   return (
     <div
       data-state={props.active ? 'active' : 'inactive'}
@@ -20,4 +20,4 @@ const EntityTab = (props: EntityTabProps): JSX.Element => {
   );
 };
 
-export default EntityTab;
+export default SearchEntityTabContent;

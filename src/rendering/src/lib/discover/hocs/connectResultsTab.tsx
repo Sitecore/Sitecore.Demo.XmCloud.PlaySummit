@@ -73,6 +73,7 @@ const connectResultsTab = ({
         }),
     50
   );
+
   return <T extends typeof SearchResultsTab>(WrappedComponent: T): FC => {
     const Component: FC = () => {
       const { keyphrase, filters: topFilters, onUpdate } = useContext(SearchContext);

@@ -2,13 +2,13 @@ import { Image, Text } from '@sitecore-jss/sitecore-jss-nextjs';
 import Link from 'next/link';
 import { vendorAdapter } from '../../helpers/DiscoverHelper';
 import { DiscoverSponsor } from '../../interfaces/discover/DiscoverSponsor';
-import SearchResultsTab, { ResultsTabProps } from './SearchResultsTab';
+import SearchResultsTab, { SearchResultsTabProps } from './SearchResultsTab';
 
-export type VendorResultsTabProps = ResultsTabProps & {
+type SearchVendorResultsTabProps = SearchResultsTabProps & {
   items: DiscoverSponsor[];
 };
 
-const SearchVendorResultsTab = (props: VendorResultsTabProps): JSX.Element => {
+const SearchVendorResultsTab = (props: SearchVendorResultsTabProps): JSX.Element => {
   return (
     <SearchResultsTab
       loading={props.loading}

@@ -1,4 +1,4 @@
-import { facetsProp, filtersProp } from '../mock-discover-data';
+import { facetsProp, filtersProp } from '../mock-search-data';
 
 export const defaultArgs = {
   facets: facetsProp,

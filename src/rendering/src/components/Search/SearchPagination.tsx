@@ -2,7 +2,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons';
 import { MouseEventHandler } from 'react';
 import * as Pagination from './SearchPaginationPrimitive';
 
-export type PaginationProps = {
+export type SearchPaginationProps = {
   currentPage: number;
   totalItems: number;
   perPage: number;
@@ -17,11 +17,13 @@ const onChangePageHandler: MouseEventHandler<HTMLAnchorElement> = (e) => {
     }, 0);
 };
 
-const PaginationComponent = (props: PaginationProps): JSX.Element => {
+const SearchPagination = (props: SearchPaginationProps): JSX.Element => {
   const totalPages = Math.min(Math.ceil(props.totalItems / props.perPage) || 0, 20);
+
   if (totalPages <= 1) {
     return null;
   }
+
   return (
     <Pagination.Root
       className="search-pagination"
@@ -58,4 +60,4 @@ const PaginationComponent = (props: PaginationProps): JSX.Element => {
   );
 };
 
-export default PaginationComponent;
+export default SearchPagination;

@@ -1,12 +1,12 @@
 import { PropsWithChildren, FC } from 'react';
 import { DiscoverResponseSortChoice } from '../../interfaces/discover/DiscoverResponse';
 import Spinner from '../../components/ShopCommon/Spinner';
-import SearchFacets, { FacetsProps } from './SearchFacets';
-import Pagination, { PaginationProps } from './SearchPagination';
+import SearchFacets, { SearchFacetsProps } from './SearchFacets';
+import Pagination, { SearchPaginationProps } from './SearchPagination';
 
-export type ResultsTabProps = PropsWithChildren &
-  FacetsProps &
-  PaginationProps & {
+export type SearchResultsTabProps = PropsWithChildren &
+  SearchFacetsProps &
+  SearchPaginationProps & {
     onResultsPerPageChange: (perPage: number) => void;
     onSortChange: (sortChoice: string) => void;
     sort: DiscoverResponseSortChoice['name'];
@@ -14,7 +14,7 @@ export type ResultsTabProps = PropsWithChildren &
     loading: boolean;
   };
 
-const SearchResultsTab: FC<ResultsTabProps> = (props) => {
+const SearchResultsTab: FC<SearchResultsTabProps> = (props) => {
   return (
     <div className="search-results-tab">
       <div className="search-results-tab-facets">

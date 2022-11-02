@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
-import { ShopLayout } from 'components/Products/Shop';
+import ShopLayout from 'components/Products/ShopLayout';
 import ThankYouSection from 'components/Checkout/ThankYouSection';
 import ThankYouHero from 'components/Checkout/ThankYouHero';
 

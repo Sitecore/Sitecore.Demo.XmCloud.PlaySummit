@@ -3,13 +3,13 @@ import Link from 'next/link';
 import { newsDateFormatter } from '../../helpers/DateHelper';
 import { newsAdapter } from '../../helpers/DiscoverHelper';
 import { DiscoverNews } from '../../interfaces/discover/DiscoverNews';
-import SearchResultsTab, { ResultsTabProps } from './SearchResultsTab';
+import SearchResultsTab, { SearchResultsTabProps } from './SearchResultsTab';
 
-export type NewsResultsTabProps = ResultsTabProps & {
+type SearchNewsResultsTabProps = SearchResultsTabProps & {
   items: DiscoverNews[];
 };
 
-const SearchNewsResultsTab = (props: NewsResultsTabProps): JSX.Element => {
+const SearchNewsResultsTab = (props: SearchNewsResultsTabProps): JSX.Element => {
   return (
     <SearchResultsTab
       loading={props.loading}

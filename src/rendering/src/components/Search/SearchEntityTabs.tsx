@@ -1,6 +1,6 @@
 import { useCallback, useContext, useState, FC, useEffect } from 'react';
 import SearchEntityTab from './SearchEntityTab';
-import EntityTabContent from './SearchEntityTabContent';
+import SearchEntityTabContent from './SearchEntityTabContent';
 import { SearchContext } from './SearchProvider';
 
 export type Tab = {
@@ -10,14 +10,14 @@ export type Tab = {
   Component: FC;
 };
 
-export type EntityTabsProps = {
+type SearchEntityTabsProps = {
   className?: string;
   theme?: string;
   selected: Tab['id'];
   tabs: Tab[];
 };
 
-const SearchEntityTabs = (props: EntityTabsProps): JSX.Element => {
+const SearchEntityTabs = (props: SearchEntityTabsProps): JSX.Element => {
   const { totals } = useContext(SearchContext);
   const { selected } = props;
   const themeClass = props.theme ? `entity-tabs-${props.theme}` : '';
@@ -28,6 +28,7 @@ const SearchEntityTabs = (props: EntityTabsProps): JSX.Element => {
   const onSelectTab = useCallback((id: Tab['id']) => {
     setActiveTab(id);
   }, []);
+
   return (
     <div
       dir="ltr"
@@ -54,9 +55,9 @@ const SearchEntityTabs = (props: EntityTabsProps): JSX.Element => {
         ))}
       </div>
       {props.tabs.map(({ id, Component: TabContentComponent }) => (
-        <EntityTabContent key={id} active={activeTab === id}>
+        <SearchEntityTabContent key={id} active={activeTab === id}>
           <TabContentComponent />
-        </EntityTabContent>
+        </SearchEntityTabContent>
       ))}
     </div>
   );

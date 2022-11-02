@@ -51,5 +51,3 @@ Default.args = {
     },
   ],
 };
-
-// PROFLE=sitecore aws3 sync ./build s3://rfk-widget-sdk-doc/playsummit --acl public-read --delete && PROFILE=sitecore aws cloudfront create-invalidation --distribution-id EGKWMJ67NHVCP --paths "/index.html"

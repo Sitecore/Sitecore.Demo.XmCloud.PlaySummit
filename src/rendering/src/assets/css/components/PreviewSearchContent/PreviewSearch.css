@@ -1,5 +1,5 @@
 .preview-search-content-container {
-  @apply shadow shadow-lg shadow-black-lightest;
+  @apply shadow-lg shadow-black-lightest;
 
   overflow-y: auto;
   position: fixed;
@@ -26,7 +26,7 @@
   }
 }
 
-div.header-eyebrow~nav.main-navigation .preview-search-content-container {
+div.header-eyebrow ~ nav.main-navigation .preview-search-content-container {
   top: 6.15rem;
 }
 

@@ -80,6 +80,9 @@ services:
       AUTH0_CLIENT_ID: ${AUTH0_CLIENT_ID}
       AUTH0_CLIENT_SECRET: ${AUTH0_CLIENT_SECRET}
       NEXT_PUBLIC_AUTH0_ENABLED: ${AUTH0_ENABLED}
+      ## Search
+      NEXT_PUBLIC_SEARCH_API_DOMAIN: ${SEARCH_API_DOMAIN}
+      NEXT_PUBLIC_SEARCH_API_HOST: ${SEARCH_API_HOST}
       #DEBUG: ${DEBUG} # Uncomment this line and set the DEBUG environment variable value in the .env file to enable debug logging
       # END CUSTOMIZATION
     depends_on:

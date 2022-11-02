@@ -3,7 +3,7 @@ import React from 'react';
 
 import SearchProvider from '../../components/Search/SearchProvider';
 import SearchFacets from '../../components/Search/SearchFacets';
-import { facetsProp, filtersProp } from '../mock-discover-data';
+import { facetsProp, filtersProp } from '../mock-search-data';
 
 export default {
   title: 'Components/Search/SearchFacets',

@@ -13,7 +13,7 @@ import { logViewEvent } from '../../services/CdpService';
 
 DiscoverService();
 
-export const ShopLayout = (props: PropsWithChildren<unknown>): JSX.Element => {
+const ShopLayout = (props: PropsWithChildren<unknown>): JSX.Element => {
   useEffect(() => {
     // Log a CDP page view on route change
     const pushState = history.pushState;
@@ -321,3 +321,5 @@ export const ShopLayout = (props: PropsWithChildren<unknown>): JSX.Element => {
     </>
   );
 };
+
+export default ShopLayout;

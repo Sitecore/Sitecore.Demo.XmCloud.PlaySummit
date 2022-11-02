@@ -1,7 +1,6 @@
 /**
  * This Layout is needed for Starter Kit.
  */
-import { QueryClientProvider } from '@tanstack/react-query';
 import React, { useEffect } from 'react'; // DEMO TEAM CUSTOMIZATION - Log page views in CDP
 import Head from 'next/head';
 // DEMO TEAM CUSTOMIZATION - Add LayoutServicePageState
@@ -13,10 +12,13 @@ import {
   LayoutServicePageState,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import Scripts from 'src/Scripts';
-import { queryClient } from './helpers/DiscoverHelper';
 // DEMO TEAM CUSTOMIZATION - CDP integration
 import { logViewEvent } from './services/CdpService';
 import HeaderCdpMessageBar from './components/HeaderCdpMessageBar';
+// END CUSTOMIZATION
+// DEMO TEAM CUSTOMIZATION - Sitecore Search integration
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClient } from './helpers/DiscoverHelper';
 // END CUSTOMIZATION
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
