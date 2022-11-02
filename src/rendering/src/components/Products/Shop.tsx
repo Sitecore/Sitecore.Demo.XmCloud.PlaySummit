@@ -1,4 +1,4 @@
-import { PropsWithChildren, useEffect, useState } from 'react';
+import { PropsWithChildren, useEffect } from 'react';
 import Head from 'next/head';
 import { UserProvider } from '@auth0/nextjs-auth0';
 import ShopNavigation from '../Navigation/ShopNavigation';
