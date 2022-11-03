@@ -1,4 +1,4 @@
-import { RecommendationWidgetProps } from '@sitecore-discover/ui';
+import { RecommendationWidgetProps } from '@sitecore-discover/react';
 import RecommendedProducts from './RecommendedProducts';
 
 interface SimilarProductsProps extends RecommendationWidgetProps {
