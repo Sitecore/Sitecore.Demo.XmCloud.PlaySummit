@@ -1,6 +1,6 @@
 import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons';
 import { MouseEventHandler } from 'react';
-import * as Pagination from './SearchPaginationPrimitive';
+import { Pagination } from '@sitecore-discover/ui';
 
 export type SearchPaginationProps = {
   currentPage: number;

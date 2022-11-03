@@ -4,8 +4,8 @@ import { CheckIcon } from '@radix-ui/react-icons';
 import { useContext } from 'react';
 import { FacetValueClickedActionPayload } from '../../interfaces/contentSearch/FacetValueClickedActionPayload';
 import { SearchContext } from '../../components/Search/SearchProvider';
+import { AccordionFacets } from '@sitecore-discover/ui';
 import { ContentSearchRequestFilter } from '../../lib/contentSearch/api';
-import * as AccordionFacets from './SearchAccordionFacetsPrimitive';
 
 type FacetValue = {
   id: string;
