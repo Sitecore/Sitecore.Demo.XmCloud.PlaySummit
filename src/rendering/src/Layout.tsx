@@ -77,7 +77,7 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
       </Head>
 
       {/* root placeholder for the app, which we add components to using route data */}
-      {/* DEMO TEAM CUSTOMIZATION - Add CSS classes when Sitecore editors are active. Add HeaderCdpMessageBar. Remove sections inner divs. */}
+      {/* DEMO TEAM CUSTOMIZATION - Add a QueryClientProvider. Add CSS classes when Sitecore editors are active. Add HeaderCdpMessageBar. Remove sections inner divs. */}
       <QueryClientProvider client={queryClient}>
         <div className={mainClassPageEditing}>
           <header className={isExperienceEditorActiveCssClass}>
