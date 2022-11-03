@@ -1,11 +1,11 @@
 import { Image, Text } from '@sitecore-jss/sitecore-jss-nextjs';
 import Link from 'next/link';
-import { speakerAdapter } from '../../helpers/DiscoverHelper';
-import { DiscoverSpeaker } from '../../interfaces/discover/DiscoverSpeaker';
+import { speakerAdapter } from '../../helpers/ContentSearchHelper';
+import { ContentSearchSpeaker } from '../../interfaces/contentSearch/ContentSearchSpeaker';
 import SearchResultsTab, { SearchResultsTabProps } from './SearchResultsTab';
 
 type SearchSpeakerResultsTabProps = SearchResultsTabProps & {
-  items: DiscoverSpeaker[];
+  items: ContentSearchSpeaker[];
 };
 
 const SearchSpeakerResultsTab = (props: SearchSpeakerResultsTabProps): JSX.Element => {

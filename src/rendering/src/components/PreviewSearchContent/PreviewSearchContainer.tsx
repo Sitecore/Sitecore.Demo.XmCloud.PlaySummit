@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react';
-import useDiscoverQueries from '../../hooks/useDiscoverQueries';
-import { DiscoverNews } from '../../interfaces/discover/DiscoverNews';
-import { DiscoverResponse } from '../../interfaces/discover/DiscoverResponse';
-import { DiscoverSession } from '../../interfaces/discover/DiscoverSession';
-import { DiscoverSpeaker } from '../../interfaces/discover/DiscoverSpeaker';
+import useContentSearchQueries from '../../hooks/useContentSearchQueries';
+import { ContentSearchNews } from '../../interfaces/contentSearch/ContentSearchNews';
+import { ContentSearchResponse } from '../../interfaces/contentSearch/ContentSearchResponse';
+import { ContentSearchSession } from '../../interfaces/contentSearch/ContentSearchSession';
+import { ContentSearchSpeaker } from '../../interfaces/contentSearch/ContentSearchSpeaker';
 import PreviewSearchPopup from './PreviewSearchPopup';
 
 type PreviewSearchContainerProps = {
@@ -11,7 +11,7 @@ type PreviewSearchContainerProps = {
   close?: () => void;
 };
 
-const discoverSuggestionByEntity = {
+const contentSearchSuggestionByEntity = {
   session: [{ name: 'session_name_context_aware' }],
   content: [{ name: 'content_name_context_aware' }],
   speaker: [{ name: 'speaker_name_context_aware' }],
@@ -21,11 +21,11 @@ const PreviewSearchContainer = ({ keyphrase, close }: PreviewSearchContainerProp
   const {
     isLoading,
     result: [news, sessions, speakers],
-  } = useDiscoverQueries<
+  } = useContentSearchQueries<
     [
-      DiscoverResponse<DiscoverNews>,
-      DiscoverResponse<DiscoverSession>,
-      DiscoverResponse<DiscoverSpeaker>
+      ContentSearchResponse<ContentSearchNews>,
+      ContentSearchResponse<ContentSearchSession>,
+      ContentSearchResponse<ContentSearchSpeaker>
     ]
   >(
     ['content', 'session', 'speaker'],
@@ -37,17 +37,17 @@ const PreviewSearchContainer = ({ keyphrase, close }: PreviewSearchContainerProp
     {
       session: {
         search: {
-          suggestion: discoverSuggestionByEntity.session,
+          suggestion: contentSearchSuggestionByEntity.session,
         },
       },
       speaker: {
         search: {
-          suggestion: discoverSuggestionByEntity.speaker,
+          suggestion: contentSearchSuggestionByEntity.speaker,
         },
       },
       content: {
         search: {
-          suggestion: discoverSuggestionByEntity.content,
+          suggestion: contentSearchSuggestionByEntity.content,
         },
       },
     }

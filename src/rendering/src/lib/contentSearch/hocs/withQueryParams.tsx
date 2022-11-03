@@ -15,6 +15,7 @@ const withQueryParams = <T extends WithQueryParamsProps = WithQueryParamsProps>(
     if (!isReady) {
       return null;
     }
+
     return (
       <WrappedComponent
         {...props}
@@ -25,8 +26,10 @@ const withQueryParams = <T extends WithQueryParamsProps = WithQueryParamsProps>(
       />
     );
   };
+
   const displayName = WrappedComponent.displayName || WrappedComponent.name || 'Component';
   ComponentWithQueryParams.displayName = `withQueryParams(${displayName})`;
+
   return ComponentWithQueryParams;
 };
 

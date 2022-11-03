@@ -1,11 +1,11 @@
 import { AxiosDataFetcher } from '@sitecore-jss/sitecore-jss-nextjs';
 import { merge, uniq } from 'lodash';
-import { DiscoverResponseBase } from '../../interfaces/discover/DiscoverResponse';
+import { ContentSearchResponseBase } from '../../interfaces/contentSearch/ContentSearchResponse';
 
 const domainId = process.env.NEXT_PUBLIC_SEARCH_API_DOMAIN || '';
 const host = process.env.NEXT_PUBLIC_SEARCH_API_HOST || '';
 
-export const doGet = async <T extends DiscoverResponseBase = DiscoverResponseBase>(
+const doGet = async <T extends ContentSearchResponseBase = ContentSearchResponseBase>(
   widgetId: string,
   data: unknown
 ): Promise<T> => {
@@ -24,19 +24,20 @@ export const doGet = async <T extends DiscoverResponseBase = DiscoverResponseBas
   return widgetData;
 };
 
-export type DiscoverRequestFilter = { facetId: string; facetValueId: string };
-export type DiscoverRequestProps = {
+export type ContentSearchRequestFilter = { facetId: string; facetValueId: string };
+
+export type ContentSearchRequestProps = {
   widgetId: string;
   keyphrase?: string;
   entity?: 'session' | 'vendor' | 'content' | 'sponsor' | 'speaker';
-  filters?: DiscoverRequestFilter[];
+  filters?: ContentSearchRequestFilter[];
   facets?: string[];
   limit?: number;
   sort?: string;
   page?: number;
 };
 
-export const get = async <T extends DiscoverResponseBase = DiscoverResponseBase>(
+export const get = async <T extends ContentSearchResponseBase = ContentSearchResponseBase>(
   {
     widgetId,
     keyphrase,
@@ -46,7 +47,7 @@ export const get = async <T extends DiscoverResponseBase = DiscoverResponseBase>
     limit = 10,
     page = 0,
     sort,
-  }: DiscoverRequestProps,
+  }: ContentSearchRequestProps,
   data: unknown = {}
 ): Promise<T> => {
   const types = uniq([...filters.map(({ facetId }) => facetId), ...facets])
@@ -68,6 +69,7 @@ export const get = async <T extends DiscoverResponseBase = DiscoverResponseBase>
       }
       return item;
     });
+
   return doGet<T>(
     widgetId,
     merge(
@@ -98,28 +100,3 @@ export const get = async <T extends DiscoverResponseBase = DiscoverResponseBase>
     )
   );
 };
-
-export const getSessions = async (
-  props: Omit<DiscoverRequestProps, 'entity'>,
-  data?: unknown
-): Promise<unknown> => get({ ...props, entity: 'session' }, data);
-
-export const getVendors = async (
-  props: Omit<DiscoverRequestProps, 'entity'>,
-  data?: unknown
-): Promise<unknown> => get({ ...props, entity: 'vendor' }, data);
-
-export const getSponsors = async (
-  props: Omit<DiscoverRequestProps, 'entity'>,
-  data?: unknown
-): Promise<unknown> => get({ ...props, entity: 'sponsor' }, data);
-
-export const getSpeakers = async (
-  props: Omit<DiscoverRequestProps, 'entity'>,
-  data?: unknown
-): Promise<unknown> => get({ ...props, entity: 'speaker' }, data);
-
-export const getNews = async (
-  props: Omit<DiscoverRequestProps, 'entity'>,
-  data?: unknown
-): Promise<unknown> => get({ ...props, entity: 'content' }, data);

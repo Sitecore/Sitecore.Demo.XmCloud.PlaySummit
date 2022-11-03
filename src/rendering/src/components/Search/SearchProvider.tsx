@@ -1,4 +1,4 @@
-import { DiscoverRequestFilter } from '../../lib/discover/api';
+import { ContentSearchRequestFilter } from '../../lib/contentSearch/api';
 import { createContext, PropsWithChildren, useCallback, useMemo, useState } from 'react';
 import { SearchFiltersProps } from './SearchFilters';
 
@@ -8,13 +8,13 @@ type SearchContextType = {
     [key: string]: number;
   };
   onUpdate?: (id: string, total: number) => void;
-  filters: DiscoverRequestFilter[];
+  filters: ContentSearchRequestFilter[];
   onChangeFilter?: SearchFiltersProps['onChange'];
 };
 
 export const SearchContext = createContext<SearchContextType>({
   keyphrase: '',
-  filters: [] as DiscoverRequestFilter[],
+  filters: [] as ContentSearchRequestFilter[],
   totals: {} as SearchContextType['totals'],
 });
 
@@ -24,7 +24,7 @@ const SearchProvider = (props: SearchProviderProps): JSX.Element => {
   const { keyphrase } = props;
 
   const [totals, setTotals] = useState<SearchContextType['totals']>({});
-  const [filters, setFilters] = useState<DiscoverRequestFilter[]>([]);
+  const [filters, setFilters] = useState<ContentSearchRequestFilter[]>([]);
 
   const onUpdate = useCallback((id: string, val: number) => {
     setTotals((prevTotals) => {
@@ -41,7 +41,7 @@ const SearchProvider = (props: SearchProviderProps): JSX.Element => {
   const onChangeFilter = useCallback((facetId: string, facetValueId: string) => {
     setFilters((prevFilters) => {
       const id = facetId === 'schedule' ? 'days' : facetId;
-      let result: DiscoverRequestFilter[];
+      let result: ContentSearchRequestFilter[];
       // removes previous values for current selected filter
       result = prevFilters.filter(({ facetId: currentFacetId }) => currentFacetId !== id);
       if (facetValueId !== '') {

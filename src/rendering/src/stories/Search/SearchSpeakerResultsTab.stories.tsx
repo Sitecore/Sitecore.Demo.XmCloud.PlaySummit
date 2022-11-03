@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
 
 import SearchSpeakerResultsTab from '../../components/Search/SearchSpeakerResultsTab';
-import { DiscoverSpeaker } from '../../interfaces/discover/DiscoverSpeaker';
+import { ContentSearchSpeaker } from '../../interfaces/contentSearch/ContentSearchSpeaker';
 import { defaultArgs } from './ResultsTabArgs';
 
 export default {
@@ -99,7 +99,7 @@ const items = [
     sessions: null,
     url: 'https://play-summit-dt-avwdiawgakytx0hdc9bpxa-website-ios01g972.vercel.app/speakers/Kate-Green',
   },
-] as DiscoverSpeaker[];
+] as ContentSearchSpeaker[];
 
 Default.args = {
   ...defaultArgs,

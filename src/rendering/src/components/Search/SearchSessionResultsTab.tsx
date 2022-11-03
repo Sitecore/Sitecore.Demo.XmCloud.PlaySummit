@@ -1,10 +1,10 @@
-import { sessionAdapter } from '../../helpers/DiscoverHelper';
-import { DiscoverSession } from '../../interfaces/discover/DiscoverSession';
+import { sessionAdapter } from '../../helpers/ContentSearchHelper';
+import { ContentSearchSession } from '../../interfaces/contentSearch/ContentSearchSession';
 import SessionItem from '../Sessions/SessionItem';
 import SearchResultsTab, { SearchResultsTabProps } from './SearchResultsTab';
 
 type SearchSessionResultsTabProps = SearchResultsTabProps & {
-  items: DiscoverSession[];
+  items: ContentSearchSession[];
 };
 
 const SearchSessionResultsTab = (props: SearchSessionResultsTabProps): JSX.Element => {

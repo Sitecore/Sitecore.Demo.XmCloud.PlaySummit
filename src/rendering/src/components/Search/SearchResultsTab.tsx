@@ -1,5 +1,5 @@
 import { PropsWithChildren, FC } from 'react';
-import { DiscoverResponseSortChoice } from '../../interfaces/discover/DiscoverResponse';
+import { ContentSearchResponseSortChoice } from '../../interfaces/contentSearch/ContentSearchResponse';
 import Spinner from '../../components/ShopCommon/Spinner';
 import SearchFacets, { SearchFacetsProps } from './SearchFacets';
 import Pagination, { SearchPaginationProps } from './SearchPagination';
@@ -9,8 +9,8 @@ export type SearchResultsTabProps = PropsWithChildren &
   SearchPaginationProps & {
     onResultsPerPageChange: (perPage: number) => void;
     onSortChange: (sortChoice: string) => void;
-    sort: DiscoverResponseSortChoice['name'];
-    sortOptions: DiscoverResponseSortChoice[];
+    sort: ContentSearchResponseSortChoice['name'];
+    sortOptions: ContentSearchResponseSortChoice[];
     loading: boolean;
   };
 

@@ -18,7 +18,7 @@ import HeaderCdpMessageBar from './components/HeaderCdpMessageBar';
 // END CUSTOMIZATION
 // DEMO TEAM CUSTOMIZATION - Sitecore Search integration
 import { QueryClientProvider } from '@tanstack/react-query';
-import { queryClient } from './helpers/DiscoverHelper';
+import { queryClient } from './helpers/ContentSearchHelper';
 // END CUSTOMIZATION
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.

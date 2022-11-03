@@ -2,10 +2,10 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import PreviewSearchPopup from '../../components/PreviewSearchContent/PreviewSearchPopup';
-import { DiscoverNews } from '../../interfaces/discover/DiscoverNews';
-import { DiscoverResponse } from '../../interfaces/discover/DiscoverResponse';
-import { DiscoverSession } from '../../interfaces/discover/DiscoverSession';
-import { DiscoverSpeaker } from '../../interfaces/discover/DiscoverSpeaker';
+import { ContentSearchNews } from '../../interfaces/contentSearch/ContentSearchNews';
+import { ContentSearchResponse } from '../../interfaces/contentSearch/ContentSearchResponse';
+import { ContentSearchSession } from '../../interfaces/contentSearch/ContentSearchSession';
+import { ContentSearchSpeaker } from '../../interfaces/contentSearch/ContentSearchSpeaker';
 
 export default {
   title: 'Components/PreviewSearchContent/PreviewSearchPopup',
@@ -68,7 +68,7 @@ const {
         speakers: ['Peter Siegels'],
         start_time: '6 pm',
       },
-    ] as unknown as DiscoverSession[],
+    ] as unknown as ContentSearchSession[],
   },
   speakers: {
     list: [
@@ -92,7 +92,7 @@ const {
         company: 'Sitecore',
         job_title: 'Developer',
       },
-    ] as unknown as DiscoverSpeaker[],
+    ] as unknown as ContentSearchSpeaker[],
   },
   news: {
     list: [
@@ -120,14 +120,14 @@ const {
         url: 'https://play-summit-dt-avwdiawgakytx0hdc9bpxa-website-ios01g972.vercel.app/news/3',
         publish_date: 'Thu, July 29, 2021',
       },
-    ] as unknown as DiscoverNews[],
+    ] as unknown as ContentSearchNews[],
   },
 };
 
 export const Default = Template.bind({});
 Default.args = {
   resultsUrl: '/search?q=test',
-  news: { content: news, total_item: 10 } as DiscoverResponse<DiscoverNews>,
-  sessions: { content: sessions, total_item: 10 } as DiscoverResponse<DiscoverSession>,
-  speakers: { content: speakers, total_item: 10 } as DiscoverResponse<DiscoverSpeaker>,
+  news: { content: news, total_item: 10 } as ContentSearchResponse<ContentSearchNews>,
+  sessions: { content: sessions, total_item: 10 } as ContentSearchResponse<ContentSearchSession>,
+  speakers: { content: speakers, total_item: 10 } as ContentSearchResponse<ContentSearchSpeaker>,
 };

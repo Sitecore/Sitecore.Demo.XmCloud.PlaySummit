@@ -1,20 +1,20 @@
 import { useQuery } from '@tanstack/react-query';
 import { omit } from 'lodash';
-import { debounceAsync, getSortingOptions } from '../../../helpers/DiscoverHelper';
+import { debounceAsync, getSortingOptions } from '../../../helpers/ContentSearchHelper';
 import { FC, useCallback, useContext, useEffect, useState } from 'react';
 import SearchResultsTab from '../../../components/Search/SearchResultsTab';
 import { SearchContext } from '../../../components/Search/SearchProvider';
-import { FacetValueClickedActionPayload } from '../../../interfaces/discover/FacetValueClickedActionPayload';
+import { FacetValueClickedActionPayload } from '../../../interfaces/contentSearch/FacetValueClickedActionPayload';
 import * as api from '../api';
-import { DiscoverRequestFilter, DiscoverRequestProps } from '../api';
+import { ContentSearchRequestFilter, ContentSearchRequestProps } from '../api';
 
 type SearchProps = {
-  entity: DiscoverRequestProps['entity'];
+  entity: ContentSearchRequestProps['entity'];
   hasFilters?: boolean;
   facetsTypes: string[];
   keyphrase: string;
-  topFilters: DiscoverRequestFilter[];
-  tabFilters: DiscoverRequestFilter[];
+  topFilters: ContentSearchRequestFilter[];
+  tabFilters: ContentSearchRequestFilter[];
   perPage: number;
   sort: string;
   page: number;
@@ -27,7 +27,7 @@ const connectResultsTab = ({
   defaultPerPage = 12,
   defaultSort = 'featured_desc',
 }: {
-  entity: DiscoverRequestProps['entity'];
+  entity: ContentSearchRequestProps['entity'];
   hasFilters?: boolean;
   facetsTypes: string[];
   defaultPerPage?: number;
@@ -77,7 +77,7 @@ const connectResultsTab = ({
   return <T extends typeof SearchResultsTab>(WrappedComponent: T): FC => {
     const Component: FC = () => {
       const { keyphrase, filters: topFilters, onUpdate } = useContext(SearchContext);
-      const [tabFilters, setTabFilters] = useState<DiscoverRequestFilter[]>([]);
+      const [tabFilters, setTabFilters] = useState<ContentSearchRequestFilter[]>([]);
       const [sort, setSort] = useState(defaultSort);
       const [page, setPage] = useState(1);
       const [perPage, setPerPage] = useState(defaultPerPage);

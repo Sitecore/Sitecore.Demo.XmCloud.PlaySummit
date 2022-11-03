@@ -6,7 +6,7 @@ import type * as Radix from '@radix-ui/react-primitive';
 import * as CallbackRefHook from '@radix-ui/react-use-callback-ref';
 import React from 'react';
 
-import { createCollectionIndex } from '../../lib/discover/collectionIndex';
+import { createCollectionIndex } from '../../lib/contentSearch/collectionIndex';
 import * as FacetValueListPrimitive from './SearchFacetValueListPrimitive';
 import { createContextFacetValueListScope } from './SearchFacetValueListPrimitive';
 

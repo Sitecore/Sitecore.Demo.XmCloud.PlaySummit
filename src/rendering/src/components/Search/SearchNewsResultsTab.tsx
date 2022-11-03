@@ -1,12 +1,12 @@
 import { DateField, Image, RichText, Text } from '@sitecore-jss/sitecore-jss-nextjs';
 import Link from 'next/link';
 import { newsDateFormatter } from '../../helpers/DateHelper';
-import { newsAdapter } from '../../helpers/DiscoverHelper';
-import { DiscoverNews } from '../../interfaces/discover/DiscoverNews';
+import { newsAdapter } from '../../helpers/ContentSearchHelper';
+import { ContentSearchNews } from '../../interfaces/contentSearch/ContentSearchNews';
 import SearchResultsTab, { SearchResultsTabProps } from './SearchResultsTab';
 
 type SearchNewsResultsTabProps = SearchResultsTabProps & {
-  items: DiscoverNews[];
+  items: ContentSearchNews[];
 };
 
 const SearchNewsResultsTab = (props: SearchNewsResultsTabProps): JSX.Element => {

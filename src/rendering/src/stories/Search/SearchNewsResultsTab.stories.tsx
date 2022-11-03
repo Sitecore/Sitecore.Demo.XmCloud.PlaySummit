@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
 
 import SearchNewsResultsTab from '../../components/Search/SearchNewsResultsTab';
-import { DiscoverNews } from '../../interfaces/discover/DiscoverNews';
+import { ContentSearchNews } from '../../interfaces/contentSearch/ContentSearchNews';
 import { defaultArgs } from './ResultsTabArgs';
 
 export default {
@@ -78,7 +78,7 @@ const items = [
     type: 'content',
     url: 'https://play-summit-dt-avwdiawgakytx0hdc9bpxa-website-ios01g972.vercel.app/news/Play-summit-goes-live',
   },
-] as DiscoverNews[];
+] as ContentSearchNews[];
 
 Default.args = {
   ...defaultArgs,

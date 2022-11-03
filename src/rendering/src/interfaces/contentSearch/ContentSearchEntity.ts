@@ -1,4 +1,4 @@
-export interface DiscoverEntity {
+export interface ContentSearchEntity {
   id: string;
   image_url: string;
   name: string;

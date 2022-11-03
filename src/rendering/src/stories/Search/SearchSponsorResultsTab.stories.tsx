@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
 
 import SearchSponsorResultsTab from '../../components/Search/SearchSponsorResultsTab';
-import { DiscoverSponsor } from '../../interfaces/discover/DiscoverSponsor';
+import { ContentSearchSponsor } from '../../interfaces/contentSearch/ContentSearchSponsor';
 import { defaultArgs } from './ResultsTabArgs';
 
 export default {
@@ -90,7 +90,7 @@ const items = [
     time_slots: ['11 am'],
     url: 'https://play-summit-dt-avwdiawgakytx0hdc9bpxa-website-ios01g972.vercel.app/sponsors/Pacifique',
   },
-] as DiscoverSponsor[];
+] as ContentSearchSponsor[];
 
 Default.args = {
   ...defaultArgs,

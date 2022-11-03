@@ -1,21 +1,23 @@
 import { useQueries } from '@tanstack/react-query';
 import { useMemo } from 'react';
-import { DiscoverResponseBase } from '../interfaces/discover/DiscoverResponse';
-import * as api from '../lib/discover/api';
-import { DiscoverRequestProps } from '../lib/discover/api';
+import { ContentSearchResponseBase } from '../interfaces/contentSearch/ContentSearchResponse';
+import * as api from '../lib/contentSearch/api';
+import { ContentSearchRequestProps } from '../lib/contentSearch/api';
 
-export type QUERY_TYPES = 'session' | 'speaker' | 'content' | 'vendor' | 'sponsor' | 'free';
-export type CustomQueries = {
+type QUERY_TYPES = 'session' | 'speaker' | 'content' | 'vendor' | 'sponsor' | 'free';
+
+type CustomQueries = {
   [key in QUERY_TYPES]?: unknown;
 };
-export type UseDiscoverQueriesResult<T extends DiscoverResponseBase[]> = {
+
+type UseDiscoverQueriesResult<T extends ContentSearchResponseBase[]> = {
   isLoading: boolean;
   result: T;
 };
 
-const useDiscoverQueries = <T extends DiscoverResponseBase[]>(
+const useContentSearchQueries = <T extends ContentSearchResponseBase[]>(
   queriesFor: QUERY_TYPES[],
-  props: Omit<DiscoverRequestProps, 'entity'>,
+  props: Omit<ContentSearchRequestProps, 'entity'>,
   custom?: CustomQueries
 ): UseDiscoverQueriesResult<T> => {
   const results = useQueries({
@@ -38,4 +40,4 @@ const useDiscoverQueries = <T extends DiscoverResponseBase[]>(
   return { isLoading, result };
 };
 
-export default useDiscoverQueries;
+export default useContentSearchQueries;

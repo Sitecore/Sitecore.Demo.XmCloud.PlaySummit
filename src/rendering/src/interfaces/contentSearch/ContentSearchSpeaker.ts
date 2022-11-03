@@ -1,6 +1,6 @@
-import { DiscoverEntity } from './DiscoverEntity';
+import { ContentSearchEntity } from './ContentSearchEntity';
 
-export interface DiscoverSpeaker extends DiscoverEntity {
+export interface ContentSearchSpeaker extends ContentSearchEntity {
   description: string;
   company: string;
   job_title: string;

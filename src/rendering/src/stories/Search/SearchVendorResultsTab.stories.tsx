@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
 
 import SearchVendorResultsTab from '../../components/Search/SearchVendorResultsTab';
-import { DiscoverVendor } from '../../interfaces/discover/DiscoverVendor';
+import { ContentSearchVendor } from '../../interfaces/contentSearch/ContentSearchVendor';
 import { defaultArgs } from './ResultsTabArgs';
 
 export default {
@@ -112,7 +112,7 @@ const items = [
     time_slots: ['9 am', '10 am', '12 noon', '8 am'],
     url: 'https://play-summit-dt-avwdiawgakytx0hdc9bpxa-website-ios01g972.vercel.app/vendors/Striva',
   },
-] as DiscoverVendor[];
+] as ContentSearchVendor[];
 
 Default.args = {
   ...defaultArgs,

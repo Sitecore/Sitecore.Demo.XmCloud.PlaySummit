@@ -1,11 +1,11 @@
 import { Image, Text } from '@sitecore-jss/sitecore-jss-nextjs';
 import Link from 'next/link';
-import { sponsorAdapter } from '../../helpers/DiscoverHelper';
-import { DiscoverSponsor } from '../../interfaces/discover/DiscoverSponsor';
+import { sponsorAdapter } from '../../helpers/ContentSearchHelper';
+import { ContentSearchSponsor } from '../../interfaces/contentSearch/ContentSearchSponsor';
 import SearchResultsTab, { SearchResultsTabProps } from './SearchResultsTab';
 
 type SearchSponsorResultsTabProps = SearchResultsTabProps & {
-  items: DiscoverSponsor[];
+  items: ContentSearchSponsor[];
 };
 
 const SearchSponsorResultsTab = (props: SearchSponsorResultsTabProps): JSX.Element => {

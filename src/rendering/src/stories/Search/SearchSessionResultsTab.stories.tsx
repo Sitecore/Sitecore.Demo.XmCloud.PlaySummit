@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
 
 import SearchSessionResultsTab from '../../components/Search/SearchSessionResultsTab';
-import { DiscoverSession } from '../../interfaces/discover/DiscoverSession';
+import { ContentSearchSession } from '../../interfaces/contentSearch/ContentSearchSession';
 import { defaultArgs } from './ResultsTabArgs';
 
 export default {
@@ -108,7 +108,7 @@ const items = [
     url: 'https://play-summit-dt-avwdiawgakytx0hdc9bpxa-website-ios01g972.vercel.app/sessions/Guest-Keynote-with-Chris-Williams',
     vendors: null,
   },
-] as DiscoverSession[];
+] as ContentSearchSession[];
 Default.args = {
   ...defaultArgs,
   items,

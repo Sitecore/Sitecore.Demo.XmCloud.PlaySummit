@@ -2,9 +2,9 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CheckIcon } from '@radix-ui/react-icons';
 import { useContext } from 'react';
-import { FacetValueClickedActionPayload } from '../../interfaces/discover/FacetValueClickedActionPayload';
+import { FacetValueClickedActionPayload } from '../../interfaces/contentSearch/FacetValueClickedActionPayload';
 import { SearchContext } from '../../components/Search/SearchProvider';
-import { DiscoverRequestFilter } from '../../lib/discover/api';
+import { ContentSearchRequestFilter } from '../../lib/contentSearch/api';
 import * as AccordionFacets from './SearchAccordionFacetsPrimitive';
 
 type FacetValue = {
@@ -21,9 +21,9 @@ type Facet = {
 export type SearchFacetsProps = {
   onFacetValueClick?: (payload: FacetValueClickedActionPayload) => void;
   onClearFilters?: () => void;
-  onFilterClick?: (payload: DiscoverRequestFilter & { checked: boolean }) => void;
+  onFilterClick?: (payload: ContentSearchRequestFilter & { checked: boolean }) => void;
   facets: Record<string, Facet>;
-  filters: DiscoverRequestFilter[];
+  filters: ContentSearchRequestFilter[];
   className?: string;
 };
 

@@ -1,8 +1,8 @@
 import { forwardRef } from 'react';
-import { DiscoverNews } from '../../interfaces/discover/DiscoverNews';
-import { DiscoverResponse } from '../../interfaces/discover/DiscoverResponse';
-import { DiscoverSession } from '../../interfaces/discover/DiscoverSession';
-import { DiscoverSpeaker } from '../../interfaces/discover/DiscoverSpeaker';
+import { ContentSearchNews } from '../../interfaces/contentSearch/ContentSearchNews';
+import { ContentSearchResponse } from '../../interfaces/contentSearch/ContentSearchResponse';
+import { ContentSearchSession } from '../../interfaces/contentSearch/ContentSearchSession';
+import { ContentSearchSpeaker } from '../../interfaces/contentSearch/ContentSearchSpeaker';
 import PreviewSearchNewsList from './PreviewSearchNewsList';
 import PreviewSearchSessionList from './PreviewSearchSessionList';
 import PreviewSearchSpeakerList from './PreviewSearchSpeakerList';
@@ -10,9 +10,9 @@ import SuggestionList from './SuggestionList';
 
 type PreviewSearchPopupProps = {
   resultsUrl: string;
-  news: DiscoverResponse<DiscoverNews>;
-  sessions: DiscoverResponse<DiscoverSession>;
-  speakers: DiscoverResponse<DiscoverSpeaker>;
+  news: ContentSearchResponse<ContentSearchNews>;
+  sessions: ContentSearchResponse<ContentSearchSession>;
+  speakers: ContentSearchResponse<ContentSearchSpeaker>;
   close?: () => void;
 };
 

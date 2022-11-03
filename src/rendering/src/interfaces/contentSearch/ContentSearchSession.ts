@@ -1,6 +1,6 @@
-import { DiscoverEntity } from './DiscoverEntity';
+import { ContentSearchEntity } from './ContentSearchEntity';
 
-export interface DiscoverSession extends DiscoverEntity {
+export interface ContentSearchSession extends ContentSearchEntity {
   description: string;
   audience: string[];
   sponsors: string[];

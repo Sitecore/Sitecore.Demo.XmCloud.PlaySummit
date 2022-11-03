@@ -1,8 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useMemo } from 'react';
-import { DiscoverResponseBase } from '../../interfaces/discover/DiscoverResponse';
-import connectResultsTab from '../../lib/discover/hocs/connectResultsTab';
-import * as api from '../../lib/discover/api';
+import { ContentSearchResponseBase } from '../../interfaces/contentSearch/ContentSearchResponse';
+import connectResultsTab from '../../lib/contentSearch/hocs/connectResultsTab';
+import * as api from '../../lib/contentSearch/api';
 import SearchNewsResultsTab from './SearchNewsResultsTab';
 import SearchSessionResultsTab from './SearchSessionResultsTab';
 import SearchSpeakerResultsTab from './SearchSpeakerResultsTab';
@@ -70,9 +70,8 @@ const tabs = [
 
 const SearchResultsContainer = (props: SearchResultsContainerProps): JSX.Element => {
   const { q: keyphrase, tab } = props;
-  const { data: { facet: { days = {}, rooms = {} } = {} } = {} } = useQuery<DiscoverResponseBase>(
-    [keyphrase, 'filters'],
-    () =>
+  const { data: { facet: { days = {}, rooms = {} } = {} } = {} } =
+    useQuery<ContentSearchResponseBase>([keyphrase, 'filters'], () =>
       api.get(
         {
           entity: 'session',
@@ -86,7 +85,7 @@ const SearchResultsContainer = (props: SearchResultsContainerProps): JSX.Element
         },
         {}
       )
-  );
+    );
   const filterOptions = useMemo<SearchFiltersProps['options']>(() => {
     return {
       schedule: days.value?.map(({ text, id }) => ({ value: id, label: text })) || [],
