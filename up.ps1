@@ -22,27 +22,31 @@ $sitecoreDockerRegistry = $sitecoreDockerRegistry.Split("=")[1]
 $sitecoreVersion = $sitecoreVersion.Split("=")[1]
 $ClientCredentialsLogin = $ClientCredentialsLogin.Split("=")[1]
 if ($ClientCredentialsLogin -eq "true") {
-    $xmCloudClientCredentialsLoginDomain = $envContent | Where-Object { $_ -imatch "^SITECORE_FedAuth_dot_Auth0_dot_Domain=.+" }
-    $xmCloudClientCredentialsLoginAudience = $envContent | Where-Object { $_ -imatch "^SITECORE_FedAuth_dot_Auth0_dot_ClientCredentialsLogin_Audience=.+" }
-    $xmCloudClientCredentialsLoginClientId = $envContent | Where-Object { $_ -imatch "^SITECORE_FedAuth_dot_Auth0_dot_ClientCredentialsLogin_ClientId=.+" }
-    $xmCloudClientCredentialsLoginClientSecret = $envContent | Where-Object { $_ -imatch "^SITECORE_FedAuth_dot_Auth0_dot_ClientCredentialsLogin_ClientSecret=.+" }
-    $xmCloudClientCredentialsLoginDomain = $xmCloudClientCredentialsLoginDomain.Split("=")[1]
-    $xmCloudClientCredentialsLoginAudience = $xmCloudClientCredentialsLoginAudience.Split("=")[1]
-    $xmCloudClientCredentialsLoginClientId = $xmCloudClientCredentialsLoginClientId.Split("=")[1]
-    $xmCloudClientCredentialsLoginClientSecret = $xmCloudClientCredentialsLoginClientSecret.Split("=")[1]
+	$xmCloudClientCredentialsLoginDomain = $envContent | Where-Object { $_ -imatch "^SITECORE_FedAuth_dot_Auth0_dot_Domain=.+" }
+	$xmCloudClientCredentialsLoginAudience = $envContent | Where-Object { $_ -imatch "^SITECORE_FedAuth_dot_Auth0_dot_ClientCredentialsLogin_Audience=.+" }
+	$xmCloudClientCredentialsLoginClientId = $envContent | Where-Object { $_ -imatch "^SITECORE_FedAuth_dot_Auth0_dot_ClientCredentialsLogin_ClientId=.+" }
+	$xmCloudClientCredentialsLoginClientSecret = $envContent | Where-Object { $_ -imatch "^SITECORE_FedAuth_dot_Auth0_dot_ClientCredentialsLogin_ClientSecret=.+" }
+	$xmCloudClientCredentialsLoginDomain = $xmCloudClientCredentialsLoginDomain.Split("=")[1]
+	$xmCloudClientCredentialsLoginAudience = $xmCloudClientCredentialsLoginAudience.Split("=")[1]
+	$xmCloudClientCredentialsLoginClientId = $xmCloudClientCredentialsLoginClientId.Split("=")[1]
+	$xmCloudClientCredentialsLoginClientSecret = $xmCloudClientCredentialsLoginClientSecret.Split("=")[1]
 }
 
 #set nuget version
 $xmCloudBuild = Get-Content "xmcloud.build.json" | ConvertFrom-Json
 # DEMO TEAM CUSTOMIZATION - Custom rendering host name.
-Set-EnvFileVariable "NODEJS_VERSION" -Value $xmCloudBuild.renderingHosts.PlayWebsite.nodeVersion
+$nodeVersion = $xmCloudBuild.renderingHosts.PlayWebsite.nodeVersion
+if (![string]::IsNullOrWhitespace($nodeVersion)) {
+    # DEMO TEAM CUSTOMIZATION - Custom rendering host name.
+    Set-EnvFileVariable "NODEJS_VERSION" -Value $xmCloudBuild.renderingHosts.PlayWebsite.nodeVersion
+}
 
 # DEMO TEAM CUSTOMIZATION - Ensure the right NodeJs version is installed
 $currentNodeJsVersion = node -v
 $currentNodeJsVersion = $currentNodeJsVersion.substring(1)
 
-if ($currentNodeJsVersion -ne $xmCloudBuild.renderingHosts.PlayWebsite.nodeVersion) {
-    throw "ERROR: You are currently running NodeJs $currentNodeJsVersion and this project requires a different version. Please switch to NodeJs $($xmCloudBuild.renderingHosts.PlayWebsite.nodeVersion). Then delete the /src/rendering/node_modules folder. Then run this script again."
+if ($currentNodeJsVersion -ne $nodeVersion) {
+    throw "ERROR: You are currently running NodeJs $currentNodeJsVersion and this project requires a different version. Please switch to NodeJs $nodeVersion. Then delete the /src/rendering/node_modules folder. Then run this script again."
 }
 # END CUSTOMIZATION
 
@@ -111,6 +115,8 @@ if ($LASTEXITCODE -ne 0) {
     Write-Error "Unexpected error installing Sitecore CLI Plugins"
 }
 
+#####################################
+
 Write-Host "Logging into Sitecore..." -ForegroundColor Green
 if ($ClientCredentialsLogin -eq "true") {
     dotnet sitecore cloud login --client-id $xmCloudClientCredentialsLoginClientId --client-secret $xmCloudClientCredentialsLoginClientSecret --client-credentials true
@@ -136,11 +142,16 @@ if ($LASTEXITCODE -ne 0) {
 
 # DEMO TEAM CUSTOMIZATION - Removed initial JSS app items deployment and serialization. We are developing in Sitecore-first mode. Moved publish to a later stage.
 # JSS sample has already been deployed and serialized, push the serialized items
-Write-Host "Pushing items to Sitecore..." -ForegroundColor Green
-dotnet sitecore ser push # --publish
+
+Write-Host "Pushing Default rendering host configuration" -ForegroundColor Green
+dotnet sitecore ser push
+# DEMO TEAM CUSTOMIZATION - Added robustness check
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Serialization push failed, see errors above."
 }
+
+# DEMO TEAM CUSTOMIZATION - Restart CM after deserialization to clear the caches
+Invoke-WebRequest https://$xmCloudHost/Utilities/Restart.aspx
 
 # DEMO TEAM CUSTOMIZATION - Moved index rebuild here.
 # Rebuild indexes

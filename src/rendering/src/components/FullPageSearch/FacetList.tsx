@@ -102,7 +102,7 @@ const Facet = ({ name, values, index, acumIndex, type, onFacetClick }: FacetProp
   return (
     <div className={cssClass} data-type={type}>
       <div className="facet-title" onClick={handleTitleClick}>
-        <span>{name}</span>
+        <span>{name.toString()}</span>
         <FontAwesomeIcon icon={faChevronDown} />
       </div>
       <FacetValues

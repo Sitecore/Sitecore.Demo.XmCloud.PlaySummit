@@ -1,4 +1,5 @@
 {
+    "$schema": "../.sitecore/schemas/ModuleFile.schema.json",
     "namespace": "HeadlessSxaWebsite",
     "references": [ "InitItems" ],
     "items": {
@@ -54,10 +55,6 @@
             {
                 "name": "enable-language-fallback-default",
                 "path": "/sitecore/templates/System/Templates/Sections/Advanced/Advanced/__Enable item fallback"
-            },
-            {
-                "name": "tailwind-grid",
-                "path": "/sitecore/system/Settings/Feature/Experience Accelerator/Tailwind"
             }
         ]
     }

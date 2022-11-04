@@ -8,9 +8,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133252Z
     - ID: "3f8b5931-7a77-5142-b1f0-60e70c054056"
       Hint: rightHeading
       Value: 300+
@@ -23,6 +20,9 @@ Languages:
     - ID: "7644409c-22b8-5351-b56d-6f9f7a98a7ab"
       Hint: middleDescription
       Value: Globally recognised speakers
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "53832f18-ac4e-48e9-91fa-1369927b5577"
     - ID: "9067f7da-50eb-5d2f-bd0d-157b59412cfa"
       Hint: rightDescription
       Value: Exhibitors

@@ -29,9 +29,6 @@ Languages:
         
         <p>Join a leading online expert who embraces the latest scientific evidence to craft personalized nutrition advice for people just like you.</p>
                
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133247Z
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{87223FA1-B672-4201-BE61-0011EE4A7A09}"
@@ -54,6 +51,9 @@ Languages:
     - ID: "8c3dff8b-74bc-4a65-af6d-81452a3d9a11"
       Hint: Rooms
       Value: "{421831DC-EE86-4E05-B974-8C0AE7A21D0E}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2685c205-3694-4296-b605-656ef54cdb50"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "Ask an expert: nutrition"

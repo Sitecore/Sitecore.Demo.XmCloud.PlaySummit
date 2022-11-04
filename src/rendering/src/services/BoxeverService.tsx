@@ -117,8 +117,8 @@ type GuestProfileResponse = GuestProfile | undefined;
 const POINT_OF_SALE = 'PLAY! Summit';
 const CURRENCY = 'USD';
 
-const CDP_CLIENT_KEY = process.env.NEXT_PUBLIC_CDP_CLIENT_KEY || '';
-const CDP_API_TARGET_ENDPOINT = process.env.NEXT_PUBLIC_CDP_API_TARGET_ENDPOINT || '';
+const CDP_CLIENT_KEY = process.env.NEXT_PUBLIC_CUSTOM_CDP_CLIENT_KEY || '';
+const CDP_API_TARGET_ENDPOINT = process.env.NEXT_PUBLIC_CUSTOM_CDP_API_TARGET_ENDPOINT || '';
 export const isCdpConfigured = !!CDP_CLIENT_KEY && !!CDP_API_TARGET_ENDPOINT;
 
 export const BoxeverScripts: JSX.Element | undefined = isCdpConfigured ? (

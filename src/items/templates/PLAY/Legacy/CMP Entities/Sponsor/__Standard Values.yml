@@ -29,12 +29,12 @@ Languages:
     - ID: "1f1be085-d547-46cc-a0ab-85d5c9456ac6"
       Hint: LogoTransformation
       Value: medium
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133240Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
     - ID: "88a0fe68-7edf-4726-b53a-8bf622268a63"
       Hint: Name
       Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a7b50e8c-bf39-4025-80a5-2e8cb0579c97"

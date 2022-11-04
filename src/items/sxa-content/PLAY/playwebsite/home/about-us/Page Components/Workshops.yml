@@ -11,9 +11,6 @@ Languages:
     - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
       Hint: __Lock
       Value: <r />
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133252Z
     - ID: "48454055-754f-4b2f-87a3-b840e3eada73"
       Hint: Description
       Value: "From transforming your mindset to improving your technique, learn practical tips from our line-up of experts."
@@ -21,6 +18,9 @@ Languages:
       Hint: Logo
       Value: |
         <image mediaid="{A61B8F1F-643D-4074-84C7-0E72F6363701}" ></image>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "605d5fe3-3791-4c8e-99d9-4c0b409a8a7a"
     - ID: "c63db4c4-d678-45cd-9d0d-4994b571eb7d"
       Hint: Link
       Value: |

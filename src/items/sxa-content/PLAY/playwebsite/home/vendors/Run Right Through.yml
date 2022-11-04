@@ -22,9 +22,6 @@ Languages:
     - ID: "21bd2ce2-43b1-4a8a-8383-1470d503c504"
       Hint: ActivityType
       Value: "{8EA1589B-71BD-4831-A8CC-45D7FACF4B6D}|{BA1091E3-0AA8-4C76-B952-140E1621AE27}"
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133245Z
     - ID: "2696b94c-fb09-4392-999a-9a7a7223f228"
       Hint: InstagramProfileLink
       Value: "https://www.instagram.com/#"
@@ -38,6 +35,9 @@ Languages:
       Hint: Logo
       Value: |
         <image stylelabs-content-id="34199" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/34199/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/893cf2ebf17344d887e4cc5c35013541?v=bd27157d" mediaid="" stylelabs-content-type="Image" alt="Run Right Through Logo" height="1001" width="1001" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "958045df-16bf-43a1-9325-7289d1753298"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
       Value: |

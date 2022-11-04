@@ -28,14 +28,25 @@ const ImageDefault = (props: ImageProps): JSX.Element => (
   </div>
 );
 
+export const Banner = (props: ImageProps): JSX.Element => {
+  const backgroundStyle = { backgroundImage: `url('${props?.fields?.Image?.value?.src}')` };
+
+  return (
+    <div className={`component hero-banner ${props.params.styles}`}>
+      <div className="component-content sc-sxa-image-hero-banner" style={backgroundStyle} />
+    </div>
+  );
+};
+
 export const Default = (props: ImageProps): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext();
 
   if (props.fields) {
     const Image = () => <JssImage field={props.fields.Image} />;
+    const id = props.params.RenderingIdentifier;
 
     return (
-      <div className={`component image ${props.params.styles}`}>
+      <div className={`component image ${props.params.styles}`} id={id ? id : undefined}>
         <div className="component-content">
           {sitecoreContext.pageState === 'edit' ? (
             <Image />

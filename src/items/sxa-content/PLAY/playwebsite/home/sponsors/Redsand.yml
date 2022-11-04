@@ -23,9 +23,6 @@ Languages:
       Hint: Logo
       Value: |
         <image stylelabs-content-id="36821" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/36821/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/07e77ec5309c45a284a2ee3ef841e222?v=367250b7" mediaid="" stylelabs-content-type="Image" alt="Redsand logo" height="1200" width="1200" ></image>
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133248Z
     - ID: "5a1f6707-d155-4618-b051-966216449b1c"
       Hint: Description
       Value: |
@@ -37,6 +34,9 @@ Languages:
     - ID: "88a0fe68-7edf-4726-b53a-8bf622268a63"
       Hint: Name
       Value: Redsand
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ea2f6e3f-6b60-41e8-9083-abd6d8dc1fa6"
     - ID: "cf42c29f-ee3a-4f06-92ac-10fc51a42099"
       Hint: Level
       Value: Silver

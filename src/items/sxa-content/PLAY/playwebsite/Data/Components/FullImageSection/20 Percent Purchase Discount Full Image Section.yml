@@ -12,9 +12,9 @@ Languages:
       Hint: callToActionLink
       Value: |
         <link text="Get Discount Code" linktype="external" url="/shop" anchor="" target="" />
-    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-      Hint: __Created
-      Value: 20221012T133251Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c7b90cb7-8ee1-4e1e-9524-466a0a1e300a"
     - ID: "a41c61bb-5abb-5773-9870-c06f637dd22c"
       Hint: content
       Value: "We’re partnering with over 2000 brands to offer PLAY! Summit attendees a <strong>20% discount</strong> on all online and in-person purchases made during this year’s event."
