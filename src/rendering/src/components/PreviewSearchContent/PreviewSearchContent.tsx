@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import debounce from '../../helpers/Debounce';
 import PreviewSearchContainer from './PreviewSearchContainer';
 import PreviewSearchInput from './PreviewSearchInput';
-import ClickOutside from '../ShopCommon/ClickOutside';
 
 const PreviewSearchContent = (): JSX.Element => {
   const { events } = useRouter();
@@ -35,7 +34,6 @@ const PreviewSearchContent = (): JSX.Element => {
   );
 
   const ref = useRef(null);
-  ClickOutside([ref], () => setPreviewSearchOpen(false));
 
   return (
     <div ref={ref}>
