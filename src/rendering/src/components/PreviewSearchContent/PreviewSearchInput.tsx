@@ -70,8 +70,11 @@ const PreviewSearchInput = ({
     setInputSearchVisibility(!inputSearchVisibility);
     if (inputSearchVisibility) {
       setOpen(false);
+      if (ref.current.value) {
+        redirectToSearchPage(ref.current.value);
+      }
     }
-  }, [inputSearchVisibility, setOpen]);
+  }, [inputSearchVisibility, redirectToSearchPage, setOpen]);
 
   const handleOnChange = useCallback(
     (e: ChangeEvent<HTMLInputElement>) => {
