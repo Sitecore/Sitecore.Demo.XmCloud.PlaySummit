@@ -2,6 +2,17 @@
   @apply flex flex-col p-4;
 
   .search-results-header {
-    @apply text-xl mb-1;
+    @apply text-2xl mb-6 mt-3;
+    @apply mx-auto flex items-center relative;
+
+    .search-results-header-search-input {
+      @apply inline-flex justify-center border border-gray-dark shadow-sm bg-white-light text-black-lightest;
+      @apply outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-lighter focus:ring-blue-lightest;
+      @apply px-4 py-2;
+    }
+
+    .search-results-header-search-icon {
+      @apply absolute -right-10 hover:text-blue;
+    }
   }
 }

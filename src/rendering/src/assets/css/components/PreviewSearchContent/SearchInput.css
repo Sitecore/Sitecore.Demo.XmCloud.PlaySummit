@@ -1,15 +1,17 @@
 .search-input-play {
-  border-radius: 0.015rem;
+  outline: none;
   position: absolute;
-  right: 16px;
+  right: 10px;
+  top: -10px;
   width: 0;
   background-color: #232323;
-  outline: 10px solid #232323;
-  transition: width 0.1s ease-out 0.1s, outline 0.1s ease-out 0.1s, background-color 0.1s ease-out 0.1s;
+  border: 10px solid #232323;
+  border-radius: 8px;
+  transition: width 0.1s ease-out 0.1s, border 0.1s ease-out 0.1s, background-color 0.1s ease-out 0.1s;
 
   @media (max-width: 1280px) {
     background-color: rgb(60 60 60 / var(--tw-bg-opacity));
-    outline: 10px solid rgb(60 60 60 / var(--tw-bg-opacity));
+    border: 10px solid rgb(60 60 60 / var(--tw-bg-opacity));
     left: 0;
     padding-left: 12vw;
     right: unset;
@@ -22,7 +24,7 @@
 
   &:not(.search-input-play-hidden) {
     width: 40rem;
-    outline-color: #fff;
+    border-color: #fff;
     background-color: #fff;
   }
 }

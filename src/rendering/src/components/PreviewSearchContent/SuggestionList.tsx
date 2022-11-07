@@ -1,3 +1,5 @@
+import { SEARCH_PAGE } from '../../helpers/ContentSearchHelper';
+
 export type Suggestion = {
   id?: string;
   text?: string;
@@ -27,7 +29,11 @@ const SuggestionList = (props: SuggestionList): JSX.Element => {
       <span className="suggestion-list-title">{title}</span>
       <div className="suggestion-container">
         {list.map((item) => (
-          <Suggestion key={`${item.text}_${item.freq}`} {...item} url={`/search?q=${item.text}`} />
+          <Suggestion
+            key={`${item.text}_${item.freq}`}
+            {...item}
+            url={`${SEARCH_PAGE}?q=${item.text}`}
+          />
         ))}
       </div>
     </section>

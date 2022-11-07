@@ -1,54 +1,73 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
-import debounce from '../../helpers/Debounce';
 import PreviewSearchContainer from './PreviewSearchContainer';
+import ClickOutside from '../ShopCommon/ClickOutside';
 import PreviewSearchInput from './PreviewSearchInput';
+import PreviewSearchContextProvider from './PreviewSearchContextProvider';
+import PreviewSearchIcon from './PreviewSearchIcon';
+import { SEARCH_PAGE } from '../../helpers/ContentSearchHelper';
 
 const PreviewSearchContent = (): JSX.Element => {
-  const { events } = useRouter();
+  const { events, push, pathname } = useRouter();
   const [openPreviewSearch, setPreviewSearchOpen] = useState(false);
-  const [keyphrase, setKeyphrase] = useState('');
+  const ref = useRef(null);
+  const inputRef = useRef(null);
+
+  const onClose = useCallback(() => setPreviewSearchOpen(false), []);
 
   useEffect(() => {
     // subscribe to next/router event
-    events.on('routeChangeStart', () => setPreviewSearchOpen(false));
+    events.on('routeChangeStart', onClose);
     return () => {
       // unsubscribe to event on unmount to prevent memory leak
-      events.off('routeChangeStart', () => setPreviewSearchOpen(false));
+      events.off('routeChangeStart', onClose);
     };
-  }, [setPreviewSearchOpen, events]);
+  }, [events, onClose]);
 
-  const changeKeyphrase: (text: string) => void = debounce(
-    (text) => {
-      if (text !== '') setKeyphrase(text);
-    },
-    500,
-    null
-  );
+  useEffect(() => {
+    if (openPreviewSearch && inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [openPreviewSearch]);
 
-  const onFocus = useCallback(
+  const onRedirect = useCallback(
     (keyphrase: string) => {
-      changeKeyphrase(keyphrase);
+      push(`${SEARCH_PAGE}?q=${keyphrase || ''}`);
     },
-    [changeKeyphrase]
+    [push]
   );
 
-  const ref = useRef(null);
+  const onSearchIconClick = useCallback(
+    (keyphrase: string) => {
+      setPreviewSearchOpen((openPreviewSearch) => {
+        if (openPreviewSearch) {
+          onRedirect(keyphrase);
+        }
+        return !openPreviewSearch;
+      });
+    },
+    [onRedirect]
+  );
+
+  ClickOutside([ref], onClose);
+
+  // hide preview search when on search page
+  if (pathname === SEARCH_PAGE) {
+    return null;
+  }
 
   return (
     <div ref={ref}>
-      {openPreviewSearch && (
-        <PreviewSearchContainer keyphrase={keyphrase} close={() => setPreviewSearchOpen(false)} />
-      )}
-      <PreviewSearchInput
-        placeholder="Search content"
-        redirectUrl="search"
-        keyphrase={keyphrase}
-        setSearchString={changeKeyphrase}
-        onFocus={onFocus}
-        setOpen={setPreviewSearchOpen}
-        open={openPreviewSearch}
-      />
+      <PreviewSearchContextProvider>
+        {openPreviewSearch && <PreviewSearchContainer />}
+        <PreviewSearchInput
+          ref={inputRef}
+          placeholder="Search content"
+          onEnter={onRedirect}
+          className={`search-input-play ${!openPreviewSearch ? 'search-input-play-hidden' : ''}`}
+        />
+        <PreviewSearchIcon onClick={onSearchIconClick} className="search-play-icon" />
+      </PreviewSearchContextProvider>
     </div>
   );
 };
