@@ -1,5 +1,5 @@
 .section {
-  @apply py-20 px-0;
+  @apply basis-full py-20 px-0;
 
   &.section-full-left {
     .section-content {
