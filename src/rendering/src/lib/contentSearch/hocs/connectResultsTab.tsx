@@ -84,7 +84,6 @@ const connectResultsTab = ({
 
       // reset pagination and filters when top filters change
       useEffect(() => {
-        setTabFilters([]);
         setPage(1);
       }, [topFilters]);
 
