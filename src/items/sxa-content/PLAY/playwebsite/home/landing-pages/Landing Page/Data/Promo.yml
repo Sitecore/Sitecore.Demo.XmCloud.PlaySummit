@@ -1,8 +1,8 @@
 ﻿---
-ID: "5c8a3360-858c-4e58-815c-8c1405609187"
-Parent: "45627908-3c0e-4849-a9e1-6f161a7b7514"
+ID: "c55ec7d1-107a-48ca-8175-fbb829f39ed3"
+Parent: "19275e5f-af62-45ef-a029-9ad53651e927"
 Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
-Path: /sitecore/content/PLAY/playwebsite/home/Landing Pages/Landing Page with Additional Content/Data/Promo
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Landing Page/Data/Promo"
 BranchID: "03897603-e3eb-4777-b0b1-f106fda3ff91"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
@@ -24,7 +24,7 @@ Languages:
       Value: In massa augue, lacinia sed imperdiet vel, fringilla id enim.
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2da6c6ed-6cef-44a6-9e01-ea0ff00bb163"
+      Value: "aa0da646-dccf-4fa9-a388-f0272c41bd18"
     - ID: "c6e604c3-5371-4e67-83df-a09a5ea66249"
       Hint: PromoText3
       Value: CRAS TORTOR NULLA, MOLLIS UT FEUGIAT AC.

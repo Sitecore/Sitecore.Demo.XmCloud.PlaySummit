@@ -2,11 +2,15 @@
 ID: "4d587c56-3717-41cb-936c-5d0412a50b6b"
 Parent: "2d1d7aca-9597-5ca6-85b2-9b04907e4298"
 Template: "26385370-1739-4f4f-84c0-cbd96e9514c0"
-Path: /sitecore/content/PLAY/playwebsite/home/Landing Pages
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages"
 SharedFields:
 - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
   Hint: Page Design
   Value: "{B73A117A-11C2-4B86-8A5C-4C7648EE87DE}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{69E732FE-2C45-4BB0-B17C-6AD3455424A2}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -50,6 +54,10 @@ SharedFields:
     </r>
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Landing Pages
   Versions:
   - Version: 1
     Fields:
@@ -64,7 +72,7 @@ Languages:
       Value: "Here is a list of all currently available landing pages:"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "234a0ec2-27d2-41a3-9653-d5c78d0d9403"
+      Value: "b93c0390-edbf-4778-bee3-72d68fa32db6"
     - ID: "e44ef569-9a34-4219-af40-3d0529984022"
       Hint: Title
       Value: Landing Pages

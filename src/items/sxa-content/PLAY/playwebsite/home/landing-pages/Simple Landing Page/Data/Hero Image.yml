@@ -2,7 +2,7 @@
 ID: "3018684a-70de-4456-8a35-c801ac6030e1"
 Parent: "5f571676-b69b-42d6-a9f7-6382d097afbd"
 Template: "3ee5e476-e843-51f1-a351-d2c3b198475a"
-Path: /sitecore/content/PLAY/playwebsite/home/Landing Pages/Simple Landing Page/Data/Hero Image
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Simple Landing Page/Data/Hero Image"
 BranchID: "6c07c9a2-87c4-418f-aa22-9e5d6c382e9e"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"

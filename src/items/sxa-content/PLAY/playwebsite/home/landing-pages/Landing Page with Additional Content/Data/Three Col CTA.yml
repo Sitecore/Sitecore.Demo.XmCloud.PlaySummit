@@ -1,8 +1,8 @@
 ﻿---
-ID: "e2a0bc57-88c9-4a27-bed6-266d9351da9c"
-Parent: "19275e5f-af62-45ef-a029-9ad53651e927"
+ID: "90cda7f5-f84b-4101-963c-100a0af66707"
+Parent: "45627908-3c0e-4849-a9e1-6f161a7b7514"
 Template: "7ff7c2d7-f5e1-57f1-a3f3-812418ac08aa"
-Path: /sitecore/content/PLAY/playwebsite/home/Landing Pages/Landing Page/Data/Three Col CTA
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Landing Page with Additional Content/Data/Three Col CTA"
 BranchID: "03897603-e3eb-4777-b0b1-f106fda3ff91"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
@@ -30,7 +30,7 @@ Languages:
       Value: Class aptent taciti
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ca1b2908-08e2-41c6-bdd7-d438dfe72c67"
+      Value: "c66bf37c-cbaf-45e4-b578-a27e2060c9ea"
     - ID: "9067f7da-50eb-5d2f-bd0d-157b59412cfa"
       Hint: rightDescription
       Value: eleifend nunc

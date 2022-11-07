@@ -2,7 +2,7 @@
 ID: "ff3fb7f6-9be6-42aa-ab20-70875ff12595"
 Parent: "5f571676-b69b-42d6-a9f7-6382d097afbd"
 Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
-Path: /sitecore/content/PLAY/playwebsite/home/Landing Pages/Simple Landing Page/Data/Promo
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Simple Landing Page/Data/Promo"
 BranchID: "6c07c9a2-87c4-418f-aa22-9e5d6c382e9e"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
