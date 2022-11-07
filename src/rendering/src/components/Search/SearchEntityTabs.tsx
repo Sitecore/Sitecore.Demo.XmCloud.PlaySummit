@@ -1,4 +1,5 @@
 import { useCallback, useContext, useState, FC, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import SearchEntityTab from './SearchEntityTab';
 import SearchEntityTabContent from './SearchEntityTabContent';
 import { SearchContext } from './SearchProvider';
@@ -20,14 +21,19 @@ type SearchEntityTabsProps = {
 const SearchEntityTabs = (props: SearchEntityTabsProps): JSX.Element => {
   const { totals } = useContext(SearchContext);
   const { selected } = props;
+  const router = useRouter();
   const themeClass = props.theme ? `entity-tabs-${props.theme}` : '';
   const [activeTab, setActiveTab] = useState<Tab['id']>(selected);
   useEffect(() => {
     setActiveTab(selected);
   }, [selected]);
-  const onSelectTab = useCallback((id: Tab['id']) => {
-    setActiveTab(id);
-  }, []);
+  const onSelectTab = useCallback(
+    (id: Tab['id']) => {
+      setActiveTab(id);
+      router.push({ query: { ...router.query, tab: id } }, undefined, { shallow: true });
+    },
+    [router]
+  );
 
   return (
     <div
