@@ -4,6 +4,9 @@ Parent: "2d1d7aca-9597-5ca6-85b2-9b04907e4298"
 Template: "26385370-1739-4f4f-84c0-cbd96e9514c0"
 Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages"
 SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{C14B6289-8AC2-439C-9E5B-40DE9F820C3F}"
 - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
   Hint: Page Design
   Value: "{B73A117A-11C2-4B86-8A5C-4C7648EE87DE}"
@@ -72,7 +75,7 @@ Languages:
       Value: "Here is a list of all currently available landing pages:"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b93c0390-edbf-4778-bee3-72d68fa32db6"
+      Value: "240478fb-4db2-4d89-a755-57abcc1c063b"
     - ID: "e44ef569-9a34-4219-af40-3d0529984022"
       Hint: Title
       Value: Landing Pages
