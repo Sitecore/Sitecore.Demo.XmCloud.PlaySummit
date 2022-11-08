@@ -1,11 +1,16 @@
+import { ComponentProps } from 'lib/component-props';
 import OrderSummary from './OrderSummary';
 import TicketPaymentConfirmed from './TicketPaymentConfirmed';
 
-const PaymentConfirmed = (): JSX.Element => (
-  <div className="payment-confirmed-page">
-    <TicketPaymentConfirmed />
-    <OrderSummary />
-  </div>
-);
+const PaymentConfirmed = (props: ComponentProps): JSX.Element => {
+  const sxaStyles = `${props.params?.styles || ''}`;
 
-export default PaymentConfirmed;
+  return (
+    <div className={`payment-confirmed-page ${sxaStyles}`}>
+      <TicketPaymentConfirmed />
+      <OrderSummary />
+    </div>
+  );
+};
+
+export const Default = PaymentConfirmed;

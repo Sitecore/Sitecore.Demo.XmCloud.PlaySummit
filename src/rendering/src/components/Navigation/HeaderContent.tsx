@@ -15,6 +15,8 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
   const router = useRouter();
   const { sitecoreContext } = useSitecoreContext();
 
+  const sxaStyles = `${props.params?.styles || ''}`;
+
   const languageNames = new Intl.DisplayNames(['en'], {
     type: 'language',
   });
@@ -64,7 +66,7 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
 
   return (
     <>
-      <div className="header-eyebrow">
+      <div className={`header-eyebrow ${sxaStyles}`}>
         <div className="content">
           {languageSelector}
           {links}

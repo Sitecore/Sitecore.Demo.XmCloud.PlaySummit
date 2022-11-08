@@ -36,4 +36,4 @@ const SponsorInformationPageHero = (props: SponsorInformationPageHeroProps): JSX
   );
 };
 
-export default SponsorInformationPageHero;
+export const Default = SponsorInformationPageHero;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import SessionsFilters from '../../components/Sessions/SessionsFilters';
+import { Default as SessionsFilters } from '../../components/Sessions/SessionsFilters';
 
 export default {
   title: 'Components/Sessions/SessionsFilters',

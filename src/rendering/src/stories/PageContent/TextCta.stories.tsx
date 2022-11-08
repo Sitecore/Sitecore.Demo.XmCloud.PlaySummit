@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import TextCta from '../../components/PageContent/TextCta';
+import { Default as TextCta } from '../../components/PageContent/TextCta';
 
 export default {
   title: 'Components/PageContent/TextCta',

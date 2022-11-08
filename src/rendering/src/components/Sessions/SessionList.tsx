@@ -4,6 +4,7 @@ import { getSessionTime } from '../../helpers/DateHelper';
 import { GraphQLSession } from 'src/types/session';
 import InfoText from '../NonSitecore/InfoText';
 import { faClock, faDoorOpen, faUser } from '@fortawesome/free-solid-svg-icons';
+import { ComponentProps } from 'lib/component-props';
 
 type SessionListItemProps = GraphQLSession & {
   showSpeakers: boolean;
@@ -96,4 +97,4 @@ const SessionList = (props: SessionListProps): JSX.Element => {
   return <>{sessions}</>;
 };
 
-export default SessionList;
+export const Default = SessionList;

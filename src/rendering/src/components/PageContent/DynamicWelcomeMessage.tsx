@@ -9,6 +9,8 @@ const DynamicWelcomeMessage = (): JSX.Element => {
   const [message, SetMessage] = useState('');
   const router = useRouter();
 
+  const sxaStyles = `${props.params?.styles || ''}`;
+
   useEffect(() => {
     const language: string = navigator.language
       ? navigator.language
@@ -25,7 +27,7 @@ const DynamicWelcomeMessage = (): JSX.Element => {
   }, [router.locale]);
 
   const messageContent = message && (
-    <section className="section dynamic-welcome-message">
+    <section className={`section dynamic-welcome-message ${sxaStyles}`}>
       <div className="section-content container message-banner">
         <span>{message}</span>
       </div>
@@ -34,4 +36,4 @@ const DynamicWelcomeMessage = (): JSX.Element => {
   return <>{messageContent}</>;
 };
 
-export default DynamicWelcomeMessage;
+export const Default = DynamicWelcomeMessage;

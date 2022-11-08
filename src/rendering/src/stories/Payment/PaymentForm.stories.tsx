@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import PaymentForm from '../../components/Payment/PaymentForm';
+import { Default as PaymentForm } from '../../components/Payment/PaymentForm';
 
 export default {
   title: 'Components/Payment/PaymentForm',

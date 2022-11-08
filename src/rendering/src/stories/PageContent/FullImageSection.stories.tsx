@@ -1,14 +1,14 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Default } from '../../components/PageContent/FullImageSection';
+import { Default as FullImageSection } from '../../components/PageContent/FullImageSection';
 
 export default {
   title: 'Components/PageContent/FullImageSection',
-  component: Default,
-} as ComponentMeta<typeof Default>;
+  component: FullImageSection,
+} as ComponentMeta<typeof FullImageSection>;
 
-const Template: ComponentStory<typeof Default> = (args) => <Default {...args} />;
+const Template: ComponentStory<typeof FullImageSection> = (args) => <FullImageSection {...args} />;
 
 export const Left = Template.bind({});
 Left.args = {

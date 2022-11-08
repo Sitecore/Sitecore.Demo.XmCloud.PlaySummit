@@ -1,14 +1,19 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Default, HeaderBannerProps } from '../../components/PageContent/HeaderBanner';
+import {
+  Default as HeaderBanner,
+  HeaderBannerProps,
+} from '../../components/PageContent/HeaderBanner';
 
 export default {
   title: 'Components/PageContent/HeaderBanner',
-  component: Default,
-} as ComponentMeta<typeof Default>;
+  component: HeaderBanner,
+} as ComponentMeta<typeof HeaderBanner>;
 
-const Template: ComponentStory<typeof Default> = (args: HeaderBannerProps) => <Default {...args} />;
+const Template: ComponentStory<typeof HeaderBanner> = (args: HeaderBannerProps) => (
+  <HeaderBanner {...args} />
+);
 
 const fieldsWithoutImage = {
   eyebrow: {

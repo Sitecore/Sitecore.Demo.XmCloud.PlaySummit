@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import SponsorizeForm from '../../components/Forms/SponsorizeForm';
+import { Default as SponsorizeForm } from '../../components/Forms/SponsorizeForm';
 
 export default {
   title: 'Components/Forms/SponsorizeForm',

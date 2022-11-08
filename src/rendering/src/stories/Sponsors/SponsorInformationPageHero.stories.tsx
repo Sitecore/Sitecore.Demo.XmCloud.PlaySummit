@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import SponsorInformationPageHero from '../../components/Sponsors/SponsorInformationPageHero';
+import { Default as SponsorInformationPageHero } from '../../components/Sponsors/SponsorInformationPageHero';
 
 export default {
   title: 'Components/Sponsors/SponsorInformationPageHero',
