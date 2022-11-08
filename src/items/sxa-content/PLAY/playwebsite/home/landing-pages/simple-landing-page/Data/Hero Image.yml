@@ -1,25 +1,22 @@
 ﻿---
-ID: "efdab8c4-23c2-4700-a2a0-c7a00953e60e"
-Parent: "19275e5f-af62-45ef-a029-9ad53651e927"
+ID: "3018684a-70de-4456-8a35-c801ac6030e1"
+Parent: "5f571676-b69b-42d6-a9f7-6382d097afbd"
 Template: "3ee5e476-e843-51f1-a351-d2c3b198475a"
-Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Landing Page/Data/Hero Image"
-BranchID: "03897603-e3eb-4777-b0b1-f106fda3ff91"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/simple-landing-page/Data/Hero Image"
+BranchID: "6c07c9a2-87c4-418f-aa22-9e5d6c382e9e"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
-  Value: "{723D9E6F-E9A3-43A8-BDB3-57B7CE6EE201}"
+  Value: "{3D4C836F-BD5E-4AC4-BC8D-BC35230A3D64}"
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
-    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
-      Hint: __Lock
-      Value: <r />
     - ID: "7f1d47cf-4525-5f3e-b8fe-4c6ddbcefa39"
       Hint: hero
       Value: |
         <image mediaid="{94156736-7BB8-4523-8F0E-9C74D52357A8}" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6db74a28-2db6-4a09-b48a-35f1a0e9a282"
+      Value: "01ad6cad-0a0d-4a96-877d-a4d0d0612543"

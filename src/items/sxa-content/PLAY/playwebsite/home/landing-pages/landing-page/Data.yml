@@ -1,8 +1,8 @@
 ﻿---
-ID: "45627908-3c0e-4849-a9e1-6f161a7b7514"
-Parent: "511d8f7b-c879-4abb-927b-808bf97e64af"
+ID: "19275e5f-af62-45ef-a029-9ad53651e927"
+Parent: "0c718620-e878-4333-8d79-5905143e3867"
 Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
-Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Landing Page with Additional Content/Data"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/landing-page/Data"
 BranchID: "03897603-e3eb-4777-b0b1-f106fda3ff91"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
@@ -15,4 +15,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "cbff3e92-c2f9-48b2-8499-71cbcb822fbf"
+      Value: "ab70f040-409b-4f86-afd8-25f06dcc6a42"

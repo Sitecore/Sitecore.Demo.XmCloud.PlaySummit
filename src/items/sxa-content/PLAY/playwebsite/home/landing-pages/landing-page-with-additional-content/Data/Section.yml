@@ -2,7 +2,7 @@
 ID: "5c401ffb-1977-490b-9aa7-b8fd3bce7b69"
 Parent: "45627908-3c0e-4849-a9e1-6f161a7b7514"
 Template: "1f476f1c-822a-5a88-8f7e-2431b77d1b70"
-Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Landing Page with Additional Content/Data/Section"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/landing-page-with-additional-content/Data/Section"
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow

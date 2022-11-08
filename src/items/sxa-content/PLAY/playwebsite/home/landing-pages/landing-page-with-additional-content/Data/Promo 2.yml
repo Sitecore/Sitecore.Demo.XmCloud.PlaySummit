@@ -1,8 +1,8 @@
 ﻿---
-ID: "8abe4c8e-dcd8-4a6a-8974-cc12fc659b59"
-Parent: "19275e5f-af62-45ef-a029-9ad53651e927"
+ID: "3b30072a-14f9-4cfa-8a6b-0fb8a45f60d7"
+Parent: "45627908-3c0e-4849-a9e1-6f161a7b7514"
 Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
-Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Landing Page/Data/Promo 2"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/landing-page-with-additional-content/Data/Promo 2"
 BranchID: "03897603-e3eb-4777-b0b1-f106fda3ff91"
 SharedFields:
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
@@ -24,7 +24,7 @@ Languages:
       Value: Sed consectetur, magna a gravida convallis, turpis sem.
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2bc832df-4fe2-4f8b-a15c-95e15817c5b0"
+      Value: "f75a334a-7cee-48d7-8d3c-b4a99ee11de1"
     - ID: "c6e604c3-5371-4e67-83df-a09a5ea66249"
       Hint: PromoText3
       Value: Cras tortor nulla, mollis ut feugiat ac.
