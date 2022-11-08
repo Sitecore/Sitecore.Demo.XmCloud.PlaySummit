@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import { getDynamicWelcomeMessage, WelcomeMessage } from 'src/services/BoxeverService';
 import { getIpAddress } from 'src/services/IpAddressService';
 import { useRouter } from 'next/router';
+import { ComponentProps } from 'lib/component-props';
 
-const DynamicWelcomeMessage = (): JSX.Element => {
+const DynamicWelcomeMessage = (props: ComponentProps): JSX.Element => {
   const DEFAULT_MESSAGE = 'Welcome to PLAY! Summit.';
 
   const [message, SetMessage] = useState('');
