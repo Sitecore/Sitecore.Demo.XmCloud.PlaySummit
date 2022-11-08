@@ -8,7 +8,9 @@ export default {
   component: SessionsFilters,
 } as ComponentMeta<typeof SessionsFilters>;
 
-const Template: ComponentStory<typeof SessionsFilters> = () => <SessionsFilters />;
+const Template: ComponentStory<typeof SessionsFilters> = () => (
+  <SessionsFilters rendering={{ componentName: '' }} params={{}} />
+);
 
 export const Default = Template.bind({});
 Default.args = {

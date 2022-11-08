@@ -2,7 +2,7 @@ import { PropsWithChildren, useEffect } from 'react';
 import Head from 'next/head';
 import { UserProvider } from '@auth0/nextjs-auth0';
 import ShopNavigation from '../Navigation/ShopNavigation';
-import Footer, { FooterProps } from '../Navigation/Footer';
+import { Default as Footer, FooterProps } from '../Navigation/Footer';
 import HeaderCdpMessageBar from '../HeaderCdpMessageBar';
 import { isCommerceEnabled } from '../../helpers/CommerceHelper';
 import { Provider } from 'react-redux';

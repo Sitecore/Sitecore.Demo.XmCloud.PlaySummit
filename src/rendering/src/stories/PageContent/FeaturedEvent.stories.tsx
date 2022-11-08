@@ -8,7 +8,9 @@ export default {
   component: FeaturedEvent,
 } as ComponentMeta<typeof FeaturedEvent>;
 
-const Template: ComponentStory<typeof FeaturedEvent> = () => <FeaturedEvent />;
+const Template: ComponentStory<typeof FeaturedEvent> = () => (
+  <FeaturedEvent rendering={{ componentName: '' }} params={{}} />
+);
 
 export const Default = Template.bind({});
 Default.args = {};

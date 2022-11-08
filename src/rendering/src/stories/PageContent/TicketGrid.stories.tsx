@@ -8,7 +8,9 @@ export default {
   component: TicketGrid,
 } as ComponentMeta<typeof TicketGrid>;
 
-const Template: ComponentStory<typeof TicketGrid> = () => <TicketGrid />;
+const Template: ComponentStory<typeof TicketGrid> = () => (
+  <TicketGrid rendering={{ componentName: '' }} params={{}} />
+);
 
 export const Default = Template.bind({});
 Default.args = {};

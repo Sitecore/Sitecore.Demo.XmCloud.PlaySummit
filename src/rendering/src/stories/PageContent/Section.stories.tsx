@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Default as Section } from '../../components/PageContent/Section';
-import SpeakersGrid, { SpeakersGridProps } from '../../components/Speakers/SpeakersGrid';
+import { Default as SpeakersGrid, SpeakersGridProps } from '../../components/Speakers/SpeakersGrid';
 import { GraphQLSpeaker } from 'src/types/speaker';
 
 export default {

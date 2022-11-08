@@ -8,7 +8,9 @@ export default {
   component: FullImageCTASection,
 } as ComponentMeta<typeof FullImageCTASection>;
 
-const Template: ComponentStory<typeof FullImageCTASection> = () => <FullImageCTASection />;
+const Template: ComponentStory<typeof FullImageCTASection> = () => (
+  <FullImageCTASection rendering={{ componentName: '' }} params={{}} />
+);
 
 export const Default = Template.bind({});
 Default.args = {

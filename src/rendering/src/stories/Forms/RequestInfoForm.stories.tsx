@@ -8,7 +8,9 @@ export default {
   component: RequestInfoForm,
 } as ComponentMeta<typeof RequestInfoForm>;
 
-const Template: ComponentStory<typeof RequestInfoForm> = () => <RequestInfoForm />;
+const Template: ComponentStory<typeof RequestInfoForm> = () => (
+  <RequestInfoForm rendering={{ componentName: '' }} params={{}} />
+);
 
 export const Default = Template.bind({});
 Default.args = {

@@ -8,7 +8,9 @@ export default {
   component: AttendeeForm,
 } as ComponentMeta<typeof AttendeeForm>;
 
-const Template: ComponentStory<typeof AttendeeForm> = () => <AttendeeForm />;
+const Template: ComponentStory<typeof AttendeeForm> = () => (
+  <AttendeeForm rendering={{ componentName: '' }} params={{}} />
+);
 
 export const Default = Template.bind({});
 Default.args = {};

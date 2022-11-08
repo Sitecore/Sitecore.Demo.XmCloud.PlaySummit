@@ -3,13 +3,15 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import HeaderContent from '../../components/Navigation/HeaderContent';
 import HeaderCdpMessageBar from '../../components/HeaderCdpMessageBar';
-import VendorInformationPageHero, {
+import {
+  Default as VendorInformationPageHero,
   VendorInformationPageHeroProps,
 } from '../../components/Vendors/VendorInformationPageHero';
-import VendorInformation, {
+import {
+  Default as VendorInformation,
   VendorInformationProps,
 } from '../../components/Vendors/VendorInformation';
-import Footer from '../../components/Navigation/Footer';
+import { Default as Footer } from '../../components/Navigation/Footer';
 import { mockComponentFactory, mockFooterProps, mockHeaderProps } from './PageStoriesCommon';
 import { SitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 import { SESSIONS } from '../mock-sessions';

@@ -8,7 +8,9 @@ export default {
   component: PaymentConfirmed,
 } as ComponentMeta<typeof PaymentConfirmed>;
 
-const Template: ComponentStory<typeof PaymentConfirmed> = () => <PaymentConfirmed />;
+const Template: ComponentStory<typeof PaymentConfirmed> = () => (
+  <PaymentConfirmed rendering={{ componentName: '' }} params={{}} />
+);
 
 export const Default = Template.bind({});
 Default.args = {

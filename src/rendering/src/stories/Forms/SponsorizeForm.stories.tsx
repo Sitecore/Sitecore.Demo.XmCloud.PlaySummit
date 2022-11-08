@@ -8,7 +8,9 @@ export default {
   component: SponsorizeForm,
 } as ComponentMeta<typeof SponsorizeForm>;
 
-const Template: ComponentStory<typeof SponsorizeForm> = () => <SponsorizeForm />;
+const Template: ComponentStory<typeof SponsorizeForm> = () => (
+  <SponsorizeForm rendering={{ componentName: '' }} params={{}} />
+);
 
 export const Default = Template.bind({});
 Default.args = {

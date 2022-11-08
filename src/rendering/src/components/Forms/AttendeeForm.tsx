@@ -5,9 +5,7 @@ import { ComponentProps } from 'lib/component-props';
 import { identifyVisitor } from '../../services/CdpService';
 import { getUserData } from '../../helpers/GuestDataHelper';
 
-type AttendeeFormProps = ComponentProps;
-
-const AttendeeForm = (props: AttendeeFormProps): JSX.Element => {
+const AttendeeForm = (props: ComponentProps): JSX.Element => {
   const ticketId =
     typeof window === 'undefined' ? '0' : new URLSearchParams(window.location.search).get('ticket');
 
