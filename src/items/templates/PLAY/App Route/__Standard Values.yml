@@ -9,6 +9,12 @@ SharedFields:
   Value: |
     {26385370-1739-4F4F-84C0-CBD96E9514C0}
     {C14B6289-8AC2-439C-9E5B-40DE9F820C3F}
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: 
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 Languages:
 - Language: en
   Versions:
@@ -16,7 +22,7 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5a2d89b5-f7e7-42e8-b13c-d4396907f20b"
+      Value: "59935a17-23e1-41a6-b93e-e44e2c7ff789"
     - ID: "e44ef569-9a34-4219-af40-3d0529984022"
       Hint: Title
       Value: $name
