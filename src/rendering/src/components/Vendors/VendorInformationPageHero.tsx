@@ -36,4 +36,4 @@ const VendorInformationPageHero = (props: VendorInformationPageHeroProps): JSX.E
   );
 };
 
-export default VendorInformationPageHero;
+export const Default = VendorInformationPageHero;

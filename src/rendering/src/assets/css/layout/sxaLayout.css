@@ -6,6 +6,18 @@
   @apply min-h-[10rem];
 }
 
+main {
+  @apply flex flex-wrap;
+}
+
+#headless-main-empty {
+  @apply max-w-full px-0;
+
+  > .component-content > .row {
+    @apply mx-0;
+  }
+}
+
 .row {
   @apply flex flex-wrap -mx-4;
 }

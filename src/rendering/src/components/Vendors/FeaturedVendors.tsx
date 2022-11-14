@@ -24,6 +24,8 @@ const FeaturedVendors = (props: FeaturedVendorsProps): JSX.Element => {
   const isPageEditing = sitecoreContext.pageState === LayoutServicePageState.Edit;
   const hasVendors = !!props?.fields?.Vendors?.length;
 
+  const sxaStyles = `${props.params?.styles || ''}`;
+
   !hasVendors && console.warn('Missing Datasource Item');
 
   const pageEditingMissingDatasource = !hasVendors && isPageEditing && (
@@ -44,7 +46,7 @@ const FeaturedVendors = (props: FeaturedVendorsProps): JSX.Element => {
     ));
 
   const featuredVendors = hasVendors && (
-    <section className="section section-light">
+    <section className={`section section-light ${sxaStyles}`}>
       <div className="section-content container">
         <Text className="section-content-title" tag="h1" field={props.fields?.Title} />
         <Text className="section-content-subtitle-center" tag="p" field={props.fields?.Subtitle} />
@@ -64,4 +66,4 @@ const FeaturedVendors = (props: FeaturedVendorsProps): JSX.Element => {
   );
 };
 
-export default withDatasourceCheck()<FeaturedVendorsProps>(FeaturedVendors);
+export const Default = withDatasourceCheck()<FeaturedVendorsProps>(FeaturedVendors);

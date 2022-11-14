@@ -13,6 +13,9 @@ SharedFields:
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
   Value: /sitecore/templates/Project/PLAY/Legacy/PaymentProgress
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
 - ID: "b0b15510-b138-470e-8f33-8da2e228aafe"
   Hint: Rendering Contents Resolver
   Value: "{3DF775BF-3F56-446F-9D81-43DE64DA4DDA}"
@@ -26,4 +29,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "84d71d18-1f82-4b8a-a9ad-d1c70814e623"
+      Value: "bc76bc03-9b9a-47a0-81c4-b8eb83f11000"

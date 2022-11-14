@@ -8,13 +8,17 @@ type TextCtaProps = ComponentProps & {
   };
 };
 
-const TextCta = (props: TextCtaProps): JSX.Element => (
-  <section className="text-cta">
-    <div className="container cta-content">
-      <Text tag="h2" className="cta-title" field={props.fields.title} />
-      <Text tag="p" className="cta-subtitle" field={props.fields.subTitle} />
-    </div>
-  </section>
-);
+const TextCta = (props: TextCtaProps): JSX.Element => {
+  const sxaStyles = `${props.params?.styles || ''}`;
 
-export default withDatasourceCheck()<TextCtaProps>(TextCta);
+  return (
+    <section className={`text-cta ${sxaStyles}`}>
+      <div className="container cta-content">
+        <Text tag="h2" className="cta-title" field={props.fields.title} />
+        <Text tag="p" className="cta-subtitle" field={props.fields.subTitle} />
+      </div>
+    </section>
+  );
+};
+
+export const Default = withDatasourceCheck()<TextCtaProps>(TextCta);

@@ -1,16 +1,19 @@
 import React, { FormEvent, useEffect, useState } from 'react';
 import Router from 'next/router';
 import Link from 'next/link';
+import { ComponentProps } from 'lib/component-props';
 import { identifyVisitor } from '../../services/CdpService';
 import { getUserData } from '../../helpers/GuestDataHelper';
 
-const AttendeeForm = (): JSX.Element => {
+const AttendeeForm = (props: ComponentProps): JSX.Element => {
   const ticketId =
     typeof window === 'undefined' ? '0' : new URLSearchParams(window.location.search).get('ticket');
 
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
+
+  const sxaStyles = `${props.params?.styles || ''}`;
 
   useEffect(() => {
     const setUserData = async () => {
@@ -38,7 +41,7 @@ const AttendeeForm = (): JSX.Element => {
   };
 
   return (
-    <form className="form attendee-registration-form" onSubmit={handleFormSubmit}>
+    <form className={`form attendee-registration-form ${sxaStyles}`} onSubmit={handleFormSubmit}>
       <h2>Attendee Registration</h2>
       <div className="floating-label-wrap">
         <input
@@ -109,4 +112,4 @@ const AttendeeForm = (): JSX.Element => {
   );
 };
 
-export default AttendeeForm;
+export const Default = AttendeeForm;

@@ -1,8 +1,11 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import SummitFeatures from '../../components/PageContent/SummitFeatures';
-import SummitFeature, { SummitFeatureProps } from '../../components/PageContent/SummitFeature';
+import { Default as SummitFeatures } from '../../components/PageContent/SummitFeatures';
+import {
+  Default as SummitFeature,
+  SummitFeatureProps,
+} from '../../components/PageContent/SummitFeature';
 import { ComponentWithChildrenProps } from 'lib/component-props';
 
 export default {

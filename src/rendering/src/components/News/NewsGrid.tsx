@@ -23,6 +23,8 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
   const hasNews = !!props.fields;
   const publicUrl = getPublicAssetUrl();
 
+  const sxaStyles = `${props.params?.styles || ''}`;
+
   !hasNews && console.warn('Missing Datasource Item');
 
   const pageEditingMissingDatasource = !hasNews && isPageEditing && <p>Missing Datasource Item</p>;
@@ -52,7 +54,7 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
       ));
 
   const newsGrid = hasNews && (
-    <div className="section-news-grid">
+    <div className={`section-news-grid ${sxaStyles}`}>
       <div className="news-tweet">
         <img
           src={`${publicUrl}/assets/img/news/conference-image.jpg`}
@@ -95,4 +97,4 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
   );
 };
 
-export default withDatasourceCheck()<NewsGridProps>(NewsGrid);
+export const Default = withDatasourceCheck()<NewsGridProps>(NewsGrid);

@@ -40,6 +40,9 @@ export type MainNavigationProps = ComponentProps & {
 
 const MainNavigation = (props: MainNavigationProps): JSX.Element => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const sxaStyles = `${props.params?.styles || ''}`;
+
   const shopLink = isCommerceEnabled && (
     <li className="text-menu-item">
       <Link href="/shop">
@@ -49,7 +52,7 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
   );
 
   return (
-    <nav className="main-navigation">
+    <nav className={`main-navigation ${sxaStyles}`}>
       <div className="navigation-content">
         <div className="controls-container">
           <Link href="/">
@@ -97,4 +100,4 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
   );
 };
 
-export default MainNavigation;
+export const Default = MainNavigation;

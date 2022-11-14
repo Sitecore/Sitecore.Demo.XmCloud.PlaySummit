@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import SessionList, { SessionListProps } from '../../components/Sessions/SessionList';
+import { Default as SessionList, SessionListProps } from '../../components/Sessions/SessionList';
 import { SESSIONS } from '../mock-sessions';
 
 export default {
