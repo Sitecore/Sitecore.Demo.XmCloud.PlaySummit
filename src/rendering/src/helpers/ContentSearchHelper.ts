@@ -11,6 +11,7 @@ import { GraphQLSpeaker } from '../types/speaker';
 import { Sponsor } from '../types/sponsor';
 import { Vendor } from '../types/vendor';
 
+export const SEARCH_PAGE = '/search';
 export const isContentSearchEnabled =
   !!process.env.NEXT_PUBLIC_SEARCH_API_DOMAIN && !!process.env.NEXT_PUBLIC_SEARCH_API_HOST;
 

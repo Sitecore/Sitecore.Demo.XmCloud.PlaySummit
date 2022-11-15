@@ -1,4 +1,4 @@
-import { SearchResultsWidgetProps } from '@sitecore-discover/ui';
+import { SearchResultsWidgetProps } from '@sitecore-discover/react';
 import { useEffect, useState } from 'react';
 import debounce from '../../../src/helpers/Debounce';
 import { SearchResultsActions } from '@sitecore-discover/widgets';

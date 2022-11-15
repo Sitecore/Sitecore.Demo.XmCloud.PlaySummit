@@ -87,7 +87,7 @@ const SearchResultsTab: FC<SearchResultsTabProps> = (props) => {
           <div>
             <label>Results Per Page</label>
             <select
-              defaultValue={10}
+              value={props.perPage}
               className="search-results-tab-per-page"
               onChange={(e) => {
                 props.onResultsPerPageChange(Number(e.currentTarget.value));

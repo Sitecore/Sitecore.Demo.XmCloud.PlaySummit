@@ -4,16 +4,17 @@ import { SearchFiltersProps } from './SearchFilters';
 
 type SearchContextType = {
   keyphrase: string;
-  totals: {
-    [key: string]: number;
-  };
+  totals: Record<string, number>;
+  perPage: number;
   onUpdate?: (id: string, total: number) => void;
   filters: ContentSearchRequestFilter[];
   onChangeFilter?: SearchFiltersProps['onChange'];
+  onPerPageChange?: (perPage: number) => void;
 };
 
 export const SearchContext = createContext<SearchContextType>({
   keyphrase: '',
+  perPage: 12,
   filters: [] as ContentSearchRequestFilter[],
   totals: {} as SearchContextType['totals'],
 });
@@ -23,6 +24,7 @@ type SearchProviderProps = { keyphrase: string } & PropsWithChildren;
 const SearchProvider = (props: SearchProviderProps): JSX.Element => {
   const { keyphrase } = props;
 
+  const [perPage, onPerPageChange] = useState<SearchContextType['perPage']>(12);
   const [totals, setTotals] = useState<SearchContextType['totals']>({});
   const [filters, setFilters] = useState<ContentSearchRequestFilter[]>([]);
 
@@ -57,9 +59,11 @@ const SearchProvider = (props: SearchProviderProps): JSX.Element => {
       totals,
       onUpdate,
       filters,
+      perPage,
       onChangeFilter,
+      onPerPageChange,
     }),
-    [filters, onChangeFilter, onUpdate, totals, keyphrase]
+    [filters, onChangeFilter, onUpdate, totals, keyphrase, perPage]
   );
 
   return <SearchContext.Provider value={value}>{props.children}</SearchContext.Provider>;

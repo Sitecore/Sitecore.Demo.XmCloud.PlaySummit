@@ -24,7 +24,6 @@ const connectResultsTab = ({
   entity,
   facetsTypes,
   hasFilters = true,
-  defaultPerPage = 12,
   defaultSort = 'featured_desc',
 }: {
   entity: ContentSearchRequestProps['entity'];
@@ -76,22 +75,21 @@ const connectResultsTab = ({
 
   return <T extends typeof SearchResultsTab>(WrappedComponent: T): FC => {
     const Component: FC = () => {
-      const { keyphrase, filters: topFilters, onUpdate } = useContext(SearchContext);
+      const {
+        keyphrase,
+        filters: topFilters,
+        onUpdate,
+        perPage,
+        onPerPageChange,
+      } = useContext(SearchContext);
       const [tabFilters, setTabFilters] = useState<ContentSearchRequestFilter[]>([]);
       const [sort, setSort] = useState(defaultSort);
       const [page, setPage] = useState(1);
-      const [perPage, setPerPage] = useState(defaultPerPage);
 
       // reset pagination and filters when top filters change
       useEffect(() => {
-        setTabFilters([]);
         setPage(1);
-      }, [topFilters]);
-
-      const onResultsPerPageChange = useCallback((numProducts: number) => {
-        setPerPage(numProducts);
-        setPage(1);
-      }, []);
+      }, [topFilters, perPage]);
 
       const onPageNumberChange = useCallback((page: number) => {
         setPage(page);
@@ -179,7 +177,7 @@ const connectResultsTab = ({
           onFilterClick={onFilterClick}
           onClearFilters={onClearFilters}
           onSortChange={onSortChange}
-          onResultsPerPageChange={onResultsPerPageChange}
+          onResultsPerPageChange={onPerPageChange}
           sort={sort}
           items={items}
         />

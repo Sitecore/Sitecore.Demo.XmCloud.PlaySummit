@@ -120,6 +120,7 @@
 @import './components/PreviewSearchContent/SessionCard.css';
 @import './components/PreviewSearchContent/SpeakerCard.css';
 @import './components/PreviewSearchContent/NewsCard.css';
+@import './components/PreviewSearchContent/PreviewSearchIcon.css';
 
 /* Sitecore Search */
 @import './components/Search/EntityTabs.css';
