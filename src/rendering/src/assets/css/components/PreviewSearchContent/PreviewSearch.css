@@ -1,45 +1,63 @@
 .preview-search-content-container {
-  @apply shadow-lg shadow-black-lightest;
+  @apply fixed left-0 right-0 max-w-7xl mx-auto overflow-y-auto bg-gray-light border border-gray;
 
-  overflow-y: auto;
-  position: fixed;
-  right: 10rem;
-
-  @media (max-width: 1280px) {
-    display: none;
-  }
-
-  @media (max-width: 2000px) {
-    right: 5rem;
+  .icon {
+    @apply mr-2;
   }
 
   .preview-search-content {
-    @apply bg-white border border-white-dark;
-
-    max-width: 1500px;
+    @apply h-full;
 
     .preview-search-content-popup {
-      display: flex;
-      flex-direction: column;
-      padding: 0.5rem 1rem;
+      @apply flex flex-col p-4 gap-4;
+
+      .item-grid {
+        @apply flex flex-col w-full gap-2;
+
+        .grid-content {
+          @apply p-0 m-0;
+        }
+
+        .grid-item,
+        .row-item {
+          @apply rounded-none border border-gray-light bg-white-light transition-all cursor-pointer;
+
+          .item-title {
+            @apply !text-sm font-bold uppercase;
+          }
+
+          &:hover {
+            @apply transform-none shadow-none border-gray;
+          }
+        }
+
+        .row-item {
+          @apply inline-flex pt-4 px-2;
+        }
+      }
+
+      .search-list-title {
+        @apply flex justify-between font-bold;
+      }
+
+      .view-all {
+        @apply text-blue font-medium;
+      }
     }
   }
 }
 
 div.header-eyebrow ~ nav.main-navigation .preview-search-content-container {
-  top: 6.15rem;
+  @apply top-[10.5rem] h-[calc(100vh-10.5rem)];
+  @apply xl:top-[6.15rem] xl:h-auto xl:max-h-[calc(100vh-6.15rem)];
 }
 
 nav.main-navigation .preview-search-content-container {
-  top: 4.65rem;
+  @apply top-[9rem] h-[calc(100vh-9rem)];
+  @apply xl:top-[4.65rem] xl:h-auto xl:max-h-[calc(100vh-4.65rem)];
 }
 
 .search-input-container {
-  display: block;
-  margin: auto 20px;
-  position: relative;
-
-  @media (max-width: 1280px) {
-    margin: 20px;
-  }
+  @apply block relative mx-3 my-3 order-first h-10;
+  @apply xl:ml-4 xl:my-0 xl:mr-0 xl:order-none xl:h-auto;
 }

@@ -6,21 +6,16 @@
   }
 
   .search-pagination-link {
-    @apply inline cursor-pointer font-normal hover:font-medium;
-
-    margin: 0 8px;
+    @apply inline cursor-pointer font-normal my-0 mx-2;
+    @apply hover:font-bold;
 
     &[data-current='true'] {
-      @apply pointer-events-none no-underline;
-
-      color: gray;
+      @apply text-gray-dark pointer-events-none;
     }
   }
 
   .search-pagination-nav-link {
-    @apply cursor-pointer;
-
-    margin: 0 8px;
+    @apply my-0 mx-2 cursor-pointer;
 
     &[data-current='true'] {
       @apply hidden;

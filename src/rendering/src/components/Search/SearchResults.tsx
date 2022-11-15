@@ -12,11 +12,11 @@ type SearchResultsProps = PropsWithChildren & {
 const SearchResults = (props: SearchResultsProps): JSX.Element => {
   const { keyphrase, onChangeFilter } = useContext(SearchContext);
 
+  const headerText = keyphrase ? `Results for: "${keyphrase}"` : 'Search Results';
+
   return (
     <div className="search-results">
-      {keyphrase && (
-        <div className="search-results-header">Results for: &quot;{keyphrase}&quot;</div>
-      )}
+      <div className="search-results-header">{headerText}</div>
       <SearchFilters
         options={props.filterOptions}
         onChange={onChangeFilter}

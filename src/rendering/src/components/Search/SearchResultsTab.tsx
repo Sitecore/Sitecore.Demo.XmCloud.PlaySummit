@@ -1,8 +1,10 @@
-import { PropsWithChildren, FC } from 'react';
+import { PropsWithChildren, FC, useState } from 'react';
 import { ContentSearchResponseSortChoice } from '../../interfaces/contentSearch/ContentSearchResponse';
 import Spinner from '../../components/ShopCommon/Spinner';
 import SearchFacets, { SearchFacetsProps } from './SearchFacets';
 import Pagination, { SearchPaginationProps } from './SearchPagination';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSlidersH } from '@fortawesome/free-solid-svg-icons';
 
 export type SearchResultsTabProps = PropsWithChildren &
   SearchFacetsProps &
@@ -15,16 +17,36 @@ export type SearchResultsTabProps = PropsWithChildren &
   };
 
 const SearchResultsTab: FC<SearchResultsTabProps> = (props) => {
+  const [toggle, setToggle] = useState(false);
+
+  const onToggleClick = () => {
+    const isVisible = !toggle;
+    setToggle(isVisible);
+    document.body.classList.toggle('search-facet-panel-open', isVisible);
+  };
+
   return (
     <div className="search-results-tab">
+      <div className="facet-panel-mask"></div>
       <div className="search-results-tab-facets">
-        <SearchFacets
-          facets={props.facets}
-          filters={props.filters}
-          onFacetValueClick={props.onFacetValueClick}
-          onFilterClick={props.onFilterClick}
-          onClearFilters={props.onClearFilters}
-        />
+        <div className="facets-container">
+          <button className="btn-secondary search-results-facets-toggle" onClick={onToggleClick}>
+            <FontAwesomeIcon icon={faSlidersH} />
+            Filter
+          </button>
+          <SearchFacets
+            facets={props.facets}
+            filters={props.filters}
+            onFacetValueClick={props.onFacetValueClick}
+            onFilterClick={props.onFilterClick}
+            onClearFilters={props.onClearFilters}
+          />
+        </div>
+        <div className="button-container">
+          <button className="btn-main" onClick={onToggleClick}>
+            Show {props.totalItems} results
+          </button>
+        </div>
       </div>
       <div className="search-results-tab-content">
         <div className="search-results-tab-header">
@@ -45,6 +67,12 @@ const SearchResultsTab: FC<SearchResultsTabProps> = (props) => {
               </select>
             </div>
           )}
+          <div className="search-results-tab-filter-toggle">
+            <button className="btn-main search-results-facets-toggle" onClick={onToggleClick}>
+              <FontAwesomeIcon icon={faSlidersH} />
+              Filter
+            </button>
+          </div>
         </div>
         <div className="search-results-tab-results">
           {props.loading ? (

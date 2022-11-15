@@ -1,7 +1,8 @@
 .search-results {
-  @apply flex flex-col p-4;
+  @apply my-8;
+  @apply md:my-20;
 
   .search-results-header {
-    @apply text-xl mb-1;
+    @apply text-xl font-bold uppercase mb-4;
   }
 }

@@ -9,9 +9,9 @@ const PreviewSearchNewsList = (props: NewsListProps): JSX.Element => {
   const { resultsUrl, list = [] } = props;
 
   return (
-    <section className="news-list item-grid sessions-grid">
-      <span className="news-list-title">
-        News
+    <section className="news-list item-grid">
+      <span className="search-list-title news-list-title">
+        <span>News</span>
         <a href={`${resultsUrl}&tab=content`} className="view-all">
           View All
         </a>

@@ -603,7 +603,7 @@ const SummitLayout = (props: PropsWithChildren): JSX.Element => {
       </header>
       <main>
         <HeaderCdpMessageBar />
-        <div className="shop-main-container">{props.children}</div>
+        <div className="summit-main-container">{props.children}</div>
       </main>
       <footer>
         <Footer {...footerProps} />

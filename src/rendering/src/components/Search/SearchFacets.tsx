@@ -1,6 +1,5 @@
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faChevronDown, faSlidersH, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { CheckIcon } from '@radix-ui/react-icons';
 import { useContext } from 'react';
 import { FacetValueClickedActionPayload } from '../../interfaces/contentSearch/FacetValueClickedActionPayload';
 import { SearchContext } from '../../components/Search/SearchProvider';
@@ -46,32 +45,41 @@ const SearchFacets = (props: SearchFacetsProps): JSX.Element => {
   return (
     <>
       {appliedFilters.length > 0 && (
-        <button
-          className={`search-facets-clear ${props.className || ''}`}
-          onClick={props.onClearFilters}
-        >
-          Clear Filters
-        </button>
+        <div className="search-facets-active">
+          <div className="search-facets-active-title">
+            <FontAwesomeIcon icon={faSlidersH} />
+            <span>Active filters</span>
+          </div>
+          <ul className="search-facets-filters-list">
+            {appliedFilters.map(({ facetId, facetValueId }) =>
+              props.facets[facetId]?.value
+                .filter(({ id }) => id === facetValueId)
+                .map((v) => (
+                  <li
+                    key={`${facetId}@${facetValueId}`}
+                    className="search-facets-filters-list-item"
+                  >
+                    <span className="search-facets-filters-list-item-text">
+                      <span>{props.facets[facetId]?.label}</span>: {getFacetLabel(v)}
+                    </span>
+                    <button
+                      className="search-facets-filters-list-item-button"
+                      onClick={() => props.onFilterClick({ facetId, facetValueId, checked: false })}
+                    >
+                      <FontAwesomeIcon icon={faTimes} />
+                    </button>
+                  </li>
+                ))
+            )}
+          </ul>
+          <button
+            className={`btn-secondary search-facets-clear ${props.className || ''}`}
+            onClick={props.onClearFilters}
+          >
+            Clear Filters
+          </button>
+        </div>
       )}
-      <ul className="search-facets-filters-list">
-        {appliedFilters.map(({ facetId, facetValueId }) =>
-          props.facets[facetId]?.value
-            .filter(({ id }) => id === facetValueId)
-            .map((v) => (
-              <li key={`${facetId}@${facetValueId}`} className="search-facets-filters-list-item">
-                <span className="search-facets-filters-list-item-text">
-                  <span>{props.facets[facetId]?.label}</span>: {getFacetLabel(v)}
-                </span>
-                <button
-                  className="search-facets-filters-list-item-button"
-                  onClick={() => props.onFilterClick({ facetId, facetValueId, checked: false })}
-                >
-                  X
-                </button>
-              </li>
-            ))
-        )}
-      </ul>
       <AccordionFacets.Root
         className="search-facets-root"
         onFacetValueClick={props.onFacetValueClick}
@@ -101,7 +109,7 @@ const SearchFacets = (props: SearchFacetsProps): JSX.Element => {
                   >
                     <AccordionFacets.ItemCheckbox className="search-facets-root-facet-checkbox">
                       <AccordionFacets.ItemCheckboxIndicator className="search-facets-root-facet-checkbox-indicator">
-                        <CheckIcon />
+                        <FontAwesomeIcon icon={faCheck} />
                       </AccordionFacets.ItemCheckboxIndicator>
                     </AccordionFacets.ItemCheckbox>
                     <AccordionFacets.ItemLabel className="search-facets-root-facet-checkbox-label">

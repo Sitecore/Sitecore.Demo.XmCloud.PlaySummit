@@ -1,44 +1,29 @@
 .search-input-play {
-  border-radius: 0.015rem;
-  position: absolute;
-  right: 16px;
-  width: 0;
-  background-color: #232323;
-  outline: 10px solid #232323;
-  transition: width 0.1s ease-out 0.1s, outline 0.1s ease-out 0.1s, background-color 0.1s ease-out 0.1s;
+  @apply absolute right-0 w-0 py-2 pl-4 pr-8 bg-transparent transition-all;
 
   @media (max-width: 1280px) {
-    background-color: rgb(60 60 60 / var(--tw-bg-opacity));
-    outline: 10px solid rgb(60 60 60 / var(--tw-bg-opacity));
-    left: 0;
-    padding-left: 12vw;
-    right: unset;
-    width: 100%;
+    @apply w-full left-0 right-0 pl-12 pr-4 bg-white-light;
   }
 
   &-hidden::placeholder {
-    color: transparent;
+    @apply xl:text-transparent;
   }
 
   &:not(.search-input-play-hidden) {
-    width: 40rem;
-    outline-color: #fff;
-    background-color: #fff;
+    @apply w-full bg-white-light;
+    @apply xl:w-[41rem];
   }
 }
 
 .search-play-icon {
-  color: rgb(255 211 28 / var(--tw-bg-opacity));
-  cursor: pointer;
-  margin-right: 1rem;
-  position: relative;
-  z-index: 9;
+  @apply relative mx-4 top-2 cursor-pointer z-10 transition-colors;
+
+  .search-input-play-hidden + & {
+    @apply xl:text-yellow;
+  }
 }
 
 .main-navigation .navigation-content .items-container.opened {
-  flex-direction: row;
-
-  @media (max-width: 1280px) {
-    flex-direction: column;
-  }
+  @apply flex-col;
+  @apply xl:flex-row;
 }

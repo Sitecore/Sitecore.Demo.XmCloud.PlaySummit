@@ -9,7 +9,7 @@ import { queryClient } from '../../helpers/ContentSearchHelper';
 const SearchResults = withQueryParams(SearchResultsContainer, ['q', 'tab']);
 
 const Search = (): JSX.Element => (
-  <div className="search-main-container">
+  <div className="search-main-container container">
     <SearchResults />
   </div>
 );

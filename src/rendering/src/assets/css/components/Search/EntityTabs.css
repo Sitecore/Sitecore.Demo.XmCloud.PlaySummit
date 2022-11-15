@@ -1,13 +1,8 @@
 .entity-tabs {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  @apply flex flex-col;
 
   .entity-tabs-list {
-    width: 50%;
-    align-self: center;
-    flex-shrink: 0;
-    display: flex;
-    overflow: hidden;
+    @apply flex flex-wrap self-center w-full;
+    @apply lg:w-auto;
   }
 }

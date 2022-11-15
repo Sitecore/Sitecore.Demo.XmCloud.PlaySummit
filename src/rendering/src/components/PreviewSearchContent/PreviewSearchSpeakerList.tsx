@@ -10,8 +10,8 @@ const PreviewSearchSpeakerList = (props: SpeakerListProps): JSX.Element => {
 
   return (
     <section className="speaker-list item-grid">
-      <span className="speaker-list-title">
-        Speakers
+      <span className="search-list-title speaker-list-title">
+        <span>Speakers</span>
         <a href={`${resultsUrl}&tab=speaker`} className="view-all">
           View All
         </a>

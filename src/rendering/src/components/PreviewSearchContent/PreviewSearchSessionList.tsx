@@ -10,8 +10,8 @@ const PreviewSearchSessionList = (props: SessionListProps): JSX.Element => {
 
   return (
     <section className="session-list item-grid sessions-grid">
-      <span className="session-list-title">
-        Sessions
+      <span className="search-list-title session-list-title">
+        <span>Sessions</span>
         <a href={`${resultsUrl}&tab=session`} className="view-all">
           View All
         </a>

@@ -1,15 +1,9 @@
 .search-filters {
-  @apply mx-auto flex items-center pb-5;
+  @apply flex flex-col gap-2 mb-10 text-sm;
+  @apply sm:flex-row sm:items-center;
 
   .search-filters-list {
-    @apply flex;
-
-    select {
-      margin: 0 8px;
-    }
-  }
-
-  & > div {
-    padding: 0 8px;
+    @apply flex flex-col gap-2;
+    @apply xs:flex-row;
   }
 }

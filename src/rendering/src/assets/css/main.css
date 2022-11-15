@@ -117,15 +117,11 @@
 @import './components/PreviewSearchContent/PreviewSearch.css';
 @import './components/PreviewSearchContent/SearchInput.css';
 @import './components/PreviewSearchContent/SuggestionList.css';
-@import './components/PreviewSearchContent/SessionList.css';
 @import './components/PreviewSearchContent/SessionCard.css';
-@import './components/PreviewSearchContent/SpeakerList.css';
 @import './components/PreviewSearchContent/SpeakerCard.css';
 @import './components/PreviewSearchContent/NewsCard.css';
-@import './components/PreviewSearchContent/NewsList.css';
 
 /* Sitecore Search */
-@import './components/Search/Search.css';
 @import './components/Search/EntityTabs.css';
 @import './components/Search/EntityTab.css';
 @import './components/Search/EntityTabContent.css';
