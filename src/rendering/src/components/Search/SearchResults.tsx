@@ -24,11 +24,10 @@ const SearchResults = (props: SearchResultsProps): JSX.Element => {
     [router]
   );
 
-  const headerText = keyphrase ? `Results for: "${keyphrase}"` : 'Search Results';
-
   return (
     <div className="search-results">
-      <div className="search-results-header">
+      <div className="search-results-header">Search Results</div>
+      <div className="search-results-header-search">
         <PreviewSearchContextProvider defaultKeyphrase={keyphrase}>
           <PreviewSearchInput
             placeholder="Search..."
@@ -38,7 +37,6 @@ const SearchResults = (props: SearchResultsProps): JSX.Element => {
           <PreviewSearchIcon onClick={onSearch} className="search-results-header-search-icon" />
         </PreviewSearchContextProvider>
       </div>
-      <div className="search-results-header">{headerText}</div>
       <SearchFilters
         options={props.filterOptions}
         onChange={onChangeFilter}
