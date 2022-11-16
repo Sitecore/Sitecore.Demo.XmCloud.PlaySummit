@@ -20,3 +20,7 @@ footer {
 .container.container-fullwidth {
   @apply max-w-full;
 }
+
+.summit-main-container {
+  @apply w-full;
+}
