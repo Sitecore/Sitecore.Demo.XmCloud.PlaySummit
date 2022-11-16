@@ -1,10 +1,10 @@
 import React, { PropsWithChildren, useEffect } from 'react';
 import Head from 'next/head';
 import { logViewEvent } from '../../services/BoxeverService';
-import Footer, { FooterProps } from '../Navigation/Footer';
+import { Default as Footer, FooterProps } from '../Navigation/Footer';
 import HeaderContent, { HeaderContentProps } from '../Navigation/HeaderContent';
 import HeaderCdpMessageBar from '../HeaderCdpMessageBar';
-import MainNavigation, { MainNavigationProps } from '../Navigation/MainNavigation';
+import { Default as MainNavigation, MainNavigationProps } from '../Navigation/MainNavigation';
 
 const SummitLayout = (props: PropsWithChildren): JSX.Element => {
   useEffect(() => {
