@@ -20,7 +20,7 @@ const filters: { id: 'schedule' | 'rooms'; name: string }[] = [
 const SearchFilters = (props: SearchFiltersProps): JSX.Element => {
   return (
     <div className={`search-filters ${props.className || ''}`}>
-      <span>Filter by:</span>
+      <label>Filter by:</label>
       <div className="search-filters-list">
         {filters.map(({ id, name }) => (
           <SearchFilter

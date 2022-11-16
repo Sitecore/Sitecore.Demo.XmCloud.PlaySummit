@@ -9,7 +9,7 @@ import { SEARCH_PAGE } from '../../helpers/ContentSearchHelper';
 
 const PreviewSearchContent = (): JSX.Element => {
   const { events, push, pathname } = useRouter();
-  const [openPreviewSearch, setPreviewSearchOpen] = useState(false);
+  const [previewSearchOpen, setPreviewSearchOpen] = useState(false);
   const ref = useRef(null);
   const inputRef = useRef(null);
 
@@ -25,10 +25,10 @@ const PreviewSearchContent = (): JSX.Element => {
   }, [events, onClose]);
 
   useEffect(() => {
-    if (openPreviewSearch && inputRef.current) {
+    if (previewSearchOpen && inputRef.current) {
       inputRef.current.focus();
     }
-  }, [openPreviewSearch]);
+  }, [previewSearchOpen]);
 
   const onRedirect = useCallback(
     (keyphrase: string) => {
@@ -39,15 +39,21 @@ const PreviewSearchContent = (): JSX.Element => {
 
   const onSearchIconClick = useCallback(
     (keyphrase: string) => {
-      setPreviewSearchOpen((openPreviewSearch) => {
-        if (openPreviewSearch) {
+      setPreviewSearchOpen((previewSearchOpen) => {
+        if (previewSearchOpen) {
           onRedirect(keyphrase);
         }
-        return !openPreviewSearch;
+        return !previewSearchOpen;
       });
     },
     [onRedirect]
   );
+
+  const onInputFocus = useCallback(() => {
+    if (!previewSearchOpen) {
+      setPreviewSearchOpen(true);
+    }
+  }, [previewSearchOpen]);
 
   ClickOutside([ref], onClose);
 
@@ -59,12 +65,13 @@ const PreviewSearchContent = (): JSX.Element => {
   return (
     <div ref={ref}>
       <PreviewSearchContextProvider>
-        {openPreviewSearch && <PreviewSearchContainer />}
+        {previewSearchOpen && <PreviewSearchContainer />}
         <PreviewSearchInput
           ref={inputRef}
           placeholder="Search content"
           onEnter={onRedirect}
-          className={`search-input-play ${!openPreviewSearch ? 'search-input-play-hidden' : ''}`}
+          className={`search-input-play ${!previewSearchOpen ? 'search-input-play-hidden' : ''}`}
+          onFocus={onInputFocus}
         />
         <PreviewSearchIcon onClick={onSearchIconClick} className="search-play-icon" />
       </PreviewSearchContextProvider>
