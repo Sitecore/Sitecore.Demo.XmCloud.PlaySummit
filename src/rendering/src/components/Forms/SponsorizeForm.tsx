@@ -2,13 +2,16 @@ import { FormEvent, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { identifyVisitor } from '../../services/CdpService';
 import { getUserData } from '../../helpers/GuestDataHelper';
+import { ComponentProps } from 'lib/component-props';
 
-const SponsorizeForm = (): JSX.Element => {
+const SponsorizeForm = (props: ComponentProps): JSX.Element => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+
+  const sxaStyles = `${props.params?.styles || ''}`;
 
   useEffect(() => {
     const setUserData = async () => {
@@ -129,10 +132,10 @@ const SponsorizeForm = (): JSX.Element => {
   const formContent = isFormSubmitted ? thankYouMessage : form;
 
   return (
-    <form className="form request-info-form" onSubmit={handleFormSubmit}>
+    <form className={`form request-info-form ${sxaStyles}`} onSubmit={handleFormSubmit}>
       {formContent}
     </form>
   );
 };
 
-export default SponsorizeForm;
+export const Default = SponsorizeForm;

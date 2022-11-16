@@ -19,29 +19,33 @@ type NewsDetailProps = ComponentProps & {
   };
 };
 
-const NewsDetail = (props: NewsDetailProps): JSX.Element => (
-  <section className="section news-detail">
-    <div className="section-content left-content">
-      <div className="container">
-        <div className="left-column">
-          <Image field={props.fields?.Image} alt={props.fields?.Title?.value} />
-        </div>
-        <div className="right-column">
-          <DateField
-            tag="h3"
-            className="news-date"
-            field={props.fields?.PublishDate}
-            render={newsDateFormatter}
-          />
-          <Text tag="h2" className="news-title" field={props.fields?.Title} />
-          <RichText tag="div" className="news-excerpt rich-text" field={props.fields?.Excerpt} />
-          <div>
-            <RichText className="rich-text" field={props.fields?.Content} />
+const NewsDetail = (props: NewsDetailProps): JSX.Element => {
+  const sxaStyles = `${props.params?.styles || ''}`;
+
+  return (
+    <section className={`section news-detail ${sxaStyles}`}>
+      <div className="section-content left-content">
+        <div className="container">
+          <div className="left-column">
+            <Image field={props.fields?.Image} alt={props.fields?.Title?.value} />
+          </div>
+          <div className="right-column">
+            <DateField
+              tag="h3"
+              className="news-date"
+              field={props.fields?.PublishDate}
+              render={newsDateFormatter}
+            />
+            <Text tag="h2" className="news-title" field={props.fields?.Title} />
+            <RichText tag="div" className="news-excerpt rich-text" field={props.fields?.Excerpt} />
+            <div>
+              <RichText className="rich-text" field={props.fields?.Content} />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
-export default NewsDetail;
+export const Default = NewsDetail;

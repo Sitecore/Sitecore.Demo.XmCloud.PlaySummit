@@ -28,4 +28,4 @@ const HeaderBanner = (props: HeaderBannerProps): JSX.Element => {
   );
 };
 
-export default withDatasourceCheck()<HeaderBannerProps>(HeaderBanner);
+export const Default = withDatasourceCheck()<HeaderBannerProps>(HeaderBanner);

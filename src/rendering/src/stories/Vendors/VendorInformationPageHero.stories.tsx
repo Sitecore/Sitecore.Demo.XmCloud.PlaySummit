@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import VendorInformationPageHero from '../../components/Vendors/VendorInformationPageHero';
+import { Default as VendorInformationPageHero } from '../../components/Vendors/VendorInformationPageHero';
 
 export default {
   title: 'Components/Vendors/VendorInformationPageHero',

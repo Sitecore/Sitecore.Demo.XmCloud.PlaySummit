@@ -1,6 +1,6 @@
 import { Field, RichText } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
-import SessionList from '../Sessions/SessionList';
+import { Default as SessionList } from '../Sessions/SessionList';
 import { GraphQLSession } from 'src/types/session';
 
 export type SponsorInformationProps = ComponentProps & {
@@ -17,6 +17,8 @@ export type SponsorInformationProps = ComponentProps & {
 };
 
 const SponsorInformation = (props: SponsorInformationProps): JSX.Element => {
+  const sxaStyles = `${props.params?.styles || ''}`;
+
   const SessionListSidebar =
     props.fields.data?.contextItem?.sessions?.targetItems?.length > 0 ? (
       <>
@@ -31,7 +33,7 @@ const SponsorInformation = (props: SponsorInformationProps): JSX.Element => {
     );
 
   return (
-    <section className="section information-section">
+    <section className={`section information-section ${sxaStyles}`}>
       <div className="section-content container">
         <div className="information-grid">
           <div className="main-col">
@@ -45,4 +47,4 @@ const SponsorInformation = (props: SponsorInformationProps): JSX.Element => {
   );
 };
 
-export default SponsorInformation;
+export const Default = SponsorInformation;

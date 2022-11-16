@@ -17,7 +17,7 @@ type SectionProps = ComponentWithChildrenProps & {
 };
 
 const Section = (props: SectionProps): JSX.Element => {
-  const sectionStyles = `${props.params?.styles || ''}`;
+  const sxaStyles = `${props.params?.styles || ''}`;
 
   const titleAndContent = props.fields && (
     <>
@@ -37,7 +37,7 @@ const Section = (props: SectionProps): JSX.Element => {
   );
 
   return (
-    <section className={`section ${sectionStyles}`}>
+    <section className={`section ${sxaStyles}`}>
       <div className="section-content container">
         {titleAndContent}
         {placeholder}

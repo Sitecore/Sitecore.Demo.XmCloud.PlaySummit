@@ -12,7 +12,7 @@ SharedFields:
   Value: "font-style:italic; font-size:0.85em; color: gray;"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
+  Value: 0
 Languages:
 - Language: en
   Versions:
@@ -20,4 +20,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "453b6e3b-9fa9-41d0-aca9-57a5ed3f935a"
+      Value: "dfbefdb0-7458-46c5-8b63-3c99af18888a"

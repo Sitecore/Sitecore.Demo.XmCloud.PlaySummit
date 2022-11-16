@@ -1,6 +1,6 @@
 import { ComponentProps } from 'lib/component-props';
 import { Field, RichText } from '@sitecore-jss/sitecore-jss-nextjs';
-import SessionList from '../Sessions/SessionList';
+import { Default as SessionList } from '../Sessions/SessionList';
 import { GraphQLSession } from 'src/types/session';
 
 export type SpeakerInformationProps = ComponentProps & {
@@ -17,6 +17,8 @@ export type SpeakerInformationProps = ComponentProps & {
 };
 
 const SpeakerInformation = (props: SpeakerInformationProps): JSX.Element => {
+  const sxaStyles = `${props.params?.styles || ''}`;
+
   const sessions =
     props.fields?.data?.contextItem?.sessions?.targetItems &&
     props.fields.data.contextItem.sessions.targetItems.length > 0 ? (
@@ -29,7 +31,7 @@ const SpeakerInformation = (props: SpeakerInformationProps): JSX.Element => {
     );
 
   return (
-    <section className="section information-section">
+    <section className={`section information-section ${sxaStyles}`}>
       <div className="section-content container">
         <div className="information-grid">
           <div className="main-col">
@@ -46,4 +48,4 @@ const SpeakerInformation = (props: SpeakerInformationProps): JSX.Element => {
   );
 };
 
-export default SpeakerInformation;
+export const Default = SpeakerInformation;

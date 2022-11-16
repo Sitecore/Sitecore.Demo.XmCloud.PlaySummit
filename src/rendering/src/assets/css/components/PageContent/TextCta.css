@@ -1,5 +1,5 @@
 .text-cta {
-  @apply bg-black p-7;
+  @apply basis-full bg-black p-7;
 
   .cta-content {
     @apply text-center;

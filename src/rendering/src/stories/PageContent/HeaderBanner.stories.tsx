@@ -1,7 +1,10 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import HeaderBanner, { HeaderBannerProps } from '../../components/PageContent/HeaderBanner';
+import {
+  Default as HeaderBanner,
+  HeaderBannerProps,
+} from '../../components/PageContent/HeaderBanner';
 
 export default {
   title: 'Components/PageContent/HeaderBanner',

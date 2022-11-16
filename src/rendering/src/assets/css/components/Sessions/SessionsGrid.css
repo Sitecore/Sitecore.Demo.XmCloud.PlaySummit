@@ -1,5 +1,5 @@
 .item-grid.sessions-grid {
-  @apply max-w-screen-2xl mx-auto box-border overflow-hidden;
+  @apply basis-full max-w-screen-2xl mx-auto box-border overflow-hidden;
 
   .grid-content {
     @apply sm:grid-cols-1;

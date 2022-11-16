@@ -1,7 +1,10 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import MainNavigation, { MainNavigationProps } from '../../components/Navigation/MainNavigation';
+import {
+  Default as MainNavigation,
+  MainNavigationProps,
+} from '../../components/Navigation/MainNavigation';
 import { mockMainNavigationFields } from '../Pages/PageStoriesCommon';
 
 export default {

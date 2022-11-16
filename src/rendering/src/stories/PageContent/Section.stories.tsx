@@ -1,14 +1,14 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Default } from '../../components/PageContent/Section';
-import SpeakersGrid, { SpeakersGridProps } from '../../components/Speakers/SpeakersGrid';
+import { Default as Section } from '../../components/PageContent/Section';
+import { Default as SpeakersGrid, SpeakersGridProps } from '../../components/Speakers/SpeakersGrid';
 import { GraphQLSpeaker } from 'src/types/speaker';
 
 export default {
   title: 'Components/PageContent/Section',
-  component: Default,
-} as ComponentMeta<typeof Default>;
+  component: Section,
+} as ComponentMeta<typeof Section>;
 
 const speakerImage = {
   jsonValue: {
@@ -47,10 +47,10 @@ const speakerProps = {
   },
 } as SpeakersGridProps;
 
-const Template: ComponentStory<typeof Default> = (args) => (
-  <Default {...args}>
+const Template: ComponentStory<typeof Section> = (args) => (
+  <Section {...args}>
     <SpeakersGrid {...speakerProps} />
-  </Default>
+  </Section>
 );
 
 export const Light = Template.bind({});

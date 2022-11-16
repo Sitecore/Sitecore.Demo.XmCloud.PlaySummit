@@ -1,7 +1,8 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import SpeakerInformation, {
+import {
+  Default as SpeakerInformation,
   SpeakerInformationProps,
 } from '../../components/Speakers/SpeakerInformation';
 import { SESSIONS } from '../mock-sessions';
