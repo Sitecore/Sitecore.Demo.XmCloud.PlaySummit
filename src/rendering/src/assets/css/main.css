@@ -114,24 +114,24 @@
 @import './components/PreviewSearch/PreviewSearch.css';
 
 /* Sitecore Search - PreviewSearchContent */
-@import './components/PreviewSearchContent/PreviewSearch.css';
-@import './components/PreviewSearchContent/SearchInput.css';
-@import './components/PreviewSearchContent/SuggestionList.css';
+@import './components/PreviewSearchContent/NewsCard.css';
+@import './components/PreviewSearchContent/PreviewSearchContent.css';
+@import './components/PreviewSearchContent/PreviewSearchIcon.css';
+@import './components/PreviewSearchContent/PreviewSearchInput.css';
 @import './components/PreviewSearchContent/SessionCard.css';
 @import './components/PreviewSearchContent/SpeakerCard.css';
-@import './components/PreviewSearchContent/NewsCard.css';
-@import './components/PreviewSearchContent/PreviewSearchIcon.css';
+@import './components/PreviewSearchContent/SuggestionList.css';
 
 /* Sitecore Search */
-@import './components/Search/EntityTabs.css';
-@import './components/Search/EntityTab.css';
-@import './components/Search/EntityTabContent.css';
-@import './components/Search/Filter.css';
-@import './components/Search/Filters.css';
-@import './components/Search/Facets.css';
-@import './components/Search/Results.css';
-@import './components/Search/ResultsTab.css';
-@import './components/Search/Pagination.css';
+@import './components/Search/SearchEntityTab.css';
+@import './components/Search/SearchEntityTabContent.css';
+@import './components/Search/SearchEntityTabs.css';
+@import './components/Search/SearchFacets.css';
+@import './components/Search/SearchFilter.css';
+@import './components/Search/SearchFilters.css';
+@import './components/Search/SearchPagination.css';
+@import './components/Search/SearchResults.css';
+@import './components/Search/SearchResultsTab.css';
 
 /* Products */
 @import './components/Products/CategoriesList.css';
