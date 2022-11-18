@@ -2,7 +2,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import React from 'react';
 
 import SearchResultsTab from '../../components/Search/SearchResultsTab';
-import { defaultArgs } from './ResultsTabArgs';
+import { mockSearchResultsTabCommonArgs } from './ResultsTabArgs';
 
 export default {
   title: 'Components/Search/SearchResultsTab',
@@ -15,5 +15,5 @@ const Template: ComponentStory<typeof SearchResultsTab> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  ...defaultArgs,
+  ...mockSearchResultsTabCommonArgs,
 };

@@ -3,7 +3,7 @@ import React from 'react';
 
 import SearchSpeakerResultsTab from '../../components/Search/SearchSpeakerResultsTab';
 import { ContentSearchSpeaker } from '../../interfaces/contentSearch/ContentSearchSpeaker';
-import { defaultArgs } from './ResultsTabArgs';
+import { mockSearchResultsTabCommonArgs } from './ResultsTabArgs';
 
 export default {
   title: 'Components/Search/SearchSpeakerResultsTab',
@@ -102,6 +102,6 @@ const items = [
 ] as ContentSearchSpeaker[];
 
 Default.args = {
-  ...defaultArgs,
+  ...mockSearchResultsTabCommonArgs,
   items,
 };

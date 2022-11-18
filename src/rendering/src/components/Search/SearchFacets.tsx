@@ -85,41 +85,41 @@ const SearchFacets = (props: SearchFacetsProps): JSX.Element => {
         onFacetValueClick={props.onFacetValueClick}
       >
         {facetNames.map((f) => (
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
-          <AccordionFacets.Facet className="search-facets-root-facet" key={f} facetId={f}>
-            <AccordionFacets.Header className="search-facets-root-facet-header">
-              <AccordionFacets.Trigger className="search-facets-root-facet-trigger">
-                {props.facets[f].label}
-              </AccordionFacets.Trigger>
-              <FontAwesomeIcon icon={faChevronDown} />
-            </AccordionFacets.Header>
-            <AccordionFacets.Content className="search-facets-root-facet-content">
-              <AccordionFacets.ValueList className="search-facets-root-facet-list">
-                {props.facets[f].value.map((v, index) => (
-                  <AccordionFacets.Item
-                    className="search-facets-root-facet-item"
-                    key={v.id}
-                    selected={
-                      !!props.filters.find(
-                        ({ facetId: fId, facetValueId: fvId }) => fId === f && fvId === v.id
-                      )
-                    }
-                    {...{ index, facetValueId: v.id }}
-                  >
-                    <AccordionFacets.ItemCheckbox className="search-facets-root-facet-checkbox">
-                      <AccordionFacets.ItemCheckboxIndicator className="search-facets-root-facet-checkbox-indicator">
-                        <FontAwesomeIcon icon={faCheck} />
-                      </AccordionFacets.ItemCheckboxIndicator>
-                    </AccordionFacets.ItemCheckbox>
-                    <AccordionFacets.ItemLabel className="search-facets-root-facet-checkbox-label">
-                      {getFacetLabel(v)} {v.count && `(${v.count})`}
-                    </AccordionFacets.ItemLabel>
-                  </AccordionFacets.Item>
-                ))}
-              </AccordionFacets.ValueList>
-            </AccordionFacets.Content>
-          </AccordionFacets.Facet>
+          <div className="search-facets-root-facet" key={f}>
+            <AccordionFacets.Facet facetId={f}>
+              <AccordionFacets.Header className="search-facets-root-facet-header">
+                <AccordionFacets.Trigger className="search-facets-root-facet-trigger">
+                  {props.facets[f].label}
+                </AccordionFacets.Trigger>
+                <FontAwesomeIcon icon={faChevronDown} />
+              </AccordionFacets.Header>
+              <AccordionFacets.Content className="search-facets-root-facet-content">
+                <AccordionFacets.ValueList className="search-facets-root-facet-list">
+                  {props.facets[f].value.map((v, index) => (
+                    <AccordionFacets.Item
+                      className="search-facets-root-facet-item"
+                      key={v.id}
+                      selected={
+                        !!props.filters.find(
+                          ({ facetId: fId, facetValueId: fvId }) => fId === f && fvId === v.id
+                        )
+                      }
+                      {...{ index, facetValueId: v.id }}
+                    >
+                      <AccordionFacets.ItemCheckbox className="search-facets-root-facet-checkbox">
+                        <AccordionFacets.ItemCheckboxIndicator className="search-facets-root-facet-checkbox-indicator">
+                          <FontAwesomeIcon icon={faCheck} />
+                        </AccordionFacets.ItemCheckboxIndicator>
+                      </AccordionFacets.ItemCheckbox>
+                      <AccordionFacets.ItemLabel className="search-facets-root-facet-checkbox-label">
+                        {getFacetLabel(v)} {v.count && `(${v.count})`}
+                      </AccordionFacets.ItemLabel>
+                    </AccordionFacets.Item>
+                  ))}
+                </AccordionFacets.ValueList>
+              </AccordionFacets.Content>
+            </AccordionFacets.Facet>
+          </div>
         ))}
       </AccordionFacets.Root>
     </>

@@ -3,7 +3,7 @@ import React from 'react';
 
 import SearchSponsorResultsTab from '../../components/Search/SearchSponsorResultsTab';
 import { ContentSearchSponsor } from '../../interfaces/contentSearch/ContentSearchSponsor';
-import { defaultArgs } from './ResultsTabArgs';
+import { mockSearchResultsTabCommonArgs } from './ResultsTabArgs';
 
 export default {
   title: 'Components/Search/SearchSponsorResultsTab',
@@ -93,6 +93,6 @@ const items = [
 ] as ContentSearchSponsor[];
 
 Default.args = {
-  ...defaultArgs,
+  ...mockSearchResultsTabCommonArgs,
   items,
 };

@@ -3,7 +3,7 @@ import React from 'react';
 
 import SearchSessionResultsTab from '../../components/Search/SearchSessionResultsTab';
 import { ContentSearchSession } from '../../interfaces/contentSearch/ContentSearchSession';
-import { defaultArgs } from './ResultsTabArgs';
+import { mockSearchResultsTabCommonArgs } from './ResultsTabArgs';
 
 export default {
   title: 'Components/Search/SearchSessionResultsTab',
@@ -110,6 +110,6 @@ const items = [
   },
 ] as ContentSearchSession[];
 Default.args = {
-  ...defaultArgs,
+  ...mockSearchResultsTabCommonArgs,
   items,
 };

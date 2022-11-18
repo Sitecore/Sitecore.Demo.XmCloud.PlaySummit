@@ -3,7 +3,7 @@ import React from 'react';
 
 import SearchNewsResultsTab from '../../components/Search/SearchNewsResultsTab';
 import { ContentSearchNews } from '../../interfaces/contentSearch/ContentSearchNews';
-import { defaultArgs } from './ResultsTabArgs';
+import { mockSearchResultsTabCommonArgs } from './ResultsTabArgs';
 
 export default {
   title: 'Components/Search/SearchNewsResultsTab',
@@ -81,6 +81,6 @@ const items = [
 ] as ContentSearchNews[];
 
 Default.args = {
-  ...defaultArgs,
+  ...mockSearchResultsTabCommonArgs,
   items,
 };

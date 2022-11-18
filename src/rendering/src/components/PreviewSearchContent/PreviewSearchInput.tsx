@@ -15,7 +15,6 @@ const onKeyphraseChangeDebounced = debounce(
   (value: string, onKeyphraseChange: (value: string) => void) => onKeyphraseChange(value),
   500
 );
-// eslint-disable-next-line react/display-name
 const PreviewSearchInput = forwardRef<HTMLInputElement, PreviewSearchInputProps>(
   (
     { onFocus, onBlur, placeholder, onKeyphraseChange, className, onEnter },
@@ -54,5 +53,6 @@ const PreviewSearchInput = forwardRef<HTMLInputElement, PreviewSearchInputProps>
     );
   }
 );
+PreviewSearchInput.displayName = 'PreviewSearchInput';
 
 export default PreviewSearchInput;

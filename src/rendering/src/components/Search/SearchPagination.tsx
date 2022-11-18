@@ -38,7 +38,7 @@ const SearchPagination = (props: SearchPaginationProps): JSX.Element => {
       <Pagination.Pages className="search-pagination-pages">
         {
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore This is something we have to fix in our SDK
+          // @ts-ignore This is something Sitecore Search has to fix in their SDK
           ({ pages }) =>
             pages.map(({ page }) => (
               <Pagination.Page

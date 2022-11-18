@@ -1,6 +1,6 @@
 import { facetsProp, filtersProp } from '../mock-search-data';
 
-export const defaultArgs = {
+export const mockSearchResultsTabCommonArgs = {
   facets: facetsProp,
   filters: filtersProp,
   sortOptions: [

@@ -25,18 +25,16 @@ const generatePages = (totalPages: number, currentPage: number): Array<Page> => 
   return pages;
 };
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const usePagination = ({
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
   onPageChange,
   totalPages = 0,
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
   defaultCurrentPage,
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
   currentPage,
+}: {
+  onPageChange: (state: number) => void;
+  totalPages: number;
+  defaultCurrentPage: number;
+  currentPage: number;
 }): Pagination => {
   const [page = currentPage || defaultCurrentPage || 1, setPage] =
     ControllableStateHook.useControllableState<number>({

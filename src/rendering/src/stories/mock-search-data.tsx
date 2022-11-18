@@ -335,3 +335,36 @@ export const filtersProp = [
       'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYXVkaWVuY2UiLCJ2YWx1ZSI6IkZpdG5lc3MgRmFuYXRpYyJ9',
   },
 ];
+
+export const tabsProp = [
+  {
+    id: 'session',
+    name: 'Sessions (8)',
+    color: '#3d93ff',
+    Component: (): JSX.Element => <div>Sessions component</div>,
+  },
+  {
+    id: 'speaker',
+    name: 'Speakers (6)',
+    color: '#ff8d02',
+    Component: (): JSX.Element => <div>Speakers component</div>,
+  },
+  {
+    id: 'vendor',
+    name: 'Vendors (3)',
+    color: '#ff1a87',
+    Component: (): JSX.Element => <div>Vendors component</div>,
+  },
+  {
+    id: 'sponsor',
+    name: 'Sponsors (1)',
+    color: '#ffd51d',
+    Component: (): JSX.Element => <div>Sponsors component</div>,
+  },
+  {
+    id: 'content',
+    name: 'News (10)',
+    color: '#000',
+    Component: (): JSX.Element => <div>News Articles component</div>,
+  },
+];

@@ -3,7 +3,7 @@ import React from 'react';
 
 import SearchVendorResultsTab from '../../components/Search/SearchVendorResultsTab';
 import { ContentSearchVendor } from '../../interfaces/contentSearch/ContentSearchVendor';
-import { defaultArgs } from './ResultsTabArgs';
+import { mockSearchResultsTabCommonArgs } from './ResultsTabArgs';
 
 export default {
   title: 'Components/Search/SearchVendorResultsTab',
@@ -115,6 +115,6 @@ const items = [
 ] as ContentSearchVendor[];
 
 Default.args = {
-  ...defaultArgs,
+  ...mockSearchResultsTabCommonArgs,
   items,
 };
