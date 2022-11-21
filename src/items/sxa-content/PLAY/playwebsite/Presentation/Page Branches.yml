@@ -6,32 +6,7 @@ Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches
 SharedFields:
 - ID: "bb3391dd-f8be-4b2e-ae9f-47bb63c166ce"
   Hint: Rule
-  Value: |
-    <ruleset>
-      <rule
-        uid="{0C673BD6-F3DA-4096-98E4-0CD409315288}">
-        <conditions>
-          <condition
-            id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
-            uid="C5AA8DB5A87546B590D68D34213CD1BC"
-            itemid="{4D587C56-3717-41CB-936C-5D0412A50B6B}" />
-        </conditions>
-        <actions>
-          <action
-            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
-            uid="A86F09E0B35847638F97EF971943F75D"
-            PageBranchId="{03897603-E3EB-4777-B0B1-F106FDA3FF91}" />
-          <action
-            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
-            uid="FAD5E2F7DE7A46FFA11C40AC59632D3D"
-            PageBranchId="{6C07C9A2-87C4-418F-AA22-9E5D6C382E9E}" />
-          <action
-            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
-            uid="728F8B4CD7104A9AAAA64CA49BD032C4"
-            PageBranchId="{C21CB9F5-9D4C-4904-B199-538835128FA3}" />
-        </actions>
-      </rule>
-    </ruleset>
+  Value: 
 Languages:
 - Language: en
   Versions:
@@ -39,4 +14,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2b98a8c9-c7ba-42d1-9d76-3ee96bc8faaf"
+      Value: "b0ffd037-3596-433f-87a9-430a91175fa2"

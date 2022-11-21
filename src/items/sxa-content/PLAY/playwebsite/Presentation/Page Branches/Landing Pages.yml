@@ -3,6 +3,35 @@ ID: "6684887c-b3a7-4ccc-a175-fa9c0454ae6b"
 Parent: "4499d0fb-ac41-48a3-bdf1-9483305d086b"
 Template: "fbc802e5-4b9e-480f-93da-3f2a80cae5cb"
 Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches/Landing Pages
+SharedFields:
+- ID: "bb3391dd-f8be-4b2e-ae9f-47bb63c166ce"
+  Hint: Rule
+  Value: |
+    <ruleset>
+      <rule
+        uid="{0C673BD6-F3DA-4096-98E4-0CD409315288}">
+        <conditions>
+          <condition
+            id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+            uid="1D7DC83C5ECB44469E936660807E4D2D"
+            itemid="{4D587C56-3717-41CB-936C-5D0412A50B6B}" />
+        </conditions>
+        <actions>
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="D7D6713C23344FC28B8119C555B67F5A"
+            PageBranchId="{C21CB9F5-9D4C-4904-B199-538835128FA3}" />
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="2E0ABB5720EC46B198E2F68BAF134597"
+            PageBranchId="{6C07C9A2-87C4-418F-AA22-9E5D6C382E9E}" />
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="6B06AEA7F29D4BEE9EBDC75228D7A327"
+            PageBranchId="{03897603-E3EB-4777-B0B1-F106FDA3FF91}" />
+        </actions>
+      </rule>
+    </ruleset>
 Languages:
 - Language: en
   Versions:
@@ -10,4 +39,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "fafe5757-4606-407c-8556-57c369cffe0a"
+      Value: "88f642f3-59d8-4359-8d89-6aa9c8b701ff"
