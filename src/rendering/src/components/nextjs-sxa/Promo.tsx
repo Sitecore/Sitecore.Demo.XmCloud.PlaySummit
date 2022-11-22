@@ -4,17 +4,17 @@ import {
   Link as JssLink,
   RichText as JssRichText,
   ImageField,
-  Field,
   LinkField,
+  RichTextField,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface Fields {
   PromoIcon: ImageField;
   PromoIcon2: ImageField; // DEMO TEAM CUSTOMIZATION - Additional field
-  PromoText: Field<string>;
+  PromoText: RichTextField; // DEMO TEAM CUSTOMIZATION - Change to RichTextField
   PromoLink: LinkField;
-  PromoText2: Field<string>;
-  PromoText3: Field<string>; // DEMO TEAM CUSTOMIZATION - Additional field
+  PromoText2: RichTextField; // DEMO TEAM CUSTOMIZATION - Change to RichTextField
+  PromoText3: RichTextField; // DEMO TEAM CUSTOMIZATION - Additional field
 }
 
 type PromoProps = {
