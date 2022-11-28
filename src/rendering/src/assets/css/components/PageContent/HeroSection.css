@@ -78,3 +78,7 @@
     }
   }
 }
+
+.cdp-hero-wrapper {
+  @apply basis-full;
+}

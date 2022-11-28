@@ -35,7 +35,7 @@ const HeroSection = (props: HeroProps): JSX.Element => {
   // The #cdp-audience-based-home-page-hero div outerHTML will be set by Sitecore Personalize.
   // Thus, we wrap it in another div that becomes the component root element and React is happy.
   const withCdp = isCdpConfigured && (
-    <div>
+    <div className="cdp-hero-wrapper">
       <div id="cdp-audience-based-home-page-hero"></div>
     </div>
   );
