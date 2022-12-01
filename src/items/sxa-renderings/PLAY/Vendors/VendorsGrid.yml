@@ -16,6 +16,9 @@ SharedFields:
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
   Value: 
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
 - ID: "b0b15510-b138-470e-8f33-8da2e228aafe"
   Hint: Rendering Contents Resolver
   Value: "{FC5201C0-7E5F-483C-818B-BFE8A55A5A0F}"
@@ -29,4 +32,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7819a792-04ce-4b72-b782-1f8d2a2daacf"
+      Value: "869b4ca1-5f9b-4734-a8ff-9c8bfff7b4d9"

@@ -37,4 +37,4 @@ const Header = (props: HeaderProps): JSX.Element => {
   return <HeaderContent pathname={pathname} asPath={asPath} query={query} {...props} />;
 };
 
-export default Header;
+export const Default = Header;

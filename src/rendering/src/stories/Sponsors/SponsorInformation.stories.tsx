@@ -2,7 +2,8 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { SESSIONS } from '../mock-sessions';
 
-import SponsorInformation, {
+import {
+  Default as SponsorInformation,
   SponsorInformationProps,
 } from '../../components/Sponsors/SponsorInformation';
 import { GraphQLSession } from '../../types/session';

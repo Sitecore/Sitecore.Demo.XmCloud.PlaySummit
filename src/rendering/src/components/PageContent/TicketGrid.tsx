@@ -2,9 +2,11 @@ import Link from 'next/link';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { TICKETS } from '../../models/mock-tickets';
+import { ComponentProps } from 'lib/component-props';
 
-const TicketGrid = (): JSX.Element => {
+const TicketGrid = (props: ComponentProps): JSX.Element => {
   const ticketsToDisplay = TICKETS.filter((ticket) => !ticket.isUpgrade);
+  const sxaStyles = `${props.params?.styles || ''}`;
 
   const tickets =
     ticketsToDisplay &&
@@ -36,7 +38,7 @@ const TicketGrid = (): JSX.Element => {
       </div>
     ));
 
-  return <section className="container ticket-grid">{tickets}</section>;
+  return <section className={`container ticket-grid ${sxaStyles}`}>{tickets}</section>;
 };
 
-export default TicketGrid;
+export const Default = TicketGrid;

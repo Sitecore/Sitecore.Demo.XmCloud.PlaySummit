@@ -17,6 +17,8 @@ type TestimonyListProps = ComponentProps & {
 };
 
 const TestimonyList = (props: TestimonyListProps): JSX.Element => {
+  const sxaStyles = `${props.params?.styles || ''}`;
+
   const testimonies =
     props.fields.Companies &&
     props.fields.Companies.map((company, index) => (
@@ -39,7 +41,7 @@ const TestimonyList = (props: TestimonyListProps): JSX.Element => {
     ));
 
   return (
-    <section className="section section-testimonies">
+    <section className={`section section-testimonies ${sxaStyles}`}>
       <div className="section-content container">
         <Text tag="h2" className="section-content-title" field={props.fields.Title} />
         <Text tag="p" className="section-content-p" field={props.fields.Subtitle} />
@@ -49,4 +51,4 @@ const TestimonyList = (props: TestimonyListProps): JSX.Element => {
   );
 };
 
-export default withDatasourceCheck()<TestimonyListProps>(TestimonyList);
+export const Default = withDatasourceCheck()<TestimonyListProps>(TestimonyList);

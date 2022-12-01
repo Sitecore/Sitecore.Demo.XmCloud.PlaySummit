@@ -20,6 +20,8 @@ export type HeroProps = ComponentProps & {
 };
 
 const HeroSection = (props: HeroProps): JSX.Element => {
+  const sxaStyles = `${props.params?.styles || ''}`;
+
   const css = `@media (min-width: 768px) {
   .hero_${props.rendering.uid} {
     background-image: url(${props.fields.Hero?.value?.src});
@@ -33,7 +35,7 @@ const HeroSection = (props: HeroProps): JSX.Element => {
   // The #cdp-audience-based-home-page-hero div outerHTML will be set by Sitecore Personalize.
   // Thus, we wrap it in another div that becomes the component root element and React is happy.
   const withCdp = isCdpConfigured && (
-    <div>
+    <div className="cdp-hero-wrapper">
       <div id="cdp-audience-based-home-page-hero"></div>
     </div>
   );
@@ -41,7 +43,7 @@ const HeroSection = (props: HeroProps): JSX.Element => {
   const withoutCdp = !isCdpConfigured && (
     <>
       <style suppressHydrationWarning>{css}</style>
-      <section className={`hero-section hero_${props.rendering.uid}`}>
+      <section className={`hero-section hero_${props.rendering.uid} ${sxaStyles}`}>
         <div className="hero-background"></div>
         <div className="hero-container container">
           <div className="container-content">
@@ -66,4 +68,4 @@ const HeroSection = (props: HeroProps): JSX.Element => {
   );
 };
 
-export default withDatasourceCheck()<HeroProps>(HeroSection);
+export const Default = withDatasourceCheck()<HeroProps>(HeroSection);

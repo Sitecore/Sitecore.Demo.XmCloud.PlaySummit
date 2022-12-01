@@ -96,4 +96,4 @@ const SessionList = (props: SessionListProps): JSX.Element => {
   return <>{sessions}</>;
 };
 
-export default SessionList;
+export const Default = SessionList;

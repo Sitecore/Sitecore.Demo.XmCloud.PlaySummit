@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import FeaturedSpeakers from '../../components/Speakers/FeaturedSpeakers';
+import { Default as FeaturedSpeakers } from '../../components/Speakers/FeaturedSpeakers';
 import { GraphQLSpeaker } from 'src/types/speaker';
 
 export default {

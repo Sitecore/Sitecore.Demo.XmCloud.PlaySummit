@@ -25,9 +25,11 @@ export type ThreeColumnsSectionProps = ComponentProps & {
   };
 };
 
-const ThreeColumnsSection = ({ fields }: ThreeColumnsSectionProps): JSX.Element => {
+const ThreeColumnsSection = ({ fields, params }: ThreeColumnsSectionProps): JSX.Element => {
+  const sxaStyles = `${params?.styles || ''}`;
+
   return (
-    <section className="section three-col-section">
+    <section className={`section three-col-section ${sxaStyles}`}>
       <div className="section-content col-content container">
         <h2 className="section-content-title">
           <Text field={fields.Title} />
@@ -63,4 +65,4 @@ const ThreeColumnsSection = ({ fields }: ThreeColumnsSectionProps): JSX.Element 
   );
 };
 
-export default withDatasourceCheck()<ThreeColumnsSectionProps>(ThreeColumnsSection);
+export const Default = withDatasourceCheck()<ThreeColumnsSectionProps>(ThreeColumnsSection);

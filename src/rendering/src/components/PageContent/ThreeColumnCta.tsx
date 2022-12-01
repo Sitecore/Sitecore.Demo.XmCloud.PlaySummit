@@ -12,23 +12,27 @@ type ThreeColumnCtaProps = ComponentProps & {
   };
 };
 
-const ThreeColumnCta = (props: ThreeColumnCtaProps): JSX.Element => (
-  <section className="section three-columns-cta">
-    <div className="container cta-content">
-      <div className="cta">
-        <Text tag="div" className="cta-heading" field={props.fields.leftHeading} />
-        <Text tag="div" className="cta-description" field={props.fields.leftDescription} />
-      </div>
-      <div className="cta">
-        <Text tag="div" className="cta-heading" field={props.fields.middleHeading} />
-        <Text tag="div" className="cta-description" field={props.fields.middleDescription} />
-      </div>
-      <div className="cta">
-        <Text tag="div" className="cta-heading" field={props.fields.rightHeading} />
-        <Text tag="div" className="cta-description" field={props.fields.rightDescription} />
-      </div>
-    </div>
-  </section>
-);
+const ThreeColumnCta = (props: ThreeColumnCtaProps): JSX.Element => {
+  const sxaStyles = `${props.params?.styles || ''}`;
 
-export default withDatasourceCheck()<ThreeColumnCtaProps>(ThreeColumnCta);
+  return (
+    <section className={`section three-columns-cta ${sxaStyles}`}>
+      <div className="container cta-content">
+        <div className="cta">
+          <Text tag="div" className="cta-heading" field={props.fields.leftHeading} />
+          <Text tag="div" className="cta-description" field={props.fields.leftDescription} />
+        </div>
+        <div className="cta">
+          <Text tag="div" className="cta-heading" field={props.fields.middleHeading} />
+          <Text tag="div" className="cta-description" field={props.fields.middleDescription} />
+        </div>
+        <div className="cta">
+          <Text tag="div" className="cta-heading" field={props.fields.rightHeading} />
+          <Text tag="div" className="cta-description" field={props.fields.rightDescription} />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export const Default = withDatasourceCheck()<ThreeColumnCtaProps>(ThreeColumnCta);

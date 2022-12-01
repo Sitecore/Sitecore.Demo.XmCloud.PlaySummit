@@ -24,6 +24,7 @@ function GetActiveClass(activeStep: number, index: number) {
 
 const PaymentProgress = (props: PaymentProgressProps): JSX.Element => {
   const router = useRouter();
+  const sxaStyles = `${props.params?.styles || ''}`;
 
   if (!props.fields) {
     return <RequireDatasource />;
@@ -58,7 +59,7 @@ const PaymentProgress = (props: PaymentProgressProps): JSX.Element => {
     </Link>
   ));
 
-  return <div className="payment-progress">{stepLinks}</div>;
+  return <div className={`payment-progress ${sxaStyles}`}>{stepLinks}</div>;
 };
 
-export default PaymentProgress;
+export const Default = PaymentProgress;

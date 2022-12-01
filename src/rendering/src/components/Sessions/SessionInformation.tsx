@@ -24,12 +24,13 @@ export type SessionInformationProps = ComponentProps & {
 
 const SessionInformation = (props: SessionInformationProps): JSX.Element => {
   const premiumSessionMetaValue = props.fields.Premium?.value ? 'true' : 'false';
+  const sxaStyles = `${props.params?.styles || ''}`;
 
   const speakers =
     props.fields?.Speakers && props.fields.Speakers.length > 0 ? (
       <SpeakerList speakers={props.fields.Speakers} />
     ) : (
-      <div>No speakers</div>
+      <div>No sessions</div>
     );
 
   return (
@@ -44,7 +45,7 @@ const SessionInformation = (props: SessionInformationProps): JSX.Element => {
       */}
       <SessionInformationPageHero {...props} />
 
-      <section className="section information-section">
+      <section className={`section information-section ${sxaStyles}`}>
         <div className="section-content container">
           <div className="information-grid">
             <div className="main-col">
@@ -59,4 +60,4 @@ const SessionInformation = (props: SessionInformationProps): JSX.Element => {
   );
 };
 
-export default SessionInformation;
+export const Default = SessionInformation;

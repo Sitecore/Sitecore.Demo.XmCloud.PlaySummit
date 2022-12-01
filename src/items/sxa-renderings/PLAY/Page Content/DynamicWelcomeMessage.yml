@@ -10,6 +10,9 @@ SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: edgeicons/32x32/announcement.png
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
 Languages:
 - Language: en
   Versions:
@@ -17,4 +20,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "68f1408b-99ff-4aad-9d49-7641deea5faa"
+      Value: "36e36ce4-6441-4341-92c6-52d20d19d727"

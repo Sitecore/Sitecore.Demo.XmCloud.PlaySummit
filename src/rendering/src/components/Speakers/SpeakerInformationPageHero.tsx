@@ -77,4 +77,4 @@ const SpeakerInformationPageHero = (props: SpeakerInformationPageHeroProps): JSX
   );
 };
 
-export default SpeakerInformationPageHero;
+export const Default = SpeakerInformationPageHero;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import HeroSection, { HeroProps } from '../../components/PageContent/HeroSection';
+import { Default as HeroSection, HeroProps } from '../../components/PageContent/HeroSection';
 
 export default {
   title: 'Components/PageContent/HeroSection',

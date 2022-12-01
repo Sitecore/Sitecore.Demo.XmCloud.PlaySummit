@@ -46,6 +46,9 @@ SharedFields:
       }
     }
     
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
 Languages:
 - Language: en
   Versions:
@@ -53,4 +56,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4028c16e-b997-4912-9176-f83831f94cda"
+      Value: "e65bc34f-1022-4271-9d86-282be81fda9b"
