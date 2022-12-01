@@ -13,6 +13,10 @@
     @apply w-full;
     @apply xl:container xl:px-5 xl:mx-auto xl:gap-4;
 
+    @media (min-width: 2490px) {
+      @apply !max-w-[51vw];
+    }
+
     .controls-container {
       @apply w-full flex justify-between;
       @apply xl:w-auto xl:max-w-full xl:static xl:block xl:px-0;

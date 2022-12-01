@@ -13,8 +13,20 @@ footer {
   @apply bg-gradient-to-br from-black to-black-dark;
 }
 
-.container.container-narrow {
-  @apply max-w-3xl;
+.container {
+  &:not(.container-fullwidth) {
+    @media (min-width: 2490px) {
+      @apply !max-w-[51vw];
+    }
+  }
+
+  &.container-narrow {
+    @apply max-w-3xl;
+
+    @media (min-width: 2490px) {
+      @apply !max-w-[51vw] !px-[10vw];
+    }
+  }
 }
 
 .container.container-fullwidth {
