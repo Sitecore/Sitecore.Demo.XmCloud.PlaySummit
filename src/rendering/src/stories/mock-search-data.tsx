@@ -1,3 +1,12 @@
+import {
+  AUDIENCE_FACET_TYPE,
+  CONTENT_SEARCH_RESULT_TYPE,
+  SESSION_SEARCH_RESULT_TYPE,
+  SPEAKER_SEARCH_RESULT_TYPE,
+  SPONSOR_SEARCH_RESULT_TYPE,
+  VENDOR_SEARCH_RESULT_TYPE,
+} from '../helpers/ContentSearchHelper';
+
 export const filterOptionsProp = {
   rooms: [
     {
@@ -325,12 +334,12 @@ export const facetsProp = {
 
 export const filtersProp = [
   {
-    facetId: 'audience',
+    facetId: AUDIENCE_FACET_TYPE,
     facetValueId:
       'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYXVkaWVuY2UiLCJ2YWx1ZSI6IldlZWtlbmQgV2FycmlvciJ9',
   },
   {
-    facetId: 'audience',
+    facetId: AUDIENCE_FACET_TYPE,
     facetValueId:
       'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYXVkaWVuY2UiLCJ2YWx1ZSI6IkZpdG5lc3MgRmFuYXRpYyJ9',
   },
@@ -338,31 +347,31 @@ export const filtersProp = [
 
 export const tabsProp = [
   {
-    id: 'session',
+    id: SESSION_SEARCH_RESULT_TYPE,
     name: 'Sessions (8)',
     color: '#3d93ff',
     Component: (): JSX.Element => <div>Sessions component</div>,
   },
   {
-    id: 'speaker',
+    id: SPEAKER_SEARCH_RESULT_TYPE,
     name: 'Speakers (6)',
     color: '#ff8d02',
     Component: (): JSX.Element => <div>Speakers component</div>,
   },
   {
-    id: 'vendor',
+    id: VENDOR_SEARCH_RESULT_TYPE,
     name: 'Vendors (3)',
     color: '#ff1a87',
     Component: (): JSX.Element => <div>Vendors component</div>,
   },
   {
-    id: 'sponsor',
+    id: SPONSOR_SEARCH_RESULT_TYPE,
     name: 'Sponsors (1)',
     color: '#ffd51d',
     Component: (): JSX.Element => <div>Sponsors component</div>,
   },
   {
-    id: 'content',
+    id: CONTENT_SEARCH_RESULT_TYPE,
     name: 'News (10)',
     color: '#000',
     Component: (): JSX.Element => <div>News Articles component</div>,

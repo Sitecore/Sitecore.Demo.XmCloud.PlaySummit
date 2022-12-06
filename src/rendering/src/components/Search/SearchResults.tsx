@@ -6,7 +6,7 @@ import { SearchContext } from './SearchProvider';
 import PreviewSearchInput from '../PreviewSearchContent/PreviewSearchInput';
 import PreviewSearchIcon from '../PreviewSearchContent/PreviewSearchIcon';
 import PreviewSearchContextProvider from '../PreviewSearchContent/PreviewSearchContextProvider';
-import { SEARCH_PAGE } from '../../helpers/ContentSearchHelper';
+import { SEARCH_PAGE, SESSION_SEARCH_RESULT_TYPE } from '../../helpers/ContentSearchHelper';
 
 type SearchResultsProps = PropsWithChildren & {
   selectedTab: string;
@@ -43,7 +43,7 @@ const SearchResults = (props: SearchResultsProps): JSX.Element => {
         className="search-results-filters"
       />
       <SearchEntityTabs
-        selected={props.selectedTab || 'session'}
+        selected={props.selectedTab || SESSION_SEARCH_RESULT_TYPE}
         tabs={props.tabs}
         className="search-results-tabs"
       />

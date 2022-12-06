@@ -10,7 +10,7 @@ import { SEARCH_PAGE } from '../../helpers/ContentSearchHelper';
 const PreviewSearchContent = (): JSX.Element => {
   const { events, push, pathname } = useRouter();
   const [previewSearchOpen, setPreviewSearchOpen] = useState(false);
-  const ref = useRef(null);
+  const containerRef = useRef(null);
   const inputRef = useRef(null);
 
   const onClose = useCallback(() => setPreviewSearchOpen(false), []);
@@ -55,7 +55,7 @@ const PreviewSearchContent = (): JSX.Element => {
     }
   }, [previewSearchOpen]);
 
-  ClickOutside([ref], onClose);
+  ClickOutside([containerRef], onClose);
 
   // hide preview search when on search page
   if (pathname === SEARCH_PAGE) {
@@ -63,7 +63,7 @@ const PreviewSearchContent = (): JSX.Element => {
   }
 
   return (
-    <div ref={ref}>
+    <div ref={containerRef}>
       <PreviewSearchContextProvider>
         {previewSearchOpen && <PreviewSearchContainer />}
         <PreviewSearchInput

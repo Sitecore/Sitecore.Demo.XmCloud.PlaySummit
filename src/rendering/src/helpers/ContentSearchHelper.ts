@@ -10,6 +10,7 @@ import { GraphQLSession } from '../types/session';
 import { GraphQLSpeaker } from '../types/speaker';
 import { Sponsor } from '../types/sponsor';
 import { Vendor } from '../types/vendor';
+import { getAbsoluteUrlPath } from './UrlHelper';
 
 export const SEARCH_PAGE = '/search';
 export const isContentSearchEnabled =
@@ -24,31 +25,52 @@ export const queryClient = new QueryClient({
   },
 });
 
-export const getAbsoluteUrlPath = (url: string): string => {
-  const [, path] = String(url).match(/^https?:\/\/[^/]+(.+)$/) || [];
-  return path || url;
-};
-export const getUrlFromName = (type: string, name: string): string =>
+const getUrlFromName = (type: string, name: string): string =>
   `/${type}/${name.replaceAll(' ', '-')}`;
 
-const SORTING_OPTIONS: Record<'session' | 'vendor' | 'content' | 'sponsor' | 'speaker', string[]> =
-  {
-    content: ['featured_desc', 'featured_asc'],
-    session: [
-      'featured_desc',
-      'featured_asc',
-      'session_days_asc',
-      'session_days_desc',
-      'session_duration_asc',
-      'session_duration_desc',
-    ],
-    vendor: ['featured_desc', 'featured_asc'],
-    sponsor: ['featured_desc', 'featured_asc'],
-    speaker: ['featured_desc', 'featured_asc'],
-  };
+export const SESSION_SEARCH_RESULT_TYPE = 'session';
+export const VENDOR_SEARCH_RESULT_TYPE = 'vendor';
+export const SPONSOR_SEARCH_RESULT_TYPE = 'sponsor';
+export const SPEAKER_SEARCH_RESULT_TYPE = 'speaker';
+export const CONTENT_SEARCH_RESULT_TYPE = 'content';
+
+export type SearchResultType = 'session' | 'vendor' | 'content' | 'sponsor' | 'speaker';
+
+export const AUDIENCE_FACET_TYPE = 'audience';
+export const IS_PREMIUM_FACET_TYPE = 'is_premium';
+export const SPONSORS_FACET_TYPE = 'sponsors';
+export const VENDORS_FACET_TYPE = 'vendors';
+export const SPEAKERS_FACET_TYPE = 'speakers';
+export const COMPANY_FACET_TYPE = 'company';
+export const JOB_TITLE_FACET_TYPE = 'job_title';
+export const LOCATION_FACET_TYPE = 'location';
+export const SESSIONS_FACET_TYPE = 'sessions';
+export const IS_FEATURED_FACET_TYPE = 'is_featured';
+export const ACTIVITIES_FACET_TYPE = 'activities';
+export const LEVEL_FACET_TYPE = 'level';
+
+export const FEATURED_SORTING_OPTION = 'featured_desc';
+export const SESSION_DAYS_ASC_SORTING_OPTION = 'session_days_asc';
+export const SESSION_DAYS_DESC_SORTING_OPTION = 'session_days_desc';
+export const SESSION_DURATION_ASC_SORTING_OPTION = 'session_duration_asc';
+export const SESSION_DURATION_DESC_SORTING_OPTION = 'session_duration_desc';
+
+const SORTING_OPTIONS: Record<SearchResultType, string[]> = {
+  content: [FEATURED_SORTING_OPTION],
+  session: [
+    FEATURED_SORTING_OPTION,
+    SESSION_DAYS_ASC_SORTING_OPTION,
+    SESSION_DAYS_DESC_SORTING_OPTION,
+    SESSION_DURATION_ASC_SORTING_OPTION,
+    SESSION_DURATION_DESC_SORTING_OPTION,
+  ],
+  vendor: [FEATURED_SORTING_OPTION],
+  sponsor: [FEATURED_SORTING_OPTION],
+  speaker: [FEATURED_SORTING_OPTION],
+};
 
 export const getSortingOptions = (
-  type: 'session' | 'vendor' | 'content' | 'sponsor' | 'speaker',
+  type: SearchResultType,
   options: ContentSearchResponseSortChoice[]
 ): ContentSearchResponseSortChoice[] =>
   options.filter(({ name }) => SORTING_OPTIONS[type].includes(name));
@@ -155,24 +177,3 @@ export const newsAdapter = ({
     },
   },
 });
-
-export type AsyncFunction<Result> = (...args: unknown[]) => Promise<Result>;
-
-export const debounceAsync = <Result>(
-  fn: AsyncFunction<Result>,
-  wait: number
-): AsyncFunction<Result> => {
-  let timeoutId: NodeJS.Timeout | undefined;
-
-  return function (...args: unknown[]): Promise<Result> {
-    clearTimeout(timeoutId);
-
-    return new Promise((resolve, reject) => {
-      timeoutId = setTimeout(() => {
-        fn(...args)
-          .then(resolve)
-          .catch(reject);
-      }, wait);
-    });
-  };
-};

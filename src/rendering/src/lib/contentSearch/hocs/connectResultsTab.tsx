@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { omit } from 'lodash';
-import { debounceAsync, getSortingOptions } from '../../../helpers/ContentSearchHelper';
+import { FEATURED_SORTING_OPTION, getSortingOptions } from '../../../helpers/ContentSearchHelper';
+import { debounceAsync } from '../../../helpers/Debounce';
 import { FC, useCallback, useContext, useEffect, useState } from 'react';
 import SearchResultsTab from '../../../components/Search/SearchResultsTab';
 import { SearchContext } from '../../../components/Search/SearchProvider';
@@ -24,7 +25,7 @@ const connectResultsTab = ({
   entity,
   facetsTypes,
   hasFilters = true,
-  defaultSort = 'featured_desc',
+  defaultSort = FEATURED_SORTING_OPTION,
 }: {
   entity: ContentSearchRequestProps['entity'];
   hasFilters?: boolean;

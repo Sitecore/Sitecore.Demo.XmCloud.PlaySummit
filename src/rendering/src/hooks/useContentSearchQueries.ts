@@ -1,10 +1,11 @@
 import { useQueries } from '@tanstack/react-query';
 import { useMemo } from 'react';
+import { SearchResultType } from '../helpers/ContentSearchHelper';
 import { ContentSearchResponseBase } from '../interfaces/contentSearch/ContentSearchResponse';
 import * as api from '../lib/contentSearch/api';
 import { ContentSearchRequestProps } from '../lib/contentSearch/api';
 
-type QUERY_TYPES = 'session' | 'speaker' | 'content' | 'vendor' | 'sponsor' | 'free';
+type QUERY_TYPES = SearchResultType | 'free';
 
 type CustomQueries = {
   [key in QUERY_TYPES]?: unknown;

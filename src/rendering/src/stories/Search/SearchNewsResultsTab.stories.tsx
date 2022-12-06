@@ -4,6 +4,7 @@ import React from 'react';
 import SearchNewsResultsTab from '../../components/Search/SearchNewsResultsTab';
 import { ContentSearchNews } from '../../interfaces/contentSearch/ContentSearchNews';
 import { mockSearchResultsTabCommonArgs } from './ResultsTabArgs';
+import { CONTENT_SEARCH_RESULT_TYPE } from '../../helpers/ContentSearchHelper';
 
 export default {
   title: 'Components/Search/SearchNewsResultsTab',
@@ -41,7 +42,7 @@ const items = [
       'https://playsummit.sitecoresandbox.cloud/api/public/content/a2bb5300531b4cddbb2c97f2fa198a90?v=1fa6de83&t=postcard',
     name: 'Get two-year access to a top fitness app',
     publish_date: '2021-10-30T04:00:00Z',
-    type: 'content',
+    type: CONTENT_SEARCH_RESULT_TYPE,
     url: 'https://play-summit-dt-avwdiawgakytx0hdc9bpxa-website-ios01g972.vercel.app/news/Get-two-year-access-to-a-top-fitness-app',
   },
   {
@@ -55,7 +56,7 @@ const items = [
       'https://playsummit.sitecoresandbox.cloud/api/public/content/d896d75cea754445aad0d1e645ba37e6?v=7a4806ee&t=postcard',
     name: 'PLAY! Summit to build new mountain bike park',
     publish_date: '2021-11-10T05:00:00Z',
-    type: 'content',
+    type: CONTENT_SEARCH_RESULT_TYPE,
     url: 'https://play-summit-dt-avwdiawgakytx0hdc9bpxa-website-ios01g972.vercel.app/news/PLAY-Summit-to-build-new-mountain-bike-park',
   },
   {
@@ -75,7 +76,7 @@ const items = [
       'https://playsummit.sitecoresandbox.cloud/api/public/content/394a9ffe7b5f4cf29b6646571fe96248?v=05668867&t=postcard',
     name: 'PLAY! Summit Goes Live',
     publish_date: '2021-08-04T17:27:51Z',
-    type: 'content',
+    type: CONTENT_SEARCH_RESULT_TYPE,
     url: 'https://play-summit-dt-avwdiawgakytx0hdc9bpxa-website-ios01g972.vercel.app/news/Play-summit-goes-live',
   },
 ] as ContentSearchNews[];

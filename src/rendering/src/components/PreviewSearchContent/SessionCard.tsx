@@ -1,7 +1,7 @@
 import { faCalendar, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import { getAbsoluteUrlPath } from '../../helpers/ContentSearchHelper';
+import { getAbsoluteUrlPath } from '../../helpers/UrlHelper';
 
 export type SessionCardProps = {
   id: string;

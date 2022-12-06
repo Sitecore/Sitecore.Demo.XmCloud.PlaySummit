@@ -6,7 +6,12 @@ import { ContentSearchSession } from '../../interfaces/contentSearch/ContentSear
 import { ContentSearchSpeaker } from '../../interfaces/contentSearch/ContentSearchSpeaker';
 import PreviewSearchPopup from './PreviewSearchPopup';
 import { PreviewSearchContext } from './PreviewSearchContextProvider';
-import { SEARCH_PAGE } from '../../helpers/ContentSearchHelper';
+import {
+  CONTENT_SEARCH_RESULT_TYPE,
+  SEARCH_PAGE,
+  SESSION_SEARCH_RESULT_TYPE,
+  SPEAKER_SEARCH_RESULT_TYPE,
+} from '../../helpers/ContentSearchHelper';
 
 type PreviewSearchContainerProps = {
   close?: () => void;
@@ -30,7 +35,7 @@ const PreviewSearchContainer = ({ close }: PreviewSearchContainerProps): JSX.Ele
       ContentSearchResponse<ContentSearchSpeaker>
     ]
   >(
-    ['content', 'session', 'speaker'],
+    [CONTENT_SEARCH_RESULT_TYPE, SESSION_SEARCH_RESULT_TYPE, SPEAKER_SEARCH_RESULT_TYPE],
     {
       keyphrase,
       limit: 4,

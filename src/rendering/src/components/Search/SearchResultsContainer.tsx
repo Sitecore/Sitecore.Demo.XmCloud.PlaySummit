@@ -11,6 +11,25 @@ import SearchVendorResultsTab from './SearchVendorResultsTab';
 import { SearchFiltersProps } from './SearchFilters';
 import SearchProvider from './SearchProvider';
 import SearchResults from './SearchResults';
+import {
+  ACTIVITIES_FACET_TYPE,
+  AUDIENCE_FACET_TYPE,
+  COMPANY_FACET_TYPE,
+  CONTENT_SEARCH_RESULT_TYPE,
+  IS_FEATURED_FACET_TYPE,
+  IS_PREMIUM_FACET_TYPE,
+  JOB_TITLE_FACET_TYPE,
+  LEVEL_FACET_TYPE,
+  LOCATION_FACET_TYPE,
+  SESSIONS_FACET_TYPE,
+  SESSION_SEARCH_RESULT_TYPE,
+  SPEAKERS_FACET_TYPE,
+  SPEAKER_SEARCH_RESULT_TYPE,
+  SPONSORS_FACET_TYPE,
+  SPONSOR_SEARCH_RESULT_TYPE,
+  VENDORS_FACET_TYPE,
+  VENDOR_SEARCH_RESULT_TYPE,
+} from '../../helpers/ContentSearchHelper';
 
 type SearchResultsContainerProps = {
   q: string;
@@ -21,49 +40,66 @@ const widgetId = 'rfkid_7';
 
 const tabs = [
   {
-    id: 'session',
+    id: SESSION_SEARCH_RESULT_TYPE,
     name: 'Sessions',
     color: '#3d93ff',
     Component: connectResultsTab({
-      entity: 'session',
-      facetsTypes: ['audience', 'is_premium', 'sponsors', 'vendors', 'speakers'],
+      entity: SESSION_SEARCH_RESULT_TYPE,
+      facetsTypes: [
+        AUDIENCE_FACET_TYPE,
+        IS_PREMIUM_FACET_TYPE,
+        SPONSORS_FACET_TYPE,
+        VENDORS_FACET_TYPE,
+        SPEAKERS_FACET_TYPE,
+      ],
     })(SearchSessionResultsTab),
   },
   {
-    id: 'speaker',
+    id: SPEAKER_SEARCH_RESULT_TYPE,
     name: 'Speakers',
     color: '#ff8d02',
     Component: connectResultsTab({
-      entity: 'speaker',
-      facetsTypes: ['company', 'job_title', 'location', 'sessions', 'is_featured'],
+      entity: SPEAKER_SEARCH_RESULT_TYPE,
+      facetsTypes: [
+        COMPANY_FACET_TYPE,
+        JOB_TITLE_FACET_TYPE,
+        LOCATION_FACET_TYPE,
+        SESSIONS_FACET_TYPE,
+        IS_FEATURED_FACET_TYPE,
+      ],
     })(SearchSpeakerResultsTab),
   },
   {
-    id: 'vendor',
+    id: VENDOR_SEARCH_RESULT_TYPE,
     name: 'Vendors',
     color: '#ff1a87',
     Component: connectResultsTab({
-      entity: 'vendor',
-      facetsTypes: ['activities', 'level', 'speakers', 'sessions'],
+      entity: VENDOR_SEARCH_RESULT_TYPE,
+      facetsTypes: [
+        ACTIVITIES_FACET_TYPE,
+        LEVEL_FACET_TYPE,
+        SPEAKERS_FACET_TYPE,
+        SESSIONS_FACET_TYPE,
+      ],
     })(SearchVendorResultsTab),
   },
   {
-    id: 'sponsor',
+    id: SPONSOR_SEARCH_RESULT_TYPE,
     name: 'Sponsors',
     color: '#ffd51d',
     Component: connectResultsTab({
-      entity: 'sponsor',
-      facetsTypes: ['level', 'speakers', 'sessions'],
+      entity: SPONSOR_SEARCH_RESULT_TYPE,
+      facetsTypes: [LEVEL_FACET_TYPE, SPEAKERS_FACET_TYPE, SESSIONS_FACET_TYPE],
     })(SearchSponsorResultsTab),
   },
   {
-    id: 'content',
+    id: CONTENT_SEARCH_RESULT_TYPE,
     name: 'News',
     color: '#000',
     Component: connectResultsTab({
-      entity: 'content',
+      entity: CONTENT_SEARCH_RESULT_TYPE,
       hasFilters: false,
-      facetsTypes: ['audience'],
+      facetsTypes: [AUDIENCE_FACET_TYPE],
     })(SearchNewsResultsTab),
   },
 ];
@@ -74,7 +110,7 @@ const SearchResultsContainer = (props: SearchResultsContainerProps): JSX.Element
     useQuery<ContentSearchResponseBase>([keyphrase, 'filters'], () =>
       api.get(
         {
-          entity: 'session',
+          entity: SESSION_SEARCH_RESULT_TYPE,
           widgetId,
           keyphrase,
           facets: [

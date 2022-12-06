@@ -1,3 +1,10 @@
+import {
+  FEATURED_SORTING_OPTION,
+  SESSION_DAYS_ASC_SORTING_OPTION,
+  SESSION_DAYS_DESC_SORTING_OPTION,
+  SESSION_DURATION_ASC_SORTING_OPTION,
+  SESSION_DURATION_DESC_SORTING_OPTION,
+} from '../../helpers/ContentSearchHelper';
 import { facetsProp, filtersProp } from '../mock-search-data';
 
 export const mockSearchResultsTabCommonArgs = {
@@ -5,23 +12,23 @@ export const mockSearchResultsTabCommonArgs = {
   filters: filtersProp,
   sortOptions: [
     {
-      name: 'featured_desc',
+      name: FEATURED_SORTING_OPTION,
       label: 'Recommended',
     },
     {
-      name: 'session_days_asc',
+      name: SESSION_DAYS_ASC_SORTING_OPTION,
       label: 'Schedule - A to Z',
     },
     {
-      name: 'session_days_desc',
+      name: SESSION_DAYS_DESC_SORTING_OPTION,
       label: 'Schedule - Z to A',
     },
     {
-      name: 'session_duration_asc',
+      name: SESSION_DURATION_ASC_SORTING_OPTION,
       label: 'Duration - Low to High',
     },
     {
-      name: 'session_duration_desc',
+      name: SESSION_DURATION_DESC_SORTING_OPTION,
       label: 'Duration - High to Low',
     },
   ],

@@ -1,5 +1,6 @@
 import { AxiosDataFetcher } from '@sitecore-jss/sitecore-jss-nextjs';
 import { merge, uniq } from 'lodash';
+import { SearchResultType } from '../../helpers/ContentSearchHelper';
 import { ContentSearchResponseBase } from '../../interfaces/contentSearch/ContentSearchResponse';
 
 const domainId = process.env.NEXT_PUBLIC_SEARCH_API_DOMAIN || '';
@@ -29,7 +30,7 @@ export type ContentSearchRequestFilter = { facetId: string; facetValueId: string
 export type ContentSearchRequestProps = {
   widgetId: string;
   keyphrase?: string;
-  entity?: 'session' | 'vendor' | 'content' | 'sponsor' | 'speaker';
+  entity?: SearchResultType;
   filters?: ContentSearchRequestFilter[];
   facets?: string[];
   limit?: number;
