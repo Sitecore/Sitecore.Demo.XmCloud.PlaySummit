@@ -1,5 +1,5 @@
 .information-page-hero {
-  @apply m-0 bg-white-light relative;
+  @apply m-0 bg-white-light relative w-full;
   @apply md:h-60;
 
   @screen md {

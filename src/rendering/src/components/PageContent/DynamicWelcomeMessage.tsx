@@ -29,7 +29,7 @@ const DynamicWelcomeMessage = (props: ComponentProps): JSX.Element => {
 
   const messageContent = message && (
     <section className={`section dynamic-welcome-message ${sxaStyles}`}>
-      <div className="section-content container message-banner">
+      <div className="container message-banner">
         <span>{message}</span>
       </div>
     </section>
