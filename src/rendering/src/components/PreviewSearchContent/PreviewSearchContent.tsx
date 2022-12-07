@@ -55,6 +55,11 @@ const PreviewSearchContent = (): JSX.Element => {
     }
   }, [previewSearchOpen]);
 
+  const onEscapePressed = useCallback(() => {
+    inputRef.current.blur();
+    setPreviewSearchOpen(false);
+  }, []);
+
   ClickOutside([containerRef], onClose);
 
   // hide preview search when on search page
@@ -72,6 +77,7 @@ const PreviewSearchContent = (): JSX.Element => {
           onEnter={onRedirect}
           className={`search-input-play ${!previewSearchOpen ? 'search-input-play-hidden' : ''}`}
           onFocus={onInputFocus}
+          onEscapePressed={onEscapePressed}
         />
         <PreviewSearchIcon onClick={onSearchIconClick} className="search-play-icon" />
       </PreviewSearchContextProvider>

@@ -9,15 +9,17 @@ type PreviewSearchInputProps = {
   placeholder?: string;
   className?: string;
   onEnter?: (value: string) => void;
+  onEscapePressed?: () => void;
 };
 
 const onKeyphraseChangeDebounced = debounce(
   (value: string, onKeyphraseChange: (value: string) => void) => onKeyphraseChange(value),
   500
 );
+
 const PreviewSearchInput = forwardRef<HTMLInputElement, PreviewSearchInputProps>(
   (
-    { onFocus, onBlur, placeholder, onKeyphraseChange, className, onEnter },
+    { onFocus, onBlur, placeholder, onKeyphraseChange, className, onEnter, onEscapePressed },
     forwardedRef
   ): JSX.Element => {
     const { keyphrase, onKeyphraseChange: onKeyphraseUpdate } = useContext(PreviewSearchContext);
@@ -25,6 +27,9 @@ const PreviewSearchInput = forwardRef<HTMLInputElement, PreviewSearchInputProps>
       (event: KeyboardEvent<HTMLInputElement>): void => {
         const value = (event.target as HTMLInputElement).value;
         switch (event.key) {
+          case 'Escape':
+            onEscapePressed && onEscapePressed();
+            break;
           case 'Enter':
             onEnter && onEnter(value);
             break;
@@ -36,7 +41,7 @@ const PreviewSearchInput = forwardRef<HTMLInputElement, PreviewSearchInputProps>
             break;
         }
       },
-      [onEnter, onKeyphraseChange, onKeyphraseUpdate]
+      [onEnter, onKeyphraseChange, onKeyphraseUpdate, onEscapePressed]
     );
 
     return (
