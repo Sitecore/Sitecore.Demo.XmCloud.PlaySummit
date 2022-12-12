@@ -53,6 +53,17 @@
 @import './components/Checkout/ThankYouHero.css';
 @import './components/Checkout/ThankYouSection.css';
 
+/* Sitecore Search */
+@import './components/ContentSearch/SearchEntityTab.css';
+@import './components/ContentSearch/SearchEntityTabContent.css';
+@import './components/ContentSearch/SearchEntityTabs.css';
+@import './components/ContentSearch/SearchFacets.css';
+@import './components/ContentSearch/SearchFilter.css';
+@import './components/ContentSearch/SearchFilters.css';
+@import './components/ContentSearch/SearchPagination.css';
+@import './components/ContentSearch/SearchResults.css';
+@import './components/ContentSearch/SearchResultsTab.css';
+
 /* Forms */
 @import './components/Forms/AttendeeForm.css';
 @import './components/Forms/RequestInfoForm.css';
@@ -121,17 +132,6 @@
 @import './components/PreviewSearchContent/SessionCard.css';
 @import './components/PreviewSearchContent/SpeakerCard.css';
 @import './components/PreviewSearchContent/SuggestionList.css';
-
-/* Sitecore Search */
-@import './components/Search/SearchEntityTab.css';
-@import './components/Search/SearchEntityTabContent.css';
-@import './components/Search/SearchEntityTabs.css';
-@import './components/Search/SearchFacets.css';
-@import './components/Search/SearchFilter.css';
-@import './components/Search/SearchFilters.css';
-@import './components/Search/SearchPagination.css';
-@import './components/Search/SearchResults.css';
-@import './components/Search/SearchResultsTab.css';
 
 /* Products */
 @import './components/Products/CategoriesList.css';
