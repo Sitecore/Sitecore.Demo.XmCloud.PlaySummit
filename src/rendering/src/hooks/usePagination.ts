@@ -16,12 +16,14 @@ export interface Pagination {
 
 const generatePages = (totalPages: number, currentPage: number): Array<Page> => {
   const pages: Array<Page> = [];
+
   for (let i = 1; i <= totalPages; i++) {
     pages.push({
       page: i,
       isCurrent: i === currentPage,
     });
   }
+
   return pages;
 };
 
@@ -42,6 +44,7 @@ const usePagination = ({
       defaultProp: defaultCurrentPage,
       onChange: onPageChange,
     });
+
   const [pages, setPages] = useState(() => generatePages(totalPages, page));
 
   useEffect(() => {

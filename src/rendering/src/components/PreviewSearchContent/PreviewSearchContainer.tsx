@@ -25,6 +25,7 @@ const contentSearchSuggestionByEntity = {
 
 const PreviewSearchContainer = ({ close }: PreviewSearchContainerProps): JSX.Element => {
   const { keyphrase } = useContext(PreviewSearchContext);
+
   const {
     isLoading,
     result: [news, sessions, speakers],
@@ -61,6 +62,7 @@ const PreviewSearchContainer = ({ close }: PreviewSearchContainerProps): JSX.Ele
   );
 
   const keyphraseRef = useRef<string>();
+
   useEffect(() => {
     if (!isLoading) {
       keyphraseRef.current = keyphrase;

@@ -13,7 +13,9 @@ export default {
 } as ComponentMeta<typeof PreviewSearchPopup>;
 
 const Template: ComponentStory<typeof PreviewSearchPopup> = (args) => (
-  <PreviewSearchPopup {...args} />
+  <div className="search-input-container">
+    <PreviewSearchPopup {...args} />
+  </div>
 );
 
 const {

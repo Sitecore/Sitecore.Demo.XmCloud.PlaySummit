@@ -1,8 +1,8 @@
+import React, { ReactElement } from 'react';
 import Head from 'next/head';
 import { QueryClientProvider } from '@tanstack/react-query';
-import withQueryParams from 'lib/contentSearch/hocs/withQueryParams';
-import React, { ReactElement } from 'react';
-import SearchResultsContainer from 'components/Search/SearchResultsContainer';
+import withQueryParams from '../../hocs/withQueryParams';
+import SearchResultsContainer from '../../components/ContentSearch/SearchResultsContainer';
 import SummitLayout from '../../components/NonSitecore/SummitLayout';
 import { queryClient } from '../../helpers/ContentSearchHelper';
 

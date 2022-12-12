@@ -2,8 +2,7 @@ import { useQueries } from '@tanstack/react-query';
 import { useMemo } from 'react';
 import { SearchResultType } from '../helpers/ContentSearchHelper';
 import { ContentSearchResponseBase } from '../interfaces/contentSearch/ContentSearchResponse';
-import * as api from '../lib/contentSearch/api';
-import { ContentSearchRequestProps } from '../lib/contentSearch/api';
+import { getSearchResults, ContentSearchRequestProps } from '../services/ContentSearchService';
 
 type QUERY_TYPES = SearchResultType | 'free';
 
@@ -25,7 +24,7 @@ const useContentSearchQueries = <T extends ContentSearchResponseBase[]>(
     queries: queriesFor.map((entity) => ({
       queryKey: [entity, JSON.stringify(props)],
       queryFn: () =>
-        api.get(
+        getSearchResults(
           { entity: entity === 'free' ? undefined : entity, ...props },
           custom ? custom[entity] : undefined
         ),

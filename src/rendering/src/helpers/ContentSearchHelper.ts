@@ -13,8 +13,6 @@ import { Vendor } from '../types/vendor';
 import { getAbsoluteUrlPath } from './UrlHelper';
 
 export const SEARCH_PAGE = '/search';
-export const isContentSearchEnabled =
-  !!process.env.NEXT_PUBLIC_SEARCH_API_DOMAIN && !!process.env.NEXT_PUBLIC_SEARCH_API_HOST;
 
 export const queryClient = new QueryClient({
   defaultOptions: {

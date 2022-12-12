@@ -5,10 +5,11 @@ import ClickOutside from '../ShopCommon/ClickOutside';
 import PreviewSearchInput from './PreviewSearchInput';
 import PreviewSearchContextProvider from './PreviewSearchContextProvider';
 import PreviewSearchIcon from './PreviewSearchIcon';
+import { isContentSearchEnabled } from '../../services/ContentSearchService';
 import { SEARCH_PAGE } from '../../helpers/ContentSearchHelper';
 
 const PreviewSearchContent = (): JSX.Element => {
-  const { events, push, pathname } = useRouter();
+  const router = useRouter();
   const [previewSearchOpen, setPreviewSearchOpen] = useState(false);
   const containerRef = useRef(null);
   const inputRef = useRef(null);
@@ -17,12 +18,12 @@ const PreviewSearchContent = (): JSX.Element => {
 
   useEffect(() => {
     // subscribe to next/router event
-    events.on('routeChangeStart', onClose);
+    router?.events.on('routeChangeStart', onClose);
     return () => {
       // unsubscribe to event on unmount to prevent memory leak
-      events.off('routeChangeStart', onClose);
+      router?.events.off('routeChangeStart', onClose);
     };
-  }, [events, onClose]);
+  }, [router, onClose]);
 
   useEffect(() => {
     if (previewSearchOpen && inputRef.current) {
@@ -32,9 +33,9 @@ const PreviewSearchContent = (): JSX.Element => {
 
   const onRedirect = useCallback(
     (keyphrase: string) => {
-      push(`${SEARCH_PAGE}?q=${keyphrase || ''}`);
+      router?.push(`${SEARCH_PAGE}?q=${keyphrase || ''}`);
     },
-    [push]
+    [router]
   );
 
   const onSearchIconClick = useCallback(
@@ -62,8 +63,13 @@ const PreviewSearchContent = (): JSX.Element => {
 
   ClickOutside([containerRef], onClose);
 
+  // hide preview search when search is not enabled
+  if (!isContentSearchEnabled) {
+    return null;
+  }
+
   // hide preview search when on search page
-  if (pathname === SEARCH_PAGE) {
+  if (router?.pathname === SEARCH_PAGE) {
     return null;
   }
 
