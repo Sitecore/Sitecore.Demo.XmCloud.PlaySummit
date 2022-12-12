@@ -58,6 +58,10 @@ export const getSearchResults = async <
   }: ContentSearchRequestProps,
   data: unknown = {}
 ): Promise<T> => {
+  if (!isContentSearchEnabled) {
+    return null;
+  }
+
   const types = uniq([...filters.map(({ facetId }) => facetId), ...facets])
     .map((facet) => ({
       name: facet,
@@ -83,7 +87,6 @@ export const getSearchResults = async <
     merge(
       {},
       {
-        // rfk_flags: ['-cache'],
         entity: entity ?? undefined,
         search: {
           query: keyphrase ? { keyphrase } : undefined,

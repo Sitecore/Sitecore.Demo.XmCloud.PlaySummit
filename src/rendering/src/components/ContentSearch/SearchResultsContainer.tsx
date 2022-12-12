@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import React, { useMemo } from 'react';
 import { ContentSearchResponseBase } from '../../interfaces/contentSearch/ContentSearchResponse';
 import connectResultsTab from '../../hocs/connectResultsTab';
-import { getSearchResults } from '../../services/ContentSearchService';
+import { isContentSearchEnabled, getSearchResults } from '../../services/ContentSearchService';
 import SearchNewsResultsTab from './SearchNewsResultsTab';
 import SearchSessionResultsTab from './SearchSessionResultsTab';
 import SearchSpeakerResultsTab from './SearchSpeakerResultsTab';
@@ -107,18 +107,21 @@ const tabs = [
 const SearchResultsContainer = (props: SearchResultsContainerProps): JSX.Element => {
   const { q: keyphrase, tab } = props;
 
-  const { data: { facet: { days = {}, rooms = {} } = {} } = {} } =
-    useQuery<ContentSearchResponseBase>([keyphrase, 'filters'], () =>
-      getSearchResults(
-        {
-          entity: SESSION_SEARCH_RESULT_TYPE,
-          widgetId,
-          keyphrase,
-          facets: ['days', 'rooms'],
-        },
-        {}
-      )
-    );
+  const searchResults = useQuery<ContentSearchResponseBase>([keyphrase, 'filters'], () =>
+    getSearchResults(
+      {
+        entity: SESSION_SEARCH_RESULT_TYPE,
+        widgetId,
+        keyphrase,
+        facets: ['days', 'rooms'],
+      },
+      {}
+    )
+  );
+
+  const { data: { facet: { days = {}, rooms = {} } = {} } = {} } = !!searchResults?.data
+    ? searchResults
+    : { data: { facet: { days: {}, rooms: {} } } };
 
   const filterOptions = useMemo<SearchFiltersProps['options']>(() => {
     return {
@@ -126,6 +129,15 @@ const SearchResultsContainer = (props: SearchResultsContainerProps): JSX.Element
       rooms: rooms.value?.map(({ text, id }) => ({ value: id, label: text })) || [],
     };
   }, [days, rooms]);
+
+  if (!isContentSearchEnabled) {
+    return (
+      <div>
+        The search page is currently disabled because the content search integration is not
+        configured.
+      </div>
+    );
+  }
 
   // using keyphrase as key allow us to re mount results, "resetting" any control in it
   return (
