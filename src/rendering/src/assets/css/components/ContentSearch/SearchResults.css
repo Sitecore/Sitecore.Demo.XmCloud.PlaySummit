@@ -1,7 +1,4 @@
 .search-results {
-  @apply my-8;
-  @apply md:my-20;
-
   .search-results-header {
     @apply text-xl font-bold uppercase mb-4;
   }
