@@ -1,0 +1,9 @@
+.search-filters {
+  @apply flex flex-col gap-2 mb-10 text-sm;
+  @apply sm:flex-row sm:items-center;
+
+  .search-filters-list {
+    @apply flex flex-col gap-2;
+    @apply xs:flex-row;
+  }
+}

@@ -1,0 +1,19 @@
+.search-results {
+  .search-results-header {
+    @apply text-xl font-bold uppercase mb-4;
+  }
+
+  .search-results-header-search {
+    @apply relative mb-4;
+    @apply sm:max-w-[26.5rem];
+
+    .search-results-header-search-input {
+      @apply w-full px-4 py-2 border-2 border-black-lightest;
+    }
+
+    .search-results-header-search-icon {
+      @apply absolute right-4 top-[calc(50%-0.5em)];
+      @apply hover:text-blue;
+    }
+  }
+}

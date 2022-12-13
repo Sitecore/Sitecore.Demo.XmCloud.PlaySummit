@@ -1,4 +1,4 @@
-import { Placeholder, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Placeholder, SitecoreContextValue } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -10,11 +10,11 @@ export type HeaderContentProps = HeaderProps & {
   pathname?: string;
   asPath?: string;
   query?: string | ParsedUrlQueryInput;
+  sitecoreContext: SitecoreContextValue;
 };
 
 const HeaderContent = (props: HeaderContentProps): JSX.Element => {
   const router = useRouter();
-  const { sitecoreContext } = useSitecoreContext();
   const [languageLabels, setLanguageLabels] = useState([]);
 
   const sxaStyles = `${props.params?.styles || ''}`;
@@ -23,7 +23,7 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
     type: 'language',
   });
 
-  const languageList = sitecoreContext['Languages'] as NodeJS.Dict<string | string>[];
+  const languageList = props.sitecoreContext['Languages'] as NodeJS.Dict<string | string>[];
 
   useEffect(() => {
     const labels = languageList.map((language) => languageNames.of(language['Name']));
@@ -52,7 +52,7 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
     <select
       onChange={(e) => changeLanguage(e.currentTarget.value)}
       className="languagePicker"
-      value={sitecoreContext.language}
+      value={props.sitecoreContext.language}
     >
       {languageList.map((language, index) => (
         <option
