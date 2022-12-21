@@ -6,6 +6,10 @@
     @apply lg:container lg:mx-auto;
     @apply xl:h-6;
 
+    @media (min-width: 2490px) {
+      @apply !max-w-[51vw];
+    }
+
     a {
       @apply text-base ml-2 leading-5;
       @apply lg:text-sm;

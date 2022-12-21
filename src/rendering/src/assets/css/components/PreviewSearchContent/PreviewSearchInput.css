@@ -1,0 +1,29 @@
+.search-input-play {
+  @apply absolute right-0 w-0 py-2 pl-4 pr-8 bg-transparent transition-all;
+
+  @media (max-width: 1280px) {
+    @apply w-full left-0 right-0 pl-12 pr-4 bg-white-light;
+  }
+
+  &-hidden::placeholder {
+    @apply xl:text-transparent;
+  }
+
+  &:not(.search-input-play-hidden) {
+    @apply w-full bg-white-light;
+    @apply xl:w-[46rem];
+  }
+}
+
+.search-play-icon {
+  @apply relative mx-4 top-2 cursor-pointer z-10 transition-colors;
+
+  .search-input-play-hidden + & {
+    @apply xl:text-yellow;
+  }
+}
+
+.main-navigation .navigation-content .items-container.opened {
+  @apply flex-col;
+  @apply xl:flex-row;
+}

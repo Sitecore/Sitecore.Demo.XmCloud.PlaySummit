@@ -1,0 +1,6 @@
+.search-filter {
+  @apply appearance-none flex-1 bg-white py-1 pl-3 pr-8 bg-select-arrow bg-no-repeat;
+  @apply sm:w-44;
+
+  background-position: calc(100% - 0.5rem), center;
+}

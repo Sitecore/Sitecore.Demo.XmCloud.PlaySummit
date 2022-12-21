@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react';
-import { PreviewSearchWidgetProps } from '@sitecore-discover/ui';
-import { Action } from '@sitecore-discover/react';
+import { Action, PreviewSearchWidgetProps } from '@sitecore-discover/react';
 import { PreviewSearchActions } from '@sitecore-discover/widgets';
 import ClickOutside from '../ShopCommon/ClickOutside';
 import LeftColumn from './LeftColumn';

@@ -1,0 +1,17 @@
+.preview-search-content-container {
+  .suggestion-list {
+    @apply flex flex-col gap-1;
+
+    .suggestion-list-title {
+      @apply font-bold whitespace-nowrap;
+    }
+
+    .suggestion-container {
+      @apply flex flex-col;
+
+      .suggestion-item {
+        @apply text-blue;
+      }
+    }
+  }
+}

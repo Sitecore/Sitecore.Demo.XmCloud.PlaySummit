@@ -24,3 +24,24 @@ export default function debounce(
     }
   };
 }
+
+type AsyncFunction<Result> = (...args: unknown[]) => Promise<Result>;
+
+export const debounceAsync = <Result>(
+  fn: AsyncFunction<Result>,
+  wait: number
+): AsyncFunction<Result> => {
+  let timeoutId: NodeJS.Timeout | undefined;
+
+  return function (...args: unknown[]): Promise<Result> {
+    clearTimeout(timeoutId);
+
+    return new Promise((resolve, reject) => {
+      timeoutId = setTimeout(() => {
+        fn(...args)
+          .then(resolve)
+          .catch(reject);
+      }, wait);
+    });
+  };
+};

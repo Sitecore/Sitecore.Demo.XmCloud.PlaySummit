@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
-import { ShopLayout } from '../../../components/Products/Shop';
+import ShopLayout from '../../../components/Products/ShopLayout';
 import ShopBreadcrumb, { ShopBreadcrumbItem } from '../../../components/Navigation/ShopBreadcrumb';
 import AddressBookFormSection from '../../../components/Account/AddressBookFormSection';
 import { AccountLayout } from '../../../components/Account/AccountLayout';

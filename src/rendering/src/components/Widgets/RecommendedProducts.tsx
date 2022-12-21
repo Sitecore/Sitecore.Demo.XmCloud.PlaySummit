@@ -1,4 +1,4 @@
-import { RecommendationWidgetProps } from '@sitecore-discover/ui';
+import { RecommendationWidgetProps } from '@sitecore-discover/react';
 import { Product } from '../../models/discover/Product';
 import ProductList from '../../components/ShopCommon/ProductList';
 

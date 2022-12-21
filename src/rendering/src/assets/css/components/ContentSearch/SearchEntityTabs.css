@@ -1,0 +1,8 @@
+.entity-tabs {
+  @apply flex flex-col;
+
+  .entity-tabs-list {
+    @apply flex flex-wrap self-center w-full;
+    @apply lg:w-auto;
+  }
+}

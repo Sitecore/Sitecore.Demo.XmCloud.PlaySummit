@@ -1,0 +1,24 @@
+.search-pagination {
+  @apply flex items-baseline;
+
+  .search-pagination-pages {
+    @apply inline;
+  }
+
+  .search-pagination-link {
+    @apply inline cursor-pointer font-normal my-0 mx-2;
+    @apply hover:font-bold;
+
+    &[data-current='true'] {
+      @apply text-gray-dark pointer-events-none;
+    }
+  }
+
+  .search-pagination-nav-link {
+    @apply my-0 mx-2 cursor-pointer;
+
+    &[data-current='true'] {
+      @apply hidden;
+    }
+  }
+}

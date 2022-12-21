@@ -1,0 +1,9 @@
+.preview-search-content-container {
+  .preview-search-content {
+    .speaker-list-content {
+      .info-text {
+        @apply text-xs mt-1;
+      }
+    }
+  }
+}

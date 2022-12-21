@@ -1,0 +1,15 @@
+.preview-search-content-container {
+  .preview-search-content {
+    .session-list.item-grid.sessions-grid {
+      .grid-item {
+        .image-hover-zoom {
+          @apply h-20;
+        }
+
+        .session-info {
+          @apply !mt-1 !mb-0;
+        }
+      }
+    }
+  }
+}

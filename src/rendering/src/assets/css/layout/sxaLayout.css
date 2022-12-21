@@ -11,7 +11,7 @@ main {
 }
 
 #headless-main-empty {
-  @apply max-w-full px-0;
+  @apply !max-w-full px-0;
 
   > .component-content > .row {
     @apply mx-0;

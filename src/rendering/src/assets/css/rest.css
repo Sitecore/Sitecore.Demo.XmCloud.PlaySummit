@@ -8,7 +8,7 @@
 }
 
 .product-categories-grid-product {
-  width: 350px;
+  max-width: 350px;
   margin: 5px;
   position: relative;
 }

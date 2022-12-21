@@ -1,0 +1,110 @@
+.search-facets-root {
+  @apply text-sm;
+}
+
+.search-facets-root-facet {
+  @apply border-t border-gray;
+
+  &:last-child {
+    @apply border-b border-gray;
+  }
+
+  .search-facets-root-facet-header {
+    @apply flex justify-between items-center py-1 cursor-pointer;
+
+    button {
+      @apply basis-full text-left font-bold capitalize;
+    }
+
+    svg {
+      @apply block text-black-light text-base transition-transform;
+    }
+
+    &[data-state='open'] {
+      svg {
+        @apply rotate-180;
+      }
+    }
+  }
+
+  &.loading {
+    .search-facets-root-facet-header {
+      @apply bg-gray;
+      @apply after:content-[''] after:block after:h-6;
+    }
+  }
+
+  .search-facets-root-facet-content {
+    @apply text-sm bg-white-light py-3 px-2;
+    @apply lg:bg-white;
+
+    .search-facets-root-facet-list {
+      li {
+        @apply flex items-center;
+
+        &:not(:last-child) {
+          @apply mb-1;
+        }
+      }
+
+      label {
+        @apply max-w-full pl-2 overflow-hidden whitespace-nowrap text-ellipsis cursor-pointer;
+      }
+
+      button {
+        @apply appearance-none flex-shrink-0 w-3 h-3 bg-gray cursor-pointer;
+
+        .search-facets-root-facet-checkbox-indicator {
+          @apply block text-xs w-3 h-3;
+
+          svg {
+            @apply block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.search-facets-active {
+  @apply flex flex-col mb-4 text-sm bg-white;
+  @apply lg:p-4;
+
+  .btn-secondary {
+    @apply mt-3;
+    @apply lg:mx-auto;
+  }
+
+  .search-facets-active-title {
+    @apply flex items-center mb-5 font-bold;
+
+    svg {
+      @apply h-4 mr-2 text-base;
+    }
+  }
+
+  li {
+    @apply flex justify-between items-center mb-2 px-2 bg-white-light;
+
+    svg {
+      @apply text-gray-dark text-lg flex-shrink-0 ml-1;
+    }
+
+    .search-facets-filters-list-item-text {
+      @apply max-w-full overflow-hidden whitespace-nowrap text-ellipsis;
+    }
+  }
+}
+
+.search-results-facets-toggle {
+  @apply ml-auto text-base;
+  @apply lg:hidden;
+
+  .search-results-tab-facets & {
+    @apply mb-2 ml-auto;
+  }
+
+  svg {
+    @apply relative text-base mr-2;
+  }
+}

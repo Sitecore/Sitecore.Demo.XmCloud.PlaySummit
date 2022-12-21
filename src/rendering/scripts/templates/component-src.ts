@@ -1,4 +1,4 @@
-// DEMO TEAM CUSTOMIZATION - Change field name. Change component content.
+// DEMO TEAM CUSTOMIZATION - Change field name. Change component content. Change exported constant name.
 /**
  * Generates React boilerplate for a component under `src/components`
  * @param componentName - the component name
@@ -20,7 +20,7 @@ const ${componentName} = (props: ${componentName}Props): JSX.Element => (
   </div>
 );
 
-export default withDatasourceCheck()<${componentName}Props>(${componentName});
+export const Default = withDatasourceCheck()<${componentName}Props>(${componentName});
 `;
 }
 // END CUSTOMIZATION
