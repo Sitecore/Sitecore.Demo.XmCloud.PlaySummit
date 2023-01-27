@@ -6,11 +6,16 @@ This repository is used for the primary Sitecore DXP demo that uses:
   - XM Cloud Pages Personalize
   - XM Cloud Pages Analyze
 - Sitecore Content Hub DAM and CMP
+- Sitecore Search
 - Sitecore JavaScript Services (JSS)
 - Next.js
 - Vercel
 - Tailwind CSS
 - Storybook
+
+## [📖 Documentation](docs/README.md)
+
+The setup, installation, development, and usage documentation is available in the [docs folder](docs/README.md).
 
 ## ⚠ Important notice
 
