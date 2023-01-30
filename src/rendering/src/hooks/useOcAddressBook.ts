@@ -1,4 +1,4 @@
-import { isEqual } from 'lodash';
+import isEqual from 'lodash/isEqual';
 import { Filters, RequiredDeep, Searchable, Sortable } from 'ordercloud-javascript-sdk';
 import { useEffect } from 'react';
 import { DBuyerAddress } from 'src/models/ordercloud/DBuyerAddress';
