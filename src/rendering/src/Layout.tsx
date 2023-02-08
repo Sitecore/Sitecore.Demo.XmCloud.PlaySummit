@@ -13,7 +13,7 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import Scripts from 'src/Scripts';
 // DEMO TEAM CUSTOMIZATION - CDP integration
-import { logViewEvent } from './services/CdpService';
+import { trackViewEvent } from './services/TrackingService';
 import HeaderCdpMessageBar from './components/HeaderCdpMessageBar';
 // END CUSTOMIZATION
 // DEMO TEAM CUSTOMIZATION - Sitecore Search integration
@@ -43,7 +43,7 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
 
   // DEMO TEAM CUSTOMIZATION - Log page views in CDP
   useEffect(() => {
-    logViewEvent(route);
+    await trackViewEvent(route);
   }, [route]);
   // END CUSTOMIZATION
 
