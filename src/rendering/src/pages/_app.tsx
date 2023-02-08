@@ -82,7 +82,7 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
       {/* END CUSTOMIZATION*/}
 
       {/* DEMO TEAM CUSTOMIZATION - Sitecore Send integration. It is important this script is rendered before the <Component> so the Send calls made on the first page load are successful. */}
-      {SendScripts}
+      {sitecoreContext.pageState === LayoutServicePageState.Normal && { SendScripts }}
       {/* END CUSTOMIZATION*/}
 
       {/*
