@@ -62,7 +62,7 @@ function delayUntilSendIsInitialized(functionToDelay: () => unknown) {
 
 export function trackViewEvent(): void {
   if (isSendConfigured && !cancelDelayedFunctions) {
-    delayUntilSendIsInitialized(() => console.log('trackPageView'));
+    delayUntilSendIsInitialized(() => window.mootrack('trackPageView'));
   }
 }
 
