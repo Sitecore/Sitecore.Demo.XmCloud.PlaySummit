@@ -18,6 +18,7 @@ import { useAppDispatch } from '../../redux/store';
 import { updateUser } from '../../redux/ocUser';
 import { patchOrder } from '../../redux/ocCurrentCart';
 import { DeliveryTypes } from '../../models/ordercloud/DOrder';
+import { LayoutServicePageState, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 
 const CheckoutDetailsSkeleton = (): JSX.Element => {
   const skeletonCount = 5;
@@ -64,8 +65,12 @@ const CheckoutDetails = (): JSX.Element => {
     }
   }, [isAnonymous, setEmail]);
 
+  const { sitecoreContext } = useSitecoreContext();
   const handleReviewOrderClick = () => {
-    identifyVisitor(isAnonymous ? userEmail : order.FromUser.Email);
+    if (sitecoreContext.pageState === LayoutServicePageState.Normal) {
+      identifyVisitor(isAnonymous ? userEmail : order.FromUser.Email);
+    }
+
     return router?.push('/shop/checkout/order-review');
   };
 

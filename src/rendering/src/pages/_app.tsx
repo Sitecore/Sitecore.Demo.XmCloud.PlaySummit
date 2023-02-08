@@ -17,6 +17,7 @@ import 'assets/css/main.css'; // DEMO TEAM CUSTOMIZATION - Different CSS file na
 
 // DEMO TEAM CUSTOMIZATION - Implement per page layouts to conditionally load commerce on some pages https://nextjs.org/docs/basic-features/layouts#per-page-layouts
 import { NextPage } from 'next';
+import { LayoutServicePageState, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 
 type NextPageWithLayout<P = unknown, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactElement;
@@ -30,9 +31,13 @@ type AppPropsWithLayout = AppProps<SitecorePageProps> & {
 // DEMO TEAM CUSTOMIZATION (next line) - Different prop type. Add router.
 function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element {
   // DEMO TEAM CUSTOMIZATION - Identify the user from an email address from the query string to handle clicks on email links. Also register a key press handler to close CDP sessions and forget CDP guests.
+  const { sitecoreContext } = useSitecoreContext();
+
   useEffect(() => {
     // Initialize Sitecore Send
-    initializeSend();
+    if (sitecoreContext.pageState === LayoutServicePageState.Normal) {
+      initializeSend();
+    }
 
     // Identify the user from an email address from the query string to handle clicks on email links
     const emailQueryStringValue = router.query['email'];
@@ -45,7 +50,9 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
         email = emailQueryStringValue[0];
       }
 
-      identifyVisitor(email);
+      if (sitecoreContext.pageState === LayoutServicePageState.Normal) {
+        identifyVisitor(email);
+      }
     }
 
     // Register a key press handler to close CDP sessions and forget CDP guests
@@ -75,7 +82,7 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
       {/* END CUSTOMIZATION*/}
 
       {/* DEMO TEAM CUSTOMIZATION - Sitecore Send integration. It is important this script is rendered before the <Component> so the Send calls made on the first page load are successful. */}
-      {SendScripts}
+      {sitecoreContext.pageState === LayoutServicePageState.Normal && { SendScripts }}
       {/* END CUSTOMIZATION*/}
 
       {/*

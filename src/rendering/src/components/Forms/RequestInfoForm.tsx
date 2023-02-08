@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { identifyVisitor } from '../../services/IdentificationService';
 import { getUserData } from '../../helpers/GuestDataHelper';
 import { ComponentProps } from 'lib/component-props';
+import { LayoutServicePageState, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 
 const RequestInfoForm = (props: ComponentProps): JSX.Element => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -10,6 +11,7 @@ const RequestInfoForm = (props: ComponentProps): JSX.Element => {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const { sitecoreContext } = useSitecoreContext();
 
   const sxaStyles = `${props.params?.styles || ''}`;
 
@@ -33,9 +35,11 @@ const RequestInfoForm = (props: ComponentProps): JSX.Element => {
       return;
     }
 
-    return await identifyVisitor(email, firstName, lastName, phoneNumber).then(() => {
-      setIsFormSubmitted(true);
-    });
+    if (sitecoreContext.pageState === LayoutServicePageState.Normal) {
+      return await identifyVisitor(email, firstName, lastName, phoneNumber).then(() => {
+        setIsFormSubmitted(true);
+      });
+    }
   };
 
   const form = (
