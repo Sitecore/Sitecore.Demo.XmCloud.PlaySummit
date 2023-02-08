@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { ComponentProps } from 'lib/component-props';
 import { identifyVisitor } from '../../services/IdentificationService';
 import { getUserData } from '../../helpers/GuestDataHelper';
-import { LayoutServicePageState, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 
 const AttendeeForm = (props: ComponentProps): JSX.Element => {
   const ticketId =
@@ -13,7 +12,6 @@ const AttendeeForm = (props: ComponentProps): JSX.Element => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
-  const { sitecoreContext } = useSitecoreContext();
 
   const sxaStyles = `${props.params?.styles || ''}`;
 
@@ -37,11 +35,9 @@ const AttendeeForm = (props: ComponentProps): JSX.Element => {
       return;
     }
 
-    if (sitecoreContext.pageState === LayoutServicePageState.Normal) {
-      return await identifyVisitor(email, firstName, lastName).then(() => {
-        Router.push(`/tickets/payment?ticket=${ticketId}`);
-      });
-    }
+    return await identifyVisitor(email, firstName, lastName).then(() => {
+      Router.push(`/tickets/payment?ticket=${ticketId}`);
+    });
   };
 
   return (

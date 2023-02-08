@@ -44,11 +44,9 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
   // DEMO TEAM CUSTOMIZATION - Log page views in CDP
   useEffect(() => {
     (async () => {
-      if (context.pageState === LayoutServicePageState.Normal) {
-        await trackViewEvent(route);
-      }
+      await trackViewEvent(route);
     })();
-  }, [route, context.pageState]);
+  }, [route]);
   // END CUSTOMIZATION
 
   // DEMO TEAM CUSTOMIZATION - Add CSS classes when Sitecore editors are active
