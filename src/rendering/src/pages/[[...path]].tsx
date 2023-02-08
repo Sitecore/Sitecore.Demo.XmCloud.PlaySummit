@@ -15,11 +15,15 @@ import { sitecorePagePropsFactory } from 'lib/page-props-factory';
 // different componentFactory method will be used based on whether page is being edited
 import { componentFactory, editingComponentFactory } from 'temp/componentFactory';
 import { sitemapFetcher } from 'lib/sitemap-fetcher';
+import { initialize as initializeSend } from '../services/SendService';
 
 const SitecorePage = ({ notFound, componentProps, layoutData }: SitecorePageProps): JSX.Element => {
   useEffect(() => {
     // Since Sitecore editors do not support Fast Refresh, need to refresh editor chromes after Fast Refresh finished
     handleEditorFastRefresh();
+
+    // Initialize Sitecore Send
+    initializeSend(layoutData.sitecore.context);
   }, []);
 
   if (notFound || !layoutData.sitecore.route) {

@@ -5,7 +5,7 @@ import { SitecorePageProps } from 'lib/page-props';
 import { ReactElement, useEffect } from 'react';
 import Head from 'next/head';
 import { CdpScripts } from '../services/CdpService';
-import { initialize as initializeSend, SendScripts } from '../services/SendService';
+import { SendScripts } from '../services/SendService';
 import { identifyVisitor } from '../services/IdentificationService';
 import { KeypressHandler } from '../services/KeypressHandlerService';
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -31,9 +31,6 @@ type AppPropsWithLayout = AppProps<SitecorePageProps> & {
 function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element {
   // DEMO TEAM CUSTOMIZATION - Identify the user from an email address from the query string to handle clicks on email links. Also register a key press handler to close CDP sessions and forget CDP guests.
   useEffect(() => {
-    // Initialize Sitecore Send
-    initializeSend();
-
     // Identify the user from an email address from the query string to handle clicks on email links
     const emailQueryStringValue = router.query['email'];
     if (emailQueryStringValue) {
