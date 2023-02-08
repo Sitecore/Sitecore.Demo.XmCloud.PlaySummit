@@ -43,7 +43,7 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
 
   // DEMO TEAM CUSTOMIZATION - Log page views in CDP
   useEffect(() => {
-    (async () => {      
+    (async () => {
       await trackViewEvent(route);
     })();
   }, [route]);
