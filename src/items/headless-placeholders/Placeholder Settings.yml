@@ -5,12 +5,16 @@ Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
 Path: /sitecore/layout/Placeholder Settings/Foundation/JSS Experience Accelerator/Placeholder Settings
 Languages:
 - Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: PlatzhalterEinstellungen
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "13896d6e-e80c-4155-a736-b2c98ba81ff1"
+      Value: "2ad91ca1-0213-4d06-867d-e24df328e9bf"
 - Language: en
   Versions:
   - Version: 1
@@ -19,16 +23,24 @@ Languages:
       Hint: __Revision
       Value: "4a20e8b1-d51d-4dcc-8dde-a95fc13849ee"
 - Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: プレースホルダー設定
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "13896d6e-e80c-4155-a736-b2c98ba81ff1"
+      Value: "2ad91ca1-0213-4d06-867d-e24df328e9bf"
 - Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 占位符设置
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "13896d6e-e80c-4155-a736-b2c98ba81ff1"
+      Value: "2ad91ca1-0213-4d06-867d-e24df328e9bf"

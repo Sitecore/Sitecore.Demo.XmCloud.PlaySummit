@@ -56,6 +56,9 @@ SharedFields:
 - ID: "ad84cc6b-32ef-49d8-9326-916976cb2520"
   Hint: Grid Mapping
   Value: "%7bFE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3%7d%3d%257B9CA06BD0-CD73-4718-9A3D-D000D07EC771%257D"
+- ID: "af332c24-fe17-41e7-8caf-8e64c588fe72"
+  Hint: EditingTheme
+  Value: "{3BCAB9EF-1E4F-4C23-B452-783BB82AA686}"
 - ID: "b0711df7-724a-4c6c-8d4d-be846de6124c"
   Hint: ProtectDeveloperItems
   Value: 
@@ -84,4 +87,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0ba12502-0b66-4b9a-8307-ec14cdad55fd"
+      Value: "62806130-81f9-4fc6-b898-417109199dd9"

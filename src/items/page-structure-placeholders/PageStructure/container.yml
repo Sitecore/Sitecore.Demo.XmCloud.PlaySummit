@@ -10,9 +10,6 @@ SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 900
-- ID: "e391b526-d0c5-439d-803e-17512eae6222"
-  Hint: Allowed Controls
-  Value: 
 Languages:
 - Language: "de-DE"
   Fields:
@@ -24,7 +21,7 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "13896d6e-e80c-4155-a736-b2c98ba81ff1"
+      Value: "2ad91ca1-0213-4d06-867d-e24df328e9bf"
 - Language: en
   Versions:
   - Version: 1
@@ -42,7 +39,7 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "13896d6e-e80c-4155-a736-b2c98ba81ff1"
+      Value: "2ad91ca1-0213-4d06-867d-e24df328e9bf"
 - Language: "zh-CN"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -53,4 +50,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "13896d6e-e80c-4155-a736-b2c98ba81ff1"
+      Value: "2ad91ca1-0213-4d06-867d-e24df328e9bf"
