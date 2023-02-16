@@ -15,12 +15,16 @@ SharedFields:
   Value: 
 Languages:
 - Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Haupt
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "13896d6e-e80c-4155-a736-b2c98ba81ff1"
+      Value: "2ad91ca1-0213-4d06-867d-e24df328e9bf"
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
@@ -33,16 +37,24 @@ Languages:
       Hint: __Revision
       Value: "5b25697e-6fb7-4ac7-a101-3822b034f859"
 - Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: メイン
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "13896d6e-e80c-4155-a736-b2c98ba81ff1"
+      Value: "2ad91ca1-0213-4d06-867d-e24df328e9bf"
 - Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 主要
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "13896d6e-e80c-4155-a736-b2c98ba81ff1"
+      Value: "2ad91ca1-0213-4d06-867d-e24df328e9bf"
