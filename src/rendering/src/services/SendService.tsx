@@ -1,5 +1,6 @@
 import { LayoutServiceContext } from '@sitecore-jss/sitecore-jss-nextjs';
 import Script from 'next/script';
+import { isEditingOrPreviewingPage } from '../helpers/LayoutServiceHelper';
 
 const SEND_WEBSITE_ID = process.env.NEXT_PUBLIC_SEND_WEBSITE_ID || '';
 export const isSendConfigured = !!SEND_WEBSITE_ID;
@@ -22,8 +23,11 @@ export const SendScripts: JSX.Element | undefined = isSendConfigured ? (
   </>
 ) : undefined;
 
-export function initialize(context: LayoutServiceContext): void {
-  if (isSendConfigured && !context.pageEditing) {
+export function initialize(context?: LayoutServiceContext): void {
+  if (
+    isSendConfigured &&
+    (typeof context === 'undefined' || !isEditingOrPreviewingPage(context?.pageState))
+  ) {
     // tracker has to be initialized otherwise it will generate warnings and wont sendtracking events
     window.mootrack('init', SEND_WEBSITE_ID);
 
@@ -31,7 +35,6 @@ export function initialize(context: LayoutServiceContext): void {
     const pushState = history.pushState;
     history.pushState = (...rest) => {
       pushState.apply(history, rest);
-      window.mootrack('init', SEND_WEBSITE_ID);
     };
 
     isSendInitialized = true;
@@ -61,19 +64,15 @@ function delayUntilSendIsInitialized(functionToDelay: () => unknown) {
 }
 
 export function trackViewEvent(): void {
-  if (isSendConfigured && !cancelDelayedFunctions) {
-    delayUntilSendIsInitialized(() => window.mootrack('trackPageView'));
-  }
+  delayUntilSendIsInitialized(() => window.mootrack('trackPageView'));
 }
 
 export function identifyVisitor(email: string, firstName?: string, lastName?: string): void {
-  if (isSendConfigured && !cancelDelayedFunctions) {
-    delayUntilSendIsInitialized(function () {
-      if (firstName && lastName) {
-        window.mootrack('identify', email, `${firstName} ${lastName}`);
-      } else {
-        window.mootrack('identify', email);
-      }
-    });
-  }
+  delayUntilSendIsInitialized(function () {
+    if (firstName && lastName) {
+      window.mootrack('identify', email, `${firstName} ${lastName}`);
+    } else {
+      window.mootrack('identify', email);
+    }
+  });
 }

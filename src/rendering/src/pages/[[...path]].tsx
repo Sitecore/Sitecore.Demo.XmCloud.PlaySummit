@@ -15,16 +15,19 @@ import { sitecorePagePropsFactory } from 'lib/page-props-factory';
 // different componentFactory method will be used based on whether page is being edited
 import { componentFactory, editingComponentFactory } from 'temp/componentFactory';
 import { sitemapFetcher } from 'lib/sitemap-fetcher';
-import { initialize as initializeSend } from '../services/SendService';
+import { initialize as initializeSend } from '../services/SendService'; // DEMO TEAM CUSTOMIZATION - Sitecore Send integration
 
 const SitecorePage = ({ notFound, componentProps, layoutData }: SitecorePageProps): JSX.Element => {
   useEffect(() => {
     // Since Sitecore editors do not support Fast Refresh, need to refresh editor chromes after Fast Refresh finished
     handleEditorFastRefresh();
-
-    // Initialize Sitecore Send
-    initializeSend(layoutData.sitecore.context);
   }, []);
+
+  // DEMO TEAM CUSTOMIZATION - Sitecore Send integration
+  useEffect(() => {
+    initializeSend(layoutData.sitecore.context);
+  }, [layoutData.sitecore.context]);
+  // END CUSTOMIZATION
 
   if (notFound || !layoutData.sitecore.route) {
     // Shouldn't hit this (as long as 'notFound' is being returned below), but just to be safe
