@@ -9,7 +9,6 @@ import {
   getPublicUrl,
   LayoutServiceData,
   Field,
-  LayoutServicePageState,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import Scripts from 'src/Scripts';
 // DEMO TEAM CUSTOMIZATION - CDP and Sitecore Send integration
