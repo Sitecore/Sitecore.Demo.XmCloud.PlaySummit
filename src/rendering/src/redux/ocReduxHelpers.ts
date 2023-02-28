@@ -3,7 +3,7 @@ import { isOrderCloudError } from '../helpers/TypeGuards';
 import logout from './ocAuth/logout';
 import { logError } from './ocErrors';
 import { RootState, AppThunkApi } from './store';
-import { get } from 'lodash';
+import get from 'lodash/get';
 
 export interface OcThrottle {
   location: keyof RootState;

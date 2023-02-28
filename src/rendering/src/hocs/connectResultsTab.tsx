@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { omit } from 'lodash';
+import omit from 'lodash/omit';
 import { FEATURED_SORTING_OPTION, getSortingOptions } from '../helpers/ContentSearchHelper';
 import { debounceAsync } from '../helpers/Debounce';
 import { FC, useCallback, useContext, useEffect, useState } from 'react';
