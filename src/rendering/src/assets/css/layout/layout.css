@@ -1,7 +1,8 @@
 header {
   @apply sticky top-0 w-full;
 
-  z-index: 9999;
+  /* Use a z-index value less than 9000 to ensure React error dialog displays above */
+  z-index: 8888;
 
   /* Required for the Experience Editor floating toolbar to display above the header when the first component below the header is selected. */
   &.experience-editor-active {
