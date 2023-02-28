@@ -1,10 +1,10 @@
 import { NextApiHandler } from 'next';
-import { config } from './config';
+import { cdpConfig } from './config';
 
 const handler: NextApiHandler<unknown> = async (request, response) => {
   try {
-    const resData = await fetch(`${config.apiTargetEndpoint}/guests/${request.query.guestRef}`, {
-      headers: config.headers,
+    const resData = await fetch(`${cdpConfig.apiTargetEndpoint}/guests/${request.query.guestRef}`, {
+      headers: cdpConfig.headers,
     })
       .then((res) => res.text())
       .then((res) => JSON.parse(res));
