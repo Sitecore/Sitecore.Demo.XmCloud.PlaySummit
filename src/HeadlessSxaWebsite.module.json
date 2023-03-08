@@ -45,6 +45,10 @@
                 "path": "/sitecore/templates/Project/PLAY"
             },
             {
+                "name": "legacy-templates",
+                "path": "/sitecore/templates/Project/Legacy"
+            },
+            {
                 "name": "branches",
                 "path": "/sitecore/templates/Branches/Project/PLAY"
             },
