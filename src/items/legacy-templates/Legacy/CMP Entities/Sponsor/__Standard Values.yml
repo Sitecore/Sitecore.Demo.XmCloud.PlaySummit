@@ -1,0 +1,40 @@
+﻿---
+ID: "0fc6917f-5bfb-4d8d-94c3-10921131f450"
+Parent: "3b884b30-54c1-464c-aadd-f8bd94e7c38e"
+Template: "3b884b30-54c1-464c-aadd-f8bd94e7c38e"
+Path: /sitecore/templates/Project/Legacy/CMP Entities/Sponsor/__Standard Values
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Value: 1
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1f1be085-d547-46cc-a0ab-85d5c9456ac6"
+      Hint: LogoTransformation
+      Value: medium
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "88a0fe68-7edf-4726-b53a-8bf622268a63"
+      Hint: Name
+      Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a7b50e8c-bf39-4025-80a5-2e8cb0579c97"
