@@ -1,6 +1,6 @@
 import { BuyerProduct } from 'ordercloud-javascript-sdk';
 import { useEffect } from 'react';
-import { isEqual } from 'lodash';
+import isEqual from 'lodash/isEqual';
 import { OcProductListOptions, setListOptions } from '../redux/ocProductList';
 import { useAppDispatch, useAppSelector } from '../redux/store';
 
