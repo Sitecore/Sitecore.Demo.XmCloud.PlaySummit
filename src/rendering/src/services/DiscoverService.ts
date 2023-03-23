@@ -14,6 +14,9 @@ import SimilarProducts from '../components/Widgets/SimilarProducts';
 import RecommendedForYou from '../components/Widgets/RecommendedForYou';
 import TrendingProducts from '../components/Widgets/TrendingProducts';
 import RecentlyViewedProducts from '../components/Widgets/RecentlyViewedProducts';
+import FeaturedProducts from '../components/Widgets/FeaturedProducts';
+import GeoBasedProducts from '../components/Widgets/GeoBasedProducts';
+import { isAShopPage } from '../helpers/CommerceHelper';
 
 export interface DiscoverReference {
   current: { contains: (eventTarget: EventTarget) => boolean };
@@ -23,7 +26,31 @@ type DiscoverServiceOptions = {
   isStorybook?: boolean;
 };
 
-export const DiscoverService = (options?: DiscoverServiceOptions): void => {
+export const updateDiscoverContext = (): void => {
+  const pathName = window.location.pathname;
+
+  // Only update the context for shop pages
+  if (isAShopPage(pathName)) {
+    const context = PageController.getContext();
+    context.setPageUri(pathName);
+    trackPageViewEvent({
+      page: {
+        uri: context.getPageUri(),
+      },
+      user: {
+        uuid: context.getUserUuid(),
+      },
+    });
+  }
+};
+
+let isDiscoverInitialized = false;
+
+export const initialize = (options?: DiscoverServiceOptions): void => {
+  if (isDiscoverInitialized) {
+    return;
+  }
+
   const DISCOVER_CUSTOMER_KEY = options?.isStorybook
     ? '0-0'
     : process.env.NEXT_PUBLIC_DISCOVER_CUSTOMER_KEY || '';
@@ -126,9 +153,33 @@ export const DiscoverService = (options?: DiscoverServiceOptions): void => {
     },
   });
 
+  setWidget('rfkid_36', {
+    component: FeaturedProducts,
+    type: WidgetDataType.RECOMMENDATION,
+    options: {
+      properties: {
+        initial: {
+          totalItems: 4,
+        },
+      },
+    },
+  });
+
   setWidget('ps_trending_categories', {
     component: TrendingCategories,
     type: WidgetDataType.PREVIEW_SEARCH,
+  });
+
+  setWidget('ps_geo', {
+    component: GeoBasedProducts,
+    type: WidgetDataType.RECOMMENDATION,
+    options: {
+      properties: {
+        initial: {
+          totalItems: 4,
+        },
+      },
+    },
   });
 
   init();
@@ -137,15 +188,8 @@ export const DiscoverService = (options?: DiscoverServiceOptions): void => {
   const pushState = history.pushState;
   history.pushState = (...rest) => {
     pushState.apply(history, rest);
-    const context = PageController.getContext();
-    context.setPageUri(window.location.pathname);
-    trackPageViewEvent({
-      page: {
-        uri: context.getPageUri(),
-      },
-      user: {
-        uuid: context.getUserUuid(),
-      },
-    });
+    updateDiscoverContext();
   };
+
+  isDiscoverInitialized = true;
 };

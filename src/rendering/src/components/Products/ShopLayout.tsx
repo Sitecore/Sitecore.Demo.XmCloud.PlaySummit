@@ -8,15 +8,13 @@ import { isCommerceEnabled } from '../../helpers/CommerceHelper';
 import { Provider } from 'react-redux';
 import reduxStore from '../../redux/store';
 import OcProvider from '../../redux/ocProvider';
-import { DiscoverService } from '../../services/DiscoverService';
+import { initialize as initializeDiscover } from '../../services/DiscoverService';
 import { trackViewEvent } from '../../services/TrackingService';
 import { initialize as initializeSend } from '../../services/SendService';
 
-if (isCommerceEnabled) {
-  DiscoverService();
-}
-
 const ShopLayout = (props: PropsWithChildren<unknown>): JSX.Element => {
+  initializeDiscover();
+
   useEffect(() => {
     // Initialize Sitecore Send
     initializeSend();
