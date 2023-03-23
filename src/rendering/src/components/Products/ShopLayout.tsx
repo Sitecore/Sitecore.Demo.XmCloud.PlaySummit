@@ -9,7 +9,8 @@ import { Provider } from 'react-redux';
 import reduxStore from '../../redux/store';
 import OcProvider from '../../redux/ocProvider';
 import { DiscoverService } from '../../services/DiscoverService';
-import { logViewEvent } from '../../services/CdpService';
+import { trackViewEvent } from '../../services/TrackingService';
+import { initialize as initializeSend } from '../../services/SendService';
 
 if (isCommerceEnabled) {
   DiscoverService();
@@ -17,11 +18,15 @@ if (isCommerceEnabled) {
 
 const ShopLayout = (props: PropsWithChildren<unknown>): JSX.Element => {
   useEffect(() => {
-    // Log a CDP page view on route change
+    // Initialize Sitecore Send
+    initializeSend();
+
+    trackViewEvent();
+    // Log a page view on route change
     const pushState = history.pushState;
     history.pushState = (...rest) => {
       pushState.apply(history, rest);
-      logViewEvent();
+      trackViewEvent();
     };
   }, []);
 

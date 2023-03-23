@@ -29,7 +29,7 @@ type AppPropsWithLayout = AppProps<SitecorePageProps> & {
 
 // DEMO TEAM CUSTOMIZATION (next line) - Different prop type. Add router.
 function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element {
-  // DEMO TEAM CUSTOMIZATION - Identify the user from an email address from the query string to handle clicks on email links. Also register a key press handler to close CDP sessions and forget CDP guests.
+  // DEMO TEAM CUSTOMIZATION
   useEffect(() => {
     // Identify the user from an email address from the query string to handle clicks on email links
     const emailQueryStringValue = router.query['email'];

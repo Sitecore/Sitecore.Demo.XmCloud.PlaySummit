@@ -1,7 +1,7 @@
 /**
  * This Layout is needed for Starter Kit.
  */
-import React, { useEffect } from 'react'; // DEMO TEAM CUSTOMIZATION - Log page views in CDP
+import React, { useEffect } from 'react'; // DEMO TEAM CUSTOMIZATION - Log page views
 import Head from 'next/head';
 // DEMO TEAM CUSTOMIZATION - Add LayoutServicePageState
 import {
@@ -41,7 +41,7 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
   const isPageEditing = layoutData.sitecore.context.pageEditing;
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
 
-  // DEMO TEAM CUSTOMIZATION - Log page views in CDP
+  // DEMO TEAM CUSTOMIZATION - Log page views
   useEffect(() => {
     (async () => {
       await trackViewEvent(route);
