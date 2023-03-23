@@ -1,0 +1,24 @@
+﻿---
+ID: "bef89c75-290a-40a6-9303-fa1d185111da"
+Parent: "b698e889-8bd5-4d28-9d7e-6a620feb0fbd"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/CMP/Content Hub Entity/Content Hub Attributes/VariantIdentifier
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Variant Identifier
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9fd347e2-afaf-4105-b745-d0710de47b28"

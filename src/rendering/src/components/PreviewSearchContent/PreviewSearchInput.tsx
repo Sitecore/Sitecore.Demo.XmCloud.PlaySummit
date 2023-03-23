@@ -1,5 +1,5 @@
 import { forwardRef, KeyboardEvent, useCallback, useContext } from 'react';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 import { PreviewSearchContext } from './PreviewSearchContextProvider';
 
 type PreviewSearchInputProps = {

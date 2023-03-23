@@ -1,5 +1,6 @@
 import { AxiosDataFetcher } from '@sitecore-jss/sitecore-jss-nextjs';
-import { merge, uniq } from 'lodash';
+import merge from 'lodash/merge';
+import uniq from 'lodash/uniq';
 import { SearchResultType } from '../helpers/ContentSearchHelper';
 import { ContentSearchResponseBase } from '../interfaces/contentSearch/ContentSearchResponse';
 
