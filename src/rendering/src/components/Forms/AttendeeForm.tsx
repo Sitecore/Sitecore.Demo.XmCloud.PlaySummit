@@ -2,7 +2,7 @@ import React, { FormEvent, useEffect, useState } from 'react';
 import Router from 'next/router';
 import Link from 'next/link';
 import { ComponentProps } from 'lib/component-props';
-import { identifyVisitor } from '../../services/CdpService';
+import { identifyVisitor } from '../../services/IdentificationService';
 import { getUserData } from '../../helpers/GuestDataHelper';
 
 const AttendeeForm = (props: ComponentProps): JSX.Element => {

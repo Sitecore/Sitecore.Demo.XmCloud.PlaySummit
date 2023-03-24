@@ -7,9 +7,12 @@ import {
   WelcomeMessage,
   getDynamicWelcomeMessage as boxeverGetDynamicWelcomeMessage,
   isCdpConfigured as boxeverIsCdpConfigured,
+  closeSession as boxeverCloseSession,
   getGuestEmail as boxeverGetGuestEmail,
   getGuestFirstName as boxeverGetGuestFirstName,
   getGuestLastName as boxeverGetGuestLastName,
+  shouldCloseSession as boxeverShouldCloseSession,
+  ShouldCloseSessionResponse,
 } from './BoxeverService';
 import { RouteData } from '@sitecore-jss/sitecore-jss-nextjs';
 import { TICKETS } from '../models/mock-tickets';
@@ -23,6 +26,8 @@ import { DPayment } from '../models/ordercloud/DPayment';
 export const isCdpConfigured = boxeverIsCdpConfigured;
 
 export const CdpScripts: JSX.Element | undefined = BoxeverScripts;
+
+export type { WelcomeMessage } from './BoxeverService';
 
 type viewEventAdditionalData = {
   sitecoreTemplateName?: string;
@@ -92,6 +97,20 @@ export function logTicketPurchase(ticketId: number): Promise<unknown> {
   return logEvent('TICKET_PURCHASED', eventPayload).then(() =>
     saveDataExtension(dataExtensionName, dataExtensionPayload)
   );
+}
+
+/**
+ * Logs a custom event when a user scans a QR code on the TV app
+ */
+export function logQRCodeEvent(
+  eventName: string,
+  payload?: Record<string, unknown>
+): Promise<unknown> {
+  return logEvent(eventName, payload);
+}
+
+export function closeCurrentSession(): Promise<unknown> {
+  return boxeverCloseSession();
 }
 
 /**
@@ -170,4 +189,8 @@ export async function getGuestFirstName(): Promise<string> {
 
 export async function getGuestLastName(): Promise<string> {
   return boxeverGetGuestLastName();
+}
+
+export function shouldCloseSession(): Promise<ShouldCloseSessionResponse> {
+  return boxeverShouldCloseSession();
 }
