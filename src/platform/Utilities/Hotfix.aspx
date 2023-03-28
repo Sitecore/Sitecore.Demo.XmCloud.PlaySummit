@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Hotfix.aspx.cs" Inherits="Sitecore.Demo.Edge.Website.Utilities.Hotfix" %>
