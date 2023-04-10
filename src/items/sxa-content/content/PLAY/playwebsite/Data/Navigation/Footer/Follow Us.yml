@@ -1,0 +1,17 @@
+﻿---
+ID: "11312118-0133-4369-8522-472c305d7661"
+Parent: "ecdd5437-0848-47be-accd-04bb1d631c94"
+Template: "ac3d649a-610a-4f10-be28-78efa6d80e0e"
+Path: /sitecore/content/PLAY/playwebsite/Data/Navigation/Footer/Follow Us
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2013d9a3-2cac-487e-8d92-3be34b1b932a"

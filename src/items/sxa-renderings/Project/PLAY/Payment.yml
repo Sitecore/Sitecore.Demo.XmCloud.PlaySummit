@@ -1,0 +1,17 @@
+﻿---
+ID: "7f37cf4e-90f3-47be-87f4-33037f2f30c1"
+Parent: "d876ffec-e6ee-479c-9f3a-a75a67fc4471"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Project/PLAY/Payment
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f2d236b8-78e8-437a-8e64-c5d34a5ab153"

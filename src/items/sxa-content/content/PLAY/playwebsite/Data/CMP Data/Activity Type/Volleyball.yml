@@ -1,0 +1,20 @@
+﻿---
+ID: "bf4fa415-73a4-4eca-b20e-7756bf94c280"
+Parent: "afb5e96c-39b3-416e-8885-ab22ba684409"
+Template: "f2387810-b5e4-4ccb-a327-60738e440a66"
+Path: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Activity Type/Volleyball
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: Demo.ActivityType.Volleyball
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8af7f4f3-606e-44ad-8bd3-feb186f7416e"
+    - ID: "e6dd8379-422c-41c1-863c-947992df1836"
+      Hint: Name
+      Value: Volleyball

@@ -1,0 +1,20 @@
+﻿---
+ID: "c4b7b536-44eb-406f-973d-d68d222cee34"
+Parent: "582f8e8f-453d-4ffc-adbc-de6abc4ff3b1"
+Template: "1c5fe58a-0bb1-45af-a6eb-b88ccecb57e6"
+Path: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Speaker Type/Speaker
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: Demo.SpeakerType.Speaker
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "75bc2d2c-9506-4d62-ba63-b4e605254af9"
+      Hint: Name
+      Value: Speaker
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "85052a28-c460-43f7-9c22-77e53ecf8c1c"

@@ -1,0 +1,21 @@
+﻿---
+ID: "c11600ed-2cdf-4cc7-8782-9957d07e6f12"
+Parent: "233cc3ab-ef68-4167-adaa-391c3ff1e907"
+Template: "ce8e28f6-c530-4bd5-9ca5-00d7d42c26c0"
+Path: /sitecore/content/PLAY/playwebsite/Data/Navigation/Footer/Pages/News
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2bd09684-4a85-4163-aa25-653cc81886ff"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link class="" id="{0E4A63DA-7496-557E-BF80-5BD52255E431}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/news" />

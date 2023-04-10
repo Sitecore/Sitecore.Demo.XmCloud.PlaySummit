@@ -1,0 +1,13 @@
+﻿---
+ID: "e43c43ec-648b-4328-814b-c4234e822e80"
+Parent: "362c964c-6b90-4c78-85f9-dd504ff7b09b"
+Template: "ce8e28f6-c530-4bd5-9ca5-00d7d42c26c0"
+Path: /sitecore/content/PLAY/playwebsite/Data/Navigation/Footer/Join Us/Become a Vendor
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b57135fc-7169-4403-8042-26702aa802f5"

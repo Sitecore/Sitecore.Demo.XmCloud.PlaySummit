@@ -1,0 +1,20 @@
+﻿---
+ID: "4d758ced-1ad4-46c7-8e72-b42be54a08e8"
+Parent: "232fdf6b-950d-4ec2-bc47-e23017523272"
+Template: "c49ff72c-a4e8-4148-b8cf-bc362c655a52"
+Path: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Audience/Fitness Fanatic
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: Demo.Audience.FitnessFanatic
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5dc62d03-3bb5-45ea-b576-5b1122a9c1ac"
+    - ID: "af5cfb2c-4e9f-4425-9bfd-2a333801288c"
+      Hint: Name
+      Value: Fitness Fanatic

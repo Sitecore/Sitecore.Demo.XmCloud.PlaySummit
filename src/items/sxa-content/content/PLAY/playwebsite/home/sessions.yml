@@ -1,0 +1,63 @@
+﻿---
+ID: "68dc89a4-1b04-59a8-9c4e-3b49d6c61052"
+Parent: "2d1d7aca-9597-5ca6-85b2-9b04907e4298"
+Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Path: /sitecore/content/PLAY/playwebsite/home/sessions
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{D8AA73E1-C275-4EEE-BB9D-333925E51952}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{E3DFFB5D-ED01-4964-B0F4-285B34168CBB}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{AE055A74-8964-551F-9C40-58D3FE99A358}"
+          p:after="r[@uid='{159B4C52-2540-5D79-8A4E-EB76279EB7FC}']"
+          s:rname="FeaturedEvent"
+          s:id="{C1E45B3A-429D-53FE-9640-1581E24A1447}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1" />
+        <r
+          uid="{695F77F3-8EFA-57B0-B4E5-725CA7DFDF3B}"
+          p:after="r[@uid='{AE055A74-8964-551F-9C40-58D3FE99A358}']"
+          s:rname="SessionsFilters"
+          s:id="{AFA8D2EB-B612-5293-8BB8-F73F99004331}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1" />
+        <r
+          uid="{F83C4F85-EC5B-560F-AE09-F26FF00023DE}"
+          p:after="r[@uid='{695F77F3-8EFA-57B0-B4E5-725CA7DFDF3B}']"
+          s:rname="SessionsGrid"
+          s:ds=""
+          s:id="{1059A458-3C21-5A98-ABD0-A65629F4DE1A}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Sessions
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "422e1a66-c4a0-4315-8738-ee686058ec22"
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: Sessions

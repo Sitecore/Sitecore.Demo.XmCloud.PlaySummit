@@ -1,0 +1,23 @@
+﻿---
+ID: "fa4bcd86-6377-476a-b5af-0468b5889a59"
+Parent: "b541c1ae-68e3-484b-bc05-73b574497189"
+Template: "0bc9237d-12eb-47a5-afed-a65188324358"
+Path: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Timeslots/11 am
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: Demo.Timeslot.11am
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "62545186-56cf-4614-bcdc-2ecb3947ea4c"
+      Hint: Name
+      Value: 11 am
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "81f9faf8-e400-4860-a16a-8c46cc135e1b"

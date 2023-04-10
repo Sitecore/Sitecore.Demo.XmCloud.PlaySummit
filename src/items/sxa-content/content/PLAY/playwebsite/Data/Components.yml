@@ -1,0 +1,21 @@
+﻿---
+ID: "58a24f8c-f3f1-58b9-b895-2cb0007929e2"
+Parent: "44864379-85fa-46df-a102-35a8bc2391b5"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/PLAY/playwebsite/Data/Components
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 900
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Demo Content Approver|pe|+item:read|pd|+item:read|ar|sitecore\Demo Content Creator|pe|+item:read|pd|+item:rename|+item:write|+item:read|+item:delete|+item:create|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ba5c6e54-eaa6-4e6b-bc34-9ff5f5cefd67"

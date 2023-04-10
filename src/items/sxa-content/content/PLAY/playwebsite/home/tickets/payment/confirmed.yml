@@ -1,0 +1,75 @@
+﻿---
+ID: "4a3e83ca-824e-5f3b-8a33-c6ea5c9c8091"
+Parent: "8d9013bc-618f-5ef1-bbe6-4fdb3a41e913"
+Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Path: /sitecore/content/PLAY/playwebsite/home/tickets/payment/confirmed
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{34C5D7E3-44C3-4202-86F1-8773B2DC1C70}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{E0626D73-FB56-55FA-A243-28F346FA84A1}"
+          p:before="*"
+          s:rname="HeaderBanner"
+          s:ds="{5D0B4957-862A-5712-B292-8E6910C175FA}"
+          s:id="{FC5B8C36-8C49-54FD-94F3-C5AD21446CC4}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1" />
+        <r
+          uid="{748A61CF-32EF-56DD-9EAC-4BEC7E82087E}"
+          p:after="r[@uid='{E0626D73-FB56-55FA-A243-28F346FA84A1}']"
+          s:rname="Section"
+          s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1" />
+        <r
+          uid="{00FA2B39-4A40-40B4-95D9-18591F5C56F7}"
+          p:after="r[@uid='{748A61CF-32EF-56DD-9EAC-4BEC7E82087E}']"
+          s:ds="{90DC024A-FC95-4D98-BEB7-744039E3CDA0}"
+          s:id="{118A1550-728A-5324-8DF3-9AF7D252E89B}"
+          s:par="CacheClearingBehavior=Clear%20on%20publish"
+          s:ph="/headless-main/sxa-main/container-1/jss-section-content-{748A61CF-32EF-56DD-9EAC-4BEC7E82087E}-0" />
+        <r
+          uid="{B990ED4E-133F-5882-85D9-029C3FC927A5}"
+          p:after="r[@uid='{00FA2B39-4A40-40B4-95D9-18591F5C56F7}']"
+          s:rname="PaymentConfirmed"
+          s:id="{7828DB2C-6882-5044-95E3-8D2A542E7116}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1/jss-section-content-{748A61CF-32EF-56DD-9EAC-4BEC7E82087E}-0" />
+        <r
+          uid="{C7E7C2C7-EA54-5F17-BFF1-D4E624B9AD9E}"
+          p:after="*[1=2]"
+          s:rname="FullImageSection"
+          s:ds="{BD8B0390-574A-57F3-B801-1C3A4F42B3D6}"
+          s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
+          s:par="FieldNames&amp;Styles=%7B3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7D%7C%7BFF6391E2-EFC2-436F-85B1-C2AFA0A5F6D1%7D&amp;RenderingIdentifier"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Confirmed
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: 
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1b0ec984-f64c-4a46-9372-f83dcad3bc0a"
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: Payment Confirmed

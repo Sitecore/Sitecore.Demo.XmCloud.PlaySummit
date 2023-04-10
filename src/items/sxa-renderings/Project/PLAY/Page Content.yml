@@ -1,0 +1,17 @@
+﻿---
+ID: "3006ec5b-0438-414b-860e-e6754658ea12"
+Parent: "d876ffec-e6ee-479c-9f3a-a75a67fc4471"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Project/PLAY/Page Content
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d6c07a61-1617-48c2-83ea-c3ad7ef5fd16"

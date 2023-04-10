@@ -1,0 +1,17 @@
+﻿---
+ID: "d2e97d8f-4634-41b2-ae8b-2b2d94f2d945"
+Parent: "44864379-85fa-46df-a102-35a8bc2391b5"
+Template: "8fe7f8dc-cb5d-42c2-99f8-76608c243f10"
+Path: /sitecore/content/PLAY/playwebsite/Data/Promos
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0b224110-f739-489b-b47d-ac331cc82ddd"

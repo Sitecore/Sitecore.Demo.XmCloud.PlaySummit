@@ -1,0 +1,13 @@
+﻿---
+ID: "b63fe2f1-b5ca-481f-8d7c-cc11bf1dabf8"
+Parent: "f5f0fbe3-61ad-4967-a5d8-8d760331d6a1"
+Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
+Path: /sitecore/layout/Placeholder Settings/Project/PLAY
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2a69be7e-13cc-4e36-a899-08e04595e30d"
