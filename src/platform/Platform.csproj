@@ -44,6 +44,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Spe">
+      <HintPath>lib\Spe.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -75,6 +79,7 @@
     <Content Include="App_Config\Include\Sitecore.Demo.Edge.Website.Custom.config" />
     <Content Include="sitecore\shell\Themes\Standard\EdgeIcons.zip" />
     <Content Include="Utilities\ClearAllCaches.aspx" />
+    <Content Include="Utilities\Components.aspx" />
     <Content Include="Utilities\IndexRebuild.aspx" />
     <Content Include="Utilities\Hotfix.aspx" />
     <Content Include="Utilities\Restart.aspx" />
@@ -101,6 +106,13 @@
     </Compile>
     <Compile Include="Utilities\ClearAllCaches.aspx.designer.cs">
       <DependentUpon>ClearAllCaches.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Components.aspx.cs">
+      <DependentUpon>Components.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utilities\Components.aspx.designer.cs">
+      <DependentUpon>Components.aspx</DependentUpon>
     </Compile>
     <Compile Include="Utilities\IndexRebuild.aspx.cs">
       <DependentUpon>IndexRebuild.aspx</DependentUpon>

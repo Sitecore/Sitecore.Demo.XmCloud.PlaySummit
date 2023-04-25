@@ -26,6 +26,10 @@
                 "database": "core"
             },
             {
+                "name": "powershell-scripts-warmup",
+                "path": "/sitecore/system/Modules/PowerShell/Script Library/PLAY"
+            },
+            {
                 "name": "languages",
                 "path": "/sitecore/system/Languages",
                 "scope": "descendantsOnly",
