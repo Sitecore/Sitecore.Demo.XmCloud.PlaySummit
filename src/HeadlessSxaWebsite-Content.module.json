@@ -7,7 +7,17 @@
             {
                 "name": "sxa-content",
                 "path": "/sitecore/content",
-                "scope": "descendantsOnly"
+                "scope": "descendantsOnly",
+                "rules": [
+                    {
+                        "path": "/Home",
+                        "scope": "ignored"
+                    },
+                    {
+                        "path": "/CMP",
+                        "scope": "ignored"
+                    }
+                ]
             },
             {
                 "name": "sxa-media",
