@@ -1,0 +1,21 @@
+﻿---
+ID: "cb9f36a4-0633-496b-9f93-c7a126c2073d"
+Parent: "b392fdc1-eb30-4726-aef9-9d5d3e6b750e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Headless Variants/LinkList
+BranchID: "70519928-c595-4b2b-bb35-75022feecc4c"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/text_align_left.png
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{8A535969-7E57-4951-86D3-5E12DBFF31D3}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "49176095-443b-485c-a4e1-b879dad46cc8"

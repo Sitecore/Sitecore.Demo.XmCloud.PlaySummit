@@ -1,0 +1,20 @@
+﻿---
+ID: "a69c357b-f4f9-4d4b-8262-44b0e60f051f"
+Parent: "232fdf6b-950d-4ec2-bc47-e23017523272"
+Template: "c49ff72c-a4e8-4148-b8cf-bc362c655a52"
+Path: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Audience/Healthy Living
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: Demo.Audience.HealthyLiving
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c99ad924-c1e6-4405-9b2a-e530a885ac97"
+    - ID: "af5cfb2c-4e9f-4425-9bfd-2a333801288c"
+      Hint: Name
+      Value: Healthy Living

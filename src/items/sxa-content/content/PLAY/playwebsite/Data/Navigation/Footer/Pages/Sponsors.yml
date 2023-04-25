@@ -1,0 +1,21 @@
+﻿---
+ID: "30f5b4cb-9848-4fb0-bb5f-b7f86cd6af94"
+Parent: "233cc3ab-ef68-4167-adaa-391c3ff1e907"
+Template: "ce8e28f6-c530-4bd5-9ca5-00d7d42c26c0"
+Path: /sitecore/content/PLAY/playwebsite/Data/Navigation/Footer/Pages/Sponsors
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f04f3e7f-2214-4b18-aa1c-fe2f047259bb"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link class="" id="{66C99E47-7BBF-52D1-B1D7-4662B850744A}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/sponsors" />

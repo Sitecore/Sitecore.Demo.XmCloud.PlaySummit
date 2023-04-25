@@ -1,0 +1,45 @@
+﻿---
+ID: "8418e88d-2b0e-491d-9e8c-3243b7bc02fd"
+Parent: "66c99e47-7bbf-52d1-b1d7-4662b850744a"
+Template: "3b884b30-54c1-464c-aadd-f8bd94e7c38e"
+Path: /sitecore/content/PLAY/playwebsite/home/sponsors/Redsand
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: M4tsA15Lmkq79Br9JTQMnA
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Redsand
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "079a4b3e-3819-4d92-9191-2c86bffa049e"
+      Hint: Logo
+      Value: |
+        <image stylelabs-content-id="36821" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/36821/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/07e77ec5309c45a284a2ee3ef841e222?v=367250b7" mediaid="" stylelabs-content-type="Image" alt="Redsand logo" height="1200" width="1200" ></image>
+    - ID: "5a1f6707-d155-4618-b051-966216449b1c"
+      Hint: Description
+      Value: |
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
+        
+    - ID: "752f4b39-259c-42b8-a100-fb6123faed7f"
+      Hint: Speakers
+      Value: "{32C9CADA-A708-49DB-A42C-220443BD3C59}"
+    - ID: "88a0fe68-7edf-4726-b53a-8bf622268a63"
+      Hint: Name
+      Value: Redsand
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ea2f6e3f-6b60-41e8-9083-abd6d8dc1fa6"
+    - ID: "cf42c29f-ee3a-4f06-92ac-10fc51a42099"
+      Hint: Level
+      Value: Silver
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: Redsand

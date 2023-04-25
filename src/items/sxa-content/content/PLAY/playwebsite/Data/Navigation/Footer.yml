@@ -1,0 +1,13 @@
+﻿---
+ID: "ecdd5437-0848-47be-accd-04bb1d631c94"
+Parent: "71eac357-f9ea-4592-9d46-d4537cbfa28d"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/PLAY/playwebsite/Data/Navigation/Footer
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "120c0c14-2f58-4836-ad15-5ed275f99b6d"

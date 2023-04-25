@@ -1,0 +1,21 @@
+﻿---
+ID: "2bb9e16f-6402-546d-9a00-12635ca45d69"
+Parent: "0537918f-f15a-5f54-b1e6-cae557ec431f"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: /sitecore/content/PLAY/playwebsite/Data/PLAY Dictionary/Navigation
+SharedFields:
+- ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
+  Hint: Key
+  Value: Navigation
+Languages:
+- Language: en
+  Fields:
+  - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
+    Hint: Phrase
+    Value: Navigation
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f5cdec80-eefe-4fe9-9346-5760435bf33b"

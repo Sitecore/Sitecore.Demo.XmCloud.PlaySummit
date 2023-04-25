@@ -1,0 +1,13 @@
+﻿---
+ID: "b46ba2bf-3c2e-40e3-a028-47a08ce06a8a"
+Parent: "a26673dc-dd9e-4e98-9108-ee0c6c4771d1"
+Template: "ce8e28f6-c530-4bd5-9ca5-00d7d42c26c0"
+Path: /sitecore/content/PLAY/playwebsite/Data/Navigation/Footer/Get Support/Tech Support
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "00b05b5e-c4ad-4d89-a47f-9238bdd26956"

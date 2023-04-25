@@ -1,0 +1,20 @@
+﻿---
+ID: "1047aee5-9bcd-4dbf-9744-a26e12b79ab6"
+Parent: "59b41b5f-e22e-460b-941e-fb64fe8da8fc"
+Template: "a6868d65-d612-401f-a40a-cd5ba0857b81"
+Path: /sitecore/system/Settings/Services/API Keys/PLAY
+SharedFields:
+- ID: "780c8e48-fe03-4a73-90dc-9bb5296b95d7"
+  Hint: CORS Origins
+  Value: *
+- ID: "99ba91ec-f0d3-4372-b638-67c2402a2484"
+  Hint: AllowedControllers
+  Value: *
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0d55ff00-b3c8-4bd6-8c47-dceb547cdff1"

@@ -1,0 +1,29 @@
+﻿---
+ID: "b4751f92-dc47-437f-b00e-dc2d636547d1"
+Parent: "70756637-66a4-49bb-9e8b-99bb99662e69"
+Template: "905b44f3-db0d-4050-a738-1ece2ebb8509"
+Path: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Testimonies/Alba
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: "c-fKo6PXW0OYeLAqdP9GUg"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "28c193d1-5cd7-4c20-887d-c68a73b323cd"
+      Hint: Testimony
+      Value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales mi in magna accumsan, vitae finibus libero fringilla. Duis posuere a lorem quis pretium. Sed varius dolor non mi ornare pulvinar.</p>
+        
+    - ID: "30de01d7-233e-42ac-bb14-751e9d60b1cd"
+      Hint: Provider
+      Value: Alba
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5e30c199-4422-43a4-b489-944635c8af88"
+    - ID: "a4eb8a28-879d-41d9-87c9-2ed2f03d0ae4"
+      Hint: Logo
+      Value: |
+        <image stylelabs-content-id="34000" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/34000/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/949c003d42af49be962cd99f31eb3efd?v=f6979300" mediaid="" stylelabs-content-type="Image" alt="Alba Logo" height="3125" width="3125" />

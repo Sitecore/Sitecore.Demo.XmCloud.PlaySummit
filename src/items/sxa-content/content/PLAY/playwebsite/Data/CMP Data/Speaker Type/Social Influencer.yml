@@ -1,0 +1,20 @@
+﻿---
+ID: "eab5a681-36ea-4f6b-b5ed-13c110edfaab"
+Parent: "582f8e8f-453d-4ffc-adbc-de6abc4ff3b1"
+Template: "1c5fe58a-0bb1-45af-a6eb-b88ccecb57e6"
+Path: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Speaker Type/Social Influencer
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: Demo.SpeakerType.SocialInfluencer
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "75bc2d2c-9506-4d62-ba63-b4e605254af9"
+      Hint: Name
+      Value: Social Influencer
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8f0bfa0b-0a4f-44bf-8a3b-e69e677561b2"

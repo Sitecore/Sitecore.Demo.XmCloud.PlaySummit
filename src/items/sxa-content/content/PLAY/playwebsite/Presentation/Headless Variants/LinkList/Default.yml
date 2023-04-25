@@ -1,0 +1,18 @@
+﻿---
+ID: "a17137d5-af88-4a98-b4f6-944ab0806595"
+Parent: "cb9f36a4-0633-496b-9f93-c7a126c2073d"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Headless Variants/LinkList/Default
+BranchID: "70519928-c595-4b2b-bb35-75022feecc4c"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{25F1A8E5-EB4C-4202-A9F7-A97DB52DA9AF}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fee52bdf-7c73-415a-85fd-a097a2c0bfdb"

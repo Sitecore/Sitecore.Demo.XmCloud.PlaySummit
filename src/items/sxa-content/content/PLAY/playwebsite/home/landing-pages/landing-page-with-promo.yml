@@ -1,0 +1,94 @@
+﻿---
+ID: "70ee13f2-b8e6-4dce-8627-235c6bd2934c"
+Parent: "4d587c56-3717-41cb-936c-5d0412a50b6b"
+Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/landing-page-with-promo"
+BranchID: "6c07c9a2-87c4-418f-aa22-9e5d6c382e9e"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/document_pinned.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{C14B6289-8AC2-439C-9E5B-40DE9F820C3F}"
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{B73A117A-11C2-4B86-8A5C-4C7648EE87DE}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{29B4540B-ABE2-47AA-82DE-F7950654DA4D}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{1802256F-1B3D-4008-8DEC-ADC7547594C6}"
+          p:before="*"
+          s:ds="local:/Data/Promo"
+          s:id="{2492BAC4-DA07-4C86-87F0-9873D40E2276}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7B0894A97C-6A66-4FA5-89E9-6DA3D4BBA56F%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;DynamicPlaceholderId=5&amp;RenderingIdentifier"
+          s:ph="/headless-main/container-4" />
+        <r
+          uid="{2AF49F79-A9F2-4B50-BA8C-AA07FE651024}"
+          p:after="r[@uid='{1802256F-1B3D-4008-8DEC-ADC7547594C6}']"
+          s:id="{3836D951-BB14-43AC-9231-649B7F245DC5}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7BE76E9DCE-0FF3-486F-818E-E6F7C8B53EBA%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;DynamicPlaceholderId=2"
+          s:ph="/headless-main/container-1" />
+        <r
+          uid="{65E3AA2A-4B36-4C12-9C38-9F56A6458487}"
+          p:after="r[@uid='{2AF49F79-A9F2-4B50-BA8C-AA07FE651024}']"
+          s:id="{C5F905F8-FD1F-444E-A9E5-AC6B774FF0DE}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7B2181EB9E-2230-405F-AFDF-8D31773C123C%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;DynamicPlaceholderId=3"
+          s:ph="/headless-main/container-1" />
+        <r
+          uid="{68D3ED19-2AA1-40EE-88DA-37201A1A7C1F}"
+          p:after="r[@uid='{65E3AA2A-4B36-4C12-9C38-9F56A6458487}']"
+          s:ds="local:/Data/Hero Image"
+          s:id="{2C13DBC0-415C-5DAA-A7D9-56928F1271C4}"
+          s:par="CacheClearingBehavior=Clear on publish"
+          s:ph="headless-main" />
+        <r
+          uid="{B72E2CD5-B78E-4BDA-9C3E-E9C250AD96BF}"
+          p:after="r[@uid='{68D3ED19-2AA1-40EE-88DA-37201A1A7C1F}']"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B08C8BABD-CA64-41EE-B592-13E86CF8AE22%7D%7C%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;DynamicPlaceholderId=1"
+          s:ph="headless-main" />
+        <r
+          uid="{09105C4A-AA53-4BA4-B77C-7BAE78B91F1A}"
+          p:after="*[1=2]"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;DynamicPlaceholderId=4"
+          s:ph="headless-main" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{C2FFB2D6-2015-41FE-95C5-18DA73F9760A}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Landing Page With Promo
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
+      Hint: Title
+      Value: Landing Page With Promo
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Landing Page With Promo
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dd82e300-1639-4b9c-9d53-0aaa7b9d4467"
+    - ID: "e0c0c8a4-0fea-4963-8b86-d47810b80efa"
+      Hint: Content
+      Value: Nam posuere tincidunt orci in interdum. Proin at rutrum erat. Mauris tincidunt elit sed magna fermentum, id egestas tortor congue. Proin lobortis nulla eget enim bibendum, pulvinar hendrerit urna vehicula. Pellentesque aliquet maximus sapien id facilisis. Aliquam sed nibh ornare, rhoncus eros ut, feugiat nibh. Donec ac condimentum augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque fringilla urna nec ante pellentesque, ac vehicula augue pretium. Vestibulum elementum nisl mi, ut ornare risus convallis sodales. Sed vulputate felis quis nulla rhoncus, ut ultrices sem commodo. Curabitur gravida porttitor massa id blandit. Duis eget lobortis odio.

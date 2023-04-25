@@ -1,0 +1,26 @@
+﻿---
+ID: "84040441-931e-48ad-ac7f-fd0145adeb09"
+Parent: "20455605-34c3-47b8-b294-ca62000ba69e"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: /sitecore/layout/Renderings/Project/PLAY/Speakers/SpeakerInformationPageHero
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: SpeakerInformationPageHero
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "edgeicons/32x32/speaker-hero.png"
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
+- ID: "b0b15510-b138-470e-8f33-8da2e228aafe"
+  Hint: Rendering Contents Resolver
+  Value: "{6CCCBCDE-5E95-44E4-AE66-CFE7D3A0589E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d7fd9b97-bbed-4983-86e0-b808f6367aaa"

@@ -6,15 +6,18 @@
         "includes": [
             {
                 "name": "layouts",
-                "path": "/sitecore/layout/Layouts/Project/PLAY"
+                "path": "/sitecore/layout/Layouts/Project",
+                "scope": "descendantsOnly"
             },
             {
                 "name": "sxa-renderings",
-                "path": "/sitecore/layout/Renderings/Project/PLAY"
+                "path": "/sitecore/layout/Renderings/Project",
+                "scope": "descendantsOnly"
             },
             {
                 "name": "sxa-placeholders",
-                "path": "/sitecore/layout/Placeholder Settings/Project/PLAY"
+                "path": "/sitecore/layout/Placeholder Settings/Project",
+                "scope": "descendantsOnly"
             },
             {
                 "name": "headless-placeholders",
@@ -42,15 +45,13 @@
             },
             {
                 "name": "templates",
-                "path": "/sitecore/templates/Project/PLAY"
-            },
-            {
-                "name": "legacy-templates",
-                "path": "/sitecore/templates/Project/Legacy"
+                "path": "/sitecore/templates/Project",
+                "scope": "descendantsOnly"
             },
             {
                 "name": "branches",
-                "path": "/sitecore/templates/Branches/Project/PLAY"
+                "path": "/sitecore/templates/Branches/Project",
+                "scope": "descendantsOnly"
             },
             {
                 "name": "content-hub-default-template",

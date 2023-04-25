@@ -1,0 +1,20 @@
+﻿---
+ID: "402d694d-25ac-4468-bac3-e1a96bac927e"
+Parent: "afb5e96c-39b3-416e-8885-ab22ba684409"
+Template: "f2387810-b5e4-4ccb-a327-60738e440a66"
+Path: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Activity Type/Camping
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: Demo.ActivityType.Camping
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1b4e4626-1e19-4ed5-8735-a958208d37f1"
+    - ID: "e6dd8379-422c-41c1-863c-947992df1836"
+      Hint: Name
+      Value: Camping

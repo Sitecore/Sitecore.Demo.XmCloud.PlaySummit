@@ -1,0 +1,26 @@
+﻿---
+ID: "3e02494c-9cb5-5fc4-a78b-c6af4c44a559"
+Parent: "deb2e94a-9a21-4305-ad48-76704da0e6f1"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: /sitecore/layout/Renderings/Project/PLAY/News/NewsDetail
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: NewsDetail
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "edgeicons/32x32/news-details.png"
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
+- ID: "b0b15510-b138-470e-8f33-8da2e228aafe"
+  Hint: Rendering Contents Resolver
+  Value: "{6CCCBCDE-5E95-44E4-AE66-CFE7D3A0589E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e81ea398-caca-46dc-b0c2-8311ff3dac16"

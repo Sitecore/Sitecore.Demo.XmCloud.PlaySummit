@@ -1,0 +1,17 @@
+﻿---
+ID: "d2833afb-6709-42a5-b6fd-5cbcc112bef6"
+Parent: "6fc0aba3-620e-5067-a61c-7d4c7163ef11"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Project/PLAY/playwebsite/media/img/icons
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 150
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "51558971-aa9c-4126-ad9c-6bcc89b5b05b"

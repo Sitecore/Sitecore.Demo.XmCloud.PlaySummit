@@ -1,0 +1,21 @@
+﻿---
+ID: "5d574711-291a-48b6-bd01-e92d04aad5e5"
+Parent: "842934e4-186d-4a9d-92f2-d3a01ef0cba9"
+Template: "ce8e28f6-c530-4bd5-9ca5-00d7d42c26c0"
+Path: /sitecore/content/PLAY/playwebsite/Data/Navigation/Header/Main Navigation/About Us
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d367baaf-3397-4e23-88ec-6a35fcfb6458"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link class="" id="{2717574C-48A0-5469-85A8-A332DF71F1E4}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/about-us" />

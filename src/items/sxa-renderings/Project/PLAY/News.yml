@@ -1,0 +1,17 @@
+﻿---
+ID: "deb2e94a-9a21-4305-ad48-76704da0e6f1"
+Parent: "d876ffec-e6ee-479c-9f3a-a75a67fc4471"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Project/PLAY/News
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "510d3739-2d7f-4921-bb1e-10b089ab07bd"

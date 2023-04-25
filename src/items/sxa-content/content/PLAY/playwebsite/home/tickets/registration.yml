@@ -1,0 +1,41 @@
+﻿---
+ID: "23d1c784-e28e-5dc3-9515-2325d45c499e"
+Parent: "a7bdfbda-d5cc-5388-a039-f262bc768721"
+Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Path: /sitecore/content/PLAY/playwebsite/home/tickets/registration
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{DE7DB838-7048-45BA-9983-9C2706BFA17E}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{86C8A5B0-4A7F-55CD-87DD-765DEC81833D}"
+          s:rname="HeaderBanner"
+          s:ds="{BD786D95-3316-5B3B-8224-BECD301935A5}"
+          s:id="{FC5B8C36-8C49-54FD-94F3-C5AD21446CC4}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Registration
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "643efbf9-bcec-4a41-9455-a6bce560a2e0"
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: Registration

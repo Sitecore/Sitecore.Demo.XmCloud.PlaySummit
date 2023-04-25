@@ -1,0 +1,22 @@
+﻿---
+ID: "50e74ac2-cc2c-51c1-883f-fc6e8ed07cb3"
+Parent: "58a24f8c-f3f1-58b9-b895-2cb0007929e2"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/PLAY/playwebsite/Data/Components/FeaturedSpeakers
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/box_into.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+    {FDF43AAD-C5D1-54E4-9909-59BFDDC86689}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "da2f6d6d-4d64-4fb3-b958-26fb35007d24"
