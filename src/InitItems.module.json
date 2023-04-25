@@ -10,9 +10,9 @@
                 "allowedPushOperations": "createAndUpdate"
             },
             {
-                "name": "api-key",
-                "path": "/sitecore/system/Settings/Services/API Keys/PLAY",
-                "scope": "singleItem"
+                "name": "api-keys",
+                "path": "/sitecore/system/Settings/Services/API Keys",
+                "scope": "descendantsOnly"
             },
             {
                 "name": "core-fields",
