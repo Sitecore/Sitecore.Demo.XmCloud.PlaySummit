@@ -11,7 +11,7 @@ namespace Sitecore.Demo.Edge.Website.Utilities
             {
                 using (ScriptSession scriptSession = ScriptSessionManager.NewSession("Default", true))
                 {
-                    var libraryId = Request.QueryString["libraryId"];
+                    var libraryId = Environment.GetEnvironmentVariable("XMCLOUD_PROJECT_ID");
                     var speScriptItem = Sitecore.Context.Database.GetItem("/sitecore/system/Modules/PowerShell/Script Library/PLAY/Update Components LibraryId");
                     var script = speScriptItem["Script"];
 
