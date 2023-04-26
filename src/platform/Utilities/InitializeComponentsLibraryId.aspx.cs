@@ -3,7 +3,7 @@ using Spe.Core.Host;
 
 namespace Sitecore.Demo.Edge.Website.Utilities
 {
-	public partial class Components : System.Web.UI.Page
+	public partial class InitializeComponentsLibraryId : System.Web.UI.Page
 	{
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -13,7 +13,7 @@ namespace Sitecore.Demo.Edge.Website.Utilities
                 {
                     var libraryId = Environment.GetEnvironmentVariable("XMCLOUD_PROJECT_ID");
                     var speScriptItem = Sitecore.Context.Database.GetItem("/sitecore/system/Modules/PowerShell/Script Library/PLAY/Update Components LibraryId");
-                    var script = speScriptItem["Script"];
+                    var script = speScriptItem?["Script"];
 
                     if (!string.IsNullOrEmpty(script) && !string.IsNullOrEmpty(libraryId))
                     {

@@ -1,1 +1,0 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Components.aspx.cs" Inherits="Sitecore.Demo.Edge.Website.Utilities.Components" %>

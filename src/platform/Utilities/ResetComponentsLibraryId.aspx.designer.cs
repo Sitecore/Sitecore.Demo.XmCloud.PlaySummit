@@ -11,7 +11,7 @@ namespace Sitecore.Demo.Edge.Website.Utilities
 {
 
 
-    public partial class Components
+    public partial class ResetComponentsLibraryId
     {
     }
 }
