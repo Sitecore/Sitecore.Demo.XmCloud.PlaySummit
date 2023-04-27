@@ -85,8 +85,8 @@ const PaymentMethodsForm = (props: PaymentMethodsFormProps): JSX.Element => {
   };
 
   const cancelEditButton = props.isEditing && (
-    <Link href="/account/payment-methods">
-      <a className="cancel-edit">Cancel</a>
+    <Link href="/account/payment-methods" className="cancel-edit">
+      Cancel
     </Link>
   );
 

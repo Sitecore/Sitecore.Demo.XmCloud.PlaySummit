@@ -36,19 +36,15 @@ const ProductCard = ({
   return (
     <div className="product-card">
       <div className="product-image-container">
-        <Link href={product_url}>
-          <a onClick={onClick}>
-            <img className="product-image" src={image_url} alt={name} />
-            {productOfferRibbon}
-          </a>
+        <Link href={product_url} onClick={onClick}>
+          <img className="product-image" src={image_url} alt={name} />
+          {productOfferRibbon}
         </Link>
       </div>
       <div className="product-info-container">
-        <Link href={product_url}>
-          <a onClick={onClick}>
-            <div className="product-name">{name}</div>
-            <div className="product-brand">{brand}</div>
-          </a>
+        <Link href={product_url} onClick={onClick}>
+          <div className="product-name">{name}</div>
+          <div className="product-brand">{brand}</div>
         </Link>
         <Price
           price={price}

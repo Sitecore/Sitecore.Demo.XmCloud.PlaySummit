@@ -31,8 +31,8 @@ const TicketGrid = (props: ComponentProps): JSX.Element => {
           </div>
         </div>
         <div className="ticket-button-container">
-          <Link href={`/tickets/registration/attendee?ticket=${ticket.id}`}>
-            <a className="btn-main">Get Tickets</a>
+          <Link href={`/tickets/registration/attendee?ticket=${ticket.id}`} className="btn-main">
+            Get Tickets
           </Link>
         </div>
       </div>

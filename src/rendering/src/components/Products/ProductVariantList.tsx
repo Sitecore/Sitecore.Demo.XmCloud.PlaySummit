@@ -20,7 +20,7 @@ const ProductVariantList = ({
           {variants.map((variant, index) => (
             <li key={index}>
               <Link href={`/shop/products/${sku}/${productNameSlug}/${variant.ID}`}>
-                <a>{variant.Name}</a>
+                {variant.Name}
               </Link>
             </li>
           ))}

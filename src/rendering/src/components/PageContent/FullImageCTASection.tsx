@@ -7,8 +7,8 @@ const FullImageCTASection = (props: ComponentProps): JSX.Element => {
   return (
     <section className={`section full-image-section full-image-section-map ${sxaStyles}`}>
       <div className="section-content full-image-section-content">
-        <Link href="/map">
-          <a className="btn-square">Venue Map</a>
+        <Link href="/map" className="btn-square">
+          Venue Map
         </Link>
       </div>
     </section>

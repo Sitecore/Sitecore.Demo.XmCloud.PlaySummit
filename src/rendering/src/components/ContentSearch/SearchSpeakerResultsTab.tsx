@@ -28,19 +28,17 @@ const SearchSpeakerResultsTab = (props: SearchSpeakerResultsTabProps): JSX.Eleme
     >
       <div className="speakers-grid container">
         {props.items.map(speakerAdapter).map((speaker, index) => (
-          <Link key={index} href={speaker.url.path} passHref>
-            <a className="speakers-grid-speaker">
-              <div className="speaker-image">
-                <Image
-                  field={speaker.picture.jsonValue}
-                  alt={speaker.name.value}
-                  width={265}
-                  height={265}
-                />
-              </div>
-              <Text className="speaker-name" tag="p" field={speaker.name} />
-              <Text tag="p" field={speaker.jobTitle} />
-            </a>
+          <Link key={index} href={speaker.url.path} passHref className="speakers-grid-speaker">
+            <div className="speaker-image">
+              <Image
+                field={speaker.picture.jsonValue}
+                alt={speaker.name.value}
+                width={265}
+                height={265}
+              />
+            </div>
+            <Text className="speaker-name" tag="p" field={speaker.name} />
+            <Text tag="p" field={speaker.jobTitle} />
           </Link>
         ))}
       </div>

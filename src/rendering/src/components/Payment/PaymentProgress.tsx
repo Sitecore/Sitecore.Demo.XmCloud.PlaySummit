@@ -51,11 +51,13 @@ const PaymentProgress = (props: PaymentProgressProps): JSX.Element => {
   ];
 
   const stepLinks = steps.map((step, index) => (
-    <Link href={step.link} key={index}>
-      <a className={GetActiveClass(props.fields.ActiveStep.value, step.index)}>
-        {step.text}
-        <span>{step.index < steps.length ? '❯' : ''}</span>
-      </a>
+    <Link
+      href={step.link}
+      key={index}
+      className={GetActiveClass(props.fields.ActiveStep.value, step.index)}
+    >
+      {step.text}
+      <span>{step.index < steps.length ? '❯' : ''}</span>
     </Link>
   ));
 

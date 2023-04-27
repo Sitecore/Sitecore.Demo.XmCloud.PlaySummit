@@ -29,8 +29,8 @@ const PreCheckout = (): JSX.Element => {
           <FontAwesomeIcon icon={faIdBadge} className="text-blue" />
           <h6 className="item-title">It will be a single purchase?</h6>
           <p>Continue to our guest option!</p>
-          <Link href="/shop/checkout/checkout">
-            <a className="btn-main">Continue</a>
+          <Link href="/shop/checkout/checkout" className="btn-main">
+            Continue
           </Link>
         </div>
       </div>

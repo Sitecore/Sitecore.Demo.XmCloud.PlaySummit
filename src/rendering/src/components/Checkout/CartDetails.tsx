@@ -32,10 +32,9 @@ const CartDetails = (): JSX.Element => {
           <div className="cart-details-actions-wrapper">
             <CartSummary />
             <PromoInput />
-            <Link href={nextStepLink}>
-              <a className="btn-main" onClick={() => setLoading(true)}>
-                <Spinner loading={loading} /> Proceed to Checkout
-              </a>
+            <Link href={nextStepLink} className="btn-main" onClick={() => setLoading(true)}>
+              <Spinner loading={loading} />
+              Proceed to Checkout
             </Link>
           </div>
         </div>

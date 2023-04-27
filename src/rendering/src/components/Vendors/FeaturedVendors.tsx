@@ -35,13 +35,11 @@ const FeaturedVendors = (props: FeaturedVendorsProps): JSX.Element => {
   const vendors =
     props.fields?.Vendors &&
     props.fields.Vendors.map((vendor, index) => (
-      <Link key={index} href={vendor.url} passHref>
-        <a className="grid-item">
-          <Image field={vendor.fields.Logo} alt={vendor.fields.Name} width={265} height={265} />
-          <div className="item-details">
-            <Text tag="p" field={vendor.fields.Name} />
-          </div>
-        </a>
+      <Link key={index} href={vendor.url} passHref className="grid-item">
+        <Image field={vendor.fields.Logo} alt={vendor.fields.Name} width={265} height={265} />
+        <div className="item-details">
+          <Text tag="p" field={vendor.fields.Name} />
+        </div>
       </Link>
     ));
 

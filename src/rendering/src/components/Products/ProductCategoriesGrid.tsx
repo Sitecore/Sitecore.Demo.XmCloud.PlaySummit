@@ -20,20 +20,18 @@ const ProductCategoriesGrid = (props: ProductCategoriesProps): JSX.Element => {
     props.fields.Categories.map((category, index) => (
       <div key={index} className="product-categories-grid-product">
         <Link href="/shop/products">
-          <a>
-            <figure>
-              <Image
-                field={category.fields.Picture}
-                alt="Category"
-                width={265}
-                height={265}
-                loading="lazy"
-              />
-            </figure>
-            <h3 className="product-category">
-              <Text field={category.fields.Title} />
-            </h3>
-          </a>
+          <figure>
+            <Image
+              field={category.fields.Picture}
+              alt="Category"
+              width={265}
+              height={265}
+              loading="lazy"
+            />
+          </figure>
+          <h3 className="product-category">
+            <Text field={category.fields.Title} />
+          </h3>
         </Link>
       </div>
     ));

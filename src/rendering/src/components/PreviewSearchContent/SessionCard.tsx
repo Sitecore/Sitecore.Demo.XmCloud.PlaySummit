@@ -36,15 +36,13 @@ const SessionCard = (props: SessionCardProps): JSX.Element => {
   );
 
   return (
-    <Link href={getAbsoluteUrlPath(url)}>
-      <a className="grid-item">
-        <div className="image-hover-zoom" style={{ backgroundImage: `url(${image_url})` }}></div>
-        <div className="item-details item-details-left">
-          <div className="item-title">{name}</div>
-          {speaker}
-          {date}
-        </div>
-      </a>
+    <Link href={getAbsoluteUrlPath(url)} className="grid-item">
+      <div className="image-hover-zoom" style={{ backgroundImage: `url(${image_url})` }}></div>
+      <div className="item-details item-details-left">
+        <div className="item-title">{name}</div>
+        {speaker}
+        {date}
+      </div>
     </Link>
   );
 };

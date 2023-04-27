@@ -68,10 +68,12 @@ const AddressBook = (): JSX.Element => {
                 >
                   <FontAwesomeIcon icon={faTrashAlt} />
                 </button>
-                <Link href={`/account/address-book/${address.ID}`}>
-                  <a className="address-edit" title="Edit Address">
-                    <FontAwesomeIcon icon={faEdit} />
-                  </a>
+                <Link
+                  href={`/account/address-book/${address.ID}`}
+                  className="address-edit"
+                  title="Edit Address"
+                >
+                  <FontAwesomeIcon icon={faEdit} />
                 </Link>
               </div>
             </div>
@@ -85,8 +87,8 @@ const AddressBook = (): JSX.Element => {
     <section className="address-book shop-container section">
       <div className="address-book-header">
         <h1>Address book</h1>
-        <Link href="/account/address-book/create">
-          <a className="btn-main">Add new address</a>
+        <Link href="/account/address-book/create" className="btn-main">
+          Add new address
         </Link>
       </div>
       <div className="address-book-grid">

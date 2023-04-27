@@ -47,9 +47,7 @@ const AccountPopup = ({ onNavigatingAway }: AccountPopupProps): JSX.Element => {
         <h3>
           Greetings,{' '}
           <Link href="/account">
-            <a>
-              {user?.FirstName} {user?.LastName}
-            </a>
+            {user?.FirstName} {user?.LastName}
           </Link>
         </h3>
       );
@@ -59,25 +57,21 @@ const AccountPopup = ({ onNavigatingAway }: AccountPopupProps): JSX.Element => {
 
   const loggedInMenuItems = isUserLoggedIn && (
     <>
-      <Link href="/account/address-book">
-        <a className="btn-secondary-light" onClick={onNavigatingAway}>
-          Address book
-        </a>
+      <Link href="/account/address-book" className="btn-secondary-light" onClick={onNavigatingAway}>
+        Address book
       </Link>
-      <Link href="/account/payment-methods">
-        <a className="btn-secondary-light" onClick={onNavigatingAway}>
-          Payment methods
-        </a>
+      <Link
+        href="/account/payment-methods"
+        className="btn-secondary-light"
+        onClick={onNavigatingAway}
+      >
+        Payment methods
       </Link>
-      <Link href="/account/orders">
-        <a className="btn-secondary-light" onClick={onNavigatingAway}>
-          Order history
-        </a>
+      <Link href="/account/orders" className="btn-secondary-light" onClick={onNavigatingAway}>
+        Order history
       </Link>
-      <Link href={logoutUrl}>
-        <a className="btn-main" onClick={clearAuthenticationTokens}>
-          Logout
-        </a>
+      <Link href={logoutUrl} className="btn-main" onClick={clearAuthenticationTokens}>
+        Logout
       </Link>
     </>
   );

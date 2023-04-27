@@ -68,13 +68,11 @@ const Footer = (props: FooterProps): JSX.Element => {
     <div className={`footer container ${sxaStyles}`}>
       <div className="footer-banner">
         <Link href="/">
-          <a>
-            <Image
-              field={props.fields?.data.item.footerLogo.jsonValue}
-              alt={props.fields?.data.item.footerLogo.alt}
-              loading="lazy"
-            />
-          </a>
+          <Image
+            field={props.fields?.data.item.footerLogo.jsonValue}
+            alt={props.fields?.data.item.footerLogo.alt}
+            loading="lazy"
+          />
         </Link>
       </div>
       <footer className="footer-content">
