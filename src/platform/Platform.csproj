@@ -83,6 +83,7 @@
     <Content Include="xdts\Web.config.xdt" />
     <None Include="Platform.wpp.targets" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="README.md" />
     <None Include="web.config" />
   </ItemGroup>
   <ItemGroup>

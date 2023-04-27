@@ -1,12 +1,14 @@
 import {
   CdpHelper,
   LayoutServicePageState,
+  SiteInfo,
   useSitecoreContext,
+  PosResolver,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { useEffect } from 'react';
 import config from 'temp/config';
 import { init } from '@sitecore/engage';
-import { PosResolver } from 'lib/pos-resolver';
+import { siteResolver } from 'lib/site-resolver';
 import { isCdpEnabled } from '../../helpers/CdpHelper'; // DEMO TEAM CUSTOMIZATION
 
 /**
@@ -17,16 +19,21 @@ import { isCdpEnabled } from '../../helpers/CdpHelper'; // DEMO TEAM CUSTOMIZATI
  */
 const CdpPageView = (): JSX.Element => {
   const {
-    sitecoreContext: { pageState, route, variantId },
+    sitecoreContext: { pageState, route, variantId, site },
   } = useSitecoreContext();
 
   /**
    * Creates a page view event using the Sitecore Engage SDK.
    */
-  const createPageView = async (page: string, language: string, pageVariantId: string) => {
-    // DMEO TEAM CUSTOMIZATION - Only initialize if the environment variables are set
+  const createPageView = async (
+    page: string,
+    language: string,
+    site: SiteInfo,
+    pageVariantId: string
+  ) => {
+    // DEMO TEAM CUSTOMIZATION - Only initialize if the environment variables are set
     if (isCdpEnabled) {
-      const pointOfSale = PosResolver.resolve(language);
+      const pointOfSale = PosResolver.resolve(site, language);
       const engage = await init({
         clientKey: process.env.NEXT_PUBLIC_CDP_CLIENT_KEY || '',
         targetURL: process.env.NEXT_PUBLIC_CDP_TARGET_URL || '',
@@ -38,7 +45,7 @@ const CdpPageView = (): JSX.Element => {
       engage.pageView({
         channel: 'WEB',
         currency: 'USD',
-        pos: pointOfSale,
+        pointOfSale,
         page,
         pageVariantId,
         language,
@@ -67,10 +74,12 @@ const CdpPageView = (): JSX.Element => {
     if (disabled()) {
       return;
     }
+
+    const siteInfo = siteResolver.getByName(site?.name || config.jssAppName);
     const language = route.itemLanguage || config.defaultLanguage;
     const pageVariantId = CdpHelper.getPageVariantId(route.itemId, language, variantId as string);
-    createPageView(route.name, language, pageVariantId);
-  }, [pageState, route, variantId]);
+    createPageView(route.name, language, siteInfo, pageVariantId);
+  }, [pageState, route, variantId, site]);
 
   return <></>;
 };
