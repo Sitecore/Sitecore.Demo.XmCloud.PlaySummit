@@ -31,9 +31,7 @@ const ShopBreadcrumb = (props: ShopBreadcrumbProps): JSX.Element => {
     const label = breadCrumb.active ? (
       <span>{breadCrumb.displayName}</span>
     ) : (
-      <Link href={breadCrumb.urlPath} legacyBehavior>
-        {breadCrumb.displayName}
-      </Link>
+      <Link href={breadCrumb.urlPath}>{breadCrumb.displayName}</Link>
     );
     return <li key={index}>{label}</li>;
   });
