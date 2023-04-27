@@ -44,6 +44,11 @@ module.exports = {
       ],
       include: path.resolve(__dirname, '../'),
     });
+    // Fix "NextRouter was not mounted" error for components using useRouter()
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "next/router": "next-router-mock",
+    };
     return config
   }
 }
