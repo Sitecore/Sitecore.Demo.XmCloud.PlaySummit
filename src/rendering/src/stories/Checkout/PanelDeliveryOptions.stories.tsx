@@ -29,7 +29,7 @@ export const Default = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockState }}>
         <Story />
       </MockStore>

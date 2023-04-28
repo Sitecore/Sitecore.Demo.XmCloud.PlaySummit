@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import CheckoutSummary from '../../components/Checkout/CheckoutSummary';
 import { MockStore } from '../mock-store';
@@ -16,7 +16,7 @@ export const WithoutShippingOptionSelected = {
   },
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={[cartSlice, loggedInAuthSlice]}>
         <Story />
       </MockStore>
@@ -30,7 +30,7 @@ export const WithFreeShippingCost = {
   },
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[{ name: 'ocCurrentCart', state: freeShippingState }, loggedInAuthSlice]}
       >
@@ -62,7 +62,7 @@ export const WithShippingCost = {
   },
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[{ name: 'ocCurrentCart', state: paidShippingState }, loggedInAuthSlice]}
       >

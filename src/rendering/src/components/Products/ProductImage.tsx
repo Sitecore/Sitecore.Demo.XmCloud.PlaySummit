@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
 
-type ProductImageProps = {
+export type ProductImageProps = {
   images: {
     Url: string;
   }[];

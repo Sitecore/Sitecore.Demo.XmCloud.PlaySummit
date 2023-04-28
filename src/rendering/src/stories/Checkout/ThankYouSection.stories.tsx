@@ -17,7 +17,7 @@ export const LoggedIn = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={[loggedInAuthSlice, cartSlice]}>
         <Story />
       </MockStore>
@@ -30,7 +30,7 @@ export const Anonymous = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={[anonymousAuthSlice, cartSlice]}>
         <Story />
       </MockStore>

@@ -22,7 +22,7 @@ export const Default = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: defaultCartState },
@@ -45,7 +45,7 @@ export const NoLineItems = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[{ name: 'ocCurrentCart', state: noLineItemsState }, loggedInAuthSlice]}
       >
@@ -72,7 +72,7 @@ export const WithAdditionalComments = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: withAdditionalCommentsState },

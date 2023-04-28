@@ -1,6 +1,8 @@
 import { Meta } from '@storybook/react';
 
-import CheckoutAddressList from '../../components/Checkout/CheckoutAddressList';
+import CheckoutAddressList, {
+  CheckoutAddressListProps,
+} from '../../components/Checkout/CheckoutAddressList';
 import { DBuyerAddress } from 'src/models/ordercloud/DBuyerAddress';
 
 export default {
@@ -52,5 +54,5 @@ export const Default = {
   args: {
     addresses,
     activeAddressId: null,
-  },
+  } as CheckoutAddressListProps,
 };

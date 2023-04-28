@@ -10,9 +10,9 @@ export default {
   component: PanelPayment,
 } as Meta<typeof PanelPayment>;
 
-const Template: StoryFn<typeof PanelPayment> = (args) => (
+const Template: StoryFn<typeof PanelPayment> = () => (
   <section className="checkout-details shop-container">
-    <PanelPayment {...args} />
+    <PanelPayment />
   </section>
 );
 
@@ -21,7 +21,7 @@ export const WithSavedPayment = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockStateSavedPayment }}>
         <Story />
       </MockStore>
@@ -60,7 +60,7 @@ export const WithoutSavedPayment = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockStateNoSavedPayment }}>
         <Story />
       </MockStore>

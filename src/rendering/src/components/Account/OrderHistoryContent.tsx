@@ -5,7 +5,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { getOrderDate } from '../../helpers/DateHelper';
 import { formatCurrency } from '../../helpers/CurrencyHelper';
 
-interface OrderHistoryContentProps {
+export interface OrderHistoryContentProps {
   orders: Order[];
 }
 

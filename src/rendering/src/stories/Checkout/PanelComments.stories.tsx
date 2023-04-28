@@ -19,7 +19,7 @@ export const WithExistingComment = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockstate }}>
         <Story />
       </MockStore>
@@ -39,7 +39,7 @@ export const WithoutExistingComment = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockstate2 }}>
         <Story />
       </MockStore>
@@ -58,7 +58,7 @@ export const WithLongComment = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockstate3 }}>
         <Story />
       </MockStore>

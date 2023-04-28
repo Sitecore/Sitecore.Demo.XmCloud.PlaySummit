@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
 
-import CreditCardForm from '../../components/Forms/CreditCardForm';
+import CreditCardForm, { CreditCardFormProps } from '../../components/Forms/CreditCardForm';
 
 export default {
   title: 'Components/Forms/CreditCardForm',
@@ -26,7 +26,7 @@ export const NewCreditCard = {
     onSubmit: (creditcard) => {
       alert(`Credit Card submitted successfully:\n${JSON.stringify(creditcard, null, 4)}`);
     },
-  },
+  } as CreditCardFormProps,
 };
 
 export const ExistingCreditCard = {
@@ -41,5 +41,5 @@ export const ExistingCreditCard = {
       PartialAccountNumber: '6123',
       ExpirationDate: new Date().toISOString(),
     },
-  },
+  } as CreditCardFormProps,
 };

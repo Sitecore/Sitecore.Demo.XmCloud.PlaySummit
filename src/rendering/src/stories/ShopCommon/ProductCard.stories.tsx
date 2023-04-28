@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 
-import ProductCard from '../../components/ShopCommon/ProductCard';
+import ProductCard, { ProductCardProps } from '../../components/ShopCommon/ProductCard';
 
 export default {
   title: 'Components/ShopCommon/ProductCard',
@@ -21,7 +21,7 @@ export const Default = {
       return null;
     },
     price: '6.99',
-  },
+  } as ProductCardProps,
 
   decorators: [
     (Story: StoryFn) => (
@@ -48,7 +48,7 @@ export const AlternativeTheme = {
     },
     price: '6.99',
     altTheme: true,
-  },
+  } as ProductCardProps,
 
   decorators: [
     (Story: StoryFn) => (

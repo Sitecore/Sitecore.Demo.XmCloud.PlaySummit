@@ -3,7 +3,7 @@ import { DBuyerCreditCard } from '../../models/ordercloud/DCreditCard';
 import Spinner from '../../components/ShopCommon/Spinner';
 import PaymentCardForm, { PaymentCardFormChangeHandler } from './PaymentCardForm';
 
-type CreditCardFormProps = {
+export type CreditCardFormProps = {
   creditCard?: DBuyerCreditCard;
   onSubmit?: (payment: DBuyerCreditCard, fullCardNumber: string) => void;
   isEditing?: boolean;

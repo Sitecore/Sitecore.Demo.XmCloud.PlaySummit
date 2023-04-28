@@ -28,7 +28,7 @@ export const WithSavedAddress = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: mockState },
@@ -67,7 +67,7 @@ export const CreatingNewAddress = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: mockState2 },
@@ -95,7 +95,7 @@ export const WithSavedAddressesNoneSelected = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: mockState3 },

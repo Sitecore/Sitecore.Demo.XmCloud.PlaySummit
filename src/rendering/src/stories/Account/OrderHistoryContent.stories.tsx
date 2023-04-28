@@ -1,6 +1,8 @@
 import { Meta } from '@storybook/react';
 
-import OrderHistoryContent from '../../components/Account/OrderHistoryContent';
+import OrderHistoryContent, {
+  OrderHistoryContentProps,
+} from '../../components/Account/OrderHistoryContent';
 import { Order } from 'ordercloud-javascript-sdk';
 
 export default {
@@ -256,5 +258,5 @@ export const NoOrders = {
 export const EmptyOrders = {
   args: {
     orders: [],
-  },
+  } as OrderHistoryContentProps,
 };

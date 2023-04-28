@@ -3,7 +3,9 @@ import { StoryFn, Meta } from '@storybook/react';
 import { MockSlice, MockStore } from '../mock-store';
 import { loggedInAuthSlice, cartSlice } from '../Checkout/CheckoutCommon';
 import { product, specs, variants } from './ProductsCommon';
-import ProductDetailsContent from '../../components/Products/ProductDetailsContent';
+import ProductDetailsContent, {
+  ProductDetailsContentProps,
+} from '../../components/Products/ProductDetailsContent';
 
 export default {
   title: 'Components/Products/ProductDetailsContent',
@@ -90,7 +92,7 @@ export const NoVariants = {
     product: product,
     specs: [specs[1]],
     variants: [],
-  },
+  } as ProductDetailsContentProps,
 };
 
 export const NoImages = {
@@ -106,5 +108,5 @@ export const NoImages = {
     },
     specs: specs,
     variants: [],
-  },
+  } as ProductDetailsContentProps,
 };

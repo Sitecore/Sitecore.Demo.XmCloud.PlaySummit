@@ -23,7 +23,7 @@ export const WithSavedBillingAddress = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: mockState },
@@ -110,7 +110,7 @@ export const WithoutSavedBillingAddress = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: mockState2 },
@@ -154,7 +154,7 @@ export const WithSameBillingAsShipping = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: mockState3 },

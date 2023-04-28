@@ -11,9 +11,9 @@ export default {
   component: PanelShippingEstimates,
 } as Meta<typeof PanelShippingEstimates>;
 
-const Template: StoryFn<typeof PanelShippingEstimates> = (args) => (
+const Template: StoryFn<typeof PanelShippingEstimates> = () => (
   <section className="checkout-details shop-container">
-    <PanelShippingEstimates {...args} />
+    <PanelShippingEstimates />
   </section>
 );
 
@@ -42,20 +42,8 @@ export const WithoutSelections = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockState }}>
-        <Story />
-      </MockStore>
-    ),
-  ],
-};
-
-export const WithSelections = {
-  render: Template,
-
-  decorators: [
-    (Story) => (
-      <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockStateClone }}>
         <Story />
       </MockStore>
     ),
@@ -64,3 +52,15 @@ export const WithSelections = {
 
 const mockStateClone = JSON.parse(JSON.stringify(mockState));
 mockStateClone.shipEstimateResponse.ShipEstimates[0].SelectedShipMethodID = 'EXPRESS_DELIVERY';
+
+export const WithSelections = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockStateClone }}>
+        <Story />
+      </MockStore>
+    ),
+  ],
+};

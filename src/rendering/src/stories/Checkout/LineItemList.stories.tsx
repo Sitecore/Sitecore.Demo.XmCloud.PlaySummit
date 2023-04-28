@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import LineItemList from '../../components/Checkout/LineItemList';
 import { MockSlice, MockStore } from '../mock-store';
 import { loggedInAuthSlice, cartSlice, productCacheSlice } from './CheckoutCommon';
@@ -13,7 +13,7 @@ const slices: MockSlice[] = [cartSlice, productCacheSlice, loggedInAuthSlice];
 
 export const Loading = {
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: loadingState }}>
         <Story />
       </MockStore>
@@ -31,7 +31,7 @@ export const Editable = {
   },
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={slices}>
         <Story />
       </MockStore>
@@ -45,7 +45,7 @@ export const NonEditable = {
   },
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={slices}>
         <Story />
       </MockStore>

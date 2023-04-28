@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import GiftCheckboxOrder from '../../components/Checkout/GiftCheckboxOrder';
 import { MockStore } from '../mock-store';
 import { cartSlice } from './CheckoutCommon';
@@ -19,7 +19,7 @@ export const IsGift = {
   },
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={cartSlice}>
         <div className="cart-details">
           <Story />
@@ -39,7 +39,7 @@ export const IsNotGift = {
   },
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={cartSlice}>
         <div className="cart-details">
           <Story />

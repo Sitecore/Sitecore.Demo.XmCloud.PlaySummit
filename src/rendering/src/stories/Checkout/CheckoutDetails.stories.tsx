@@ -24,7 +24,7 @@ export const NoLineItems = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[{ name: 'ocCurrentCart', state: noLineItemsState }, loggedInAuthSlice]}
       >
@@ -45,7 +45,7 @@ export const Loading = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[{ name: 'ocCurrentCart', state: loadingState }, loggedInAuthSlice]}
       >
@@ -77,7 +77,7 @@ export const NoStepsCompleteAsGuest = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: noStepsCompleteOrderState },
@@ -95,7 +95,7 @@ export const NoStepsCompleteWithoutSavedAddresses = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: noStepsCompleteOrderState },
@@ -113,7 +113,7 @@ export const NoStepsCompleteWithSavedAddresses = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: noStepsCompleteOrderState },
@@ -131,7 +131,7 @@ export const ShippingCompleteAsGuest = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: shippingCompleteAsGuestState },
@@ -205,7 +205,7 @@ export const ShippingCompleteWithoutSavedAddresses = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: shippingCompleteWithoutSavedAddressState },
@@ -279,7 +279,7 @@ export const ShippingCompleteWithSavedAddressSelected = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: shippingCompleteWithSavedAddressSelectedState },
@@ -346,7 +346,7 @@ export const ShippingCompleteWithSavedAddressNewAddressSelected = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: shippingCompleteWithSavedAddressNewAddressSelectedState },
@@ -420,7 +420,7 @@ export const ShippingEstimatesComplete = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: shippingEstimatesCompleteState },
@@ -456,7 +456,7 @@ export const BillingAddressComplete = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: billingAddressCompleteState },
@@ -484,7 +484,7 @@ export const PaymentComplete = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: paymentCompleteState },
@@ -524,7 +524,7 @@ export const PickupFromSummit = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: pickupFromSummitState },
@@ -561,7 +561,7 @@ export const PickupFromStore = {
   render: Template,
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore
         sliceOrSlices={[
           { name: 'ocCurrentCart', state: pickupFromStoreState },

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import PreCheckout from '../../components/Checkout/PreCheckout';
 import { MockStore } from '../mock-store';
 import { anonymousAuthSlice, cartSlice } from './CheckoutCommon';
@@ -11,7 +11,7 @@ export default {
 
 export const Default = {
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={[anonymousAuthSlice, cartSlice]}>
         <Story />
       </MockStore>

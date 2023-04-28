@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import CartSummary from '../../components/Checkout/CartSummary';
 import { MockStore } from '../mock-store';
 import { cartSlice, notInitializedCartSlice } from './CheckoutCommon';
@@ -15,7 +15,7 @@ export const Default = {
   },
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={cartSlice}>
         <div className="cart-details">
           <Story />
@@ -31,7 +31,7 @@ export const Loading = {
   },
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={notInitializedCartSlice}>
         <div className="cart-details">
           <Story />

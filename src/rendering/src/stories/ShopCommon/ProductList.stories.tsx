@@ -1,6 +1,6 @@
 import { Meta } from '@storybook/react';
 
-import ProductList from '../../components/ShopCommon/ProductList';
+import ProductList, { ProductListProps } from '../../components/ShopCommon/ProductList';
 
 export default {
   title: 'Components/ShopCommon/ProductList',
@@ -88,5 +88,5 @@ export const Default = {
         skuid: 1163683593,
       },
     ],
-  },
+  } as ProductListProps,
 };

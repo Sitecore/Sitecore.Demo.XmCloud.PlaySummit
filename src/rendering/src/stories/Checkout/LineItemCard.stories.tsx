@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import LineItemCard from '../../components/Checkout/LineItemCard';
 import { MockStore } from '../mock-store';
 import { DLineItem } from '../../models/ordercloud/DLineItem';
@@ -19,7 +19,7 @@ export const Default = {
   },
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={slices}>
         <Story />
       </MockStore>
@@ -34,7 +34,7 @@ export const NonEditable = {
   },
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={slices}>
         <Story />
       </MockStore>
@@ -49,7 +49,7 @@ export const WithSpecs = {
   },
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={slices}>
         <Story />
       </MockStore>
@@ -64,7 +64,7 @@ export const WithRestrictedQuantities = {
   },
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={slices}>
         <Story />
       </MockStore>

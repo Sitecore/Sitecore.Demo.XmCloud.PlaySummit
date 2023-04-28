@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Price from './Price';
 
-type ProductCardProps = {
+export type ProductCardProps = {
   className?: string;
   onClick?: () => void;
   onDiscoverStyleOpen?: () => void;

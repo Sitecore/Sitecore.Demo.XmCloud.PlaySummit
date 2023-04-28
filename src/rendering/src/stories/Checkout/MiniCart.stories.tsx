@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import MiniCart from '../../components/Checkout/MiniCart';
 import { MockStore } from '../mock-store';
 import { cartSlice, loggedInAuthSlice } from './CheckoutCommon';
@@ -13,7 +13,7 @@ export const Default = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={[cartSlice, loggedInAuthSlice]}>
         <Story />
       </MockStore>

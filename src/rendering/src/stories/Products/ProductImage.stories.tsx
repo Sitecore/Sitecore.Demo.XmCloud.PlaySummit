@@ -1,6 +1,6 @@
 import React from 'react';
 import { StoryFn, Meta } from '@storybook/react';
-import ProductImage from '../../components/Products/ProductImage';
+import ProductImage, { ProductImageProps } from '../../components/Products/ProductImage';
 import { cartState } from '../Checkout/CheckoutCommon';
 
 export default {
@@ -25,7 +25,7 @@ export const Zero = {
 
   args: {
     images: [],
-  },
+  } as ProductImageProps,
 };
 
 export const One = {

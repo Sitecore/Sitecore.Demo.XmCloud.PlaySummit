@@ -17,7 +17,7 @@ import { Actions, PageController } from '@sitecore-discover/react';
 import Spinner from '../../components/ShopCommon/Spinner';
 import Skeleton from 'react-loading-skeleton';
 
-interface ProductDetailsContentProps {
+export interface ProductDetailsContentProps {
   variantID?: string;
   product: RequiredDeep<BuyerProduct>;
   specs: RequiredDeep<Spec>[];

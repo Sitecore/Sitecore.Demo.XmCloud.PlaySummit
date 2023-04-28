@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import PromoInput from '../../components/Checkout/PromoInput';
 import { MockStore } from '../mock-store';
 import { cartSlice, productCacheSlice, promotionCartSlice } from './CheckoutCommon';
@@ -13,7 +13,7 @@ export const WithoutAppliedPromotions = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={[cartSlice, productCacheSlice]}>
         <div className="cart-details">
           <Story />
@@ -27,7 +27,7 @@ export const WithAppliedPromotions = {
   args: {},
 
   decorators: [
-    (Story) => (
+    (Story: StoryFn) => (
       <MockStore sliceOrSlices={[promotionCartSlice, productCacheSlice]}>
         <div className="cart-details">
           <Story />
