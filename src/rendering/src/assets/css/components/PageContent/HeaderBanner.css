@@ -1,8 +1,16 @@
 .header-banner {
-  @apply pt-80 pb-10 bg-gradient-to-r from-black-lightest to-transparent bg-cover bg-center;
+  @apply p-0 bg-gradient-to-r from-black-lightest to-transparent bg-cover bg-center;
+
+  max-height: 620px;
+
+  img {
+    @apply h-full w-full object-cover;
+  }
 
   .section-content {
     @apply text-white font-extrabold;
+
+    transform: translateY(-100%) translateY(-50px);
 
     .eyebrow {
       @apply pb-10;
