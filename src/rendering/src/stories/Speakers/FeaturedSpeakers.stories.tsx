@@ -1,5 +1,4 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
 import { Default as FeaturedSpeakers } from '../../components/Speakers/FeaturedSpeakers';
 import { GraphQLSpeaker } from 'src/types/speaker';
@@ -7,9 +6,7 @@ import { GraphQLSpeaker } from 'src/types/speaker';
 export default {
   title: 'Components/Speakers/FeaturedSpeakers',
   component: FeaturedSpeakers,
-} as ComponentMeta<typeof FeaturedSpeakers>;
-
-const Template: ComponentStory<typeof FeaturedSpeakers> = (args) => <FeaturedSpeakers {...args} />;
+} as Meta<typeof FeaturedSpeakers>;
 
 const speakerImage = {
   jsonValue: {
@@ -100,18 +97,19 @@ const speaker4 = {
   },
 } as GraphQLSpeaker;
 
-export const Default = Template.bind({});
-Default.args = {
-  fields: {
-    data: {
-      source: {
-        numberOfSpeakers: {
-          value: 6,
+export const Default = {
+  args: {
+    fields: {
+      data: {
+        source: {
+          numberOfSpeakers: {
+            value: 6,
+          },
         },
-      },
-      item: {
-        children: {
-          results: [speaker, speaker1, speaker2, speaker3, speaker4, speaker2, speaker1],
+        item: {
+          children: {
+            results: [speaker, speaker1, speaker2, speaker3, speaker4, speaker2, speaker1],
+          },
         },
       },
     },

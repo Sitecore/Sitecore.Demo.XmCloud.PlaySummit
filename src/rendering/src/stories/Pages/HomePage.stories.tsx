@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 
 import HeaderContent from '../../components/Navigation/HeaderContent';
 import HeaderCdpMessageBar from '../../components/HeaderCdpMessageBar';
@@ -20,7 +20,7 @@ import { mockLayoutData } from '../../../.storybook/preview';
 
 export default {
   title: 'Pages/Home Page',
-} as ComponentMeta<typeof HeroSection>;
+} as Meta<typeof HeroSection>;
 
 const heroProps = {
   fields: {
@@ -184,7 +184,7 @@ const threeColProps = {
   },
 } as ThreeColumnsSectionProps;
 
-const Template: ComponentStory<typeof HeroSection> = () => {
+const Template: StoryFn<typeof HeroSection> = () => {
   return (
     <SitecoreContext componentFactory={mockComponentFactory} layoutData={mockLayoutData}>
       <header>
@@ -203,5 +203,7 @@ const Template: ComponentStory<typeof HeroSection> = () => {
   );
 };
 
-export const Default = Template.bind({});
-Default.args = {};
+export const Default = {
+  render: Template,
+  args: {},
+};

@@ -1,21 +1,13 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta } from '@storybook/react';
 import { SESSIONS } from '../mock-sessions';
 
-import {
-  Default as VendorInformation,
-  VendorInformationProps,
-} from '../../components/Vendors/VendorInformation';
+import { Default as VendorInformation } from '../../components/Vendors/VendorInformation';
 import { GraphQLSession } from '../../types/session';
 
 export default {
   title: 'Components/Vendors/VendorInformation',
   component: VendorInformation,
-} as ComponentMeta<typeof VendorInformation>;
-
-const Template: ComponentStory<typeof VendorInformation> = (args: VendorInformationProps) => (
-  <VendorInformation {...args} />
-);
+} as Meta<typeof VendorInformation>;
 
 const fieldsWithoutSessions = {
   description: {
@@ -36,24 +28,26 @@ const fieldsWithSessions = {
   },
 };
 
-export const WithoutSessions = Template.bind({});
-WithoutSessions.args = {
-  fields: {
-    data: {
-      contextItem: fieldsWithoutSessions,
+export const WithoutSessions = {
+  args: {
+    fields: {
+      data: {
+        contextItem: fieldsWithoutSessions,
+      },
     },
-  },
-  rendering: {
-    componentName: 'Rendering',
-    dataSource: '/sitecore',
+    rendering: {
+      componentName: 'Rendering',
+      dataSource: '/sitecore',
+    },
   },
 };
 
-export const WithSessions = Template.bind({});
-WithSessions.args = {
-  fields: {
-    data: {
-      contextItem: fieldsWithSessions,
+export const WithSessions = {
+  args: {
+    fields: {
+      data: {
+        contextItem: fieldsWithSessions,
+      },
     },
   },
 };

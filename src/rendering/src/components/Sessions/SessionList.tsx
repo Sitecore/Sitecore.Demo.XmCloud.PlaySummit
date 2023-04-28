@@ -79,7 +79,7 @@ const SessionListItem = (props: SessionListItemProps): JSX.Element => {
   );
 };
 
-export type SessionListProps = {
+type SessionListProps = {
   sessions: GraphQLSession[];
   showSpeakers: boolean;
 };

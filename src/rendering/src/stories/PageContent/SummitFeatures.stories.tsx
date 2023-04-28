@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 
 import { Default as SummitFeatures } from '../../components/PageContent/SummitFeatures';
 import {
@@ -11,7 +11,7 @@ import { ComponentWithChildrenProps } from 'lib/component-props';
 export default {
   title: 'Components/PageContent/SummitFeatures',
   component: SummitFeatures,
-} as ComponentMeta<typeof SummitFeatures>;
+} as Meta<typeof SummitFeatures>;
 
 const featureArgs = {
   fields: {
@@ -36,13 +36,16 @@ const featureArgs = {
   },
 } as SummitFeatureProps;
 
-const Template: ComponentStory<typeof SummitFeatures> = (args: ComponentWithChildrenProps) => (
+const Template: StoryFn<typeof SummitFeatures> = (args: ComponentWithChildrenProps) => (
   <SummitFeatures {...args}>
     <SummitFeature {...featureArgs} />
   </SummitFeatures>
 );
 
-export const Default = Template.bind({});
-Default.args = {
-  params: {},
+export const Default = {
+  render: Template,
+
+  args: {
+    params: {},
+  },
 };

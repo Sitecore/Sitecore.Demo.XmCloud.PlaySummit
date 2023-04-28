@@ -1,5 +1,4 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
-import React from 'react';
+import { Meta } from '@storybook/react';
 
 import SearchNewsResultsTab from '../../components/ContentSearch/SearchNewsResultsTab';
 import { ContentSearchNews } from '../../interfaces/contentSearch/ContentSearchNews';
@@ -9,13 +8,7 @@ import { CONTENT_SEARCH_RESULT_TYPE } from '../../helpers/ContentSearchHelper';
 export default {
   title: 'Components/ContentSearch/SearchNewsResultsTab',
   component: SearchNewsResultsTab,
-} as ComponentMeta<typeof SearchNewsResultsTab>;
-
-const Template: ComponentStory<typeof SearchNewsResultsTab> = (args) => (
-  <SearchNewsResultsTab {...args} />
-);
-
-export const Default = Template.bind({});
+} as Meta<typeof SearchNewsResultsTab>;
 
 const items = [
   {
@@ -81,7 +74,9 @@ const items = [
   },
 ] as ContentSearchNews[];
 
-Default.args = {
-  ...mockSearchResultsTabCommonArgs,
-  items,
+export const Default = {
+  args: {
+    ...mockSearchResultsTabCommonArgs,
+    items,
+  },
 };

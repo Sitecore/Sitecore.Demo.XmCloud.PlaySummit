@@ -50,7 +50,7 @@ const SpeakerListItem = (speaker: Speaker): JSX.Element => {
   );
 };
 
-export type SpeakerListProps = {
+type SpeakerListProps = {
   speakers: Speaker[];
 };
 
