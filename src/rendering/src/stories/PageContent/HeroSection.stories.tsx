@@ -15,7 +15,7 @@ Default.args = {
   fields: {
     Hero: {
       value: {
-        src: 'https://demoedge.sitecoresandbox.cloud/api/public/content/95619f8c034947a2aa2ce5b39146ccf5?v=c63ff08e',
+        src: 'https://playsummit.sitecoresandbox.cloud/api/public/content/95619f8c034947a2aa2ce5b39146ccf5?v=c63ff08e',
       },
     },
     Slogan: {

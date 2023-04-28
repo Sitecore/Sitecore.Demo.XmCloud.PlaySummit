@@ -23,7 +23,7 @@ WithLargerImage.args = {
     },
     Image: {
       value: {
-        src: 'https://demoedge.sitecoresandbox.cloud/api/public/content/fddf681166144085b1aa1bef893fca9b?v=df31289a&t=profile',
+        src: 'https://playsummit.sitecoresandbox.cloud/api/public/content/fddf681166144085b1aa1bef893fca9b?v=df31289a&t=profile',
         height: 133,
         width: 600,
       },
