@@ -4,8 +4,8 @@ Upgrading this solution refers to syncing with the [xmcloud-foundation-head](htt
 
 ## Last sync
 
-- Date: October 20th, 2022
-- Commit link: [https://github.com/sitecorelabs/xmcloud-foundation-head/tree/35a62e8c3fd91bfabe42ef33e15d9ffcdc59e5bf](https://github.com/sitecorelabs/xmcloud-foundation-head/tree/35a62e8c3fd91bfabe42ef33e15d9ffcdc59e5bf)
+- Date: April 26th, 2023
+- Commit link: [https://github.com/sitecorelabs/xmcloud-foundation-head/tree/b83ddc9c42b40eeac1cedb09d036a3dca4784c75](https://github.com/sitecorelabs/xmcloud-foundation-head/tree/b83ddc9c42b40eeac1cedb09d036a3dca4784c75)
 
 ## How to sync
 
@@ -20,7 +20,7 @@ Upgrading this solution refers to syncing with the [xmcloud-foundation-head](htt
 
 ### Update this document
 
-1. Change the date of the last sync to today's date.
+1. Change the date of the [Last sync](#last-sync) to today's date.
 2. Open the [xmcloud-foundation-head main branch commit history](https://github.com/sitecorelabs/xmcloud-foundation-head/commits/main).
 3. Next to the most recent commit, click the `<>` (Browse the repository at this point in the history) button.
 4. Copy the page URL.
