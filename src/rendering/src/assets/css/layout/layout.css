@@ -14,7 +14,7 @@ footer {
   @apply bg-gradient-to-br from-black to-black-dark;
 }
 
-.container {
+.container-default {
   &:not(.container-fullwidth) {
     @media (min-width: 2490px) {
       @apply !max-w-[51vw];
