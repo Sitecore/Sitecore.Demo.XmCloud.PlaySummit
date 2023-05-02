@@ -50,7 +50,7 @@ SharedFields:
           p:after="*[1=2]"
           s:ds=""
           s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
-          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B53575EBA-7176-49E4-AD6C-33289E7ECFC5%7D%7C%7B08C8BABD-CA64-41EE-B592-13E86CF8AE22%7D%7C%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1&amp;CSSStyles"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1&amp;CSSStyles"
           s:ph="headless-main"
           s:ccb="Clear on publish" />
       </d>
@@ -75,7 +75,7 @@ Languages:
       Value: Landing Pages
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "89e919ae-6b09-4ae7-8e5c-0fe3c471e7d7"
+      Value: "6a529bc7-66e1-4783-a6d3-0db4b249f186"
     - ID: "e0c0c8a4-0fea-4963-8b86-d47810b80efa"
       Hint: Content
       Value: "Here is a list of all currently available landing pages:"

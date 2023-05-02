@@ -34,8 +34,9 @@ const DefaultContainer = (props: ComponentProps): JSX.Element => {
 
   return (
     // DEMO TEAM CUSTOMIZATION - Move the style={backgroundStyle} attribute from the component-content div to the outer div.
+    // DEMO TEAM CUSTOMIZATION - Add the "container" CSS class to ensure our PLAY! Summit styles apply also to SXA Container components.
     <div
-      className={`component container-default ${styles}`}
+      className={`component container container-default ${styles}`}
       id={id ? id : undefined}
       style={backgroundStyle}
     >
