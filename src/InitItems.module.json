@@ -11,8 +11,8 @@
             },
             {
                 "name": "api-keys",
-                "path": "/sitecore/system/Settings/Services/API Keys",
-                "scope": "descendantsOnly"
+                "path": "/sitecore/system/Settings/Services/API Keys/PLAY",
+                "scope": "singleItem"
             },
             {
                 "name": "core-fields",
