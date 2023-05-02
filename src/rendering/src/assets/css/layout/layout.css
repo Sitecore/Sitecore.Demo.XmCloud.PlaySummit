@@ -14,7 +14,7 @@ footer {
   @apply bg-gradient-to-br from-black to-black-dark;
 }
 
-.container-default {
+.container {
   &:not(.container-fullwidth) {
     @media (min-width: 2490px) {
       @apply !max-w-[51vw];
@@ -27,10 +27,6 @@ footer {
     @media (min-width: 2490px) {
       @apply !max-w-[51vw] !px-[10vw];
     }
-  }
-
-  &.container-centered {
-    @apply mx-auto;
   }
 }
 
