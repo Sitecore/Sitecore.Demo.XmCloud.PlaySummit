@@ -28,6 +28,10 @@ footer {
       @apply !max-w-[51vw] !px-[10vw];
     }
   }
+
+  &.container-centered {
+    @apply mx-auto;
+  }
 }
 
 .container.container-fullwidth {
