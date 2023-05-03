@@ -121,8 +121,10 @@
   },
   "scripts": {
     "DEMO_TEAM_CUSTOMIZATION_EXTRA_SCRIPTS": "",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "storybook": "npm-run-all --serial bootstrap storybook:start",
+    "storybook:start": "storybook dev -p 6006",
+    "build-storybook": "npm-run-all --serial bootstrap storybook:build",
+    "storybook:build": "storybook build",
     "eslint": "eslint ./src/**/*.tsx ./src/**/*.ts ./scripts/**/*.ts",
     "stylelint": "stylelint ./src/**/*.css",
     "build:local": "cross-env NEXT_PUBLIC_DISCOVER_CUSTOMER_KEY=0-0 NEXT_PUBLIC_DISCOVER_API_KEY=0-0-0 NEXT_PUBLIC_ORDERCLOUD_BUYER_CLIENT_ID=00000000-0000-0000-0000-000000000000 NEXT_PUBLIC_ORDERCLOUD_BASE_API_URL=https://sandboxapi.ordercloud.io npm-run-all build",
