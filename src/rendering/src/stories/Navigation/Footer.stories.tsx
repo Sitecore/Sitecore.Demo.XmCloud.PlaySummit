@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 
 import { Default as Footer } from '../../components/Navigation/Footer';
 import { mockFooterProps } from '../Pages/PageStoriesCommon';
@@ -7,9 +7,9 @@ import { mockFooterProps } from '../Pages/PageStoriesCommon';
 export default {
   title: 'Components/Navigation/Footer',
   component: Footer,
-} as ComponentMeta<typeof Footer>;
+} as Meta<typeof Footer>;
 
-const Template: ComponentStory<typeof Footer> = (args) => {
+const Template: StoryFn<typeof Footer> = (args) => {
   return (
     <footer>
       <Footer {...args} />
@@ -17,5 +17,7 @@ const Template: ComponentStory<typeof Footer> = (args) => {
   );
 };
 
-export const Default = Template.bind({});
-Default.args = mockFooterProps;
+export const Default = {
+  render: Template,
+  args: mockFooterProps,
+};

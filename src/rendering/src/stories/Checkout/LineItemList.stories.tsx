@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import LineItemList from '../../components/Checkout/LineItemList';
 import { MockSlice, MockStore } from '../mock-store';
 import { loggedInAuthSlice, cartSlice, productCacheSlice } from './CheckoutCommon';
@@ -7,44 +7,48 @@ import { loggedInAuthSlice, cartSlice, productCacheSlice } from './CheckoutCommo
 export default {
   title: 'Components/Checkout/LineItemList',
   component: LineItemList,
-} as ComponentMeta<typeof LineItemList>;
-
-const Template: ComponentStory<typeof LineItemList> = (args) => <LineItemList {...args} />;
+} as Meta<typeof LineItemList>;
 
 const slices: MockSlice[] = [cartSlice, productCacheSlice, loggedInAuthSlice];
 
-export const Loading = Template.bind({});
+export const Loading = {
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: loadingState }}>
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const loadingState = {
   initialized: false,
 };
-Loading.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: loadingState }}>
-      <Story />
-    </MockStore>
-  ),
-];
 
-export const Editable = Template.bind({});
-Editable.args = {
-  editable: true,
-};
-Editable.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={slices}>
-      <Story />
-    </MockStore>
-  ),
-];
+export const Editable = {
+  args: {
+    editable: true,
+  },
 
-export const NonEditable = Template.bind({});
-NonEditable.args = {
-  editable: false,
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={slices}>
+        <Story />
+      </MockStore>
+    ),
+  ],
 };
-NonEditable.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={slices}>
-      <Story />
-    </MockStore>
-  ),
-];
+
+export const NonEditable = {
+  args: {
+    editable: false,
+  },
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={slices}>
+        <Story />
+      </MockStore>
+    ),
+  ],
+};

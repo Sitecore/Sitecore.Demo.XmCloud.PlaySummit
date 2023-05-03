@@ -1,3 +1,4 @@
 .hero-image {
-  @apply basis-full bg-black bg-left bg-no-repeat bg-cover relative h-96;
+  @apply basis-full bg-black bg-center bg-no-repeat bg-cover relative h-48;
+  @apply md:h-96;
 }

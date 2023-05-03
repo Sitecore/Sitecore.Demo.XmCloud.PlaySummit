@@ -39,19 +39,17 @@ const SpeakersGrid = (props: SpeakersGridProps): JSX.Element => {
     props.fields.data.item.children.results
       .filter((item) => !item.featured.value)
       .map((speaker, index) => (
-        <Link key={index} href={speaker.url.path} passHref>
-          <a className="speakers-grid-speaker">
-            <div className="speaker-image">
-              <Image
-                field={speaker.picture.jsonValue}
-                alt={speaker.name.value}
-                width={265}
-                height={265}
-              />
-            </div>
-            <Text className="speaker-name" tag="p" field={speaker.name} />
-            <Text tag="p" field={speaker.jobTitle} />
-          </a>
+        <Link key={index} href={speaker.url.path} passHref className="speakers-grid-speaker">
+          <div className="speaker-image">
+            <Image
+              field={speaker.picture.jsonValue}
+              alt={speaker.name.value}
+              width={265}
+              height={265}
+            />
+          </div>
+          <Text className="speaker-name" tag="p" field={speaker.name} />
+          <Text tag="p" field={speaker.jobTitle} />
         </Link>
       ));
 

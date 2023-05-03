@@ -64,17 +64,15 @@ const SessionItem = (props: SessionItemProps): JSX.Element => {
     ));
 
   return (
-    <Link href={props.session.url.path} passHref>
-      <a className="grid-item">
-        <div className="image-hover-zoom" style={getImageStyles(props.session)}></div>
-        {featuredIcon}
-        <div className="item-details item-details-left">
-          <Text tag="div" className="item-title" field={props.session.name} />
-          {day}
-          {timeSlot}
-          {speaker}
-        </div>
-      </a>
+    <Link href={props.session.url.path} passHref className="grid-item">
+      <div className="image-hover-zoom" style={getImageStyles(props.session)}></div>
+      {featuredIcon}
+      <div className="item-details item-details-left">
+        <Text tag="div" className="item-title" field={props.session.name} />
+        {day}
+        {timeSlot}
+        {speaker}
+      </div>
     </Link>
   );
 };

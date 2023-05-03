@@ -37,8 +37,8 @@ const PreviewSearchList = ({
                   onMouseEnter={() => onMouseEnter(url ? url : text)}
                   onMouseLeave={onMouseLeave}
                 >
-                  <Link href={href}>
-                    <a onClick={onNavigatingAway}>{text}</a>
+                  <Link href={href} onClick={onNavigatingAway}>
+                    {text}
                   </Link>
                 </li>
               );

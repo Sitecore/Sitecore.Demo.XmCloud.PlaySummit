@@ -48,7 +48,7 @@ const SessionListItem = (props: SessionListItemProps): JSX.Element => {
         {props.speakers.targetItems.map((speaker, index) => (
           <div className="speaker-name" key={index}>
             <InfoText Icon={faUser}>
-              <Link href={speaker.url.path} passHref>
+              <Link href={speaker.url.path}>
                 <Text field={speaker.name} tag="a" />
               </Link>
             </InfoText>
@@ -70,8 +70,8 @@ const SessionListItem = (props: SessionListItemProps): JSX.Element => {
         {time}
         {room}
         <div className="info-col-cta">
-          <Link href={props.url.path}>
-            <a className="btn-main">More Information</a>
+          <Link href={props.url.path} className="btn-main">
+            More Information
           </Link>
         </div>
       </div>
@@ -79,7 +79,7 @@ const SessionListItem = (props: SessionListItemProps): JSX.Element => {
   );
 };
 
-export type SessionListProps = {
+type SessionListProps = {
   sessions: GraphQLSession[];
   showSpeakers: boolean;
 };

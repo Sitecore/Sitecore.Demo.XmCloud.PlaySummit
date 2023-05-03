@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import ShopNavigation from '../../components/Navigation/ShopNavigation';
 import { initialize as initializeDiscover } from '../../services/DiscoverService';
@@ -10,22 +10,22 @@ import { cartSlice, loggedInAuthSlice } from '../Checkout/CheckoutCommon';
 export default {
   title: 'Components/Navigation/ShopNavigation',
   component: ShopNavigation,
-} as ComponentMeta<typeof ShopNavigation>;
-
-const Template: ComponentStory<typeof ShopNavigation> = (args) => <ShopNavigation {...args} />;
+} as Meta<typeof ShopNavigation>;
 
 initializeDiscover({
   isStorybook: true,
 });
 
-export const Default = Template.bind({});
-Default.args = {
-  previewSearchProps: mockDiscoverData.previewSearchProps,
+export const Default = {
+  args: {
+    previewSearchProps: mockDiscoverData.previewSearchProps,
+  },
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={[cartSlice, loggedInAuthSlice]}>
+        <Story />
+      </MockStore>
+    ),
+  ],
 };
-Default.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={[cartSlice, loggedInAuthSlice]}>
-      <Story />
-    </MockStore>
-  ),
-];

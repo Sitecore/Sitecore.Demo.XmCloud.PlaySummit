@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 
 import CheckoutDetails from '../../components/Checkout/CheckoutDetails';
 import { MockStore } from '../mock-store';
@@ -16,38 +16,48 @@ import { DeliveryTypes } from '../../models/ordercloud/DOrder';
 export default {
   title: 'Components/Checkout/CheckoutDetails',
   component: CheckoutDetails,
-} as ComponentMeta<typeof CheckoutDetails>;
+} as Meta<typeof CheckoutDetails>;
 
-const Template: ComponentStory<typeof CheckoutDetails> = () => <CheckoutDetails />;
+const Template: StoryFn<typeof CheckoutDetails> = () => <CheckoutDetails />;
 
-export const NoLineItems = Template.bind({});
+export const NoLineItems = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[{ name: 'ocCurrentCart', state: noLineItemsState }, loggedInAuthSlice]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const noLineItemsState = {
   initialized: true,
   order: {
     LineItemCount: 0,
   },
 };
-NoLineItems.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[{ name: 'ocCurrentCart', state: noLineItemsState }, loggedInAuthSlice]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
 
-export const Loading = Template.bind({});
+export const Loading = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[{ name: 'ocCurrentCart', state: loadingState }, loggedInAuthSlice]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const loadingState = {
   initialized: false,
 };
-Loading.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={[{ name: 'ocCurrentCart', state: loadingState }, loggedInAuthSlice]}>
-      <Story />
-    </MockStore>
-  ),
-];
 
 const noStepsCompleteOrderState = {
   initialized: true,
@@ -63,52 +73,78 @@ const noStepsCompleteOrderState = {
   },
 };
 
-export const NoStepsCompleteAsGuest = Template.bind({});
-NoStepsCompleteAsGuest.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: noStepsCompleteOrderState },
-        anonymousAuthSlice,
-        emptyAddressBookSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
+export const NoStepsCompleteAsGuest = {
+  render: Template,
 
-export const NoStepsCompleteWithoutSavedAddresses = Template.bind({});
-NoStepsCompleteWithoutSavedAddresses.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: noStepsCompleteOrderState },
-        loggedInAuthSlice,
-        emptyAddressBookSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: noStepsCompleteOrderState },
+          anonymousAuthSlice,
+          emptyAddressBookSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
 
-export const NoStepsCompleteWithSavedAddresses = Template.bind({});
-NoStepsCompleteWithSavedAddresses.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: noStepsCompleteOrderState },
-        loggedInAuthSlice,
-        addressBookSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
+export const NoStepsCompleteWithoutSavedAddresses = {
+  render: Template,
 
-export const ShippingCompleteAsGuest = Template.bind({});
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: noStepsCompleteOrderState },
+          loggedInAuthSlice,
+          emptyAddressBookSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
+export const NoStepsCompleteWithSavedAddresses = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: noStepsCompleteOrderState },
+          loggedInAuthSlice,
+          addressBookSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
+export const ShippingCompleteAsGuest = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: shippingCompleteAsGuestState },
+          anonymousAuthSlice,
+          emptyAddressBookSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const shippingCompleteAsGuestState = {
   ...noStepsCompleteOrderState,
   shippingAddress: {
@@ -164,21 +200,25 @@ const shippingCompleteAsGuestState = {
     ],
   },
 };
-ShippingCompleteAsGuest.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: shippingCompleteAsGuestState },
-        anonymousAuthSlice,
-        emptyAddressBookSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
 
-export const ShippingCompleteWithoutSavedAddresses = Template.bind({});
+export const ShippingCompleteWithoutSavedAddresses = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: shippingCompleteWithoutSavedAddressState },
+          loggedInAuthSlice,
+          emptyAddressBookSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const shippingCompleteWithoutSavedAddressState = {
   ...noStepsCompleteOrderState,
   shippingAddress: {
@@ -234,21 +274,25 @@ const shippingCompleteWithoutSavedAddressState = {
     ],
   },
 };
-ShippingCompleteWithoutSavedAddresses.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: shippingCompleteWithoutSavedAddressState },
-        loggedInAuthSlice,
-        emptyAddressBookSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
 
-export const ShippingCompleteWithSavedAddressSelected = Template.bind({});
+export const ShippingCompleteWithSavedAddressSelected = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: shippingCompleteWithSavedAddressSelectedState },
+          loggedInAuthSlice,
+          addressBookSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const shippingCompleteWithSavedAddressSelectedState = {
   ...noStepsCompleteOrderState,
   shippingAddress: {
@@ -297,21 +341,25 @@ const shippingCompleteWithSavedAddressSelectedState = {
     ],
   },
 };
-ShippingCompleteWithSavedAddressSelected.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: shippingCompleteWithSavedAddressSelectedState },
-        loggedInAuthSlice,
-        addressBookSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
 
-export const ShippingCompleteWithSavedAddressNewAddressSelected = Template.bind({});
+export const ShippingCompleteWithSavedAddressNewAddressSelected = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: shippingCompleteWithSavedAddressNewAddressSelectedState },
+          loggedInAuthSlice,
+          addressBookSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const shippingCompleteWithSavedAddressNewAddressSelectedState = {
   ...noStepsCompleteOrderState,
   shippingAddress: {
@@ -367,21 +415,25 @@ const shippingCompleteWithSavedAddressNewAddressSelectedState = {
     ],
   },
 };
-ShippingCompleteWithSavedAddressNewAddressSelected.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: shippingCompleteWithSavedAddressNewAddressSelectedState },
-        loggedInAuthSlice,
-        addressBookSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
 
-export const ShippingEstimatesComplete = Template.bind({});
+export const ShippingEstimatesComplete = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: shippingEstimatesCompleteState },
+          loggedInAuthSlice,
+          emptyAddressBookSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const shippingEstimatesCompleteState = {
   ...shippingCompleteWithSavedAddressSelectedState,
   shipEstimateResponse: {
@@ -399,21 +451,25 @@ const shippingEstimatesCompleteState = {
     Total: 128.44,
   },
 };
-ShippingEstimatesComplete.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: shippingEstimatesCompleteState },
-        loggedInAuthSlice,
-        emptyAddressBookSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
 
-export const BillingAddressComplete = Template.bind({});
+export const BillingAddressComplete = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: billingAddressCompleteState },
+          loggedInAuthSlice,
+          emptyAddressBookSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const billingAddressCompleteState = {
   ...shippingEstimatesCompleteState,
   order: {
@@ -423,21 +479,25 @@ const billingAddressCompleteState = {
     },
   },
 };
-BillingAddressComplete.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: billingAddressCompleteState },
-        loggedInAuthSlice,
-        emptyAddressBookSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
 
-export const PaymentComplete = Template.bind({});
+export const PaymentComplete = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: paymentCompleteState },
+          loggedInAuthSlice,
+          emptyAddressBookSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const paymentCompleteState = {
   ...billingAddressCompleteState,
   payments: [
@@ -459,21 +519,25 @@ const paymentCompleteState = {
     },
   ],
 };
-PaymentComplete.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: paymentCompleteState },
-        loggedInAuthSlice,
-        emptyAddressBookSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
 
-export const PickupFromSummit = Template.bind({});
+export const PickupFromSummit = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: pickupFromSummitState },
+          loggedInAuthSlice,
+          emptyAddressBookSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const pickupFromSummitState = {
   ...paymentCompleteState,
   shippingAddress: {
@@ -492,21 +556,25 @@ const pickupFromSummitState = {
     },
   },
 };
-PickupFromSummit.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: pickupFromSummitState },
-        loggedInAuthSlice,
-        emptyAddressBookSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
 
-export const PickupFromStore = Template.bind({});
+export const PickupFromStore = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: pickupFromStoreState },
+          loggedInAuthSlice,
+          emptyAddressBookSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const pickupFromStoreState = {
   ...paymentCompleteState,
   shippingAddress: {
@@ -524,16 +592,3 @@ const pickupFromStoreState = {
     },
   },
 };
-PickupFromStore.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: pickupFromStoreState },
-        loggedInAuthSlice,
-        emptyAddressBookSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];

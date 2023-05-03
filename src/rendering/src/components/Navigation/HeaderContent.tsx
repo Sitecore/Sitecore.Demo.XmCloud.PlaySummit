@@ -69,7 +69,7 @@ const HeaderContent = (props: HeaderContentProps): JSX.Element => {
 
   const links = props.fields?.data?.item?.children?.results?.map((item, index) => (
     <Link key={index} href={item.field?.jsonValue?.value?.href ?? '#'} prefetch={false}>
-      <a>{item.displayName}</a>
+      {item.displayName}
     </Link>
   ));
 

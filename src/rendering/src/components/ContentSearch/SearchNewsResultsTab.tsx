@@ -51,8 +51,8 @@ const SearchNewsResultsTab = (props: SearchNewsResultsTabProps): JSX.Element => 
                   <RichText className="news-excerpt" field={news.fields.Excerpt} />
                 </div>
                 <div className="button-container">
-                  <Link href={news.url}>
-                    <a className="btn-main">Read&nbsp;More</a>
+                  <Link href={news.url} className="btn-main">
+                    Read&nbsp;More
                   </Link>
                 </div>
               </div>

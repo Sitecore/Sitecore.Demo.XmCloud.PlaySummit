@@ -1,16 +1,11 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
 import SessionInformationPageHero from '../../components/Sessions/SessionInformationPageHero';
 
 export default {
   title: 'Components/Sessions/SessionInformationPageHero',
   component: SessionInformationPageHero,
-} as ComponentMeta<typeof SessionInformationPageHero>;
-
-const Template: ComponentStory<typeof SessionInformationPageHero> = (args) => (
-  <SessionInformationPageHero {...args} />
-);
+} as Meta<typeof SessionInformationPageHero>;
 
 const rooms = [
   {
@@ -79,22 +74,24 @@ const fields = {
   Timeslots: timeslots,
 };
 
-export const Premium = Template.bind({});
-Premium.args = {
-  fields: {
-    ...fields,
-    Premium: {
-      value: true,
+export const Premium = {
+  args: {
+    fields: {
+      ...fields,
+      Premium: {
+        value: true,
+      },
     },
   },
 };
 
-export const Regular = Template.bind({});
-Regular.args = {
-  fields: {
-    ...fields,
-    Premium: {
-      value: false,
+export const Regular = {
+  args: {
+    fields: {
+      ...fields,
+      Premium: {
+        value: false,
+      },
     },
   },
 };

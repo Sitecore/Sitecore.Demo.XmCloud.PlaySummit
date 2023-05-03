@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 
 import PanelComments from '../../components/Checkout/PanelComments';
 import { MockStore } from '../mock-store';
@@ -7,15 +7,26 @@ import { MockStore } from '../mock-store';
 export default {
   title: 'Components/Checkout/PanelComments',
   component: PanelComments,
-} as ComponentMeta<typeof PanelComments>;
+} as Meta<typeof PanelComments>;
 
-const Template: ComponentStory<typeof PanelComments> = () => (
+const Template: StoryFn<typeof PanelComments> = () => (
   <section className="checkout-details shop-container">
     <PanelComments />
   </section>
 );
 
-export const WithExistingComment = Template.bind({});
+export const WithExistingComment = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockstate }}>
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const mockstate = {
   initialized: true,
   order: {
@@ -24,15 +35,18 @@ const mockstate = {
   },
 };
 
-WithExistingComment.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockstate }}>
-      <Story />
-    </MockStore>
-  ),
-];
+export const WithoutExistingComment = {
+  render: Template,
 
-export const WithoutExistingComment = Template.bind({});
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockstate2 }}>
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const mockstate2 = {
   initialized: true,
   order: {
@@ -40,15 +54,18 @@ const mockstate2 = {
   },
 };
 
-WithoutExistingComment.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockstate2 }}>
-      <Story />
-    </MockStore>
-  ),
-];
+export const WithLongComment = {
+  render: Template,
 
-export const WithLongComment = Template.bind({});
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockstate3 }}>
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const mockstate3 = {
   initialized: true,
   order: {
@@ -57,11 +74,3 @@ const mockstate3 = {
       'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?',
   },
 };
-
-WithLongComment.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockstate3 }}>
-      <Story />
-    </MockStore>
-  ),
-];

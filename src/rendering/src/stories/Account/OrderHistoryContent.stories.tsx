@@ -1,17 +1,14 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
-import OrderHistoryContent from '../../components/Account/OrderHistoryContent';
+import OrderHistoryContent, {
+  OrderHistoryContentProps,
+} from '../../components/Account/OrderHistoryContent';
 import { Order } from 'ordercloud-javascript-sdk';
 
 export default {
   title: 'Components/Account/OrderHistoryContent',
   component: OrderHistoryContent,
-} as ComponentMeta<typeof OrderHistoryContent>;
-
-const Template: ComponentStory<typeof OrderHistoryContent> = (args) => (
-  <OrderHistoryContent {...args} />
-);
+} as Meta<typeof OrderHistoryContent>;
 
 const orders = [
   {
@@ -248,15 +245,18 @@ const orders = [
   },
 ] as Order[];
 
-export const Default = Template.bind({});
-Default.args = {
-  orders,
+export const Default = {
+  args: {
+    orders,
+  },
 };
 
-export const NoOrders = Template.bind({});
-NoOrders.args = {};
+export const NoOrders = {
+  args: {},
+};
 
-export const EmptyOrders = Template.bind({});
-EmptyOrders.args = {
-  orders: [],
+export const EmptyOrders = {
+  args: {
+    orders: [],
+  } as OrderHistoryContentProps,
 };

@@ -13,7 +13,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{69E732FE-2C45-4BB0-B17C-6AD3455424A2}" />
+    <image mediaid="{8B5FBB28-859B-464E-8DB4-DB8900BA698F}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -50,7 +50,7 @@ SharedFields:
           p:after="*[1=2]"
           s:ds=""
           s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
-          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B08C8BABD-CA64-41EE-B592-13E86CF8AE22%7D%7C%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B08C8BABD-CA64-41EE-B592-13E86CF8AE22%7D%7C%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1&amp;CSSStyles"
           s:ph="headless-main"
           s:ccb="Clear on publish" />
       </d>
@@ -75,7 +75,7 @@ Languages:
       Value: Landing Pages
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "240478fb-4db2-4d89-a755-57abcc1c063b"
+      Value: "d53c7042-b3e4-4f14-b724-9105d066fc6e"
     - ID: "e0c0c8a4-0fea-4963-8b86-d47810b80efa"
       Hint: Content
       Value: "Here is a list of all currently available landing pages:"

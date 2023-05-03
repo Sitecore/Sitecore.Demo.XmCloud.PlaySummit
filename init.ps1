@@ -101,9 +101,9 @@ Write-Host "Adding Windows hosts file entries..." -ForegroundColor Green
 Add-HostsEntry "cm.xmcloudcm.localhost"
 Add-HostsEntry "www.xmcloudcm.localhost"
 
-# DEMO TEAM CUSTOMIZATION - Move the scjssconfig, api key, and JSS editing secret inside the if ($InitEnv) block.
 # DEMO TEAM CUSTOMIZATION - Remove scjssconfig file generation as ours is already in source control.
 # DEMO TEAM CUSTOMIZATION - Remove generation of the Sitecore API key. We want a fixed key.
+# DEMO TEAM CUSTOMIZATION - Move the JSS editing secret inside the if ($InitEnv) block.
 
 ###############################
 # Populate the environment file

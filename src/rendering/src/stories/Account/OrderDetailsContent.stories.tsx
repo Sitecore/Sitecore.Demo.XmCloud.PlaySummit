@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 
 import OrderDetailsContent from '../../components/Account/OrderDetailsContent';
 import { OrderWorksheet } from 'ordercloud-javascript-sdk';
@@ -9,11 +9,11 @@ import { loggedInAuthSlice, cartSlice, productCacheSlice } from '../Checkout/Che
 export default {
   title: 'Components/Account/OrderDetailsContent',
   component: OrderDetailsContent,
-} as ComponentMeta<typeof OrderDetailsContent>;
+} as Meta<typeof OrderDetailsContent>;
 
 const slices: MockSlice[] = [cartSlice, productCacheSlice, loggedInAuthSlice];
 
-const Template: ComponentStory<typeof OrderDetailsContent> = (args) => (
+const Template: StoryFn<typeof OrderDetailsContent> = (args) => (
   <MockStore sliceOrSlices={slices}>
     <OrderDetailsContent {...args} />
   </MockStore>
@@ -1345,33 +1345,47 @@ const orderFour = {
   OrderApprovedResponse: null,
 } as unknown as OrderWorksheet;
 
-export const OrderOne = Template.bind({});
-OrderOne.args = {
-  order: orderOne,
-  creditCard,
-  shipMethod: orderOne.ShipEstimateResponse.ShipEstimates[0].ShipMethods[0],
+export const OrderOne = {
+  render: Template,
+
+  args: {
+    order: orderOne,
+    creditCard,
+    shipMethod: orderOne.ShipEstimateResponse.ShipEstimates[0].ShipMethods[0],
+  },
 };
 
-export const OrderTwo = Template.bind({});
-OrderTwo.args = {
-  order: orderTwo,
-  creditCard,
-  shipMethod: orderTwo.ShipEstimateResponse.ShipEstimates[0].ShipMethods[0],
+export const OrderTwo = {
+  render: Template,
+
+  args: {
+    order: orderTwo,
+    creditCard,
+    shipMethod: orderTwo.ShipEstimateResponse.ShipEstimates[0].ShipMethods[0],
+  },
 };
 
-export const OrderThree = Template.bind({});
-OrderThree.args = {
-  order: orderThree,
-  creditCard,
-  shipMethod: orderThree.ShipEstimateResponse.ShipEstimates[0].ShipMethods[1],
+export const OrderThree = {
+  render: Template,
+
+  args: {
+    order: orderThree,
+    creditCard,
+    shipMethod: orderThree.ShipEstimateResponse.ShipEstimates[0].ShipMethods[1],
+  },
 };
 
-export const OrderFour = Template.bind({});
-OrderFour.args = {
-  order: orderFour,
-  creditCard,
-  shipMethod: orderFour.ShipEstimateResponse.ShipEstimates[0].ShipMethods[1],
+export const OrderFour = {
+  render: Template,
+
+  args: {
+    order: orderFour,
+    creditCard,
+    shipMethod: orderFour.ShipEstimateResponse.ShipEstimates[0].ShipMethods[1],
+  },
 };
 
-export const NoOrder = Template.bind({});
-NoOrder.args = {};
+export const NoOrder = {
+  render: Template,
+  args: {},
+};

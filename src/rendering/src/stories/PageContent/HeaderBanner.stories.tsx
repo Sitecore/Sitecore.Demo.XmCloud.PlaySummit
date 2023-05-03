@@ -1,19 +1,11 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
-import {
-  Default as HeaderBanner,
-  HeaderBannerProps,
-} from '../../components/PageContent/HeaderBanner';
+import { Default as HeaderBanner } from '../../components/PageContent/HeaderBanner';
 
 export default {
   title: 'Components/PageContent/HeaderBanner',
   component: HeaderBanner,
-} as ComponentMeta<typeof HeaderBanner>;
-
-const Template: ComponentStory<typeof HeaderBanner> = (args: HeaderBannerProps) => (
-  <HeaderBanner {...args} />
-);
+} as Meta<typeof HeaderBanner>;
 
 const fieldsWithoutImage = {
   eyebrow: {
@@ -41,16 +33,18 @@ const fieldsWithImage = {
   },
 };
 
-export const WithImage = Template.bind({});
-WithImage.args = {
-  fields: fieldsWithImage,
-  rendering: {
-    componentName: 'Rendering',
-    dataSource: '/sitecore',
+export const WithImage = {
+  args: {
+    fields: fieldsWithImage,
+    rendering: {
+      componentName: 'Rendering',
+      dataSource: '/sitecore',
+    },
   },
 };
 
-export const WithoutImage = Template.bind({});
-WithoutImage.args = {
-  fields: fieldsWithoutImage,
+export const WithoutImage = {
+  args: {
+    fields: fieldsWithoutImage,
+  },
 };

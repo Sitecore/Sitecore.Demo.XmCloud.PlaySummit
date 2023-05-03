@@ -15,7 +15,7 @@ interface ComponentProps {
   params: ComponentParams;
 }
 
-export const Default = (props: ComponentProps): JSX.Element => {
+const DefaultContainer = (props: ComponentProps): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext();
   const containerStyles = props.params && props.params.Styles ? props.params.Styles : '';
   const styles = `${props.params.GridParameters} ${containerStyles}`.trimEnd();
@@ -34,8 +34,9 @@ export const Default = (props: ComponentProps): JSX.Element => {
 
   return (
     // DEMO TEAM CUSTOMIZATION - Move the style={backgroundStyle} attribute from the component-content div to the outer div.
+    // DEMO TEAM CUSTOMIZATION - Add the "container" CSS class to ensure our PLAY! Summit styles apply also to SXA Container components.
     <div
-      className={`component container ${styles}`}
+      className={`component container container-default ${styles}`}
       id={id ? id : undefined}
       style={backgroundStyle}
     >
@@ -47,4 +48,18 @@ export const Default = (props: ComponentProps): JSX.Element => {
       </div>
     </div>
   );
+};
+
+export const Default = (props: ComponentProps): JSX.Element => {
+  const splitStyles = props.params?.Styles?.split(' ');
+
+  if (splitStyles && splitStyles.includes('container')) {
+    return (
+      <div className="container-wrapper">
+        <DefaultContainer {...props} />
+      </div>
+    );
+  }
+
+  return <DefaultContainer {...props} />;
 };

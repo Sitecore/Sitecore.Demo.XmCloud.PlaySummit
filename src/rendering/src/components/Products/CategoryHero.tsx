@@ -23,13 +23,11 @@ const CategoryHero = ({ category }: CategoryHeroProps): JSX.Element => {
         {categoryChildren.slice(0, 3).map((cat) => (
           <li key={cat.ccid}>
             <Link href={cat.url_path}>
-              <a>
-                <img
-                  src={cat?.image_url || `${publicUrl}/assets/img/shop/category-placeholder.png`}
-                  alt="Category"
-                />
-                <h4>{cat?.title || cat.name}</h4>
-              </a>
+              <img
+                src={cat?.image_url || `${publicUrl}/assets/img/shop/category-placeholder.png`}
+                alt="Category"
+              />
+              <h4>{cat?.title || cat.name}</h4>
             </Link>
           </li>
         ))}

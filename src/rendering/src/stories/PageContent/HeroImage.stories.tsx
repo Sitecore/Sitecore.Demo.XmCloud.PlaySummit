@@ -1,43 +1,40 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
-import { Default as HeroImage, HeroImageProps } from '../../components/PageContent/HeroImage';
+import { Default as HeroImage } from '../../components/PageContent/HeroImage';
 
 export default {
   title: 'Components/PageContent/HeroImage',
   component: HeroImage,
-} as ComponentMeta<typeof HeroImage>;
+} as Meta<typeof HeroImage>;
 
-const Template: ComponentStory<typeof HeroImage> = (args: HeroImageProps) => (
-  <HeroImage {...args} />
-);
-
-export const WithImage = Template.bind({});
-WithImage.args = {
-  fields: {
-    hero: {
-      value: {
-        src: '/assets/img/tickets/come-play.jpg',
+export const WithImage = {
+  args: {
+    fields: {
+      hero: {
+        value: {
+          src: '/assets/img/tickets/come-play.jpg',
+        },
       },
     },
-  },
-  rendering: {
-    componentName: 'Rendering',
-    dataSource: '/sitecore',
+    rendering: {
+      componentName: 'Rendering',
+      dataSource: '/sitecore',
+    },
   },
 };
 
-export const WithoutImage = Template.bind({});
-WithoutImage.args = {
-  fields: {
-    hero: {
-      value: {
-        src: '',
+export const WithoutImage = {
+  args: {
+    fields: {
+      hero: {
+        value: {
+          src: '',
+        },
       },
     },
-  },
-  rendering: {
-    componentName: 'Rendering',
-    dataSource: '/sitecore',
+    rendering: {
+      componentName: 'Rendering',
+      dataSource: '/sitecore',
+    },
   },
 };

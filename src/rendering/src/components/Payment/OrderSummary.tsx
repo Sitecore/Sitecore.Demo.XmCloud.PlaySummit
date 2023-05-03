@@ -1,6 +1,6 @@
 import { TICKETS } from '../../models/mock-tickets';
 
-export type OrderSummaryProps = {
+type OrderSummaryProps = {
   ticket?: string;
 };
 

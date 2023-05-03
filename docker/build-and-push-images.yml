@@ -50,7 +50,7 @@ stages:
           workingDirectory: src/rendering
 
 - stage: Build_Storybook
-  displayName: "Build Website Storybook, Push to Chromatic"
+  displayName: "Build Website Storybook"
   dependsOn: []
   jobs:
     - job: Build
@@ -81,10 +81,6 @@ stages:
             targetPath: "src/rendering/storybook-static"
             artifact: "Storybook"
             publishLocation: "pipeline"
-        # - script: |
-        #     npx chromatic --project-token $(chromatic.project.token) --auto-accept-changes
-        #   displayName: 'Push to Chromatic'
-        #   workingDirectory: src/rendering
 
 - stage: Docker_Windows
   displayName: "Build Windows Images"
