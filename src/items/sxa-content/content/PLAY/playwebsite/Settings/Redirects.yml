@@ -1,0 +1,13 @@
+﻿---
+ID: "c2871899-de38-4a1b-a7fa-14533c8c340f"
+Parent: "9ed598e0-fe64-4a42-947b-df3ce6189ace"
+Template: "c2dc4690-af44-48c7-bb21-90d1ad246732"
+Path: /sitecore/content/PLAY/playwebsite/Settings/Redirects
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "33e16037-4632-472b-b3e7-ee0b6ce50502"

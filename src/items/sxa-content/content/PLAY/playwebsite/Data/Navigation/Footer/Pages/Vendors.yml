@@ -1,0 +1,17 @@
+﻿---
+ID: "49090da8-7458-4a0f-98d4-8981756e46eb"
+Parent: "233cc3ab-ef68-4167-adaa-391c3ff1e907"
+Template: "ce8e28f6-c530-4bd5-9ca5-00d7d42c26c0"
+Path: /sitecore/content/PLAY/playwebsite/Data/Navigation/Footer/Pages/Vendors
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d4d42ba4-b6ef-4ede-894c-f7184b36c781"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link class="" id="{774E44E8-0F30-5879-B847-AD233FFB41AA}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/vendors" />

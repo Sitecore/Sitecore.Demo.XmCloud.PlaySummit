@@ -1,0 +1,78 @@
+﻿---
+ID: "a7bdfbda-d5cc-5388-a039-f262bc768721"
+Parent: "2d1d7aca-9597-5ca6-85b2-9b04907e4298"
+Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Path: /sitecore/content/PLAY/playwebsite/home/tickets
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{FF8A7DA5-071D-41AC-BE44-80B5ECC4A59A}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{CE55D9B7-A8A2-5B44-AE6D-818E96BAB379}"
+          p:before="*"
+          s:rname="HeaderBanner"
+          s:ds="{AD579DAD-71C9-5584-B027-CB82EC546E5C}"
+          s:id="{FC5B8C36-8C49-54FD-94F3-C5AD21446CC4}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1" />
+        <r
+          uid="{83FBFB26-33B4-584A-BA89-B102C8E69527}"
+          p:after="r[@uid='{CE55D9B7-A8A2-5B44-AE6D-818E96BAB379}']"
+          s:rname="TextCta"
+          s:ds="{2B4D4FE1-EC28-59DA-8ACA-C0ADADF00E21}"
+          s:id="{CC9984B5-432C-5A1A-9ED0-E8F88E26E5A2}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1" />
+        <r
+          uid="{7B4BD8CF-E172-562E-A156-BEC3B399E3D0}"
+          p:after="r[@uid='{83FBFB26-33B4-584A-BA89-B102C8E69527}']"
+          s:rname="TicketGrid"
+          s:id="{298D16E7-CFB2-5BE9-8B8C-BBC10A72597F}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1" />
+        <r
+          uid="{34CDA3FD-BFC5-583D-8720-100D5EE194D7}"
+          p:after="r[@uid='{7B4BD8CF-E172-562E-A156-BEC3B399E3D0}']"
+          s:rname="FullImageSection"
+          s:ds="{BD8B0390-574A-57F3-B801-1C3A4F42B3D6}"
+          s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
+          s:par="FieldNames&amp;Styles=%7B3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7D%7C%7BFF6391E2-EFC2-436F-85B1-C2AFA0A5F6D1%7D&amp;RenderingIdentifier"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{7CE7FF1B-EE7C-5885-B4C6-9560F0828013}"
+          p:after="*[1=2]"
+          s:rname="TestimonyList"
+          s:ds="{B103F115-DB4E-4D12-A6F1-0D058B98CFC4}"
+          s:id="{CB6FAEE6-2A59-5114-B898-1147AA0FE82F}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Tickets
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a3d7c3d0-6edc-4fad-a79b-373e0d0be5da"
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: Tickets

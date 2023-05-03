@@ -1,0 +1,13 @@
+﻿---
+ID: "b7ebac24-b600-5631-a101-52f98398a65f"
+Parent: "da04b275-8838-4a3a-afee-817cf1fdd2eb"
+Template: "93227c5d-4fef-474d-94c0-f252ec8e8219"
+Path: /sitecore/layout/Layouts/Project/PLAY
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "aa99b158-8d6f-4443-a3be-5f7345b88ea2"

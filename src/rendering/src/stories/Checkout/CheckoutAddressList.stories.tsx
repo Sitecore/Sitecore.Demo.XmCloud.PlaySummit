@@ -1,17 +1,14 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
-import CheckoutAddressList from '../../components/Checkout/CheckoutAddressList';
+import CheckoutAddressList, {
+  CheckoutAddressListProps,
+} from '../../components/Checkout/CheckoutAddressList';
 import { DBuyerAddress } from 'src/models/ordercloud/DBuyerAddress';
 
 export default {
   title: 'Components/Checkout/CheckoutAddressList',
   component: CheckoutAddressList,
-} as ComponentMeta<typeof CheckoutAddressList>;
-
-const Template: ComponentStory<typeof CheckoutAddressList> = (args) => (
-  <CheckoutAddressList {...args} />
-);
+} as Meta<typeof CheckoutAddressList>;
 
 const addresses: DBuyerAddress[] = [
   {
@@ -53,8 +50,9 @@ const addresses: DBuyerAddress[] = [
   },
 ];
 
-export const Default = Template.bind({});
-Default.args = {
-  addresses,
-  activeAddressId: null,
+export const Default = {
+  args: {
+    addresses,
+    activeAddressId: null,
+  } as CheckoutAddressListProps,
 };

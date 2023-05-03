@@ -1,0 +1,17 @@
+﻿---
+ID: "e54b6b6f-32e1-448a-bba2-41c624dec5b9"
+Parent: "44864379-85fa-46df-a102-35a8bc2391b5"
+Template: "b762d567-87f5-493c-bb48-0c455d834457"
+Path: /sitecore/content/PLAY/playwebsite/Data/Texts
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 700
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ff97b8ed-64d0-45f1-9123-b63c78a93b5d"

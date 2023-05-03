@@ -1,26 +1,23 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
-import { Default as SessionList, SessionListProps } from '../../components/Sessions/SessionList';
+import { Default as SessionList } from '../../components/Sessions/SessionList';
 import { SESSIONS } from '../mock-sessions';
 
 export default {
   title: 'Components/Sessions/SessionList',
   component: SessionList,
-} as ComponentMeta<typeof SessionList>;
+} as Meta<typeof SessionList>;
 
-const Template: ComponentStory<typeof SessionList> = (args: SessionListProps) => (
-  <SessionList {...args} />
-);
-
-export const WithoutSpeakers = Template.bind({});
-WithoutSpeakers.args = {
-  sessions: SESSIONS,
-  showSpeakers: false,
+export const WithoutSpeakers = {
+  args: {
+    sessions: SESSIONS,
+    showSpeakers: false,
+  },
 };
 
-export const WithSpeakers = Template.bind({});
-WithSpeakers.args = {
-  sessions: SESSIONS,
-  showSpeakers: true,
+export const WithSpeakers = {
+  args: {
+    sessions: SESSIONS,
+    showSpeakers: true,
+  },
 };

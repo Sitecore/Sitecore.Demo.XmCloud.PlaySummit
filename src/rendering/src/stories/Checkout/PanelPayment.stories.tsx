@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 import PanelPayment from '../../components/Checkout/PanelPayment';
 import { DPayment } from 'src/models/ordercloud/DPayment';
 import { MockStore } from '../mock-store';
@@ -8,16 +8,26 @@ import { getMockExpirationDate } from '../utils';
 export default {
   title: 'Components/Checkout/PanelPayment',
   component: PanelPayment,
-} as ComponentMeta<typeof PanelPayment>;
+} as Meta<typeof PanelPayment>;
 
-const Template: ComponentStory<typeof PanelPayment> = (args) => (
+const Template: StoryFn<typeof PanelPayment> = () => (
   <section className="checkout-details shop-container">
-    <PanelPayment {...args} />
+    <PanelPayment />
   </section>
 );
 
-export const WithSavedPayment = Template.bind({});
-WithSavedPayment.args = {};
+export const WithSavedPayment = {
+  render: Template,
+  args: {},
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockStateSavedPayment }}>
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
 
 const mockStateSavedPayment = {
   initialized: true,
@@ -45,16 +55,18 @@ const mockStateSavedPayment = {
   ] as DPayment[],
 };
 
-WithSavedPayment.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockStateSavedPayment }}>
-      <Story />
-    </MockStore>
-  ),
-];
+export const WithoutSavedPayment = {
+  render: Template,
+  args: {},
 
-export const WithoutSavedPayment = Template.bind({});
-WithoutSavedPayment.args = {};
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockStateNoSavedPayment }}>
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
 
 const mockStateNoSavedPayment = {
   initialized: true,
@@ -64,11 +76,3 @@ const mockStateNoSavedPayment = {
   },
   payments: [] as DPayment[],
 };
-
-WithoutSavedPayment.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={{ name: 'ocCurrentCart', state: mockStateNoSavedPayment }}>
-      <Story />
-    </MockStore>
-  ),
-];

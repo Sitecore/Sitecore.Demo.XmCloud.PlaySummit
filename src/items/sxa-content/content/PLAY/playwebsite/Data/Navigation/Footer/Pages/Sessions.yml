@@ -1,0 +1,17 @@
+﻿---
+ID: "ea4a3aa4-4012-40ca-a506-aa0bb0feabc3"
+Parent: "233cc3ab-ef68-4167-adaa-391c3ff1e907"
+Template: "ce8e28f6-c530-4bd5-9ca5-00d7d42c26c0"
+Path: /sitecore/content/PLAY/playwebsite/Data/Navigation/Footer/Pages/Sessions
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "12c0c79c-18f7-4ccb-86c2-a9b940001c30"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link class="" id="{68DC89A4-1B04-59A8-9C4E-3B49D6C61052}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/sessions" />

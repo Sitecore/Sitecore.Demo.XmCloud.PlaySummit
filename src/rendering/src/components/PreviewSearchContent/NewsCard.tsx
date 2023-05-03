@@ -13,14 +13,12 @@ const NewsCard = (props: NewsCardProps): JSX.Element => {
   const { image_url, name, url, publish_date } = props;
 
   return (
-    <Link href={getAbsoluteUrlPath(url)}>
-      <a className="grid-item news-item">
-        <div className="item-details item-details-left">
-          <div className="item-title">{name}</div>
-          <span className="news-date">{new Date(publish_date).toLocaleString()}</span>
-        </div>
-        <img className="news-image" src={image_url} alt="News image" height="100" width="100" />
-      </a>
+    <Link href={getAbsoluteUrlPath(url)} className="grid-item news-item">
+      <div className="item-details item-details-left">
+        <div className="item-title">{name}</div>
+        <span className="news-date">{new Date(publish_date).toLocaleString()}</span>
+      </div>
+      <img className="news-image" src={image_url} alt="News image" height="100" width="100" />
     </Link>
   );
 };

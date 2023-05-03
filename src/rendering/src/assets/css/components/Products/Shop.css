@@ -3,6 +3,8 @@
 }
 
 div.shop-main-container {
+  @apply basis-full;
+
   .section {
     @apply py-6;
   }

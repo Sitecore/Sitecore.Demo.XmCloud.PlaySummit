@@ -1,0 +1,17 @@
+﻿---
+ID: "1951dc28-48cc-423a-8706-9aabcf319954"
+Parent: "d876ffec-e6ee-479c-9f3a-a75a67fc4471"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Project/PLAY/Vendors
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fbe29b59-92ef-48f2-89dc-57b65f6169b5"

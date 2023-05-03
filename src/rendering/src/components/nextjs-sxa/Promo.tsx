@@ -1,4 +1,5 @@
 import React from 'react';
+// DEMO TEAM CUSTOMIZATION - Removed Field and Text. Added RichTextField.
 import {
   Image as JssImage,
   Link as JssLink,
@@ -7,6 +8,7 @@ import {
   LinkField,
   RichTextField,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+// END CUSTOMIZATION
 
 interface Fields {
   PromoIcon: ImageField;

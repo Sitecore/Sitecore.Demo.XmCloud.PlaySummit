@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import GiftCheckboxOrder from '../../components/Checkout/GiftCheckboxOrder';
 import { MockStore } from '../mock-store';
 import { cartSlice } from './CheckoutCommon';
@@ -7,44 +7,44 @@ import { cartSlice } from './CheckoutCommon';
 export default {
   title: 'Components/Checkout/GiftCheckboxOrder',
   component: GiftCheckboxOrder,
-} as ComponentMeta<typeof GiftCheckboxOrder>;
+} as Meta<typeof GiftCheckboxOrder>;
 
-const Template: ComponentStory<typeof GiftCheckboxOrder> = (args) => (
-  <GiftCheckboxOrder {...args} />
-);
-
-export const IsGift = Template.bind({});
-IsGift.args = {
-  order: {
-    xp: {
-      IsGift: true,
+export const IsGift = {
+  args: {
+    order: {
+      xp: {
+        IsGift: true,
+      },
     },
   },
-};
-IsGift.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={cartSlice}>
-      <div className="cart-details">
-        <Story />
-      </div>
-    </MockStore>
-  ),
-];
 
-export const IsNotGift = Template.bind({});
-IsNotGift.args = {
-  order: {
-    xp: {
-      IsGift: false,
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={cartSlice}>
+        <div className="cart-details">
+          <Story />
+        </div>
+      </MockStore>
+    ),
+  ],
+};
+
+export const IsNotGift = {
+  args: {
+    order: {
+      xp: {
+        IsGift: false,
+      },
     },
   },
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={cartSlice}>
+        <div className="cart-details">
+          <Story />
+        </div>
+      </MockStore>
+    ),
+  ],
 };
-IsNotGift.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={cartSlice}>
-      <div className="cart-details">
-        <Story />
-      </div>
-    </MockStore>
-  ),
-];

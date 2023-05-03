@@ -4,9 +4,11 @@
     "items": {
         "includes": [
             {
-                "name": "DefaultRenderingHost",
-                "path": "/sitecore/system/Settings/Services/Rendering Hosts/Default",
-                "scope": "singleItem"
+                "DEMO_TEAM_CUSTOMIZATION": "Serialize all rendering hosts, in case user adds additional ones",
+                "name": "RenderingHosts",
+                "path": "/sitecore/system/Settings/Services/Rendering Hosts",
+                "scope": "descendantsOnly",
+                "END_DEMO_TEAM_CUSTOMIZATION": ""
             }
         ]
     }

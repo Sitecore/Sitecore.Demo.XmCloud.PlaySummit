@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import GiftCheckboxLineItem from '../../components/Checkout/GiftCheckboxLineItem';
 import { MockStore } from '../mock-store';
 import { cartSlice } from './CheckoutCommon';
@@ -7,11 +7,7 @@ import { cartSlice } from './CheckoutCommon';
 export default {
   title: 'Components/Checkout/GiftCheckboxLineItem',
   component: GiftCheckboxLineItem,
-} as ComponentMeta<typeof GiftCheckboxLineItem>;
-
-const Template: ComponentStory<typeof GiftCheckboxLineItem> = (args) => (
-  <GiftCheckboxLineItem {...args} />
-);
+} as Meta<typeof GiftCheckboxLineItem>;
 
 const mockLineItem = {
   ProductID: 'product123',
@@ -19,40 +15,44 @@ const mockLineItem = {
   ID: 'mocklineitem',
 };
 
-export const IsGift = Template.bind({});
-IsGift.args = {
-  lineItem: {
-    ...mockLineItem,
-    xp: {
-      IsGift: true,
+export const IsGift = {
+  args: {
+    lineItem: {
+      ...mockLineItem,
+      xp: {
+        IsGift: true,
+      },
     },
   },
-};
-IsGift.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={cartSlice}>
-      <div className="cart-details">
-        <Story />
-      </div>
-    </MockStore>
-  ),
-];
 
-export const IsNotGift = Template.bind({});
-IsNotGift.args = {
-  lineItem: {
-    ...mockLineItem,
-    xp: {
-      IsGift: false,
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={cartSlice}>
+        <div className="cart-details">
+          <Story />
+        </div>
+      </MockStore>
+    ),
+  ],
+};
+
+export const IsNotGift = {
+  args: {
+    lineItem: {
+      ...mockLineItem,
+      xp: {
+        IsGift: false,
+      },
     },
   },
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore sliceOrSlices={cartSlice}>
+        <div className="cart-details">
+          <Story />
+        </div>
+      </MockStore>
+    ),
+  ],
 };
-IsNotGift.decorators = [
-  (Story) => (
-    <MockStore sliceOrSlices={cartSlice}>
-      <div className="cart-details">
-        <Story />
-      </div>
-    </MockStore>
-  ),
-];

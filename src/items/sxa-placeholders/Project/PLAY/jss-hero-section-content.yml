@@ -1,0 +1,20 @@
+﻿---
+ID: "0f285023-372b-46ae-93e5-a6b7f129fe8f"
+Parent: "b63fe2f1-b5ca-481f-8d7c-cc11bf1dabf8"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: "/sitecore/layout/Placeholder Settings/Project/PLAY/jss-hero-section-content"
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "jss-hero-section-content"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: "{99F2FFE7-28C6-4B88-A52B-BD9B6B44C3C1}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "557ef601-59f2-4cb1-ba80-16416f95602f"

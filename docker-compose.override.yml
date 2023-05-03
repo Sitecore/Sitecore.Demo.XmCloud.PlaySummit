@@ -73,6 +73,7 @@ services:
       ORDERCLOUD_MIDDLEWARE_CLIENT_SECRET: ${ORDERCLOUD_MIDDLEWARE_CLIENT_SECRET}
       OC_API_CLIENTS_WITH_ACCESS: ${ORDERCLOUD_MIDDLEWARE_ALLOWED_CLIENTIDS} # Not referenced in our code but used by the catalyst library https://github.com/ordercloud-api/ordercloud-javascript-catalyst#user-verification
       OC_WEBHOOK_HASH_KEY: ${ORDERCLOUD_WEBHOOK_HASH_KEY} # Not referenced in our code but used by the catalyst library https://github.com/ordercloud-api/ordercloud-javascript-catalyst/blob/main/README.md#webhook-verification
+      ## Send
       NEXT_PUBLIC_SEND_WEBSITE_ID : ${SEND_WEBSITE_ID}
       ## Auth0 - Not referenced in our code but used by the @auth0/nextjs-auth0 library
       AUTH0_SECRET: ${AUTH0_SECRET}
@@ -143,8 +144,7 @@ services:
     depends_on:
       - solution
     volumes:
-      # DEMO TEAM CUSTOMIZATION - Removed the platform subfolder
-      - ${LOCAL_DEPLOY_PATH}:C:\deploy
+      - ${LOCAL_DEPLOY_PATH}\platform:C:\deploy
       - ${LOCAL_DATA_PATH}\cm:C:\inetpub\wwwroot\App_Data\logs
       - ${HOST_LICENSE_FOLDER}:c:\license
     environment:
@@ -162,4 +162,18 @@ services:
       # DEMO TEAM CUSTOMIZATION - Custom variables to allow override in AKS
       RENDERING_HOST_ENDPOINT_URI: "${RENDERING_HOST_INTERNAL_URI}/api/editing/render"
       RENDERING_HOST_PUBLIC_URI: "https://${RENDERING_HOST}"
+      # END CUSTOMIZATION
+      # DEMO TEAM CUSTOMIZATION - Enable the Content Hub connector through an XDT file instead of environment variables
+      # SITECORE_AppSettings_cmpEnabled__define: ${SITECORE_CMP_ENABLED}
+      # SITECORE_AppSettings_damEnabled__define: ${SITECORE_DAM_ENABLED}
+      # END CUSTOMIZATION
+      # DEMO TEAM CUSTOMIZATION - Content Hub connector configuration
+      Sitecore_ConnectionStrings_CMP_dot_ContentHub: ${SITECORE_CMP_ContentHub}
+      Sitecore_ConnectionStrings_CMP_dot_ServiceBusEntityPathIn: ${SITECORE_CMP_Service_ServiceBusEntityPathIn}
+      Sitecore_ConnectionStrings_CMP_dot_ServiceBusSubscription: ${SITECORE_CMP_Service_ServiceBusSubscription}
+      Sitecore_ConnectionStrings_CMP_dot_ServiceBusEntityPathOut: ${SITECORE_CMP_Service_ServiceBusEntityPathOut}
+      Sitecore_ConnectionStrings_DAM_dot_ContentHub: ${SITECORE_DAM_ContentHub}
+      Sitecore_ConnectionStrings_DAM_dot_SearchPage: ${SITECORE_DAM_SearchPage}
+      Sitecore_ConnectionStrings_DAM_dot_ExternalRedirectKey: ${SITECORE_DAM_ExternalRedirectKey}
+      # END CUSTOMIZATION
     entrypoint: powershell -Command "& C:/tools/entrypoints/iis/Development.ps1"

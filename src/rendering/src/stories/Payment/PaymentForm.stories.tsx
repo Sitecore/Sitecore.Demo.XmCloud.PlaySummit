@@ -1,20 +1,23 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 
 import { Default as PaymentForm } from '../../components/Payment/PaymentForm';
 
 export default {
   title: 'Components/Payment/PaymentForm',
   component: PaymentForm,
-} as ComponentMeta<typeof PaymentForm>;
+} as Meta<typeof PaymentForm>;
 
-const Template: ComponentStory<typeof PaymentForm> = () => (
+const Template: StoryFn<typeof PaymentForm> = () => (
   <PaymentForm rendering={{ componentName: '' }} params={{}} />
 );
 
-export const Default = Template.bind({});
-Default.args = {
-  params: {
-    name: 'PaymentForm',
+export const Default = {
+  render: Template,
+
+  args: {
+    params: {
+      name: 'PaymentForm',
+    },
   },
 };

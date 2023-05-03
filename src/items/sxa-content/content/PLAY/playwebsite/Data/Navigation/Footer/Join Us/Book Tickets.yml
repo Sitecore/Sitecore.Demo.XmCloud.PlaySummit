@@ -1,0 +1,21 @@
+﻿---
+ID: "d87eeb6a-7113-4f4d-8e4a-584a339bc659"
+Parent: "362c964c-6b90-4c78-85f9-dd504ff7b09b"
+Template: "ce8e28f6-c530-4bd5-9ca5-00d7d42c26c0"
+Path: /sitecore/content/PLAY/playwebsite/Data/Navigation/Footer/Join Us/Book Tickets
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4d70dca2-da60-414d-8a3e-5fff6af20e27"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{A7BDFBDA-D5CC-5388-A039-F262BC768721}" />

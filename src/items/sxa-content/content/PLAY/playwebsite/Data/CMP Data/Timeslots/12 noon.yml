@@ -1,0 +1,23 @@
+﻿---
+ID: "ca686ca0-e8df-45f9-9c1c-2643ade2ab84"
+Parent: "b541c1ae-68e3-484b-bc05-73b574497189"
+Template: "0bc9237d-12eb-47a5-afed-a65188324358"
+Path: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Timeslots/12 noon
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: Demo.Timeslot.12noon
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "62545186-56cf-4614-bcdc-2ecb3947ea4c"
+      Hint: Name
+      Value: 12 noon
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e0aeda5e-2345-4047-af80-ec076c115eb4"

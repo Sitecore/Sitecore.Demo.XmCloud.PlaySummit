@@ -31,18 +31,16 @@ const SearchSponsorResultsTab = (props: SearchSponsorResultsTabProps): JSX.Eleme
           <div className="item-grid">
             <div className="grid-content">
               {props.items.map(sponsorAdapter).map((sponsor, index) => (
-                <Link key={index} href={sponsor.url} passHref>
-                  <a className="grid-item">
-                    <Image
-                      field={sponsor.fields.Logo}
-                      alt={sponsor.fields.Name.value}
-                      width={265}
-                      height={265}
-                    />
-                    <div className="item-details">
-                      <Text tag="p" field={sponsor.fields.Name} />
-                    </div>
-                  </a>
+                <Link key={index} href={sponsor.url} passHref className="grid-item">
+                  <Image
+                    field={sponsor.fields.Logo}
+                    alt={sponsor.fields.Name.value}
+                    width={265}
+                    height={265}
+                  />
+                  <div className="item-details">
+                    <Text tag="p" field={sponsor.fields.Name} />
+                  </div>
                 </Link>
               ))}
             </div>

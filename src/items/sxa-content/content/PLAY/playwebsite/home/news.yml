@@ -1,0 +1,57 @@
+﻿---
+ID: "0e4a63da-7496-557e-bf80-5bd52255e431"
+Parent: "2d1d7aca-9597-5ca6-85b2-9b04907e4298"
+Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Path: /sitecore/content/PLAY/playwebsite/home/news
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{4B8F13A2-EF1A-4A41-857D-A2191FD7C1E7}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 900
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{5CC3483B-DD6F-4D13-918B-E8D81CAED3A9}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{A9CB7EF0-73B3-4349-B4FE-98730640ED07}"
+          p:before="*"
+          s:ds="{214B0B3D-DACF-467E-BE2F-78AA60827854}"
+          s:id="{FC5B8C36-8C49-54FD-94F3-C5AD21446CC4}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{66B83838-1A45-459C-BCF7-B05333715F9D}"
+          p:after="*[1=2]"
+          s:id="{BE6E4210-8CF4-5BD5-B968-103626DBCC1B}"
+          s:par="CacheClearingBehavior=Clear%20on%20publish"
+          s:ph="/headless-main/sxa-main/container-1" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: News
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9626f79d-3a9d-4848-84e0-be2b264747c1"
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: News

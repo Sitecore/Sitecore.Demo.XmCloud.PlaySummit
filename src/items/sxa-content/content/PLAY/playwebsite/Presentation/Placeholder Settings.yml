@@ -1,0 +1,13 @@
+﻿---
+ID: "2fa0b334-311c-4f99-a950-ac3eac4f1116"
+Parent: "8fb503df-d132-4fc1-a096-18c8b8f19873"
+Template: "52288e39-7830-4694-b62d-32a54c6ef7ba"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Placeholder Settings
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d95c9ef0-4f5f-4b6c-9f2c-42344f86ce3d"

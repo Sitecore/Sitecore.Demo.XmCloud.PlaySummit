@@ -113,8 +113,8 @@ const AddressBookForm = (props: AddressBookFormProps): JSX.Element => {
   };
 
   const cancelEditButton = props.isEditing && (
-    <Link href="/account/address-book">
-      <a className="cancel-edit">Cancel</a>
+    <Link href="/account/address-book" className="cancel-edit">
+      Cancel
     </Link>
   );
 

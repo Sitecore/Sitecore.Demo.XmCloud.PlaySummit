@@ -166,13 +166,11 @@ const LineItemCard = (props: LineItemCardProps): JSX.Element => {
   const lineItemCard = (
     <div className="line-item-card">
       <div className="line-item-card-details">
-        <Link href={props.lineItem.Product.xp?.ProductUrl}>
-          <a className="product-name">
-            <h4>{props.lineItem.Product.Name}</h4>
-          </a>
+        <Link href={props.lineItem.Product.xp?.ProductUrl} className="product-name">
+          <h4>{props.lineItem.Product.Name}</h4>
         </Link>
-        <Link href={props.lineItem.Product.xp?.ProductUrl}>
-          <a className="product-image">{productImage}</a>
+        <Link href={props.lineItem.Product.xp?.ProductUrl} className="product-image">
+          {productImage}
         </Link>
         <div className="product-specs">
           <p>{props.lineItem.Product.xp?.Brand}</p>

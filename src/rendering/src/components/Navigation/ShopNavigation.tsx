@@ -65,10 +65,8 @@ const ShopNavigation = (props: ShopNavigationProps): JSX.Element => {
     <nav className="shop-navigation">
       <div className="shop-container shop-navigation-content">
         <div className="logo-container">
-          <Link href="/shop">
-            <a className="logo-link">
-              <img src={`${publicUrl}/assets/img/shop/play-shop-logo.svg`} alt="PLAY! SHOP" />
-            </a>
+          <Link href="/shop" className="logo-link">
+            <img src={`${publicUrl}/assets/img/shop/play-shop-logo.svg`} alt="PLAY! SHOP" />
           </Link>
         </div>
         <div className="items-container">

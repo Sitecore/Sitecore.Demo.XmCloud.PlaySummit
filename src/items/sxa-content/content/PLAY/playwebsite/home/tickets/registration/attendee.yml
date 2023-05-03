@@ -1,0 +1,92 @@
+﻿---
+ID: "df136825-30be-5e96-9b53-c240f337a09a"
+Parent: "23d1c784-e28e-5dc3-9515-2325d45c499e"
+Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Path: /sitecore/content/PLAY/playwebsite/home/tickets/registration/attendee
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{DC72FF97-2617-4147-8F5D-37660F45C557}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{68B377B9-8357-5E7C-B9CC-76765D5BB50D}"
+          p:before="*"
+          s:rname="HeaderBanner"
+          s:ds="{8CCD7EBC-7A09-5359-B2F1-7727F37970AE}"
+          s:id="{FC5B8C36-8C49-54FD-94F3-C5AD21446CC4}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1" />
+        <r
+          uid="{2FA4F61D-E97D-5CEB-948D-990E49B61C3D}"
+          p:after="r[@uid='{68B377B9-8357-5E7C-B9CC-76765D5BB50D}']"
+          s:rname="Section"
+          s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1" />
+        <r
+          uid="{6F01DD61-F3A5-4134-A044-98926CD4658C}"
+          p:after="r[@uid='{2FA4F61D-E97D-5CEB-948D-990E49B61C3D}']"
+          s:ds="{5E80F4BE-2CDE-454A-9DE0-F062A1490F65}"
+          s:id="{118A1550-728A-5324-8DF3-9AF7D252E89B}"
+          s:par="CacheClearingBehavior=Clear%20on%20publish"
+          s:ph="/headless-main/sxa-main/container-1/jss-section-content-{2FA4F61D-E97D-5CEB-948D-990E49B61C3D}-0" />
+        <r
+          uid="{D67366CF-9958-52E7-A9B1-7C38A02E06EE}"
+          p:after="r[@uid='{6F01DD61-F3A5-4134-A044-98926CD4658C}']"
+          s:rname="AttendeeForm"
+          s:id="{9D27B323-AD63-54C8-A9BD-2DED29DFAF1D}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1/jss-section-content-{2FA4F61D-E97D-5CEB-948D-990E49B61C3D}-0" />
+        <r
+          uid="{F503ED27-48D6-5198-9B04-64136F91868B}"
+          p:after="r[@uid='{D67366CF-9958-52E7-A9B1-7C38A02E06EE}']"
+          s:rname="FullImageSection"
+          s:ds="{3FDC9247-F940-5DE3-BB56-9242835DD87B}"
+          s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
+          s:par="FieldNames&amp;Styles=%7B3BC9EBFD-3ACD-4994-8D61-0BFEF358A70E%7D%7C%7B0CE71288-8AEB-4160-A418-3227CDC2402B%7D&amp;RenderingIdentifier"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{539A33B7-FA3F-5E86-90CA-EF4EDEB4468C}"
+          p:after="r[@uid='{F503ED27-48D6-5198-9B04-64136F91868B}']"
+          s:rname="Section"
+          s:ds=""
+          s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1" />
+        <r
+          uid="{A244C1C4-34A1-5196-A27B-6B787A759794}"
+          p:after="*[1=2]"
+          s:rname="TestimonyList"
+          s:ds="{B103F115-DB4E-4D12-A6F1-0D058B98CFC4}"
+          s:id="{CB6FAEE6-2A59-5114-B898-1147AA0FE82F}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Attendee
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4686a97e-feba-4c36-ac00-d6ae4abf3526"
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: Attendee

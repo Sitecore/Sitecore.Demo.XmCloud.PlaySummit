@@ -1,0 +1,20 @@
+﻿---
+ID: "a7ab0541-427d-4220-a91e-9b95916b2d22"
+Parent: "582f8e8f-453d-4ffc-adbc-de6abc4ff3b1"
+Template: "1c5fe58a-0bb1-45af-a6eb-b88ccecb57e6"
+Path: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Speaker Type/Sponsor
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: Demo.SpeakerType.Sponsor
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "75bc2d2c-9506-4d62-ba63-b4e605254af9"
+      Hint: Name
+      Value: Sponsor
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4843b1c5-3520-481b-8527-5e8579c1636b"

@@ -1,0 +1,17 @@
+﻿---
+ID: "b6c8c790-6f6c-46fa-9eda-b956cc8467a2"
+Parent: "362c964c-6b90-4c78-85f9-dd504ff7b09b"
+Template: "ce8e28f6-c530-4bd5-9ca5-00d7d42c26c0"
+Path: /sitecore/content/PLAY/playwebsite/Data/Navigation/Footer/Join Us/Become a Sponsor
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6dca1450-69a9-4987-8fd8-bcc6f7d96984"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{6CF37FF6-755C-5B1A-B5EB-63F03481DB4A}" />

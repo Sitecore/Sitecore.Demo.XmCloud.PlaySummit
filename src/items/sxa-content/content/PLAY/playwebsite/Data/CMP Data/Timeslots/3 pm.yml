@@ -1,0 +1,23 @@
+﻿---
+ID: "3c8054d9-ee77-47cb-8142-5541a557260d"
+Parent: "b541c1ae-68e3-484b-bc05-73b574497189"
+Template: "0bc9237d-12eb-47a5-afed-a65188324358"
+Path: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Timeslots/3 pm
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: Demo.Timeslot.3pm
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "62545186-56cf-4614-bcdc-2ecb3947ea4c"
+      Hint: Name
+      Value: 3 pm
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "38411030-f351-43a2-adc3-818d5e5d1eaf"

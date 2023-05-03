@@ -1,5 +1,4 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta } from '@storybook/react';
 import {
   Default as HeroSectionCta,
   HeroSectionCtaProps,
@@ -8,24 +7,21 @@ import {
 export default {
   title: 'Components/PageContent/HeroSectionCta',
   component: HeroSectionCta,
-} as ComponentMeta<typeof HeroSectionCta>;
+} as Meta<typeof HeroSectionCta>;
 
-const Template: ComponentStory<typeof HeroSectionCta> = (args: HeroSectionCtaProps) => (
-  <HeroSectionCta {...args} />
-);
-
-export const Default = Template.bind({});
-Default.args = {
-  fields: {
-    Link: {
-      value: {
-        href: '/tickets',
-        text: 'Book Tickets',
+export const Default = {
+  args: {
+    fields: {
+      Link: {
+        value: {
+          href: '/tickets',
+          text: 'Book Tickets',
+        },
       },
     },
-  },
-  rendering: {
-    componentName: 'Rendering',
-    dataSource: '/sitecore',
-  },
-} as HeroSectionCtaProps;
+    rendering: {
+      componentName: 'Rendering',
+      dataSource: '/sitecore',
+    },
+  } as HeroSectionCtaProps,
+};

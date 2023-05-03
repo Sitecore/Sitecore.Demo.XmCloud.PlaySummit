@@ -1,0 +1,60 @@
+﻿---
+ID: "39226dc6-0a62-459b-9299-54ec88af6935"
+Parent: "68dc89a4-1b04-59a8-9c4e-3b49d6c61052"
+Template: "d8aa73e1-c275-4eee-bb9d-333925e51952"
+Path: /sitecore/content/PLAY/playwebsite/home/sessions/Organizing the impossible How to host a cycling race
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: YrR40uFi1Ee5H9q8TYXvJg
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Organizing the impossible: How to host a cycling race"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "025df6a5-2001-449f-8f76-02be5353905c"
+      Hint: Audience
+      Value: "{EB7D2E35-46BD-4EA3-A142-6B524DF4ED97}|{6AB3A378-547F-4B38-8BE4-7538313020B2}"
+    - ID: "054ffb1c-8892-4ec8-8a2e-6a8654c17abc"
+      Hint: Premium
+      Value: 1
+    - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
+      Hint: Description
+      Value: |
+        <p>Event organizers and participants collaborate with the&nbsp;community to create an experience that bridges the gap between the physical and mental demands of athletes.&nbsp; A successful cycling event motivates all stakeholders to ensure&nbsp;a fun, safe, and challenging event. Is it possible? This is your chance to learn from experienced veteran organizers.</p>
+                       
+    - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
+      Hint: Speakers
+      Value: "{D5033FBA-96EB-47F3-B239-C8F7094464FD}|{209A438A-C1E2-4E02-BC8E-568235F16D1D}"
+    - ID: "4b2d1962-60eb-4cd1-b8e9-a2c2762ec04c"
+      Hint: Image
+      Value: |
+        <image stylelabs-content-id="38095" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/38095/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/6bb85a638c1a427db1015c03d6f5364f?v=17b911f3" mediaid="" stylelabs-content-type="Image" alt="Bicycle wheel closeup" height="3064" width="5456" />
+    - ID: "51084853-806c-4e3d-90a3-0eaec3faa3ac"
+      Hint: Day
+      Value: "{F7B3C20A-6F02-40E3-A4F9-901E1BF420F8}"
+    - ID: "5c88d198-7603-4a45-b9f6-682b908c60b9"
+      Hint: Timeslots
+      Value: "{9FA93929-60C9-47DF-9E5A-C170E6EE2440}"
+    - ID: "6f888071-3e3a-4888-ae95-d90b7df06870"
+      Hint: Type
+      Value: Session
+    - ID: "8058e5a0-d20d-4923-b87d-f56b19efc20f"
+      Hint: Name
+      Value: "Organizing the impossible: How to host a cycling race"
+    - ID: "8c3dff8b-74bc-4a65-af6d-81452a3d9a11"
+      Hint: Rooms
+      Value: "{374B55AB-B656-4588-A347-A0D28CB2AC99}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0aba085f-7c38-481a-89a0-ec62d8821459"
+    - ID: "cb19a833-48b8-4ad4-a841-09769bbef5c6"
+      Hint: Sponsors
+      Value: "{8C5F5B0A-B6A6-46CE-A34A-6A76E7B4FD2E}"
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: "Organizing the impossible: How to host a cycling race"

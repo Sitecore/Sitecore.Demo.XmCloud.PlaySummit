@@ -1,0 +1,44 @@
+﻿---
+ID: "4bfdc016-c6b8-58c8-8818-8e33ec7053cd"
+Parent: "2d1d7aca-9597-5ca6-85b2-9b04907e4298"
+Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Path: /sitecore/content/PLAY/playwebsite/home/terms
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1800
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{33B395AF-F56C-408A-A28E-F0CBE0CA38D9}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{0B9ABE0C-44C6-4F0C-A97B-DF5166EDF055}"
+          s:ds="{B2DBDBA0-BBAC-4160-A97D-16E7166A0D05}"
+          s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
+          s:par="FieldNames&amp;Styles=%7BAAD7C78F-EA7A-464F-9289-334EA001F38A%7D%7C%7B98006F93-D19D-44C8-A25D-CEC93528F129%7D&amp;RenderingIdentifier"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Terms
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "90eb1896-5b8c-408a-a7e8-c616a76fcd1b"
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: Terms of Use

@@ -1,0 +1,13 @@
+﻿---
+ID: "016a0a40-4ccb-47a9-83b9-8dabb97ef2f2"
+Parent: "8e7f4f7d-8ac7-435a-bb13-8212313c98d4"
+Template: "8e7f4f7d-8ac7-435a-bb13-8212313c98d4"
+Path: /sitecore/templates/Project/PLAY/JSS Settings/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d5f34c71-c7c3-414e-b111-49489dcb8256"

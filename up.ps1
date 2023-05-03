@@ -7,6 +7,7 @@ Param (
     [Parameter(HelpMessage = "Whether to set up the environment with pre-release version of Sitecore products (internal only) .")]
     [switch]$PreRelease
 )
+# END CUSTOMIZATION
 
 $ErrorActionPreference = "Stop";
 
@@ -140,15 +141,13 @@ if ($LASTEXITCODE -ne 0) {
 
 # DEMO TEAM CUSTOMIZATION - Moved index rebuild
 
-# DEMO TEAM CUSTOMIZATION - Removed initial JSS app items deployment and serialization. We are developing in Sitecore-first mode. Moved publish to a later stage.
-# JSS sample has already been deployed and serialized, push the serialized items
-
 Write-Host "Pushing Default rendering host configuration" -ForegroundColor Green
 dotnet sitecore ser push
 # DEMO TEAM CUSTOMIZATION - Added robustness check
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Serialization push failed, see errors above."
 }
+# END CUSTOMIZATION
 
 # DEMO TEAM CUSTOMIZATION - Restart CM after deserialization to clear the caches
 Invoke-WebRequest https://$xmCloudHost/Utilities/Restart.aspx
@@ -156,18 +155,21 @@ Invoke-WebRequest https://$xmCloudHost/Utilities/Restart.aspx
 # DEMO TEAM CUSTOMIZATION - Moved index rebuild here.
 # Rebuild indexes
 Write-Host "Rebuilding indexes ..." -ForegroundColor Green
+# DEMO TEAM CUSTOMIZATION - Added robustness check
 dotnet sitecore index rebuild
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Rebuild indexes failed, see errors above."
 }
+# END CUSTOMIZATION
 
 # DEMO TEAM CUSTOMIZATION - Removed setting the dynamic Sitecore API key and pushing it to Sitecore. We use a static API key.
 
 if ($ClientCredentialsLogin -ne "true") {
     Write-Host "Opening site..." -ForegroundColor Green
 
-    # DEMO TEAM CUSTOMIZATION - Custom hostnames.
+    # DEMO TEAM CUSTOMIZATION - Custom hostnames
     Start-Process https://$xmCloudHost/sitecore/
+    # DEMO TEAM CUSTOMIZATION - Open the website
     Start-Process https://www.xmcloudcm.localhost/
 }
 

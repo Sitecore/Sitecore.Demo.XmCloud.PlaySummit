@@ -1,5 +1,4 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
 import { Default as TestimonyList } from '../../components/PageContent/TestimonyList';
 import { Testimony } from 'src/types/testimony';
@@ -7,9 +6,7 @@ import { Testimony } from 'src/types/testimony';
 export default {
   title: 'Components/PageContent/TestimonyList',
   component: TestimonyList,
-} as ComponentMeta<typeof TestimonyList>;
-
-const Template: ComponentStory<typeof TestimonyList> = (args) => <TestimonyList {...args} />;
+} as Meta<typeof TestimonyList>;
 
 const testimony1 = {
   fields: {
@@ -74,20 +71,21 @@ const testimony3 = {
   },
 } as Testimony;
 
-export const Default = Template.bind({});
-Default.args = {
-  fields: {
-    Title: {
-      value: 'TESTIMONIES',
+export const Default = {
+  args: {
+    fields: {
+      Title: {
+        value: 'TESTIMONIES',
+      },
+      Subtitle: {
+        value:
+          'Curabitur sodales mi in magna accumsan, vitae finibus libero fringilla. Duis posuere a lorem quis pretium.',
+      },
+      Companies: [testimony1, testimony2, testimony3],
     },
-    Subtitle: {
-      value:
-        'Curabitur sodales mi in magna accumsan, vitae finibus libero fringilla. Duis posuere a lorem quis pretium.',
+    rendering: {
+      componentName: 'Rendering',
+      dataSource: '/sitecore',
     },
-    Companies: [testimony1, testimony2, testimony3],
-  },
-  rendering: {
-    componentName: 'Rendering',
-    dataSource: '/sitecore',
   },
 };

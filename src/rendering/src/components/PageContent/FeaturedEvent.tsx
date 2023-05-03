@@ -15,8 +15,8 @@ const FeaturedEvent = (props: ComponentProps): JSX.Element => {
             <p className="event-subtitle">Professional Cyclist</p>
           </div>
           <div className="btn-area">
-            <Link href="/tickets">
-              <a className="btn-main">Book Tickets</a>
+            <Link href="/tickets" className="btn-main">
+              Book Tickets
             </Link>
           </div>
         </div>

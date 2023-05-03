@@ -1,0 +1,20 @@
+﻿---
+ID: "61a45623-f908-4f5d-9898-3fc48d9136bc"
+Parent: "11312118-0133-4369-8522-472c305d7661"
+Template: "ce8e28f6-c530-4bd5-9ca5-00d7d42c26c0"
+Path: /sitecore/content/PLAY/playwebsite/Data/Navigation/Footer/Follow Us/Youtube
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3de05e24-1963-4409-9e49-378b866721ba"
+    - ID: "bf52b591-6456-4189-b1cc-4a50b2647017"
+      Hint: Fontawesome Icon Name
+      Value: faYoutube

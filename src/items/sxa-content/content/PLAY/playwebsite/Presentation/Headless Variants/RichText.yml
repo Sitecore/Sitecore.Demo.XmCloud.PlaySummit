@@ -1,0 +1,25 @@
+﻿---
+ID: "40889cb4-ba15-426f-a8d9-6418373704eb"
+Parent: "b392fdc1-eb30-4726-aef9-9d5d3e6b750e"
+Template: "49c111d0-6867-4798-a724-1f103166e6e9"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Headless Variants/RichText
+BranchID: "6d954d26-5ba2-4e17-9260-28fdc6b057d0"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/text.png
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{85A9998F-01FB-4FB9-8448-EF0B0BCFBB8B}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Rich Text
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5939363b-6fb1-46af-9f3f-8000f8eb951b"

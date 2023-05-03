@@ -1,7 +1,7 @@
 import { Product } from '../../models/discover/Product';
 import ProductCard from './ProductCard';
 
-type ProductListProps = {
+export type ProductListProps = {
   products: Product[];
   onProductClick?: (product: Product) => void;
   onDiscoverStyleOpen?: () => void;

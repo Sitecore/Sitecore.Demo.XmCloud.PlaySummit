@@ -2,7 +2,6 @@ import React from 'react';
 import { SitecoreContextReactContext, LayoutServicePageState } from '@sitecore-jss/sitecore-jss-nextjs';
 import "../src/assets/css/abstracts/mixins.css";
 import "../src/assets/css/main.css";
-import * as nextImage from 'next/image';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -25,11 +24,6 @@ export const parameters = {
     debounceTimeout: 200,
   },
 }
-
-Object.defineProperty(nextImage, 'default', {
-  configurable: true,
-  value: props => <img {...props} />
-});
 
 export const mockLayoutData = {
   sitecore: {

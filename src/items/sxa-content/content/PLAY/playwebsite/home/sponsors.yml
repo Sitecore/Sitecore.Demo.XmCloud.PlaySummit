@@ -1,0 +1,59 @@
+﻿---
+ID: "66c99e47-7bbf-52d1-b1d7-4662b850744a"
+Parent: "2d1d7aca-9597-5ca6-85b2-9b04907e4298"
+Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Path: /sitecore/content/PLAY/playwebsite/home/sponsors
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{3B884B30-54C1-464C-AADD-F8BD94E7C38E}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{7AF0C3FD-54BD-4FFD-B0C4-21F6E6F7B81A}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{98F39024-766B-5184-B064-9E36B39D25DC}"
+          p:before="*"
+          s:rname="HeroImage"
+          s:ds="{E521A6F1-9C1B-50FD-AB79-333F31AF229A}"
+          s:id="{2C13DBC0-415C-5DAA-A7D9-56928F1271C4}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1" />
+        <r
+          uid="{18DD5D0E-19AA-48C7-881C-C33ED88DE3B2}"
+          p:after="*[1=2]"
+          s:ds="{66C99E47-7BBF-52D1-B1D7-4662B850744A}"
+          s:id="{98F79B86-92EF-4699-A2F0-D9ECF79A70EF}"
+          s:par=""
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Sponsors
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a770da33-474d-4229-af06-4370fc388851"
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: Sponsors

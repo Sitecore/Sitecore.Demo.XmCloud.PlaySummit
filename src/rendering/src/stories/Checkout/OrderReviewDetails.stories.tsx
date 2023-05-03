@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { StoryFn, Meta } from '@storybook/react';
 
 import OrderReviewDetails from '../../components/Checkout/OrderReviewDetails';
 import { MockStore } from '../mock-store';
@@ -14,30 +14,47 @@ import { LineItem } from 'ordercloud-javascript-sdk';
 export default {
   title: 'Components/Checkout/OrderReviewDetails',
   component: OrderReviewDetails,
-} as ComponentMeta<typeof OrderReviewDetails>;
+} as Meta<typeof OrderReviewDetails>;
 
-const Template: ComponentStory<typeof OrderReviewDetails> = () => <OrderReviewDetails />;
+const Template: StoryFn<typeof OrderReviewDetails> = () => <OrderReviewDetails />;
 
-export const Default = Template.bind({});
+export const Default = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: defaultCartState },
+          productCacheSlice,
+          loggedInAuthSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const defaultCartState = {
   ...cartState,
   shipEstimateResponse,
 };
-Default.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: defaultCartState },
-        productCacheSlice,
-        loggedInAuthSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
 
-export const NoLineItems = Template.bind({});
+export const NoLineItems = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[{ name: 'ocCurrentCart', state: noLineItemsState }, loggedInAuthSlice]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const noLineItemsState = {
   ...cartState,
   lineItems: [] as LineItem[],
@@ -50,17 +67,25 @@ const noLineItemsState = {
     LineItemCount: 0,
   },
 };
-NoLineItems.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[{ name: 'ocCurrentCart', state: noLineItemsState }, loggedInAuthSlice]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];
 
-export const WithAdditionalComments = Template.bind({});
+export const WithAdditionalComments = {
+  render: Template,
+
+  decorators: [
+    (Story: StoryFn) => (
+      <MockStore
+        sliceOrSlices={[
+          { name: 'ocCurrentCart', state: withAdditionalCommentsState },
+          productCacheSlice,
+          loggedInAuthSlice,
+        ]}
+      >
+        <Story />
+      </MockStore>
+    ),
+  ],
+};
+
 const withAdditionalCommentsState = {
   ...cartState,
   shipEstimateResponse,
@@ -69,16 +94,3 @@ const withAdditionalCommentsState = {
     Comments: 'Please deliver it after 15h',
   },
 };
-WithAdditionalComments.decorators = [
-  (Story) => (
-    <MockStore
-      sliceOrSlices={[
-        { name: 'ocCurrentCart', state: withAdditionalCommentsState },
-        productCacheSlice,
-        loggedInAuthSlice,
-      ]}
-    >
-      <Story />
-    </MockStore>
-  ),
-];

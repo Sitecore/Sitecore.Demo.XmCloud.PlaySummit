@@ -3,7 +3,7 @@ import { DBuyerAddress } from 'src/models/ordercloud/DBuyerAddress';
 import CheckoutAddressCard from './CheckoutAddressCard';
 import CheckoutNewAddressCard from './CheckoutNewAddressCard';
 
-type CheckoutAddressListProps = {
+export type CheckoutAddressListProps = {
   addresses: DBuyerAddress[];
   activeAddressId?: string;
   showSaveToAddressBook?: boolean;

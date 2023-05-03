@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ResetComponentsLibraryId.aspx.cs" Inherits="Sitecore.Demo.Edge.Website.Utilities.ResetComponentsLibraryId" %>

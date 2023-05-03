@@ -1,0 +1,31 @@
+﻿---
+ID: "4692fe56-0de5-467d-9ed2-cf11494701ba"
+Parent: "4afa104f-090a-438e-af07-8134d5d27dd9"
+Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Path: /sitecore/templates/Branches/Project/PLAY/Content Webpage/$name
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{5ED0A33A-5A27-4EA6-A3D8-C1C3959246D8}"
+          p:after="r[@uid='{7CDC810E-AE54-5B4B-BA7D-128CF6F96EDA}']"
+          s:ds="{E091B133-450A-4144-AC0A-FA6F4C1C8A48}"
+          s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
+          s:par=""
+          s:ph="/headless-main"
+          s:ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "63424082-14b1-4811-b3d5-087726259a6c"

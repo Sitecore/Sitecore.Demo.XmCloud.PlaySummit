@@ -1,0 +1,20 @@
+﻿---
+ID: "f7b3c20a-6f02-40e3-a4f9-901e1bf420f8"
+Parent: "866e6ad1-34b6-479d-b75d-6ea1eeb01f98"
+Template: "32b4ee0d-7860-4ace-bc20-e4b40d9491a7"
+Path: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Days/Day 2
+SharedFields:
+- ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
+  Hint: EntityIdentifier
+  Value: Demo.Day.Day2
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8b5b10d2-7531-496b-afce-c0f7e51348c2"
+      Hint: Name
+      Value: Day 2
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b393b037-b3d0-4898-a576-3533b422d387"

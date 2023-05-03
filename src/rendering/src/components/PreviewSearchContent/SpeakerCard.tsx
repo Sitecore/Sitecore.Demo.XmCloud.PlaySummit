@@ -35,16 +35,14 @@ const SpeakerCard = (props: SpeakerCardProps): JSX.Element => {
   );
 
   return (
-    <Link href={getAbsoluteUrlPath(url)}>
-      <a className="row-item">
-        <img src={image_url} width="150" alt="Speaker image" />
-        <div className="item-details item-details-left">
-          <div className="item-title">{name}</div>
-          {jobTitle}
-          {companyValue}
-          {locationValue}
-        </div>
-      </a>
+    <Link href={getAbsoluteUrlPath(url)} className="row-item">
+      <img src={image_url} width="150" alt="Speaker image" />
+      <div className="item-details item-details-left">
+        <div className="item-title">{name}</div>
+        {jobTitle}
+        {companyValue}
+        {locationValue}
+      </div>
     </Link>
   );
 };

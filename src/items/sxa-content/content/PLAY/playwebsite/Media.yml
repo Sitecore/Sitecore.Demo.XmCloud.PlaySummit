@@ -1,0 +1,23 @@
+﻿---
+ID: "5aac3b75-ef62-4d60-8742-6aeb93435214"
+Parent: "504cac9b-0e68-4bb2-93de-28590cb0dd8a"
+Template: "e8e8c94f-4248-43c3-a79f-99fbb49d78e6"
+Path: /sitecore/content/PLAY/playwebsite/Media
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "de8257d9-43aa-4eff-a2f4-2e9fbbd20e79"
+  Hint: AdditionalChildren
+  Value: |
+    {F9A560F3-BD85-4779-90F9-DA0044F8BFA7}
+    {E7A53B03-6B96-41C8-83FF-01A08CEC02E4}
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{A7F39EA2-9018-4622-891D-CB65627E5AF2}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e4b920fb-7ea0-4cf9-b7ef-ee268840201d"
