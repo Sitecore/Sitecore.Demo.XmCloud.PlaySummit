@@ -79,7 +79,7 @@ docker pull "$($sitecoreDockerRegistry)sitecore-xmcloud-cm:$($sitecoreVersion)"
 if (-not $SkipBuild) {
     # Build all containers in the Sitecore instance, forcing a pull of latest base containers
     Write-Host "Building containers..." -ForegroundColor Green
-    docker-compose build
+    docker compose build
     if ($LASTEXITCODE -ne 0) {
         Write-Error "Container build failed, see errors above."
     }
@@ -88,7 +88,7 @@ if (-not $SkipBuild) {
 
 # Start the Sitecore instance
 Write-Host "Starting Sitecore environment..." -ForegroundColor Green
-docker-compose up -d
+docker compose up -d
 
 # Wait for Traefik to expose CM route
 Write-Host "Waiting for CM to become available..." -ForegroundColor Green
@@ -175,5 +175,5 @@ if ($ClientCredentialsLogin -ne "true") {
 
 Write-Host ""
 Write-Host "Use the following command to monitor your Rendering Host:" -ForegroundColor Green
-Write-Host "docker-compose logs -f rendering"
+Write-Host "docker compose logs -f rendering"
 Write-Host ""
