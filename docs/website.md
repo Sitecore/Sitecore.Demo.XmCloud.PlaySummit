@@ -50,6 +50,16 @@ The `\items` folder contains serialized Sitecore content items for this demo. Th
 
 See [Sitecore Content Serialization documentation](https://doc.sitecore.com/xp/en/developers/103/developer-tools/sitecore-content-serialization.html) for more information.
 
+### Serialized Sitecore Components
+
+The `\serialization` folder contains serialized Sitecore components, styles and datasources. The scrips that take care of the serialization are located at the root of the project.
+
+To push the serialized items to your Components library use the following command:
+.\componentspush.ps1 -libraryId _your_library_id_ -apiKey _your_api_key_
+
+To serialize any new changes to the repo use the following command:
+.\componentspull.ps1 -libraryId _your_library_id_ -apiKey _your_api_key_
+
 ### Sitecore Platform Project
 
 This Visual Studio / MSBuild project is used to deploy code and configuration to the main Sitecore platform roles, known as Content Management (CM). (This sample uses the XM Cloud container topology and thus only has a Standalone `cm`.)
@@ -171,7 +181,7 @@ To add new icons to the EdgeIcons pack download your selected icons in a `.png` 
 
 #### Generating the ZIP file
 
-In order to be able to use the icons as rendering icons they need to be in a `.zip` format with the following structure: `EdgeIcons.zip\EdgeIcons\[size]x[size]`. To create a zip file right-click the EdgeIcons folder and select *Send to > Compressed (zipped) folder*.
+In order to be able to use the icons as rendering icons they need to be in a `.zip` format with the following structure: `EdgeIcons.zip\EdgeIcons\[size]x[size]`. To create a zip file right-click the EdgeIcons folder and select _Send to > Compressed (zipped) folder_.
 
 #### Quick Deploy and Test Icons
 
@@ -207,7 +217,7 @@ The content of the project is mapped to the Rendering container using a Docker v
 
 #### Debugging the Rendering Next.js Project
 
-Debugging of the Next.js application is possible by using the `start:connected` or `start` scripts (they do the same thing) from the Next.js `package.json`, and the pre-configured *Attach to Process* VS Code launch configuration.
+Debugging of the Next.js application is possible by using the `start:connected` or `start` scripts (they do the same thing) from the Next.js `package.json`, and the pre-configured _Attach to Process_ VS Code launch configuration.
 
 #### Building the Rendering Next.js Project Locally
 
