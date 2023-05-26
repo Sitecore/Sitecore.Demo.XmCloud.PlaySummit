@@ -2,7 +2,7 @@
   [string]$libraryId = "",
   [string]$apiKey = "",
   [string]$endpoint = "https://components-api.sitecorecloud.io",
-  [string]$rootFolder = ".\serialization"
+  [string]$rootFolder = ".\src\components"
 )
 
 $headers = @{
