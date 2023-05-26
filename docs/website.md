@@ -52,7 +52,7 @@ See [Sitecore Content Serialization documentation](https://doc.sitecore.com/xp/e
 
 ### Serialized Sitecore Components
 
-The `\serialization` folder contains serialized Sitecore components, styles and datasources. The scrips that take care of the serialization are located at the root of the project.
+The `\items\components` folder contains serialized Sitecore components, styles and datasources. The scrips that take care of the serialization are located at the root of the project.
 
 To push the serialized items to your Components library use the following command:
 .\componentspush.ps1 -libraryId _your_library_id_ -apiKey _your_api_key_
