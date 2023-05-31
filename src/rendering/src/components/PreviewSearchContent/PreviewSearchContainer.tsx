@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef } from 'react';
 import useContentSearchQueries from '../../hooks/useContentSearchQueries';
 import { ContentSearchNews } from '../../interfaces/contentSearch/ContentSearchNews';
-import { ContentSearchResponse } from '../../interfaces/contentSearch/ContentSearchResponse';
+import { ContentSearchWidgetResponse } from '../../interfaces/contentSearch/ContentSearchWidgetResponse';
 import { ContentSearchSession } from '../../interfaces/contentSearch/ContentSearchSession';
 import { ContentSearchSpeaker } from '../../interfaces/contentSearch/ContentSearchSpeaker';
 import PreviewSearchPopup from './PreviewSearchPopup';
@@ -31,9 +31,9 @@ const PreviewSearchContainer = ({ close }: PreviewSearchContainerProps): JSX.Ele
     result: [news, sessions, speakers],
   } = useContentSearchQueries<
     [
-      ContentSearchResponse<ContentSearchNews>,
-      ContentSearchResponse<ContentSearchSession>,
-      ContentSearchResponse<ContentSearchSpeaker>
+      ContentSearchWidgetResponse<ContentSearchNews>,
+      ContentSearchWidgetResponse<ContentSearchSession>,
+      ContentSearchWidgetResponse<ContentSearchSpeaker>
     ]
   >(
     [CONTENT_SEARCH_RESULT_TYPE, SESSION_SEARCH_RESULT_TYPE, SPEAKER_SEARCH_RESULT_TYPE],
