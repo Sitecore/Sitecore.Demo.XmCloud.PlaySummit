@@ -1,0 +1,22 @@
+﻿---
+ID: "dda49e36-24e4-49a3-924e-f701d6e1b452"
+Parent: "58a24f8c-f3f1-58b9-b895-2cb0007929e2"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/PLAY/playwebsite/Data/Components/FullImageCTASection
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/box_into.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+    {0A2133C4-63EF-4464-A6D1-E8FE63FC1231}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "03033656-cb48-417d-9cd8-1f103c4e0dfb"

@@ -7,7 +7,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{34C5D7E3-44C3-4202-86F1-8773B2DC1C70}" />
+    <image mediaid="{5AF2E57A-85DC-42B7-AC12-1780252744E6}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -35,7 +35,7 @@ SharedFields:
           p:after="r[@uid='{748A61CF-32EF-56DD-9EAC-4BEC7E82087E}']"
           s:ds="{90DC024A-FC95-4D98-BEB7-744039E3CDA0}"
           s:id="{118A1550-728A-5324-8DF3-9AF7D252E89B}"
-          s:par="CacheClearingBehavior=Clear%20on%20publish"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1/jss-section-content-{748A61CF-32EF-56DD-9EAC-4BEC7E82087E}-0" />
         <r
           uid="{B990ED4E-133F-5882-85D9-029C3FC927A5}"
@@ -50,7 +50,7 @@ SharedFields:
           s:rname="FullImageSection"
           s:ds="{BD8B0390-574A-57F3-B801-1C3A4F42B3D6}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par="FieldNames&amp;Styles=%7B3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7D%7C%7BFF6391E2-EFC2-436F-85B1-C2AFA0A5F6D1%7D&amp;RenderingIdentifier"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles=%7b3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7d&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1"
           s:ccb="Clear on publish" />
       </d>
@@ -69,7 +69,7 @@ Languages:
       Value: 
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1b0ec984-f64c-4a46-9372-f83dcad3bc0a"
+      Value: "cc60cbbc-f6f6-4b10-8f0a-46756a0ac780"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Payment Confirmed

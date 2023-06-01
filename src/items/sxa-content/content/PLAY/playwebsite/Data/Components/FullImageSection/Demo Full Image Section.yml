@@ -15,9 +15,13 @@ Languages:
     - ID: "229909da-5f0b-55fc-8e0e-4f5a70f90913"
       Hint: subtitle
       Value: Get an exclusive discount
+    - ID: "52db75bc-b548-42bf-8fff-7ed04af8cb58"
+      Hint: backgroundImage
+      Value: |
+        <image mediaid="{09085896-2355-53E8-8F71-BB9761E60380}" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "8a01136d-0b7e-4876-99bf-cf1319124a52"
+      Value: "41888652-ae99-41d3-98cd-c6ef97ee2efe"
     - ID: "a41c61bb-5abb-5773-9870-c06f637dd22c"
       Hint: content
       Value: "Checkout our new <strong>PLAY! SHOP</strong> now and get an exclusive <strong>20% discount</strong> at checkout."

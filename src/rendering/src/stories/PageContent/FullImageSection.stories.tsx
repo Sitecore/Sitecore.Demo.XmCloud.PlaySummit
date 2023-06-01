@@ -10,7 +10,7 @@ export default {
 export const Left = {
   args: {
     params: {
-      styles: 'full-image-section-left full-image-section-offer',
+      styles: 'full-image-section-left',
     },
     fields: {
       callToActionLink: {
@@ -29,6 +29,11 @@ export const Left = {
       title: {
         value: 'PLAY! Summit Exclusive Offer',
       },
+      backgroundImage: {
+        value: {
+          src: '/assets/img/page-content/offer-background.webp',
+        },
+      },
     },
     rendering: {
       componentName: 'Rendering',
@@ -40,7 +45,7 @@ export const Left = {
 export const Right = {
   args: {
     params: {
-      styles: 'full-image-section-right full-image-section-speaker',
+      styles: 'full-image-section-right',
     },
     fields: {
       callToActionLink: {
@@ -58,6 +63,11 @@ export const Right = {
       },
       title: {
         value: 'Chris Williams',
+      },
+      backgroundImage: {
+        value: {
+          src: '/assets/img/page-content/speaker-chris-williams-hero.webp',
+        },
       },
     },
     rendering: {
