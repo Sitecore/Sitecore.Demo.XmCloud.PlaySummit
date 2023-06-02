@@ -1,7 +1,7 @@
 import { useQueries } from '@tanstack/react-query';
 import { useMemo } from 'react';
 import { SearchResultType } from '../helpers/ContentSearchHelper';
-import { ContentSearchResponseBase } from '../interfaces/contentSearch/ContentSearchResponse';
+import { ContentSearchWidgetResponseBase } from '../interfaces/contentSearch/ContentSearchWidgetResponse';
 import { getSearchResults, ContentSearchRequestProps } from '../services/ContentSearchService';
 
 type QUERY_TYPES = SearchResultType | 'free';
@@ -10,12 +10,12 @@ type CustomQueries = {
   [key in QUERY_TYPES]?: unknown;
 };
 
-type UseDiscoverQueriesResult<T extends ContentSearchResponseBase[]> = {
+type UseDiscoverQueriesResult<T extends ContentSearchWidgetResponseBase[]> = {
   isLoading: boolean;
   result: T;
 };
 
-const useContentSearchQueries = <T extends ContentSearchResponseBase[]>(
+const useContentSearchQueries = <T extends ContentSearchWidgetResponseBase[]>(
   queriesFor: QUERY_TYPES[],
   props: Omit<ContentSearchRequestProps, 'entity'>,
   custom?: CustomQueries

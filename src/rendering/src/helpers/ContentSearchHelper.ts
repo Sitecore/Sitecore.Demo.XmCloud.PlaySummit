@@ -1,6 +1,6 @@
 import { QueryClient } from '@tanstack/react-query';
 import { ContentSearchNews } from '../interfaces/contentSearch/ContentSearchNews';
-import { ContentSearchResponseSortChoice } from '../interfaces/contentSearch/ContentSearchResponse';
+import { ContentSearchWidgetResponseSortChoice } from '../interfaces/contentSearch/ContentSearchWidgetResponse';
 import { ContentSearchSession } from '../interfaces/contentSearch/ContentSearchSession';
 import { ContentSearchSpeaker } from '../interfaces/contentSearch/ContentSearchSpeaker';
 import { ContentSearchSponsor } from '../interfaces/contentSearch/ContentSearchSponsor';
@@ -69,8 +69,8 @@ const SORTING_OPTIONS: Record<SearchResultType, string[]> = {
 
 export const getSortingOptions = (
   type: SearchResultType,
-  options: ContentSearchResponseSortChoice[]
-): ContentSearchResponseSortChoice[] =>
+  options: ContentSearchWidgetResponseSortChoice[]
+): ContentSearchWidgetResponseSortChoice[] =>
   options.filter(({ name }) => SORTING_OPTIONS[type].includes(name));
 
 const list = <T>(l: T[]): T[] => l || [];
