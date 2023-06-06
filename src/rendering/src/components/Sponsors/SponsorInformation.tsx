@@ -1,36 +1,18 @@
-import { Field, RichText } from '@sitecore-jss/sitecore-jss-nextjs';
-import { ComponentProps } from 'lib/component-props';
-import { Default as SessionList } from '../Sessions/SessionList';
-import { GraphQLSession } from 'src/types/session';
+import { Field, Placeholder, RichText } from '@sitecore-jss/sitecore-jss-nextjs';
+import { ComponentWithChildrenProps } from 'lib/component-props';
 
-type SponsorInformationProps = ComponentProps & {
+export type SponsorInformationProps = ComponentWithChildrenProps & {
   fields: {
-    data: {
-      contextItem: {
-        description: Field<string>;
-        sessions: {
-          targetItems: GraphQLSession[];
-        };
-      };
-    };
+    Description: Field<string>;
   };
 };
 
 const SponsorInformation = (props: SponsorInformationProps): JSX.Element => {
   const sxaStyles = `${props.params?.styles || ''}`;
 
-  const SessionListSidebar =
-    props.fields.data?.contextItem?.sessions?.targetItems?.length > 0 ? (
-      <>
-        <div className="column-title">Sessions:</div>
-        <SessionList
-          sessions={props.fields.data.contextItem.sessions.targetItems}
-          showSpeakers={true}
-        />
-      </>
-    ) : (
-      <div>No sessions</div>
-    );
+  const placeholder = !!props.rendering && (
+    <Placeholder name="jss-entity-sessions" rendering={props.rendering} />
+  );
 
   return (
     <section className={`section information-section ${sxaStyles}`}>
@@ -38,9 +20,13 @@ const SponsorInformation = (props: SponsorInformationProps): JSX.Element => {
         <div className="information-grid">
           <div className="main-col">
             <div className="column-title">Sponsor history:</div>
-            <RichText className="rich-text" field={props.fields.data.contextItem.description} />
+            <RichText className="rich-text" field={props.fields.Description} />
           </div>
-          <div className="sidebar-col">{SessionListSidebar}</div>
+          <div className="sidebar-col">
+            <div className="column-title">Sessions:</div>
+            {placeholder}
+            {props.children}
+          </div>
         </div>
       </div>
     </section>

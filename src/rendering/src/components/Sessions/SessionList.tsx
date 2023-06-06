@@ -5,11 +5,7 @@ import { GraphQLSession } from 'src/types/session';
 import InfoText from '../NonSitecore/InfoText';
 import { faClock, faDoorOpen, faUser } from '@fortawesome/free-solid-svg-icons';
 
-type SessionListItemProps = GraphQLSession & {
-  showSpeakers: boolean;
-};
-
-const SessionListItem = (props: SessionListItemProps): JSX.Element => {
+const SessionListItem = (props: GraphQLSession): JSX.Element => {
   const premiumCssClass = props.premium?.value ? 'premium' : '';
 
   const ticketTypeBadge = props.premium?.value && (
@@ -41,21 +37,19 @@ const SessionListItem = (props: SessionListItemProps): JSX.Element => {
       </InfoText>
     );
 
-  const speakers = props.showSpeakers &&
-    props.speakers?.targetItems &&
-    props.speakers.targetItems.length > 0 && (
-      <>
-        {props.speakers.targetItems.map((speaker, index) => (
-          <div className="speaker-name" key={index}>
-            <InfoText Icon={faUser}>
-              <Link href={speaker.url.path}>
-                <Text field={speaker.name} tag="a" />
-              </Link>
-            </InfoText>
-          </div>
-        ))}
-      </>
-    );
+  const speakers = props.speakers?.targetItems && props.speakers?.targetItems?.length > 0 && (
+    <>
+      {props.speakers.targetItems.map((speaker, index) => (
+        <div className="speaker-name" key={index}>
+          <InfoText Icon={faUser}>
+            <Link href={speaker.url.path}>
+              <Text field={speaker.name} tag="a" />
+            </Link>
+          </InfoText>
+        </div>
+      ))}
+    </>
+  );
 
   return (
     <div className={`information-block ${premiumCssClass}`}>
@@ -80,18 +74,29 @@ const SessionListItem = (props: SessionListItemProps): JSX.Element => {
 };
 
 type SessionListProps = {
-  sessions: GraphQLSession[];
-  showSpeakers: boolean;
+  fields: {
+    data: {
+      contextItem: {
+        sessions: {
+          targetItems: GraphQLSession[];
+        };
+      };
+    };
+  };
 };
 
 const SessionList = (props: SessionListProps): JSX.Element => {
-  const sessions = props.sessions && props.sessions.length > 0 && (
-    <div className="session-list">
-      {props.sessions.map((session, index) => (
-        <SessionListItem {...session} showSpeakers={props.showSpeakers} key={index} />
-      ))}
-    </div>
-  );
+  const sessions =
+    props?.fields?.data?.contextItem?.sessions?.targetItems &&
+    props?.fields?.data?.contextItem?.sessions?.targetItems.length > 0 ? (
+      <div className="session-list">
+        {props?.fields?.data?.contextItem?.sessions?.targetItems.map((session, index) => (
+          <SessionListItem {...session} key={index} />
+        ))}
+      </div>
+    ) : (
+      <p>No sessions</p>
+    );
 
   return <>{sessions}</>;
 };

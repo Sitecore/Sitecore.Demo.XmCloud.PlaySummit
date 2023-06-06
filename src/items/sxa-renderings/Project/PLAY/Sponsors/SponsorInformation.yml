@@ -7,86 +7,15 @@ SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
   Hint: componentName
   Value: SponsorInformation
+- ID: "069a8361-b1cd-437c-8c32-a3be78941446"
+  Hint: Placeholders
+  Value: "{FFABBC61-2E79-4FB3-A70A-5B583A566510}"
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: "edgeicons/32x32/sponsor-info.png"
 - ID: "17bb046a-a32a-41b3-8315-81217947611b"
   Hint: ComponentQuery
-  Value: |
-    query SponsorInformationQuery($contextItem: String!, $language: String!) {
-      contextItem: item(path: $contextItem, language: $language) {
-        ... on Sponsor {
-          description {
-            value
-          }
-          sessions {
-            ... on MultilistField {
-              targetItems {
-                itemName: name
-                ... on Session {
-                  name: field(name: "name") {
-                    value
-                  }
-                  premium {
-                    value
-                  }
-                  url {
-                    path
-                  }
-                  speakers {
-                    ... on MultilistField {
-                      targetItems {
-                        ... on Speaker {
-                          name: field(name: "name") {
-                            value
-                          }
-                          url {
-                            path
-                          }
-                        }
-                      }
-                    }
-                  }
-                  rooms {
-                    ... on MultilistField {
-                      targetItems {
-                        ... on Room {
-                          name: field(name: "name") {
-                            value
-                          }
-                        }
-                      }
-                    }
-                  }
-                  day {
-                    ... on MultilistField {
-                      targetItems {
-                        ... on Day {
-                          name: field(name: "name") {
-                            value
-                          }
-                        }
-                      }
-                    }
-                  }
-                  timeslots {
-                    ... on MultilistField {
-                      targetItems {
-                        ... on Timeslot {
-                          name: field(name: "Name") {
-                            value
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+  Value: 
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
   Value: 
@@ -95,7 +24,7 @@ SharedFields:
   Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
 - ID: "b0b15510-b138-470e-8f33-8da2e228aafe"
   Hint: Rendering Contents Resolver
-  Value: 
+  Value: "{6CCCBCDE-5E95-44E4-AE66-CFE7D3A0589E}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
   Value: 
@@ -106,4 +35,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "aa16c887-0594-4a68-ac66-02ffe6310a6a"
+      Value: "20ab68d0-b934-452f-83b2-976ada9284d4"
