@@ -34,6 +34,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: John Doe
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0018859a-9c9e-4efd-87b9-d73dbf2611a5"
+      Value: "4a8f2fda-f046-448d-a623-4df9be9a3a74"
