@@ -6,7 +6,6 @@ import { Speaker } from 'src/types/speaker';
 import { Day } from 'src/types/day';
 import { Room } from 'src/types/room';
 import SpeakerList from '../Speakers/SpeakerList';
-import SessionInformationPageHero from './SessionInformationPageHero';
 
 export type SessionInformationProps = ComponentProps & {
   fields: {
@@ -38,13 +37,6 @@ const SessionInformation = (props: SessionInformationProps): JSX.Element => {
       <Head>
         <meta name="premiumSession" content={premiumSessionMetaValue} />
       </Head>
-
-      {/*
-        HACK: The SessionInformationPageHero component is added here to avoid creating a new Sitecore rendering, adding it to the page template, and serialize the Sitecore items. This is a temporary solution.
-        TODO: Create a Sitecore rendering for this component and remove it from here.
-      */}
-      <SessionInformationPageHero {...props} />
-
       <section className={`section information-section ${sxaStyles}`}>
         <div className="section-content container">
           <div className="information-grid">
