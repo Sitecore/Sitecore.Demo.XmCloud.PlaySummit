@@ -11,7 +11,7 @@ const SponsorInformation = (props: SponsorInformationProps): JSX.Element => {
   const sxaStyles = `${props.params?.styles || ''}`;
 
   const placeholder = !!props.rendering && (
-    <Placeholder name="jss-entity-sessions" rendering={props.rendering} />
+    <Placeholder name="jss-entity-sidebar" rendering={props.rendering} />
   );
 
   return (

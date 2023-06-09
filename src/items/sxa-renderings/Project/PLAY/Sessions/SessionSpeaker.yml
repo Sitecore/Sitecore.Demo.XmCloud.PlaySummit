@@ -1,15 +1,12 @@
 ﻿---
-ID: "8f4e0a87-f61c-5ea3-b7ad-5fbde3716333"
+ID: "e511f5f8-c8c5-45b9-a0da-cd301c65d8f7"
 Parent: "8504e690-9e02-4205-8005-7a68f5f09e04"
 Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
-Path: /sitecore/layout/Renderings/Project/PLAY/Sessions/SessionInformation
+Path: /sitecore/layout/Renderings/Project/PLAY/Sessions/SessionSpeaker
 SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
   Hint: componentName
-  Value: SessionInformation
-- ID: "069a8361-b1cd-437c-8c32-a3be78941446"
-  Hint: Placeholders
-  Value: "{FFABBC61-2E79-4FB3-A70A-5B583A566510}"
+  Value: SpeakerList
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: "edgeicons/32x32/session-info.png"
@@ -26,4 +23,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e0364a3d-ae30-43f6-8cfd-177fd15349db"
+      Value: "8aab9c60-a9ae-42ca-af47-d383f566b627"

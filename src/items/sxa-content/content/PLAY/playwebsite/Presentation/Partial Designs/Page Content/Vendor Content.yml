@@ -10,7 +10,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{5C3071FF-A257-4D87-889D-FBAEA18B28A1}" />
+    <image mediaid="{42F9F57F-7139-423A-A11F-F0ACC0D75674}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -21,9 +21,11 @@ SharedFields:
         <r
           uid="{6460A3B3-21FD-4D1E-8846-8D7DCF6D96D3}"
           p:before="*"
+          s:ds=""
           s:id="{A6E0C336-06D3-4824-84E9-EA8290202A4E}"
-          s:par="FieldNames&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles"
-          s:ph="/headless-main/jss-entity-sessions-{AFCF936D-4A1B-4997-AE06-7D7F58DC4BCD}-0" />
+          s:par="FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+          s:ph="/headless-main/jss-entity-sidebar-{AFCF936D-4A1B-4997-AE06-7D7F58DC4BCD}-0"
+          s:ccb="Clear on publish" />
         <r
           uid="{0E2F548C-1636-4EC5-9973-3663C1A7FC92}"
           p:after="r[@uid='{6460A3B3-21FD-4D1E-8846-8D7DCF6D96D3}']"
@@ -48,4 +50,4 @@ Languages:
       Value: <r />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b46a8858-7c32-4757-a160-6e4492e0baaf"
+      Value: "f2481a86-de1b-4569-923f-016ba9a4abe1"
