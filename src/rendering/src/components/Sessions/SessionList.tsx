@@ -73,7 +73,7 @@ const SessionListItem = (props: GraphQLSession): JSX.Element => {
   );
 };
 
-type SessionListProps = {
+export type SessionListProps = {
   fields: {
     data: {
       contextItem: {
