@@ -1,42 +1,42 @@
 ﻿Param(
-  [string]$libraryId = "",
-  [string]$apiKey = "",
-  [string]$endpoint = "https://components-api.sitecorecloud.io",
-  [string]$rootFolder = ".\src\components"
+    [string]$libraryId = "",
+    [string]$apiKey = "",
+    [string]$endpoint = "https://components-api.sitecorecloud.io",
+    [string]$rootFolder = ".\src\components"
 )
 
 function Clear-LibraryId ($jsonObject) {
-  $jsonObject | ForEach-Object {
-    # Helper script block that walks the object graph.
-    $sb = {
-      if ($args[1] -gt 10) {
-        return # limit recursion
-      }
-      foreach ($el in @($args[0])) {
-        # iterate over elements (if an array)
-        foreach ($prop in $el.psobject.Properties) {
-          # iterate over properties
-          if ($prop.Name -eq 'libraryId') {
-            # Process the "items" property value here (may be an array)
-            $prop.Value = 'generated'
-          }
+    $jsonObject | ForEach-Object {
+        # Helper script block that walks the object graph.
+        $sb = {
+            if ($args[1] -gt 10) {
+              return # limit recursion
+            }
+            foreach ($el in @($args[0])) {
+                # iterate over elements (if an array)
+                foreach ($prop in $el.psobject.Properties) {
+                    # iterate over properties
+                    if ($prop.Name -eq 'libraryId') {
+                        # Process the "items" property value here (may be an array)
+                        $prop.Value = 'generated'
+                    }
 
-          if ($prop.Name -eq 'externalSourceId') {
-            # Process the "items" property value here (may be an array)
-            $prop.Value = 'generated'
-          }
+                    if ($prop.Name -eq 'externalSourceId') {
+                        # Process the "items" property value here (may be an array)
+                        $prop.Value = 'generated'
+                    }
 
-          & $sb $prop.Value ($args[1] + 1) # recurse
+                    & $sb $prop.Value ($args[1] + 1) # recurse
+                }
+            }
         }
-      }
+        # Call the script block with the input object.
+        & $sb $_ 0
     }
-    # Call the script block with the input object.
-    & $sb $_ 0
-  }
 }
 
 $headers = @{
-  "x-api-key" = $apiKey
+    "x-api-key" = $apiKey
 }
 
 # Components
@@ -46,20 +46,20 @@ Clear-LibraryId $collections
 $collections | ConvertTo-Json -depth 100 | Out-File ( New-Item -Path "$rootFolder\collections.json" -Force )
 
 foreach ($collection in $collections) {
-  Write-Host "Collection: " $collection.Name
+    Write-Host "Collection: " $collection.Name
 
-  foreach ($component in $collection.components) {
-    Write-Host "  Component: " $component.Name
+    foreach ($component in $collection.components) {
+        Write-Host "  Component: " $component.Name
 
-    $versionsUrl = "$endpoint/libraries/$libraryId/collections/$($collection.id)/components/$($component.id)/versions"
-    $versions = (Invoke-WebRequest -Uri $versionsUrl -Method Get -Headers $headers -UseBasicParsing -ContentType "application/json").Content | ConvertFrom-Json
-    Clear-LibraryId $versions
-    $versions | ConvertTo-Json -depth 100 | Out-File ( New-Item -Path "$rootFolder\components\$($component.id).json" -Force )
+        $versionsUrl = "$endpoint/libraries/$libraryId/collections/$($collection.id)/components/$($component.id)/versions"
+        $versions = (Invoke-WebRequest -Uri $versionsUrl -Method Get -Headers $headers -UseBasicParsing -ContentType "application/json").Content | ConvertFrom-Json
+        Clear-LibraryId $versions
+        $versions | ConvertTo-Json -depth 100 | Out-File ( New-Item -Path "$rootFolder\components\$($component.id).json" -Force )
 
-    foreach ($version in $versions) {
-      Write-Host "    Version: " $version.Name "(" $version.status ")"
+        foreach ($version in $versions) {
+            Write-Host "    Version: " $version.Name "(" $version.status ")"
+        }
     }
-  }
 }
 
 # Styles
