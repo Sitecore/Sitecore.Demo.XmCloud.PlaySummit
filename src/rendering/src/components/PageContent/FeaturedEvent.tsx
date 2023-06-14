@@ -16,10 +16,9 @@ export type FeaturedEventProps = ComponentProps & {
 
 const FeaturedEvent = (props: FeaturedEventProps): JSX.Element => {
   const sxaStyles = `${props.params?.styles || ''}`;
-  console.log(props);
 
   const speakersSection = props.fields?.Speakers.map((speaker) => (
-    <div className="event-subtitle" key={speaker.fields.Name.value}>
+    <div className="event-subtitle" key={speaker.fields?.Name.value}>
       <FontAwesomeIcon className="icon" icon={faUser} />
       <Text field={speaker.fields?.Name} />
       <Text field={speaker.fields?.JobTitle} tag="p" className="event-subtext" />
