@@ -27,6 +27,7 @@ This repository contains:
   - `\Foundation\BranchPresets`: .Net project to enable branch presets in Sitecore.
   - `\icons`: Icons used by the Sitecore renderings.
   - `\items`: Serialized items using Sitecore Content Serialization (SCS).
+  - `\component`: Serialized Sitecore Components components, styles and datasources.
   - `\platform`: .Net project with Sitecore configuration, pipeline processors, custom fields, and utility pages.
   - `\rendering`: Sitecore JSS Next.js project connected to the Docker CM using the XM Edge GraphQL development endpoint.
 
@@ -52,13 +53,19 @@ See [Sitecore Content Serialization documentation](https://doc.sitecore.com/xp/e
 
 ### Serialized Sitecore Components
 
-The `\items\components` folder contains serialized Sitecore components, styles and datasources. The scrips that take care of the serialization are located at the root of the project.
+The `\components` folder contains serialized Sitecore Components components, styles and datasources. The scrips that take care of the serialization are located at the root of the project.
 
-To push the serialized items to your Components library use the following command:
-.\componentspush.ps1 -libraryId _your_library_id_ -apiKey _your_api_key_
+To push the serialized items to your Sitecore Components library use the following command:
+
+```ps1
+.\componentspush.ps1 -libraryId your_library_id -apiKey your_api_key
+```
 
 To serialize any new changes to the repo use the following command:
-.\componentspull.ps1 -libraryId _your_library_id_ -apiKey _your_api_key_
+
+```ps1
+.\componentspull.ps1 -libraryId your_library_id -apiKey your_api_key
+```
 
 ### Sitecore Platform Project
 
