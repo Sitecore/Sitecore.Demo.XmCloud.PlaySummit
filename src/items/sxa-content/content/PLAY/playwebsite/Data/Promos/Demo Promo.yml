@@ -1,0 +1,34 @@
+﻿---
+ID: "b8d0a3df-ce65-4109-89fd-ed43d2f9ae40"
+Parent: "d2e97d8f-4634-41b2-ae8b-2b2d94f2d945"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: /sitecore/content/PLAY/playwebsite/Data/Promos/Demo Promo
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: Sed commodo eu ex ut consequat. Sed consectetur, magna a gravida convallis, turpis sem egestas.
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: In massa augue, lacinia sed imperdiet vel, fringilla id enim. Maecenas mattis, metus id efficitur porta.
+    - ID: "739c6cc2-0031-463d-9599-13478fd50ee3"
+      Hint: PromoIcon2
+      Value: |
+        <image mediaid="{CCAA3DA2-F72A-4AED-8B44-674BBD9DC5A6}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "218de3e4-b4f5-4897-aafe-0c6ee6c32839"
+    - ID: "c6e604c3-5371-4e67-83df-a09a5ea66249"
+      Hint: PromoText3
+      Value: Sed commodo eu ex ut consequat. Sed consectetur, magna a gravida convallis, turpis sem egestas.
+    - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
+      Hint: PromoLink
+      Value: |
+        <link text="Book tickets" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{A7BDFBDA-D5CC-5388-A039-F262BC768721}" />
+    - ID: "f94b9858-c439-4291-863b-757b536c8b65"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{528A9F67-4C62-4E1A-BFEE-82EB119D99FC}" />
