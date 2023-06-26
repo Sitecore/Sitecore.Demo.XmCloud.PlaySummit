@@ -4,10 +4,13 @@ Parent: "23d1c784-e28e-5dc3-9515-2325d45c499e"
 Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
 Path: /sitecore/content/PLAY/playwebsite/home/tickets/registration/attendee
 SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: 
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{DC72FF97-2617-4147-8F5D-37660F45C557}" />
+    <image mediaid="{0CEC3335-88CA-4B11-A8F3-29CB5E308A02}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -86,7 +89,7 @@ Languages:
       Value: <r />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4686a97e-feba-4c36-ac00-d6ae4abf3526"
+      Value: "12a156db-da95-454d-a0b2-1c4818caddfe"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Attendee

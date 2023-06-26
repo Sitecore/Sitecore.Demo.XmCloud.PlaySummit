@@ -4,10 +4,13 @@ Parent: "a7bdfbda-d5cc-5388-a039-f262bc768721"
 Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
 Path: /sitecore/content/PLAY/playwebsite/home/tickets/payment
 SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: 
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{376405FB-8065-4BED-9A93-2EB078814207}" />
+    <image mediaid="{2583A751-11F5-42ED-B1FC-F8122BF387D5}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -78,7 +81,7 @@ Languages:
       Value: 
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0a227a65-1052-4ca6-8328-e0b60e310110"
+      Value: "c6d52da5-e73b-4b5e-b981-8e4dfe027fdd"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Payment
