@@ -1,0 +1,17 @@
+﻿---
+ID: "f87982c8-e8f8-4d53-b0e1-0808107ca176"
+Parent: "0e4a63da-7496-557e-bf80-5bd52255e431"
+Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
+Path: /sitecore/content/PLAY/playwebsite/home/news/Data
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-50"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "317cc273-2d38-42e0-9a53-149d69bcc7e6"

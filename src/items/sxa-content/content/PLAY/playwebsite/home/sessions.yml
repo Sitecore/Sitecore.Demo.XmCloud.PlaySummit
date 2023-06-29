@@ -1,7 +1,7 @@
 ﻿---
 ID: "68dc89a4-1b04-59a8-9c4e-3b49d6c61052"
 Parent: "2d1d7aca-9597-5ca6-85b2-9b04907e4298"
-Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
 Path: /sitecore/content/PLAY/playwebsite/home/sessions
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
@@ -13,7 +13,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{E3DFFB5D-ED01-4964-B0F4-285B34168CBB}" />
+    <image mediaid="{DC11BD00-5E7C-4CF2-B9A3-0E712FBD2855}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -55,9 +55,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
+      Hint: Title
+      Value: Sessions
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "422e1a66-c4a0-4315-8738-ee686058ec22"
-    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
-      Hint: pageTitle
-      Value: Sessions
+      Value: "e3013ca1-1735-4062-8a52-349c1a6ff826"

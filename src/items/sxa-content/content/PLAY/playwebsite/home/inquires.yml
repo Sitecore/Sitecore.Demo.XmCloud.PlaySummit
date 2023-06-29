@@ -1,7 +1,7 @@
 ﻿---
 ID: "e40a4d49-216e-55c2-8654-91adae333f20"
 Parent: "2d1d7aca-9597-5ca6-85b2-9b04907e4298"
-Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
 Path: /sitecore/content/PLAY/playwebsite/home/inquires
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
@@ -13,7 +13,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{64417C8D-E9E3-4A6E-9B91-33640A899F3B}" />
+    <image mediaid="{1E24D392-7360-4243-AC4D-7C507465B6F5}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -31,9 +31,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
+      Hint: Title
+      Value: Inquiries
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "96415cdb-4400-4970-b816-eb1ef662e96d"
-    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
-      Hint: pageTitle
-      Value: Inquires
+      Value: "c3cc81c2-8fb0-4a5d-ac49-d19b1b200bfb"
