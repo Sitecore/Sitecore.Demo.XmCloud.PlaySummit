@@ -67,6 +67,8 @@ To serialize any new changes to the repo use the following command:
 .\componentspull.ps1 -libraryId your_library_id -apiKey your_api_key
 ```
 
+You can find your Library ID and API key by going to the Settings tab. You library ID is located in the url between `/libraries/` and `/settings` and your API key is in a section of the page called "Your component library API key".
+
 ### Sitecore Platform Project
 
 This Visual Studio / MSBuild project is used to deploy code and configuration to the main Sitecore platform roles, known as Content Management (CM). (This sample uses the XM Cloud container topology and thus only has a Standalone `cm`.)
