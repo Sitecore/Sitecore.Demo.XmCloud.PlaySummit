@@ -133,6 +133,7 @@
     "analyze": "npm-run-all --serial bootstrap analyze:build",
     "analyze:build": "cross-env ANALYZE=true next build",
     "END_CUSTOMIZATION_EXTRA_SCRIPTS": "",
+    "install-pre-push-hook": "ts-node --project tsconfig.scripts.json ./scripts/install-pre-push-hook.ts",
     "jss": "jss",
     "DEMO_TEAM_CUSTOMIZATION_LINT": "Run both eslint and stylelint",
     "lint": "npm-run-all --serial eslint stylelint",
