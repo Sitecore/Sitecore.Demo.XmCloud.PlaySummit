@@ -50,7 +50,8 @@
     "@reduxjs/toolkit": "^1.9.5",
     "@sitecore-discover/react": "^0.2.6",
     "@sitecore-discover/ui": "^1.0.0-alpha.7",
-    "@sitecore-jss/sitecore-jss-nextjs": "^21.1.1",
+    "@sitecore-feaas/clientside": "^0.3.0",
+    "@sitecore-jss/sitecore-jss-nextjs": "~21.2.0",
     "@sitecore/engage": "^0.4.0",
     "@tanstack/react-query": "^4.13.0",
     "auth0": "^2.37.0",
@@ -79,7 +80,8 @@
     "@graphql-codegen/typescript-operations": "^2.5.12",
     "@graphql-codegen/typescript-resolvers": "^2.7.12",
     "@graphql-typed-document-node/core": "^3.1.1",
-    "@sitecore-jss/sitecore-jss-cli": "^21.1.1",
+    "@sitecore-jss/sitecore-jss-cli": "~21.2.0",
+    "@sitecore-jss/sitecore-jss-dev-tools": "~21.2.0",
     "@storybook/addon-essentials": "^7.0.7",
     "@storybook/addon-styling": "^1.0.5",
     "@storybook/nextjs": "^7.0.7",
@@ -146,6 +148,6 @@
     "scaffold": "ts-node --project tsconfig.scripts.json scripts/scaffold-component.ts",
     "start:connected": "npm-run-all --serial bootstrap --parallel next:dev start:watch-components",
     "start:production": "npm-run-all --serial bootstrap next:build next:start",
-    "start:watch-components": "ts-node --project tsconfig.scripts.json scripts/generate-component-factory.ts --watch"
+    "start:watch-components": "ts-node --project tsconfig.scripts.json scripts/generate-component-builder/index.ts --watch"
   }
 }
