@@ -45,6 +45,7 @@ const pluginDefinitions: PluginDefinition[] = [
     distPath: 'src/temp/next-config-plugins.js',
     rootPath: 'src/lib/next-config/plugins',
     moduleType: ModuleType.CJS,
+    relative: true,
   },
   {
     distPath: 'src/temp/extract-path-plugins.ts',
