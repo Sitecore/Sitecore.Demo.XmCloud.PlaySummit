@@ -1,0 +1,17 @@
+﻿---
+ID: "8fd523b8-d95b-49b5-aadd-e081aeeb30a8"
+Parent: "18ba797b-2ce9-411c-a72f-b9bb0ac450e7"
+Template: "6f108e3c-5d57-42f8-a910-c22920269b0a"
+Path: /sitecore/content/PLAY/playwebsite/Data/Link Lists/Demo Link List/Speakers
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "68c2a603-f98e-42a3-be2d-dd70598c2a63"
+      Hint: Link
+      Value: |
+        <link text="Speakers" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{1F4B781B-F2A5-5647-99DF-C0C369162C4D}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a1ac5bc4-f496-47f4-9ecd-464bb7ad7833"
