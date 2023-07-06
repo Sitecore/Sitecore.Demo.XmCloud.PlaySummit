@@ -18,6 +18,10 @@
 
     .speaker-image {
       @apply w-full bg-element bg-no-repeat bg-left-bottom bg-contain bg-blue;
+
+      &.featured-speaker {
+        @apply bg-orange;
+      }
     }
 
     .speaker-name {

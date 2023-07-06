@@ -100,6 +100,8 @@ const speaker2 = {
 
 export const Default = {
   args: {
-    speakers: [speaker1, speaker2],
+    fields: {
+      Speakers: [speaker1, speaker2],
+    },
   },
 };

@@ -1,0 +1,21 @@
+﻿---
+ID: "18ba797b-2ce9-411c-a72f-b9bb0ac450e7"
+Parent: "513d66ab-2d70-4d9a-81b7-98d0dbbd9e1c"
+Template: "60c9ac62-4227-443e-8980-92c97e483832"
+Path: /sitecore/content/PLAY/playwebsite/Data/Link Lists/Demo Link List
+BranchID: "f2490b61-7d7d-4bbf-8cf6-3b355fdf4ce4"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{30FCF06D-196A-4021-8544-C22A5E0B6B1C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "885da0a6-b40e-4227-83cd-e6d8057c02bf"
+    - ID: "dc9aaee9-fc44-458d-a9fb-bac61d8b0234"
+      Hint: Title
+      Value: "Useful Links:"

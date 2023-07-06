@@ -20,8 +20,12 @@
       @apply flex items-center max-h-60 bg-white-light;
       @apply md:h-full;
 
+      .sc-image-wrapper {
+        max-height: inherit;
+      }
+
       img {
-        @apply px-5;
+        @apply px-5 w-auto;
         @apply md:pr-6 md:pl-0;
 
         max-height: inherit;

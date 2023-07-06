@@ -4,7 +4,7 @@
 */
 
 .session-information-page-hero {
-  @apply m-0 bg-white-light relative;
+  @apply relative m-0 bg-white-light;
   @apply md:h-64;
 
   @screen md {
@@ -17,35 +17,40 @@
   }
 
   .background-container {
-    @apply flex bg-cover bg-center h-full;
+    @apply relative flex flex-col justify-end bg-cover bg-center h-full;
+    @apply md:flex-row;
+
+    img {
+      @apply w-full h-60 object-cover;
+      @apply md:absolute md:top-0 md:bottom-0 md:left-0 md:right-0 md:h-full;
+    }
   }
 
   .content {
-    @apply flex flex-col items-center justify-between box-border overflow-hidden h-full w-full px-0;
-    @apply md:flex-row md:px-6;
-    @apply lg:container lg:mx-auto lg:pr-4;
+    @apply relative w-full z-10;
+    @apply md:px-6 md:mr-0 md:w-1/2;
 
-    .image-container {
-      @apply flex items-center h-full bg-white-light;
-      @apply md:h-full;
+    /*
+    NOTE: This is a way to make the content look like
+    it's inside of a container without it actually being in one
+    in order to allow editing the background image in EE and Pages
+    */
 
-      img {
-        @apply px-5;
-        @apply md:pr-6 md:pl-0;
-
-        max-height: inherit;
-      }
+    /* Using 1440 breakpoint to match information section below */
+    @media (min-width: 1440) {
+      max-width: calc(1440px / 2);
+      margin-right: calc((100vw - 1440px) / 2);
     }
 
-    .gradient-container {
-      @apply hidden h-full flex-grow bg-gradient-to-l from-black-lightest to-white-light;
-      @apply md:block;
+    @screen 2xl {
+      margin-right: calc((100vw - 1536px) / 2);
+      width: calc(1536px / 2);
     }
+
+    /* END NOTE */
 
     .content-container {
       @apply w-full bg-black-light self-stretch;
-      @apply sm:w-full;
-      @apply md:w-45;
 
       background:
         linear-gradient(

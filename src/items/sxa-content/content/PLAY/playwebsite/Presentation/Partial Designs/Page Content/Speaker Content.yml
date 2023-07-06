@@ -7,6 +7,10 @@ SharedFields:
 - ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
   Hint: Signature
   Value: "speaker-content"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{B9DF1941-A49B-4E6D-AB61-D9BB55FF1296}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -15,8 +19,16 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{4DD16346-2B05-4873-B216-807B2CE0DA66}"
+          uid="{5D86F425-1CED-49BE-9CDD-FFCC63F653B8}"
           p:before="*"
+          s:ds=""
+          s:id="{68701A9B-EF54-43C4-9A95-1BE953C47BA2}"
+          s:par="FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+          s:ph="/headless-main/jss-entity-sidebar-{E5A3CBEE-C1B0-474F-9593-D55680DA31B9}-0"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{4DD16346-2B05-4873-B216-807B2CE0DA66}"
+          p:after="r[@uid='{5D86F425-1CED-49BE-9CDD-FFCC63F653B8}']"
           s:id="{84040441-931E-48AD-AC7F-FD0145ADEB09}"
           s:par="CacheClearingBehavior=Clear on publish"
           s:ph="headless-main" />
@@ -38,4 +50,4 @@ Languages:
       Value: <r />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ea5062c0-7f5c-41e9-b8c8-11900940da43"
+      Value: "782a4660-64a5-4eb3-915d-09719ae8b70f"

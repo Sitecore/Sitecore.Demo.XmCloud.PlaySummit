@@ -23,11 +23,13 @@ SharedFields:
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
           uid="{AE055A74-8964-551F-9C40-58D3FE99A358}"
-          p:after="r[@uid='{159B4C52-2540-5D79-8A4E-EB76279EB7FC}']"
+          p:before="*"
           s:rname="FeaturedEvent"
+          s:ds="{A7AE2427-A5B1-484B-AEFC-152A92BE434C}"
           s:id="{C1E45B3A-429D-53FE-9640-1581E24A1447}"
-          s:par=""
-          s:ph="/headless-main/sxa-main/container-1" />
+          s:par="FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
         <r
           uid="{695F77F3-8EFA-57B0-B4E5-725CA7DFDF3B}"
           p:after="r[@uid='{AE055A74-8964-551F-9C40-58D3FE99A358}']"
@@ -37,7 +39,7 @@ SharedFields:
           s:ph="/headless-main/sxa-main/container-1" />
         <r
           uid="{F83C4F85-EC5B-560F-AE09-F26FF00023DE}"
-          p:after="r[@uid='{695F77F3-8EFA-57B0-B4E5-725CA7DFDF3B}']"
+          p:after="*[1=2]"
           s:rname="SessionsGrid"
           s:ds=""
           s:id="{1059A458-3C21-5A98-ABD0-A65629F4DE1A}"
