@@ -49,11 +49,6 @@
                 "scope": "descendantsOnly"
             },
             {
-                "name": "branches",
-                "path": "/sitecore/templates/Branches/Project",
-                "scope": "descendantsOnly"
-            },
-            {
                 "name": "content-hub-default-template",
                 "path": "/sitecore/templates/CMP/Content Hub Entity"
             },
