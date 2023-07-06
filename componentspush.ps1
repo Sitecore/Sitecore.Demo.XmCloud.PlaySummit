@@ -28,7 +28,7 @@ foreach ($collection in $collections) {
 
             $versionsUrl = "$endpoint/libraries/$libraryId/collections/$($collection.id)/components/$($component.id)/versions"
             Invoke-WebRequest -Uri $versionsUrl -Method Post -Body ($version | ConvertTo-Json -depth 100) -Headers $headers -ContentType "application/json"
-      }
+        }
     }
 }
 

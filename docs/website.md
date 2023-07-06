@@ -27,7 +27,7 @@ This repository contains:
   - `\Foundation\BranchPresets`: .Net project to enable branch presets in Sitecore.
   - `\icons`: Icons used by the Sitecore renderings.
   - `\items`: Serialized items using Sitecore Content Serialization (SCS).
-  - `\component`: Serialized Sitecore Components components, styles and datasources.
+  - `\components`: Serialized Sitecore Components components, styles and datasources.
   - `\platform`: .Net project with Sitecore configuration, pipeline processors, custom fields, and utility pages.
   - `\rendering`: Sitecore JSS Next.js project connected to the Docker CM using the XM Edge GraphQL development endpoint.
 
@@ -53,9 +53,9 @@ See [Sitecore Content Serialization documentation](https://doc.sitecore.com/xp/e
 
 ### Serialized Sitecore Components
 
-The `\components` folder contains serialized Sitecore Components components, styles and datasources. The scrips that take care of the serialization are located at the root of the project.
+The `\components` folder contains serialized Sitecore Components components, styles and datasources. The scripts that take care of the serialization are located at the root of the project.
 
-To push the serialized items to your Sitecore Components library use the following command:
+To push the serialized assets to your Sitecore Components library, use the following command:
 
 ```ps1
 .\componentspush.ps1 -libraryId your_library_id -apiKey your_api_key
@@ -67,7 +67,7 @@ To serialize any new changes to the repo use the following command:
 .\componentspull.ps1 -libraryId your_library_id -apiKey your_api_key
 ```
 
-You can find your Library ID and API key by going to the Settings tab. You library ID is located in the url between `/libraries/` and `/settings` and your API key is in a section of the page called "Your component library API key".
+You can find your library ID and API key by going to your Sitecore Components library Settings tab. Your library ID is located in the url between `/libraries/` and `/settings`. Your API key is in a section of the page called "Your component library API key".
 
 ### Sitecore Platform Project
 

@@ -10,7 +10,7 @@ function Clear-LibraryId ($jsonObject) {
         # Helper script block that walks the object graph.
         $sb = {
             if ($args[1] -gt 10) {
-              return # limit recursion
+                return # limit recursion
             }
             foreach ($el in @($args[0])) {
                 # iterate over elements (if an array)
