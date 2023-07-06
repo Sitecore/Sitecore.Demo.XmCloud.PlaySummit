@@ -69,10 +69,3 @@ Languages:
         Quisque sit amet orci id felis euismod vulputate vel sed risus. Sed in sapien lobortis erat aliquam tincidunt. Sed ex massa, tempus eget nisi in, vestibulum rutrum lectus. Vivamus accumsan varius augue, a rhoncus ante egestas sit amet. Aenean at dignissim nibh. Morbi eget nisl vitae nisi semper viverra. Maecenas at justo in nibh placerat pulvinar a id lorem. Donec sit amet condimentum tortor. Nam in fringilla mi.
         Aenean ut leo sed risus egestas facilisis vel sed quam. Nunc blandit, metus vitae accumsan faucibus, nunc tellus auctor dui, ut dictum massa ex ac mauris. </p>
         <p>Cras lobortis diam eu dui aliquam viverra. Integer in eros vel velit lacinia sagittis. Ut at ligula feugiat, porta orci id, malesuada dolor. In sapien metus, rhoncus ut consectetur ut, fringilla euismod velit. Phasellus eu tortor in erat consectetur interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus justo ut mi finibus pellentesque. Aliquam eu sagittis purus. Integer in lectus pulvinar, tempor nunc at, facilisis nibh. Proin eu tellus non purus tempus volutpat ac vitae dolor. Donec quis diam tristique, lobortis metus non, iaculis ante. Nulla at vestibulum tortor, ac pharetra ex. Sed in pretium purus, blandit malesuada quam.</p>
-- Language: "fr-CA"
-  Versions:
-  - Version: 1
-    Fields:
-    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-      Hint: __Revision
-      Value: "97f5fc8d-b5ea-4cd2-b3db-a0a174b9b818"

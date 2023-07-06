@@ -4,9 +4,6 @@ Parent: "3d1c809e-598d-5bd9-8104-ff05f7ca6011"
 Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
 Path: /sitecore/content/PLAY/playwebsite/home/privacy/Data
 SharedFields:
-- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
-  Hint: __Icon
-  Value: office/32x32/document_attachment.png
 - ID: "a791f095-2521-4b4d-bef9-21dda221f608"
   Hint: __Style
   Value: 

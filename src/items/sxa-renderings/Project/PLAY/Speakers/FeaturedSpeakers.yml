@@ -68,7 +68,7 @@ SharedFields:
   Value: 
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: ./Page Components|/sitecore/content/PLAY/playwebsite/Data/Components/FeaturedSpeakers
+  Value: /sitecore/content/PLAY/playwebsite/Data/Components/FeaturedSpeakers
 Languages:
 - Language: en
   Versions:
