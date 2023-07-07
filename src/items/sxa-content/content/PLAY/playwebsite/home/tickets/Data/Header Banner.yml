@@ -1,0 +1,20 @@
+﻿---
+ID: "ad579dad-71c9-5584-b027-cb82ec546e5c"
+Parent: "a97d9e9b-67c9-59f3-ab03-d14c66278624"
+Template: "22bf2a41-d79e-5e64-9497-6e52752f85dd"
+Path: /sitecore/content/PLAY/playwebsite/home/tickets/Data/Header Banner
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "596bb91f-eb1f-4258-837f-f722647f63d1"
+    - ID: "c9069b9e-8ffb-564d-8f08-5b3ab1a6c14f"
+      Hint: title
+      Value: Registration
+    - ID: "f6156be8-e8d4-5d94-8118-22f7a7540f69"
+      Hint: backgroundImage
+      Value: |
+        <image mediaid="{8743580F-0103-5F0F-B5F3-6451B7E72AA2}" alt="Sample Image" />

@@ -1,0 +1,23 @@
+﻿---
+ID: "0ec6c306-fe31-5479-b740-8e4d7ca071f9"
+Parent: "99536ff1-02bf-5b2e-a94a-1bbba4cf50fa"
+Template: "1f476f1c-822a-5a88-8f7e-2431b77d1b70"
+Path: /sitecore/content/PLAY/playwebsite/home/Data/Shop Section
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "05607296-e17f-567f-898f-46bb9665d619"
+      Hint: title
+      Value: Game Changers
+    - ID: "348777e9-0329-5c42-a43d-3db7d8a7a748"
+      Hint: content
+      Value: Check out over 2000 sports brands and test drive the latest fitness equipment and technology in our interactive demo space.
+    - ID: "3df1996f-e6b3-52c9-82c7-c8ba54147c1f"
+      Hint: callToActionLink
+      Value: |
+        <link text="Discover More" linktype="external" url="/shop" anchor="" target="" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ff3fb52d-fe25-4ca5-a7d9-f241cfd49d9b"

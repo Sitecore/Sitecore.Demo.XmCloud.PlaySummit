@@ -1,0 +1,67 @@
+﻿---
+ID: "24e9ad7b-b868-46c9-ace8-713d4b97c0d4"
+Parent: "4499d0fb-ac41-48a3-bdf1-9483305d086b"
+Template: "fbc802e5-4b9e-480f-93da-3f2a80cae5cb"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches/Webpages
+SharedFields:
+- ID: "bb3391dd-f8be-4b2e-ae9f-47bb63c166ce"
+  Hint: Rule
+  Value: |
+    <ruleset>
+      <rule
+        uid="{5545A19B-D886-4C87-B8BE-06C522778594}">
+        <conditions>
+          <and
+            uid="5760226254804B43BDE069418D740909">
+            <condition
+              id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+              uid="71972EBDF68C4EC0A52B4C6069E4FFE5"
+              except="true"
+              itemid="{68DC89A4-1B04-59A8-9C4E-3B49D6C61052}" />
+            <and
+              uid="C57C3D05EFF246AC99210760863F338D">
+              <condition
+                id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+                uid="71C50BF18B7F4E3EAB83481D6DEEBA12"
+                except="true"
+                itemid="{1F4B781B-F2A5-5647-99DF-C0C369162C4D}" />
+              <and
+                uid="8EE5F690CED74B048117CB2117352833">
+                <condition
+                  id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+                  uid="3061AACAE117445187BC479921E6F278"
+                  except="true"
+                  itemid="{774E44E8-0F30-5879-B847-AD233FFB41AA}" />
+                <and
+                  uid="193EAA86C0EA4D648965B947B478ED24">
+                  <condition
+                    id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+                    uid="FA73903F014047DA87821F6CEDE499F3"
+                    except="true"
+                    itemid="{66C99E47-7BBF-52D1-B1D7-4662B850744A}" />
+                  <condition
+                    id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+                    uid="77128F3FA7854C699DE0BD8344C78306"
+                    except="true"
+                    itemid="{4D587C56-3717-41CB-936C-5D0412A50B6B}" />
+                </and>
+              </and>
+            </and>
+          </and>
+        </conditions>
+        <actions>
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="945AEB6737CD409F9B996DB5AECB7A70"
+            PageBranchId="{757E8BD1-9A5E-416C-AD3F-C7A22981D285}" />
+        </actions>
+      </rule>
+    </ruleset>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "083b9aba-3cec-481f-8f3b-035759a390da"

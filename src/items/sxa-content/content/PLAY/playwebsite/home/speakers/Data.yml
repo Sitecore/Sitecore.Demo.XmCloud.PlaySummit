@@ -1,0 +1,20 @@
+﻿---
+ID: "81347f0c-a6f8-4a09-8d0a-0600485d5894"
+Parent: "1f4b781b-f2a5-5647-99df-c0c369162c4d"
+Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
+Path: /sitecore/content/PLAY/playwebsite/home/speakers/Data
+SharedFields:
+- ID: "a791f095-2521-4b4d-bef9-21dda221f608"
+  Hint: __Style
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "37800250-beeb-421e-9427-ee523558f1e5"

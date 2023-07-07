@@ -1,7 +1,7 @@
 ﻿---
 ID: "6cf37ff6-755c-5b1a-b5eb-63f03481db4a"
 Parent: "66c99e47-7bbf-52d1-b1d7-4662b850744a"
-Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
 Path: /sitecore/content/PLAY/playwebsite/home/sponsors/Become a sponsor
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
@@ -10,7 +10,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{D344E1D8-75C6-4BFD-9B45-48D513C5F837}" />
+    <image mediaid="{7FFF6595-79CD-4C8E-9589-4BC7ABE03306}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -48,9 +48,9 @@ Languages:
     - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
       Hint: __Final Renderings
       Value: 
+    - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
+      Hint: Title
+      Value: Become a sponsor
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5dea4445-27ce-445a-816a-17e08f476529"
-    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
-      Hint: pageTitle
-      Value: Become a sponsor
+      Value: "a64652da-98c3-4523-821d-64fb27764760"

@@ -1,0 +1,21 @@
+﻿---
+ID: "b505e955-f7bb-4a56-a956-a41fb1ae202d"
+Parent: "99536ff1-02bf-5b2e-a94a-1bbba4cf50fa"
+Template: "76d550fa-6541-4c83-9f39-7b7e5b4cba62"
+Path: /sitecore/content/PLAY/playwebsite/home/Data/HeroCta
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02110427-7e12-40a8-9fee-9d79b24cf1ec"
+      Hint: Link
+      Value: |
+        <link class="" id="{A7BDFBDA-D5CC-5388-A039-F262BC768721}" querystring="" anchor="" title="" linktype="internal" text="Book Tickets" url="/PLAY/playwebsite/home/tickets" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e8aa5ae7-f3dc-48dc-a64e-f1725cba6c8a"
