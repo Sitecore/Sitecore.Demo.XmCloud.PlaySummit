@@ -1,19 +1,35 @@
-import config from 'temp/config';
+import Head from 'next/head';
 import {
   GraphQLErrorPagesService,
   SitecoreContext,
   ErrorPages,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { SitecorePageProps } from 'lib/page-props';
-import NotFound from 'src/NotFound';
-import { componentBuilder } from 'temp/componentBuilder';
 import Layout from 'src/Layout';
+import { componentBuilder } from 'temp/componentBuilder';
 import { GetStaticProps } from 'next';
+import config from 'temp/config';
 import { siteResolver } from 'lib/site-resolver';
 
-const Custom404 = (props: SitecorePageProps): JSX.Element => {
+/**
+ * Rendered in case if we have 500 error
+ */
+const ServerError = (): JSX.Element => (
+  <>
+    <Head>
+      <title>500: Server Error</title>
+    </Head>
+    <div style={{ padding: 10 }}>
+      <h1>500 Internal Server Error</h1>
+      <p>There is a problem with the resource you are looking for, and it cannot be displayed.</p>
+      <a href="/">Go to the Home page</a>
+    </div>
+  </>
+);
+
+const Custom500 = (props: SitecorePageProps): JSX.Element => {
   if (!(props && props.layoutData)) {
-    return <NotFound />;
+    return <ServerError />;
   }
 
   return (
@@ -32,7 +48,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     endpoint: config.graphQLEndpoint,
     apiKey: config.sitecoreApiKey,
     siteName: site.name,
-    language: context.locale || config.defaultLanguage,
+    language: context.locale || context.defaultLocale || config.defaultLanguage,
   });
   let resultErrorPages: ErrorPages | null = null;
 
@@ -48,9 +64,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       headLinks: [],
-      layoutData: resultErrorPages?.notFoundPage?.rendered || null,
+      layoutData: resultErrorPages?.serverErrorPage?.rendered || null,
     },
   };
 };
 
-export default Custom404;
+export default Custom500;

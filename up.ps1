@@ -142,7 +142,7 @@ if ($LASTEXITCODE -ne 0) {
 # DEMO TEAM CUSTOMIZATION - Moved index rebuild
 
 Write-Host "Pushing Default rendering host configuration" -ForegroundColor Green
-dotnet sitecore ser push
+dotnet sitecore ser push -i RenderingHost
 # DEMO TEAM CUSTOMIZATION - Added robustness check
 if ($LASTEXITCODE -ne 0) {
     Write-Error "Serialization push failed, see errors above."

@@ -10,6 +10,8 @@
     "bradlc.vscode-tailwindcss",
     "shardulm94.trailing-spaces",
     "rbbit.typescript-hero",
-    "redhat.vscode-yaml"
+    "redhat.vscode-yaml",
+    "GraphQL.vscode-graphql",
+    "mikestead.dotenv"
   ]
 }
