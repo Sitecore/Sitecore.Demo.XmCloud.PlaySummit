@@ -1,13 +1,16 @@
 ﻿---
 ID: "4a3e83ca-824e-5f3b-8a33-c6ea5c9c8091"
 Parent: "8d9013bc-618f-5ef1-bbe6-4fdb3a41e913"
-Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
 Path: /sitecore/content/PLAY/playwebsite/home/tickets/payment/confirmed
 SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: 
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{5AF2E57A-85DC-42B7-AC12-1780252744E6}" />
+    <image mediaid="{5DC12E8F-4E37-4BA2-8F46-5085B83BC07E}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -67,9 +70,9 @@ Languages:
     - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
       Hint: __Lock
       Value: 
+    - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
+      Hint: Title
+      Value: Payment Confirmed
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "cc60cbbc-f6f6-4b10-8f0a-46756a0ac780"
-    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
-      Hint: pageTitle
-      Value: Payment Confirmed
+      Value: "2b8d46eb-0160-415c-9d6c-6b9b45c1cbc5"

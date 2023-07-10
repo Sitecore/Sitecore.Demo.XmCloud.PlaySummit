@@ -1,0 +1,71 @@
+﻿---
+ID: "0a29cce3-a1b2-41f8-8f3e-6ce0c7f0f7cd"
+Parent: "757e8bd1-9a5e-416c-ad3f-c7a22981d285"
+Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches/Webpages/Webpage/$name
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{B8273B08-E34C-4D64-8944-428A62D0C5B8}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{3C7C4BD9-3DBD-4DD7-98BB-A479F662AA4B}"
+          p:before="*"
+          s:ds="local:/Data/Hero Image"
+          s:id="{2C13DBC0-415C-5DAA-A7D9-56928F1271C4}"
+          s:par="FieldNames&amp;Styles&amp;CacheClearingBehavior=Clear on publish&amp;RenderingIdentifier&amp;CSSStyles"
+          s:ph="/headless-main/sxa-main/container-1" />
+        <r
+          uid="{10FC9467-1FE3-465B-9930-3A5E9ECB08DA}"
+          p:after="r[@uid='{3C7C4BD9-3DBD-4DD7-98BB-A479F662AA4B}']"
+          s:id="{3836D951-BB14-43AC-9231-649B7F245DC5}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7BE76E9DCE-0FF3-486F-818E-E6F7C8B53EBA%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+          s:ph="/headless-main/sxa-main/container-1/container-1" />
+        <r
+          uid="{FA1A5714-5F36-44B5-B57F-19AA43834E20}"
+          p:after="r[@uid='{10FC9467-1FE3-465B-9930-3A5E9ECB08DA}']"
+          s:id="{C5F905F8-FD1F-444E-A9E5-AC6B774FF0DE}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7B2181EB9E-2230-405F-AFDF-8D31773C123C%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+          s:ph="/headless-main/sxa-main/container-1/container-1" />
+        <r
+          uid="{A2E1B9C1-3EB5-46E7-9734-72F3A0D72472}"
+          p:after="r[@uid='{FA1A5714-5F36-44B5-B57F-19AA43834E20}']"
+          s:ds=""
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B08C8BABD-CA64-41EE-B592-13E86CF8AE22%7D%7C%7BD5E6CD12-A4CA-49F7-B1C5-832320B2764C%7D&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{26BB3FC5-7C36-4097-A052-2F88D2DFCE74}"
+          p:after="*[1=2]"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B991D310A-E240-4B14-9733-2F04BA61AFA2%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+          s:ph="/headless-main/sxa-main/container-1" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "79ba1a15-de33-4649-b179-f21b07324d74"
+    - ID: "e0c0c8a4-0fea-4963-8b86-d47810b80efa"
+      Hint: Content
+      Value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum rutrum pretium. Vestibulum turpis purus, euismod quis posuere in, porta vel nisl. Nunc id massa viverra metus lacinia pharetra. Donec semper sem nibh, in bibendum est dictum in. Curabitur varius est id interdum fermentum. Nam tempor felis sit amet quam tempor, ac dictum nibh volutpat. Proin ultrices massa varius lobortis molestie. Quisque eu erat lectus. Ut auctor non diam eu ornare. </p>
+        <p>Mauris suscipit massa ac nisi finibus, at hendrerit est tempus. Curabitur tincidunt id urna porttitor commodo.
+        Quisque sit amet orci id felis euismod vulputate vel sed risus. Sed in sapien lobortis erat aliquam tincidunt. Sed ex massa, tempus eget nisi in, vestibulum rutrum lectus. Vivamus accumsan varius augue, a rhoncus ante egestas sit amet. Aenean at dignissim nibh. Morbi eget nisl vitae nisi semper viverra. Maecenas at justo in nibh placerat pulvinar a id lorem. Donec sit amet condimentum tortor. Nam in fringilla mi.
+        Aenean ut leo sed risus egestas facilisis vel sed quam. Nunc blandit, metus vitae accumsan faucibus, nunc tellus auctor dui, ut dictum massa ex ac mauris. </p>
+        <p>Cras lobortis diam eu dui aliquam viverra. Integer in eros vel velit lacinia sagittis. Ut at ligula feugiat, porta orci id, malesuada dolor. In sapien metus, rhoncus ut consectetur ut, fringilla euismod velit. Phasellus eu tortor in erat consectetur interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus justo ut mi finibus pellentesque. Aliquam eu sagittis purus. Integer in lectus pulvinar, tempor nunc at, facilisis nibh. Proin eu tellus non purus tempus volutpat ac vitae dolor. Donec quis diam tristique, lobortis metus non, iaculis ante. Nulla at vestibulum tortor, ac pharetra ex. Sed in pretium purus, blandit malesuada quam.</p>

@@ -1,14 +1,12 @@
 import Head from 'next/head';
-import { ComponentProps } from 'lib/component-props';
-import { Field, ImageField, RichText } from '@sitecore-jss/sitecore-jss-nextjs';
+import { ComponentWithChildrenProps } from 'lib/component-props';
+import { Field, ImageField, Placeholder, RichText } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Timeslot } from '../../interfaces/Timeslot';
 import { Speaker } from 'src/types/speaker';
 import { Day } from 'src/types/day';
 import { Room } from 'src/types/room';
-import SpeakerList from '../Speakers/SpeakerList';
-import SessionInformationPageHero from './SessionInformationPageHero';
 
-export type SessionInformationProps = ComponentProps & {
+export type SessionInformationProps = ComponentWithChildrenProps & {
   fields: {
     Name: Field<string>;
     Description: Field<string>;
@@ -26,25 +24,15 @@ const SessionInformation = (props: SessionInformationProps): JSX.Element => {
   const premiumSessionMetaValue = props.fields.Premium?.value ? 'true' : 'false';
   const sxaStyles = `${props.params?.styles || ''}`;
 
-  const speakers =
-    props.fields?.Speakers && props.fields.Speakers.length > 0 ? (
-      <SpeakerList speakers={props.fields.Speakers} />
-    ) : (
-      <div>No sessions</div>
-    );
+  const placeholder = !!props.rendering && (
+    <Placeholder name="jss-entity-sidebar" rendering={props.rendering} />
+  );
 
   return (
     <>
       <Head>
         <meta name="premiumSession" content={premiumSessionMetaValue} />
       </Head>
-
-      {/*
-        HACK: The SessionInformationPageHero component is added here to avoid creating a new Sitecore rendering, adding it to the page template, and serialize the Sitecore items. This is a temporary solution.
-        TODO: Create a Sitecore rendering for this component and remove it from here.
-      */}
-      <SessionInformationPageHero {...props} />
-
       <section className={`section information-section ${sxaStyles}`}>
         <div className="section-content container">
           <div className="information-grid">
@@ -52,7 +40,10 @@ const SessionInformation = (props: SessionInformationProps): JSX.Element => {
               <div className="column-title">Description:</div>
               <RichText className="rich-text" field={props.fields?.Description} />
             </div>
-            <div className="sidebar-col">{speakers}</div>
+            <div className="sidebar-col">
+              {placeholder}
+              {props.children}
+            </div>
           </div>
         </div>
       </section>

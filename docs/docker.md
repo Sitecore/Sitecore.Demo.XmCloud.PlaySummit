@@ -1,6 +1,6 @@
 # 🐳 Docker
 
-The PLAY! Summit demo comes with a `docker-compose` environment for a Sitecore XM Cloud topology.
+The PLAY! Summit demo comes with a Docker compose environment for a Sitecore XM Cloud topology.
 
 The included `docker-compose.yml` and `docker-compose.override.yml` files are a stock XM Cloud environment that has been customized for this project needs. Most customizations are commented with `DEMO TEAM CUSTOMIZATION`.
 
@@ -14,10 +14,10 @@ Ensure you have installed and followed the [global prerequisites](prerequisites.
 
 1. Ensure you are running Windows containers:
    1. From the Docker Desktop taskbar icon contextual menu (right click), you can toggle which daemon (Linux or Windows) the Docker CLI talks to. Select "Switch to Windows containers..." to use Windows containers.
-2. Ensure that Docker Compose V2 is disabled:
+2. Ensure that Docker Compose V2 is enabled:
    1. From the Docker Desktop taskbar icon contextual menu (right click), choose "Settings".
    2. In the left tab group, navigate to the "General" tab.
-   3. Ensure that the "Use Docker Compose V2" option is not checked.
+   3. Ensure that the "Use Docker Compose V2" option is checked.
    4. Click the "Apply & Restart" button to restart your Windows Docker engine.
 
 ### Environment Initialization

@@ -51,17 +51,22 @@ const SpeakerListItem = (speaker: Speaker): JSX.Element => {
 };
 
 type SpeakerListProps = {
-  speakers: Speaker[];
+  fields: {
+    Speakers: Speaker[];
+  };
 };
 
 const SpeakerList = (props: SpeakerListProps): JSX.Element => {
-  const speakers = props.speakers && props.speakers.length > 0 && (
-    <div className="speaker-list">
-      {props.speakers.map((speaker, index) => (
-        <SpeakerListItem {...speaker} key={index} />
-      ))}
-    </div>
-  );
+  const speakers =
+    props?.fields?.Speakers && props?.fields?.Speakers.length > 0 ? (
+      <div className="speaker-list">
+        {props.fields.Speakers.map((speaker, index) => (
+          <SpeakerListItem {...speaker} key={index} />
+        ))}
+      </div>
+    ) : (
+      <p>No speakers</p>
+    );
 
   return <>{speakers}</>;
 };

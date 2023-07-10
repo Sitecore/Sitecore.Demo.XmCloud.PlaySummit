@@ -3,7 +3,7 @@ import { StoryFn, Meta } from '@storybook/react';
 
 import PreviewSearchPopup from '../../components/PreviewSearchContent/PreviewSearchPopup';
 import { ContentSearchNews } from '../../interfaces/contentSearch/ContentSearchNews';
-import { ContentSearchResponse } from '../../interfaces/contentSearch/ContentSearchResponse';
+import { ContentSearchWidgetResponse } from '../../interfaces/contentSearch/ContentSearchWidgetResponse';
 import { ContentSearchSession } from '../../interfaces/contentSearch/ContentSearchSession';
 import { ContentSearchSpeaker } from '../../interfaces/contentSearch/ContentSearchSpeaker';
 
@@ -131,8 +131,14 @@ export const Default = {
 
   args: {
     resultsUrl: '/search?q=test',
-    news: { content: news, total_item: 10 } as ContentSearchResponse<ContentSearchNews>,
-    sessions: { content: sessions, total_item: 10 } as ContentSearchResponse<ContentSearchSession>,
-    speakers: { content: speakers, total_item: 10 } as ContentSearchResponse<ContentSearchSpeaker>,
+    news: { content: news, total_item: 10 } as ContentSearchWidgetResponse<ContentSearchNews>,
+    sessions: {
+      content: sessions,
+      total_item: 10,
+    } as ContentSearchWidgetResponse<ContentSearchSession>,
+    speakers: {
+      content: speakers,
+      total_item: 10,
+    } as ContentSearchWidgetResponse<ContentSearchSpeaker>,
   },
 };

@@ -1,0 +1,24 @@
+﻿---
+ID: "ffabbc61-2e79-4fb3-a70a-5b583a566510"
+Parent: "b63fe2f1-b5ca-481f-8d7c-cc11bf1dabf8"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: "/sitecore/layout/Placeholder Settings/Project/PLAY/jss-entity-sidebar"
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "jss-entity-sidebar"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: |
+    {68701A9B-EF54-43C4-9A95-1BE953C47BA2}
+    {082CAAF0-42D0-403F-AF02-7C966A610F31}
+    {A6E0C336-06D3-4824-84E9-EA8290202A4E}
+    {E511F5F8-C8C5-45B9-A0DA-CD301C65D8F7}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "50616912-b658-4983-be38-ca73d93c620f"

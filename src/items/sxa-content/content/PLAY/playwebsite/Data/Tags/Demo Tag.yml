@@ -1,0 +1,16 @@
+﻿---
+ID: "b2953a76-6c44-49c9-9841-b8db9deea5f7"
+Parent: "9e74194a-f1a3-4cab-9fc4-034b1c3782fe"
+Template: "6b40e84c-8785-49fc-8a10-6bca862ff7ea"
+Path: /sitecore/content/PLAY/playwebsite/Data/Tags/Demo Tag
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7c8fa273-d58a-4b91-84b5-5097e996c859"
+    - ID: "b8a8b6c9-4757-496b-9aae-5f46ff381563"
+      Hint: Title
+      Value: Demo Tag
