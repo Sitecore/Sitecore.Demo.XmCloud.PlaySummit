@@ -9,10 +9,11 @@ services:
       args:
         PARENT_IMAGE: ${NODEJS_PARENT_IMAGE}
         NODEJS_VERSION: ${NODEJS_VERSION}
-    scale: 0
+    deploy:
+      replicas: 0
 
   # The solution build image is added here so it can be referenced as a build dependency
-  # for the images which use its output. Setting "scale: 0" means docker-compose will not
+  # for the images which use its output. Setting "replicas: 0" means docker compose will not
   # include it in the running environment. See Dockerfile for more details.
   solution:
     # DEMO TEAM CUSTOMIZATION - demo subfolder, custom tag
@@ -22,7 +23,8 @@ services:
       args:
         BUILD_CONFIGURATION: ${BUILD_CONFIGURATION}
         BUILD_IMAGE: mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
-    scale: 0
+    deploy:
+      replicas: 0
 
   rendering:
     # DEMO TEAM CUSTOMIZATION - demo subfolder, custom tag

@@ -1,0 +1,20 @@
+﻿---
+ID: "e4bcbae6-c637-5e4f-8e65-165690dbfe73"
+Parent: "3d808c71-cf82-53ab-9b96-cb5b1e5da2fb"
+Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
+Path: /sitecore/content/PLAY/playwebsite/home/map/Data
+SharedFields:
+- ID: "a791f095-2521-4b4d-bef9-21dda221f608"
+  Hint: __Style
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "25c5f70b-ed36-4459-80b4-9f94c978351f"

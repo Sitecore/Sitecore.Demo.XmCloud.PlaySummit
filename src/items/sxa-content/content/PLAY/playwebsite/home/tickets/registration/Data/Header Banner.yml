@@ -1,0 +1,16 @@
+﻿---
+ID: "bd786d95-3316-5b3b-8224-becd301935a5"
+Parent: "2e085239-09d6-505d-80eb-1b3750662507"
+Template: "22bf2a41-d79e-5e64-9497-6e52752f85dd"
+Path: /sitecore/content/PLAY/playwebsite/home/tickets/registration/Data/Header Banner
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bc1a26f4-fb24-45dc-aad7-eae7188f92c9"
+    - ID: "c9069b9e-8ffb-564d-8f08-5b3ab1a6c14f"
+      Hint: title
+      Value: Registration

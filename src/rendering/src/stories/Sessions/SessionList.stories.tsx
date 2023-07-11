@@ -8,16 +8,16 @@ export default {
   component: SessionList,
 } as Meta<typeof SessionList>;
 
-export const WithoutSpeakers = {
+export const Default = {
   args: {
-    sessions: SESSIONS,
-    showSpeakers: false,
-  },
-};
-
-export const WithSpeakers = {
-  args: {
-    sessions: SESSIONS,
-    showSpeakers: true,
+    fields: {
+      data: {
+        contextItem: {
+          sessions: {
+            targetItems: SESSIONS,
+          },
+        },
+      },
+    },
   },
 };

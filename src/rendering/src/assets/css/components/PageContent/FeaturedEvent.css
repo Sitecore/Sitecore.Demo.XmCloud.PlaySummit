@@ -1,15 +1,20 @@
 .featured-event {
   @apply basis-full bg-black bg-left bg-no-repeat bg-cover relative;
 
-  background-image: url('../img/featured-event-background.jpg');
+  img {
+    @apply w-full h-60 object-cover;
+    @apply md:absolute md:top-0 md:bottom-0 md:left-0 md:right-0 md:h-full;
+  }
 
   .content {
     @include flex--fe;
 
-    @apply px-14 max-w-screen-2xl w-full my-0 mx-auto box-border overflow-hidden;
+    @apply px-0 max-w-screen-2xl w-full my-0 mx-auto box-border overflow-hidden z-10;
+    @apply md:px-14;
 
     .triangle-area {
-      @apply max-w-30 relative shadow-xl w-full bg-black-light;
+      @apply relative shadow-xl w-full bg-black-light;
+      @apply md:max-w-30;
 
       &::before,
       &::after {
@@ -34,21 +39,51 @@
       .text-area {
         @apply p-14;
 
+        svg {
+          @apply mr-3;
+        }
+
         .section-title {
-          @apply text-2xl text-orange font-semibold;
+          @apply text-2xl text-blue-light font-semibold;
         }
 
         .event-title {
-          @apply text-5xl font-semibold text-white uppercase m-0;
+          @apply text-4xl font-semibold text-white uppercase mx-0 mt-2 mb-4;
         }
 
         .event-subtitle {
-          @apply text-orange text-xl;
+          @apply text-white text-xl mt-2;
+        }
+
+        .event-subtext {
+          @apply text-gray text-base;
         }
       }
 
       .btn-area {
         @apply px-14;
+      }
+    }
+  }
+
+  &.premium-event {
+    .content {
+      .triangle-area {
+        &::before,
+        &::after {
+          border-right-color: #ff8d00;
+          border-top-color: #ff8d00;
+        }
+
+        .text-area {
+          .section-title {
+            @apply text-orange;
+          }
+
+          .event-subtitle {
+            @apply text-orange;
+          }
+        }
       }
     }
   }

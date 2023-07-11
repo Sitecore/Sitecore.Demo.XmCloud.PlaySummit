@@ -1,0 +1,17 @@
+﻿---
+ID: "a9873900-2a64-4410-b2e3-fb52493fbfdc"
+Parent: "8e7190fc-847c-48c5-9f10-4fa4efea659f"
+Template: "966b041f-d956-4f71-a40a-68869a7ba6b9"
+Path: /sitecore/content/PLAY/playwebsite/Data/Navigation Filters/Demo Navigation Filter
+SharedFields:
+- ID: "ee62cfbf-5b46-4f64-8334-207b9bd3ff96"
+  Hint: Key
+  Value: Demo Navigation Filter
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7d2b2c10-b967-443d-9b93-51905d0e7f8d"

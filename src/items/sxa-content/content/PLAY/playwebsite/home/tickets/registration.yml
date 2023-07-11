@@ -1,13 +1,16 @@
 ﻿---
 ID: "23d1c784-e28e-5dc3-9515-2325d45c499e"
 Parent: "a7bdfbda-d5cc-5388-a039-f262bc768721"
-Template: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
 Path: /sitecore/content/PLAY/playwebsite/home/tickets/registration
 SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: 
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{DE7DB838-7048-45BA-9983-9C2706BFA17E}" />
+    <image mediaid="{91519AA4-7249-4ABA-8A6F-3C62F6A7210A}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -33,9 +36,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
+      Hint: Title
+      Value: Registration
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "643efbf9-bcec-4a41-9455-a6bce560a2e0"
-    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
-      Hint: pageTitle
-      Value: Registration
+      Value: "1dd1fe63-d0fa-4f21-ad58-27c5573d5ac2"

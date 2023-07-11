@@ -1,0 +1,16 @@
+﻿---
+ID: "4678636c-7152-5bf3-933c-f163a5e09b9d"
+Parent: "e6d901f8-8f14-573c-a3e5-c39f6cd05801"
+Template: "1f476f1c-822a-5a88-8f7e-2431b77d1b70"
+Path: /sitecore/content/PLAY/playwebsite/home/tickets/payment/Data/Credit or Debit Card Section
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "05607296-e17f-567f-898f-46bb9665d619"
+      Hint: title
+      Value: Credit / Debit Card
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "206cdb05-0f28-4fa0-97d8-ebda994dca85"

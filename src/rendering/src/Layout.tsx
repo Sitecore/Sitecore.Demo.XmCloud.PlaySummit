@@ -4,12 +4,8 @@
 import React, { useEffect } from 'react'; // DEMO TEAM CUSTOMIZATION - Log page views
 import Head from 'next/head';
 // DEMO TEAM CUSTOMIZATION - Add LayoutServicePageState
-import {
-  Placeholder,
-  getPublicUrl,
-  LayoutServiceData,
-  Field,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';
+import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs/utils';
 import Scripts from 'src/Scripts';
 // DEMO TEAM CUSTOMIZATION - CDP and Sitecore Send integration
 import { trackViewEvent } from './services/TrackingService';
@@ -27,6 +23,7 @@ const publicUrl = getPublicUrl();
 
 interface LayoutProps {
   layoutData: LayoutServiceData;
+  headLinks: HTMLLink[];
 }
 
 interface RouteFields {
@@ -35,7 +32,7 @@ interface RouteFields {
   pageTitle?: Field; // DEMO TEAM CUSTOMIZATION - Add field
 }
 
-const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
+const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const { route, context } = layoutData.sitecore; // DEMO TEAM CUSTOMIZATION - Add context to destructuring
   const fields = route?.fields as RouteFields;
   const isPageEditing = layoutData.sitecore.context.pageEditing;
@@ -73,6 +70,9 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
         {/* DEMO TEAM CUSTOMIZATION - Use event name from context as the page title */}
         <title>{pageTitle}</title>
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
+        {headLinks.map((headLink) => (
+          <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
+        ))}
         <meta name="robots" content="noindex" />
       </Head>
 
