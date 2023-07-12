@@ -2,6 +2,7 @@ import {
   Text,
   Field,
   RichText,
+  Image,
   ImageField,
   Placeholder,
   withDatasourceCheck,
@@ -22,15 +23,6 @@ export type HeroProps = ComponentProps & {
 const HeroSection = (props: HeroProps): JSX.Element => {
   const sxaStyles = `${props.params?.styles || ''}`;
 
-  const css = `@media (min-width: 768px) {
-  .hero_${props.rendering.uid} {
-    background-image: url(${props.fields.Hero?.value?.src});
-  }
-}
-.hero_${props.rendering.uid} .hero-background {
-  background-image: url(${props.fields.Hero?.value?.src});
-}`;
-
   // React throws an error if the root element of the component is removed from the DOM.
   // The #cdp-audience-based-home-page-hero div outerHTML will be set by Sitecore Personalize.
   // Thus, we wrap it in another div that becomes the component root element and React is happy.
@@ -42,10 +34,13 @@ const HeroSection = (props: HeroProps): JSX.Element => {
 
   const withoutCdp = !isCdpConfigured && (
     <>
-      <style suppressHydrationWarning>{css}</style>
-      <section className={`hero-section hero_${props.rendering.uid} ${sxaStyles}`}>
-        <div className="hero-background"></div>
-        <div className="hero-container container">
+      <section
+        className={`hero-section hero-section-editable hero_${props.rendering.uid} ${sxaStyles}`}
+      >
+        <div className="hero-background">
+          <Image field={props.fields.Hero} />
+        </div>
+        <div className="hero-container">
           <div className="container-content">
             <div className="content-text">
               <Text field={props.fields.Slogan} tag="p" className="slogan" />
