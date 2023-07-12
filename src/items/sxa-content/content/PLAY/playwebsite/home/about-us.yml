@@ -45,9 +45,11 @@ SharedFields:
           uid="{DE75C067-CF50-599C-97E7-A02BB1E3712A}"
           p:after="r[@uid='{816710CB-9F03-5860-8E7C-5938120B08F3}']"
           s:rname="FullImageCTASection"
+          s:ds="{06A8A3AD-13B0-40CF-B4D2-FB741573FF5E}"
           s:id="{D7333FEF-77BD-56D2-B76A-EA936D0A1001}"
-          s:par=""
-          s:ph="/headless-main/sxa-main/container-1" />
+          s:par="FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
         <r
           uid="{467625EA-A518-59FE-8DA7-39EE5833A223}"
           p:after="r[@uid='{DE75C067-CF50-599C-97E7-A02BB1E3712A}']"

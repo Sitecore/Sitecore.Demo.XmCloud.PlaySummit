@@ -35,7 +35,7 @@ SharedFields:
           uid="{EB2C8403-F00A-4976-8C26-75224DD8EBD1}"
           p:before="*"
           s:id="{D356E8D0-3AF5-483B-AE0D-2693BA87FFD1}"
-          s:par="CacheClearingBehavior=Clear%20on%20publish"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1" />
         <r
           uid="{74A3507D-B718-58C6-8C54-5DFA30D2A4E8}"
@@ -52,7 +52,7 @@ SharedFields:
           s:rname="HeroSectionCta"
           s:ds="{B505E955-F7BB-4A56-A956-A41FB1AE202D}"
           s:id="{99F2FFE7-28C6-4B88-A52B-BD9B6B44C3C1}"
-          s:par="CacheClearingBehavior=Clear%20on%20publish"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1/jss-hero-section-content-{74A3507D-B718-58C6-8C54-5DFA30D2A4E8}-0" />
         <r
           uid="{368C89F1-3640-58A1-BDE0-A1C0E8426D3E}"
@@ -69,7 +69,7 @@ SharedFields:
           s:rname="FullImageSection"
           s:ds="{BD8B0390-574A-57F3-B801-1C3A4F42B3D6}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par="FieldNames&amp;Styles=%7B3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7D%7C%7BFF6391E2-EFC2-436F-85B1-C2AFA0A5F6D1%7D&amp;RenderingIdentifier"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles=%7b3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7d&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1"
           s:ccb="Clear on publish" />
         <r
@@ -77,7 +77,7 @@ SharedFields:
           p:after="r[@uid='{45FCA8EC-2A99-531D-B270-0389AB473563}']"
           s:ds="{105AB476-3EDF-5A27-A49A-A5604BB6ACA2}"
           s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
-          s:par="FieldNames&amp;Styles=%7B98006F93-D19D-44C8-A25D-CEC93528F129%7D&amp;RenderingIdentifier"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles=%7b98006F93-D19D-44C8-A25D-CEC93528F129%7d&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1"
           s:ccb="Clear on publish" />
         <r
@@ -86,7 +86,7 @@ SharedFields:
           s:rname="FullImageSection"
           s:ds="{3FDC9247-F940-5DE3-BB56-9242835DD87B}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par="FieldNames&amp;Styles=%7B3BC9EBFD-3ACD-4994-8D61-0BFEF358A70E%7D%7C%7B0CE71288-8AEB-4160-A418-3227CDC2402B%7D&amp;RenderingIdentifier"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles=%7b3BC9EBFD-3ACD-4994-8D61-0BFEF358A70E%7d&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1"
           s:ccb="Clear on publish" />
         <r
@@ -95,7 +95,7 @@ SharedFields:
           s:rname="Section"
           s:ds="{0EC6C306-FE31-5479-B740-8E4D7CA071F9}"
           s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
-          s:par="FieldNames&amp;Styles=%7B98006F93-D19D-44C8-A25D-CEC93528F129%7D%7C%7B1F69B9FA-24A7-435F-AFE5-16E05F34A21A%7D&amp;RenderingIdentifier"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles=%7b98006F93-D19D-44C8-A25D-CEC93528F129%7d%7c%7b1F69B9FA-24A7-435F-AFE5-16E05F34A21A%7d&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1"
           s:ccb="Clear on publish" />
         <r
@@ -104,7 +104,7 @@ SharedFields:
           s:rname="FeaturedSpeakers"
           s:ds="{4EC83342-656D-4CF7-A404-0F36DF25128E}"
           s:id="{2DA4EF2D-BADE-52AB-9D3B-82D2EB08C53A}"
-          s:par="CacheClearingBehavior=Clear%20on%20publish"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1/jss-section-content-{004EEEA1-32B0-4582-BD0C-FA7EFFB14182}-0"
           s:ccb="Clear on publish" />
         <r

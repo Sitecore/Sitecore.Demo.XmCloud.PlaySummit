@@ -1,18 +1,31 @@
+import {
+  Link,
+  Image,
+  ImageField,
+  LinkField,
+  withDatasourceCheck,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
-import Link from 'next/link';
 
-const FullImageCTASection = (props: ComponentProps): JSX.Element => {
+type FullImageCTASectionProps = ComponentProps & {
+  fields: {
+    callToActionLink: LinkField;
+    backgroundImage: ImageField;
+  };
+};
+
+const FullImageCTASection = (props: FullImageCTASectionProps): JSX.Element => {
   const sxaStyles = `${props.params?.styles || ''}`;
+  const callToAction = props.fields?.callToActionLink && (
+    <Link field={props.fields?.callToActionLink} className="btn-square" />
+  );
 
   return (
-    <section className={`section full-image-section full-image-section-map ${sxaStyles}`}>
-      <div className="section-content full-image-section-content">
-        <Link href="/map" className="btn-square">
-          Venue Map
-        </Link>
-      </div>
+    <section className={`section full-image-section full-image-cta-section ${sxaStyles}`}>
+      <Image field={props.fields?.backgroundImage} alt="" loading="lazy" />
+      <div className="section-content full-image-section-content">{callToAction}</div>
     </section>
   );
 };
 
-export const Default = FullImageCTASection;
+export const Default = withDatasourceCheck()<FullImageCTASectionProps>(FullImageCTASection);

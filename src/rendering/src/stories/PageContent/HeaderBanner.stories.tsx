@@ -18,17 +18,17 @@ const fieldsWithoutImage = {
     value: 'Subtitle text',
   },
   backgroundImage: {
-    value: {},
+    value: {
+      src: '',
+    },
   },
 };
 
 const fieldsWithImage = {
   ...fieldsWithoutImage,
-  ...{
-    backgroundImage: {
-      value: {
-        src: '/assets/img/tickets/come-play.jpg',
-      },
+  backgroundImage: {
+    value: {
+      src: '/assets/img/tickets/come-play.jpg',
     },
   },
 };
@@ -46,5 +46,9 @@ export const WithImage = {
 export const WithoutImage = {
   args: {
     fields: fieldsWithoutImage,
+    rendering: {
+      componentName: 'Rendering',
+      dataSource: '/sitecore',
+    },
   },
 };
