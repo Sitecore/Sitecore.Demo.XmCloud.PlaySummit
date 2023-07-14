@@ -439,20 +439,3 @@ export const mockFooterProps = {
     dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as unknown as FooterProps;
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const mockComponentFactory = function (componentName: string): any {
-  const components = new Map();
-  components.set('HeroSectionCta', HeroSectionCta);
-  components.set('MainNavigation', MainNavigation);
-
-  const component = components.get(componentName);
-
-  // check that component should be dynamically imported
-  if (component?.element) {
-    // return next.js dynamic import
-    return component.element();
-  }
-
-  return component?.default || component;
-};

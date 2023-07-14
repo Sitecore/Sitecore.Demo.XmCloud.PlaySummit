@@ -12,10 +12,8 @@ import {
   VendorInformationProps,
 } from '../../components/Vendors/VendorInformation';
 import { Default as Footer } from '../../components/Navigation/Footer';
-import { mockComponentFactory, mockFooterProps, mockHeaderProps } from './PageStoriesCommon';
-import { SitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
+import { mockFooterProps, mockHeaderProps } from './PageStoriesCommon';
 import { SESSIONS } from '../mock-sessions';
-import { mockLayoutData } from '../../../.storybook/preview';
 import { Default as SessionList, SessionListProps } from '../../components/Sessions/SessionList';
 
 export default {
@@ -83,7 +81,7 @@ const vendorInformationProps = {
 
 const Template: StoryFn<typeof VendorInformationPageHero> = () => {
   return (
-    <SitecoreContext componentFactory={mockComponentFactory} layoutData={mockLayoutData}>
+    <>
       <header>
         <HeaderContent {...mockHeaderProps} />
       </header>
@@ -97,7 +95,7 @@ const Template: StoryFn<typeof VendorInformationPageHero> = () => {
       <footer>
         <Footer {...mockFooterProps} />
       </footer>
-    </SitecoreContext>
+    </>
   );
 };
 
