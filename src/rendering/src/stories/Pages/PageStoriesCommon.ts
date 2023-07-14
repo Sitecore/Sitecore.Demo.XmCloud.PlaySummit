@@ -155,13 +155,13 @@ export const mockHeaderProps = {
         {
           uid: '04d6b23e-6ce3-51a1-9c9c-4cd56b29b6aa',
           componentName: 'MainNavigation',
-          dataSource: '',
+          dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
           params: {},
           fields: mockMainNavigationFields,
         },
       ],
     },
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as unknown as HeaderContentProps;
 
@@ -436,7 +436,7 @@ export const mockFooterProps = {
   },
   rendering: {
     componentName: 'Rendering',
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as unknown as FooterProps;
 

@@ -48,7 +48,7 @@ const heroProps = {
         {
           uid: '04d6b23e-6ce3-51a1-9c9c-4cd56b29b6aa',
           componentName: 'HeroSectionCta',
-          dataSource: '',
+          dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
           params: {},
           fields: {
             Link: {
@@ -61,7 +61,7 @@ const heroProps = {
         },
       ],
     },
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as unknown as HeroProps;
 
@@ -122,7 +122,7 @@ const sponsorProps = {
   },
   rendering: {
     componentName: 'Rendering',
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as unknown as SelectedSponsorsGridProps;
 
@@ -180,7 +180,7 @@ const threeColProps = {
   },
   rendering: {
     componentName: 'Rendering',
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as ThreeColumnsSectionProps;
 

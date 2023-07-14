@@ -61,7 +61,7 @@ const speakerInformationPageHeroProps = {
   },
   rendering: {
     componentName: 'Rendering',
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as unknown as SpeakerInformationPageHeroProps;
 

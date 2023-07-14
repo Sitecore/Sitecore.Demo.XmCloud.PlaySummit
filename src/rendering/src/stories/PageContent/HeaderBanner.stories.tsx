@@ -38,7 +38,7 @@ export const WithImage = {
     fields: fieldsWithImage,
     rendering: {
       componentName: 'Rendering',
-      dataSource: '/sitecore',
+      dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
     },
   },
 };
@@ -48,7 +48,7 @@ export const WithoutImage = {
     fields: fieldsWithoutImage,
     rendering: {
       componentName: 'Rendering',
-      dataSource: '/sitecore',
+      dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
     },
   },
 };

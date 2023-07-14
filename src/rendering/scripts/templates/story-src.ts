@@ -26,7 +26,7 @@ Default.args = {
   },
   rendering: {
     componentName: '${componentName}',
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 };
 `;

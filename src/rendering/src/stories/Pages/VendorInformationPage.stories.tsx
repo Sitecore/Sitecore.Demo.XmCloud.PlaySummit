@@ -52,7 +52,7 @@ const vendorInformationPageHeroProps = {
   },
   rendering: {
     componentName: 'Rendering',
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as unknown as VendorInformationPageHeroProps;
 
@@ -77,7 +77,7 @@ const vendorInformationProps = {
   },
   rendering: {
     componentName: 'Rendering',
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as VendorInformationProps;
 
