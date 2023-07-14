@@ -1,7 +1,5 @@
 import { HeaderContentProps } from '../../components/Navigation/HeaderContent';
 import { FooterProps } from '../../components/Navigation/Footer';
-import { Default as HeroSectionCta } from '../../components/PageContent/HeroSectionCta';
-import { Default as MainNavigation } from '../../components/Navigation/MainNavigation';
 
 export const mockMainNavigationFields = {
   data: {
