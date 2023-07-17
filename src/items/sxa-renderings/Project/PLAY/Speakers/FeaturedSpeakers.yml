@@ -53,7 +53,7 @@ SharedFields:
     
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Project/Legacy/FeaturedSpeakers
+  Value: /sitecore/templates/Project/Global/FeaturedSpeakers
 - ID: "308e88f5-cd6e-4f8f-bafe-95a47dedefdc"
   Hint: Editable
   Value: 1

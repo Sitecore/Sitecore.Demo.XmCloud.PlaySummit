@@ -1,0 +1,13 @@
+﻿---
+ID: "9a5d3472-0a76-404d-b589-94d3301eba0c"
+Parent: "fb92c880-ac62-46d7-968e-f649cefcb3f5"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/PaymentProgress/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "798ef7bb-0ce4-4524-a1c9-c1415a98a9b5"

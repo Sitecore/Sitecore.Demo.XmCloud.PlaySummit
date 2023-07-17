@@ -1,0 +1,37 @@
+﻿---
+ID: "ba924357-8521-4cb6-9962-b0f2b5391844"
+Parent: "4b8f13a2-ef1a-4a41-857d-a2191fd7c1e7"
+Template: "4b8f13a2-ef1a-4a41-857d-a2191fd7c1e7"
+Path: /sitecore/templates/Project/Global/CMP Entities/News/__Standard Values
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: 
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Value: 1
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "5452a1d2-a7e3-421c-a6ee-dc69e58bf206"
+      Hint: Title
+      Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "adfd2429-03fe-48d2-a8ad-4a17b8eedd66"
+    - ID: "a186dea1-d336-4aa4-8448-fbdd419c31fe"
+      Hint: ImageTransformation
+      Value: postcard

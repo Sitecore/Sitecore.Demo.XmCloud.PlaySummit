@@ -1,0 +1,29 @@
+﻿---
+ID: "6db09cef-64a8-52a3-a980-38408109c4d7"
+Parent: "fec1fe1d-4d65-4554-b3cd-6899c57e3785"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Global/Webpage
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Apps/16x16/routes.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {B36BA9FD-0DC0-49C8-BEA2-E55D70E6AF28}
+    {47151711-26CA-434E-8132-D3E0B7D26683}
+    {6650FB34-7EA1-4245-A919-5CC0F002A6D7}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{2DE46343-6A33-58A9-8076-7B2AB5737737}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4298103c-a626-4068-b80d-b2a7a35042f0"

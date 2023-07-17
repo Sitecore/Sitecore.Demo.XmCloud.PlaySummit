@@ -1,0 +1,20 @@
+﻿---
+ID: "3e506d21-1b3b-433b-af8e-d8cc1613f620"
+Parent: "e7f1e849-cafa-4d5c-9c47-7d8045e552ac"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Global/Data/Site Configuration
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/gearwheel.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0b4c4ff5-3a2d-477d-8130-23dc4308a6c3"

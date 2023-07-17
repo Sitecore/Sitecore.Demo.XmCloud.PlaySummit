@@ -1,0 +1,20 @@
+﻿---
+ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+Parent: "1c6fc035-49cc-44c2-bb2b-cfea159e0028"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Global/Shared/Navigation Link/Navigation/Link
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: General Link
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5dc1fa86-8d22-4722-aabc-20d7bd6ab387"

@@ -1,0 +1,29 @@
+﻿---
+ID: "7681796b-a800-4fc1-b0b4-065f8baeabf9"
+Parent: "a06b2851-c98a-4622-8773-98736daadb13"
+Template: "a06b2851-c98a-4622-8773-98736daadb13"
+Path: /sitecore/templates/Project/Global/CMP Entities/Venue/__Standard Values
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: 
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a37d5036-537a-425c-814c-bc56dfad4655"
+    - ID: "c61b8113-e6e4-4d25-a768-85febbe750da"
+      Hint: ImageTransformation
+      Value: web
+    - ID: "fc3b2a6c-042b-421c-9c3d-88c83186ceb9"
+      Hint: Name
+      Value: $name

@@ -1,0 +1,13 @@
+﻿---
+ID: "1c6fc035-49cc-44c2-bb2b-cfea159e0028"
+Parent: "ce8e28f6-c530-4bd5-9ca5-00d7d42c26c0"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/Shared/Navigation Link/Navigation
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a1e30ea8-bdba-424e-aeb1-6394a8c54c47"
