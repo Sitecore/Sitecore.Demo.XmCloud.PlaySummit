@@ -1,0 +1,24 @@
+﻿---
+ID: "19f1ebbe-c3d4-4604-b2e1-f4ba784cbb98"
+Parent: "a731c78f-8e4f-55ab-9ba0-799b970eea45"
+Template: "6cd0bc83-418d-5a02-9c04-0ba14235cd8b"
+Path: /sitecore/content/PLAY/playwebsite/Data/TestimonyList/Demo Testimony List
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "329f8d46-2911-490d-95a8-1a6e5469b2d1"
+      Hint: Subtitle
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a4c362e5-0298-4c86-a04e-cd7bdda7edf4"
+    - ID: "aaf1aea1-154f-5889-950c-f023fcf9e76f"
+      Hint: Title
+      Value: Lorem Ipsum
+    - ID: "e252d6f9-7a34-4140-b184-bb8031be808c"
+      Hint: Companies
+      Value: |
+        {B4751F92-DC47-437F-B00E-DC2D636547D1}
+        {37743629-9CC3-407B-8420-5AAC71131606}

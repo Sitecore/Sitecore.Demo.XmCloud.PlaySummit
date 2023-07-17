@@ -1,0 +1,24 @@
+﻿---
+ID: "c8446991-a591-5b6f-8768-c19ed6223366"
+Parent: "b480e5fa-e4d0-4c4a-b42d-033e697680ed"
+Template: "52672eed-7aa7-4df1-93e1-c488bc2e0803"
+Path: /sitecore/content/PLAY/playwebsite/Data/ProductCategoriesGrid/Most Popular Product Categories Grid/swimming
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Swimming
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "26e44e63-d183-4c70-b50d-ad2358a9c1af"
+      Hint: Picture
+      Value: |
+        <image mediaid="{558299A6-89EA-4A42-8CFC-581E0669A04D}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "76f5d0c4-629e-47a4-8172-5ac51c3c913d"
+    - ID: "ceb0f7a3-e5e1-4e8c-a95a-8bff6f13708f"
+      Hint: Title
+      Value: Swimming

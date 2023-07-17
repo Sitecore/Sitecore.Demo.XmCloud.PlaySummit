@@ -1,0 +1,27 @@
+﻿---
+ID: "8f55d07e-5d04-4494-b423-29246a43c09a"
+Parent: "366efcc4-1af8-430d-8a0f-d85ffe8f793e"
+Template: "ccf76f8e-4780-450a-b330-69f8502b140f"
+Path: /sitecore/content/PLAY/playwebsite/Data/SummitFeature/Demo Summit Feature
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "48454055-754f-4b2f-87a3-b840e3eada73"
+      Hint: Description
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    - ID: "72ca6c7d-0588-4bea-b47d-6067bdd5a7e9"
+      Hint: Logo
+      Value: |
+        <image mediaid="{DF389E0C-6213-40BB-8DA4-F6959E6F05B9}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "638f07ff-d10b-4b62-b564-8b377c1857f5"
+    - ID: "c63db4c4-d678-45cd-9d0d-4994b571eb7d"
+      Hint: Link
+      Value: |
+        <link text="See all sponsors" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{66C99E47-7BBF-52D1-B1D7-4662B850744A}" />
+    - ID: "f395eb06-1e1d-4705-baba-b1f92a9aa780"
+      Hint: Title
+      Value: Logoipsum

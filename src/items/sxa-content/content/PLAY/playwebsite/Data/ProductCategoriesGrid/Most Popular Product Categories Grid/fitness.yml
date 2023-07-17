@@ -1,0 +1,24 @@
+﻿---
+ID: "5610bf76-a85d-5a4c-85d5-1adbebd4c2ab"
+Parent: "b480e5fa-e4d0-4c4a-b42d-033e697680ed"
+Template: "52672eed-7aa7-4df1-93e1-c488bc2e0803"
+Path: /sitecore/content/PLAY/playwebsite/Data/ProductCategoriesGrid/Most Popular Product Categories Grid/fitness
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Fitness
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "26e44e63-d183-4c70-b50d-ad2358a9c1af"
+      Hint: Picture
+      Value: |
+        <image mediaid="{11614320-51D5-46E2-A778-4F41AD466601}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6d3e5455-edcd-44c4-9af6-76628656a810"
+    - ID: "ceb0f7a3-e5e1-4e8c-a95a-8bff6f13708f"
+      Hint: Title
+      Value: Fitness

@@ -18,7 +18,7 @@ SharedFields:
   Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: /sitecore/content/PLAY/playwebsite/Data/Components/HeroImage
+  Value: /sitecore/content/PLAY/playwebsite/Data/HeroImage
 Languages:
 - Language: en
   Versions:
@@ -26,4 +26,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "17cccfaf-e0c0-4e83-868f-f5a92ea44bc1"
+      Value: "fc4bda7b-f401-4098-8df5-a6d68946b391"
