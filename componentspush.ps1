@@ -1,7 +1,7 @@
 ﻿Param(
     [string]$libraryId = "",
     [string]$apiKey = "",
-    [string]$endpoint = "https://components-api.sitecorecloud.io",
+    [string]$endpoint = "https://components.sitecorecloud.io/api",
     [string]$rootFolder = ".\src\components"
 )
 
@@ -33,6 +33,7 @@ foreach ($collection in $collections) {
 }
 
 # Styles
+Write-Host "Styles"
 $targetStyles = (Invoke-WebRequest -Uri "$endpoint/libraries/$libraryId/stylesheets" -Method Get -Headers $headers -UseBasicParsing -ContentType "application/json").Content | ConvertFrom-Json
 $stylesUrl = "$endpoint/libraries/$libraryId/stylesheets"
 $styles = Get-Content "$rootFolder\styles.json" | ConvertFrom-Json
