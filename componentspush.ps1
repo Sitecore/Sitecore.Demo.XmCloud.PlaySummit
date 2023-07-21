@@ -9,6 +9,13 @@ $headers = @{
     "x-api-key" = $apiKey
 }
 
+function Invoke-PostVersion ($libraryId, $collectionId, $componentId, $version) {
+    Write-Host "    Version: " $version.Name "(" $version.status ")"
+
+    $versionsUrl = "$endpoint/libraries/$libraryId/collections/$collectionId/components/$componentId/versions"
+    Invoke-WebRequest -Uri $versionsUrl -Method Post -Body ($version | ConvertTo-Json -depth 100) -Headers $headers -ContentType "application/json"
+}
+
 # Components
 $collections = Get-Content "$rootFolder\collections.json" | ConvertFrom-Json
 foreach ($collection in $collections) {
@@ -23,11 +30,26 @@ foreach ($collection in $collections) {
 
         $versions = Get-Content "$rootFolder\components\$($component.id).json" | ConvertFrom-Json
 
-        foreach ($version in $versions) {
-            Write-Host "    Version: " $version.Name "(" $version.status ")"
+        # We must create the versions in a specific order for the components to be published and available in Pages: saved, staged, published, draft
+        $savedVersions = $versions | Where-Object -Property status -EQ 'saved'
+        $stagedVersions = $versions | Where-Object -Property status -EQ 'staged'
+        $publishedVersions = $versions | Where-Object -Property status -EQ 'published'
+        $draftVersions = $versions | Where-Object -Property status -EQ 'draft'
 
-            $versionsUrl = "$endpoint/libraries/$libraryId/collections/$($collection.id)/components/$($component.id)/versions"
-            Invoke-WebRequest -Uri $versionsUrl -Method Post -Body ($version | ConvertTo-Json -depth 100) -Headers $headers -ContentType "application/json"
+        foreach ($version in $savedVersions) {
+            Invoke-PostVersion $libraryId $collection.id $component.id $version
+        }
+
+        foreach ($version in $stagedVersions) {
+            Invoke-PostVersion $libraryId $collection.id $component.id $version
+        }
+
+        foreach ($version in $publishedVersions) {
+            Invoke-PostVersion $libraryId $collection.id $component.id $version
+        }
+
+        foreach ($version in $draftVersions) {
+            Invoke-PostVersion $libraryId $collection.id $component.id $version
         }
     }
 }
