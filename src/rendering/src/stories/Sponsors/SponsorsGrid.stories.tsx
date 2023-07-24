@@ -47,7 +47,7 @@ export const Default = {
     },
     rendering: {
       componentName: 'SponsorsGrid',
-      dataSource: '/sitecore',
+      dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
     },
   },
 };

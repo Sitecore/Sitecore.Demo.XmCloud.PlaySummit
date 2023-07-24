@@ -13,9 +13,7 @@ import {
 } from '../../components/Speakers/SpeakerInformation';
 import { Default as Footer } from '../../components/Navigation/Footer';
 import { SESSIONS } from '../mock-sessions';
-import { mockComponentFactory, mockFooterProps, mockHeaderProps } from './PageStoriesCommon';
-import { SitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
-import { mockLayoutData } from '../../../.storybook/preview';
+import { mockFooterProps, mockHeaderProps } from './PageStoriesCommon';
 import { Default as SessionList, SessionListProps } from '../../components/Sessions/SessionList';
 
 export default {
@@ -61,7 +59,7 @@ const speakerInformationPageHeroProps = {
   },
   rendering: {
     componentName: 'Rendering',
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as unknown as SpeakerInformationPageHeroProps;
 
@@ -88,7 +86,7 @@ const sessionListProps = {
 
 const Template: StoryFn<typeof SpeakerInformationPageHero> = () => {
   return (
-    <SitecoreContext componentFactory={mockComponentFactory} layoutData={mockLayoutData}>
+    <>
       <header>
         <HeaderContent {...mockHeaderProps} />
       </header>
@@ -102,7 +100,7 @@ const Template: StoryFn<typeof SpeakerInformationPageHero> = () => {
       <footer>
         <Footer {...mockFooterProps} />
       </footer>
-    </SitecoreContext>
+    </>
   );
 };
 
