@@ -1,0 +1,24 @@
+﻿---
+ID: "c80af20e-c1cf-5c42-b221-8f5c7d50fb82"
+Parent: "b480e5fa-e4d0-4c4a-b42d-033e697680ed"
+Template: "52672eed-7aa7-4df1-93e1-c488bc2e0803"
+Path: /sitecore/content/PLAY/playwebsite/Data/ProductCategoriesGrid/Most Popular Product Categories Grid/hiking
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Hiking
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "26e44e63-d183-4c70-b50d-ad2358a9c1af"
+      Hint: Picture
+      Value: |
+        <image mediaid="{F94990A4-AE43-46DF-9CF7-DBC6BA46E463}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "de2ae9c2-38c3-43e9-ac37-2586cd8555c2"
+    - ID: "ceb0f7a3-e5e1-4e8c-a95a-8bff6f13708f"
+      Hint: Title
+      Value: Hiking

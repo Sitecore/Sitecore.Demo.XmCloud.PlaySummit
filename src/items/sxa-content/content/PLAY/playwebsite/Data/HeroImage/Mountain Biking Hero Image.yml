@@ -1,0 +1,17 @@
+﻿---
+ID: "64d1c128-a38e-525e-a993-2431de26a39e"
+Parent: "b7d6ed42-28d2-505e-9b85-a27c6cd7bdea"
+Template: "3ee5e476-e843-51f1-a351-d2c3b198475a"
+Path: /sitecore/content/PLAY/playwebsite/Data/HeroImage/Mountain Biking Hero Image
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7f1d47cf-4525-5f3e-b8fe-4c6ddbcefa39"
+      Hint: hero
+      Value: |
+        <image mediaid="{16BD098F-8441-43C9-A08F-3E2251D0F18E}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f8b059eb-448f-44aa-8148-f87d1293dbdc"

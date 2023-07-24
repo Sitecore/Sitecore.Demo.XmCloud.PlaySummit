@@ -1,0 +1,13 @@
+﻿---
+ID: "309534c2-7618-4f20-a3f3-b188a845ab92"
+Parent: "fdf43aad-c5d1-54e4-9909-59bfddc86689"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/FeaturedSpeakers/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "272d5a3d-065e-4dfe-a6d2-ad61e70c4cdc"

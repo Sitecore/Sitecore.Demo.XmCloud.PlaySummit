@@ -1,0 +1,20 @@
+﻿---
+ID: "4c78caae-d4c9-4ad7-a90f-ea6a594eb965"
+Parent: "1c5fe58a-0bb1-45af-a6eb-b88ccecb57e6"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/CMP Entities/Speaker Type/Data
+SharedFields:
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "59ab5c55-c649-432e-bdf0-ef1ff16629e7"

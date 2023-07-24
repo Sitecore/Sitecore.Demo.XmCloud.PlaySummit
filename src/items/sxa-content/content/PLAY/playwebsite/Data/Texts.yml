@@ -6,7 +6,7 @@ Path: /sitecore/content/PLAY/playwebsite/Data/Texts
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 700
+  Value: 600
 Languages:
 - Language: en
   Versions:
@@ -14,4 +14,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ff97b8ed-64d0-45f1-9123-b63c78a93b5d"
+      Value: "3ec83621-6144-4a80-9b8b-fdc973041e39"

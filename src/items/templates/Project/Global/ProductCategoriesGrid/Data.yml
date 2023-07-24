@@ -1,0 +1,13 @@
+﻿---
+ID: "4956b208-0319-57b1-ba2b-6ed4a8ae7757"
+Parent: "7dfc82e1-f7a7-5853-9760-59c812f25776"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/ProductCategoriesGrid/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cb02b02a-5201-4e12-8096-892ce95c0907"

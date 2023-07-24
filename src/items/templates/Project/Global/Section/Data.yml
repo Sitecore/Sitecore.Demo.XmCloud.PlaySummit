@@ -1,0 +1,13 @@
+﻿---
+ID: "0507f25d-e494-5967-8000-73849de0fcdb"
+Parent: "1f476f1c-822a-5a88-8f7e-2431b77d1b70"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/Section/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f9a220d8-682a-4418-b423-029519999b1d"

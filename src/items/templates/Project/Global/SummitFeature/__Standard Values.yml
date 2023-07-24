@@ -1,0 +1,13 @@
+﻿---
+ID: "41307bc2-6c8d-4e28-8a72-b7a062bd3073"
+Parent: "ccf76f8e-4780-450a-b330-69f8502b140f"
+Template: "ccf76f8e-4780-450a-b330-69f8502b140f"
+Path: /sitecore/templates/Project/Global/SummitFeature/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c562d9e5-3c91-4a6d-a7f1-8f90ee75e11b"

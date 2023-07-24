@@ -1,0 +1,24 @@
+﻿---
+ID: "61905c18-2a13-52cc-a07d-06311679fb9d"
+Parent: "b480e5fa-e4d0-4c4a-b42d-033e697680ed"
+Template: "52672eed-7aa7-4df1-93e1-c488bc2e0803"
+Path: /sitecore/content/PLAY/playwebsite/Data/ProductCategoriesGrid/Most Popular Product Categories Grid/teamsports
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Team Sports
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "26e44e63-d183-4c70-b50d-ad2358a9c1af"
+      Hint: Picture
+      Value: |
+        <image mediaid="{C9213530-B6B3-41C8-ADD5-8184F6C2C25B}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e9e55724-ea4f-45ac-91e1-a37e23b38b5a"
+    - ID: "ceb0f7a3-e5e1-4e8c-a95a-8bff6f13708f"
+      Hint: Title
+      Value: Team Sports

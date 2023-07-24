@@ -1,0 +1,13 @@
+﻿---
+ID: "c9b3f585-fe76-5310-819f-c8ea308401db"
+Parent: "32607765-7441-5a23-a7f6-b8f0b9994c44"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/SelectedSponsorsGrid/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3c2aa785-8dac-4cef-85fc-c533aa14ff6c"

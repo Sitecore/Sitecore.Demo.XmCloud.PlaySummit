@@ -1,0 +1,13 @@
+﻿---
+ID: "dc6543fb-f949-5e5b-b461-2c7ffb16e67b"
+Parent: "7ff7c2d7-f5e1-57f1-a3f3-812418ac08aa"
+Template: "7ff7c2d7-f5e1-57f1-a3f3-812418ac08aa"
+Path: /sitecore/templates/Project/Global/ThreeColumnCta/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "986dd121-c1c0-41b0-9bc0-e3555c170b00"

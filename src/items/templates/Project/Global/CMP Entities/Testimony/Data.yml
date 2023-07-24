@@ -1,0 +1,17 @@
+﻿---
+ID: "287c6458-3de0-4a62-99ed-b0469b13806e"
+Parent: "905b44f3-db0d-4050-a738-1ece2ebb8509"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/CMP Entities/Testimony/Data
+SharedFields:
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "62bc0ed8-1706-4955-814d-6754d37423de"

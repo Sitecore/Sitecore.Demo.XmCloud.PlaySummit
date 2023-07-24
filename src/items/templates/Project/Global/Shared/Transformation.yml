@@ -1,0 +1,17 @@
+﻿---
+ID: "4d03ed76-4de7-4f96-9e65-6426e4421a45"
+Parent: "316fafd3-7971-44d2-b833-d1ed729748e3"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Global/Shared/Transformation
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "008ebfe3-f7a2-4681-a461-fb8a0c092edf"

@@ -1,0 +1,17 @@
+﻿---
+ID: "ab4198b5-0ef0-45b0-b9fa-1a48ba2b2cf9"
+Parent: "0bc9237d-12eb-47a5-afed-a65188324358"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/CMP Entities/Timeslot/Data
+SharedFields:
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1c7d37c7-f1fa-4b44-9eaa-2414d8a82625"
