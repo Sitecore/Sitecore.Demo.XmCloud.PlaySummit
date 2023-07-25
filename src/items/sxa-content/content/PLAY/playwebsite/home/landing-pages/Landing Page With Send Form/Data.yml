@@ -1,0 +1,18 @@
+﻿---
+ID: "99a03081-c163-4851-ba89-0ed08cda2a71"
+Parent: "998e60a4-8a17-4246-a606-5d6800395526"
+Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Landing Page With Send Form/Data"
+BranchID: "c21cb9f5-9d4c-4904-b199-538835128fa3"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{FE83D907-A6C3-4A8B-9FA0-76B9F44262D2}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9a75819a-972d-4238-b04c-59493412eba9"
