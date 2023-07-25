@@ -12,7 +12,7 @@ SharedFields:
   Value: "edgeicons/32x32/form-embeded.png"
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Project/Legacy/EmbedSendForm
+  Value: /sitecore/templates/Project/Global/EmbedSendForm
 - ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
   Hint: Open Properties after Add
   Value: 
@@ -29,4 +29,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3d3ddaf6-4143-41e7-9c75-8df4ea9d02d2"
+      Value: "e25c466a-83e0-4dfc-9c60-06cfd766d8a6"
