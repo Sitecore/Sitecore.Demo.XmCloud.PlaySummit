@@ -1,5 +1,5 @@
 import * as FEAAS from '@sitecore-feaas/clientside/react';
-import LinkedComponents from '../components/BYOCC/index';
+import LinkedComponents from '../components/BYOCC/LinkedComponents';
 
 export default async function ExternalComponents({
   searchParams,
