@@ -1,0 +1,13 @@
+﻿---
+ID: "e7a0dba2-060b-53f3-81a3-3237baf30b86"
+Parent: "3ee5e476-e843-51f1-a351-d2c3b198475a"
+Template: "3ee5e476-e843-51f1-a351-d2c3b198475a"
+Path: /sitecore/templates/Project/Global/HeroImage/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "45f6a0ec-f0e4-469f-bc77-7eac906affff"

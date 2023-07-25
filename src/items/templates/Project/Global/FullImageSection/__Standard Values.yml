@@ -1,0 +1,13 @@
+﻿---
+ID: "602c4dc5-5c4e-5e25-afa1-6df5b5359304"
+Parent: "5954b01b-2adb-53d6-85ee-e8408d2cc2a4"
+Template: "5954b01b-2adb-53d6-85ee-e8408d2cc2a4"
+Path: /sitecore/templates/Project/Global/FullImageSection/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3ee0d709-d8f7-4e40-b27d-43d6302922ab"

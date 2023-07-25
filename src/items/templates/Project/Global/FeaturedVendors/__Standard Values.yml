@@ -1,0 +1,13 @@
+﻿---
+ID: "07512148-5867-57fb-8599-6eab00feaadf"
+Parent: "b6cd17f1-c851-5816-be10-9c09488f7704"
+Template: "b6cd17f1-c851-5816-be10-9c09488f7704"
+Path: /sitecore/templates/Project/Global/FeaturedVendors/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "95419c42-68a9-4f8a-8be4-83d1b3412caf"

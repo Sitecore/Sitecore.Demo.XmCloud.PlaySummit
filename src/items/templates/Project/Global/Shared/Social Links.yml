@@ -1,0 +1,13 @@
+﻿---
+ID: "39442d44-9f0f-426b-ab2a-4f6ced73dd73"
+Parent: "316fafd3-7971-44d2-b833-d1ed729748e3"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Global/Shared/Social Links
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ab906829-a44f-4fe4-8034-0d71f94d649e"

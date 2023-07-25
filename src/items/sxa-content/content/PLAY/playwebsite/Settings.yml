@@ -87,4 +87,11 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "62806130-81f9-4fc6-b898-417109199dd9"
+      Value: "21b5d63b-5bdb-44b8-bbfa-fbdbb7160b37"
+    - ID: "9ce73b35-34d3-49dc-bd5a-ce1e8267fda9"
+      Hint: ComponentDataSourceTemplates
+      Value: |
+        {819C5F1D-58E0-432F-BD5A-A523BA8AEBCE}
+        {3B884B30-54C1-464C-AADD-F8BD94E7C38E}
+        {D8AA73E1-C275-4EEE-BB9D-333925E51952}
+        {DFED4457-D760-457A-BEC1-C0DCCDC44381}

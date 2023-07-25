@@ -1,5 +1,4 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
+import { Meta } from '@storybook/react';
 
 import { Default as FullImageCTASection } from '../../components/PageContent/FullImageCTASection';
 
@@ -8,16 +7,27 @@ export default {
   component: FullImageCTASection,
 } as Meta<typeof FullImageCTASection>;
 
-const Template: StoryFn<typeof FullImageCTASection> = () => (
-  <FullImageCTASection rendering={{ componentName: '' }} params={{}} />
-);
-
 export const Default = {
-  render: Template,
-
   args: {
     params: {
       name: 'FullImageCTASection',
+    },
+    fields: {
+      callToActionLink: {
+        value: {
+          href: '/map',
+          text: 'View map',
+        },
+      },
+      backgroundImage: {
+        value: {
+          src: '/assets/img/page-content/play-venue-map.webp',
+        },
+      },
+    },
+    rendering: {
+      componentName: 'Rendering',
+      dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
     },
   },
 };

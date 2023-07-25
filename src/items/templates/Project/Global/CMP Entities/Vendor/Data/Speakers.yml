@@ -1,0 +1,23 @@
+﻿---
+ID: "3c5bc1cb-ad72-444f-bd6f-a9a09b6bc7bb"
+Parent: "3715f124-6d1e-4ad0-9b80-0e905fabd66e"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Global/CMP Entities/Vendor/Data/Speakers
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value:  /sitecore/content/PLAY/playwebsite/home/speakers
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: CmpMultiList
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 900
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "54005e2b-770b-431e-b589-7434dc12a42e"

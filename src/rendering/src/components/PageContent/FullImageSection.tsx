@@ -1,5 +1,7 @@
 import {
   Field,
+  Image,
+  ImageField,
   Link,
   LinkField,
   RichText,
@@ -14,6 +16,7 @@ type FullImageSectionProps = ComponentProps & {
     subtitle: Field<string>;
     content: Field<string>;
     callToActionLink: LinkField;
+    backgroundImage: ImageField;
   };
 };
 
@@ -26,6 +29,7 @@ const FullImageSection = ({ fields, params }: FullImageSectionProps): JSX.Elemen
 
   return (
     <section className={`section full-image-section ${sxaStyles}`}>
+      <Image field={fields.backgroundImage} alt={fields.title} loading="lazy" />
       <div className="section-content full-image-section-content container">
         <div className="content-card">
           <Text tag="h5" field={fields.subtitle} />

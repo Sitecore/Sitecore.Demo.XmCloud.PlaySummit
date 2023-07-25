@@ -1,0 +1,27 @@
+﻿---
+ID: "214b0b3d-dacf-467e-be2f-78aa60827854"
+Parent: "9b4f39e9-4741-5a10-a976-b402f6a4d67d"
+Template: "22bf2a41-d79e-5e64-9497-6e52752f85dd"
+Path: /sitecore/content/PLAY/playwebsite/Data/HeaderBanner/News Header Banner
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e7f57b76-6fa5-45b8-a4f4-1e6ec9b09598"
+    - ID: "c9069b9e-8ffb-564d-8f08-5b3ab1a6c14f"
+      Hint: title
+      Value: news
+    - ID: "f6156be8-e8d4-5d94-8118-22f7a7540f69"
+      Hint: backgroundImage
+      Value: |
+        <image mediaid="{528A9F67-4C62-4E1A-BFEE-82EB119D99FC}" />

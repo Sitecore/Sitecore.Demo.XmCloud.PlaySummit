@@ -38,7 +38,7 @@ SharedFields:
           p:after="r[@uid='{2FA4F61D-E97D-5CEB-948D-990E49B61C3D}']"
           s:ds="{5E80F4BE-2CDE-454A-9DE0-F062A1490F65}"
           s:id="{118A1550-728A-5324-8DF3-9AF7D252E89B}"
-          s:par="CacheClearingBehavior=Clear%20on%20publish"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1/jss-section-content-{2FA4F61D-E97D-5CEB-948D-990E49B61C3D}-0" />
         <r
           uid="{D67366CF-9958-52E7-A9B1-7C38A02E06EE}"
@@ -53,7 +53,7 @@ SharedFields:
           s:rname="FullImageSection"
           s:ds="{3FDC9247-F940-5DE3-BB56-9242835DD87B}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par="FieldNames&amp;Styles=%7B3BC9EBFD-3ACD-4994-8D61-0BFEF358A70E%7D%7C%7B0CE71288-8AEB-4160-A418-3227CDC2402B%7D&amp;RenderingIdentifier"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles=%7b3BC9EBFD-3ACD-4994-8D61-0BFEF358A70E%7d&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1"
           s:ccb="Clear on publish" />
         <r

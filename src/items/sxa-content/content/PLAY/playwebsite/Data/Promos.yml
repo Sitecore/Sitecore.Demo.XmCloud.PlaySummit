@@ -6,7 +6,7 @@ Path: /sitecore/content/PLAY/playwebsite/Data/Promos
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 600
+  Value: 500
 Languages:
 - Language: en
   Versions:
@@ -14,4 +14,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0b224110-f739-489b-b47d-ac331cc82ddd"
+      Value: "6073ad8b-a248-46ec-beab-d1b6c56b5b56"

@@ -1,0 +1,23 @@
+﻿---
+ID: "9029e39b-fb7c-481c-9403-4ea69dfc1ac2"
+Parent: "f4daca50-849d-463a-a3ab-7e384c028128"
+Template: "f4daca50-849d-463a-a3ab-7e384c028128"
+Path: /sitecore/templates/Project/Global/CMP Entities/Level/__Standard Values
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: 
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "15978465-ff04-4188-b26a-e4845be3c6aa"

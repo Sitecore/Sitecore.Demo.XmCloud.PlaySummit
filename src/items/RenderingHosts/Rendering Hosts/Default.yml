@@ -11,6 +11,13 @@ SharedFields:
   Hint: ServerSideRenderingEngineEndpointUrl
   Value: "http://rendering:3000/api/editing/render"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7acdecf2-3f1b-4220-b490-1f9cac301d2b"
 - Language: en
   Versions:
   - Version: 1
@@ -18,3 +25,17 @@ Languages:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
       Value: "e71149ac-8b3a-45b3-a29d-5e3e984410cf"
+- Language: "ja-JP"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b4ed1215-38a6-47a9-a535-180b825fbad5"
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "27382834-950f-4644-a551-83408b7ea866"

@@ -1,0 +1,13 @@
+﻿---
+ID: "3d889e52-5aca-42df-ac13-2f228d09800f"
+Parent: "0a2133c4-63ef-4464-a6d1-e8fe63fc1231"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/FullImageCTASection/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "93ec76a9-4d5d-4676-96ce-0804590f02b1"

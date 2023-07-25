@@ -1,0 +1,17 @@
+﻿---
+ID: "225b4139-64bb-4c80-b057-9de9a159c75e"
+Parent: "44262889-315a-4f8d-8fb5-243d793fd54a"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/CMP Entities/Advertisement/Data
+SharedFields:
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3b6c8188-27a0-4d05-abda-97d9e4215a4c"

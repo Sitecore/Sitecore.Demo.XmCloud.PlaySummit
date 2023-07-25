@@ -1,0 +1,13 @@
+﻿---
+ID: "84bc675b-55ea-5afb-bb03-aeaeee28544b"
+Parent: "6cd0bc83-418d-5a02-9c04-0ba14235cd8b"
+Template: "6cd0bc83-418d-5a02-9c04-0ba14235cd8b"
+Path: /sitecore/templates/Project/Global/TestimonyList/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "62be8bbe-d62d-4940-95fb-3d9b1b967580"

@@ -1,0 +1,17 @@
+﻿---
+ID: "a53eeb3c-5b14-4585-9418-a1b7b57d0fda"
+Parent: "39442d44-9f0f-426b-ab2a-4f6ced73dd73"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/Shared/Social Links/Social
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "39933374-70a6-4205-aafd-2672d77b3f4c"

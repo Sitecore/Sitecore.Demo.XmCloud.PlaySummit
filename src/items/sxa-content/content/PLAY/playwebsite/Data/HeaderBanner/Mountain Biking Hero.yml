@@ -1,0 +1,27 @@
+﻿---
+ID: "ba4dbf52-149c-4a1c-81b2-ea5b022add09"
+Parent: "9b4f39e9-4741-5a10-a976-b402f6a4d67d"
+Template: "22bf2a41-d79e-5e64-9497-6e52752f85dd"
+Path: /sitecore/content/PLAY/playwebsite/Data/HeaderBanner/Mountain Biking Hero
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-50"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3775e7aa-4520-4bc3-a6d6-2ad1c98c531f"
+    - ID: "c9069b9e-8ffb-564d-8f08-5b3ab1a6c14f"
+      Hint: title
+      Value: Meet all our awesome guests
+    - ID: "e85a8061-ab10-54ce-b74a-6a9d2e71b554"
+      Hint: subtitle
+      Value: "from all around the world!"
+    - ID: "f6156be8-e8d4-5d94-8118-22f7a7540f69"
+      Hint: backgroundImage
+      Value: |
+        <image mediaid="{16BD098F-8441-43C9-A08F-3E2251D0F18E}" />

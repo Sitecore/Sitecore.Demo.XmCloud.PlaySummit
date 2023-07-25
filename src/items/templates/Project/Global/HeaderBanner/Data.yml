@@ -1,0 +1,13 @@
+﻿---
+ID: "aec34cb4-b0ed-5901-9c29-a92fdf5e774f"
+Parent: "22bf2a41-d79e-5e64-9497-6e52752f85dd"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/HeaderBanner/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dc88564f-2346-4dd5-88bb-af49c2356ea6"

@@ -41,7 +41,7 @@ export const WithLargerImage = {
     qualificative: 'Featured',
     rendering: {
       componentName: 'Rendering',
-      dataSource: '/sitecore',
+      dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
     },
   },
 };
@@ -77,7 +77,7 @@ export const WithSmallerImage = {
     qualificative: 'Featured',
     rendering: {
       componentName: 'Rendering',
-      dataSource: '/sitecore',
+      dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
     },
   },
 };
@@ -101,7 +101,7 @@ export const WithoutSocialIcons = {
     qualificative: 'Featured',
     rendering: {
       componentName: 'Rendering',
-      dataSource: '/sitecore',
+      dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
     },
   },
 };
@@ -329,7 +329,7 @@ export const WithoutInformations = {
     qualificative: '',
     rendering: {
       componentName: 'Rendering',
-      dataSource: '/sitecore',
+      dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
     },
   },
 };
@@ -366,7 +366,7 @@ export const WithEmptyInformations = {
     informations: <></>,
     rendering: {
       componentName: 'Rendering',
-      dataSource: '/sitecore',
+      dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
     },
   },
 };
@@ -415,7 +415,7 @@ export const WithInformations = {
     ),
     rendering: {
       componentName: 'Rendering',
-      dataSource: '/sitecore',
+      dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
     },
   },
 };

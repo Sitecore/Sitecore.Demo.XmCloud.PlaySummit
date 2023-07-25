@@ -37,7 +37,7 @@ export const WithoutSessions = {
     },
     rendering: {
       componentName: 'Rendering',
-      dataSource: '/sitecore',
+      dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
     },
   },
 };

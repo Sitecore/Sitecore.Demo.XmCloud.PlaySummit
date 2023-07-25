@@ -1,0 +1,68 @@
+﻿---
+ID: "7f290216-4b34-4c3b-a5ee-b1a8f4a68039"
+Parent: "d8aa73e1-c275-4eee-bb9d-333925e51952"
+Template: "d8aa73e1-c275-4eee-bb9d-333925e51952"
+Path: /sitecore/templates/Project/Global/CMP Entities/Session/__Standard Values
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: 
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Value: 1
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "025df6a5-2001-449f-8f76-02be5353905c"
+      Hint: Audience
+      Value: "{D7E74E60-9708-48B2-9D37-C34D165BEC43}"
+    - ID: "1fae2494-f83e-4b6b-bd34-d1c42304211f"
+      Hint: Vendors
+      Value: "{5EE51C40-8986-44C0-B44A-D030D4482A43}"
+    - ID: "2063a900-230c-4172-ba19-c00992f363f7"
+      Hint: ImageTransformation
+      Value: web
+    - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
+      Hint: Description
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed tortor laoreet, scelerisque metus sit amet, vehicula ipsum. In vulputate semper dui. Aliquam pretium a risus eget bibendum. Aliquam feugiat nibh quis nibh sollicitudin, vel sagittis quam sagittis. Quisque quis ornare arcu, id convallis lacus. In vel mauris libero. Nunc eget mauris nec lorem fermentum commodo. Nullam sed enim tristique, convallis mi at, ornare odio. In hac habitasse platea dictumst. Mauris sollicitudin dignissim condimentum. Vestibulum rhoncus dui ut diam laoreet, quis bibendum ante mollis. Cras aliquam velit in sollicitudin porttitor. Sed quis velit vitae nisl ullamcorper maximus.
+    - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
+      Hint: Speakers
+      Value: "{5F107763-694B-4E24-B7C7-308180ABABAD}"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "4b2d1962-60eb-4cd1-b8e9-a2c2762ec04c"
+      Hint: Image
+      Value: |
+        <image mediaid="{09085896-2355-53E8-8F71-BB9761E60380}" />
+    - ID: "51084853-806c-4e3d-90a3-0eaec3faa3ac"
+      Hint: Day
+      Value: "{A9D94EEC-ED13-45CD-A103-F8860781E38E}"
+    - ID: "5c88d198-7603-4a45-b9f6-682b908c60b9"
+      Hint: Timeslots
+      Value: "{96BCF8A2-CE4D-4FD5-8B4C-0BEA35F16134}"
+    - ID: "6f888071-3e3a-4888-ae95-d90b7df06870"
+      Hint: Type
+      Value: Session
+    - ID: "8058e5a0-d20d-4923-b87d-f56b19efc20f"
+      Hint: Name
+      Value: $name
+    - ID: "8c3dff8b-74bc-4a65-af6d-81452a3d9a11"
+      Hint: Rooms
+      Value: "{A5673B41-FABE-450B-9037-14132FA734DA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "33a5deb5-0141-4438-9e94-776811136bfe"
+    - ID: "cb19a833-48b8-4ad4-a841-09769bbef5c6"
+      Hint: Sponsors
+      Value: "{5319CA3C-CD21-4D68-A68A-1EAF4D34F63D}"
