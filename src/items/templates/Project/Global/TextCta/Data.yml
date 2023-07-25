@@ -1,0 +1,13 @@
+﻿---
+ID: "b0f9c377-495d-5a7c-a1ec-b1e82953e0bf"
+Parent: "05178a6e-4135-58f1-8755-3bdf8f857872"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/TextCta/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a8289a45-eb20-4517-9069-be4a61663ae3"

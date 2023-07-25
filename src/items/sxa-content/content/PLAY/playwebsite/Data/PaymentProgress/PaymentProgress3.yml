@@ -1,0 +1,16 @@
+﻿---
+ID: "90dc024a-fc95-4d98-beb7-744039e3cda0"
+Parent: "2b2bfd63-9514-4f04-87b5-9d6508eebc8e"
+Template: "fb92c880-ac62-46d7-968e-f649cefcb3f5"
+Path: /sitecore/content/PLAY/playwebsite/Data/PaymentProgress/PaymentProgress3
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "31a68f15-b503-4168-946f-8e7f1b9bab60"
+      Hint: ActiveStep
+      Value: 3
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "76869547-a804-422f-af44-2d2ad5d4682b"

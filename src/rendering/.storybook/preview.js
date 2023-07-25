@@ -1,5 +1,6 @@
 import React from 'react';
-import { SitecoreContextReactContext, LayoutServicePageState } from '@sitecore-jss/sitecore-jss-nextjs';
+import { SitecoreContext, LayoutServicePageState } from '@sitecore-jss/sitecore-jss-nextjs';
+import { componentBuilder } from '../src/temp/componentBuilder';
 import "../src/assets/css/abstracts/mixins.css";
 import "../src/assets/css/main.css";
 
@@ -54,14 +55,19 @@ export const mockLayoutData = {
     setContext: () => {
       // nothing
     },
-    route: null,
+    route: {
+      itemId: null,
+    },
   },
 };
 
 export const decorators = [
   (Story) => (
-    <SitecoreContextReactContext.Provider value={mockLayoutData.sitecore}>
+    <SitecoreContext
+      componentFactory={componentBuilder.getComponentFactory({ isEditing: mockLayoutData.sitecore.context.pageEditing })}
+      layoutData={mockLayoutData}
+    >
       <Story />
-    </SitecoreContextReactContext.Provider>
+    </SitecoreContext>
   ),
 ];

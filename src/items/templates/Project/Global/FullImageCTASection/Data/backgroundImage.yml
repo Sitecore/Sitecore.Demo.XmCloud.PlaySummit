@@ -1,0 +1,20 @@
+﻿---
+ID: "d73a3363-eaeb-4abb-bf7e-c649691f436f"
+Parent: "3d889e52-5aca-42df-ac13-2f228d09800f"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Global/FullImageCTASection/Data/backgroundImage
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Image
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 700
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2b109ffc-c74c-4835-a847-eaa5fe19e28f"

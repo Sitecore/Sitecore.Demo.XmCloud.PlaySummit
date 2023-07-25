@@ -1,0 +1,17 @@
+﻿---
+ID: "8a4f2f36-0edd-49cf-8f97-20af63310861"
+Parent: "ac3d649a-610a-4f10-be28-78efa6d80e0e"
+Template: "ac3d649a-610a-4f10-be28-78efa6d80e0e"
+Path: /sitecore/templates/Project/Global/Shared/Navigation Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{CE8E28F6-C530-4BD5-9CA5-00D7D42C26C0}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7e6eaeda-c247-4869-8667-35bc83ab545b"

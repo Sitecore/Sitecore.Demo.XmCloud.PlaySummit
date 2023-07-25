@@ -1,0 +1,17 @@
+﻿---
+ID: "956239e4-4a33-4073-892d-7d7e3430a021"
+Parent: "5563f719-eb55-43fd-a280-fcd13267d926"
+Template: "76d550fa-6541-4c83-9f39-7b7e5b4cba62"
+Path: /sitecore/content/PLAY/playwebsite/Data/HeroSectionCta/Demo Hero Section CTA
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "02110427-7e12-40a8-9fee-9d79b24cf1ec"
+      Hint: Link
+      Value: |
+        <link text="Book now" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{A7BDFBDA-D5CC-5388-A039-F262BC768721}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "28ba00aa-0173-40ce-ac82-0aca44282742"

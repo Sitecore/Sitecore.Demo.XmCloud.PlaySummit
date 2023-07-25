@@ -1,0 +1,20 @@
+﻿---
+ID: "d410c57e-fdc1-43f4-b028-8b313217b6f9"
+Parent: "f6cae817-0556-4a22-a345-53fa6671bbaa"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Global/CMP Entities/Speaker/Detail/JobTitle
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b39e999e-e856-402d-8565-6e92e0189d0f"

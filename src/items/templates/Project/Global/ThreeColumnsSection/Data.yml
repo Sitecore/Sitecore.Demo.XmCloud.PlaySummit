@@ -1,0 +1,13 @@
+﻿---
+ID: "25ffa435-e418-5040-8fcd-5020df5c4ff2"
+Parent: "675a1839-6fe8-59a6-a1e4-6ccbdbf2e966"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/ThreeColumnsSection/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2b4b833d-b286-4bb5-87e4-517b13c4056a"

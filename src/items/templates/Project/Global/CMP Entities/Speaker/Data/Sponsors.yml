@@ -1,0 +1,23 @@
+﻿---
+ID: "2256955c-26ab-41b5-8e7a-fc504ea1a307"
+Parent: "efbac9b0-5354-45ab-9bc4-cb42591cd08f"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Global/CMP Entities/Speaker/Data/Sponsors
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: /sitecore/content/PLAY/playwebsite/home/sponsors
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: CmpMultiList
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3cd0d2a8-243c-4e1a-a042-43574c127fc9"
