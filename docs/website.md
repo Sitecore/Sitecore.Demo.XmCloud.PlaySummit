@@ -27,6 +27,7 @@ This repository contains:
   - `\Foundation\BranchPresets`: .Net project to enable branch presets in Sitecore.
   - `\icons`: Icons used by the Sitecore renderings.
   - `\items`: Serialized items using Sitecore Content Serialization (SCS).
+  - `\components`: Serialized Sitecore Components components, styles and datasources.
   - `\platform`: .Net project with Sitecore configuration, pipeline processors, custom fields, and utility pages.
   - `\rendering`: Sitecore JSS Next.js project connected to the Docker CM using the XM Edge GraphQL development endpoint.
 
@@ -49,6 +50,24 @@ The `\items` folder contains serialized Sitecore content items for this demo. Th
 - `Roles.module.json` contains a custom demo Sitecore roles.
 
 See [Sitecore Content Serialization documentation](https://doc.sitecore.com/xp/en/developers/103/developer-tools/sitecore-content-serialization.html) for more information.
+
+### Serialized Sitecore Components
+
+The `\components` folder contains serialized Sitecore Components components, styles and datasources. The scripts that take care of the serialization are located at the root of the project.
+
+To push the serialized assets to your Sitecore Components library, use the following command:
+
+```ps1
+.\componentspush.ps1 -libraryId your_library_id -apiKey your_api_key
+```
+
+To serialize any new changes to the repo use the following command:
+
+```ps1
+.\componentspull.ps1 -libraryId your_library_id -apiKey your_api_key
+```
+
+You can find your library ID and API key by going to your Sitecore Components library Settings tab. Your library ID is located in the url between `/libraries/` and `/settings`. Your API key is in a section of the page called "Your component library API key".
 
 ### Sitecore Platform Project
 
@@ -171,7 +190,7 @@ To add new icons to the EdgeIcons pack download your selected icons in a `.png` 
 
 #### Generating the ZIP file
 
-In order to be able to use the icons as rendering icons they need to be in a `.zip` format with the following structure: `EdgeIcons.zip\EdgeIcons\[size]x[size]`. To create a zip file right-click the EdgeIcons folder and select *Send to > Compressed (zipped) folder*.
+In order to be able to use the icons as rendering icons they need to be in a `.zip` format with the following structure: `EdgeIcons.zip\EdgeIcons\[size]x[size]`. To create a zip file right-click the EdgeIcons folder and select _Send to > Compressed (zipped) folder_.
 
 #### Quick Deploy and Test Icons
 
@@ -207,7 +226,7 @@ The content of the project is mapped to the Rendering container using a Docker v
 
 #### Debugging the Rendering Next.js Project
 
-Debugging of the Next.js application is possible by using the `start:connected` or `start` scripts (they do the same thing) from the Next.js `package.json`, and the pre-configured *Attach to Process* VS Code launch configuration.
+Debugging of the Next.js application is possible by using the `start:connected` or `start` scripts (they do the same thing) from the Next.js `package.json`, and the pre-configured _Attach to Process_ VS Code launch configuration.
 
 #### Building the Rendering Next.js Project Locally
 
