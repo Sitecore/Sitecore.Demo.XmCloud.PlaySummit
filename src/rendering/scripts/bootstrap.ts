@@ -16,9 +16,9 @@ import './generate-plugins';
 import './generate-config';
 
 /*
-  COMPONENT FACTORY GENERATION
+  COMPONENT BUILDER GENERATION
 */
-import './generate-component-factory';
+import './generate-component-builder';
 
 /*
   DEMO TEAM CUSTOMIZATION

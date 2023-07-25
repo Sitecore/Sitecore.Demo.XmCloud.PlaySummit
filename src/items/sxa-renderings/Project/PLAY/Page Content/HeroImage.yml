@@ -12,13 +12,13 @@ SharedFields:
   Value: "edgeicons/32x32/hero-image.png"
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Project/PLAY/Legacy/HeroImage
+  Value: /sitecore/templates/Project/Global/HeroImage
 - ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
   Hint: Parameters Template
   Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: ./Page Components|/sitecore/content/PLAY/playwebsite/Data/Components/HeroImage
+  Value: /sitecore/content/PLAY/playwebsite/Data/HeroImage
 Languages:
 - Language: en
   Versions:
@@ -26,4 +26,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "fab8f318-eccb-47e4-9657-9f256fee76ed"
+      Value: "fc4bda7b-f401-4098-8df5-a6d68946b391"

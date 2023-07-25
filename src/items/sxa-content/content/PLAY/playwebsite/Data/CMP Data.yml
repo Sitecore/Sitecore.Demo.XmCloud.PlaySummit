@@ -9,7 +9,7 @@ SharedFields:
   Value: Office/32x32/arrow_circle2.png
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 800
+  Value: 900
 Languages:
 - Language: en
   Versions:
@@ -17,4 +17,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0b71e115-70da-48e3-b30f-9b7eb5952a8b"
+      Value: "9c4fcfc0-9b71-4db4-a21c-25f180671333"

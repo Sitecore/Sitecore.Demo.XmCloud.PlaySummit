@@ -7,7 +7,9 @@
             "enabled": true,
             "type": "sxa",
             "lintCommand": "lint",
-            "startCommand": "start:production"
+            "startCommand": "start:production",
+            "buildCommand": "build",
+            "runCommand": "next:start"
         }
     },
     "transforms": [

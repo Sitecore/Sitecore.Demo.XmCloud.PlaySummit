@@ -81,7 +81,7 @@ You can also build or run the Next.js application directly using `npm` commands 
 
 #### Storybook
 
-The project uses [Storybook](https://github.com/storybookjs/storybook) for "disconnected" development. Standard JSS "disconnected" mode is not available in XM Cloud solution templates. `jss start` runs connected and expects Sitecore to be running using the provided Docker-compose container environment.
+The project uses [Storybook](https://github.com/storybookjs/storybook) for "disconnected" development. Standard JSS "disconnected" mode is not available in XM Cloud solution templates. `jss start` runs connected and expects Sitecore to be running using the provided Docker compose container environment.
 
 To browse the existing stories, run `jss storybook` or `npm run storybook`.
 

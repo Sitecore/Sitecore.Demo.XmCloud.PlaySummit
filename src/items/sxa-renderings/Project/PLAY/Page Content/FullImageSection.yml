@@ -12,13 +12,13 @@ SharedFields:
   Value: "edgeicons/32x32/fullwidth-image-section.png"
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Project/PLAY/Legacy/FullImageSection
+  Value: /sitecore/templates/Project/Global/FullImageSection
 - ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
   Hint: Parameters Template
   Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: ./Page Components|/sitecore/content/PLAY/playwebsite/Data/Components/FullImageSection
+  Value: /sitecore/content/PLAY/playwebsite/Data/FullImageSection
 Languages:
 - Language: en
   Versions:
@@ -26,4 +26,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1491c225-831a-4394-8466-59724ad350e5"
+      Value: "5cb18d6f-0a1a-4e29-a603-12f1f94cdeb9"

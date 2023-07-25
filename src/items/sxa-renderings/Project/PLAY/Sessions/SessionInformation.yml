@@ -7,6 +7,9 @@ SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
   Hint: componentName
   Value: SessionInformation
+- ID: "069a8361-b1cd-437c-8c32-a3be78941446"
+  Hint: Placeholders
+  Value: "{FFABBC61-2E79-4FB3-A70A-5B583A566510}"
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: "edgeicons/32x32/session-info.png"
@@ -23,4 +26,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2d2aa361-653e-4dd6-b381-e9e86f4c16bc"
+      Value: "e0364a3d-ae30-43f6-8cfd-177fd15349db"

@@ -1,0 +1,16 @@
+﻿---
+ID: "4ec83342-656d-4cf7-a404-0f36df25128e"
+Parent: "50e74ac2-cc2c-51c1-883f-fc6e8ed07cb3"
+Template: "fdf43aad-c5d1-54e4-9909-59bfddc86689"
+Path: /sitecore/content/PLAY/playwebsite/Data/FeaturedSpeakers/Homepage Featured Speakers
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "82cffd14-a277-4e1c-9aec-8c99c6f29d05"
+      Hint: NumberOfSpeakers
+      Value: 6
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f05bbe24-af0e-428b-be4c-2a8eee7ab32c"

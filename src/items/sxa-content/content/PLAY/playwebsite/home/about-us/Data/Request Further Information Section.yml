@@ -1,0 +1,20 @@
+﻿---
+ID: "049289a3-d30d-5c40-8d66-f9b263c924c7"
+Parent: "70c51cbf-2b03-5575-b36f-ef6a97040a90"
+Template: "1f476f1c-822a-5a88-8f7e-2431b77d1b70"
+Path: "/sitecore/content/PLAY/playwebsite/home/about-us/Data/Request Further Information Section"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "05607296-e17f-567f-898f-46bb9665d619"
+      Hint: title
+      Value: Request Further Information
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "093177c0-d068-43dd-b850-345075064f50"

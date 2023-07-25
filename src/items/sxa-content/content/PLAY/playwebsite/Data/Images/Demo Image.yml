@@ -1,0 +1,24 @@
+﻿---
+ID: "a1006a2a-6bcb-4481-97a5-c1b8799acbad"
+Parent: "98454e00-4b76-46ac-af1f-99f142e7f214"
+Template: "d885df8c-b2d6-4007-b34b-2bbafb527304"
+Path: /sitecore/content/PLAY/playwebsite/Data/Images/Demo Image
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "4d7b05d0-0300-486f-8f87-57de34a9b793"
+      Hint: ImageCaption
+      Value: Duis aute irure dolor in reprehenderit in voluptate velit.
+    - ID: "57caf172-ce57-4e48-b3a1-46f8aea71c08"
+      Hint: Image
+      Value: |
+        <image mediaid="{DD687A71-67BA-53B8-BFCA-A9AD6E61A4AD}" />
+    - ID: "75fbf1b1-e7c5-494b-9633-693909f79425"
+      Hint: TargetUrl
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{A7BDFBDA-D5CC-5388-A039-F262BC768721}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9a135654-810e-4aba-8eb7-bc26c54bb2f3"

@@ -1,0 +1,74 @@
+﻿---
+ID: "8ad4d49f-7573-4156-85c0-adf24e4cb6f8"
+Parent: "adf8983f-d751-4af2-804f-c9e3888f4219"
+Template: "adf8983f-d751-4af2-804f-c9e3888f4219"
+Path: /sitecore/templates/Project/Global/CMP Entities/Vendor/__Standard Values
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Value: 1
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "025898a9-3beb-4afa-b37a-e45e00f2ff2f"
+      Hint: TwitterProfileLink
+      Value: #
+    - ID: "21bd2ce2-43b1-4a8a-8383-1470d503c504"
+      Hint: ActivityType
+      Value: "{5EC6934B-35E4-452C-89D8-F826D8CE772F}"
+    - ID: "2696b94c-fb09-4392-999a-9a7a7223f228"
+      Hint: InstagramProfileLink
+      Value: #
+    - ID: "36288362-9494-4174-a8a2-d846d958149d"
+      Hint: Level
+      Value: Silver
+    - ID: "3c5bc1cb-ad72-444f-bd6f-a9a09b6bc7bb"
+      Hint: Speakers
+      Value: "{5F107763-694B-4E24-B7C7-308180ABABAD}"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "5f02c96d-6606-4508-8b81-4d4758e06291"
+      Hint: Logo
+      Value: |
+        <image mediaid="{DF389E0C-6213-40BB-8DA4-F6959E6F05B9}" />
+    - ID: "6a7f0807-1669-4c5b-bcd7-db9fc0bc86b3"
+      Hint: Sessions
+      Value: "{91404CDE-DFEE-4269-B6E8-BAB6CE8F15B9}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f9792253-ce22-4f73-bf50-31cd204d8866"
+    - ID: "a73286b1-7c15-46cf-b3c1-af1dc7e43afe"
+      Hint: LogoTransformation
+      Value: medium
+    - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
+      Hint: Description
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed tortor laoreet, scelerisque metus sit amet, vehicula ipsum. In vulputate semper dui. Aliquam pretium a risus eget bibendum. Aliquam feugiat nibh quis nibh sollicitudin, vel sagittis quam sagittis. Quisque quis ornare arcu, id convallis lacus. In vel mauris libero. Nunc eget mauris nec lorem fermentum commodo. Nullam sed enim tristique, convallis mi at, ornare odio. In hac habitasse platea dictumst. Mauris sollicitudin dignissim condimentum. Vestibulum rhoncus dui ut diam laoreet, quis bibendum ante mollis. Cras aliquam velit in sollicitudin porttitor. Sed quis velit vitae nisl ullamcorper maximus.
+    - ID: "d57b5629-9801-4418-9088-8a8dfa8fc84c"
+      Hint: Name
+      Value: $name
+    - ID: "da7733f4-3061-4f93-a870-9aff906af40b"
+      Hint: FacebookProfileLink
+      Value: #
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: $name
+    - ID: "fd7bc390-6104-4990-8271-9bd50cd4115e"
+      Hint: LinkedinProfileLink
+      Value: #

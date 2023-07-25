@@ -65,7 +65,7 @@ export const Default = {
     },
     rendering: {
       componentName: 'Rendering',
-      dataSource: '/sitecore',
+      dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
     },
   } as ThreeColumnsSectionProps,
 };

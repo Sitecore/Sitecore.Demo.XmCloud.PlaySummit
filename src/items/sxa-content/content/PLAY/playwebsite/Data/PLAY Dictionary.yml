@@ -9,7 +9,7 @@ SharedFields:
   Value: Office/32x32/book2.png
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 1200
+  Value: 2400
 Languages:
 - Language: en
   Fields:
@@ -21,4 +21,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "87b96973-3f7c-4153-85ad-96e7a17214f7"
+      Value: "78b4881a-7e05-4af1-a9a4-feb04bad11aa"

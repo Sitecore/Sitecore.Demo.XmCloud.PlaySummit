@@ -53,7 +53,7 @@ SharedFields:
     
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Project/PLAY/Legacy/FeaturedSpeakers
+  Value: /sitecore/templates/Project/Global/FeaturedSpeakers
 - ID: "308e88f5-cd6e-4f8f-bafe-95a47dedefdc"
   Hint: Editable
   Value: 1
@@ -68,7 +68,7 @@ SharedFields:
   Value: 
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: ./Page Components|/sitecore/content/PLAY/playwebsite/Data/Components/FeaturedSpeakers
+  Value: /sitecore/content/PLAY/playwebsite/Data/FeaturedSpeakers
 Languages:
 - Language: en
   Versions:
@@ -76,4 +76,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6a658ef6-b443-4fb8-8cca-286b9e45be36"
+      Value: "95ce1cdb-aa0e-44ec-a2c1-419b8a584f69"

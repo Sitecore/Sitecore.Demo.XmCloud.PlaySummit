@@ -12,7 +12,7 @@ SharedFields:
   Value: "edgeicons/32x32/fullwidth-image-cta-section.png"
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: 
+  Value: /sitecore/templates/Project/Global/FullImageCTASection
 - ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
   Hint: Parameters Template
   Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
@@ -26,4 +26,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4ea36c9b-acc0-440e-baba-4ed2865da3aa"
+      Value: "b2a58258-9b84-4433-ad53-dd434829e4c7"

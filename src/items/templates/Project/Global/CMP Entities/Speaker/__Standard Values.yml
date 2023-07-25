@@ -1,0 +1,80 @@
+﻿---
+ID: "af957a58-3207-454d-a6b7-e64e35129069"
+Parent: "819c5f1d-58e0-432f-bd5a-a523ba8aebce"
+Template: "819c5f1d-58e0-432f-bd5a-a523ba8aebce"
+Path: /sitecore/templates/Project/Global/CMP Entities/Speaker/__Standard Values
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Value: 1
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "025898a9-3beb-4afa-b37a-e45e00f2ff2f"
+      Hint: TwitterProfileLink
+      Value: #
+    - ID: "2256955c-26ab-41b5-8e7a-fc504ea1a307"
+      Hint: Sponsors
+      Value: "{5319CA3C-CD21-4D68-A68A-1EAF4D34F63D}"
+    - ID: "2696b94c-fb09-4392-999a-9a7a7223f228"
+      Hint: InstagramProfileLink
+      Value: #
+    - ID: "30bbae2d-1801-410c-8895-bd219d4de497"
+      Hint: PictureTransformation
+      Value: profile
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "44a57340-61f8-48a2-84a8-bc5d16929a3d"
+      Hint: Location
+      Value: USA
+    - ID: "5d58f635-d21c-4635-8efd-93448b2799c2"
+      Hint: Vendors
+      Value: "{5EE51C40-8986-44C0-B44A-D030D4482A43}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "95556646-4bbe-41dc-9259-4870c398ab3b"
+    - ID: "94f8d6fc-b9c3-41dc-8cdf-5e967d108a40"
+      Hint: Company
+      Value: Sitecore
+    - ID: "adbe3132-d415-414c-941f-9d840ebcf9cd"
+      Hint: Sessions
+      Value: "{91404CDE-DFEE-4269-B6E8-BAB6CE8F15B9}"
+    - ID: "d0b11041-4e9d-4066-b833-2fb20c0cc47d"
+      Hint: Description
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed tortor laoreet, scelerisque metus sit amet, vehicula ipsum. In vulputate semper dui. Aliquam pretium a risus eget bibendum. Aliquam feugiat nibh quis nibh sollicitudin, vel sagittis quam sagittis. Quisque quis ornare arcu, id convallis lacus. In vel mauris libero. Nunc eget mauris nec lorem fermentum commodo. Nullam sed enim tristique, convallis mi at, ornare odio. In hac habitasse platea dictumst. Mauris sollicitudin dignissim condimentum. Vestibulum rhoncus dui ut diam laoreet, quis bibendum ante mollis. Cras aliquam velit in sollicitudin porttitor. Sed quis velit vitae nisl ullamcorper maximus.
+    - ID: "d410c57e-fdc1-43f4-b028-8b313217b6f9"
+      Hint: JobTitle
+      Value: Marketing Executive
+    - ID: "da7733f4-3061-4f93-a870-9aff906af40b"
+      Hint: FacebookProfileLink
+      Value: #
+    - ID: "e2b817f9-16ac-4691-9add-ad6590d757b8"
+      Hint: Role
+      Value: Speaker
+    - ID: "e91669e4-7a60-495f-b868-47f9b15c28b3"
+      Hint: Name
+      Value: $name
+    - ID: "f5eb0181-f3ab-4edb-a8f2-630e72f555d9"
+      Hint: Picture
+      Value: |
+        <image mediaid="{1C59089A-BB1A-449F-9318-098D59CA1629}" />
+    - ID: "fd7bc390-6104-4990-8271-9bd50cd4115e"
+      Hint: LinkedinProfileLink
+      Value: #

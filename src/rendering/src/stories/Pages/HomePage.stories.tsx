@@ -14,9 +14,7 @@ import {
 } from '../../components/Sponsors/SelectedSponsorsGrid';
 import { Default as Footer } from '../../components/Navigation/Footer';
 import { Sponsor } from 'src/types/sponsor';
-import { SitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
-import { mockComponentFactory, mockFooterProps, mockHeaderProps } from './PageStoriesCommon';
-import { mockLayoutData } from '../../../.storybook/preview';
+import { mockFooterProps, mockHeaderProps } from './PageStoriesCommon';
 
 export default {
   title: 'Pages/Home Page',
@@ -48,7 +46,7 @@ const heroProps = {
         {
           uid: '04d6b23e-6ce3-51a1-9c9c-4cd56b29b6aa',
           componentName: 'HeroSectionCta',
-          dataSource: '',
+          dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
           params: {},
           fields: {
             Link: {
@@ -61,7 +59,7 @@ const heroProps = {
         },
       ],
     },
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as unknown as HeroProps;
 
@@ -122,7 +120,7 @@ const sponsorProps = {
   },
   rendering: {
     componentName: 'Rendering',
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as unknown as SelectedSponsorsGridProps;
 
@@ -180,13 +178,13 @@ const threeColProps = {
   },
   rendering: {
     componentName: 'Rendering',
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as ThreeColumnsSectionProps;
 
 const Template: StoryFn<typeof HeroSection> = () => {
   return (
-    <SitecoreContext componentFactory={mockComponentFactory} layoutData={mockLayoutData}>
+    <>
       <header>
         <HeaderContent {...mockHeaderProps} />
       </header>
@@ -199,7 +197,7 @@ const Template: StoryFn<typeof HeroSection> = () => {
       <footer>
         <Footer {...mockFooterProps} />
       </footer>
-    </SitecoreContext>
+    </>
   );
 };
 

@@ -1,8 +1,12 @@
 .header-banner {
-  @apply pt-80 pb-10 bg-gradient-to-r from-black-lightest to-transparent bg-cover bg-center;
+  @apply relative pt-80 pb-10 bg-gradient-to-r from-black-lightest to-transparent bg-cover bg-center;
+
+  img {
+    @apply absolute top-0 bottom-0 left-0 right-0 w-full h-full object-cover;
+  }
 
   .section-content {
-    @apply text-white font-extrabold;
+    @apply relative text-white font-extrabold z-10;
 
     .eyebrow {
       @apply pb-10;

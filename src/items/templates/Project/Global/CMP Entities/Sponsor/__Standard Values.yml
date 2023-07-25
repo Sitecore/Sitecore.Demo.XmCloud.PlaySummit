@@ -1,0 +1,68 @@
+﻿---
+ID: "0fc6917f-5bfb-4d8d-94c3-10921131f450"
+Parent: "3b884b30-54c1-464c-aadd-f8bd94e7c38e"
+Template: "3b884b30-54c1-464c-aadd-f8bd94e7c38e"
+Path: /sitecore/templates/Project/Global/CMP Entities/Sponsor/__Standard Values
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Value: 1
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "025898a9-3beb-4afa-b37a-e45e00f2ff2f"
+      Hint: TwitterProfileLink
+      Value: #
+    - ID: "079a4b3e-3819-4d92-9191-2c86bffa049e"
+      Hint: Logo
+      Value: |
+        <image mediaid="{DF389E0C-6213-40BB-8DA4-F6959E6F05B9}" />
+    - ID: "12c0fdc3-9c18-41c4-aeda-8dcca687eb59"
+      Hint: Sessions
+      Value: "{91404CDE-DFEE-4269-B6E8-BAB6CE8F15B9}"
+    - ID: "1f1be085-d547-46cc-a0ab-85d5c9456ac6"
+      Hint: LogoTransformation
+      Value: medium
+    - ID: "2696b94c-fb09-4392-999a-9a7a7223f228"
+      Hint: InstagramProfileLink
+      Value: #
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{C55B483C-EA7F-4E76-A066-985F7D9396CA}"
+    - ID: "5a1f6707-d155-4618-b051-966216449b1c"
+      Hint: Description
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed tortor laoreet, scelerisque metus sit amet, vehicula ipsum. In vulputate semper dui. Aliquam pretium a risus eget bibendum. Aliquam feugiat nibh quis nibh sollicitudin, vel sagittis quam sagittis. Quisque quis ornare arcu, id convallis lacus. In vel mauris libero. Nunc eget mauris nec lorem fermentum commodo. Nullam sed enim tristique, convallis mi at, ornare odio. In hac habitasse platea dictumst. Mauris sollicitudin dignissim condimentum. Vestibulum rhoncus dui ut diam laoreet, quis bibendum ante mollis. Cras aliquam velit in sollicitudin porttitor. Sed quis velit vitae nisl ullamcorper maximus.
+    - ID: "752f4b39-259c-42b8-a100-fb6123faed7f"
+      Hint: Speakers
+      Value: "{5F107763-694B-4E24-B7C7-308180ABABAD}"
+    - ID: "88a0fe68-7edf-4726-b53a-8bf622268a63"
+      Hint: Name
+      Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6839a217-b563-4e3c-9acf-ebc8d4ebd495"
+    - ID: "cf42c29f-ee3a-4f06-92ac-10fc51a42099"
+      Hint: Level
+      Value: Silver
+    - ID: "da7733f4-3061-4f93-a870-9aff906af40b"
+      Hint: FacebookProfileLink
+      Value: #
+    - ID: "fd7bc390-6104-4990-8271-9bd50cd4115e"
+      Hint: LinkedinProfileLink
+      Value: #

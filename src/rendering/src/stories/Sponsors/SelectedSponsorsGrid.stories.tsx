@@ -59,7 +59,7 @@ export const Default = {
     },
     rendering: {
       componentName: 'SelectedSponsorsGrid',
-      dataSource: '/sitecore',
+      dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
     },
   },
 };

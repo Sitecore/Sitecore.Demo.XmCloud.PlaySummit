@@ -10,9 +10,9 @@ import {
   SessionInformationProps,
 } from '../../components/Sessions/SessionInformation';
 import { Speaker } from 'src/types/speaker';
-import { mockComponentFactory, mockFooterProps, mockHeaderProps } from './PageStoriesCommon';
-import { SitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
-import { mockLayoutData } from '../../../.storybook/preview';
+import { mockFooterProps, mockHeaderProps } from './PageStoriesCommon';
+import SpeakerList from '../../components/Speakers/SpeakerList';
+import SessionInformationPageHero from '../../components/Sessions/SessionInformationPageHero';
 
 export default {
   title: 'Pages/Session Information Page',
@@ -193,18 +193,21 @@ const sessionInformationProps = {
 
 const Template: StoryFn<typeof SpeakerInformationPageHero> = () => {
   return (
-    <SitecoreContext componentFactory={mockComponentFactory} layoutData={mockLayoutData}>
+    <>
       <header>
         <HeaderContent {...mockHeaderProps} />
       </header>
       <main>
         <HeaderCdpMessageBar />
-        <SessionInformation {...sessionInformationProps} />
+        <SessionInformationPageHero {...sessionInformationProps} />
+        <SessionInformation {...sessionInformationProps}>
+          <SpeakerList {...sessionInformationProps} />
+        </SessionInformation>
       </main>
       <footer>
         <Footer {...mockFooterProps} />
       </footer>
-    </SitecoreContext>
+    </>
   );
 };
 

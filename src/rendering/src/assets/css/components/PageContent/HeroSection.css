@@ -77,6 +77,52 @@
       }
     }
   }
+
+  &.hero-section-editable {
+    .hero-background {
+      @apply md:block md:absolute md:h-full md:top-0 md:bottom-0 md:left-0 md:right-0;
+
+      img {
+        @apply w-full h-full object-cover;
+      }
+    }
+
+    .hero-container {
+      /*
+      NOTE: This is a way to make the content look like
+      it's inside of a container without it actually being in one
+      in order to allow editing the background image in EE and Pages
+      */
+      @screen md {
+        width: calc(768px / 2);
+        margin-right: calc((100vw - 768px) / 2);
+      }
+
+      @screen lg {
+        width: calc(1024px / 2);
+        margin-right: calc((100vw - 1024px) / 2);
+      }
+
+      @screen xl {
+        width: calc(1280px / 2);
+        margin-right: calc((100vw - 1280px) / 2);
+      }
+
+      @screen 2xl {
+        width: calc(1536px / 2);
+        margin-right: calc((100vw - 1536px) / 2);
+      }
+
+      /* END NOTE */
+
+      @apply relative flex items-center justify-end my-0 px-0 box-border overflow-hidden z-10;
+      @apply md:px-6 md:ml-auto;
+
+      .container-content {
+        @apply md:w-full;
+      }
+    }
+  }
 }
 
 .cdp-hero-wrapper {

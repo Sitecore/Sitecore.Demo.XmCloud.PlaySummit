@@ -7,6 +7,10 @@ SharedFields:
 - ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
   Hint: Signature
   Value: "exclusive-offer"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{E427BD3C-3D18-4597-A81A-33E1B38F97AD}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -18,7 +22,7 @@ SharedFields:
           uid="{37E18DAA-5E82-4D26-9620-2FC2AAF7AC1C}"
           s:ds="{BD8B0390-574A-57F3-B801-1C3A4F42B3D6}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par="FieldNames&amp;Styles=%7B3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7D%7C%7BFF6391E2-EFC2-436F-85B1-C2AFA0A5F6D1%7D&amp;RenderingIdentifier"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles=%7b3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7d&amp;CSSStyles"
           s:ph="headless-main"
           s:ccb="Clear on publish" />
       </d>
@@ -33,4 +37,11 @@ Languages:
       Value: <r />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "df7973a6-f665-4896-857e-9f9b1f7d34b3"
+      Value: "9dc1f1c3-3489-4f37-b2d7-f1823c481e1b"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bdf37d94-9441-4591-9a2a-2231dbf39153"

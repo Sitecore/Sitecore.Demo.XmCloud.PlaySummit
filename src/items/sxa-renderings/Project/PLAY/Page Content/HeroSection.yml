@@ -15,13 +15,13 @@ SharedFields:
   Value: "edgeicons/32x32/hero-section.png"
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Project/PLAY/Legacy/CMP Entities/Advertisement
+  Value: /sitecore/templates/Project/Global/CMP Entities/Advertisement
 - ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
   Hint: Parameters Template
   Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: ./Page Components|/sitecore/content/PLAY/playwebsite/Data/CMP Data/Advertisements
+  Value: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Advertisements
 Languages:
 - Language: en
   Versions:

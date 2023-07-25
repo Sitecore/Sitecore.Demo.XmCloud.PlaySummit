@@ -1,0 +1,17 @@
+﻿---
+ID: "92298800-b22f-4d3b-a7bb-75dfe66b78ef"
+Parent: "d8aa73e1-c275-4eee-bb9d-333925e51952"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/CMP Entities/Session/Data
+SharedFields:
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "831091f0-bd3f-4f07-82d7-076a129d85a6"

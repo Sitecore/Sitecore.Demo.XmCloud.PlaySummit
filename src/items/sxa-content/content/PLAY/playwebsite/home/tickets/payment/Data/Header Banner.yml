@@ -1,0 +1,20 @@
+﻿---
+ID: "94d16bcf-7c96-50d1-ab2a-83ee6e4a9c0a"
+Parent: "e6d901f8-8f14-573c-a3e5-c39f6cd05801"
+Template: "22bf2a41-d79e-5e64-9497-6e52752f85dd"
+Path: /sitecore/content/PLAY/playwebsite/home/tickets/payment/Data/Header Banner
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "66b11de2-b3ca-4cf9-b44f-6ac31282da0a"
+    - ID: "c9069b9e-8ffb-564d-8f08-5b3ab1a6c14f"
+      Hint: title
+      Value: Payment
+    - ID: "f6156be8-e8d4-5d94-8118-22f7a7540f69"
+      Hint: backgroundImage
+      Value: |
+        <image mediaid="{8743580F-0103-5F0F-B5F3-6451B7E72AA2}" alt="Sample Image" />

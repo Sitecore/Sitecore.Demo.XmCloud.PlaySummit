@@ -1,0 +1,24 @@
+﻿---
+ID: "95af830f-d226-52c4-bbd4-76b2ac713dcc"
+Parent: "b480e5fa-e4d0-4c4a-b42d-033e697680ed"
+Template: "52672eed-7aa7-4df1-93e1-c488bc2e0803"
+Path: /sitecore/content/PLAY/playwebsite/Data/ProductCategoriesGrid/Most Popular Product Categories Grid/yoga
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Yoga
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "26e44e63-d183-4c70-b50d-ad2358a9c1af"
+      Hint: Picture
+      Value: |
+        <image mediaid="{40AAFB2B-8BD5-40D9-808A-BF542DD0DEF2}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c123eb13-1aa0-4232-9495-a9d89853eb18"
+    - ID: "ceb0f7a3-e5e1-4e8c-a95a-8bff6f13708f"
+      Hint: Title
+      Value: Yoga

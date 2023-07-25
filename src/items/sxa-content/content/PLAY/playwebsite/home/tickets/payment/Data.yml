@@ -1,0 +1,20 @@
+﻿---
+ID: "e6d901f8-8f14-573c-a3e5-c39f6cd05801"
+Parent: "8d9013bc-618f-5ef1-bbe6-4fdb3a41e913"
+Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
+Path: /sitecore/content/PLAY/playwebsite/home/tickets/payment/Data
+SharedFields:
+- ID: "a791f095-2521-4b4d-bef9-21dda221f608"
+  Hint: __Style
+  Value: 
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "de4032da-ae2f-481c-b1d2-68f47f6af917"

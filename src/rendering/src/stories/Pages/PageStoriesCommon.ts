@@ -1,7 +1,5 @@
 import { HeaderContentProps } from '../../components/Navigation/HeaderContent';
 import { FooterProps } from '../../components/Navigation/Footer';
-import { Default as HeroSectionCta } from '../../components/PageContent/HeroSectionCta';
-import { Default as MainNavigation } from '../../components/Navigation/MainNavigation';
 
 export const mockMainNavigationFields = {
   data: {
@@ -155,13 +153,13 @@ export const mockHeaderProps = {
         {
           uid: '04d6b23e-6ce3-51a1-9c9c-4cd56b29b6aa',
           componentName: 'MainNavigation',
-          dataSource: '',
+          dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
           params: {},
           fields: mockMainNavigationFields,
         },
       ],
     },
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as unknown as HeaderContentProps;
 
@@ -436,23 +434,6 @@ export const mockFooterProps = {
   },
   rendering: {
     componentName: 'Rendering',
-    dataSource: '/sitecore',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
   },
 } as unknown as FooterProps;
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const mockComponentFactory = function (componentName: string): any {
-  const components = new Map();
-  components.set('HeroSectionCta', HeroSectionCta);
-  components.set('MainNavigation', MainNavigation);
-
-  const component = components.get(componentName);
-
-  // check that component should be dynamically imported
-  if (component?.element) {
-    // return next.js dynamic import
-    return component.element();
-  }
-
-  return component?.default || component;
-};
