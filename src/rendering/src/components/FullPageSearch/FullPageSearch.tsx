@@ -1,137 +1,172 @@
-import { SearchResultsWidgetProps } from '@sitecore-discover/react';
 import { useEffect, useState } from 'react';
-import debounce from '../../../src/helpers/Debounce';
-import { SearchResultsActions } from '@sitecore-discover/widgets';
+import { SearchResultsPageNumberChangedActionPayload } from '@sitecore-discover/widgets';
 import FullPageSearchContent from './FullPageSearchContent';
 import { getCategoryByUrlPath } from '../../helpers/CategoriesDataHelper';
 import { Product } from '../../models/discover/Product';
+import { useRouter } from 'next/router';
 
-export interface FullPageSearchResultsProps extends SearchResultsWidgetProps {
+import {
+  SearchResponseFacets,
+  SearchResponseProduct,
+  useSearchResults,
+  widget,
+  WidgetDataType,
+} from '@sitecore-discover/react';
+
+export interface FullPageSearchResultsProps {
   rfkId: string;
 }
 
-const FullPageSearch = ({
-  rfkId,
-  error,
-  loaded,
-  loading,
-  page,
-  keyphrase,
-  totalPages,
-  totalItems,
-  sortType,
-  sortDirection,
-  sortChoices,
-  products,
-  facets,
-  numberOfItems,
-  dispatch,
-  onFacetClick,
-  onClearFilters,
-  onPageNumberChange,
-  onSortChange,
-}: FullPageSearchResultsProps): JSX.Element => {
-  const isCategoryProductListingPage = rfkId === 'rfkid_10';
+export const FullPageSearch = ({ rfkId }: FullPageSearchResultsProps): JSX.Element => {
+  const {
+    actions: { onKeyphraseChange, onPageNumberChange, onSortChange },
+    context: { page = 1, keyphrase = '', productsPerPage = 10, sortType, sortDirection },
+    queryResult: {
+      isError,
+      isLoading,
+      isFetching,
+      data: {
+        sort: { choices: sortChoices = [] } = {},
+        total_item: totalItems = 0,
+        total_page: totalPages = 0,
+        facet: facets = [] as unknown as SearchResponseFacets,
+        facet_names: facetNames = [],
+        content: { product: { value: products = [] } = {} } = {},
+      } = {},
+    },
+    query,
+  } = useSearchResults((query) => {
+    query.getRequest();
+    return {
+      productsPerPage,
+      keyphrase,
+    };
+  });
 
+  const router = useRouter();
+  const isCategoryProductListingPage = rfkId === 'rfkid_10';
   const category = getCategoryByUrlPath(window.location.pathname);
 
   const [loadedProducts, setLoadedProducts] = useState([]);
-
-  const setKeyphrase: (keyphrase: string) => void = debounce(
-    (keyphrase) =>
-      dispatch({ type: SearchResultsActions.KEYPHRASE_CHANGED, payload: { keyphrase } }),
-    500,
-    false
-  );
+  const [isViewMoreClicked, setIsViewMoreClicked] = useState(false);
+  const [displayedKeyphrase, setDisplayedKeyphrase] = useState(keyphrase || '');
 
   const onSearchInputChange = (keyphrase: string) => {
-    setKeyphrase(keyphrase);
+    setDisplayedKeyphrase(keyphrase);
+
+    // Update the keyphrase in session storage
+    saveLastProductListingPage(keyphrase);
+
+    query.getRequest();
+    onKeyphraseChange({ keyphrase });
+  };
+
+  const onViewMoreClick = (payload: SearchResultsPageNumberChangedActionPayload) => {
+    setIsViewMoreClicked(true);
+
+    onPageNumberChange(payload);
   };
 
   useEffect(() => {
-    const urlSearchParams = new URLSearchParams(window.location.search);
-    const searchQuery = urlSearchParams.get('q');
-    const keyphraseToUse = keyphrase ?? searchQuery;
-    if (keyphraseToUse) {
-      setKeyphrase(keyphraseToUse);
+    // Clear the filters when visiting another product listing page
+
+    if (router.asPath !== loadLastProductListingPage()?.path) {
+      // onClearFilters();
+      onSearchInputChange('');
+      onSortChange({
+        sortType: 'featured',
+        sortDirection: 'desc',
+      });
+
+      // Save the product listing page to session storage
+      saveLastProductListingPage();
     }
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [router]);
 
   useEffect(() => {
-    if (!loaded && loading) return;
-
-    const productsFromSessionStorage = loadProductsFromSessionStorage();
-
-    let productsToDisplay = [];
-    let initialProducts = [];
-    if (productsFromSessionStorage && products) {
-      if (isCategoryProductListingPage) {
-        productsToDisplay = [...productsFromSessionStorage, ...products];
-      } else {
-        // BUG: Discover initially sends back a full page of products - currently 10, not relevant
-        // to the keyphrase, and then updates the products with the correct ones
-        initialProducts = productsFromSessionStorage.splice(0, 10);
-        productsToDisplay = [...productsFromSessionStorage, ...products];
+    if (isCategoryProductListingPage) {
+      // Set the initial keyphrase only if the page is not the same as the previously visited one,
+      // otherwise the filters will be lost
+      if (keyphrase && router.asPath !== loadLastProductListingPage()?.path) {
+        onSearchInputChange(keyphrase);
       }
-      // Filter the products so that we don't include duplicates when refreshing the page
-      productsToDisplay = productsToDisplay.filter(
-        (value: Product, index: number, self: Product[]) =>
-          self.findIndex((v) => v.sku === value.sku) === index
-      );
-    } else if (products) {
-      productsToDisplay = products;
     } else {
-      return;
+      // Search query exists only on global search page
+      const searchQuery = router.query.q as string;
+      if (searchQuery && searchQuery !== loadLastProductListingPage()?.keyphrase) {
+        onSearchInputChange(searchQuery);
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [router]);
+
+  useEffect(() => {
+    if (isLoading || isFetching) return;
+    if (!products) return;
+
+    let productsToDisplay: (SearchResponseProduct | Product)[] = [];
+    if (isViewMoreClicked) {
+      setIsViewMoreClicked(false);
+
+      const productsFromSessionStorage = loadProductsFromSessionStorage();
+      productsToDisplay = [...productsFromSessionStorage, ...products];
+    } else {
+      productsToDisplay = products;
     }
     setLoadedProducts(productsToDisplay);
-    saveProductsToSessionStorage(
-      isCategoryProductListingPage ? productsToDisplay : [...initialProducts, ...productsToDisplay]
-    );
+    saveProductsToSessionStorage(productsToDisplay);
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [products]);
 
-  const getSessionStorageKey = (): string => {
-    if (isCategoryProductListingPage && keyphrase) {
-      return `${category.ccid} - ${keyphrase} products`;
-    } else if (isCategoryProductListingPage) {
-      return `${category.ccid} products`;
-    } else {
-      return `${keyphrase} products`;
-    }
+  const saveProductsToSessionStorage = (products: (SearchResponseProduct | Product)[]) => {
+    sessionStorage.setItem('products', JSON.stringify(products));
   };
 
-  const saveProductsToSessionStorage = (products: Product[]) => {
-    sessionStorage.setItem(getSessionStorageKey(), JSON.stringify(products));
-  };
+  const loadProductsFromSessionStorage = (): (SearchResponseProduct | Product)[] =>
+    JSON.parse(sessionStorage.getItem('products'));
 
-  const loadProductsFromSessionStorage = () =>
-    JSON.parse(sessionStorage.getItem(getSessionStorageKey()));
+  const saveLastProductListingPage = (keyphrase?: string): void =>
+    sessionStorage.setItem(
+      isCategoryProductListingPage ? 'lastCategoryProductListingPage' : 'lastProductListingPage',
+      JSON.stringify({
+        keyphrase,
+        path: router.asPath,
+      })
+    );
+
+  const loadLastProductListingPage = (): { keyphrase: string; path: string } =>
+    JSON.parse(
+      sessionStorage.getItem(
+        isCategoryProductListingPage ? 'lastCategoryProductListingPage' : 'lastProductListingPage'
+      )
+    );
 
   return (
     <FullPageSearchContent
       rfkId={rfkId}
-      error={error}
-      loaded={loaded}
-      loading={loading}
       page={page}
-      totalPages={totalPages}
-      totalItems={totalItems}
+      keyphrase={displayedKeyphrase}
+      productsPerPage={productsPerPage}
       sortType={sortType}
       sortDirection={sortDirection}
       sortChoices={sortChoices}
-      products={loadedProducts}
+      isError={isError}
+      isLoading={isLoading}
+      isFetching={isFetching}
+      totalItems={totalItems}
+      totalPages={totalPages}
       facets={facets}
-      numberOfItems={numberOfItems}
-      dispatch={dispatch}
-      onFacetClick={onFacetClick}
-      onClearFilters={onClearFilters}
-      onPageNumberChange={onPageNumberChange}
+      facetNames={facetNames}
+      products={loadedProducts}
+      category={category}
+      onPageNumberChange={onViewMoreClick}
       onSortChange={onSortChange}
       onSearchInputChange={onSearchInputChange}
-      category={category}
     />
   );
 };
 
-export default FullPageSearch;
+export default widget(FullPageSearch, WidgetDataType.SEARCH_RESULTS);
