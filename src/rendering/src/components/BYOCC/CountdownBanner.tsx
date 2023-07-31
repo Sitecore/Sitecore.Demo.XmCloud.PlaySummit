@@ -10,13 +10,13 @@ FEAAS.registerComponent(CountdownBanner, {
   required: ['date'],
   properties: {
     date: {
-      type: 'Date',
+      type: 'string',
       title: 'Date',
     },
   },
   ui: {
     date: {
-      type: 'Date',
+      type: 'string',
       title: 'Date',
       'ui:options': {
         inputType: 'date',
