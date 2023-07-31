@@ -1,0 +1,15 @@
+.timer {
+  @apply flex justify-center;
+
+  &-counter {
+    @apply flex text-5xl font-bold;
+  }
+
+  &-block {
+    @apply flex flex-col justify-center text-center w-20;
+
+    &-type {
+      @apply mt-1 text-xs uppercase;
+    }
+  }
+}
