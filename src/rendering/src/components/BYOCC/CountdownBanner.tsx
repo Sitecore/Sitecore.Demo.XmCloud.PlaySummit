@@ -1,20 +1,23 @@
 import * as FEAAS from '@sitecore-feaas/clientside/react';
 
 export default function CountdownBanner({ date }: { date: Date }) {
-  /*your component body*/
-  return <p>CountdownBanner. Date: {date.toDateString()}</p>;
+  return <p>CountdownBanner. Date: {date?.toDateString()}</p>;
 }
 
 FEAAS.registerComponent(CountdownBanner, {
   name: 'CountdownBanner',
   description: 'Description of CountdownBanner.',
-  required: [
-    /* any required props */
-  ],
+  required: ['date'],
   properties: {
-    /* your component props */
+    date: {
+      type: 'date',
+      title: 'Date',
+    },
   },
   ui: {
-    /* any ui configuration for the inputs form rendered in the builder */
+    date: {
+      type: 'date',
+      title: 'Date',
+    },
   },
 });
