@@ -4,8 +4,8 @@ import { useCountdown } from '../../hooks/useCountdown';
 const DateTimeDisplay = ({ value, type }: { value: number; type: string }) => {
   return (
     <div className="timer-block">
-      <span className="timer-block-value">{value < 10 ? `0${value}` : value}</span>
-      <span className="timer-block-type">{type}</span>
+      <p className="timer-block-value">{value < 10 ? `0${value}` : value}</p>
+      <p className="timer-block-type">{type}</p>
     </div>
   );
 };
@@ -24,11 +24,11 @@ const ShowCounter = ({
   return (
     <div className="timer-counter">
       <DateTimeDisplay value={days} type={'Days'} />
-      <span className="timer-separator">:</span>
+      <p className="timer-separator">:</p>
       <DateTimeDisplay value={hours} type={'Hours'} />
-      <span className="timer-separator">:</span>
+      <p className="timer-separator">:</p>
       <DateTimeDisplay value={minutes} type={'Minutes'} />
-      <span className="timer-separator">:</span>
+      <p className="timer-separator">:</p>
       <DateTimeDisplay value={seconds} type={'Seconds'} />
     </div>
   );
