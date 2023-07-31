@@ -4,7 +4,7 @@ import { useCountdown } from '../../hooks/useCountdown';
 const DateTimeDisplay = ({ value, type }: { value: number; type: string }) => {
   return (
     <div className="timer-block">
-      <p className="timer-block-value">{value < 10 ? `0${value}` : value}</p>
+      <span className="timer-block-value">{value < 10 ? `0${value}` : value}</span>
       <span className="timer-block-type">{type}</span>
     </div>
   );
@@ -36,13 +36,6 @@ const ShowCounter = ({
 
 const Timer = ({ targetDate }: { targetDate: string }) => {
   const [days, hours, minutes, seconds] = useCountdown(targetDate);
-
-  // const timerBody =
-  //   days + hours + minutes + seconds <= 0 ? (
-  //     <ExpiredNotice />
-  //   ) : (
-  //     <ShowCounter days={days} hours={hours} minutes={minutes} seconds={seconds} />
-  //   );
 
   return (
     <div className="timer">

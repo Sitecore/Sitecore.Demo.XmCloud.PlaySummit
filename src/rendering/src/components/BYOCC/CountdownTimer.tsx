@@ -23,14 +23,14 @@ export default function CountdownTimer({
 
   return (
     <section className="coundown-timer">
-      {dateIsPast && useExpirationMessage ? expirationMessage : <Timer targetDate={date} />};
+      {dateIsPast && useExpirationMessage ? expirationMessage : <Timer targetDate={date} />}
     </section>
   );
 }
 
 FEAAS.registerComponent(CountdownTimer, {
-  name: 'CountdownTimer',
-  description: 'Description of CountdownTimer.',
+  name: 'Countdown Timer',
+  description: 'Shows the time remaining until a certain date.',
   required: ['date'],
   properties: {
     date: {
