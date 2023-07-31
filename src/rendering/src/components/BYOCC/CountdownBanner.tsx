@@ -1,7 +1,7 @@
 import * as FEAAS from '@sitecore-feaas/clientside/react';
 
-export default function CountdownBanner({ date }: { date: Date }) {
-  return <p>CountdownBanner. Date: {date?.toDateString()}</p>;
+export default function CountdownBanner({ date }: { date: string }) {
+  return <p>CountdownBanner. Date: {date}</p>;
 }
 
 FEAAS.registerComponent(CountdownBanner, {
