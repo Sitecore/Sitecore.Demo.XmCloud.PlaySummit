@@ -2,13 +2,13 @@ import React from 'react';
 import * as FEAAS from '@sitecore-feaas/clientside/react';
 
 // byoc/index lists all BYOC components that will be rendered on clientside
-import ClientComponents from '../components/BYOCC';
+import ClientComponents from '../components/BYOCC/BYOCComponents';
 
 // Following is BYOC components that will be rendered on server side
 // Async server component
-import './byoc/ExampleServersideComponent';
+import '../components/BYOCC/ExampleServersideComponent';
 // Regular react component
-import './byoc/ExampleHybridComponent';
+import '../components/BYOCC/ExampleHybridComponent';
 
 export default async function ExternalComponents() {
   return (
