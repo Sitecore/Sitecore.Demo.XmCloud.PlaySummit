@@ -8,12 +8,12 @@
   .timer-block {
     @apply flex flex-col justify-center text-center w-20;
 
-    .timer-block-value {
-      @apply text-5xl font-bold;
+    timer-block-value {
+      @apply !text-5xl !font-bold;
     }
 
     .timer-block-type {
-      @apply mt-1 text-xs uppercase;
+      @apply mt-1 !text-xs !font-bold uppercase;
     }
   }
 }
