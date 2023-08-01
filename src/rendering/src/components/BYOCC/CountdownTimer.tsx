@@ -22,9 +22,9 @@ export default function CountdownTimer({
   );
 
   return (
-    <section className="coundown-timer">
+    <div className="coundown-timer">
       {dateIsPast && useExpirationMessage ? expirationMessage : <Timer targetDate={date} />}
-    </section>
+    </div>
   );
 }
 
