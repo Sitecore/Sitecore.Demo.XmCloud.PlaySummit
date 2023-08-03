@@ -1,0 +1,7 @@
+.countdown-timer-expired-notice {
+  @apply text-center;
+
+  h2 {
+    @apply !text-3xl !font-bold;
+  }
+}
