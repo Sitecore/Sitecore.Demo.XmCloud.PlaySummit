@@ -1,0 +1,13 @@
+﻿---
+ID: "4854b1db-07e7-4345-bd1e-4e063b0cd7d3"
+Parent: "d1bb7719-f30f-4993-97ec-230159495939"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/EmbedSendForm/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cbd3c377-5c05-4fe6-9f8b-139eb0ce6f97"

@@ -1,0 +1,115 @@
+﻿---
+ID: "998e60a4-8a17-4246-a606-5d6800395526"
+Parent: "4d587c56-3717-41cb-936c-5d0412a50b6b"
+Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Landing Page With Send Form"
+BranchID: "c21cb9f5-9d4c-4904-b199-538835128fa3"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/document_pinned.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{C14B6289-8AC2-439C-9E5B-40DE9F820C3F}"
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{B73A117A-11C2-4B86-8A5C-4C7648EE87DE}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{EDACFCBC-4719-4AC5-9024-F87FC27EC9EE}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{6B19FFCE-1837-4BC2-BC15-33CD7FD5BA18}"
+          p:before="*"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;DynamicPlaceholderId=7"
+          s:ph="/headless-main/container-6" />
+        <r
+          uid="{C27FD4E9-75A2-4A33-9834-858BCA11AAF6}"
+          p:after="r[@uid='{6B19FFCE-1837-4BC2-BC15-33CD7FD5BA18}']"
+          s:ds="local:/Data/Promo"
+          s:id="{2492BAC4-DA07-4C86-87F0-9873D40E2276}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7B0E59FDE5-1A8B-4967-8E4B-8E16DCB80939%7D&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
+          s:ph="/headless-main/container-5"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{0D015084-6FC9-4578-AA90-448D64E75EF2}"
+          p:after="r[@uid='{C27FD4E9-75A2-4A33-9834-858BCA11AAF6}']"
+          s:id="{3836D951-BB14-43AC-9231-649B7F245DC5}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7BE76E9DCE-0FF3-486F-818E-E6F7C8B53EBA%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
+          s:ph="/headless-main/container-1" />
+        <r
+          uid="{1B7D12B4-590B-453A-8EDA-1DF00BDB7014}"
+          p:after="r[@uid='{0D015084-6FC9-4578-AA90-448D64E75EF2}']"
+          s:id="{C5F905F8-FD1F-444E-A9E5-AC6B774FF0DE}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7B2181EB9E-2230-405F-AFDF-8D31773C123C%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
+          s:ph="/headless-main/container-1" />
+        <r
+          uid="{0ADC511C-704E-4507-99F4-F12996A73E19}"
+          p:after="r[@uid='{1B7D12B4-590B-453A-8EDA-1DF00BDB7014}']"
+          s:ds="local:/Data/Hero Image"
+          s:id="{2C13DBC0-415C-5DAA-A7D9-56928F1271C4}"
+          s:par=""
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{AC9567C6-3585-41A8-BA17-0635691FB71F}"
+          p:after="r[@uid='{0ADC511C-704E-4507-99F4-F12996A73E19}']"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B08C8BABD-CA64-41EE-B592-13E86CF8AE22%7D%7C%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+          s:ph="headless-main" />
+        <r
+          uid="{8FFB7C22-CF70-4713-B8D4-F2CD49456CA2}"
+          p:after="*[1=2]"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5"
+          s:ph="headless-main" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{0E57EE9F-0689-4248-BA8D-6883959E984B}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{AB5A2025-21A4-402E-8DB5-D94B8617173E}"
+              p:after="*[1=2]"
+              s:ds="{C87CD843-96D1-474B-9EF9-AD349B007F40}"
+              s:id="{8D639E0A-5510-442A-A3CC-E97086E9DAA9}"
+              s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+              s:ph="headless-main"
+              s:ccb="Clear on publish" />
+          </d>
+        </r>
+    - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
+      Hint: Title
+      Value: Landing Page With Send Form
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Landing Page With Send Form
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3e59303b-064f-4f68-bdd8-9d76e79bec66"
+    - ID: "e0c0c8a4-0fea-4963-8b86-d47810b80efa"
+      Hint: Content
+      Value: <p>Morbi eu vehicula mi, a congue sapien. Mauris vitae leo lectus. Nam luctus urna molestie massa pellentesque, a porttitor augue varius. Duis dictum nisl metus, non luctus nunc accumsan non. Sed augue libero, condimentum mollis placerat in, tempus ut sapien. Praesent sed purus id sem convallis molestie vitae a ligula. Sed ac sodales velit. Donec fringilla, felis nec luctus auctor, lectus urna lacinia nisl, sit amet viverra eros ipsum eu libero. Nullam tincidunt nisl id magna dictum rhoncus. Aliquam erat volutpat. Duis commodo ante risus, eu lacinia diam porttitor non. Proin faucibus rutrum dolor, non dignissim ligula. Nam facilisis mi vehicula lacus dapibus molestie.</p>

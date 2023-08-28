@@ -1,0 +1,42 @@
+﻿---
+ID: "c43abcea-db66-4bf3-a164-32ae5607ecc0"
+Parent: "99a03081-c163-4851-ba89-0ed08cda2a71"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Landing Page With Send Form/Data/Promo"
+BranchID: "c21cb9f5-9d4c-4904-b199-538835128fa3"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{672B952B-8A4B-448A-8CF5-9836EB8F3FED}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: Sed in velit id nibh sagittis ultricies. Sed facilisis nunc vel vehicula luctus. Sed hendrerit purus eu venenatis bibendum. Proin aliquam consequat urna eget blandit.
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: Vivamus volutpat imperdiet metus, a lacinia libero consequat in.
+    - ID: "739c6cc2-0031-463d-9599-13478fd50ee3"
+      Hint: PromoIcon2
+      Value: |
+        <image mediaid="{CCAA3DA2-F72A-4AED-8B44-674BBD9DC5A6}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "caebd9ff-a63c-47de-bb79-3e6f99d69813"
+    - ID: "c6e604c3-5371-4e67-83df-a09a5ea66249"
+      Hint: PromoText3
+      Value: Pellentesque felis nisi, tempor ac libero non, sollicitudin finibus neque.
+    - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
+      Hint: PromoLink
+      Value: |
+        <link linktype="internal" text="Learn More" querystring="" target="" id="{66C99E47-7BBF-52D1-B1D7-4662B850744A}" />
+    - ID: "f94b9858-c439-4291-863b-757b536c8b65"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{528A9F67-4C62-4E1A-BFEE-82EB119D99FC}" />

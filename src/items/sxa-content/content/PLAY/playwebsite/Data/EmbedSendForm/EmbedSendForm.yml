@@ -1,0 +1,19 @@
+﻿---
+ID: "c87cd843-96d1-474b-9ef9-ad349b007f40"
+Parent: "108c609c-0dfe-420e-87d6-4f76cf6098a6"
+Template: "d1bb7719-f30f-4993-97ec-230159495939"
+Path: /sitecore/content/PLAY/playwebsite/Data/EmbedSendForm/EmbedSendForm
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "21151196-2e1b-4d0b-9b6c-16bf817c9694"
+      Hint: sendFormId
+      Value: 
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "db49e398-1f23-431f-914c-878c56002698"
