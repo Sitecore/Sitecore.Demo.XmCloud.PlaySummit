@@ -42,6 +42,9 @@
 @import './components/Account/PaymentMethodsFormSection.css';
 @import './components/Account/UserProfile.css';
 
+/* BYOCC */
+@import './components/BYOCC/CountdownTimer.css';
+
 /* Checkout */
 @import './components/Checkout/CartDetails.css';
 @import './components/Checkout/CheckoutDetails.css';
@@ -96,8 +99,9 @@
 @import './components/News/NewsList.css';
 
 /* NonSitecore */
-@import './components/NonSitecore/InformationPageHero.css';
 @import './components/NonSitecore/Accordion.css';
+@import './components/NonSitecore/InformationPageHero.css';
+@import './components/NonSitecore/Timer.css';
 
 /* PageContent */
 @import './components/PageContent/DynamicWelcomeMessage.css';
