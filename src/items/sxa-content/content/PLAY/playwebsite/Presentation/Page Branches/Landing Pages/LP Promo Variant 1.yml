@@ -1,0 +1,20 @@
+﻿---
+ID: "c21cb9f5-9d4c-4904-b199-538835128fa3"
+Parent: "6684887c-b3a7-4ccc-a175-fa9c0454ae6b"
+Template: "35e75c72-4985-4e09-88c3-0eac6cd1e64f"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches/Landing Pages/LP Promo Variant 1
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/document_pinned.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "80459820-4962-4d84-978c-e081ba8b5e22"

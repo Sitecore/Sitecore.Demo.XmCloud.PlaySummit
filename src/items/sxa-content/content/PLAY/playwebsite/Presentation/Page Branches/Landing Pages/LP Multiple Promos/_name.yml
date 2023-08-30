@@ -1,0 +1,104 @@
+﻿---
+ID: "c2241f66-df2a-4fe6-b3af-471395306c4a"
+Parent: "03897603-e3eb-4777-b0b1-f106fda3ff91"
+Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches/Landing Pages/LP Multiple Promos/$name
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/document_pinned.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{C14B6289-8AC2-439C-9E5B-40DE9F820C3F}"
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{B73A117A-11C2-4B86-8A5C-4C7648EE87DE}"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{33E594B6-63BF-46D7-ABF6-8C2A1E89D0E8}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{1802256F-1B3D-4008-8DEC-ADC7547594C6}"
+          p:before="*"
+          s:ds="local:/Data/Promo"
+          s:id="{2492BAC4-DA07-4C86-87F0-9873D40E2276}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7B0E59FDE5-1A8B-4967-8E4B-8E16DCB80939%7D&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5"
+          s:ph="/headless-main/container-4"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{A31E698E-33F2-402A-A839-DBB403B42B32}"
+          p:after="r[@uid='{1802256F-1B3D-4008-8DEC-ADC7547594C6}']"
+          s:ds="local:/Data/Promo 2"
+          s:id="{2492BAC4-DA07-4C86-87F0-9873D40E2276}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7B0E59FDE5-1A8B-4967-8E4B-8E16DCB80939%7D&amp;Styles=%7B87E4CA1A-14C9-4D44-BD3C-898909EAB561%7D&amp;RenderingIdentifier&amp;DynamicPlaceholderId=6"
+          s:ph="/headless-main/container-4"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{2AF49F79-A9F2-4B50-BA8C-AA07FE651024}"
+          p:after="r[@uid='{A31E698E-33F2-402A-A839-DBB403B42B32}']"
+          s:ds=""
+          s:id="{3836D951-BB14-43AC-9231-649B7F245DC5}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7BE76E9DCE-0FF3-486F-818E-E6F7C8B53EBA%7D&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=2"
+          s:ph="/headless-main/container-1"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{65E3AA2A-4B36-4C12-9C38-9F56A6458487}"
+          p:after="r[@uid='{2AF49F79-A9F2-4B50-BA8C-AA07FE651024}']"
+          s:ds=""
+          s:id="{C5F905F8-FD1F-444E-A9E5-AC6B774FF0DE}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7B2181EB9E-2230-405F-AFDF-8D31773C123C%7D&amp;Styles&amp;RenderingIdentifier&amp;DynamicPlaceholderId=3"
+          s:ph="/headless-main/container-1"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{68D3ED19-2AA1-40EE-88DA-37201A1A7C1F}"
+          p:after="r[@uid='{65E3AA2A-4B36-4C12-9C38-9F56A6458487}']"
+          s:ds="local:/Data/Hero Image"
+          s:id="{2C13DBC0-415C-5DAA-A7D9-56928F1271C4}"
+          s:par="CacheClearingBehavior=Clear on publish"
+          s:ph="headless-main" />
+        <r
+          uid="{B72E2CD5-B78E-4BDA-9C3E-E9C250AD96BF}"
+          p:after="r[@uid='{68D3ED19-2AA1-40EE-88DA-37201A1A7C1F}']"
+          s:ds=""
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B08C8BABD-CA64-41EE-B592-13E86CF8AE22%7D%7C%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{9BA2187B-7A45-4AEC-B564-9ED773C42C41}"
+          p:after="r[@uid='{B72E2CD5-B78E-4BDA-9C3E-E9C250AD96BF}']"
+          s:ds="local:/Data/Three Col CTA"
+          s:id="{4BE56F57-7867-5E91-8991-37464315D86B}"
+          s:par="CacheClearingBehavior=Clear on publish"
+          s:ph="headless-main" />
+        <r
+          uid="{09105C4A-AA53-4BA4-B77C-7BAE78B91F1A}"
+          p:after="*[1=2]"
+          s:ds=""
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4"
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "60758ad3-310b-4bef-a4bc-f8383a14663e"
+    - ID: "e0c0c8a4-0fea-4963-8b86-d47810b80efa"
+      Hint: Content
+      Value: Nam posuere tincidunt orci in interdum. Proin at rutrum erat. Mauris tincidunt elit sed magna fermentum, id egestas tortor congue. Proin lobortis nulla eget enim bibendum, pulvinar hendrerit urna vehicula. Pellentesque aliquet maximus sapien id facilisis. Aliquam sed nibh ornare, rhoncus eros ut, feugiat nibh. Donec ac condimentum augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque fringilla urna nec ante pellentesque, ac vehicula augue pretium. Vestibulum elementum nisl mi, ut ornare risus convallis sodales. Sed vulputate felis quis nulla rhoncus, ut ultrices sem commodo. Curabitur gravida porttitor massa id blandit. Duis eget lobortis odio.

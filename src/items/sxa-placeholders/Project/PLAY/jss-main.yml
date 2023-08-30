@@ -11,6 +11,7 @@ SharedFields:
   Hint: Allowed Controls
   Value: |
     {780D897C-7065-585F-8585-28118565FA00}
+    {8D639E0A-5510-442A-A3CC-E97086E9DAA9}
     {C1E45B3A-429D-53FE-9640-1581E24A1447}
     {2DA4EF2D-BADE-52AB-9D3B-82D2EB08C53A}
     {18D56CF9-81D3-50C2-A8C3-19349D36074D}
@@ -53,4 +54,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9ab4a8dd-c92c-42d7-acff-6908aef26951"
+      Value: "7c424cde-5e4c-4a91-8bb2-d3c32a0e167b"

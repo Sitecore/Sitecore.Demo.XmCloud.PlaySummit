@@ -1,0 +1,17 @@
+﻿---
+ID: "3d4c836f-bd5e-4ac4-bc8d-bc35230a3d64"
+Parent: "3d05f0ad-9e47-45cb-a6d4-fba22e4477bc"
+Template: "3ee5e476-e843-51f1-a351-d2c3b198475a"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches/Landing Pages/LP Promo Variant 2/$name/Data/Hero Image
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "7f1d47cf-4525-5f3e-b8fe-4c6ddbcefa39"
+      Hint: hero
+      Value: |
+        <image mediaid="{94156736-7BB8-4523-8F0E-9C74D52357A8}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "43d4e9d6-d764-4710-9073-7977b9162f33"
