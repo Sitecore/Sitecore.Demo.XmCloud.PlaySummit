@@ -1,54 +1,57 @@
 {
-  "renderingHosts": {
-    "playwebsite": {
-      "path": "./src/rendering",
-      "nodeVersion": "16.15.1",
-      "jssDeploymentSecret": "511cdfab92b7440db866ac0fb817b490",
-      "enabled": true,
-      "type": "sxa",
-      "lintCommand": "lint",
-      "startCommand": "start:production",
-      "buildCommand": "build",
-      "runCommand": "next:start"
+    "renderingHosts": {
+        "playwebsite": {
+            "path": "./src/rendering",
+            "nodeVersion": "16.15.1",
+            "jssDeploymentSecret":"511cdfab92b7440db866ac0fb817b490",
+            "enabled": true,
+            "type": "sxa",
+            "lintCommand": "lint",
+            "startCommand": "start:production",
+            "buildCommand": "build",
+            "runCommand": "next:start"
+        }
+    },
+    "transforms": [
+        {
+            "xdtPath": "/xdts/",
+            "targetPath": "/"
+        }
+    ],
+    "postActions": {
+        "actions":{
+          "warmUpCm": {
+            "urls": [
+              "/sitecore/shell",
+              "/sitecore/shell/Applications/Content%20Editor.aspx?sc_bw=1",
+              "/sitecore/client/Applications/Launchpad",
+              "/Utilities/InitializeComponentsLibraryId.aspx"
+            ]
+          },
+          "populateSchema": {
+            "indexNames": [
+              "sitecore_core_index",
+              "sitecore_master_index",
+              "sitecore_horizon_index"
+            ]
+          },
+          "reindex": {
+            "indexNames": [
+              "sitecore_core_index",
+              "sitecore_master_index",
+              "sitecore_horizon_index"
+            ]
+          },
+          "publish": {
+            "path": "/sitecore",
+            "languages": [
+              "en",
+              "fr-CA"
+            ],
+            "itemIds": [],
+            "targets": ["Edge"],
+            "republish": false
+          }
+        }
     }
-  },
-  "transforms": [
-    {
-      "xdtPath": "/xdts/",
-      "targetPath": "/"
-    }
-  ],
-  "postActions": {
-    "actions": {
-      "warmUpCm": {
-        "urls": [
-          "/sitecore/shell",
-          "/sitecore/shell/Applications/Content%20Editor.aspx?sc_bw=1",
-          "/sitecore/client/Applications/Launchpad",
-          "/Utilities/InitializeComponentsLibraryId.aspx"
-        ]
-      },
-      "populateSchema": {
-        "indexNames": [
-          "sitecore_core_index",
-          "sitecore_master_index",
-          "sitecore_horizon_index"
-        ]
-      },
-      "reindex": {
-        "indexNames": [
-          "sitecore_core_index",
-          "sitecore_master_index",
-          "sitecore_horizon_index"
-        ]
-      },
-      "publish": {
-        "path": "/sitecore",
-        "languages": ["en", "fr-CA"],
-        "itemIds": [],
-        "targets": ["Edge"],
-        "republish": false
-      }
-    }
-  }
 }
