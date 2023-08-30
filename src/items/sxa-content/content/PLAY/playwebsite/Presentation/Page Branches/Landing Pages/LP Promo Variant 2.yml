@@ -1,0 +1,55 @@
+﻿---
+ID: "6c07c9a2-87c4-418f-aa22-9e5d6c382e9e"
+Parent: "6684887c-b3a7-4ccc-a175-fa9c0454ae6b"
+Template: "35e75c72-4985-4e09-88c3-0eac6cd1e64f"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches/Landing Pages/LP Promo Variant 2
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/document_pinned.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}">
+        <r
+          ds="{64D1C128-A38E-525E-A993-2431DE26A39E}"
+          id="{2C13DBC0-415C-5DAA-A7D9-56928F1271C4}"
+          par="CacheClearingBehavior=Clear on publish"
+          ph="headless-main"
+          uid="{257D7AF6-2956-4632-87EA-59471A7EFF79}" />
+        <r
+          id="{7AB4158F-135B-5E9B-8106-C4A898F2F02D}"
+          par="CacheClearingBehavior=Clear on publish"
+          ph="headless-main"
+          uid="{0BCC86A3-3BAB-45BE-A080-13FD6D0E463F}" />
+        <r
+          ds=""
+          id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+          par="GridParameters&amp;FieldNames&amp;Styles&amp;DynamicPlaceholderId"
+          ph="headless-main"
+          uid="{340E25BA-BCE6-4585-8444-DED6BD2ADDFD}"
+          ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cce58c50-5b21-4c1e-9fdd-5a1647fa5569"
+  - Version: 2
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "eebcb713-91b2-4a83-b1b4-97ff95da3073"
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20221013T172722Z

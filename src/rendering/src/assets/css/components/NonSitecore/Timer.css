@@ -1,0 +1,20 @@
+.timer {
+  @apply flex justify-center;
+
+  .timer-counter {
+    @apply flex text-5xl font-bold;
+  }
+
+  .timer-separator,
+  .timer-block-value {
+    @apply !text-5xl !font-bold;
+  }
+
+  .timer-block {
+    @apply flex flex-col justify-center text-center w-20;
+
+    .timer-block-type {
+      @apply mt-1 !text-xs !font-bold uppercase;
+    }
+  }
+}

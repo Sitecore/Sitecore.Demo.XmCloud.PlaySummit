@@ -1,0 +1,20 @@
+﻿---
+ID: "d1bb7719-f30f-4993-97ec-230159495939"
+Parent: "fec1fe1d-4d65-4554-b3cd-6899c57e3785"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Global/EmbedSendForm
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 950
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "51319793-c4d8-4d30-ae6d-25f724ebb38c"

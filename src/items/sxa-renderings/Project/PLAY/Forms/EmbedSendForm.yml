@@ -1,0 +1,32 @@
+﻿---
+ID: "8d639e0a-5510-442a-a3cc-e97086e9daa9"
+Parent: "a0e91fb8-86dd-40ad-9051-0aaf886a35d4"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: /sitecore/layout/Renderings/Project/PLAY/Forms/EmbedSendForm
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: EmbedSendForm
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "edgeicons/32x32/form-embeded.png"
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Project/Global/EmbedSendForm
+- ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
+  Hint: Open Properties after Add
+  Value: 
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{742D06B0-3E34-4E15-BBAC-FA2623268D96}"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: /sitecore/content/PLAY/playwebsite/Data/EmbedSendForm
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e25c466a-83e0-4dfc-9c60-06cfd766d8a6"

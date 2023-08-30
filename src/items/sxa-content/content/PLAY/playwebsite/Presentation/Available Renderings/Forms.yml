@@ -8,6 +8,7 @@ SharedFields:
   Hint: Renderings
   Value: |
     {9D27B323-AD63-54C8-A9BD-2DED29DFAF1D}
+    {8D639E0A-5510-442A-A3CC-E97086E9DAA9}
     {89A5B1C7-993A-58EF-BE4C-C3A171979277}
     {AC5D6DE7-AF70-55C1-B251-BC8976892AAA}
 Languages:
@@ -17,4 +18,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e0f3ee45-9394-40a7-879e-11328cbec232"
+      Value: "78726003-a62a-4d15-b80e-5c796fbe5aa0"

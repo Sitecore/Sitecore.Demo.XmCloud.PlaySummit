@@ -1,0 +1,36 @@
+﻿---
+ID: "350344db-aa1c-450f-948d-a30290141d87"
+Parent: "760b622d-24d8-4b41-99a0-4a8dcf1966e5"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches/Landing Pages/LP Multiple Promos/$name/Data/Promo 2
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: Phasellus aliquet, nunc non condimentum euismod, orci magna rhoncus lectus, at faucibus libero risus vitae magna. Mauris pretium eleifend ante bibendum imperdiet. Fusce iaculis lacus augue, ac venenatis magna pharetra at. Proin tristique sem eu arcu tempus, vitae hendrerit nulla bibendum. Pellentesque elementum mauris et dolor interdum accumsan.
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: Sed consectetur, magna a gravida convallis, turpis sem.
+    - ID: "739c6cc2-0031-463d-9599-13478fd50ee3"
+      Hint: PromoIcon2
+      Value: 
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "722a8c16-dff6-4ce2-adf6-8e3c07142f5a"
+    - ID: "c6e604c3-5371-4e67-83df-a09a5ea66249"
+      Hint: PromoText3
+      Value: Cras tortor nulla, mollis ut feugiat ac.
+    - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
+      Hint: PromoLink
+      Value: |
+        <link linktype="internal" text="Learn more" querystring="" target="" id="{68DC89A4-1B04-59A8-9C4E-3B49D6C61052}" />
+    - ID: "f94b9858-c439-4291-863b-757b536c8b65"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{16BD098F-8441-43C9-A08F-3E2251D0F18E}" ></image>

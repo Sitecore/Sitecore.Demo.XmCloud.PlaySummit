@@ -1,0 +1,13 @@
+﻿---
+ID: "fe83d907-a6c3-4a8b-9fa0-76b9f44262d2"
+Parent: "0e57ee9f-0689-4248-ba8d-6883959e984b"
+Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches/Landing Pages/LP Promo Variant 1/$name/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bd97eda5-8433-47e7-9308-650161106f37"

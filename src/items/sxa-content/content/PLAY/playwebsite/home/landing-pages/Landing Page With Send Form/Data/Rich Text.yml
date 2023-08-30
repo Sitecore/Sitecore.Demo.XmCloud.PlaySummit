@@ -1,0 +1,26 @@
+﻿---
+ID: "32ee4016-278f-4a07-ac32-0eed039bc7c4"
+Parent: "99a03081-c163-4851-ba89-0ed08cda2a71"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Landing Page With Send Form/Data/Rich Text"
+BranchID: "c21cb9f5-9d4c-4904-b199-538835128fa3"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{189DEBA5-BB8E-4052-8A48-154799CE3091}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <h3>Nam vestibulum ultricies bibendum. </h3>
+        <p>Quisque aliquam condimentum nunc, at tristique leo. Duis congue tristique arcu, vitae mattis sapien rutrum vel. Pellentesque eget leo nec augue tincidunt feugiat at eu lorem. Curabitur tellus nulla, consectetur in interdum ut, feugiat vitae purus. Sed at felis non massa venenatis congue. Praesent ac odio finibus, pretium magna tincidunt, efficitur metus. Donec quis lorem a felis placerat varius. Integer sit amet justo quis quam molestie tempus hendrerit a metus. Praesent hendrerit, massa a pharetra dapibus, nulla ipsum fringilla ex, sed tempus sem nibh quis nunc.</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9cb114b6-ba23-4e41-b72b-ea3b895ded8e"
