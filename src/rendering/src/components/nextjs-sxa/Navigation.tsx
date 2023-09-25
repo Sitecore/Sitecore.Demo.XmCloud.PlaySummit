@@ -184,7 +184,7 @@ export const LandingPagesNavigation = (props: NavigationProps): JSX.Element => {
       />
     ));
   const styles =
-    props.params != null ? `${props.params.GridParameters} ${props.params.Styles}` : null;
+    props.params != null ? `${props.params.GridParameters ?? ''} ${props.params.Styles ?? ''}` : '';
 
   return (
     <div className={`component navigation landing-pages-navigation ${styles}`}>
