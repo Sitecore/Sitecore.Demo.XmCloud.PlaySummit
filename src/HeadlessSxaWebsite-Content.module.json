@@ -23,6 +23,21 @@
                 "name": "sxa-media",
                 "path": "/sitecore/media library/Project",
                 "scope": "descendantsOnly"
+            },
+            {
+                "name": "system-media",
+                "path": "/sitecore/media library/System",
+                "scope": "descendantsOnly",
+                "rules": [
+                    {
+                        "path": "/Simulator Backgrounds",
+                        "scope": "ignored"
+                    },
+                    {
+                        "path": "/Template Thumbnails",
+                        "scope": "ignored"
+                    }
+                ]
             }
         ]
     }
