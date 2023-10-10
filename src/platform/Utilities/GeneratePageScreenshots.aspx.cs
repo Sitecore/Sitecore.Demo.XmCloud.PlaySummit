@@ -15,7 +15,10 @@ namespace Sitecore.Demo.Edge.Website.Utilities
                         "/sitecore/system/Modules/PowerShell/Script Library/PLAY/Generate Page Screenshots");
                     var script = speScriptItem?["Script"];
 
-                    scriptSession.ExecuteScriptPart(script, true);
+                    var contextItem = Sitecore.Context.Database.GetItem("/sitecore/content/PLAY/playwebsite/home"); 
+                    scriptSession.SetItemLocationContext(contextItem);
+                    scriptSession.ExecuteScriptPart(script, false);
+
                     Response.Write("Success!");
                 }
             }
