@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: tRLSl7RkUEyzhoj6TFFbMQ
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{6804904C-2EA9-4ACD-A20D-8A8DE9035C3E}" />
 Languages:
 - Language: en
   Fields:
@@ -53,7 +57,7 @@ Languages:
       Value: "{C53A4814-4956-427E-A3C0-1DAEE197459C}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "298391da-b1e6-474e-b9ba-306b0694b478"
+      Value: "095fdad4-1d8c-40a3-b74e-1ca232cdac0c"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Opening Keynote

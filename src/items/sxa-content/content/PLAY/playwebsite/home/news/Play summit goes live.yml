@@ -10,6 +10,10 @@ SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 50
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{5F540EFB-C4DB-4289-B6DA-83CB84C3C3BD}" />
 Languages:
 - Language: en
   Fields:
@@ -30,7 +34,7 @@ Languages:
       Value: "PLAY! Summit Goes Live"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b8f9d7ad-862c-4fd1-94bf-5956184b4de4"
+      Value: "c8caded5-4e9f-46c8-812f-82ac1d0be174"
     - ID: "c60646d2-b021-4158-be5f-64943e445b1a"
       Hint: PublishDate
       Value: 20210804T172751Z

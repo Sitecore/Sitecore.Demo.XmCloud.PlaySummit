@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: k8hmxzWpuUy79dDXhdB7NQ
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{1438F686-AB02-4992-8B32-4B5B09D7E78E}" />
 Languages:
 - Language: en
   Fields:
@@ -51,7 +55,7 @@ Languages:
       Value: "{D3A3A6DF-FBF9-48B5-947C-A9A1257006F7}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e7dca254-21e6-41d2-bc51-d48af6410cec"
+      Value: "0eae3438-8b50-4a5f-8987-a70bc58026be"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "Mountain biking: tales from the trail"

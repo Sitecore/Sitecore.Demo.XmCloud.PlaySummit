@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: "U1Z-8nZDvUa-TRh8DINa6w"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{E2754BBD-D4D3-46B1-90EA-1D86F5298F19}" />
 Languages:
 - Language: en
   Fields:
@@ -27,7 +31,7 @@ Languages:
       Value: "{8B61B264-4172-4CA6-8E85-F22ECD8B4107}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "70ce200e-9423-4872-aad3-fc8f5b440886"
+      Value: "6369b9c2-c841-49dc-80fd-bd6f1128c9d5"
     - ID: "94f8d6fc-b9c3-41dc-8cdf-5e967d108a40"
       Hint: Company
       Value: Kolmann

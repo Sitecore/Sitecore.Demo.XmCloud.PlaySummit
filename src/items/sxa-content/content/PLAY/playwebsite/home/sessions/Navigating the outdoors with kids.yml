@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: jshF0zSN9kC5kVQ5wvezHQ
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{170DC401-1E90-491C-9DD7-7EFFF307663B}" />
 Languages:
 - Language: en
   Fields:
@@ -55,7 +59,7 @@ Languages:
       Value: "{F14EF887-2C62-474E-A61E-F8EBEF6173CC}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "771468bd-44b2-4050-8a44-41effbb3399a"
+      Value: "88916a89-5b29-449e-bae3-7761a2dfa71e"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Navigating the outdoors with kids

@@ -13,7 +13,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{0856052C-0653-42AA-9FDA-D70F2729103B}" />
+    <image mediaid="{74E8D128-F3CD-4992-96C4-BB1414211F7A}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -54,4 +54,4 @@ Languages:
       Value: News
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7c3c2f93-520a-4124-947c-c028fcf75fe3"
+      Value: "477d4928-1d50-4c5a-8149-07ae2f8ed03f"

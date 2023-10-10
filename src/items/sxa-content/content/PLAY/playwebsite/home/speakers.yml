@@ -13,7 +13,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{5D27D7EF-94B6-4FE1-B25F-CC21A24EB801}" />
+    <image mediaid="{BBD9B34F-675C-472E-A665-24A15AA36E13}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -76,4 +76,4 @@ Languages:
       Value: Speakers
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "60e41752-766c-464a-a138-9c91070eeac8"
+      Value: "7c64fc80-343c-4c86-a0a1-c804f74f9830"

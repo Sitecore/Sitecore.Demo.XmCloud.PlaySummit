@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: tAtZEQnGJUePFwkICtJFvQ
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{11011D81-ACFE-4056-91FD-030D6156530B}" />
 Languages:
 - Language: en
   Fields:
@@ -55,7 +59,7 @@ Languages:
       Value: "{3BC52CBD-3EE1-496F-918E-C0D55A96B7C9}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f25db742-2a60-460f-80eb-cff43d91e2f2"
+      Value: "7ac278f1-9600-4697-9d81-aac42ead32ef"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "Ask an expert: outdoor survival"

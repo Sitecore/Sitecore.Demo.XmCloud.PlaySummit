@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: "6lGh6lTGAEyNkcUnX7yl-g"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{E8EF5C83-FDAF-419B-96A4-7AC227ADB219}" />
 Languages:
 - Language: en
   Fields:
@@ -24,7 +28,7 @@ Languages:
       Value: "PLAY! Summit to build new mountain biking park"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "8691ea12-4f78-4b64-bf2f-bf577cba1979"
+      Value: "c5a1c4e3-dc69-4627-bb46-057739a8fb2b"
     - ID: "c60646d2-b021-4158-be5f-64943e445b1a"
       Hint: PublishDate
       Value: "20211110T050000:637721172000000000Z"

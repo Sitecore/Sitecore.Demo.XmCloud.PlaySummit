@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: ECWmqi7stUOCJ3iC5MTpZg
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{20A4ADE3-F88D-4D5C-9CF9-29CB9909B58D}" />
 Languages:
 - Language: en
   Fields:
@@ -53,7 +57,7 @@ Languages:
       Value: "{05508583-1AE2-40C8-A87E-1A54351B0117}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "102e1cde-7a66-499b-b3d3-316e6f53f43c"
+      Value: "28136e35-81dd-4ca5-bf58-495d92c28c46"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "Meet a pro: Q&A with Chris Williams"

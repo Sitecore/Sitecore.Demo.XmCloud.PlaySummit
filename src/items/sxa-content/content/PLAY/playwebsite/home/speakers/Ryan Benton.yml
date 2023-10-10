@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: XvkuMwioqkec6hRWsXGnFg
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{A7C0C4B4-873F-4909-B75F-81A31BB988B7}" />
 Languages:
 - Language: en
   Fields:
@@ -27,7 +31,7 @@ Languages:
       Value: "{63F36064-9C90-48E1-B776-99A1FCCD9866}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3410a6aa-74ad-43f8-a131-2cbd57122bd0"
+      Value: "86596965-2c36-44bd-879f-8b11f35ea89a"
     - ID: "94f8d6fc-b9c3-41dc-8cdf-5e967d108a40"
       Hint: Company
       Value: Redsand
