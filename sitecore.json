@@ -35,6 +35,10 @@
       {
         "fieldId": "{52807595-0F8F-4B20-8D2A-CB71D28C6103}",
         "description": "__Owner"
+      },
+      {
+        "fieldId": "c7c26117-dbb1-42b2-ab5e-f7223845cca3",
+        "description": "__Thumbnail"
       }
     ]
   },

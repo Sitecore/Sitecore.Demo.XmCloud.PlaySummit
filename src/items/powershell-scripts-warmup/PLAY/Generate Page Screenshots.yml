@@ -1,0 +1,23 @@
+﻿---
+ID: "c76e8b2f-5101-4076-98b7-3cfda3fc394e"
+Parent: "f74e3b79-2df8-482a-b355-62534e3d69d7"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/PLAY/Generate Page Screenshots
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    Get-ChildItem -Recurse "/sitecore/content/PLAY/playwebsite/home" -WithParent |
+      ForEach-Object {
+        $_.Editing.BeginEdit()
+        $_.Fields["__Updated"].Value = "20230101T000000Z";
+        $_.Editing.EndEdit()
+      }
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8fb580b1-8658-4e4e-bb48-d4bed724116b"
