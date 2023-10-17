@@ -10,7 +10,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{5DC12E8F-4E37-4BA2-8F46-5085B83BC07E}" />
+    <image mediaid="{F9019BBA-8D39-4683-9D8B-490D151409B7}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -75,4 +75,4 @@ Languages:
       Value: Payment Confirmed
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2b8d46eb-0160-415c-9d6c-6b9b45c1cbc5"
+      Value: "9f4628cf-ec20-4067-94f0-6d76f35eca9d"

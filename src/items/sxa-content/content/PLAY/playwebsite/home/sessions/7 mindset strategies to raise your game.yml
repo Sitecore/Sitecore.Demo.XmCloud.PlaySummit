@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: "Fjm7bEdK3k-chKp9c316cw"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{A2A8AC1D-ED99-4418-AAB0-27E5092DE3EC}" />
 Languages:
 - Language: en
   Fields:
@@ -50,7 +54,7 @@ Languages:
       Value: "{A5673B41-FABE-450B-9037-14132FA734DA}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "38bf4d13-aa3d-41da-a1c3-d8f7375524a1"
+      Value: "ecb9d9aa-b443-48b6-9d4c-8a89a6c2b9b1"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Seven mindset strategies to raise your game

@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: "qgtATX-IO06l7UAIROH4eA"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{3228B38E-4ECE-412E-A38D-CF3486E59525}" />
 Languages:
 - Language: en
   Fields:
@@ -27,7 +31,7 @@ Languages:
       Value: "{FC360AAE-8685-4782-8929-9D583834812D}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3bcdb7fa-15a0-4288-8c4d-0b00957113ea"
+      Value: "6152018b-524d-4de2-b2a8-c5722a1aaadc"
     - ID: "94f8d6fc-b9c3-41dc-8cdf-5e967d108a40"
       Hint: Company
       Value: Wave52

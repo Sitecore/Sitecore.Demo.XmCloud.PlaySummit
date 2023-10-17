@@ -13,7 +13,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{21102729-1EBD-40A0-820C-EADC40536146}" />
+    <image mediaid="{D991F73C-5004-4EC6-8627-F0230F0E774E}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -78,4 +78,4 @@ Languages:
       Value: Tickets
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b9cd1221-807b-4fc0-a9da-8944e631994e"
+      Value: "53537968-b64b-459c-aa4a-0c62f150ab0d"

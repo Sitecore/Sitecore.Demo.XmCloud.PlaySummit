@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: "c0M7RkhSik2iDu7iPqi-5g"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{2AA6EE0C-8E54-4BAC-BA69-AC4F0B710451}" />
 Languages:
 - Language: en
   Fields:
@@ -27,7 +31,7 @@ Languages:
       Value: "{3F809DBD-C095-40F0-AB32-D219CEF1CFC1}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c4a7b7fb-2468-4e21-9b68-c93d6ebcbadc"
+      Value: "bb06e5a4-0f61-454e-a1eb-8659af81df4d"
     - ID: "94f8d6fc-b9c3-41dc-8cdf-5e967d108a40"
       Hint: Company
       Value: Spark

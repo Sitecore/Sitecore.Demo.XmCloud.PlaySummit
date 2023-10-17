@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: GpMhCj3gdkOzATy1_JRcHQ
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{522B3D67-8F15-408A-842B-CE37FDAE6592}" />
 Languages:
 - Language: en
   Fields:
@@ -40,7 +44,7 @@ Languages:
       Value: "{349CE17E-AB72-4C9B-BF43-8DE819D2E8B2}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "dee60996-4115-41b4-9567-f9c211448b12"
+      Value: "15e73755-038a-4532-ae03-d387f49f8e0e"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
       Value: |

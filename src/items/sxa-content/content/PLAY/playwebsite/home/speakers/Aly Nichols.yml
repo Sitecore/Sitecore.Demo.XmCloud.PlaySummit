@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: "pvQXkHYj-k-x_UA1QLY-4w"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{64DCD748-E65B-4AB0-B83A-3AED34588778}" />
 Languages:
 - Language: en
   Fields:
@@ -30,7 +34,7 @@ Languages:
       Value: "{63C32663-C4AF-40C0-9347-47411C130E87}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c30f564c-f8a3-47ba-a6d1-30d6c140ff9c"
+      Value: "ca4ee1bd-67b6-403b-ba14-1cbecfc0b851"
     - ID: "94f8d6fc-b9c3-41dc-8cdf-5e967d108a40"
       Hint: Company
       Value: Pacifique

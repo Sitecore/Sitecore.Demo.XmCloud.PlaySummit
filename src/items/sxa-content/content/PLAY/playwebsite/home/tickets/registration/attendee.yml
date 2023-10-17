@@ -10,7 +10,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{1BB27662-B9F3-4795-A385-0ECB11CA52EC}" />
+    <image mediaid="{AF18482B-9AF5-458C-904A-2EE2A1722C13}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -92,4 +92,4 @@ Languages:
       Value: Attendee
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "bacd4ecd-fdb8-4cba-b42f-5ba3533cf551"
+      Value: "8a722325-e6d4-462e-a969-f63a917baf46"

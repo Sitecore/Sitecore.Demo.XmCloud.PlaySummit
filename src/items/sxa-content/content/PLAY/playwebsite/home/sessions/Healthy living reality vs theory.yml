@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: kyi6dvc6j0any0c1zpkOyA
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{3FB4FCE9-31BF-4927-9E4F-52097F0AD749}" />
 Languages:
 - Language: en
   Fields:
@@ -50,7 +54,7 @@ Languages:
       Value: "{42254A3E-44A5-4572-8C62-F918F36B034B}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "21bc5d59-0e05-4184-a8a9-deff8eed6834"
+      Value: "d9e0e9d1-0033-4dc9-bb2a-8c6d9b60c426"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "Healthy living: reality vs. theory"
