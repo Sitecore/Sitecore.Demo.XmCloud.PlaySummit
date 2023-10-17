@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 import config from 'temp/config';
 import { init } from '@sitecore/engage';
 import { siteResolver } from 'lib/site-resolver';
-import { isCdpEnabled } from '../../helpers/CdpHelper'; // DEMO TEAM CUSTOMIZATION
+import { isEmbeddedPersonalizationEnabled } from '../../helpers/EmbeddedPersonalizationHelper'; // DEMO TEAM CUSTOMIZATION
 
 /**
  * This is the CDP page view component.
@@ -32,7 +32,7 @@ const CdpPageView = (): JSX.Element => {
     pageVariantId: string
   ) => {
     // DEMO TEAM CUSTOMIZATION - Only initialize if the environment variables are set
-    if (isCdpEnabled) {
+    if (isEmbeddedPersonalizationEnabled) {
       const pointOfSale = PosResolver.resolve(site, language);
       const engage = await init({
         clientKey: process.env.NEXT_PUBLIC_CDP_CLIENT_KEY || '',
@@ -62,7 +62,7 @@ const CdpPageView = (): JSX.Element => {
    */
   const disabled = () => {
     // DEMO TEAM CUSTOMIZATION - Disable if the environment variables are not set
-    return !isCdpEnabled;
+    return !isEmbeddedPersonalizationEnabled;
   };
 
   useEffect(() => {

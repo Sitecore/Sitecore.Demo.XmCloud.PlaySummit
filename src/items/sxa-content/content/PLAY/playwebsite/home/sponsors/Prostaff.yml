@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: VjigJvgu8EmzwslVWDe7sA
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{544D5F20-E219-410E-8554-853C21A62AB9}" />
 Languages:
 - Language: en
   Fields:
@@ -36,7 +40,7 @@ Languages:
       Value: Prostaff
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6f546cb3-6f45-406c-b12d-b082d795f4bf"
+      Value: "c8b861aa-cb4f-45bd-9b37-6a34893a6cb9"
     - ID: "cf42c29f-ee3a-4f06-92ac-10fc51a42099"
       Hint: Level
       Value: Platinum

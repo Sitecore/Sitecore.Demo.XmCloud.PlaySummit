@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: hGZchsRPsUGmWXDWkmg7fA
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{2E4EA1C8-56F4-4419-A9DB-1AE92EE90F46}" />
 Languages:
 - Language: en
   Fields:
@@ -37,7 +41,7 @@ Languages:
         <image stylelabs-content-id="34199" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/34199/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/893cf2ebf17344d887e4cc5c35013541?v=bd27157d" mediaid="" stylelabs-content-type="Image" alt="Run Right Through Logo" height="1001" width="1001" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "958045df-16bf-43a1-9325-7289d1753298"
+      Value: "75bdb8ce-6622-41ad-85c6-162ea21da835"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
       Value: |

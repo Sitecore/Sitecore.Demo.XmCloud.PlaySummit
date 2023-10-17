@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: cmjgKDnnZUSj__DypKiE9A
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{2B12B45E-5D77-4BA8-8D6C-6008235D6DF2}" />
 Languages:
 - Language: en
   Fields:
@@ -53,7 +57,7 @@ Languages:
       Value: "{421831DC-EE86-4E05-B974-8C0AE7A21D0E}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2685c205-3694-4296-b605-656ef54cdb50"
+      Value: "eda77bfd-ea4a-4bec-8f32-129f34c54024"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "Ask an expert: nutrition"

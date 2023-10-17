@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: aZhH7psjOUGxWaab4q7sVQ
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{5D633028-92EA-4A3E-BAAF-EA2DC2272C82}" />
 Languages:
 - Language: en
   Fields:
@@ -53,7 +57,7 @@ Languages:
       Value: "{72DD2F9A-9EA1-4BD3-A8F5-927795E58AF9}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0d2d9cf6-170d-4855-adcd-fd551d2460da"
+      Value: "9a3c2f1f-b9f5-4c5f-a8bd-4eeada497075"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "Meet a pro: Q&A with Zoran Borovic"

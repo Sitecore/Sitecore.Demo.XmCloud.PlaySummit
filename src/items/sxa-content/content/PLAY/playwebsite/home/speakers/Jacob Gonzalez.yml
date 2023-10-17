@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: "_CwJC-t78EuxAF0eqTm_mQ"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{9E443516-E786-4859-967E-D7D0CAE73432}" />
 Languages:
 - Language: en
   Fields:
@@ -27,7 +31,7 @@ Languages:
       Value: "{01E09652-ABD7-4BB0-AD96-E609966330BD}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "8e7ff26f-1b21-4ec1-933e-51626882c7ad"
+      Value: "792eb54b-7201-4a97-958d-b80950c73a79"
     - ID: "94f8d6fc-b9c3-41dc-8cdf-5e967d108a40"
       Hint: Company
       Value: Striva

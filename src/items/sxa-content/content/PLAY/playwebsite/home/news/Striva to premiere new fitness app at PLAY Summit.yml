@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: yQ7zuE_0aU6H5jV2Fhot7Q
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{651497C0-D170-4006-B0A4-334D0C3E57C3}" />
 Languages:
 - Language: en
   Fields:
@@ -24,7 +28,7 @@ Languages:
       Value: "Striva to premiere new fitness app at PLAY! Summit"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6f635464-f7cb-4886-a6e8-16894a086bd5"
+      Value: "7da5d4cd-e438-46a9-a46d-46b0a156b7ce"
     - ID: "c60646d2-b021-4158-be5f-64943e445b1a"
       Hint: PublishDate
       Value: "20210807T182227:637639573470370000Z"

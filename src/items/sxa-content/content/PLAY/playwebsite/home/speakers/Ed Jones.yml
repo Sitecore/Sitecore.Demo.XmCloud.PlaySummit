@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: "6xGGrJo1yEOmyd--AfS6-A"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{E8F974BC-02AE-4D14-8A31-05F82CA1F298}" />
 Languages:
 - Language: en
   Fields:
@@ -27,7 +31,7 @@ Languages:
       Value: "{5EE51C40-8986-44C0-B44A-D030D4482A43}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "bf4ff809-cdfb-4886-b56d-f0c233a7286d"
+      Value: "989e7437-0e98-46c2-a586-15baacdd241f"
     - ID: "94f8d6fc-b9c3-41dc-8cdf-5e967d108a40"
       Hint: Company
       Value: Alba

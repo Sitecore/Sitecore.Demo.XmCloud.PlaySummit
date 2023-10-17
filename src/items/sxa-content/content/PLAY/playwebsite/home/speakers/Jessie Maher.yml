@@ -7,6 +7,10 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: "dxJdgp-KB0qT_gl9_2aXOA"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{A9A92074-ACAC-47B5-ABD2-7B39F7C9C979}" />
 Languages:
 - Language: en
   Fields:
@@ -24,7 +28,7 @@ Languages:
       Value: "{E67E1029-D58F-45E7-B85F-0E7E0086099E}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e08d924c-77df-47bf-bf77-478fdf9ea0ed"
+      Value: "eeec1b8a-28b7-49d0-9a14-b05a5b904f2b"
     - ID: "94f8d6fc-b9c3-41dc-8cdf-5e967d108a40"
       Hint: Company
       Value: "PLAY! Summit"
