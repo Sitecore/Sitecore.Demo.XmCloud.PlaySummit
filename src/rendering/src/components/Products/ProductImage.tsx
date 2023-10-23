@@ -9,14 +9,14 @@ export type ProductImageProps = {
 };
 
 const ProductImage = (props: ProductImageProps): JSX.Element => {
-  const [activeImgSrc, setActiveImg] = useState(null);
+  const [activeImgSrc, setActiveImgSrc] = useState(null);
 
   const uniqueImages = useMemo(
     () => [...new Map(props.images.map((image) => [image['Url'], image])).values()],
     [props.images]
   );
 
-  useEffect(() => setActiveImg(null), [props]);
+  useEffect(() => setActiveImgSrc(null), [props]);
 
   const thumbnails = useMemo(
     () =>
@@ -26,7 +26,7 @@ const ProductImage = (props: ProductImageProps): JSX.Element => {
             const isActive = activeImgSrc ? img.Url === activeImgSrc : i === 0;
             return (
               <div key={img.Url} className={isActive ? 'active' : ''}>
-                <img src={`${img.Url}&t=w320`} alt="" onClick={() => setActiveImg(img.Url)} />
+                <img src={`${img.Url}&t=w320`} alt="" onClick={() => setActiveImgSrc(img.Url)} />
               </div>
             );
           })}
