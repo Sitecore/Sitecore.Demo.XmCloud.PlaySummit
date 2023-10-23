@@ -9,7 +9,7 @@ export type ProductImageProps = {
 };
 
 const ProductImage = (props: ProductImageProps): JSX.Element => {
-  const [activeImg, setActiveImg] = useState(null);
+  const [activeImgSrc, setActiveImg] = useState(null);
 
   const uniqueImages = useMemo(
     () => [...new Map(props.images.map((image) => [image['Url'], image])).values()],
@@ -23,7 +23,7 @@ const ProductImage = (props: ProductImageProps): JSX.Element => {
       uniqueImages.length > 1 && (
         <div className="image-secondary">
           {uniqueImages.map((img, i) => {
-            const isActive = activeImg ? img.Url === activeImg : i === 0;
+            const isActive = activeImgSrc ? img.Url === activeImgSrc : i === 0;
             return (
               <div key={img.Url} className={isActive ? 'active' : ''}>
                 <img src={`${img.Url}&t=w320`} alt="" onClick={() => setActiveImg(img.Url)} />
@@ -32,18 +32,18 @@ const ProductImage = (props: ProductImageProps): JSX.Element => {
           })}
         </div>
       ),
-    [activeImg, uniqueImages]
+    [activeImgSrc, uniqueImages]
   );
 
   const activeImage = useMemo(() => {
     if (props.loading) {
       return <Skeleton height="100%" />;
-    } else if (activeImg || uniqueImages[0]) {
-      return <img src={activeImg || uniqueImages[0].Url} alt="" />;
+    } else if (activeImgSrc || uniqueImages[0]) {
+      return <img src={activeImgSrc || uniqueImages[0].Url} alt="" />;
     } else {
       return null;
     }
-  }, [activeImg, props.loading, uniqueImages]);
+  }, [activeImgSrc, props.loading, uniqueImages]);
 
   const productOffer = !props.loading && <span className="product-offer">Best Seller</span>;
 
