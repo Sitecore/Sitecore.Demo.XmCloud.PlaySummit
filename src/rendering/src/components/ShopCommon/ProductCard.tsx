@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Price from './Price';
+import { addTransformation } from 'src/helpers/ImageHelper';
 
 export type ProductCardProps = {
   className?: string;
@@ -37,7 +38,7 @@ const ProductCard = ({
     <div className="product-card">
       <div className="product-image-container">
         <Link href={product_url} onClick={onClick}>
-          <img className="product-image" src={image_url} alt={name} />
+          <img className="product-image" src={addTransformation(image_url, 'w480')} alt={name} />
           {productOfferRibbon}
         </Link>
       </div>
