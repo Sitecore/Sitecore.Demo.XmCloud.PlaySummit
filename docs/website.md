@@ -28,6 +28,7 @@ This repository contains:
   - `\icons`: Icons used by the Sitecore renderings.
   - `\items`: Serialized items using Sitecore Content Serialization (SCS).
   - `\components`: Serialized Sitecore Components components, styles and datasources.
+  - `\personalize`: Serialized Sitecore Embedded Personalization data.
   - `\platform`: .Net project with Sitecore configuration, pipeline processors, custom fields, and utility pages.
   - `\rendering`: Sitecore JSS Next.js project connected to the Docker CM using the XM Edge GraphQL development endpoint.
 
@@ -68,6 +69,25 @@ To serialize any new changes to the repo use the following command:
 ```
 
 You can find your library ID and API key by going to your Sitecore Components library Settings tab. Your library ID is located in the url between `/libraries/` and `/settings`. Your API key is in a section of the page called "Your component library API key".
+
+### Serialized Sitecore Embedded Personalization
+
+The `\personalize` folder contains serialized Sitecore Embedded Personalization data. The scripts that take care of the serialization are located at the root of the project.
+
+To push the serialized data, use the following command:
+
+```ps1
+.\personalize-push.ps1 -token your_personalize_token
+```
+
+To serialize any new changes to the repo use the following command:
+
+```ps1
+.\personalize-pull.ps1 -token your_personalize_token
+```
+
+You can find the token by inspecting network requests in Chrome to the following url: `https://api-engage-us.sitecorecloud.io/v3/flowDefinitions/...` while browsing the variants in Pages.
+Optional `scope` parameter can be also used in case you use PAGES_PERSONALIZE_SCOPE environment variable in your XM Cloud environment.
 
 ### Sitecore Platform Project
 
