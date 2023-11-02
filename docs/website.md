@@ -86,7 +86,7 @@ To serialize any new changes to the repo use the following command:
 .\personalize-pull.ps1 -token your_personalize_token
 ```
 
-You can find the token by inspecting network requests in Chrome to the following url: `https://api-engage-us.sitecorecloud.io/v3/flowDefinitions/...` while browsing the variants in Pages.
+You can find the token by inspecting network requests (look for the 'Authorization' header) in Chrome to the following url: `https://api-engage-us.sitecorecloud.io/v3/flowDefinitions/...` while browsing the variants in Pages.
 Optional `scope` parameter can be also used in case you use PAGES_PERSONALIZE_SCOPE environment variable in your XM Cloud environment.
 
 ### Sitecore Platform Project
