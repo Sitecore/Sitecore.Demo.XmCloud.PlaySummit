@@ -6,7 +6,7 @@ Path: /sitecore/templates/Project/Global/ThreeColumnsSection/Data/MiddleLink
 SharedFields:
 - ID: "39847666-389d-409b-95bd-f2016f11eed5"
   Hint: Unversioned
-  Value: 0
+  Value: 
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
   Value: General Link
@@ -15,12 +15,16 @@ SharedFields:
   Value: 800
 - ID: "be351a73-fcb0-4213-93fa-c302d8ab4f51"
   Hint: Shared
-  Value: 0
+  Value: 
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Middle Link
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "951889ea-f8f5-41f5-92ea-f8de7c2d0894"
+      Value: "ae53b30f-b122-4925-bdb4-edc536da0ab8"

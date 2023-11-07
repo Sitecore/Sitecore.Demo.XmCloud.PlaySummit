@@ -12,9 +12,13 @@ SharedFields:
   Value: 100
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Active Step
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c419ac0a-c93a-40ab-bc54-17dc3096f0a9"
+      Value: "03c41237-c89b-4f70-8de0-50a73dfd45a2"
