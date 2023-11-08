@@ -7,6 +7,9 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: M4tsA15Lmkq79Br9JTQMnA
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
@@ -27,6 +30,9 @@ Languages:
       Hint: Logo
       Value: |
         <image stylelabs-content-id="36821" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/36821/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/07e77ec5309c45a284a2ee3ef841e222?v=367250b7&amp;t=medium" mediaid="" stylelabs-content-type="Image" alt="Redsand logo" height="1200" width="1200" ></image>
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "5a1f6707-d155-4618-b051-966216449b1c"
       Hint: Description
       Value: |
