@@ -7,7 +7,7 @@ import { useI18n } from 'next-localization';
 
 const DynamicWelcomeMessage = (props: ComponentProps): JSX.Element => {
   const { t } = useI18n();
-  const DEFAULT_MESSAGE = t('Welcome to PLAY! Summit.') || 'Welcome to PLAY! Summit.';
+  const DEFAULT_MESSAGE = t('Welcome to PLAY! Summit') || 'Welcome to PLAY! Summit';
 
   const [message, SetMessage] = useState('');
   const router = useRouter();
