@@ -7,9 +7,6 @@ SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Value: "{819C5F1D-58E0-432F-BD5A-A523BA8AEBCE}"
-- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
-  Hint: __Workflow
-  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 300
@@ -17,9 +14,6 @@ SharedFields:
   Hint: __Thumbnail
   Value: |
     <image mediaid="{BBD9B34F-675C-472E-A665-24A15AA36E13}" />
-- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
-  Hint: __Default workflow
-  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -80,12 +74,9 @@ Languages:
     - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
       Hint: Title
       Value: Speakers
-    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
-      Hint: __Workflow state
-      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: speakers
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "8bb5eefb-a4b4-41bf-9196-5786d76f32d1"
+      Value: "7c64fc80-343c-4c86-a0a1-c804f74f9830"

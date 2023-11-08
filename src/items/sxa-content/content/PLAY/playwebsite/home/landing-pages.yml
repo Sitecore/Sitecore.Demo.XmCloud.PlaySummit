@@ -10,16 +10,10 @@ SharedFields:
 - ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
   Hint: Page Design
   Value: "{B73A117A-11C2-4B86-8A5C-4C7648EE87DE}"
-- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
-  Hint: __Workflow
-  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
     <image mediaid="{3C8449A6-8457-4B0E-8288-ADD2CF8BB197}" />
-- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
-  Hint: __Default workflow
-  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -76,15 +70,12 @@ Languages:
     - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
       Hint: Title
       Value: Landing Pages
-    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
-      Hint: __Workflow state
-      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: Landing Pages
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ff0ba2ee-a628-48d1-aa67-ef0272863919"
+      Value: "8e169f56-9481-4a2c-b219-b528d390f1bc"
     - ID: "e0c0c8a4-0fea-4963-8b86-d47810b80efa"
       Hint: Content
       Value: "Here is a list of all currently available landing pages:"

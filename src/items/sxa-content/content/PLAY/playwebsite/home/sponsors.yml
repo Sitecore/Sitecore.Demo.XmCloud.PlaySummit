@@ -7,9 +7,6 @@ SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Value: "{3B884B30-54C1-464C-AADD-F8BD94E7C38E}"
-- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
-  Hint: __Workflow
-  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 500
@@ -17,9 +14,6 @@ SharedFields:
   Hint: __Thumbnail
   Value: |
     <image mediaid="{F512DD94-1BD1-4370-8DCF-66D6C6C347C9}" />
-- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
-  Hint: __Default workflow
-  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -60,12 +54,9 @@ Languages:
     - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
       Hint: Title
       Value: Sponsors
-    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
-      Hint: __Workflow state
-      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
       Value: sponsors
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d7684a1f-9751-41a2-a05f-468295fe9404"
+      Value: "2b90adcb-739a-44ee-b91c-78a71d2572cc"
