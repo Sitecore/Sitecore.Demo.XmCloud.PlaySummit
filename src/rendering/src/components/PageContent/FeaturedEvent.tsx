@@ -2,6 +2,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Field, Image, ImageField, Text } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
+import { useI18n } from 'next-localization';
 import Link from 'next/link';
 import { Speaker } from 'src/types/speaker';
 
@@ -16,6 +17,7 @@ export type FeaturedEventProps = ComponentProps & {
 
 const FeaturedEvent = (props: FeaturedEventProps): JSX.Element => {
   const sxaStyles = `${props.params?.styles || ''}`;
+  const { t } = useI18n();
 
   const speakersSection = props.fields?.Speakers.map((speaker) => (
     <div className="event-subtitle" key={speaker.fields?.Name.value}>
@@ -35,13 +37,13 @@ const FeaturedEvent = (props: FeaturedEventProps): JSX.Element => {
       <div className="content">
         <div className="triangle-area">
           <div className="text-area">
-            <h1 className="section-title">Featured Event</h1>
+            <h1 className="section-title">{t('Featured Event') || 'Featured Event'}</h1>
             <Text field={props.fields?.Name} className="event-title" tag="h1" />
             {speakersSection}
           </div>
           <div className="btn-area">
             <Link href="/tickets" className="btn-main">
-              Book Tickets
+              {t('Book Tickets') || 'Book Tickets'}
             </Link>
           </div>
         </div>
