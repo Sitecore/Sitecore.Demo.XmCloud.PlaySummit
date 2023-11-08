@@ -6,7 +6,7 @@ Path: /sitecore/templates/Project/Global/TextCta/Data/title
 SharedFields:
 - ID: "39847666-389d-409b-95bd-f2016f11eed5"
   Hint: Unversioned
-  Value: 0
+  Value: 
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
   Value: "Single-Line Text"
@@ -15,12 +15,16 @@ SharedFields:
   Value: 100
 - ID: "be351a73-fcb0-4213-93fa-c302d8ab4f51"
   Hint: Shared
-  Value: 0
+  Value: 
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Title
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ba35daae-91f6-447f-a995-ff1ad424b8c8"
+      Value: "9847f852-da66-4498-850f-853436c1403d"

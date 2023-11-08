@@ -18,9 +18,13 @@ SharedFields:
   Value: 
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Call to Action Link
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "25188540-f382-4401-8ee5-79e42b60d6e5"
+      Value: "b1da0e68-507e-4d3e-a795-d8a6e1f2e03c"

@@ -12,9 +12,13 @@ SharedFields:
   Value: 700
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Background Image
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7d3eee59-69df-471b-a891-b7eb833f8de0"
+      Value: "39fcdc3a-3833-4fc5-b773-0beca7b3abe1"
