@@ -7,6 +7,9 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: 8Ky4Zk8WDUyVpjKC8khw2Q
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
@@ -26,6 +29,9 @@ Languages:
     - ID: "2256955c-26ab-41b5-8e7a-fc504ea1a307"
       Hint: Sponsors
       Value: "{8237D1F3-65FC-44C1-82A1-EA4A77E5BAFA}"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "44a57340-61f8-48a2-84a8-bc5d16929a3d"
       Hint: Location
       Value: Paris, France
@@ -34,7 +40,7 @@ Languages:
       Value: "{01E09652-ABD7-4BB0-AD96-E609966330BD}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "51a0596a-1cdb-4ca9-95c6-38399b10ec17"
+      Value: "ec42c0c6-3472-4950-b8f1-a46095b78b59"
     - ID: "94f8d6fc-b9c3-41dc-8cdf-5e967d108a40"
       Hint: Company
       Value: Solstice
