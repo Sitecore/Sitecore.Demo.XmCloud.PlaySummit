@@ -1,0 +1,18 @@
+﻿---
+ID: "58be3cb3-9809-4b98-bcac-73d1b8cfe0d9"
+Parent: "68edf2fe-bbdf-4c05-ab82-1f5a880e6b78"
+Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Embedded Personalization Example/Data"
+BranchID: "6c07c9a2-87c4-418f-aa22-9e5d6c382e9e"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{3D05F0AD-9E47-45CB-A6D4-FBA22E4477BC}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6eeb7a84-0fcc-43c7-86fc-69abe86355b1"
