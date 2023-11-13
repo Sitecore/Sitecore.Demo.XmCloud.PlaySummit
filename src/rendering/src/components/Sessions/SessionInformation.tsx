@@ -5,6 +5,7 @@ import { Timeslot } from '../../interfaces/Timeslot';
 import { Speaker } from 'src/types/speaker';
 import { Day } from 'src/types/day';
 import { Room } from 'src/types/room';
+import { useI18n } from 'next-localization';
 
 export type SessionInformationProps = ComponentWithChildrenProps & {
   fields: {
@@ -23,6 +24,7 @@ export type SessionInformationProps = ComponentWithChildrenProps & {
 const SessionInformation = (props: SessionInformationProps): JSX.Element => {
   const premiumSessionMetaValue = props.fields.Premium?.value ? 'true' : 'false';
   const sxaStyles = `${props.params?.styles || ''}`;
+  const { t } = useI18n();
 
   const placeholder = !!props.rendering && (
     <Placeholder name="jss-entity-sidebar" rendering={props.rendering} />
@@ -37,7 +39,7 @@ const SessionInformation = (props: SessionInformationProps): JSX.Element => {
         <div className="section-content container">
           <div className="information-grid">
             <div className="main-col">
-              <div className="column-title">Description:</div>
+              <div className="column-title">{t('Description') || 'Description'}:</div>
               <RichText className="rich-text" field={props.fields?.Description} />
             </div>
             <div className="sidebar-col">

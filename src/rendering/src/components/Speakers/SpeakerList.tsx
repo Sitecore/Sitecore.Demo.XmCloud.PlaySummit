@@ -3,9 +3,11 @@ import { Text, Image } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Speaker } from 'src/types/speaker';
 import InfoText from '../NonSitecore/InfoText';
 import { faBuilding, faMapMarkerAlt, faUserTie } from '@fortawesome/free-solid-svg-icons';
+import { useI18n } from 'next-localization';
 
 const SpeakerListItem = (speaker: Speaker): JSX.Element => {
   const featuredSpeakerCssClass = speaker.fields.Featured.value ? 'featured' : '';
+  const { t } = useI18n();
 
   const jobTitle = speaker.fields.JobTitle.value && (
     <InfoText Icon={faUserTie}>
@@ -42,7 +44,7 @@ const SpeakerListItem = (speaker: Speaker): JSX.Element => {
         {location}
         <div className="info-col-cta">
           <Link href={speaker.url} className="btn-main">
-            Learn more
+            {t('Learn more') || 'Learn more'}
           </Link>
         </div>
       </div>
@@ -57,6 +59,7 @@ type SpeakerListProps = {
 };
 
 const SpeakerList = (props: SpeakerListProps): JSX.Element => {
+  const { t } = useI18n();
   const speakers =
     props?.fields?.Speakers && props?.fields?.Speakers.length > 0 ? (
       <div className="speaker-list">
@@ -65,7 +68,7 @@ const SpeakerList = (props: SpeakerListProps): JSX.Element => {
         ))}
       </div>
     ) : (
-      <p>No speakers</p>
+      <p>{t('No speakers') || 'No speakers'}</p>
     );
 
   return <>{speakers}</>;

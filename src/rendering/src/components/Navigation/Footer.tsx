@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ImageField, Image } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { useI18n } from 'next-localization';
 
 export type FooterProps = ComponentProps & {
   fields: {
@@ -63,6 +64,7 @@ const socialIcons = {
 const Footer = (props: FooterProps): JSX.Element => {
   const newDate = new Date();
   const sxaStyles = `${props.params?.styles || ''}`;
+  const { t } = useI18n();
 
   return (
     <div className={`footer container ${sxaStyles}`}>
@@ -97,13 +99,16 @@ const Footer = (props: FooterProps): JSX.Element => {
       <div className="footer-legal">
         <div className="footer-legal-links">
           <div>
-            <p>Copyright © 2014-{newDate.getFullYear()} PLAY! Summit</p>
+            <p>
+              {t('Copyright') || 'Copyright'} © 2014-{newDate.getFullYear()}{' '}
+              {t('PLAY! Summit') || 'PLAY! Summit'}
+            </p>
           </div>
           <div>
-            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/privacy">{t('Privacy Policy') || 'Privacy Policy'}</Link>
           </div>
           <div>
-            <Link href="/terms">Terms of Use</Link>
+            <Link href="/terms">{t('Terms of Use') || 'Terms of Use'}</Link>
           </div>
         </div>
       </div>
