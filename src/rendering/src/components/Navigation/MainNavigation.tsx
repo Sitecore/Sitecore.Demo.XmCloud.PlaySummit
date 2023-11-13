@@ -4,6 +4,7 @@ import { ImageField, Image } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { isCommerceEnabled } from '../../helpers/CommerceHelper';
 import PreviewSearchContent from '../PreviewSearchContent/PreviewSearchContent';
+import { useI18n } from 'next-localization';
 
 export type MainNavigationProps = ComponentProps & {
   fields: {
@@ -41,6 +42,7 @@ export type MainNavigationProps = ComponentProps & {
 
 const MainNavigation = (props: MainNavigationProps): JSX.Element => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const { t } = useI18n();
 
   const sxaStyles = `${props.params?.styles || ''}`;
 
@@ -87,7 +89,7 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
             {shopLink}
             <li className="button-menu-item">
               <Link href="/tickets" className="btn-main">
-                Book Tickets
+                {t('Book Tickets') || 'Book Tickets'}
               </Link>
             </li>
           </ul>

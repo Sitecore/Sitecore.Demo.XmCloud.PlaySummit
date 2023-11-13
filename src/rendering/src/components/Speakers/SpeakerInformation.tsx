@@ -1,5 +1,6 @@
 import { ComponentWithChildrenProps } from 'lib/component-props';
 import { Field, Placeholder, RichText } from '@sitecore-jss/sitecore-jss-nextjs';
+import { useI18n } from 'next-localization';
 
 export type SpeakerInformationProps = ComponentWithChildrenProps & {
   fields: {
@@ -9,6 +10,7 @@ export type SpeakerInformationProps = ComponentWithChildrenProps & {
 
 const SpeakerInformation = (props: SpeakerInformationProps): JSX.Element => {
   const sxaStyles = `${props.params?.styles || ''}`;
+  const { t } = useI18n();
 
   const placeholder = !!props.rendering && (
     <Placeholder name="jss-entity-sidebar" rendering={props.rendering} />
@@ -19,11 +21,11 @@ const SpeakerInformation = (props: SpeakerInformationProps): JSX.Element => {
       <div className="section-content container">
         <div className="information-grid">
           <div className="main-col">
-            <div className="column-title">Biography:</div>
+            <div className="column-title">{t('Biography') || 'Biography'}:</div>
             <RichText className="rich-text" field={props.fields?.Description} />
           </div>
           <div className="sidebar-col">
-            <div className="column-title">Sessions:</div>
+            <div className="column-title">{t('Sessions') || 'Sessions'}:</div>
             {placeholder}
             {props.children}
           </div>
