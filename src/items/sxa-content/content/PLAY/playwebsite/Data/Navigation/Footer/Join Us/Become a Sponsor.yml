@@ -15,3 +15,18 @@ Languages:
       Hint: Link
       Value: |
         <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{6CF37FF6-755C-5B1A-B5EB-63F03481DB4A}" />
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Devenez un commanditaire
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e71280ad-4f45-4853-9073-df3d7c636012"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{6CF37FF6-755C-5B1A-B5EB-63F03481DB4A}" />

@@ -19,3 +19,14 @@ Languages:
       Hint: Link
       Value: |
         <link class="" id="{66C99E47-7BBF-52D1-B1D7-4662B850744A}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/sponsors" />
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Commanditaires
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c03e4fec-8e66-4f8d-954f-a7b45c0f35cf"

@@ -19,3 +19,14 @@ Languages:
       Hint: Link
       Value: |
         <link class="" id="{2717574C-48A0-5469-85A8-A332DF71F1E4}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/about-us" />
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: À propos de nous
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "15e0b3eb-532a-4e29-ba53-dd22a9799b9a"
