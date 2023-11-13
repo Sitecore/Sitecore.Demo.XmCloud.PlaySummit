@@ -31,9 +31,9 @@ SharedFields:
     {BEBF4026-24A3-4EA6-986A-518B76DBD71A}
     {385F31BE-FF0C-4D84-A627-9ECD21295AFD}
     {F0EA389E-F78D-440B-9429-F04FE735344A}
+    {107D65BD-40B6-4635-9D92-AB0378DF439F}
     {AC1A27CA-6BF3-4D23-915E-668326D52CF1}
     {D7EEAF4D-2B58-4029-B141-844221565EF0}
-    {107D65BD-40B6-4635-9D92-AB0378DF439F}
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
@@ -79,7 +79,7 @@ Languages:
       Value: "PLAY! Template"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "365e3250-cdec-42de-879a-18c908905e51"
+      Value: "59ea2787-28ad-4d88-ba14-c7448346e20c"
     - ID: "9f437e68-a84d-48ae-8ce1-a3e26c0b5e64"
       Hint: Description
       Value: "An example of a PLAY! branded template"

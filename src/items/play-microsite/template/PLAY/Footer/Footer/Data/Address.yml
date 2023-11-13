@@ -50,17 +50,19 @@ Languages:
     - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
       Hint: Text
       Value: |
+        <div style="color: gray;">
         <span id="docs-internal-guid-17237c97-7fff-f61d-384b-b66bc74de880"></span>
         <p><span>PLAY! Summit</span></p>
         <p><span>1 Oak Street</span></p>
         <p><span>A99 B44</span></p>
-        <p><span>The Nation of Bikes</span></p>
-        <p><span>Made by <a href="https://www.sitecore.com/">Sitecore</a>&nbsp;Demo Team</span></p>
+        <p><span>The Nation of PLAY!</span></p>
+        <p><span>Made by <a href="https://blog.sitecoredemo.com/">Sitecore Demo Team</a></span></p>
         <div><span><br />
         </span></div>
+        </div>
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f3cf38de-7294-460e-91f3-7400eaba8c05"
+      Value: "e0847488-b84a-49c2-b431-fed104c4c569"
 - Language: "fr-CA"
   Versions:
   - Version: 1

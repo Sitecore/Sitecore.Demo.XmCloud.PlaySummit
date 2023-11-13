@@ -46,14 +46,15 @@ Languages:
     - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
       Hint: Text
       Value: |
-        <span id="docs-internal-guid-7ad7f9d6-7fff-281f-d1e1-3575add84e48"></span>
-        <p><span>info@mountainbiking.com</span></p>
+        <div style="color: gray;"><span id="docs-internal-guid-7ad7f9d6-7fff-281f-d1e1-3575add84e48"></span>
+        <p><span>info@playsummit.com</span></p>
         <p><span>234-234-234-234</span></p>
         <div><span><br />
         </span></div>
+        </div>
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3c929831-5082-44c1-a92a-91deaac5b990"
+      Value: "07cabada-fe2c-4458-be4b-e09740b03a84"
 - Language: "fr-CA"
   Versions:
   - Version: 1

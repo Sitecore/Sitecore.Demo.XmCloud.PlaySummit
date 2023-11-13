@@ -9,7 +9,7 @@ SharedFields:
   Value: 
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 0
+  Value: 200
 - ID: "c0a5bd91-e658-46ce-b631-77ce337d8e6e"
   Hint: Script
   Value: "{4253EE41-183D-4213-8C65-A7750DAC05DA}"
@@ -31,7 +31,7 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7b419f0b-8b66-4709-8919-83897760b830"
+      Value: "950697be-ee2c-444c-86d6-0f709e293448"
 - Language: "fr-CA"
   Versions:
   - Version: 1

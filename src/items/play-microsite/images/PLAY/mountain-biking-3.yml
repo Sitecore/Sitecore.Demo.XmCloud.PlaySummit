@@ -15,7 +15,7 @@ SharedFields:
   Value: NIKON D700
 - ID: "22eac599-f13b-4607-a89d-c091763a467d"
   Hint: Width
-  Value: 1500
+  Value: 3000
 - ID: "327878c4-28c8-4e71-8914-5de34e00e716"
   Hint: Artist
   Value: WARREN GOLDSWAIN                
@@ -46,10 +46,10 @@ SharedFields:
   Value: jpg
 - ID: "cb09946f-3218-4823-87d2-d5007c199a96"
   Hint: Dimensions
-  Value: 1500 x 998
+  Value: 3000 x 2001
 - ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
   Hint: Height
-  Value: 998
+  Value: 2001
 Languages:
 - Language: en
   Versions:
@@ -60,4 +60,4 @@ Languages:
       Value: Mountain biking
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "95496ad9-b9b8-478c-b74f-58967e33f002"
+      Value: "00732084-935f-43c1-9efc-e2c79972be09"
