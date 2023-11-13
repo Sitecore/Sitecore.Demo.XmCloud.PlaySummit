@@ -2,34 +2,34 @@
 ID: "6ecf9f57-8964-4381-921f-03373259d306"
 Parent: "2060a6e8-7512-4cf2-9f1c-93487ed8e933"
 Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
-Path: "/sitecore/content/PLAY/playwebsite/Dictionary/PLAY/explore-the"
+Path: "/sitecore/content/PLAY/playwebsite/Dictionary/PLAY/explore-the-session"
 SharedFields:
 - ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
   Hint: Key
-  Value: Explore the
+  Value: Explore the  session
 Languages:
 - Language: en
   Fields:
   - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
     Hint: Phrase
-    Value: Explore the
+    Value: Explore the session
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Explore the
+    Value: Explore the session
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "47f4b3f1-a7df-44c3-8bc5-1982516e0b1b"
+      Value: "bee3a7be-c894-4c8a-85f7-357aa823a723"
 - Language: "fr-CA"
   Fields:
   - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
     Hint: Phrase
-    Value: Explore le
+    Value: Explorez la session
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "491ec0f9-2169-41f5-a2d2-e26297a97c8e"
+      Value: "83cde89e-4183-4dea-b9d5-acd6b3a90677"

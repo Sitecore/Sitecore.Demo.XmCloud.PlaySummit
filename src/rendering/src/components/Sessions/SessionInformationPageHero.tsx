@@ -38,9 +38,8 @@ const SessionInformationPageHero = (props: SessionInformationPageHeroProps): JSX
             <div className="container-content-text">
               <div>
                 <p className="title">
-                  {t('Explore the') || 'Explore the'}{' '}
-                  <span className="information-type">{premiumSessionQualificative}</span>{' '}
-                  {t('session') || 'session'}:
+                  {t('Explore the ' + premiumSessionQualificative + ' session') ||
+                    'Explore the ' + premiumSessionQualificative + ' session'}
                 </p>
                 <h1 className="name">
                   <Text field={props?.fields?.Name} />
