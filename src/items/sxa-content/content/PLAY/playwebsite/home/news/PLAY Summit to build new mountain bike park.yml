@@ -65,3 +65,40 @@ Languages:
         
         <p>The project is scheduled to be completed in 2025. PLAY! Summit is still looking for partners to assist with maintenance and care after when the park is operational.</p>
         
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
+    - ID: "49461c19-39ae-4df4-abf5-15bd7fab54ce"
+      Hint: Audience
+      Value: "{EB7D2E35-46BD-4EA3-A142-6B524DF4ED97}|{6AB3A378-547F-4B38-8BE4-7538313020B2}|{D7E74E60-9708-48B2-9D37-C34D165BEC43}"
+    - ID: "5452a1d2-a7e3-421c-a6ee-dc69e58bf206"
+      Hint: Title
+      Value: "Le Sommet PLAY! construira un nouveau parc de vélo de montagne"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "994dff61-a977-4d44-8c3c-c04491c92c7d"
+    - ID: "c60646d2-b021-4158-be5f-64943e445b1a"
+      Hint: PublishDate
+      Value: 20211110T050000Z
+    - ID: "ec2ff3e7-0a21-4808-8cf8-c13ccd6fffc8"
+      Hint: Excerpt
+      Value: |
+        Environ 50 acres de terrain non aménagé reliant Des Moines et Pleasant Hill seront transformés en un nouveau parc de vélo de montagne, selon le directeur du Sommet PLAY!, Rich Ronald.
+        
+        
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: "Le Sommet PLAY! construira un nouveau parc de vélo de montagne"
+    - ID: "f3204d80-07b0-4680-8939-15c2c2f82dcb"
+      Hint: Image
+      Value: |
+        <image stylelabs-content-id="38142" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/38142/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/d896d75cea754445aad0d1e645ba37e6?v=7a4806ee&amp;t=postcard" mediaid="" stylelabs-content-type="Image" alt="Mountain biking 3" height="2832" width="4256" />
+    - ID: "f7d201d9-0ae6-4afa-8c5c-777f0504ebc3"
+      Hint: Content
+      Value: |
+        <p><strong>Pourquoi cela compte</strong> : Les défenseurs des loisirs affirment que la métropole a besoin d'un autre parc public, comme en témoigne une augmentation de 40 % de l'utilisation des sentiers l'année dernière.</p> &nbsp; <p>Le comté de Polk a récemment acheté le terrain &mdash; qui se trouve près d'une plaine d'inondation et se connecte au sentier Gay Lea Wilson, juste à côté de l'avenue East University &mdash; pour 300 000 $.</p> &nbsp; <p>Des citrons à la limonade : Bien que le développement traditionnel ait échoué, la propriété est idéale pour un parc de vélo de montagne car sa surface bosselée peut être utilisée comme tremplins, a déclaré Leopold.</p> &nbsp; <p>Détails : Les plans rédigés par le comté prévoient 4,5 miles de pistes en terre orientées pour le vélo de montagne, le fat biking et la randonnée pédestre.</p> &nbsp; <p>Une piste de pompage et une zone de compétences incluraient des rochers et d'autres éléments de paysage indigènes pour les cyclistes.</p> &nbsp; <p>Une zone humide aiderait à filtrer l'eau de Copper Creek avant qu'elle n'entre dans le ruisseau Fourmile adjacent.</p> &nbsp; <p>Le projet devrait être achevé en 2025. PLAY! Summit est toujours à la recherche de partenaires pour aider à l'entretien et aux soins après la mise en service du parc.</p>
+        
