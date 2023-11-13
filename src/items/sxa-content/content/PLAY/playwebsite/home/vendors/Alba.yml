@@ -7,6 +7,9 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: 0JHU6YICOkuDpJRxgxlXyA
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
@@ -35,6 +38,9 @@ Languages:
     - ID: "3c5bc1cb-ad72-444f-bd6f-a9a09b6bc7bb"
       Hint: Speakers
       Value: "{87223FA1-B672-4201-BE61-0011EE4A7A09}|{4C23E8E4-BA94-4840-8888-D769F0F57835}|{D5033FBA-96EB-47F3-B239-C8F7094464FD}"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "5f02c96d-6606-4508-8b81-4d4758e06291"
       Hint: Logo
       Value: |
@@ -44,7 +50,7 @@ Languages:
       Value: "{F31705C9-7A5A-42DB-8651-B0665EEEC77B}|{F7584D58-C1C2-4D57-B9E6-B2A1A5E1F14F}|{7A6E3432-E82B-4F09-A2AE-5D13646E0BD6}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c09e3b54-1636-465a-a941-f65e573ef3b4"
+      Value: "bb8d9a0e-16dd-4692-b54f-9f478ac1c1f0"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
       Value: |

@@ -7,6 +7,9 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: 3r08PX17JUOuphePJwyzCg
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
@@ -27,6 +30,9 @@ Languages:
       Hint: Logo
       Value: |
         <image stylelabs-content-id="36881" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/36881/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/a48e4a4e2dff4038b0b0956b3e15beed?v=5ca8c513&amp;t=medium" mediaid="" stylelabs-content-type="Image" alt="mapd logo" height="1200" width="1200" ></image>
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "12c0fdc3-9c18-41c4-aeda-8dcca687eb59"
       Hint: Sessions
       Value: "{92029EB9-8397-4774-ABEB-A0043128AE2A}|{6B4A88ED-0CD7-4C84-BF7B-8BBC3EF3EA49}"

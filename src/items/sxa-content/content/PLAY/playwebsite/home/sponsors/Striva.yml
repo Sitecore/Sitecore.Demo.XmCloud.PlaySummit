@@ -7,6 +7,9 @@ SharedFields:
 - ID: "9b0343a9-9f69-4e0f-a059-9215bc8fe422"
   Hint: EntityIdentifier
   Value: pPFv7VyGJkejhXjhk3ntGA
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
@@ -24,6 +27,9 @@ Languages:
       Hint: Logo
       Value: |
         <image stylelabs-content-id="57878" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/57878/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/0568eb4ee9a241579b786d1a21e41554?v=fdec6fcb&amp;t=medium" mediaid="" stylelabs-content-type="Image" alt="Striva.png" height="1001" width="1001" />
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "12c0fdc3-9c18-41c4-aeda-8dcca687eb59"
       Hint: Sessions
       Value: "{9E25E09B-971E-409E-AA42-8D54BA7CC570}|{76B1D64B-C80D-4FE8-8FF2-7FF22360E341}|{E35FD211-A2CD-49D4-87CC-4DD07BC14B8C}|{A789A9C9-E3E8-45A5-9B0C-621B760C7D32}|{BA087B4F-7F17-4461-98E0-9514123F1EBE}|{DB5BFBE7-B584-4BBE-94C5-A67F20F1BB81}"

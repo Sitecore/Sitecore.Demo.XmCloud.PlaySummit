@@ -18,9 +18,13 @@ SharedFields:
   Value: 
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Title
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "604584fc-daf2-4be3-b813-945c57cd186f"
+      Value: "0b72d3d1-880c-4a34-8ff4-aee016e9c4ae"

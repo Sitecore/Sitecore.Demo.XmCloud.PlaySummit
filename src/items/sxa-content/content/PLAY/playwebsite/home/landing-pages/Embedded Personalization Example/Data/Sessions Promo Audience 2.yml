@@ -1,0 +1,42 @@
+﻿---
+ID: "5c2f8692-7584-48d1-b4be-bb8a9734aaaf"
+Parent: "58be3cb3-9809-4b98-bcac-73d1b8cfe0d9"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Embedded Personalization Example/Data/Sessions Promo Audience 2"
+BranchID: "6c07c9a2-87c4-418f-aa22-9e5d6c382e9e"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{C0DC5D7B-7A45-4D8E-914A-BF606C4A4E1D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: "<p>Catch up with some of the world’s leading sports professionals, appearing in-person and online for exclusive interviews, workshops, and Q&amp;As.</p>"
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: "<p>Introducing</p><p>PLAY! Summit</p>"
+    - ID: "739c6cc2-0031-463d-9599-13478fd50ee3"
+      Hint: PromoIcon2
+      Value: |
+        <image mediaid="{D6AECB2C-9006-450A-ABD7-CFE9AF3C7136}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "aacbb00b-e4c2-4b2d-b642-48c680cb9b09"
+    - ID: "c6e604c3-5371-4e67-83df-a09a5ea66249"
+      Hint: PromoText3
+      Value: <p>from a specific campaign</p>
+    - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
+      Hint: PromoLink
+      Value: |
+        <link linktype="internal" id="{68DC89A4-1B04-59A8-9C4E-3B49D6C61052}" anchor="" querystring="" target="" class="" text="Explore sessions" title=""/>
+    - ID: "f94b9858-c439-4291-863b-757b536c8b65"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{528A9F67-4C62-4E1A-BFEE-82EB119D99FC}" />
