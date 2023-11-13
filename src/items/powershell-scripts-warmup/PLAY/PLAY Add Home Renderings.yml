@@ -1,0 +1,247 @@
+﻿---
+ID: "4253ee41-183d-4213-8c65-a7750dac05da"
+Parent: "f74e3b79-2df8-482a-b355-62534e3d69d7"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/PLAY/PLAY Add Home Renderings
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    Import-Function Get-ItemByIdSafe
+        
+    function Get-LocalStyle {
+        param (
+            $Site,
+            $styleIds
+        )
+        $styles = Get-ChildItem -Path "$($Site.Paths.Path)/Presentation/Styles" -Recurse 
+        $styleIds | % {
+            $styleId = $_
+            $style = Get-ItemByIdSafe $styleId
+            $styles | ? { $_.Value -eq $style.Value } | % { $_.ID }
+        }
+    }
+        
+    function Invoke-ModuleScriptBody {
+        [CmdletBinding()]
+        param(
+            [Parameter(Mandatory = $true, Position = 0 )]
+            [Item]$Site,
+        
+            [Parameter(Mandatory = $true, Position = 1 )]
+            [Item[]]$TenantTemplates		
+        )
+        
+        begin {
+            Write-Verbose "Cmdlet Invoke-ModuleScriptBody - Begin"
+            Import-Function Get-ProjectTemplateBasedOnBaseTemplate
+        }
+        
+        process {
+            Write-Verbose "Cmdlet Invoke-ModuleScriptBody - Process"
+            $sitePath = $Site.Paths.Path
+            Write-Verbose "My site: $sitePath"
+    
+            # handle missing styles folder
+            if (-not (Test-Path "$sitePath/Presentation/Styles")) {
+                Import-Function Invoke-AddItem
+                $action = Get-Item . -ID '{B2486523-7487-4526-978F-AD2E986B5CC4}'
+                Invoke-AddItem $Site $action
+            }
+            
+            # ensure site modules installed
+            $requiredModules = "{4342A029-0186-4B0D-8959-FFEF4FD998C2}", "{F0EA389E-F78D-440B-9429-F04FE735344A}", "{1FD78E81-59A6-4513-90F1-165A95D4B16B}", "{385F31BE-FF0C-4D84-A627-9ECD21295AFD}", "{66B9C663-2602-42B1-A5A2-3D04DB6C506A}"
+            $scaffoldingService = [Sitecore.DependencyInjection.ServiceLocator]::ServiceProvider.GetService([Sitecore.XA.Foundation.Scaffolding.Services.IScaffoldingService])
+            $installedModules = $scaffoldingService.GetModules($Site).FeatureItemId
+            if ($installedModules.Count -eq 0) {
+                # if the function is called during new site creation - get the list of modules which are being installed
+                if ($DefinitionItems -ne $null) {
+                    $installedModules = $DefinitionItems.ID
+                }
+            }
+            $definitionItems = Compare-Object $installedModules $requiredModules | ? { $_.SideIndicator -eq "=>" } | % { $_.inputobject } | % { Get-ItemByIdSafe $_ }
+            if ($definitionItems.Count -gt 0) {
+                Add-SiteModule $SiteItem $definitionItems
+            }
+            
+            # ensure site items exists - in case modules installed earlier
+            $requiredModules | % {
+                $actions = Get-ItemByIdSafe $_ | Get-Action | ? { $_.TemplateName -eq "AddItem" }
+                foreach ($action in $actions) {
+                    Invoke-AddItem $site $action
+                }
+            }
+            
+            $styles = Get-ChildItem -Path "$sitePath/Presentation/Styles"
+            Get-ChildItem -Path "/sitecore/templates/Branches/Feature/PLAY/Styles" | % {
+                $styleFolder = $_
+                $newParent = $styles | ? { $_.Name -eq $styleFolder.Name } | Select-Object -First 1
+                if ($newParent) {
+                    $styleFolder.Children | ? { $_.TemplateName -eq "Style" } | Copy-Item -DestinationItem $newParent
+                }
+                else {
+                    $styleFolder | Copy-Item -Destination "$sitePath/Presentation/Styles" -Recurse
+                }
+            }
+        
+            $service = [Sitecore.DependencyInjection.ServiceLocator]::ServiceProvider.GetService([Sitecore.XA.Foundation.Variants.Abstractions.Services.IAvailableRenderingVariantService])
+                
+            $item = Get-Item -Path "$sitePath/Home" -Language $Site.Language
+                
+            $renderingRichText = Get-Item -Path '/sitecore/layout/Renderings/Feature/JSS Experience Accelerator/Page Content/RichText'
+            $renderingPromo = Get-Item -Path '/sitecore/layout/Renderings/Feature/JSS Experience Accelerator/Page Content/Promo'
+            $renderingImage = Get-Item -Path '/sitecore/layout/Renderings/Feature/JSS Experience Accelerator/Media/Image'
+            $renderingNavigation = Get-Item -Path '/sitecore/layout/Renderings/Feature/JSS Experience Accelerator/Navigation/Navigation'
+            $renderingContainer = Get-Item -Path '/sitecore/layout/Renderings/Feature/JSS Experience Accelerator/Page Structure/Container'
+        
+            # prepare rendering definitions
+            $renderingRichTextDefinition = $renderingRichText | New-Rendering
+            $renderingPromoDefinition = $renderingPromo | New-Rendering
+            $renderingImageDefinition = $renderingImage | New-Rendering
+            $renderingNavigationDefinition = $renderingNavigation | New-Rendering
+            $renderingContainerDefinition = $renderingContainer | New-Rendering
+            
+            # prepare rendering variants        
+            $rtVariant = $service.GetAvailableRenderingVariants($Site, $renderingRichText.Name, $renderingRichText.ID, $item.TemplateID)
+            $promoVariant = $service.GetAvailableRenderingVariants($Site, $renderingPromo.Name, $renderingPromo.ID, $item.TemplateID)
+            $navigationVariant = $service.GetAvailableRenderingVariants($Site, $renderingNavigation.Name, $renderingNavigation.ID, $item.TemplateID)
+            $imgVariant = $service.GetAvailableRenderingVariants($Site, $renderingImage.Name, $renderingImage.ID, $item.TemplateID)
+            $imgVariant = New-Item -ItemType $imgVariant.TemplateID -Path $imgVariant.Parent.Paths.Path -Name "Banner" -Language $Site.Language
+            $imgVariant.'__Sortorder' = 200
+            
+            # add Home layout
+            $styles = Get-LocalStyle $Site ("{1A79197B-9427-4285-A2CF-C43A89AEF2B0}")
+            $styles = [string]::Join('|', $styles)
+            Add-Rendering -Item $item -PlaceHolder "headless-main" -Instance $renderingRichTextDefinition -Parameter @{ "Styles" = $styles; "FieldNames" = $rtVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{3DC91543-36F8-452A-BACD-F98B0C21BCF9}|{6F83979B-4C3F-4EEC-8C64-F8DA29D83961}|{959FDFBB-4691-4A17-816F-7A5330B8216A}|{271DE3B1-089F-4977-95EC-B5E51446FC01}|{1B189E02-FFC9-4ADC-84E5-D2AB5F6EC0FB}|{175CB6DA-CF89-4D56-888C-EB79F514D12F}|{94BCE55D-68FC-4020-A364-176EF1AAAFFB}|{F4BC7C4C-175F-4EA4-A6D9-EFCD92507276}|{7DF615F7-0A53-42E1-A164-2B36D6126314}|{1FEC5EDD-5489-43F1-8C19-A092206E130D}|{B706790E-8CB2-4A93-B341-6E7171734B61}" } -DataSource "local:/Data/Text 1"
+            Add-Rendering -Item $item -PlaceHolder "headless-main" -Instance $renderingImageDefinition -Parameter @{ "FieldNames" = $imgVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}"; "DynamicPlaceholderId" = "2"; } -DataSource "local:/Data/Image 1"
+    			
+            # add styles for Container-1
+            $styles = Get-LocalStyle $Site ("{17B9ED3A-88AF-4451-89A1-650C88C47547}")
+            $styles = [string]::Join('|', $styles)
+            Add-Rendering -Item $item -PlaceHolder "headless-main" -Instance $renderingContainerDefinition -Parameter @{ "Styles" = $styles; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}"; "DynamicPlaceholderId" = "1" }
+            $styles = Get-LocalStyle $Site ("{94B228C5-A117-4BE6-8F85-A6F438A52FFE}")
+            $styles = [string]::Join('|', $styles)
+            Add-Rendering -Item $item -PlaceHolder "/headless-main/container-1" -Instance $renderingRichTextDefinition -Parameter @{ "Styles" = $styles; "FieldNames" = $rtVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{959FDFBB-4691-4A17-816F-7A5330B8216A}|{271DE3B1-089F-4977-95EC-B5E51446FC01}|{1B189E02-FFC9-4ADC-84E5-D2AB5F6EC0FB}" } -DataSource "local:/Data/Text 2"
+            $styles = Get-LocalStyle $Site ("{C294B0AE-AD9D-49AC-9B2E-9893F84E167B}")
+            $styles = [string]::Join('|', $styles)
+            Add-Rendering -Item $item -PlaceHolder "/headless-main/container-1" -Instance $renderingPromoDefinition -Parameter @{ "Styles" = $styles; "FieldNames" = $promoVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{81225C08-5783-4BED-A86A-AB2B87198885}|{41E4B2ED-E813-46F9-8455-C26C88E78D47}|{1D84575C-B71C-40B2-BE7E-65503BCD666E}" } -DataSource "local:/Data/PromoLeft"
+            Add-Rendering -Item $item -PlaceHolder "/headless-main/container-1" -Instance $renderingPromoDefinition -Parameter @{ "Styles" = $styles; "FieldNames" = $promoVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{81225C08-5783-4BED-A86A-AB2B87198885}|{41E4B2ED-E813-46F9-8455-C26C88E78D47}|{1D84575C-B71C-40B2-BE7E-65503BCD666E}" } -DataSource "local:/Data/PromoRight"
+            if ($item."NavigationTitle" -ne $null) {
+                $item."NavigationTitle" = $item.Name
+            }
+            if ($item."Title" -ne $null) {
+                $item."Title" = $item.Name
+            }
+        
+            # add Footer partial layout
+            $partialFooter = Get-Item -Path "$sitePath/Presentation/Partial Designs/Footer"
+            $styles = Get-LocalStyle $Site ("{3AE24F6D-3BAA-45FE-9991-E102821A3442}", "{E779FBBF-729B-42CC-B67A-4CD3CE49B47E}", "{5658AF00-D5D1-48AD-83F8-85EE3F1BF3FB}")
+            $styles = [string]::Join('|', $styles)
+            Add-Rendering -Item $partialFooter -PlaceHolder "headless-footer" -Instance $renderingContainerDefinition -Parameter @{ "Styles" = $styles; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}"; "DynamicPlaceholderId" = "1" }
+            $styles = Get-LocalStyle $Site ("{003D5524-98D3-4323-AC12-15E44BA3F7AC}")
+            $styles = [string]::Join('|', $styles)
+            Add-Rendering -Item $partialFooter -PlaceHolder "/headless-footer/container-1" -Instance $renderingRichTextDefinition -Parameter @{ "Styles" = $styles; "FieldNames" = $rtVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{31A49E90-E4B4-4F04-A3C7-E15B6835990F}" } -DataSource "local:/Data/Address"
+            Add-Rendering -Item $partialFooter -PlaceHolder "/headless-footer/container-1" -Instance $renderingRichTextDefinition -Parameter @{ "Styles" = $styles; "FieldNames" = $rtVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{31A49E90-E4B4-4F04-A3C7-E15B6835990F}" } -DataSource "local:/Data/Contact info"
+        
+            # add Header partial layout
+            $partialHeader = Get-Item -Path "$sitePath/Presentation/Partial Designs/Header"
+            $styles = Get-LocalStyle $Site ("{92F6569B-CA2D-4C2D-B4A4-D34EACB09A9E}")
+            $styles = [string]::Join('|', $styles)
+            Add-Rendering -Item $partialHeader -PlaceHolder "headless-header" -Instance $renderingRichTextDefinition -Parameter @{ "FieldNames" = $rtVariant.ID; "Styles" = $styles; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{81225C08-5783-4BED-A86A-AB2B87198885}" } -DataSource "local:/Data/Title"
+            $styles = Get-LocalStyle $Site ("{E46EBFCD-2FDF-4AC9-89CB-34C39045487F}", "{F93F497C-F762-4503-9B71-2208425370EF}")
+            $styles = [string]::Join('|', $styles)
+            Add-Rendering -Item $partialHeader -PlaceHolder "headless-header" -Instance $renderingNavigationDefinition -Parameter @{ "FieldNames" = $navigationVariant.ID; "Styles" = $styles; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}"; "NavigationRoot" = "$($item.ID)"; "AddRoot" = "1"; "LevelFrom" = "{1BB88840-5FB3-4353-AD8D-81136F6FF75A}"; "LevelTo" = "{1BB88840-5FB3-4353-AD8D-81136F6FF75A}" }
+        
+            # set template-to-design mapping
+            $partialDesignIDs = (Get-ChildItem -path "$sitePath/Presentation/Partial Designs").ID
+            $pageDesign = Get-Item -path "$sitePath/Presentation/Page Designs/Default" -Language $Site.Language
+            $pageDesign.PartialDesigns = [System.String]::Join('|', $partialDesignIDs)
+        
+            $pageDesigns = Get-Item -path "$sitePath/Presentation/Page Designs" -Language $Site.Language
+        
+            $map = [Sitecore.Text.UrlString]::new()
+            $map["$($item.TemplateID)"] = "$($pageDesign.ID)"
+            $pageDesigns.TemplatesMapping = [System.Web.HttpUtility]::UrlEncode($map.toString())
+                
+            # add media library root.
+            $virtualMedia = Get-Item -path "$sitePath/Media" -Language $Site.Language
+            $ids = $virtualMedia.AdditionalChildren.Split('|') | ? { [guid]::TryParse($_, [ref][guid]::Empty) }
+            $ids += "{B4D0BE7D-1DCD-4263-9EDE-9E6693DA8BCB}"
+            $virtualMedia.AdditionalChildren = ($ids | Select-Object -Unique) -join "|"
+    
+            # migrate field values for non-english versions
+            $data = Get-Item -Path "$sitePath/Data" -Language '*'
+            $siteLanguage = $data.Language | ? { $_.Name -ne "en" } | Select-Object -First 1
+            if ($siteLanguage.Name -ne $null) {
+                $branches = gci -path '/sitecore/system/Settings/Feature/PLAY/PLAY Site setup' | ? { $_.TemplateId -eq '{3AEA335C-D06D-45B1-841A-CBC8D2D1CE40}' } | % { $_.Fields['Template'].Value.ToString() }
+                Get-ChildItem -Path $sitePath -Recurse | `
+                    ? { $branches.Contains($_.BranchId.ToString()) } | `
+                    ? { $_.TemplateName -ne 'Page Data' } | `
+                    % {
+                    Write-Verbose "Migrating field values for $($_.Paths.Path)"
+                    $_ = $_.Versions.AddVersion()
+                    Add-ItemLanguage -Item $_ -TargetLanguage $siteLanguage.Name -Language 'en' -IfExist OverwriteLatest | Out-Null
+                    $_.Versions.RemoveAll($false)
+                }
+                    
+                Get-ChildItem -Path "$sitePath/Presentation/Styles" -Recurse | % {
+                    Write-Verbose "Migrating field values for $($_.Paths.Path)"
+                    $_ = $_.Versions.AddVersion()
+                    Add-ItemLanguage -Item $_ -TargetLanguage $siteLanguage.Name -Language 'en' -IfExist OverwriteLatest | Out-Null
+                    $_.Versions.RemoveAll($false)
+                }                
+            }
+        }
+        
+        end {
+            Write-Verbose "Cmdlet Invoke-ModuleScriptBody - End"
+        }
+    }
+Languages:
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Home Renderings hinzufügen
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b8833d9b-c855-44d4-be5e-02b8f3edc379"
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7041f25d-025f-40ec-bac5-6ba9ea788277"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6db6bc07-b71c-4b1c-a802-0582757d750c"
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: ホームレンダリングを追加
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b8833d9b-c855-44d4-be5e-02b8f3edc379"
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 添加主页渲染
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b8833d9b-c855-44d4-be5e-02b8f3edc379"

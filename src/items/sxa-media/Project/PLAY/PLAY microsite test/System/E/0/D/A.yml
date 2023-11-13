@@ -1,0 +1,13 @@
+﻿---
+ID: "e78ede21-ce90-4365-98f7-bcfbb55410da"
+Parent: "8ffc734d-c859-485c-bb8c-16c5a9063038"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Project/PLAY/PLAY microsite test/System/E/0/D/A
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "38dfda5b-cd45-4a05-a8f2-e9af9b5fb3fa"

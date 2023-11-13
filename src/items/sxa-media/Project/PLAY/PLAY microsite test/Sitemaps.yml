@@ -1,0 +1,13 @@
+﻿---
+ID: "76923897-0f8e-417f-9ad5-fd5088813979"
+Parent: "4bf7d756-9946-4cb8-bd7c-12d12d4a6663"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Project/PLAY/PLAY microsite test/Sitemaps
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3093032a-0d70-4c6b-afb4-9905894e037e"
