@@ -44,11 +44,11 @@ Languages:
         <p>The brand new mountain bikes are out now, be quick!</p>
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c18d76bb-c46f-4e57-95ac-b16dff33bf2b"
+      Value: "a7d79b25-6f08-4511-9f43-2bd3a680f316"
     - ID: "f94b9858-c439-4291-863b-757b536c8b65"
       Hint: PromoIcon
       Value: |
-        <image mediaid="{AD6CB56C-921D-4254-A5AC-2DC5A8F5DE3D}" />
+        <image mediaid="{419E2FE0-E05C-478F-A33C-84071ADB5893}" />
 - Language: "fr-CA"
   Versions:
   - Version: 1
