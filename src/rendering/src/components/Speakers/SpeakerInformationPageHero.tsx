@@ -7,6 +7,7 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import InformationPageHero from '../NonSitecore/InformationPageHero';
+import { useI18n } from 'next-localization';
 
 export type SpeakerInformationPageHeroProps = ComponentProps & {
   fields: {
@@ -25,6 +26,7 @@ export type SpeakerInformationPageHeroProps = ComponentProps & {
 
 const SpeakerInformationPageHero = (props: SpeakerInformationPageHeroProps): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext();
+  const { t } = useI18n();
 
   const isPageEditing = sitecoreContext.pageState === LayoutServicePageState.Edit;
 
@@ -38,7 +40,7 @@ const SpeakerInformationPageHero = (props: SpeakerInformationPageHeroProps): JSX
     LinkedinProfileLink: fields.LinkedinProfileLink,
   };
 
-  const qualificative = props.fields.Featured?.value ? 'featured' : '';
+  const qualificative = props.fields.Featured?.value ? t('featured') || 'featured' : '';
 
   const informations =
     props.fields.JobTitle?.value ||
@@ -48,18 +50,19 @@ const SpeakerInformationPageHero = (props: SpeakerInformationPageHeroProps): JSX
       <>
         {props.fields.JobTitle?.value || isPageEditing ? (
           <div>
-            <span className="label">Job Title:</span>{' '}
+            <span className="label">{t('Job Title') || 'Job Title'}:</span>{' '}
             <Text field={props.fields.JobTitle} tag="span" />
           </div>
         ) : undefined}
         {props.fields.Company?.value || isPageEditing ? (
           <div>
-            <span className="label">Company:</span> <Text field={props.fields.Company} tag="span" />
+            <span className="label">{t('Company') || 'Company'}:</span>{' '}
+            <Text field={props.fields.Company} tag="span" />
           </div>
         ) : undefined}
         {props.fields.Location?.value || isPageEditing ? (
           <div>
-            <span className="label">Location:</span>{' '}
+            <span className="label">{t('Location') || 'Location'}:</span>{' '}
             <Text field={props.fields.Location} tag="span" />
           </div>
         ) : undefined}

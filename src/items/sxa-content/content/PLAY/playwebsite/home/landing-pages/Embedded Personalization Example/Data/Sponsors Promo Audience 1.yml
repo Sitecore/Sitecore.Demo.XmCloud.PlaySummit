@@ -1,0 +1,42 @@
+﻿---
+ID: "ddcd0661-8ca2-4934-9b58-4dc2b0ca8971"
+Parent: "58be3cb3-9809-4b98-bcac-73d1b8cfe0d9"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/Embedded Personalization Example/Data/Sponsors Promo Audience 1"
+BranchID: "6c07c9a2-87c4-418f-aa22-9e5d6c382e9e"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{C0DC5D7B-7A45-4D8E-914A-BF606C4A4E1D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: "<p>Thank our sponsors in person and join the 5th annual PLAY! Summit.</p>"
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: <p>Sponsors make this event possible</p>
+    - ID: "739c6cc2-0031-463d-9599-13478fd50ee3"
+      Hint: PromoIcon2
+      Value: |
+        <image mediaid="{21C5D87C-3E77-4AFA-82FF-665B15EA7806}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "954a4579-820a-44f7-8b27-a1fd4c4cc4cf"
+    - ID: "c6e604c3-5371-4e67-83df-a09a5ea66249"
+      Hint: PromoText3
+      Value: <p>visited a specific page</p>
+    - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
+      Hint: PromoLink
+      Value: |
+        <link linktype="internal" id="66c99e47-7bbf-52d1-b1d7-4662b850744a" anchor="" querystring="" target="" class="" text="Sponsors" title=""/>
+    - ID: "f94b9858-c439-4291-863b-757b536c8b65"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{16BD098F-8441-43C9-A08F-3E2251D0F18E}" />

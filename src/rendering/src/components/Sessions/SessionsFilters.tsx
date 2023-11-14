@@ -1,12 +1,14 @@
 import { ComponentProps } from 'lib/component-props';
+import { useI18n } from 'next-localization';
 
 const SessionsFilters = (props: ComponentProps): JSX.Element => {
   const sxaStyles = `${props.params?.styles || ''}`;
+  const { t } = useI18n();
 
   return (
     <section className={`section pb-4 pt-12 ${sxaStyles}`}>
       <div className="section-content form item-grid sessions-filters container">
-        <h2 className="section-content-title">Explore sessions</h2>
+        <h2 className="section-content-title">{t('Explore sessions') || 'Explore sessions'}</h2>
         <div className="filters-row">
           <div className="filters-col">
             <input type="text" placeholder="Search sessions..." />

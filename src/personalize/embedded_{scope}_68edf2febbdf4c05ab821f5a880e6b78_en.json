@@ -1,0 +1,110 @@
+{
+  "clientKey": "98fb257c57fd74ae8022f5e56ce81919",
+  "href": "https://api-us.boxever.com/v3/flowDefinitions/fa2ec7e5-9197-4a32-a67f-151ac2af6c8f",
+  "ref": "fa2ec7e5-9197-4a32-a67f-151ac2af6c8f",
+  "name": "embedded_{scope}_68edf2febbdf4c05ab821f5a880e6b78_en",
+  "modifiedByRef": "auth0|639200ce784f29a69639bad0",
+  "modifiedAt": "2023-11-09T14:20:35.875Z",
+  "revision": 3,
+  "archived": false,
+  "friendlyId": "embedded_{scope}_68edf2febbdf4c05ab821f5a880e6b78_en",
+  "type": "INTERACTIVE_API_FLOW",
+  "subtype": "EXPERIENCE",
+  "channels": [
+    "WEB"
+  ],
+  "triggers": [],
+  "dashboardLinks": [],
+  "tags": [],
+  "businessProcess": "interactive_v1",
+  "traffic": {
+    "type": "audienceTraffic",
+    "weightingAlgorithm": "USER_DEFINED",
+    "modifiedAt": "2023-11-09T14:20:36.018Z",
+    "splits": [
+      {
+        "template": "{\"variantId\": \"ee12ae1fa982465598b5d270b963b1d6\"}",
+        "variantName": "From a specific campaign",
+        "audienceName": "From a specific campaign",
+        "conditionGroups": [
+          {
+            "conditions": [
+              {
+                "templateId": "utm_value",
+                "params": {
+                  "type": "campaign",
+                  "compares to": "is equal to",
+                  "UTM value": "demoexample"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "template": "{\"variantId\": \"b5885a5c1dd14dd1b9059910332827f6\"}",
+        "variantName": "Visited a specific page",
+        "audienceName": "Visited a specific page",
+        "conditionGroups": [
+          {
+            "conditions": [
+              {
+                "templateId": "page_view",
+                "params": {
+                  "has": "has",
+                  "page name(s)": "sessions"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "transpiledVariants": [
+    {
+      "ref": "bfeda04c-ae70-42c6-90a5-4126c04f7012",
+      "name": "Visited a specific page",
+      "tasks": [
+        {
+          "implementation": "templateRenderTask",
+          "input": {
+            "inputType": "templateRenderTaskInput",
+            "type": "application/json",
+            "template": "{\"variantId\": \"b5885a5c1dd14dd1b9059910332827f6\"}"
+          }
+        },
+        {
+          "implementation": "conditionsTask",
+          "input": {
+            "inputType": "conditionsTaskInput",
+            "rules": [
+              {
+                "id": "scriptCondition",
+                "name": "Combined condition groups",
+                "description": "Combined templates within condition group for targeted experience",
+                "ruleData": {
+                  "expression": "(function () {\n    var visited = \"has\";\n    var pageName = \"sessions\";\n    var pageValues = pageName.split(',');\n    var expectedType = \"WEB\";\n    var expectedStatus = \"OPEN\";\n    var pageMatch = false;\n\n    if (guest && guest.sessions && guest.sessions.length > 0) {\n        loop:\n        for (var i = 0; i < guest.sessions.length; i++) {\n            if (guest.sessions[i]) {\n                if (\n                    guest.sessions[i].sessionType !== expectedType\n                    || guest.sessions[i].status !== expectedStatus\n                ) {\n                    continue loop;\n                } else if (\n                    guest.sessions[i].events\n                ) {\n                    for (var j = 0; j < guest.sessions[i].events.length; j++) {\n                        if (guest.sessions[i].events[j].arbitraryData) {\n                            if (guest.sessions[i].events[j].arbitraryData.page) {\n                                var viewedpage = guest.sessions[i].events[j].arbitraryData.page;\n                                for (var k = 0; k < pageValues.length; k++) {   \n                                    if (viewedpage === pageValues[k]) { \n                                        pageMatch = true;   \n                                        break loop; \n                                    }   \n                                }\n                            }\n                        }\n                    }\n                }\n            }\n        }\n    }\n    \n    return (visited === \"has\") && pageMatch || (visited === \"has not\") && !pageMatch;\n})();"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "status": "PRODUCTION",
+  "schedule": {
+    "type": "simpleSchedule",
+    "startDate": "2023-11-09T14:18:42.845Z"
+  },
+  "revisions": {
+    "href": "https://api-us.boxever.com/v3/flowDefinitions/fa2ec7e5-9197-4a32-a67f-151ac2af6c8f/revisions"
+  },
+  "sampleSizeConfig": {
+    "baseValue": 0.15,
+    "minimumDetectableDifference": 0.02,
+    "confidenceLevel": 0.95
+  }
+}

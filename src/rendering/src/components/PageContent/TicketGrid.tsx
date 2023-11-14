@@ -3,10 +3,12 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { TICKETS } from '../../models/mock-tickets';
 import { ComponentProps } from 'lib/component-props';
+import { useI18n } from 'next-localization';
 
 const TicketGrid = (props: ComponentProps): JSX.Element => {
   const ticketsToDisplay = TICKETS.filter((ticket) => !ticket.isUpgrade);
   const sxaStyles = `${props.params?.styles || ''}`;
+  const { t } = useI18n();
 
   const tickets =
     ticketsToDisplay &&
@@ -16,7 +18,9 @@ const TicketGrid = (props: ComponentProps): JSX.Element => {
         <div className="ticket-content">
           <div className="slanted-spacer"></div>
           <h2 className="ticket-name">{ticket.name}</h2>
-          <span className="ticket-subtitle">Save 20% on early bird!</span>
+          <span className="ticket-subtitle">
+            {t('Save 20% on early bird!') || 'Save 20% on early bird!'}
+          </span>
           <div>
             <span className="ticket-price">${ticket.price}</span>
             {ticket.benefits && (
@@ -32,7 +36,7 @@ const TicketGrid = (props: ComponentProps): JSX.Element => {
         </div>
         <div className="ticket-button-container">
           <Link href={`/tickets/registration/attendee?ticket=${ticket.id}`} className="btn-main">
-            Get Tickets
+            {t('Get Tickets') || 'Get Tickets'}
           </Link>
         </div>
       </div>
