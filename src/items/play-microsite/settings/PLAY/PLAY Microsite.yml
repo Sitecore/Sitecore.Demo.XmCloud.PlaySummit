@@ -16,6 +16,9 @@ SharedFields:
     {02CD7086-1F87-41EC-B40F-B92C1226895B}
     {1B0A98C0-1801-44A0-85F2-845694FEAFF3}
     {D315A501-6503-4545-A5D8-B9FECBA1097D}
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 - ID: "c262443b-653d-461d-96c8-7cfaa0ef2b2d"
   Hint: Site Modules
   Value: |
@@ -38,6 +41,9 @@ SharedFields:
   Hint: __Thumbnail
   Value: |
     <image mediaid="{A2CA1005-6724-44E7-8130-3CC0B1ADD1BB}" />
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 Languages:
 - Language: da
   Fields:
@@ -74,12 +80,15 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "82e64b52-0b8a-4a38-8c78-530c5493814e"
       Hint: Name
       Value: "PLAY! Template"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "59ea2787-28ad-4d88-ba14-c7448346e20c"
+      Value: "76aea9dc-7c29-4f79-97ff-206cd88a9c77"
     - ID: "9f437e68-a84d-48ae-8ce1-a3e26c0b5e64"
       Hint: Description
       Value: "An example of a PLAY! branded template"
