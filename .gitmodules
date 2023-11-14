@@ -1,0 +1,3 @@
+[submodule "ch-one"]
+	path = ch-one
+	url = https://github.com/Sitecore/Sitecore.Demo.CHONE
