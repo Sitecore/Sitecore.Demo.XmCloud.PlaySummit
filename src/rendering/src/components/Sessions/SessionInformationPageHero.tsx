@@ -6,6 +6,7 @@ import { getSessionDays, getSessionTime } from '../../helpers/DateHelper';
 import { Room } from 'src/types/room';
 import { Day } from 'src/types/day';
 import { Timeslot } from 'src/interfaces/Timeslot';
+import { useI18n } from 'next-localization';
 
 export type SessionInformationPageHeroProps = ComponentProps & {
   fields: {
@@ -24,6 +25,7 @@ export type SessionInformationPageHeroProps = ComponentProps & {
 */
 const SessionInformationPageHero = (props: SessionInformationPageHeroProps): JSX.Element => {
   const premiumSessionQualificative = props?.fields?.Premium?.value ? 'premium' : '';
+  const { t } = useI18n();
 
   return (
     <section
@@ -36,8 +38,8 @@ const SessionInformationPageHero = (props: SessionInformationPageHeroProps): JSX
             <div className="container-content-text">
               <div>
                 <p className="title">
-                  Explore the{' '}
-                  <span className="information-type">{premiumSessionQualificative}</span> session:
+                  {t('Explore the ' + premiumSessionQualificative + ' session') ||
+                    'Explore the ' + premiumSessionQualificative + ' session'}
                 </p>
                 <h1 className="name">
                   <Text field={props?.fields?.Name} />
