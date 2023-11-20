@@ -121,9 +121,11 @@ SharedFields:
             $styles = Get-LocalStyle $Site ("{94B228C5-A117-4BE6-8F85-A6F438A52FFE}")
             $styles = [string]::Join('|', $styles)
             Add-Rendering -Item $item -PlaceHolder "/headless-main/container-1" -Instance $renderingRichTextDefinition -Parameter @{ "Styles" = $styles; "FieldNames" = $rtVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{959FDFBB-4691-4A17-816F-7A5330B8216A}|{271DE3B1-089F-4977-95EC-B5E51446FC01}|{1B189E02-FFC9-4ADC-84E5-D2AB5F6EC0FB}" } -DataSource "local:/Data/Text 2"
-            $styles = Get-LocalStyle $Site ("{C294B0AE-AD9D-49AC-9B2E-9893F84E167B}")
+            $styles = Get-LocalStyle $Site ("{958D73CE-E441-4781-B32D-585692739A9D}")
             $styles = [string]::Join('|', $styles)
             Add-Rendering -Item $item -PlaceHolder "/headless-main/container-1" -Instance $renderingPromoDefinition -Parameter @{ "Styles" = $styles; "FieldNames" = $promoVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{81225C08-5783-4BED-A86A-AB2B87198885}|{41E4B2ED-E813-46F9-8455-C26C88E78D47}|{1D84575C-B71C-40B2-BE7E-65503BCD666E}" } -DataSource "local:/Data/PromoLeft"
+            $styles = Get-LocalStyle $Site ("{958D73CE-E441-4781-B32D-585692739A9D}", "{45986971-620C-4014-A6E0-C501C551E2FC}")
+            $styles = [string]::Join('|', $styles)
             Add-Rendering -Item $item -PlaceHolder "/headless-main/container-1" -Instance $renderingPromoDefinition -Parameter @{ "Styles" = $styles; "FieldNames" = $promoVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{81225C08-5783-4BED-A86A-AB2B87198885}|{41E4B2ED-E813-46F9-8455-C26C88E78D47}|{1D84575C-B71C-40B2-BE7E-65503BCD666E}" } -DataSource "local:/Data/PromoRight"
             if ($item."NavigationTitle" -ne $null) {
                 $item."NavigationTitle" = $item.Name
