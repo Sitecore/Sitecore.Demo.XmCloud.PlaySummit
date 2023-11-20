@@ -104,7 +104,6 @@ SharedFields:
             # prepare rendering variants        
             $rtVariant = $service.GetAvailableRenderingVariants($Site, $renderingRichText.Name, $renderingRichText.ID, $item.TemplateID)
             $promoVariant = $service.GetAvailableRenderingVariants($Site, $renderingPromo.Name, $renderingPromo.ID, $item.TemplateID)
-            $navigationVariant = $service.GetAvailableRenderingVariants($Site, $renderingNavigation.Name, $renderingNavigation.ID, $item.TemplateID)
             $imgVariant = $service.GetAvailableRenderingVariants($Site, $renderingImage.Name, $renderingImage.ID, $item.TemplateID)
             $imgVariant = New-Item -ItemType $imgVariant.TemplateID -Path $imgVariant.Parent.Paths.Path -Name "Banner" -Language $Site.Language
             $imgVariant.'__Sortorder' = 200
@@ -148,9 +147,6 @@ SharedFields:
             $styles = Get-LocalStyle $Site ("{92F6569B-CA2D-4C2D-B4A4-D34EACB09A9E}")
             $styles = [string]::Join('|', $styles)
             Add-Rendering -Item $partialHeader -PlaceHolder "headless-header" -Instance $renderingRichTextDefinition -Parameter @{ "FieldNames" = $rtVariant.ID; "Styles" = $styles; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{81225C08-5783-4BED-A86A-AB2B87198885}" } -DataSource "local:/Data/Title"
-            $styles = Get-LocalStyle $Site ("{E46EBFCD-2FDF-4AC9-89CB-34C39045487F}")
-            $styles = [string]::Join('|', $styles)
-            Add-Rendering -Item $partialHeader -PlaceHolder "headless-header" -Instance $renderingNavigationDefinition -Parameter @{ "FieldNames" = $navigationVariant.ID; "Styles" = $styles; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}"; "NavigationRoot" = "$($item.ID)"; "AddRoot" = "1"; "LevelFrom" = "{1BB88840-5FB3-4353-AD8D-81136F6FF75A}"; "LevelTo" = "{1BB88840-5FB3-4353-AD8D-81136F6FF75A}" }
         
             # set template-to-design mapping
             $partialDesignIDs = (Get-ChildItem -path "$sitePath/Presentation/Partial Designs").ID
