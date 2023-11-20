@@ -1,0 +1,124 @@
+﻿---
+ID: "8ef575a5-3b7c-4eae-86d0-2f4e319ae3ea"
+Parent: "5540558f-3b73-4250-a4a9-9a01fe16dc17"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: /sitecore/templates/Branches/Feature/PLAY/Footer/Footer/Data/Address
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Adresse
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <span id="docs-internal-guid-17237c97-7fff-f61d-384b-b66bc74de880"></span>
+        <p><span>Skate Park</span></p>
+        <p><span>12 Forever Street</span></p>
+        <p><span>A99 B44</span></p>
+        <p><span>The Nation of Skate</span></p>
+        <p><span>Fremstillet af <a href="https://www.sitecore.com/">Sitecore</a></span></p>
+        <div><span><br /></span></div>
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Adresse
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <span id="docs-internal-guid-17237c97-7fff-f61d-384b-b66bc74de880"></span>
+        <p><span>Skate Park</span></p>
+        <p><span>12 Forever Street</span></p>
+        <p><span>A99 B44</span></p>
+        <p><span>The Nation of Skate</span></p>
+        <p><span>Made by <a href="https://www.sitecore.com/">Sitecore</a></span></p>
+        <div><span><br /></span></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b8833d9b-c855-44d4-be5e-02b8f3edc379"
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <div style="color: gray;">
+        <span id="docs-internal-guid-17237c97-7fff-f61d-384b-b66bc74de880"></span>
+        <p><span>PLAY! Summit</span></p>
+        <p><span>1 Oak Street</span></p>
+        <p><span>A99 B44</span></p>
+        <p><span>The Nation of PLAY!</span></p>
+        <p><span>Made by <a href="https://blog.sitecoredemo.com/">Sitecore Demo Team</a></span></p>
+        <div><span><br />
+        </span></div>
+        </div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e0847488-b84a-49c2-b431-fed104c4c569"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <span id="docs-internal-guid-17237c97-7fff-f61d-384b-b66bc74de880"></span>
+        <p><span>Skate Park</span></p>
+        <p><span>12 Forever Street</span></p>
+        <p><span>A99 B44</span></p>
+        <p><span>The Nation of Skate</span></p>
+        <p><span>Made by <a href="https://www.sitecore.com/">Sitecore</a></span></p>
+        <div><span><br /></span></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c7bea0b5-8ee6-419c-9085-1b13cb8c232a"
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: アドレス
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <span id="docs-internal-guid-17237c97-7fff-f61d-384b-b66bc74de880"></span>
+        <p><span>スケートパーク </span></p>
+        <p><span>12 Forever Street</span></p>
+        <p><span>A99 B44</span></p>
+        <p><span>The Nation of Skate</span></p>
+        <p><span>（製作：<a href="https://www.sitecore.com/">Sitecore）</a></span></p>
+        <div><span><br /></span></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b8833d9b-c855-44d4-be5e-02b8f3edc379"
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 地址
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <span id="docs-internal-guid-17237c97-7fff-f61d-384b-b66bc74de880"></span>
+        <p><span>滑板公园</span></p>
+        <p><span>12 Forever Street</span></p>
+        <p><span>A99 B44</span></p>
+        <p><span>Sitecore 打造</span></p>
+        <p><span>的<a href="https://www.sitecore.com/">滑板王国</a></span></p>
+        <div><span><br /></span></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b8833d9b-c855-44d4-be5e-02b8f3edc379"

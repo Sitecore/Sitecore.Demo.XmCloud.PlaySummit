@@ -39,6 +39,18 @@
                         "scope": "ignored"
                     }
                 ]
+            },
+            {
+                "name": "play-microsite/settings",
+                "path": "/sitecore/system/Settings/Feature/PLAY"
+            },
+            {
+                "name": "play-microsite/template",
+                "path": "/sitecore/templates/Branches/Feature/PLAY"
+            },
+            {
+                "name": "play-microsite/images",
+                "path": "/sitecore/media library/Feature/PLAY"
             }
         ]
     }
