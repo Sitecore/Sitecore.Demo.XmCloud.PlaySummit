@@ -142,12 +142,6 @@ SharedFields:
             Add-Rendering -Item $partialFooter -PlaceHolder "/headless-footer/container-1" -Instance $renderingRichTextDefinition -Parameter @{ "Styles" = $styles; "FieldNames" = $rtVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{31A49E90-E4B4-4F04-A3C7-E15B6835990F}" } -DataSource "local:/Data/Address"
             Add-Rendering -Item $partialFooter -PlaceHolder "/headless-footer/container-1" -Instance $renderingRichTextDefinition -Parameter @{ "Styles" = $styles; "FieldNames" = $rtVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{31A49E90-E4B4-4F04-A3C7-E15B6835990F}" } -DataSource "local:/Data/Contact info"
         
-            # add Header partial layout
-            $partialHeader = Get-Item -Path "$sitePath/Presentation/Partial Designs/Header"
-            $styles = Get-LocalStyle $Site ("{92F6569B-CA2D-4C2D-B4A4-D34EACB09A9E}")
-            $styles = [string]::Join('|', $styles)
-            Add-Rendering -Item $partialHeader -PlaceHolder "headless-header" -Instance $renderingRichTextDefinition -Parameter @{ "FieldNames" = $rtVariant.ID; "Styles" = $styles; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{81225C08-5783-4BED-A86A-AB2B87198885}" } -DataSource "local:/Data/Title"
-        
             # set template-to-design mapping
             $partialDesignIDs = (Get-ChildItem -path "$sitePath/Presentation/Partial Designs").ID
             $pageDesign = Get-Item -path "$sitePath/Presentation/Page Designs/Default" -Language $Site.Language
