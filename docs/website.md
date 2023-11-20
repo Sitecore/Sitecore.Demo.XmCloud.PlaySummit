@@ -31,6 +31,7 @@ This repository contains:
   - `\personalize`: Serialized Sitecore Embedded Personalization data.
   - `\platform`: .Net project with Sitecore configuration, pipeline processors, custom fields, and utility pages.
   - `\rendering`: Sitecore JSS Next.js project connected to the Docker CM using the XM Edge GraphQL development endpoint.
+- A `\ch-one` folder that is a Git submodule referencing <https://github.com/Sitecore/Sitecore.Demo.CHONE> (used for [Demo Portal](https://portal.sitecoredemo.com/) deployments).
 
 ### Configured for Sitecore-based workflow
 
