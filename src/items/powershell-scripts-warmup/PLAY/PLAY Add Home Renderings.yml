@@ -45,7 +45,7 @@ SharedFields:
             # handle missing styles folder
             if (-not (Test-Path "$sitePath/Presentation/Styles")) {
                 Import-Function Invoke-AddItem
-                $action = Get-Item . -ID '{5ECB259F-7272-4958-B1F8-13934AEC9ED0}'
+                $action = Get-Item . -ID '{B2486523-7487-4526-978F-AD2E986B5CC4}'
                 Invoke-AddItem $Site $action
             }
             
@@ -109,7 +109,7 @@ SharedFields:
             $imgVariant.'__Sortorder' = 200
             
             # add Home layout
-            $styles = Get-LocalStyle $Site ("{CB606D1A-BF0A-4FE2-AC23-67A3FF965E01}")
+            $styles = Get-LocalStyle $Site ("{1A79197B-9427-4285-A2CF-C43A89AEF2B0}")
             $styles = [string]::Join('|', $styles)
             Add-Rendering -Item $item -PlaceHolder "headless-main" -Instance $renderingRichTextDefinition -Parameter @{ "Styles" = $styles; "FieldNames" = $rtVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{3DC91543-36F8-452A-BACD-F98B0C21BCF9}|{6F83979B-4C3F-4EEC-8C64-F8DA29D83961}|{959FDFBB-4691-4A17-816F-7A5330B8216A}|{271DE3B1-089F-4977-95EC-B5E51446FC01}|{1B189E02-FFC9-4ADC-84E5-D2AB5F6EC0FB}|{175CB6DA-CF89-4D56-888C-EB79F514D12F}|{94BCE55D-68FC-4020-A364-176EF1AAAFFB}|{F4BC7C4C-175F-4EA4-A6D9-EFCD92507276}|{7DF615F7-0A53-42E1-A164-2B36D6126314}|{1FEC5EDD-5489-43F1-8C19-A092206E130D}|{B706790E-8CB2-4A93-B341-6E7171734B61}" } -DataSource "local:/Data/Text 1"
             Add-Rendering -Item $item -PlaceHolder "headless-main" -Instance $renderingImageDefinition -Parameter @{ "FieldNames" = $imgVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}"; "DynamicPlaceholderId" = "2"; } -DataSource "local:/Data/Image 1"
@@ -118,7 +118,7 @@ SharedFields:
             $styles = Get-LocalStyle $Site ("{17B9ED3A-88AF-4451-89A1-650C88C47547}")
             $styles = [string]::Join('|', $styles)
             Add-Rendering -Item $item -PlaceHolder "headless-main" -Instance $renderingContainerDefinition -Parameter @{ "Styles" = $styles; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}"; "DynamicPlaceholderId" = "1" }
-            $styles = Get-LocalStyle $Site ("{C1DA6F96-6E64-41DB-AAA2-600E0761F562}")
+            $styles = Get-LocalStyle $Site ("{94B228C5-A117-4BE6-8F85-A6F438A52FFE}")
             $styles = [string]::Join('|', $styles)
             Add-Rendering -Item $item -PlaceHolder "/headless-main/container-1" -Instance $renderingRichTextDefinition -Parameter @{ "Styles" = $styles; "FieldNames" = $rtVariant.ID; "GridParameters" = "{7465D855-992E-4DC2-9855-A03250DFA74B}|{959FDFBB-4691-4A17-816F-7A5330B8216A}|{271DE3B1-089F-4977-95EC-B5E51446FC01}|{1B189E02-FFC9-4ADC-84E5-D2AB5F6EC0FB}" } -DataSource "local:/Data/Text 2"
             $styles = Get-LocalStyle $Site ("{958D73CE-E441-4781-B32D-585692739A9D}")
