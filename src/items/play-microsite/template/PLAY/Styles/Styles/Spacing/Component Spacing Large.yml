@@ -1,0 +1,17 @@
+﻿---
+ID: "156ca6f7-c1fb-4cd2-9776-a029606c49d9"
+Parent: "dd7f650d-5aa3-432e-a9d6-fa5a3b46ecf1"
+Template: "6b8aabef-d650-46e0-97d0-c0b04f7f016b"
+Path: /sitecore/templates/Branches/Feature/PLAY/Styles/Styles/Spacing/Component Spacing Large
+SharedFields:
+- ID: "09147fb2-ebfb-4949-8c8e-26a424409d5e"
+  Hint: Value
+  Value: "my-8"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1c64f24c-0735-4bb7-8339-379c641f4db5"
