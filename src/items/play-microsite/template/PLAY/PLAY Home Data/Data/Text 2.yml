@@ -41,14 +41,12 @@ Languages:
       Hint: Text
       Value: |
         <h2>In the news</h2>
-        <p>
-        <div>PLAY! Summit to build new mountain biking park.&nbsp;Around 50 acres of undeveloped land connecting Des Moines and Pleasant Hill will be turned into a new mountain bike park, according to PLAY! Summit director Rich Ronald.<br />
-        <div>&nbsp;</div>
-        </div>
-        </p>
+        PLAY! Summit to build new mountain biking park.&nbsp;Around 50 acres of undeveloped land connecting Des Moines and Pleasant Hill will be turned into a new mountain bike park, according to PLAY! Summit director Rich Ronald.
+        <br />
+        <br />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "dbb9d7bd-2ac0-4461-a35a-762df1c627c4"
+      Value: "777ad9e7-ce1c-4b99-b88c-f43e478f8250"
 - Language: "fr-CA"
   Versions:
   - Version: 1
