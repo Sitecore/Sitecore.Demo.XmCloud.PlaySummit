@@ -143,6 +143,9 @@
 @import './components/Products/ProductDetails.css';
 @import './components/Products/Shop.css';
 
+/* Questionnaire */
+@import './components/Questionnaire/Questionnaire.css';
+
 /* Sessions */
 @import './components/Sessions/SessionsGrid.css';
 @import './components/Sessions/SessionList.css';

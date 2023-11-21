@@ -1,0 +1,19 @@
+﻿---
+ID: "04bfec78-6a5e-4ded-b6b7-03b0ca932477"
+Parent: "44a3a1a1-69e3-4547-9064-a3c89f0d90fc"
+Template: "be7590d9-bd34-4d0e-8047-f23974894d37"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d936d533-85a5-43cd-9893-2c08d4e756a4"
+    - ID: "95db3a51-95bd-402d-b970-095aff3727de"
+      Hint: Title
+      Value: Your recommended content

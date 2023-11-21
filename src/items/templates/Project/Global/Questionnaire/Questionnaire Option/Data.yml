@@ -1,0 +1,13 @@
+﻿---
+ID: "c936b432-9628-4539-a26e-284e5c71ccbc"
+Parent: "101a196c-b4bb-46c5-85d8-2dcfb762115c"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/Questionnaire/Questionnaire Option/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f27f1569-aa57-4e66-a227-d40365eb7d1d"

@@ -1,0 +1,23 @@
+﻿---
+ID: "aaa09841-a6b5-442e-8159-09a60f2b81be"
+Parent: "62d6c967-426a-4e03-9cf4-7bdc4792d4dc"
+Template: "101a196c-b4bb-46c5-85d8-2dcfb762115c"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder/Preferred Sport/Yoga
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "014de293-46cd-4ac0-82af-30b5e86a5a00"
+      Hint: Text
+      Value: Yoga
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "729c836f-3e58-4315-811a-42d4f77c6a86"
+    - ID: "8fb06427-c19e-4a68-bf53-9c4fd8acbcca"
+      Hint: Audience
+      Value: Healthy Living
+    - ID: "e52785b2-2c6e-40b2-aaee-5a9b029d6b2e"
+      Hint: Image
+      Value: |
+        <image mediaid="{6FC1DFCE-F768-4B3E-B818-E74190D408CD}" />
