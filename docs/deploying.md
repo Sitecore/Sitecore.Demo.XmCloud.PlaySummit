@@ -11,7 +11,7 @@ You will not get:
 - A delivery rendering host for visitors to browse your website on the web
 - Sitecore Search, Sitecore CDP/Personalize, Content Hub DAM and CMP integrations.
 
-To get these extra things, you must deploy the front-end project somewhere on the web (eg.: Vercel) with the right environment variables. This is not covered in this documentation.
+To get these extra things, you must deploy the front-end project somewhere on the web (eg.: Vercel) with the right environment variables. This is not covered in this documentation, but you can use Sitecore Demo Portal to deploy it automatically (see 'Deploy the PLAY! Summit Demo front-end app(s) using Sitecore Demo Portal' section at the bottom of this document).
 
 ## Disclaimer
 
@@ -26,6 +26,7 @@ Please be aware that the Sitecore Demo Solutions team does not provide support f
 ## Deploy the PLAY! Summit Demo in XM Cloud Deploy App
 
 1. Create a new GitHub repository
+
    1. Ensure you are logged into your GitHub account.
    2. From [this repository](https://github.com/Sitecore/Sitecore.Demo.XmCloud.PlaySummit), click the green "Use this template" button to create a new repository using the code from the Sitecore repository.
    3. Give your repository a name.
@@ -54,3 +55,13 @@ Please be aware that the Sitecore Demo Solutions team does not provide support f
 6. It is advised that you manually run the following two steps in the Sitecore Control Panel in order to get full functionality:
    1. Populate Solr Managed Schema.
    2. Indexing Manager (Rebuild all indexes).
+
+## Deploy the PLAY! Summit Demo front-end apps using Sitecore Demo Portal
+
+1. Log in to the [Sitecore Demo Portal](https://portal.sitecoredemo.com/).
+2. Click 'Get a Demo' link in the top navigation.
+3. Select 'XM Cloud' product.
+4. Pick 'PLAY! Summit (XM Cloud Plus)' option.
+5. Configure required integrations (i.e. Vercel) and deploy the demo.
+6. Once the demo is ready, you will find the links to deployed apps at the details page. The apps will be deployed into provided Vercel instance.
+7. You will also find Content Hub ONE details at the details page, you can use the provided keys to enable Content Hub ONE datasources in Sitecore Comnponents settings.
