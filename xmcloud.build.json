@@ -31,15 +31,13 @@
           "populateSchema": {
             "indexNames": [
               "sitecore_core_index",
-              "sitecore_master_index",
-              "sitecore_horizon_index"
+              "sitecore_master_index"
             ]
           },
           "reindex": {
             "indexNames": [
               "sitecore_core_index",
-              "sitecore_master_index",
-              "sitecore_horizon_index"
+              "sitecore_master_index"
             ]
           },
           "publish": {
