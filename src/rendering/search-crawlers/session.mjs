@@ -1,8 +1,7 @@
 function extract(request, response) {
   function validateData(data, acceptPageType) {
-    const { query: { path: [pageType] = [] } = {} } = data;
-
-    return pageType === acceptPageType;
+    const { query: { path = [] } = {} } = data;
+    return path[1] === acceptPageType;
   }
 
   function getDisplayNameList(list) {
@@ -40,14 +39,16 @@ function extract(request, response) {
 
     return [
       {
-        type: 'session',
-        id: itemId,
-        name: displayName,
         description,
         image_thumb_url,
         image_url,
-        url: urlPath,
         is_premium,
+        time_slots,
+        duration,
+        type: 'session',
+        id: itemId,
+        name: displayName,
+        url: urlPath,
         rooms: getDisplayNameList(Rooms),
         speakers: getDisplayNameList(Speakers),
         vendors: getDisplayNameList(Vendors),
@@ -55,8 +56,6 @@ function extract(request, response) {
         audience: getDisplayNameList(Audience),
         days: getDisplayNameList(Day),
         start_time: time_slots[0],
-        time_slots,
-        duration,
       },
     ];
   }
