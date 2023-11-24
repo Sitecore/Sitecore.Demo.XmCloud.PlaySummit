@@ -12,7 +12,7 @@
 
     &-options {
       @apply col-span-2 grid grid-cols-2 gap-4;
-      @apply md:grid-cols-3;
+      @apply sm:grid-cols-3;
 
       button {
         @apply flex flex-col items-center gap-2 p-4 border border-transparent text-xl font-bold transition-colors;
@@ -35,8 +35,8 @@
         }
 
         img {
-          @apply w-32 h-32 object-contain;
-          @apply lg:w-40 lg:h-40;
+          @apply w-32 h-24 object-contain;
+          @apply lg:w-40 lg:h-32;
         }
       }
     }

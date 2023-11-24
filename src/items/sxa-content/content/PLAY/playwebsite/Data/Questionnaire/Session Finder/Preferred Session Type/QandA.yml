@@ -17,7 +17,10 @@ Languages:
       Value: Q&A
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3e13e7d6-e440-4af0-9ee7-c018163b494e"
+      Value: "60b13aba-28e9-4b41-8b71-aeca9c17c148"
+    - ID: "cdb8943a-f534-4497-a548-27a34f10a1bc"
+      Hint: Session Type
+      Value: Session
     - ID: "e52785b2-2c6e-40b2-aaee-5a9b029d6b2e"
       Hint: Image
       Value: |

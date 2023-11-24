@@ -58,6 +58,10 @@ export function logViewEvent(route?: RouteData): Promise<unknown> {
   return boxeverLogViewEvent(additionalData);
 }
 
+export function logAudiencePreferenceEvent(audience: string): Promise<unknown> {
+  return logEvent('AUDIENCE_PREFERENCE', { audience });
+}
+
 /**
  * Saves the visitor name and email into its CDP profile.
  * Merges the visitor with any existing CDP profile with the same information.

@@ -8,6 +8,7 @@ import {
 import { ComponentProps } from 'lib/component-props';
 import { QuestionnaireQuestion } from './QuestionnaireQuestion';
 import { useCallback, useMemo, useState } from 'react';
+import { logAudiencePreferenceEvent } from 'src/services/CdpService';
 
 type QuestionnaireProps = ComponentProps & {
   fields: {
@@ -53,12 +54,25 @@ const Questionnaire = (props: QuestionnaireProps): JSX.Element => {
   const handleOptionSelect = useCallback(
     (option: QuestionnaireOption) => {
       setSelectedOptionId(option.id);
-      // TODO: Send data to CDP/Search
-      setTimeout(() => {
-        setCurrQuestionIndex(currQuestionIndex + 1);
-        setShowResults(currQuestionIndex + 1 >= questions.length);
-        setSelectedOptionId('');
-      }, 700);
+      console.log(option);
+      const audience = option.audience.jsonValue.value;
+
+      // TODO: Send data to Search
+      // const sessionType = option.sessionType.jsonValue.value;
+
+      if (!!audience) {
+        logAudiencePreferenceEvent(audience).then(() => {
+          setCurrQuestionIndex(currQuestionIndex + 1);
+          setShowResults(currQuestionIndex + 1 >= questions.length);
+          setSelectedOptionId('');
+        });
+      } else {
+        setTimeout(() => {
+          setCurrQuestionIndex(currQuestionIndex + 1);
+          setShowResults(currQuestionIndex + 1 >= questions.length);
+          setSelectedOptionId('');
+        }, 700);
+      }
     },
     [currQuestionIndex, questions.length]
   );
