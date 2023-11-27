@@ -7,19 +7,37 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { QuestionnaireQuestion } from './QuestionnaireQuestion';
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { logAudiencePreferenceEvent } from 'src/services/CdpService';
+import { GraphQLSession } from 'src/types/session';
+import SessionItem from 'components/Sessions/SessionItem';
 
 type QuestionnaireProps = ComponentProps & {
   fields: {
     data: {
       datasource: {
         title: { jsonValue: Field<string> };
-        children: {
+        questions: {
           results: QuestionnaireQuestion[];
         };
       };
+      sessions: {
+        children: {
+          results: extendedGraphQLSession[];
+        };
+      };
     };
+  };
+};
+
+type extendedGraphQLSession = GraphQLSession & {
+  audience: {
+    targetItems: {
+      name: Field<string>;
+    }[];
+  };
+  type: {
+    jsonValue: Field<string>;
   };
 };
 
@@ -27,7 +45,7 @@ export type QuestionnaireQuestion = {
   id: string;
   title: { jsonValue: Field<string> };
   body: { jsonValue: RichTextField };
-  children: {
+  options: {
     results: QuestionnaireOption[];
   };
 };
@@ -45,46 +63,90 @@ const Questionnaire = (props: QuestionnaireProps): JSX.Element => {
   const [showResults, setShowResults] = useState(false);
   const [selectedOptionId, setSelectedOptionId] = useState('');
 
+  const [selectedAudience, setSelectedAudience] = useState('');
+  const [selectedSessionType, setSelectedSessionType] = useState('');
+  const [sessionResults, setSessionResults] = useState<extendedGraphQLSession[]>([]);
+
   const datasource = useMemo(
     () => props.fields?.data?.datasource,
     [props.fields?.data?.datasource]
   );
-  const questions = useMemo(() => datasource.children.results, [datasource.children.results]);
+  const questions = useMemo(() => datasource?.questions.results, [datasource?.questions.results]);
+  const sessions = useMemo(
+    () => props.fields?.data?.sessions?.children?.results,
+    [props.fields?.data?.sessions?.children?.results]
+  );
+
+  // This is temporary and will not be needed after Search implementation
+  useEffect(() => {
+    const sessionsByType = [
+      ...sessions.filter((session) => session.type.jsonValue.value === selectedSessionType),
+      ...sessions.filter((session) => session.type.jsonValue.value !== selectedSessionType),
+    ];
+
+    const sessionsByAudienceAndType = [
+      ...sessionsByType.filter(
+        (session) => session.audience.targetItems[0].name.value === selectedAudience
+      ),
+      ...sessionsByType.filter(
+        (session) => session.audience.targetItems[0].name.value !== selectedAudience
+      ),
+    ];
+
+    console.log(selectedSessionType);
+    console.log(selectedAudience);
+    console.log(sessionsByAudienceAndType);
+
+    setSessionResults(sessionsByAudienceAndType.slice(0, 4));
+  }, [selectedAudience, selectedSessionType, sessions]);
 
   const handleOptionSelect = useCallback(
     (option: QuestionnaireOption) => {
       setSelectedOptionId(option.id);
-      console.log(option);
-      const audience = option.audience.jsonValue.value;
 
-      // TODO: Send data to Search
-      // const sessionType = option.sessionType.jsonValue.value;
+      const audience = option.audience.jsonValue.value;
+      const sessionType = option.sessionType.jsonValue.value;
+
+      const goToNext = () => {
+        setCurrQuestionIndex(currQuestionIndex + 1);
+        setShowResults(currQuestionIndex + 1 >= questions?.length);
+        setSelectedOptionId('');
+      };
 
       if (!!audience) {
         logAudiencePreferenceEvent(audience).then(() => {
-          setCurrQuestionIndex(currQuestionIndex + 1);
-          setShowResults(currQuestionIndex + 1 >= questions.length);
-          setSelectedOptionId('');
+          setSelectedAudience(audience);
+          goToNext();
         });
-      } else {
+      }
+
+      if (!!sessionType) {
+        // TODO: Send data to Search instead of timeout
         setTimeout(() => {
-          setCurrQuestionIndex(currQuestionIndex + 1);
-          setShowResults(currQuestionIndex + 1 >= questions.length);
-          setSelectedOptionId('');
+          setSelectedSessionType(sessionType);
+          goToNext();
+        }, 700);
+      }
+
+      if (!audience && !sessionType) {
+        setTimeout(() => {
+          goToNext();
         }, 700);
       }
     },
-    [currQuestionIndex, questions.length]
+    [currQuestionIndex, questions?.length]
   );
 
   const restartQuestionnaire = useCallback(() => {
+    setSelectedAudience('');
+    setSelectedSessionType('');
     setCurrQuestionIndex(0);
     setShowResults(false);
   }, []);
 
   return (
     <section className="questionnaire">
-      {questions.map((question, i) => (
+      {questions?.map((question, i) => (
         <QuestionnaireQuestion
           key={question.id}
           visible={currQuestionIndex === i}
@@ -104,8 +166,13 @@ const Questionnaire = (props: QuestionnaireProps): JSX.Element => {
               Start over
             </button>
           </div>
-          <div className="questionnaire-recommendations-content">
-            *** RECOMMENDED CONTENT FROM SEARCH GOES HERE ***
+          <div className="questionnaire-recommendations-content item-grid sessions-grid">
+            <div className="questionnaire-recommendations-grid grid-content">
+              {!!sessionResults.length &&
+                sessionResults.map((session) => (
+                  <SessionItem key={session.url.path} session={session} />
+                ))}
+            </div>
           </div>
         </div>
       )}

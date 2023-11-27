@@ -13,13 +13,11 @@ type QuestionnaireQuestionProps = QuestionnaireQuestionType & {
 export const QuestionnaireQuestion = ({
   title,
   body,
-  children,
+  options,
   visible,
   selectedOptionId,
   onOptionSelect,
 }: QuestionnaireQuestionProps): JSX.Element => {
-  const options = children.results;
-
   return (
     <div className={`questionnaire-question ${visible ? '' : 'hidden'}`}>
       <div className="questionnaire-question-content">
@@ -27,7 +25,7 @@ export const QuestionnaireQuestion = ({
         <RichText field={body.jsonValue} className="questionnaire-question-body" />
       </div>
       <div className="questionnaire-question-options">
-        {options.map((option) => (
+        {options.results.map((option) => (
           <button
             key={option.id}
             onClick={() => onOptionSelect(option)}

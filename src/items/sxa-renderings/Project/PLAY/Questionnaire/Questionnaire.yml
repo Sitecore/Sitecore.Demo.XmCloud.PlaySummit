@@ -19,7 +19,7 @@ SharedFields:
           title {
             jsonValue
           }
-          children {
+          questions: children {
             results {
               ... on QuestionnaireQuestion {
                 id
@@ -29,7 +29,7 @@ SharedFields:
                 body {
                   jsonValue
                 }
-                children {
+                options: children {
                   results {
                     ... on QuestionnaireOption {
                       id
@@ -44,6 +44,75 @@ SharedFields:
                       }
                       sessionType {
                         jsonValue
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      sessions: item(path: "{68DC89A4-1B04-59A8-9C4E-3B49D6C61052}", language: $language) {
+        children(hasLayout: true, first: 200) {
+          total
+          results {
+            ... on Session {
+              itemName: name
+              name: field(name: "name") {
+                value
+              }
+              premium {
+                value
+              }
+              url {
+                path
+              }
+              image {
+                jsonValue
+              }
+              day {
+                ... on MultilistField {
+                  targetItems {
+                    name: field(name: "name") {
+                      value
+                    }
+                  }
+                }
+              }
+              audience {
+                ... on MultilistField {
+                  targetItems {
+                    name: field(name: "name") {
+                      value
+                    }
+                  }
+                }
+              }
+              type {
+                jsonValue
+              }
+              timeslots {
+                ... on MultilistField {
+                  targetItems {
+                    name: field(name: "name") {
+                      value
+                    }
+                  }
+                }
+              }
+              speakers {
+                ... on MultilistField {
+                  targetItems {
+                    ... on Speaker {
+                      name: field(name: "name") {
+                        value
+                      }
+                      url {
+                        path
+                      }
+                      role{
+                        value
                       }
                     }
                   }
@@ -82,4 +151,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "986d14dc-3e10-4061-833c-b2f5103a0d1e"
+      Value: "ac53f783-e05a-4d8f-8936-0a2338261d48"
