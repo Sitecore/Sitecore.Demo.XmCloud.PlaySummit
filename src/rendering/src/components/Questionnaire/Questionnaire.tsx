@@ -104,8 +104,8 @@ const Questionnaire = (props: QuestionnaireProps): JSX.Element => {
     (option: QuestionnaireOption) => {
       setSelectedOptionId(option.id);
 
-      const audience = option.audience.jsonValue.value;
-      const sessionType = option.sessionType.jsonValue.value;
+      const audience = option.audience.jsonValue.value as string;
+      const sessionType = option.sessionType.jsonValue.value as string;
 
       const goToNext = () => {
         setCurrQuestionIndex(currQuestionIndex + 1);
