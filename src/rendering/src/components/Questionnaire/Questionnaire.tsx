@@ -93,10 +93,6 @@ const Questionnaire = (props: QuestionnaireProps): JSX.Element => {
       ),
     ];
 
-    console.log(selectedSessionType);
-    console.log(selectedAudience);
-    console.log(sessionsByAudienceAndType);
-
     setSessionResults(sessionsByAudienceAndType.slice(0, 4));
   }, [selectedAudience, selectedSessionType, sessions]);
 
