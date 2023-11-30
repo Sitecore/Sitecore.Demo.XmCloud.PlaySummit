@@ -1,0 +1,20 @@
+﻿---
+ID: "70a07d97-3f26-455f-9066-293ffaa4e9b1"
+Parent: "9b12542e-b2d5-48e5-96a5-eadc7561126f"
+Template: "101a196c-b4bb-46c5-85d8-2dcfb762115c"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder/Biggest Challenge/Lack of time
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "014de293-46cd-4ac0-82af-30b5e86a5a00"
+      Hint: Text
+      Value: Lack of time
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "98471d5a-e4e4-4838-b3c5-9b6f2be9b9d6"
+    - ID: "e52785b2-2c6e-40b2-aaee-5a9b029d6b2e"
+      Hint: Image
+      Value: |
+        <image mediaid="{47180817-C7F0-456A-8FD1-DA9BA05EA5ED}" />

@@ -1,0 +1,154 @@
+﻿---
+ID: "ad585a50-95f5-46b4-a2db-6d79530780ca"
+Parent: "6f6840ee-fdfb-4098-9640-b0a1a4217283"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: /sitecore/layout/Renderings/Project/PLAY/Questionnaire/Questionnaire
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: Questionnaire
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: apps/32x32/forms.png
+- ID: "17bb046a-a32a-41b3-8315-81217947611b"
+  Hint: ComponentQuery
+  Value: |
+    query QuestionnaireQuery($datasource: String!, $language: String!) {
+      datasource: item(path: $datasource, language: $language) {
+        ... on Questionnaire {
+          title {
+            jsonValue
+          }
+          questions: children {
+            results {
+              ... on QuestionnaireQuestion {
+                id
+                title {
+                  jsonValue
+                }
+                body {
+                  jsonValue
+                }
+                options: children {
+                  results {
+                    ... on QuestionnaireOption {
+                      id
+                      text {
+                        jsonValue
+                      }
+                      image {
+                        jsonValue
+                      }
+                      audience {
+                        jsonValue
+                      }
+                      sessionType {
+                        jsonValue
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      sessions: item(path: "{68DC89A4-1B04-59A8-9C4E-3B49D6C61052}", language: $language) {
+        children(hasLayout: true, first: 200) {
+          total
+          results {
+            ... on Session {
+              itemName: name
+              name: field(name: "name") {
+                value
+              }
+              premium {
+                value
+              }
+              url {
+                path
+              }
+              image {
+                jsonValue
+              }
+              day {
+                ... on MultilistField {
+                  targetItems {
+                    name: field(name: "name") {
+                      value
+                    }
+                  }
+                }
+              }
+              audience {
+                ... on MultilistField {
+                  targetItems {
+                    name: field(name: "name") {
+                      value
+                    }
+                  }
+                }
+              }
+              type {
+                jsonValue
+              }
+              timeslots {
+                ... on MultilistField {
+                  targetItems {
+                    name: field(name: "name") {
+                      value
+                    }
+                  }
+                }
+              }
+              speakers {
+                ... on MultilistField {
+                  targetItems {
+                    ... on Speaker {
+                      name: field(name: "name") {
+                        value
+                      }
+                      url {
+                        path
+                      }
+                      role{
+                        value
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Project/Global/Questionnaire/Questionnaire
+- ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
+  Hint: Open Properties after Add
+  Value: 
+- ID: "a2f5d9df-8cba-4a1d-99eb-51acb94cb057"
+  Hint: Page Editor Buttons
+  Value: |
+    {31A3A929-C599-4DD3-91A6-F4A9487CC8B7}
+    {587F8FBD-E38F-4E2B-8DE4-1F474D9DDD00}
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
+- ID: "b0b15510-b138-470e-8f33-8da2e228aafe"
+  Hint: Rendering Contents Resolver
+  Value: 
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: /sitecore/content/PLAY/playwebsite/Data/Questionnaire
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ac53f783-e05a-4d8f-8936-0a2338261d48"

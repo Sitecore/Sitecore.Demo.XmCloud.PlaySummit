@@ -1,0 +1,78 @@
+.questionnaire {
+  @apply w-full bg-black text-white py-11;
+  @apply lg:container lg:px-4 lg:mx-auto;
+
+  h3 {
+    @apply text-3xl font-bold;
+  }
+
+  &-question {
+    @apply grid grid-cols-1 gap-4;
+    @apply lg:grid-cols-3;
+
+    &-options {
+      @apply col-span-2 grid grid-cols-2 gap-4;
+      @apply sm:grid-cols-3;
+
+      button {
+        @apply flex flex-col items-center gap-2 p-4 border border-transparent text-xl font-bold transition-colors;
+        @apply lg:text-2xl lg:gap-4 lg:p-6;
+
+        &::after {
+          @apply content-['✓'] absolute top-4 right-4 text-transparent transition-colors;
+        }
+
+        &:hover {
+          @apply bg-black-light;
+        }
+
+        &.selected {
+          @apply relative border-yellow;
+
+          &::after {
+            @apply text-yellow;
+          }
+        }
+
+        img {
+          @apply w-32 h-24 object-contain;
+          @apply lg:w-40 lg:h-32;
+        }
+      }
+    }
+
+    &-title {
+      @apply mb-4;
+    }
+
+    &-body {
+      @apply text-sm;
+
+      p + p {
+        @apply mt-4;
+      }
+    }
+  }
+
+  &-recommendations {
+    &-header {
+      @apply flex flex-wrap justify-between items-center gap-4;
+
+      button {
+        @apply opacity-70 transition-opacity;
+
+        &:hover {
+          @apply opacity-100;
+        }
+      }
+    }
+
+    &-content.item-grid {
+      @apply overflow-visible;
+    }
+
+    &-grid {
+      @apply !px-0;
+    }
+  }
+}
