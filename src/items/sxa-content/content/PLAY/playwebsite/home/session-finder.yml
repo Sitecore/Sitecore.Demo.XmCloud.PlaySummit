@@ -2,13 +2,13 @@
 ID: "f0f59e9f-a9d5-4b8a-9a11-a1a0a08fc6c9"
 Parent: "2d1d7aca-9597-5ca6-85b2-9b04907e4298"
 Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
-Path: /sitecore/content/PLAY/playwebsite/home/Session Finder
+Path: "/sitecore/content/PLAY/playwebsite/home/session-finder"
 BranchID: "757e8bd1-9a5e-416c-ad3f-c7a22981d285"
 SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{D9A95538-E6E5-424E-BB4B-694EE2215B35}" />
+    <image mediaid="{03593861-88C7-48B2-8E9A-226C6B453F41}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -36,6 +36,10 @@ SharedFields:
   Value: "{0A29CCE3-A1B2-41F8-8F3E-6CE0C7F0F7CD}"
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Session Finder
   Versions:
   - Version: 1
     Fields:
@@ -50,7 +54,7 @@ Languages:
       Value: Session Finder
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "28b6bf46-0006-409c-b1e4-b5ff43592fbc"
+      Value: "df250ce0-fc7a-4481-ac4c-c27e535a1f85"
     - ID: "e0c0c8a4-0fea-4963-8b86-d47810b80efa"
       Hint: Content
       Value: |
