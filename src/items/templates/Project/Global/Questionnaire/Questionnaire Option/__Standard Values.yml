@@ -1,0 +1,16 @@
+﻿---
+ID: "7384afbf-deca-4cb0-9ce2-ff26a1ec30e6"
+Parent: "101a196c-b4bb-46c5-85d8-2dcfb762115c"
+Template: "101a196c-b4bb-46c5-85d8-2dcfb762115c"
+Path: /sitecore/templates/Project/Global/Questionnaire/Questionnaire Option/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "014de293-46cd-4ac0-82af-30b5e86a5a00"
+      Hint: Text
+      Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b2cb8eeb-169c-4466-aa1a-e253d7ddebfe"

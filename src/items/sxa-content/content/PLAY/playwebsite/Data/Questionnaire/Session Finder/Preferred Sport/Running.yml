@@ -1,0 +1,23 @@
+﻿---
+ID: "bbf86f44-f0b2-4832-8ae9-1cf6a8be773e"
+Parent: "62d6c967-426a-4e03-9cf4-7bdc4792d4dc"
+Template: "101a196c-b4bb-46c5-85d8-2dcfb762115c"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder/Preferred Sport/Running
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "014de293-46cd-4ac0-82af-30b5e86a5a00"
+      Hint: Text
+      Value: Running
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ddb2840b-fb7c-4e9b-86d4-02a91f7be231"
+    - ID: "8fb06427-c19e-4a68-bf53-9c4fd8acbcca"
+      Hint: Audience
+      Value: Weekend Warrior
+    - ID: "e52785b2-2c6e-40b2-aaee-5a9b029d6b2e"
+      Hint: Image
+      Value: |
+        <image mediaid="{934D7BA6-EDA3-4E79-95B9-9CB68A86707B}" />

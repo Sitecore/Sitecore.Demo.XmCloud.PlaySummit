@@ -1,0 +1,25 @@
+﻿---
+ID: "62d6c967-426a-4e03-9cf4-7bdc4792d4dc"
+Parent: "04bfec78-6a5e-4ded-b6b7-03b0ca932477"
+Template: "20c12fa9-b9f5-4d34-a9ff-61a768055ace"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder/Preferred Sport
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3c4254ea-991c-4f4b-a24c-9bd9082ca446"
+      Hint: Body
+      Value: |
+        <p>By selecting the type of activity you are interested in <strong>PLAY! Lifestyle</strong> will personalize your experience to match your interest. You can change you interest at any time.</p>
+        <p>Select the interest that matches you best.</p>
+    - ID: "4b7d21d7-236e-4c01-a370-4e91d3767622"
+      Hint: Title
+      Value: "Which activity are you most interested in?"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f6426d6f-7b0c-4c40-be0a-e328a50297fc"

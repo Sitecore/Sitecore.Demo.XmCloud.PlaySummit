@@ -1,0 +1,65 @@
+﻿---
+ID: "f0f59e9f-a9d5-4b8a-9a11-a1a0a08fc6c9"
+Parent: "2d1d7aca-9597-5ca6-85b2-9b04907e4298"
+Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
+Path: "/sitecore/content/PLAY/playwebsite/home/session-finder"
+BranchID: "757e8bd1-9a5e-416c-ad3f-c7a22981d285"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{03593861-88C7-48B2-8E9A-226C6B453F41}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{0505E787-7CA7-4B7B-AEA4-7E32573D366F}"
+          p:before="*"
+          s:ds="{04BFEC78-6A5E-4DED-B6B7-03B0CA932477}"
+          s:id="{AD585A50-95F5-46B4-A2DB-6D79530780CA}"
+          s:par="FieldNames&amp;Styles&amp;CacheClearingBehavior=Clear on publish&amp;RenderingIdentifier&amp;CSSStyles"
+          s:ph="/headless-main/sxa-main/container-1/container-3" />
+        <r
+          uid="{26BB3FC5-7C36-4097-A052-2F88D2DFCE74}"
+          p:after="*[1=2]"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B52162748-AAD3-48C9-896F-EF05C3ED9902%7D%7C%7B991D310A-E240-4B14-9733-2F04BA61AFA2%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+          s:ph="/headless-main/sxa-main/container-1" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{0A29CCE3-A1B2-41F8-8F3E-6CE0C7F0F7CD}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Session Finder
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
+      Hint: Title
+      Value: Session Finder
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Session Finder
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "df250ce0-fc7a-4481-ac4c-c27e535a1f85"
+    - ID: "e0c0c8a4-0fea-4963-8b86-d47810b80efa"
+      Hint: Content
+      Value: |
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum rutrum pretium. Vestibulum turpis purus, euismod quis posuere in, porta vel nisl. Nunc id massa viverra metus lacinia pharetra. Donec semper sem nibh, in bibendum est dictum in. Curabitur varius est id interdum fermentum. Nam tempor felis sit amet quam tempor, ac dictum nibh volutpat. Proin ultrices massa varius lobortis molestie. Quisque eu erat lectus. Ut auctor non diam eu ornare. </p>
+        <p>Mauris suscipit massa ac nisi finibus, at hendrerit est tempus. Curabitur tincidunt id urna porttitor commodo.
+        Quisque sit amet orci id felis euismod vulputate vel sed risus. Sed in sapien lobortis erat aliquam tincidunt. Sed ex massa, tempus eget nisi in, vestibulum rutrum lectus. Vivamus accumsan varius augue, a rhoncus ante egestas sit amet. Aenean at dignissim nibh. Morbi eget nisl vitae nisi semper viverra. Maecenas at justo in nibh placerat pulvinar a id lorem. Donec sit amet condimentum tortor. Nam in fringilla mi.
+        Aenean ut leo sed risus egestas facilisis vel sed quam. Nunc blandit, metus vitae accumsan faucibus, nunc tellus auctor dui, ut dictum massa ex ac mauris. </p>
+        <p>Cras lobortis diam eu dui aliquam viverra. Integer in eros vel velit lacinia sagittis. Ut at ligula feugiat, porta orci id, malesuada dolor. In sapien metus, rhoncus ut consectetur ut, fringilla euismod velit. Phasellus eu tortor in erat consectetur interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus justo ut mi finibus pellentesque. Aliquam eu sagittis purus. Integer in lectus pulvinar, tempor nunc at, facilisis nibh. Proin eu tellus non purus tempus volutpat ac vitae dolor. Donec quis diam tristique, lobortis metus non, iaculis ante. Nulla at vestibulum tortor, ac pharetra ex. Sed in pretium purus, blandit malesuada quam.</p>

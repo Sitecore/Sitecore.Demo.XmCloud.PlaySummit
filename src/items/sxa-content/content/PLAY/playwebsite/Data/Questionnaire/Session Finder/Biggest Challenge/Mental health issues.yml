@@ -1,0 +1,20 @@
+﻿---
+ID: "0f679b2d-767b-47d0-9534-d8fe333b0c81"
+Parent: "9b12542e-b2d5-48e5-96a5-eadc7561126f"
+Template: "101a196c-b4bb-46c5-85d8-2dcfb762115c"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder/Biggest Challenge/Mental health issues
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "014de293-46cd-4ac0-82af-30b5e86a5a00"
+      Hint: Text
+      Value: Mental health issues
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ac85b827-013e-457f-aa5e-6cdd37a82338"
+    - ID: "e52785b2-2c6e-40b2-aaee-5a9b029d6b2e"
+      Hint: Image
+      Value: |
+        <image mediaid="{792A57B8-1E26-4880-BE39-596C4E02E746}" />

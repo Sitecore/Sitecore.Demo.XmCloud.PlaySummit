@@ -1,0 +1,20 @@
+﻿---
+ID: "b17c0ba1-5088-42a4-922d-a31ade309a1c"
+Parent: "9b12542e-b2d5-48e5-96a5-eadc7561126f"
+Template: "101a196c-b4bb-46c5-85d8-2dcfb762115c"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder/Biggest Challenge/Too expensive
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "014de293-46cd-4ac0-82af-30b5e86a5a00"
+      Hint: Text
+      Value: Too expensive
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2275c97a-47f8-41d0-907a-7c2b2d4ec8ad"
+    - ID: "e52785b2-2c6e-40b2-aaee-5a9b029d6b2e"
+      Hint: Image
+      Value: |
+        <image mediaid="{0D911C9D-03F4-4180-9FFB-1BD2C581F8EE}" />

@@ -1,0 +1,27 @@
+﻿---
+ID: "d250667d-a29b-424d-bd5b-c4c9b33d80f3"
+Parent: "62d6c967-426a-4e03-9cf4-7bdc4792d4dc"
+Template: "101a196c-b4bb-46c5-85d8-2dcfb762115c"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder/Preferred Sport/I dont know
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "014de293-46cd-4ac0-82af-30b5e86a5a00"
+      Hint: Text
+      Value: I don't know
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1f8a664c-1d9c-49a2-8473-c67aef2f9a4e"
+    - ID: "8fb06427-c19e-4a68-bf53-9c4fd8acbcca"
+      Hint: Audience
+      Value: 
+    - ID: "e52785b2-2c6e-40b2-aaee-5a9b029d6b2e"
+      Hint: Image
+      Value: |
+        <image mediaid="{39A8B84F-40B8-41A6-A113-AA56AD738932}" />

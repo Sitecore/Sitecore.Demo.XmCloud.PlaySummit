@@ -1,0 +1,13 @@
+﻿---
+ID: "cd22bbdc-dacc-4190-a894-4d4911ee7e27"
+Parent: "20c12fa9-b9f5-4d34-a9ff-61a768055ace"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Global/Questionnaire/Questionnaire Question/Data
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e95c5557-77f4-406f-94f4-acf6be0fe78d"

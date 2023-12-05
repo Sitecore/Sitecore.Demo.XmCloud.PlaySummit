@@ -1,0 +1,27 @@
+﻿---
+ID: "4e05fda0-e485-4a0f-8786-39b356248c5c"
+Parent: "08b75429-8062-48c4-a14b-1d93c00dee9a"
+Template: "101a196c-b4bb-46c5-85d8-2dcfb762115c"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder/Preferred Session Type/Workshops
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "014de293-46cd-4ac0-82af-30b5e86a5a00"
+      Hint: Text
+      Value: Workshops
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0bf08757-0126-45de-b5b2-ab2f5b91592e"
+    - ID: "cdb8943a-f534-4497-a548-27a34f10a1bc"
+      Hint: Session Type
+      Value: Workshop
+    - ID: "e52785b2-2c6e-40b2-aaee-5a9b029d6b2e"
+      Hint: Image
+      Value: |
+        <image mediaid="{796805E6-2A23-4B01-9A1A-77FB80534CF5}" />

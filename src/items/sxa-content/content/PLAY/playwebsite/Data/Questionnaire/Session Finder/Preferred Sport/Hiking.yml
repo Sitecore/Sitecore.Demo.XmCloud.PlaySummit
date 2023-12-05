@@ -1,0 +1,23 @@
+﻿---
+ID: "33f244fd-b3c6-45f3-a822-5c4b217ef165"
+Parent: "62d6c967-426a-4e03-9cf4-7bdc4792d4dc"
+Template: "101a196c-b4bb-46c5-85d8-2dcfb762115c"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder/Preferred Sport/Hiking
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "014de293-46cd-4ac0-82af-30b5e86a5a00"
+      Hint: Text
+      Value: Hiking
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "98806c27-24da-48c8-9eff-51a9641d20c9"
+    - ID: "8fb06427-c19e-4a68-bf53-9c4fd8acbcca"
+      Hint: Audience
+      Value: Outdoor Enthusiast
+    - ID: "e52785b2-2c6e-40b2-aaee-5a9b029d6b2e"
+      Hint: Image
+      Value: |
+        <image mediaid="{E475DF55-8163-4CCD-B71D-F52F39B66BCE}" />
