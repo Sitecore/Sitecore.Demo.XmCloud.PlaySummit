@@ -1,0 +1,27 @@
+﻿---
+ID: "d59b8fe0-a165-4bf5-8135-341a7a20801c"
+Parent: "08b75429-8062-48c4-a14b-1d93c00dee9a"
+Template: "101a196c-b4bb-46c5-85d8-2dcfb762115c"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder/Preferred Session Type/Keynotes
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "014de293-46cd-4ac0-82af-30b5e86a5a00"
+      Hint: Text
+      Value: Keynotes
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f9c5c69f-1018-404f-9691-01991631ea36"
+    - ID: "cdb8943a-f534-4497-a548-27a34f10a1bc"
+      Hint: Session Type
+      Value: Keynote
+    - ID: "e52785b2-2c6e-40b2-aaee-5a9b029d6b2e"
+      Hint: Image
+      Value: |
+        <image mediaid="{10F8F5B9-2AC0-448E-812E-11EAED9B71EB}" />

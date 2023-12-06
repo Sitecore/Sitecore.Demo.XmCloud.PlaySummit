@@ -1,0 +1,25 @@
+﻿---
+ID: "3da7c099-c818-47a8-a5f1-fa1e7abd77e5"
+Parent: "7aeba4e5-506f-4a99-8f8d-ed57696755cd"
+Template: "3ee5e476-e843-51f1-a351-d2c3b198475a"
+Path: "/sitecore/content/PLAY/playwebsite/home/session-finder/Data/Hero Image"
+BranchID: "757e8bd1-9a5e-416c-ad3f-c7a22981d285"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{5D5FF61C-14BD-42BE-98C8-0245F756940C}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "7f1d47cf-4525-5f3e-b8fe-4c6ddbcefa39"
+      Hint: hero
+      Value: |
+        <image mediaid="{09085896-2355-53E8-8F71-BB9761E60380}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d36df6fc-7833-4e30-9abb-568f36edd8d7"

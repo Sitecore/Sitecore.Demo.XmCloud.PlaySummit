@@ -1,0 +1,13 @@
+﻿---
+ID: "8cb49460-4efb-4e75-b9c1-65f73faeece0"
+Parent: "6fc0aba3-620e-5067-a61c-7d4c7163ef11"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Project/PLAY/playwebsite/media/img/Session Finder
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c8d3e78f-6f7e-454f-a9b9-9c989dd30a6c"

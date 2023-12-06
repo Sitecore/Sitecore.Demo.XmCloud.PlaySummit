@@ -1,0 +1,26 @@
+﻿---
+ID: "08b75429-8062-48c4-a14b-1d93c00dee9a"
+Parent: "04bfec78-6a5e-4ded-b6b7-03b0ca932477"
+Template: "20c12fa9-b9f5-4d34-a9ff-61a768055ace"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder/Preferred Session Type
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3c4254ea-991c-4f4b-a24c-9bd9082ca446"
+      Hint: Body
+      Value: |
+        <p>By selecting "what type of sessions are you most interested in" <strong>PLAY! Lifestyle </strong>will personalize your experience to match your interest. You can change you interest at any time.
+        </p>
+        <p>Select the interest that matches you best.</p>
+    - ID: "4b7d21d7-236e-4c01-a370-4e91d3767622"
+      Hint: Title
+      Value: "What type of sessions are you most interested in?"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bfabe17b-a9fd-41b0-a945-e00ac5f5c6e5"
