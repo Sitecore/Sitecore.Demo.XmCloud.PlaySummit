@@ -1,28 +1,29 @@
-// DEMO TEAM CUSTOMIZATION - Change field name. Change component content. Change exported constant name.
 /**
  * Generates React boilerplate for a component under `src/components`
  * @param componentName - the component name
  * @returns component src boilerplate as a string
  */
 function generateComponentSrc(componentName: string): string {
-  return `import { Field, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
-import { ComponentProps } from 'lib/component-props';
+  return `import React from 'react';
+import { ComponentParams, ComponentRendering } from '@sitecore-jss/sitecore-jss-nextjs';
 
-type ${componentName}Props = ComponentProps & {
-  fields: {
-    exampleToRemove: Field<string>;
-  };
+interface ${componentName}Props {
+  rendering: ComponentRendering & { params: ComponentParams };
+  params: ComponentParams;
+}
+
+export const Default = (props: ${componentName}Props): JSX.Element => {
+  const id = props.params.RenderingIdentifier;
+
+  return (
+    <div className={\`component \${props.params.styles}\`} id={id ? id : undefined}>
+      <div className="component-content">
+        <p>${componentName} Component</p>
+      </div>
+    </div>
+  );
 };
-
-const ${componentName} = (props: ${componentName}Props): JSX.Element => (
-  <div>
-    <p>{props.params.name} Component</p>
-  </div>
-);
-
-export const Default = withDatasourceCheck()<${componentName}Props>(${componentName});
 `;
 }
-// END CUSTOMIZATION
 
 export default generateComponentSrc;
