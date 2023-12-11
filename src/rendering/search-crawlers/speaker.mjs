@@ -1,32 +1,11 @@
 function extract(request, response) {
   function validateData(data, acceptPageType) {
-    const { query: { path: [pageType] = [] } = {} } = data;
-
-    return pageType === acceptPageType;
+    const { query: { path = [] } = {} } = data;
+    return path[1] === acceptPageType;
   }
 
   function getDisplayNameList(list) {
     return list.map(({ displayName }) => displayName);
-  }
-
-  function getTargetItemsList(obj) {
-    return obj ? obj.targetItems.map(({ name: { value } }) => value) : [];
-  }
-
-  function buildTargetItemsList(list = [], set) {
-    return [...new Set(list.concat(getTargetItemsList(set)))];
-  }
-
-  function extractSessionsData(sessions) {
-    return sessions.reduce(
-      (mem, { rooms, day, timeslots }) => ({
-        ...mem,
-        rooms: buildTargetItemsList(mem.rooms, rooms),
-        days: buildTargetItemsList(mem.days, day),
-        time_slots: buildTargetItemsList(mem.time_slots, timeslots),
-      }),
-      {}
-    );
   }
 
   function processData(data, acceptPageType) {
@@ -50,24 +29,6 @@ function extract(request, response) {
       displayName,
       itemId,
       fields: { Picture, Featured, Company, Location, JobTitle, Sessions },
-      placeholders: {
-        'headless-main': [
-          {
-            placeholders: {
-              'sxa-speaker-content': [
-                _,
-                {
-                  fields: {
-                    data: {
-                      contextItem: { sessions },
-                    },
-                  },
-                },
-              ],
-            },
-          },
-        ],
-      },
     } = data;
 
     const description = $('.section-content .rich-text').text();
@@ -77,34 +38,44 @@ function extract(request, response) {
     const { value: job_title } = JobTitle;
     const { value: company } = Company;
 
+    const days = [...new Set([...$('.session-info-date')].map((e) => $(e).text().trim()))];
+    const time_slots = [...new Set([...$('.session-info-time')].map((e) => $(e).text().trim()))];
+    const rooms = [
+      ...new Set(
+        [
+          ...$('div.info-col-content > div.info-text > span:nth-child(2):not(.session-info-time)'),
+        ].map((e) => $(e).text().trim())
+      ),
+    ];
+
     return [
       {
-        type: 'speaker',
-        id: itemId,
-        name: displayName,
         description,
         image_thumb_url,
         image_url,
-        url: urlPath,
         location,
         job_title,
         is_featured,
         company,
+        days,
+        time_slots,
+        rooms,
+        type: 'speaker',
+        id: itemId,
+        name: displayName,
+        url: urlPath,
         sessions: getDisplayNameList(Sessions),
-        ...extractSessionsData(sessions.targetItems),
       },
     ];
   }
 
   const $ = response.body;
   const dataNode = $('#__NEXT_DATA__');
-
   if (!dataNode) {
     return [];
   }
 
   let data;
-
   try {
     data = JSON.parse(dataNode.html());
   } catch (e) {
