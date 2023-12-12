@@ -1,0 +1,106 @@
+﻿---
+ID: "dfda3f2b-e211-43ff-b246-e513d55788b8"
+Parent: "4d587c56-3717-41cb-936c-5d0412a50b6b"
+Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/sponsored-landing-page"
+BranchID: "c21cb9f5-9d4c-4904-b199-538835128fa3"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/document_pinned.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{C14B6289-8AC2-439C-9E5B-40DE9F820C3F}"
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{B73A117A-11C2-4B86-8A5C-4C7648EE87DE}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{61BF8678-596B-4122-A63D-0D127F3A64A8}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{6B19FFCE-1837-4BC2-BC15-33CD7FD5BA18}"
+          p:before="*"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;DynamicPlaceholderId=7"
+          s:ph="/headless-main/container-6" />
+        <r
+          uid="{C27FD4E9-75A2-4A33-9834-858BCA11AAF6}"
+          p:after="r[@uid='{6B19FFCE-1837-4BC2-BC15-33CD7FD5BA18}']"
+          s:ds="local:/Data/Promo"
+          s:id="{2492BAC4-DA07-4C86-87F0-9873D40E2276}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7B0E59FDE5-1A8B-4967-8E4B-8E16DCB80939%7D&amp;Styles=%7B1B4B33CE-E1F3-4AC1-9C50-1810F0E20E1D%7D&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4&amp;CSSStyles"
+          s:ph="/headless-main/container-5"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{FDB9AD7C-4CFD-4115-9C3A-E9AD5FCD83B8}"
+          p:after="r[@uid='{C27FD4E9-75A2-4A33-9834-858BCA11AAF6}']"
+          s:ds="local:/Data/About us"
+          s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7B01F60C86-FA57-4566-AFBE-3A7BDC2A2777%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=8"
+          s:ph="/headless-main/container-1"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{0ADC511C-704E-4507-99F4-F12996A73E19}"
+          p:after="r[@uid='{FDB9AD7C-4CFD-4115-9C3A-E9AD5FCD83B8}']"
+          s:ds="local:/Data/Hero Image"
+          s:id="{2C13DBC0-415C-5DAA-A7D9-56928F1271C4}"
+          s:par=""
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{AC9567C6-3585-41A8-BA17-0635691FB71F}"
+          p:after="r[@uid='{0ADC511C-704E-4507-99F4-F12996A73E19}']"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B08C8BABD-CA64-41EE-B592-13E86CF8AE22%7D%7C%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+          s:ph="headless-main" />
+        <r
+          uid="{8FFB7C22-CF70-4713-B8D4-F2CD49456CA2}"
+          p:after="*[1=2]"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5"
+          s:ph="headless-main" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{0E57EE9F-0689-4248-BA8D-6883959E984B}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Sponsored Landing Page
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
+      Hint: Title
+      Value: "PLAY! Summit - the world's largest sports & leisure expo"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Sponsored Landing Page
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8648d371-c6a5-4d31-a2bd-501dfb59a303"
+    - ID: "e0c0c8a4-0fea-4963-8b86-d47810b80efa"
+      Hint: Content
+      Value: |
+        <p>At PLAY! Summit, we are the epicenter of a vibrant community united by a shared love for sports, wellness, and the pursuit of excellence. Our mission is to create an immersive experience that transcends traditional boundaries, bringing together athletes, enthusiasts, journalists, and advocates of healthy living.</p>
+        <p>&nbsp;</p>
+        <p>As pioneers in curating dynamic sessions, interactive workshops, and exclusive showcases, we invite you to join us on a journey where passion meets purpose. PLAY! Summit is more than an event; it's a movement that celebrates the diverse facets of sports culture and fosters connections that last a lifetime. Embrace the thrill, elevate your knowledge, and be part of the biggest sports gathering of the year.</p>
+        <p>&nbsp;</p>
+        <p>Welcome to PLAY! Summit—where the game is just the beginning.</p>

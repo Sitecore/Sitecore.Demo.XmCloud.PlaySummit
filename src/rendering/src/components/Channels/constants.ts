@@ -274,7 +274,7 @@ export const PLAY_SUMMIT_POSTS = {
     isPlaySummitResult: true,
     websiteTitle: 'PLAY! Summit',
     websiteUrl: 'https://www.playsummit.com',
-    contentTitle: 'PLAY! Summit - Unleash Your Sports Passion',
+    contentTitle: 'Ignite Your Excitement at PLAY! Summit – The Ultimate Sports Event',
     contentBody:
       'Join the ultimate sports experience at PLAY! Summit. Immerse yourself in dynamic sessions, interactive workshops, and exclusive showcases from leading ...',
     contentImage:
@@ -285,9 +285,9 @@ export const PLAY_SUMMIT_POSTS = {
     isPlaySummitResult: true,
     websiteTitle: 'PLAY! Summit',
     websiteUrl: 'https://www.playsummit.com',
-    contentTitle: 'The Ultimate Sports Event of the Year',
+    contentTitle: "PLAY! Summit - the world's largest sports & leisure expo",
     contentBody:
-      'Discover the thrill of sports at PLAY! Summit — the biggest sports event of the year. Immerse yourself in dynamic sessions, interactive workshops, and exclusive ...',
+      'At PLAY! Summit, we are the epicenter of a vibrant community united by a shared love for sports, wellness, and the pursuit of excellence. Our mission is ...',
     websiteHref: `${PERSONALIZED_LADING_PAGE_URL}`,
   },
 };

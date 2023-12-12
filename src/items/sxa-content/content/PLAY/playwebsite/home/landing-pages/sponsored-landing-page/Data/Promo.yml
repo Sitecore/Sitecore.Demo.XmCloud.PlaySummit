@@ -1,0 +1,42 @@
+﻿---
+ID: "daeab28b-0a9e-496d-a150-7de49c002e0d"
+Parent: "1e262825-c2fb-4e56-8ca6-b09fd2c6007a"
+Template: "dfed4457-d760-457a-bec1-c0dccdc44381"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/sponsored-landing-page/Data/Promo"
+BranchID: "c21cb9f5-9d4c-4904-b199-538835128fa3"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{672B952B-8A4B-448A-8CF5-9836EB8F3FED}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "1f66862d-a5e3-405f-8e3e-b787b4c39b12"
+      Hint: PromoText2
+      Value: "Don't miss this opportunity to be part of the biggest sports gathering of the year. Join us at PLAY! Summit, where every moment is a celebration of sports passion and excellence. Seize your spot and let the adventure begin!"
+    - ID: "28079f3a-896b-4273-be5f-59d0ebb7cd7d"
+      Hint: PromoText
+      Value: "Secure Your Spot at PLAY! Summit Today"
+    - ID: "739c6cc2-0031-463d-9599-13478fd50ee3"
+      Hint: PromoIcon2
+      Value: |
+        <image mediaid="{CCAA3DA2-F72A-4AED-8B44-674BBD9DC5A6}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2ed44ff1-c32a-4f94-beaf-4b29a35698e7"
+    - ID: "c6e604c3-5371-4e67-83df-a09a5ea66249"
+      Hint: PromoText3
+      Value: Unlock the Ultimate Sports Experience
+    - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
+      Hint: PromoLink
+      Value: |
+        <link linktype="internal" text="Book Tickets" querystring="" target="" id="{A7BDFBDA-D5CC-5388-A039-F262BC768721}" />
+    - ID: "f94b9858-c439-4291-863b-757b536c8b65"
+      Hint: PromoIcon
+      Value: |
+        <image mediaid="{A214FBBE-F1CD-5911-AA4E-CD2C71EBA3C2}" />

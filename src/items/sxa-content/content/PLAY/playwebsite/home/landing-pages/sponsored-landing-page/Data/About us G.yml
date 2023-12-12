@@ -1,0 +1,25 @@
+﻿---
+ID: "1d2d6023-9517-4627-adaf-f6abb520c601"
+Parent: "1e262825-c2fb-4e56-8ca6-b09fd2c6007a"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/sponsored-landing-page/Data/About us G"
+BranchID: "c21cb9f5-9d4c-4904-b199-538835128fa3"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{189DEBA5-BB8E-4052-8A48-154799CE3091}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <h1>Ignite Your Excitement at PLAY! Summit &ndash; The Ultimate Sports Event</h1>
+        <p>
+        Join the ultimate sports experience at PLAY! Summit. Immerse yourself in dynamic sessions, interactive workshops, and exclusive showcases from leading brands. Be part of a vibrant community celebrating the power of sports. Secure your spot now for an unforgettable journey!</p>
+        <p>As you secure your spot, you're not just reserving a seat; you're ensuring your place in a gathering that transcends traditional sports events. Join us on this exhilarating journey, where the pulse of sports beats in every moment, and the thrill of the game is a constant companion. Seize the opportunity now and be part of an unforgettable chapter in the world of sports &ndash; your adventure begins at PLAY! Summit!</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "40eb373e-daf1-4446-9562-229eae6d3c45"
