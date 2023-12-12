@@ -1,4 +1,6 @@
-export const user = {
+export const PERSONALIZED_LADING_PAGE_URL = '/landing-pages/sponsored-landing-page';
+
+export const USER = {
   name: 'Matt Williams',
   image:
     'https://mms-delivery.sitecorecloud.io/api/media/v2/delivery/f0a5857a-f61c-4cf3-7881-08db9261af58/af688c3c2141416da477de8b5fd84502',
@@ -240,31 +242,104 @@ export const user = {
   ],
 };
 
-export const sponsoredPosts = {
+export const PLAY_SUMMIT_POSTS = {
   facebook: {
     postContent:
-      "Join PLAY! Summit for a mind-blowing session – Mountain Biking - Tales from the Trail 🌄🚀. Thrilled to have Clint Adams, CEO of Mapd, sharing his insights. 🏞️ Get ready for an adventure-packed journey through the trails! 🌟 Don't miss out - see you there! 🚴‍♀️🌐 #PLAYSummit",
+      'Calling all sports enthusiasts! 📣 Join us at PLAY! Summit, the ultimate gathering of athletes, experts, and fans. Immerse yourself in dynamic sessions, interactive experiences, and connect with fellow sports lovers. Secure your spot now! 🎟️ #PLAYSummit #SportsPassion',
     postWebpage: 'playsummit.com',
-    postWebpageLink: '/sessions/Mountain-biking-tales-from-the-trail',
-    postWebpageHeading: 'Mountain Biking - Tales from the Trail',
+    postWebpageLink: `${PERSONALIZED_LADING_PAGE_URL}?utm_source=facebook&utm_medium=social`,
+    postWebpageHeading: 'Unleash Your Passion for Sports at PLAY! Summit 🏆',
     postWebpageBody:
-      'Embark on an exhilarating exploration of mountain biking with our session at PLAY! Summit. Join us as we delve into the captivating world of off-road adventures.',
+      "At PLAY! Summit, we're driven by the passion that fuels every sports enthusiast. Whether you're an athlete, a dedicated fan, or someone who lives and breathes the spirit of sports, PLAY! Summit is your ultimate destination.",
     postWebpageImage:
-      'https://playsummit.sitecoresandbox.cloud/api/public/content/d896d75cea754445aad0d1e645ba37e6?v=7a4806ee',
+      'https://ch.sitecoredemo.com/api/public/content/a3d4b193468e449588000a81247e8635?v=d36cb03e',
     reactions: '1.8K',
     comments: '28',
     shares: '86',
   },
   linkedin: {
     postContent:
-      "Excited to announce a must-attend session at PLAY! Summit: 'Seven Mindset Strategies to Raise Your Game' 🌟 Join us as Ed Jones, Director of Sales at Alba, shares invaluable insights on elevating your mindset for success in the dynamic world of sales. Don't miss this opportunity to gain strategic wisdom and level up your game! See you there! 👔🌐",
+      "As a sports media producer, staying ahead is key. Join PLAY! Summit for exclusive insights, interviews, and unparalleled access to sports industry leaders. Sharpen your skills and build valuable connections. Don't miss out on the sports event of the year! 🎤🏀 #PLAYSummit #SportsMedia",
     postWebpage: 'playsummit.com',
-    postWebpageLink: '/sessions/7-mindset-strategies-to-raise-your-game',
-    postWebpageHeading: 'Seven Mindset Strategies to Raise Your Game',
+    postWebpageLink: `${PERSONALIZED_LADING_PAGE_URL}?utm_source=linkedin&utm_medium=social`,
+    postWebpageHeading: 'Elevate Your Media Production Game at PLAY! Summit 📹🎙️',
     postWebpageImage:
-      'https://playsummit.sitecoresandbox.cloud/api/public/content/e67627244df04ec3a0ed5cdb5851160c?v=3df11beb&t=web',
-    reactions: '1.8K',
-    comments: '28',
-    shares: '86',
+      'https://ch.sitecoredemo.com/api/public/content/74df37ff39054e2cb0b8241e678cc367?v=76e0e031',
+    reactions: '2.1K',
+    comments: '32',
+    shares: '79',
+  },
+  google: {
+    isSponsored: true,
+    isPlaySummitResult: true,
+    websiteTitle: 'PLAY! Summit',
+    websiteUrl: 'https://www.playsummit.com',
+    contentTitle: 'PLAY! Summit - Unleash Your Sports Passion',
+    contentBody:
+      'Join the ultimate sports experience at PLAY! Summit. Immerse yourself in dynamic sessions, interactive workshops, and exclusive showcases from leading ...',
+    contentImage:
+      'https://ch.sitecoredemo.com/api/public/content/da6e26b863da44578971356423d193fb?v=65a8b5c2',
+    websiteHref: `${PERSONALIZED_LADING_PAGE_URL}?utm_source=google&utm_medium=cpc`,
+  },
+  googleOrganic: {
+    isPlaySummitResult: true,
+    websiteTitle: 'PLAY! Summit',
+    websiteUrl: 'https://www.playsummit.com',
+    contentTitle: 'The Ultimate Sports Event of the Year',
+    contentBody:
+      'Discover the thrill of sports at PLAY! Summit — the biggest sports event of the year. Immerse yourself in dynamic sessions, interactive workshops, and exclusive ...',
+    websiteHref: `${PERSONALIZED_LADING_PAGE_URL}`,
   },
 };
+
+export const GOOGLE_RESULTS = [
+  {
+    contentTitle: 'Major International Sports Events',
+    websiteTitle: 'Topend Sports',
+    websiteUrl: 'https://www.topendsports.com › events › sport-events',
+    contentBody:
+      'Major International Sports Events; Badminton · Badminton World Championships, Annual event held by BWF; Baseball · World Baseball Classic ...',
+  },
+  {
+    contentTitle: 'This Year in Sports',
+    websiteTitle: 'Wikipedia',
+    websiteUrl: 'https://en.wikipedia.org › wiki › this_year_in_sports',
+    contentBody:
+      'This page describes and summarizes the year in world sporting events. Events taking place this year include the Cricket World Cup, Rugby ...',
+  },
+  {
+    contentTitle: "Fixture Calendar: The World's Sporting Events",
+    websiteTitle: 'Fixture Calendar',
+    websiteUrl: 'https://www.fixturecalendar.com',
+    contentBody:
+      'Use Fixture Calendar to find accurate global sports information, tickets, news, trips, highlights & more for teams, events, competitions, countries, ...',
+  },
+  {
+    contentTitle: 'Sports Events 365 | Sports tickets | Shows tickets',
+    websiteTitle: 'Sports Events 365',
+    websiteUrl: 'https://www.sportsevents365.com',
+    contentBody:
+      '100% supply guarantee of Sports and Concerts tickets on the official site of Sports Events 365.com. Buy tickets from the most reliable supplier in Europe.',
+  },
+  {
+    contentTitle: 'Major World Sporting Events Calendar',
+    websiteTitle: 'Roadtrips',
+    websiteUrl: 'https://www.roadtrips.com › calendar-of-events',
+    contentBody:
+      'Check out our calendar of major international sporting events. Start planning your next trip of a lifetime today!',
+  },
+  {
+    contentTitle: 'Sports Events Calendar',
+    websiteTitle: 'Score and Change',
+    websiteUrl: 'https://www.scoreandchange.com › sports_events',
+    contentBody:
+      "Score and Change's sports events calendar gives you an overview of major upcoming sports events around the world.",
+  },
+  {
+    contentTitle: 'Sports events calendar: UK and global sporting events',
+    websiteTitle: 'Sports Tourism Media',
+    websiteUrl: 'https://www.sportstourismnews.com › sports-events-ca...',
+    contentBody:
+      'A look at sports events calendar in. Major events include the Paris Olympics and Paralympics, Euro Cup and Solheim Cup.',
+  },
+];

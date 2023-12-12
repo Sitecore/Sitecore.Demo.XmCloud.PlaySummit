@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { getPublicAssetUrl } from 'src/helpers/PublicUrlHelper';
 
 export type GoogleResultProps = {
   isSponsored?: boolean;
-  websiteIcon?: string;
+  isPlaySummitResult?: boolean;
   websiteTitle: string;
   websiteUrl: string;
   websiteHref?: string;
@@ -13,7 +14,7 @@ export type GoogleResultProps = {
 
 const GoogleResult = ({
   isSponsored,
-  websiteIcon,
+  isPlaySummitResult,
   websiteTitle,
   websiteUrl,
   websiteHref,
@@ -21,14 +22,20 @@ const GoogleResult = ({
   contentBody,
   contentImage,
 }: GoogleResultProps): JSX.Element => {
+  const publicUrl = getPublicAssetUrl();
+
   return (
     <article className="google-result">
       {isSponsored && <p className="sponsored-label">Sponsored</p>}
       <div className="google-result-container">
         <div>
           <div className="google-result-website">
-            {websiteIcon ? (
-              <img className="website-icon" src={websiteIcon} alt={websiteTitle} />
+            {isPlaySummitResult ? (
+              <img
+                className="website-icon"
+                src={`${publicUrl}/assets/img/channels/play-avatar.png`}
+                alt={websiteTitle}
+              />
             ) : (
               <div className="website-icon">{websiteTitle.slice(0, 1)}</div>
             )}

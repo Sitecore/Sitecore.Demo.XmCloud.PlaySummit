@@ -9,6 +9,7 @@ FacebookPage.getLayout = function getLayout(page: ReactElement) {
     <>
       <Head>
         <title>Facebook</title>
+        <link rel="icon" type="image/x-icon" href="/assets/img/channels/facebook.ico" />
       </Head>
 
       {page}

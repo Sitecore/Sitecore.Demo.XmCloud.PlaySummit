@@ -1,92 +1,10 @@
 import { getPublicAssetUrl } from 'src/helpers/PublicUrlHelper';
-import { user } from './constants';
-import GoogleResult, { GoogleResultProps } from './GoogleResult';
+import { GOOGLE_RESULTS, PLAY_SUMMIT_POSTS, USER } from './constants';
+import GoogleResult from './GoogleResult';
 
 const Google = (): JSX.Element => {
   const publicUrl = getPublicAssetUrl();
-  const suggestionPills = [
-    'Images',
-    'Videos',
-    'Examples',
-    'Essay',
-    'Plan',
-    'PDF',
-    'Quotes',
-    'Drawing',
-  ];
-
-  const resultsContent: GoogleResultProps[] = [
-    {
-      isSponsored: true,
-      websiteIcon: `${publicUrl}/assets/img/channels/play-avatar.png`,
-      websiteTitle: 'PLAY! Summit',
-      websiteUrl: 'https://www.playsummit.com',
-      contentTitle: 'Healthy Living: Reality vs Theory',
-      contentBody:
-        'Embark on a transformative journey toward a healthier lifestyle with our thought-provoking session at PLAY! Summit. Join esteemed speakers Aly Nichols and Sophia Taylor...',
-      contentImage:
-        'https://playsummit.sitecoresandbox.cloud/api/public/content/83da9d31fc674139affc0864b0acf074?v=234fb5ef',
-      websiteHref: '/sessions/Healthy-living-reality-vs-theory',
-    },
-    {
-      contentTitle: 'Healthy Lifestyles, Healthy Outlook | Patient Education',
-      websiteTitle: 'UCSF Health',
-      websiteUrl: 'https://www.ucsfhealth.org › education › healthy-lifest...',
-      contentBody:
-        "Eat a well-balanced, low-fat diet with lots of fruits, vegetables, and whole grains. Choose a diet that's low in saturated fat and cholesterol, and moderate in ...",
-    },
-    {
-      contentTitle: 'Healthy Lifestyle Benefits: 5 Tips for Living Your Strongest, ...',
-      websiteTitle: 'Healthline',
-      websiteUrl: 'https://www.healthline.com › health › fitness-nutrition',
-      contentBody:
-        'Starting a healthy lifestyle can involve eating nutritious foods, engaging in regular physical activity, and prioritizing your mental health ...',
-    },
-    {
-      websiteIcon: `${publicUrl}/assets/img/channels/play-avatar.png`,
-      websiteTitle: 'PLAY! Summit',
-      websiteUrl: 'https://www.playsummit.com',
-      contentTitle: 'Healthy Living: Reality vs Theory',
-      contentBody:
-        'Embark on a transformative journey toward a healthier lifestyle with our thought-provoking session at PLAY! Summit. Join esteemed speakers Aly Nichols and Sophia Taylor...',
-      websiteHref: '/sessions/Healthy-living-reality-vs-theory',
-    },
-    {
-      contentTitle: 'Healthy lifestyle: 5 keys to a longer life',
-      websiteTitle: 'Harvard Health',
-      websiteUrl: 'https://www.health.harvard.edu › blog › healthy-lifest...',
-      contentBody:
-        'Healthy lifestyle: 5 keys to a longer life · 1. Healthy diet · 2. Healthy physical activity level · 3. Healthy body weight, · 4. Smoking · 5.',
-    },
-    {
-      contentTitle: 'Healthy Lifestyle',
-      websiteTitle: 'American Heart Association',
-      websiteUrl: 'https://www.heart.org › healthy-living › healthy-lifestyle',
-      contentBody:
-        'How do you want to live? Along with eating right and being active, real health includes getting enough sleep, practicing mindfulness, managing stress, ...',
-    },
-    {
-      contentTitle: '10 TIPS FOR MAINTAINING A HEALTHY LIFESTYLE AND ...',
-      websiteTitle: 'Richard M. Fairbanks School of Public Health',
-      websiteUrl: 'https://fsph.iupui.edu › doc › 10-Tips-Healthy-...',
-      contentBody:
-        'In some cases, high doses of vitamins can be bad for your health. 4. Drink Water and Stay Hydrated, and Limit Sugared Beverages. Drink water regularly to stay ...',
-    },
-    {
-      contentTitle: '4 Steps to a Healthy Lifestyle',
-      websiteTitle: 'WebMD',
-      websiteUrl: 'https://www.webmd.com › ... › Feature Stories',
-      contentBody:
-        'Meditate, pray, or otherwise find solace for at least 10-20 minutes each day. Contemplation is good for your soul, helps you cope with the demands of daily life ...',
-    },
-    {
-      contentTitle: 'Healthy living',
-      websiteTitle: 'SANE Australia',
-      websiteUrl: 'https://www.sane.org › ... › Factsheets & Guides',
-      contentBody:
-        "'Healthy living' means maintaining a healthy lifestyle and introducing habits that improve your health. It can be difficult to change old habits, but there are ...",
-    },
-  ];
+  const suggestionPills = ['Images', 'Videos', 'News', 'Today', 'Tomorrow', 'Upcoming', 'List'];
 
   return (
     <>
@@ -99,7 +17,7 @@ const Google = (): JSX.Element => {
           />
         </div>
         <div className="google-header-main">
-          <input type="text" value={'healthy lifestyle'} />
+          <input type="text" value={'sports events'} readOnly />
           <ul className="suggestion-pills">
             {suggestionPills.map((pill) => (
               <li key={pill}>{pill}</li>
@@ -114,15 +32,19 @@ const Google = (): JSX.Element => {
           <svg viewBox="0 0 24 24">
             <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
           </svg>
-          <img src={user.image} alt={user.name} className="avatar" />
+          <img src={USER.image} alt={USER.name} className="avatar" />
         </div>
       </header>
       <main className="google-main">
         <div className="google-main-container">
           <p className="results-stats">About 1,970,000,000 results (0.36 seconds)</p>
-          {resultsContent.map((result) => (
-            <GoogleResult {...result} key={result.websiteUrl} />
-          ))}
+          <GoogleResult {...PLAY_SUMMIT_POSTS.google} />
+
+          {[GOOGLE_RESULTS[0], PLAY_SUMMIT_POSTS.googleOrganic, ...GOOGLE_RESULTS.slice(1)].map(
+            (result) => (
+              <GoogleResult {...result} key={result.websiteUrl} />
+            )
+          )}
         </div>
       </main>
     </>

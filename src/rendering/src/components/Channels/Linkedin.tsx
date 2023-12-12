@@ -1,6 +1,6 @@
 import { getPublicAssetUrl } from 'src/helpers/PublicUrlHelper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { sponsoredPosts, user } from './constants';
+import { PLAY_SUMMIT_POSTS, USER } from './constants';
 import { faBookmark, faUser, faHashtag, faPlus } from '@fortawesome/free-solid-svg-icons';
 import LinkedinSponsoredPost from './LinkedinSponsoredPost';
 import LinkedinPost from './LinkedinPost';
@@ -89,7 +89,7 @@ const Linkedin = (): JSX.Element => {
                 <span>Notifications</span>
               </li>
               <li>
-                <img src={user.image} alt={user.name} className="avatar" />
+                <img src={USER.image} alt={USER.name} className="avatar" />
                 <span>Me</span>
               </li>
             </ul>
@@ -101,9 +101,9 @@ const Linkedin = (): JSX.Element => {
           <aside className="sidebar-left">
             <div className="user-card linkedin-box">
               <div className="user-cover"></div>
-              <img src={user.image} alt={user.name} className="avatar" />
-              <h3>{user.name}</h3>
-              <p>{user.jobTitle}</p>
+              <img src={USER.image} alt={USER.name} className="avatar" />
+              <h3>{USER.name}</h3>
+              <p>{USER.jobTitle}</p>
               <ul>
                 <li>
                   <span>Who&apos;s viewed your profile</span>
@@ -167,7 +167,7 @@ const Linkedin = (): JSX.Element => {
           <aside className="linkedin-feed">
             <div className="linkedin-box new-post">
               <div className="new-post-input">
-                <img src={user.image} alt={user.name} className="avatar" />
+                <img src={USER.image} alt={USER.name} className="avatar" />
                 <input type="text" placeholder="Start a post" />
               </div>
               <ul>
@@ -191,10 +191,10 @@ const Linkedin = (): JSX.Element => {
                 </li>
               </ul>
             </div>
-            <LinkedinSponsoredPost {...sponsoredPosts.linkedin} />
-            <LinkedinPost {...user.contacts[0]} timestamp="4h" />
-            <LinkedinPost {...user.contacts[8]} timestamp="2d" />
-            <LinkedinPost {...user.contacts[7]} timestamp="1w" />
+            <LinkedinSponsoredPost {...PLAY_SUMMIT_POSTS.linkedin} />
+            <LinkedinPost {...USER.contacts[0]} timestamp="4h" />
+            <LinkedinPost {...USER.contacts[8]} timestamp="2d" />
+            <LinkedinPost {...USER.contacts[7]} timestamp="1w" />
           </aside>
           <aside className="sidebar-right">
             <div className="connect-suggestions linkedin-box">
@@ -202,13 +202,13 @@ const Linkedin = (): JSX.Element => {
               <ul>
                 <li>
                   <img
-                    src={user.contacts[5].image}
-                    alt={user.contacts[5].name}
+                    src={USER.contacts[5].image}
+                    alt={USER.contacts[5].name}
                     className="avatar"
                   />
                   <div>
-                    <h6>{user.contacts[5].name}</h6>
-                    <p>{user.contacts[5].jobTitle}</p>
+                    <h6>{USER.contacts[5].name}</h6>
+                    <p>{USER.contacts[5].jobTitle}</p>
                     <button>
                       <FontAwesomeIcon icon={faPlus} /> Follow
                     </button>
@@ -216,13 +216,13 @@ const Linkedin = (): JSX.Element => {
                 </li>
                 <li>
                   <img
-                    src={user.contacts[12].image}
-                    alt={user.contacts[12].name}
+                    src={USER.contacts[12].image}
+                    alt={USER.contacts[12].name}
                     className="avatar"
                   />
                   <div>
-                    <h6>{user.contacts[12].name}</h6>
-                    <p>{user.contacts[12].jobTitle}</p>
+                    <h6>{USER.contacts[12].name}</h6>
+                    <p>{USER.contacts[12].jobTitle}</p>
                     <button>
                       <FontAwesomeIcon icon={faPlus} /> Follow
                     </button>

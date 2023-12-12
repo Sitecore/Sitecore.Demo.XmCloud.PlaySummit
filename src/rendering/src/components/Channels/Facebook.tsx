@@ -1,7 +1,7 @@
 import { getPublicAssetUrl } from 'src/helpers/PublicUrlHelper';
 import FacebookSponsoredPost from './FacebookSponsoredPost';
 import FacebookPost from './FacebookPost';
-import { sponsoredPosts, user } from './constants';
+import { PLAY_SUMMIT_POSTS, USER } from './constants';
 
 const Facebook = (): JSX.Element => {
   const publicUrl = getPublicAssetUrl();
@@ -91,7 +91,7 @@ const Facebook = (): JSX.Element => {
               </svg>
             </li>
             <li>
-              <img src={user.image} alt={user.name} className="avatar" />
+              <img src={USER.image} alt={USER.name} className="avatar" />
             </li>
           </ul>
         </div>
@@ -108,7 +108,7 @@ const Facebook = (): JSX.Element => {
         <div className="facebook-feed">
           <div className="post-box new-post">
             <div className="input-box">
-              <img src={user.image} alt={user.name} className="avatar" />
+              <img src={USER.image} alt={USER.name} className="avatar" />
               <input type="text" placeholder="What's on your mind, Matt?" />
             </div>
             <hr />
@@ -130,15 +130,15 @@ const Facebook = (): JSX.Element => {
               </button>
             </div>
           </div>
-          <FacebookSponsoredPost {...sponsoredPosts.facebook} />
-          <FacebookPost {...user.contacts[4]} timestamp="4 minutes ago" />
-          <FacebookPost {...user.contacts[2]} timestamp="18 minutes ago" />
-          <FacebookPost {...user.contacts[3]} timestamp="23 minutes ago" />
+          <FacebookSponsoredPost {...PLAY_SUMMIT_POSTS.facebook} />
+          <FacebookPost {...USER.contacts[4]} timestamp="4 minutes ago" />
+          <FacebookPost {...USER.contacts[2]} timestamp="18 minutes ago" />
+          <FacebookPost {...USER.contacts[3]} timestamp="23 minutes ago" />
         </div>
         <div className="facebook-sidebar-right">
           <h5>Contacts</h5>
           <ul>
-            {user.contacts.map((contact) => (
+            {USER.contacts.map((contact) => (
               <li key={contact.image}>
                 <img src={contact.image} alt={contact.name} className="avatar" />
                 {contact.name}
