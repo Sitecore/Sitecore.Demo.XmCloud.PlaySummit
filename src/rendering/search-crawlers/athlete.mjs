@@ -16,13 +16,21 @@ function extract(request, response) {
     const url = page.replace('[id]', query.id).replace('[slug]', query.slug);
     return [
       {
-        url,
         type: 'athlete',
         id: query.id,
         name: athlete.athleteName,
         image_url: image,
         image_thumb_url: image,
+        url,
       },
+      ...[athlete.profilePhoto.results[0], ...athlete.relatedMedia.results].map((media) => ({
+        type: 'photo',
+        id: media.id,
+        name: media.name.split('.')[0],
+        description: media.description,
+        image_url: media.fileUrl,
+        image_thumb_url: media.fileUrl,
+      })),
     ];
   }
   const $ = response.body;
