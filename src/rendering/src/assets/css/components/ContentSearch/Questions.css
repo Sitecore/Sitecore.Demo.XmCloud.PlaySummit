@@ -1,0 +1,35 @@
+.questions {
+  @apply mb-8;
+
+  .primary-question {
+    @apply bg-pink w-full py-3 pr-3 pl-4 mt-4 text-left box-border border border-solid border-[#707070];
+
+    &-title {
+      @apply text-lg font-bold text-white;
+    }
+
+    &-answer {
+      @apply text-sm text-white;
+    }
+  }
+
+  .related-questions-container {
+    @apply bg-black-light;
+
+    .related-questions-header-title {
+      @apply text-white text-lg font-bold text-left pl-4 pt-3 mb-2;
+    }
+
+    .related-question {
+      @apply border-t border-solid border-t-white mx-4 py-2;
+
+      &-title {
+        @apply text-sm text-white text-left flex gap-2 items-center cursor-pointer;
+      }
+
+      &-answer {
+        @apply text-lg text-white text-left pl-5;
+      }
+    }
+  }
+}
