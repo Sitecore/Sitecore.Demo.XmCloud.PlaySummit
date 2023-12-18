@@ -1,0 +1,130 @@
+{
+  "clientKey": "3509a0a2b7cc0542af1e697ea16dafe9",
+  "href": "https://api-us.boxever.com/v3/flowDefinitions/454e65fe-4d13-4e81-9fad-cecafd84cd62",
+  "ref": "454e65fe-4d13-4e81-9fad-cecafd84cd62",
+  "name": "embedded_{scope}_dfda3f2be21143ffb246e513d55788b8_en",
+  "modifiedByRef": "auth0|63ed31bdc5dac322725263de",
+  "modifiedAt": "2023-12-18T15:46:37.795Z",
+  "revision": 5,
+  "archived": false,
+  "friendlyId": "embedded_{scope}_dfda3f2be21143ffb246e513d55788b8_en",
+  "type": "INTERACTIVE_API_FLOW",
+  "subtype": "EXPERIENCE",
+  "channels": [
+    "WEB"
+  ],
+  "triggers": [],
+  "dashboardLinks": [],
+  "tags": [],
+  "businessProcess": "interactive_v1",
+  "traffic": {
+    "type": "audienceTraffic",
+    "weightingAlgorithm": "USER_DEFINED",
+    "modifiedAt": "2023-12-18T15:46:37.825Z",
+    "splits": [
+      {
+        "template": "{\"variantId\": \"dd8fb4b6f20a4c5882d86ae374b420e8\"}",
+        "variantName": "Facebook Campaign",
+        "audienceName": "Facebook Campaign",
+        "conditionGroups": [
+          {
+            "conditions": [
+              {
+                "templateId": "utm_value",
+                "params": {
+                  "type": "source",
+                  "compares to": "is equal to",
+                  "UTM value": "facebook"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "template": "{\"variantId\": \"7bf523a1e41f459289910fa71f0d5832\"}",
+        "variantName": "LinkedIn Campaign",
+        "audienceName": "LinkedIn Campaign",
+        "conditionGroups": [
+          {
+            "conditions": [
+              {
+                "templateId": "utm_value",
+                "params": {
+                  "type": "source",
+                  "compares to": "is equal to",
+                  "UTM value": "linkedin"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "template": "{\"variantId\": \"608c9854dc064688acb42912b10a8744\"}",
+        "variantName": "Google Campaign",
+        "audienceName": "Google Campaign",
+        "conditionGroups": [
+          {
+            "conditions": [
+              {
+                "templateId": "utm_value",
+                "params": {
+                  "type": "source",
+                  "compares to": "is equal to",
+                  "UTM value": "google"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "transpiledVariants": [
+    {
+      "ref": "2f9fb956-0a1f-48e5-b919-f9f684e73f08",
+      "name": "Google Campaign",
+      "tasks": [
+        {
+          "implementation": "templateRenderTask",
+          "input": {
+            "inputType": "templateRenderTaskInput",
+            "type": "application/json",
+            "template": "{\"variantId\": \"608c9854dc064688acb42912b10a8744\"}"
+          }
+        },
+        {
+          "implementation": "conditionsTask",
+          "input": {
+            "inputType": "conditionsTaskInput",
+            "rules": [
+              {
+                "id": "scriptCondition",
+                "name": "Combined condition groups",
+                "description": "Combined templates within condition group for targeted experience",
+                "ruleData": {
+                  "expression": "(function () {\n    var compareValue = \"is equal to\";\n    var utmType = \"source\";\n    var utmValue = \"google\";\n    var utmMultiValue = \"\";\n    var utmArray = utmMultiValue.split(',');\n    var utmMatch = false;\n    \n    \n    if (request && request.params && request.params.utm) {\n        if (request.params.utm[utmType]) {\n            if (compareValue === 'is equal to') {\n               utmMatch = request.params.utm[utmType] === utmValue; \n            } else if (compareValue === 'includes any of') {\n                for (var k = 0; k < utmArray.length; k++) {\t\n                    if (request.params.utm[utmType] === utmArray[k]) {\t\n                        utmMatch = true;\t\n                        break;\t\n                    }\n                }\n            } else if (compareValue === 'contains') {\n                utmMatch = request.params.utm[utmType].indexOf(utmValue) >= 0 ? true : false;\n            } else if (compareValue === 'starts with') {\n                utmMatch = request.params.utm[utmType].startsWith(utmValue);\n            } else if (compareValue === 'ends with') {\n                utmMatch = request.params.utm[utmType].endsWith(utmValue);\n            } else if (compareValue === 'is null') {\n                utmMatch = !request.params.utm[utmType];\n            }\n        } else if (compareValue === 'is null') {\n      \t    utmMatch = true;\n        }\n    } else if (guest.sessions && guest.sessions.length > 0) {\n        var currentSession = null;\n        for (var i = 0; i < guest.sessions.length; i++) {\n          if (guest.sessions[i].channel === \"WEB\") {\n            currentSession = guest.sessions[i];\n            break;\n          }\n        }\n        if (currentSession && currentSession.events && currentSession.events.length > 0) {\n            var firstEventIndex = currentSession.events.length - 1;\n            var firstEvent = currentSession.events[firstEventIndex];\n            var utmTypeProperty = 'utm_' + utmType;\n            if (firstEvent.arbitraryData && firstEvent.arbitraryData[utmTypeProperty]) {\n                if (compareValue === 'is equal to') {\n                    utmMatch = firstEvent.arbitraryData[utmTypeProperty] === utmValue; \n                } else if (compareValue === 'includes any of') {\n                    for (var m = 0; m < utmArray.length; m++) {\t\n                        if (firstEvent.arbitraryData[utmTypeProperty] === utmArray[m]) {\t\n                            utmMatch = true;\t\n                            break;\t\n                        }\n                    }\n                } else if (compareValue === 'contains') {\n                    utmMatch = firstEvent.arbitraryData[utmTypeProperty].indexOf(utmValue) >= 0 ? true : false;\n                } else if (compareValue === 'starts with') {\n                    utmMatch = firstEvent.arbitraryData[utmTypeProperty].startsWith(utmValue);\n                } else if (compareValue === 'ends with') {\n                    utmMatch = firstEvent.arbitraryData[utmTypeProperty].endsWith(utmValue);\n                } else if (compareValue === 'is null') {\n                    utmMatch = !firstEvent.arbitraryData[utmTypeProperty];\n                }\n            } else if (compareValue === 'is null') {\n          \t    utmMatch = true;\n            }\n        }\n    }\n    \n    return utmMatch;\n})();"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "status": "PRODUCTION",
+  "schedule": {
+    "type": "simpleSchedule",
+    "startDate": "2023-12-18T15:44:36.506Z"
+  },
+  "revisions": {
+    "href": "https://api-us.boxever.com/v3/flowDefinitions/454e65fe-4d13-4e81-9fad-cecafd84cd62/revisions"
+  },
+  "sampleSizeConfig": {
+    "baseValue": 0.15,
+    "minimumDetectableDifference": 0.02,
+    "confidenceLevel": 0.95
+  }
+}
