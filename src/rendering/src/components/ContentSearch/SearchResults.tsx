@@ -7,6 +7,7 @@ import PreviewSearchInput from '../PreviewSearchContent/PreviewSearchInput';
 import PreviewSearchIcon from '../PreviewSearchContent/PreviewSearchIcon';
 import PreviewSearchContextProvider from '../PreviewSearchContent/PreviewSearchContextProvider';
 import { SEARCH_PAGE, SESSION_SEARCH_RESULT_TYPE } from '../../helpers/ContentSearchHelper';
+import Questions from './Questions';
 
 type SearchResultsProps = PropsWithChildren & {
   selectedTab: string;
