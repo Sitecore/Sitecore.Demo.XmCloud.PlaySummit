@@ -38,6 +38,9 @@ const SearchResults = (props: SearchResultsProps): JSX.Element => {
           <PreviewSearchIcon onClick={onSearch} className="search-results-header-search-icon" />
         </PreviewSearchContextProvider>
       </div>
+      {keyphrase && (
+        <Questions rfkId="rfkid_qa" keyphrase={keyphrase} defaultRelatedQuestions={4} />
+      )}
       <SearchFilters
         options={props.filterOptions}
         onChange={onChangeFilter}
