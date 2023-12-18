@@ -1,8 +1,7 @@
 function extract(request, response) {
   function validateData(data, acceptPageType) {
-    const { query: { path: [pageType] = [] } = {} } = data;
-
-    return pageType === acceptPageType;
+    const { query: { path = [] } = {} } = data;
+    return path[1] === acceptPageType;
   }
 
   function getDisplayNameList(list) {
@@ -41,17 +40,17 @@ function extract(request, response) {
 
     return [
       {
-        type: 'content',
-        id: itemId,
-        name: displayName,
         content,
         content_html,
         excerpt,
         image_thumb_url,
         image_url,
-        url: urlPath,
         publish_date,
         audience,
+        type: 'content',
+        id: itemId,
+        name: displayName,
+        url: urlPath,
       },
     ];
   }

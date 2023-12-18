@@ -2,7 +2,7 @@ import * as fs from 'fs/promises';
 import { fileURLToPath } from 'url';
 import path from 'path';
 
-const TYPES = ['session', 'speaker', 'vendor', 'sponsor', 'article'];
+const TYPES = ['session', 'speaker', 'vendor', 'sponsor', 'article', 'athlete', 'event'];
 const type = process.argv[2];
 
 if (!TYPES.includes(type)) {
