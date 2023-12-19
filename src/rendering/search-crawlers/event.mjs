@@ -17,7 +17,6 @@ function extract(request, response) {
     const sport = event.sport.results[0].title;
     return [
       {
-        url,
         type: 'event',
         id: query.id,
         name: event.title,
@@ -25,7 +24,16 @@ function extract(request, response) {
         image_url: image,
         image_thumb_url: image,
         sport: sport,
+        url,
       },
+      ...event.relatedMedia.results.map((media) => ({
+        type: 'photo',
+        id: media.id,
+        name: media.name.split('.')[0],
+        description: media.description,
+        image_url: media.fileUrl,
+        image_thumb_url: media.fileUrl,
+      })),
     ];
   }
   const $ = response.body;
