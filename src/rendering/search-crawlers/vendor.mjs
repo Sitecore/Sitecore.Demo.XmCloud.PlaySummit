@@ -32,7 +32,14 @@ function extract(request, response) {
     } = data;
 
     const description = $('.section-content .rich-text').text();
-    const { value: { thumbnailsrc: image_thumb_url, src: image_url } = {} } = Logo;
+    const {
+      value: {
+        thumbnailsrc: image_thumb_url,
+        src: image_url,
+        alt: imageDescription,
+        'stylelabs-content-id': imageID,
+      } = {},
+    } = Logo;
     const { value: level } = Level;
     const activities = getDisplayNameList(ActivityType);
     const speakers = getDisplayNameList(Speakers);
@@ -63,6 +70,14 @@ function extract(request, response) {
         name: displayName,
         url: urlPath,
         sessions: getDisplayNameList(Sessions),
+      },
+      {
+        image_url,
+        image_thumb_url,
+        type: 'photo',
+        name: displayName,
+        id: imageID,
+        description: imageDescription,
       },
     ];
   }

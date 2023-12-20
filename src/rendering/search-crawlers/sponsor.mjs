@@ -32,7 +32,14 @@ function extract(request, response) {
     } = data;
 
     const description = $('.section-content .rich-text').text();
-    const { value: { thumbnailsrc: image_thumb_url, src: image_url } = {} } = Logo;
+    const {
+      value: {
+        thumbnailsrc: image_thumb_url,
+        src: image_url,
+        alt: imageDescription,
+        'stylelabs-content-id': imageID,
+      } = {},
+    } = Logo;
     const { value: level } = Level;
     const speakers = getDisplayNameList(Speakers);
 
@@ -40,9 +47,9 @@ function extract(request, response) {
     const time_slots = [...new Set([...$('.session-info-time')].map((e) => $(e).text().trim()))];
     const rooms = [
       ...new Set(
-        [
-          ...$('div.info-col-content > div.info-text > span:nth-child(2):not(.session-info-time)'),
-        ].map((e) => $(e).text().trim())
+        [...$('div.info-col-content > div:nth-child(4) > span:nth-child(2)')].map((e) =>
+          $(e).text().trim()
+        )
       ),
     ];
 
@@ -61,6 +68,14 @@ function extract(request, response) {
         name: displayName,
         url: urlPath,
         sessions: getDisplayNameList(Sessions),
+      },
+      {
+        image_url,
+        image_thumb_url,
+        type: 'photo',
+        name: displayName,
+        id: imageID,
+        description: imageDescription,
       },
     ];
   }

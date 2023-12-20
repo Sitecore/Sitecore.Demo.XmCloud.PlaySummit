@@ -32,7 +32,14 @@ function extract(request, response) {
     } = data;
 
     const content = $('.section-content .right-column .rich-text p').text();
-    const { value: { thumbnailsrc: image_thumb_url, src: image_url } = {} } = Image;
+    const {
+      value: {
+        thumbnailsrc: image_thumb_url,
+        src: image_url,
+        alt: imageDescription,
+        'stylelabs-content-id': imageID,
+      } = {},
+    } = Image;
     const { value: content_html } = Content;
     const { value: excerpt } = Excerpt;
     const { value: publish_date } = PublishDate;
@@ -47,10 +54,18 @@ function extract(request, response) {
         image_url,
         publish_date,
         audience,
-        type: 'content',
+        type: 'news',
         id: itemId,
         name: displayName,
         url: urlPath,
+      },
+      {
+        image_url,
+        image_thumb_url,
+        type: 'photo',
+        name: displayName,
+        id: imageID,
+        description: imageDescription,
       },
     ];
   }
