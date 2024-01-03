@@ -1,0 +1,212 @@
+.facebook-header,
+.facebook-main {
+  font-family: 'Segoe UI Historic', 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.facebook-header {
+  @apply flex justify-between items-center bg-white-light px-4 shadow-md;
+
+  input {
+    @apply bg-[#F0F2F5] h-8 px-3 pb-[3px] rounded-full w-full text-sm;
+  }
+
+  .header-right,
+  .header-left,
+  .tabs {
+    @apply flex gap-2;
+  }
+
+  .header-left,
+  .header-right {
+    @apply basis-full;
+  }
+
+  .tabs {
+    @apply w-[680px] shrink-0;
+
+    li {
+      @apply flex items-center justify-center text-[#65676b] py-3 basis-full;
+
+      &:first-child {
+        @apply text-[#0866FF] border-b-4 border-[#0866FF];
+      }
+    }
+  }
+
+  .header-right {
+    @apply justify-end;
+
+    ul {
+      @apply flex gap-2;
+    }
+
+    li {
+      @apply flex items-center justify-center w-8 h-8 bg-[#D8DADF] rounded-full;
+    }
+
+    .avatar {
+      @apply rounded-full;
+    }
+  }
+}
+
+.facebook-main {
+  @apply bg-[#F0F2F5];
+
+  hr {
+    @apply text-[#E4E6EB] my-3;
+  }
+
+  .facebook-feed {
+    @apply mx-auto w-[680px];
+  }
+
+  .avatar {
+    @apply w-8 h-8 rounded-full object-cover;
+  }
+
+  .post-box {
+    @apply bg-white-light rounded-md shadow-md p-3 my-4;
+
+    .input-box {
+      @apply flex gap-2;
+    }
+
+    input {
+      @apply bg-[#F0F2F5] h-8 px-3 pb-[3px] rounded-full w-full text-sm;
+    }
+
+    .post-types {
+      @apply flex gap-2;
+
+      button {
+        @apply flex gap-2 justify-center py-1 items-center basis-full text-xs text-[#65676B] font-semibold;
+      }
+    }
+
+    .profile {
+      @apply flex gap-2;
+
+      &-info {
+        @apply flex flex-col;
+
+        h5 {
+          @apply text-xs font-semibold;
+        }
+
+        span {
+          @apply flex items-center gap-1 text-[13px] text-[#65676B];
+        }
+      }
+    }
+  }
+
+  .post-content {
+    @apply text-sm py-2;
+  }
+
+  .post-web-preview {
+    @apply block -mx-3;
+
+    img {
+      @apply h-52 w-full object-cover;
+    }
+
+    &-content {
+      @apply bg-[#F0F2F5] border-y border-[#CED0D4] px-3;
+
+      span {
+        @apply uppercase text-[12px] text-[#65676B];
+      }
+
+      h3 {
+        @apply font-bold text-sm;
+      }
+
+      p {
+        @apply text-xs text-[#65676B] truncate mb-2;
+      }
+    }
+  }
+
+  .post-img-grid {
+    @apply grid grid-cols-2 gap-1;
+
+    img {
+      @apply h-52 w-full object-cover;
+
+      &:last-child:nth-child(odd) {
+        @apply col-span-2;
+      }
+    }
+  }
+
+  .post-meta {
+    @apply flex justify-between items-center text-xs text-[#65676B] my-2;
+
+    span {
+      @apply ml-1;
+
+      + span {
+        @apply ml-2;
+      }
+    }
+
+    .post-reactions {
+      @apply flex items-center;
+
+      img {
+        @apply relative w-[22px] h-[22px] border-2 border-white-light rounded-full z-20;
+
+        + img {
+          @apply -ml-[4px] z-10;
+        }
+      }
+    }
+  }
+
+  .post-actions {
+    @apply flex items-center;
+
+    button {
+      @apply basis-full flex justify-center items-center gap-2 font-semibold text-xs text-[#65676B];
+
+      svg {
+        @apply w-4 h-4;
+      }
+    }
+  }
+
+  .facebook-sidebar-left,
+  .facebook-sidebar-right {
+    @apply w-1/5 fixed pt-4;
+  }
+
+  .facebook-sidebar-right {
+    @apply pl-10 right-0;
+
+    h5 {
+      @apply text-sm font-semibold text-[#65676B];
+    }
+
+    li {
+      @apply flex gap-2 items-center font-semibold text-xs my-3;
+    }
+  }
+
+  .facebook-sidebar-left {
+    @apply flex items-start;
+
+    img {
+      @apply shrink-0 ml-3;
+    }
+
+    ul {
+      @apply flex flex-col gap-[16px];
+    }
+
+    li {
+      @apply flex items-center text-sm font-semibold h-[36px] pl-2;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+﻿---
+ID: "c273f2b5-cf5f-4c3e-9fab-e252a36b39cd"
+Parent: "1e262825-c2fb-4e56-8ca6-b09fd2c6007a"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/sponsored-landing-page/Data/About us"
+BranchID: "c21cb9f5-9d4c-4904-b199-538835128fa3"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{189DEBA5-BB8E-4052-8A48-154799CE3091}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <h1>PLAY! Summit - the world's largest sports &amp; leisure expo</h1>
+        <p>
+        At PLAY! Summit, we are the epicenter of a vibrant community united by a shared love for sports, wellness, and the pursuit of excellence. Our mission is to create an immersive experience that transcends traditional boundaries, bringing together athletes, enthusiasts, journalists, and advocates of healthy living.</p>
+        <p>As pioneers in curating dynamic sessions, interactive workshops, and exclusive showcases, we invite you to join us on a journey where passion meets purpose. PLAY! Summit is more than an event; it's a movement that celebrates the diverse facets of sports culture and fosters connections that last a lifetime. Embrace the thrill, elevate your knowledge, and be part of the biggest sports gathering of the year.</p>
+        <p>Welcome to PLAY! Summit—where the game is just the beginning.</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0c4ef69a-3b99-45d6-b6e3-10fa56fd2031"
