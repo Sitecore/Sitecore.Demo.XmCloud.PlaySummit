@@ -157,12 +157,10 @@ const SearchResultsContainer = (props: SearchResultsContainerProps): JSX.Element
 
   // using keyphrase as key allow us to re mount results, "resetting" any control in it
   return (
-    <section className="section">
-      <div className="container">
-        <SearchProvider key={keyphrase} keyphrase={keyphrase}>
-          <SearchResults filterOptions={filterOptions} tabs={tabs} selectedTab={tab} />
-        </SearchProvider>
-      </div>
+    <section className="w-full">
+      <SearchProvider key={keyphrase} keyphrase={keyphrase}>
+        <SearchResults filterOptions={filterOptions} tabs={tabs} selectedTab={tab} />
+      </SearchProvider>
     </section>
   );
 };
