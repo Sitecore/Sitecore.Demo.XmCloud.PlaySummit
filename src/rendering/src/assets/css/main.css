@@ -62,6 +62,7 @@
 @import './components/Checkout/ThankYouSection.css';
 
 /* Sitecore Search */
+@import './components/ContentSearch/Questions.css';
 @import './components/ContentSearch/SearchEntityTab.css';
 @import './components/ContentSearch/SearchEntityTabContent.css';
 @import './components/ContentSearch/SearchEntityTabs.css';
