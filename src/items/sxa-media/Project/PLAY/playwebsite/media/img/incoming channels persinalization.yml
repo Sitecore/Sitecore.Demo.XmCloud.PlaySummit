@@ -1,0 +1,13 @@
+﻿---
+ID: "589d8710-5055-4868-9041-ee275e3d6dd8"
+Parent: "6fc0aba3-620e-5067-a61c-7d4c7163ef11"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Project/PLAY/playwebsite/media/img/incoming channels persinalization
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9cd13d5c-6a84-4d7f-87cc-d7915cd34894"

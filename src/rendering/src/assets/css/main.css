@@ -45,6 +45,11 @@
 /* BYOCC */
 @import './components/BYOCC/CountdownTimer.css';
 
+/* Channels */
+@import './components/Channels/Facebook.css';
+@import './components/Channels/Google.css';
+@import './components/Channels/Linkedin.css';
+
 /* Checkout */
 @import './components/Checkout/CartDetails.css';
 @import './components/Checkout/CheckoutDetails.css';

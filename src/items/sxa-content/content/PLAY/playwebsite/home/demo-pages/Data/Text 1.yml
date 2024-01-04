@@ -1,0 +1,24 @@
+﻿---
+ID: "60e9fb84-aabc-417a-9f07-99efdf0021b7"
+Parent: "e917d2ce-7a71-416c-9a6e-bad3b61d6a7d"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/PLAY/playwebsite/home/demo-pages/Data/Text 1"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <ul>
+            <li><a href="/channels/facebook">Facebook</a></li>
+            <li><a href="/channels/linkedin">LinkedIn</a></li>
+            <li><a href="/channels/google">Google</a></li>
+        </ul>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7d7ca511-e970-45c0-ae1f-05edf98cf2ac"

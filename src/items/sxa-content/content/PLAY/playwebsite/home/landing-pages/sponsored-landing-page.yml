@@ -1,0 +1,353 @@
+﻿---
+ID: "dfda3f2b-e211-43ff-b246-e513d55788b8"
+Parent: "4d587c56-3717-41cb-936c-5d0412a50b6b"
+Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/sponsored-landing-page"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/document_pinned.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{C14B6289-8AC2-439C-9E5B-40DE9F820C3F}"
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: "{B73A117A-11C2-4B86-8A5C-4C7648EE87DE}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{61BF8678-596B-4122-A63D-0D127F3A64A8}" />
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{6B19FFCE-1837-4BC2-BC15-33CD7FD5BA18}"
+          p:before="*"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;DynamicPlaceholderId=7"
+          s:ph="/headless-main/container-6" />
+        <r
+          uid="{C27FD4E9-75A2-4A33-9834-858BCA11AAF6}"
+          p:after="r[@uid='{6B19FFCE-1837-4BC2-BC15-33CD7FD5BA18}']"
+          s:ds="local:/Data/Promo"
+          s:id="{2492BAC4-DA07-4C86-87F0-9873D40E2276}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7B0E59FDE5-1A8B-4967-8E4B-8E16DCB80939%7D&amp;Styles=%7B1B4B33CE-E1F3-4AC1-9C50-1810F0E20E1D%7D&amp;RenderingIdentifier&amp;DynamicPlaceholderId=4&amp;CSSStyles"
+          s:ph="/headless-main/container-5"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{FDB9AD7C-4CFD-4115-9C3A-E9AD5FCD83B8}"
+          p:after="r[@uid='{C27FD4E9-75A2-4A33-9834-858BCA11AAF6}']"
+          s:ds="local:/Data/About us"
+          s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7B01F60C86-FA57-4566-AFBE-3A7BDC2A2777%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=8"
+          s:ph="/headless-main/container-1"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{0ADC511C-704E-4507-99F4-F12996A73E19}"
+          p:after="r[@uid='{FDB9AD7C-4CFD-4115-9C3A-E9AD5FCD83B8}']"
+          s:ds="local:/Data/Hero Image"
+          s:id="{2C13DBC0-415C-5DAA-A7D9-56928F1271C4}"
+          s:par=""
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{AC9567C6-3585-41A8-BA17-0635691FB71F}"
+          p:after="r[@uid='{0ADC511C-704E-4507-99F4-F12996A73E19}']"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B08C8BABD-CA64-41EE-B592-13E86CF8AE22%7D%7C%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;DynamicPlaceholderId=1"
+          s:ph="headless-main" />
+        <r
+          uid="{8FFB7C22-CF70-4713-B8D4-F2CD49456CA2}"
+          p:after="*[1=2]"
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B0DC317A6-74BC-4BB4-B631-001CF43AE4B5%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;DynamicPlaceholderId=5"
+          s:ph="headless-main" />
+      </d>
+    </r>
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{0E57EE9F-0689-4248-BA8D-6883959E984B}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Sponsored Landing Page
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{C27FD4E9-75A2-4A33-9834-858BCA11AAF6}">
+              <p:da
+                name="ccb" />
+            </r>
+            <r
+              uid="{FDB9AD7C-4CFD-4115-9C3A-E9AD5FCD83B8}"
+              s:pt="personalizationTest"
+              s:uid="{FDB9AD7C-4CFD-4115-9C3A-E9AD5FCD83B8}">
+              <p:da
+                name="ccb" />
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{D4D6F9F5-0DA5-4DE1-87A9-904A14CB3BC9}"
+                    s:name="608c9854dc064688acb42912b10a8744">
+                    <conditions>
+                      <condition
+                        uid="DE12FAB6BCEE481D805D60A07ECA8E58"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="608c9854dc064688acb42912b10a8744" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{81F43D38-D7F2-4285-9516-6F316896A6F3}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="1d2d6023-9517-4627-adaf-f6abb520c601" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{AE9073B1-B572-41B3-BB2E-9D29DD68E4B1}"
+                    s:name="7bf523a1e41f459289910fa71f0d5832">
+                    <conditions>
+                      <condition
+                        uid="60A661C04EA2401F803F88A1057BF226"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="7bf523a1e41f459289910fa71f0d5832" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{13050B41-AC19-4182-973F-79344A094F2D}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="5e173117-a62e-44fa-8795-62260a96aac7" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{D5054361-379B-4054-A75A-560BFB6D9A79}"
+                    s:name="dd8fb4b6f20a4c5882d86ae374b420e8">
+                    <conditions>
+                      <condition
+                        uid="30361E8B1EBA4C939C160BDEC2186687"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="dd8fb4b6f20a4c5882d86ae374b420e8" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{D7F2E5D3-4256-4584-AB77-1AF089870149}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="d78c313a-67e0-465d-a33d-e6901c4451ab" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{F8E4B06F-785D-4BFA-A13C-8E25B8659612}"
+                    s:name="32f2b73de39242bdb51ce022b7022779">
+                    <conditions>
+                      <condition
+                        uid="C3D0BE1949AF47B6BA09967A9A47549B"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="32f2b73de39242bdb51ce022b7022779" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{1FA4A2F5-2C36-4DE4-BDFC-C02A3ED14EF5}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="d78c313a-67e0-465d-a33d-e6901c4451ab" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{4F83F87A-9A26-4950-8DBB-A0D5C3822B1D}"
+                    s:name="3d5d57270dd845c49fa882acacfca51e">
+                    <conditions>
+                      <condition
+                        uid="2D6AC4CBAD1341B684498098B3CD3AAB"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="3d5d57270dd845c49fa882acacfca51e" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{1391EC18-AC1C-42AF-B81B-D453AEDF1545}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="5e173117-a62e-44fa-8795-62260a96aac7" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{7AEF0373-7327-4C39-A1D4-B173B6E88299}"
+                    s:name="f276977e006b408ba7f355947b9c6e1f">
+                    <conditions>
+                      <condition
+                        uid="62AA818230C8422EA024E654BE1420E0"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="f276977e006b408ba7f355947b9c6e1f" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{4BC54250-DE99-4EE5-934C-FE6061C50FCF}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="1d2d6023-9517-4627-adaf-f6abb520c601" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="17FBCC1E674E41C39847959ED80690B3"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{0ADC511C-704E-4507-99F4-F12996A73E19}"
+              s:pt="personalizationTest"
+              s:uid="{0ADC511C-704E-4507-99F4-F12996A73E19}">
+              <p:da
+                name="ccb" />
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{FF25C3F0-F23E-420E-B177-DF454B2F267C}"
+                    s:name="608c9854dc064688acb42912b10a8744">
+                    <conditions>
+                      <condition
+                        uid="BE2E6AC12397453F9CB547A0A4DDDE61"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="608c9854dc064688acb42912b10a8744" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{2632B5E9-AE0F-4378-ADF8-15F3048519EA}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="0bb933e8-63cf-4491-bde1-d4b4747cd24a" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{BC90E28A-780D-4DCA-B913-488D2C3C2A06}"
+                    s:name="7bf523a1e41f459289910fa71f0d5832">
+                    <conditions>
+                      <condition
+                        uid="7306755EE1C34EF0922EB97EFC1BD72B"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="7bf523a1e41f459289910fa71f0d5832" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{0A7EC2FA-AB95-4A25-8F02-5434258E7916}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="f01ce457-e0c4-4a41-bf99-7604b29f510d" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{6D0DDCC9-45F3-4E70-9380-81590E79C785}"
+                    s:name="dd8fb4b6f20a4c5882d86ae374b420e8">
+                    <conditions>
+                      <condition
+                        uid="BD641FA36C744FAABAD6ABCE48532A35"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="dd8fb4b6f20a4c5882d86ae374b420e8" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{43A5E129-2E8D-475C-9CEA-86E993ED6E3D}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="745acfc6-d131-4b93-9db5-fed61914b04f" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{F228E774-8E09-4CF2-8F6F-446D2E5C36F1}"
+                    s:name="32f2b73de39242bdb51ce022b7022779">
+                    <conditions>
+                      <condition
+                        uid="ACA865DD77F8452CA9A967A50EFAAEBF"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="32f2b73de39242bdb51ce022b7022779" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{34DEAB3B-B918-438D-93F4-C193DFAD961E}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="745acfc6-d131-4b93-9db5-fed61914b04f" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{7D22717E-2CD4-4E66-B226-6BE6BDDFDE8C}"
+                    s:name="3d5d57270dd845c49fa882acacfca51e">
+                    <conditions>
+                      <condition
+                        uid="22FC2F0B1D564206B89EADAF4F0E7513"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="3d5d57270dd845c49fa882acacfca51e" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{211859B4-0F94-42C7-8ACA-9CD2067A52D3}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="f01ce457-e0c4-4a41-bf99-7604b29f510d" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{B829E078-3BBB-49F8-AA14-091810E63442}"
+                    s:name="f276977e006b408ba7f355947b9c6e1f">
+                    <conditions>
+                      <condition
+                        uid="10576B4921BF4F01A23BA2CF01D8B113"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="f276977e006b408ba7f355947b9c6e1f" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{C3E9FAA5-6B40-4B27-BC9A-0D9FF89347A6}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="0bb933e8-63cf-4491-bde1-d4b4747cd24a" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="0F6FABB59A454EB4BA2A6135712749E3"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+          </d>
+        </r>
+    - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
+      Hint: Title
+      Value: "PLAY! Summit - the world's largest sports & leisure expo"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Sponsored Landing Page
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a69a12c4-3829-4bd2-a0de-7b5b249e166b"
+    - ID: "e0c0c8a4-0fea-4963-8b86-d47810b80efa"
+      Hint: Content
+      Value: |
+        <p>At PLAY! Summit, we are the epicenter of a vibrant community united by a shared love for sports, wellness, and the pursuit of excellence. Our mission is to create an immersive experience that transcends traditional boundaries, bringing together athletes, enthusiasts, journalists, and advocates of healthy living.</p>
+        <p>&nbsp;</p>
+        <p>As pioneers in curating dynamic sessions, interactive workshops, and exclusive showcases, we invite you to join us on a journey where passion meets purpose. PLAY! Summit is more than an event; it's a movement that celebrates the diverse facets of sports culture and fosters connections that last a lifetime. Embrace the thrill, elevate your knowledge, and be part of the biggest sports gathering of the year.</p>
+        <p>&nbsp;</p>
+        <p>Welcome to PLAY! Summit—where the game is just the beginning.</p>
