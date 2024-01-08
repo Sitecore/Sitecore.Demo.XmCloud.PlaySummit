@@ -2,7 +2,6 @@ import { Meta, StoryFn } from '@storybook/react';
 import React from 'react';
 
 import SearchEntityTabs from '../../components/ContentSearch/SearchEntityTabs';
-import SearchProvider from '../../components/ContentSearch/SearchProvider';
 import { tabsProp } from '../mock-search-data';
 
 export default {
@@ -10,11 +9,7 @@ export default {
   component: SearchEntityTabs,
 } as Meta<typeof SearchEntityTabs>;
 
-const Template: StoryFn<typeof SearchEntityTabs> = (args) => (
-  <SearchProvider keyphrase="">
-    <SearchEntityTabs {...args} />
-  </SearchProvider>
-);
+const Template: StoryFn<typeof SearchEntityTabs> = (args) => <SearchEntityTabs {...args} />;
 
 export const Default = {
   render: Template,
