@@ -3,18 +3,66 @@ import { useRouter } from 'next/router';
 import PreviewSearchContainer from './PreviewSearchContainer';
 import ClickOutside from '../ShopCommon/ClickOutside';
 import PreviewSearchInput from './PreviewSearchInput';
-import PreviewSearchContextProvider from './PreviewSearchContextProvider';
 import PreviewSearchIcon from './PreviewSearchIcon';
-import { isContentSearchEnabled } from '../../services/ContentSearchService';
 import { SEARCH_PAGE } from '../../helpers/ContentSearchHelper';
+import {
+  PreviewSearchInitialState,
+  PreviewSearchWidgetQuery,
+  WidgetDataType,
+  usePreviewSearch,
+  widget,
+} from '@sitecore-search/react';
 
-const PreviewSearchContent = (): JSX.Element => {
+type ContentItemModel = {
+  type: string;
+};
+
+type InitialState = PreviewSearchInitialState<'itemsPerPage' | 'suggestionsList'>;
+
+type PreviewSearchContentProps = {
+  defaultItemsPerPage?: number;
+};
+
+const PreviewSearchContent = ({
+  defaultItemsPerPage = 32,
+}: PreviewSearchContentProps): JSX.Element => {
   const router = useRouter();
-  const [previewSearchOpen, setPreviewSearchOpen] = useState(false);
+  const { q } = router.query;
+
+  const {
+    widgetRef,
+    actions: { onKeyphraseChange },
+    queryResult: {
+      isFetching,
+      isLoading,
+      data: {
+        content: allData,
+        suggestion: { content_name_context_aware: suggestions = [] } = {},
+      } = {},
+    },
+    state: { keyphrase = (q as string) || '' },
+  } = usePreviewSearch<ContentItemModel, InitialState>({
+    query: (query: PreviewSearchWidgetQuery) =>
+      query
+        .getRequest()
+        .setSearchQueryHighlightFragmentSize(500)
+        .setSearchQueryHighlightFields(['title', 'description']),
+    state: {
+      suggestionsList: [
+        {
+          suggestion: 'content_name_context_aware',
+          max: 4,
+        },
+      ],
+      itemsPerPage: defaultItemsPerPage,
+    },
+  });
+
+  const [isPreviewSearchOpen, setIsPreviewSearchOpen] = useState(false);
   const containerRef = useRef(null);
   const inputRef = useRef(null);
 
-  const onClose = useCallback(() => setPreviewSearchOpen(false), []);
+  const onClose = useCallback(() => setIsPreviewSearchOpen(false), []);
 
   useEffect(() => {
     // subscribe to next/router event
@@ -26,10 +74,10 @@ const PreviewSearchContent = (): JSX.Element => {
   }, [router, onClose]);
 
   useEffect(() => {
-    if (previewSearchOpen && inputRef.current) {
+    if (isPreviewSearchOpen && inputRef.current) {
       inputRef.current.focus();
     }
-  }, [previewSearchOpen]);
+  }, [isPreviewSearchOpen]);
 
   const onRedirect = useCallback(
     (keyphrase: string) => {
@@ -40,55 +88,78 @@ const PreviewSearchContent = (): JSX.Element => {
 
   const onSearchIconClick = useCallback(
     (keyphrase: string) => {
-      setPreviewSearchOpen((previewSearchOpen) => {
-        if (previewSearchOpen) {
+      setIsPreviewSearchOpen((isPreviewSearchOpen) => {
+        if (isPreviewSearchOpen) {
           onRedirect(keyphrase);
         }
-        return !previewSearchOpen;
+        return !isPreviewSearchOpen;
       });
     },
     [onRedirect]
   );
 
   const onInputFocus = useCallback(() => {
-    if (!previewSearchOpen) {
-      setPreviewSearchOpen(true);
+    if (!isPreviewSearchOpen) {
+      setIsPreviewSearchOpen(true);
     }
-  }, [previewSearchOpen]);
+  }, [isPreviewSearchOpen]);
 
   const onEscapePressed = useCallback(() => {
     inputRef.current.blur();
-    setPreviewSearchOpen(false);
+    setIsPreviewSearchOpen(false);
   }, []);
+
+  const handleKeyphraseChange = useCallback(
+    (value: string) => {
+      if (keyphrase !== value) {
+        onKeyphraseChange({ keyphrase: value });
+      }
+    },
+    [onKeyphraseChange, keyphrase]
+  );
 
   ClickOutside([containerRef], onClose);
 
-  // hide preview search when search is not enabled
-  if (!isContentSearchEnabled) {
+  // Hide preview search when processing
+  if (isLoading || isFetching) {
     return null;
   }
 
-  // hide preview search when on search page
+  // Hide preview search when on search page
   if (router?.pathname === SEARCH_PAGE) {
     return null;
   }
 
   return (
     <div ref={containerRef}>
-      <PreviewSearchContextProvider>
-        {previewSearchOpen && <PreviewSearchContainer />}
-        <PreviewSearchInput
-          ref={inputRef}
-          placeholder="Search content"
-          onEnter={onRedirect}
-          className={`search-input-play ${!previewSearchOpen ? 'search-input-play-hidden' : ''}`}
-          onFocus={onInputFocus}
-          onEscapePressed={onEscapePressed}
+      {isPreviewSearchOpen && (
+        <PreviewSearchContainer
+          sessions={allData?.filter((item) => item.type === 'session')?.slice(0, 4)}
+          speakers={allData?.filter((item) => item.type === 'speaker')?.slice(0, 4)}
+          news={allData?.filter((item) => item.type === 'news')?.slice(0, 4)}
+          suggestions={suggestions}
+          keyphrase={keyphrase}
+          widgetRef={widgetRef}
         />
-        <PreviewSearchIcon onClick={onSearchIconClick} className="search-play-icon" />
-      </PreviewSearchContextProvider>
+      )}
+      <PreviewSearchInput
+        placeholder="Search content"
+        onEnter={onRedirect}
+        className={`search-input-play ${!isPreviewSearchOpen ? 'search-input-play-hidden' : ''}`}
+        onFocus={onInputFocus}
+        onEscapePressed={onEscapePressed}
+        onChange={handleKeyphraseChange}
+        value={keyphrase}
+      />
+      <PreviewSearchIcon
+        onClick={onSearchIconClick}
+        className="search-play-icon"
+        keyphrase={keyphrase}
+      />
     </div>
   );
 };
 
-export default PreviewSearchContent;
+const PreviewSearchWidget = widget(PreviewSearchContent, WidgetDataType.PREVIEW_SEARCH, 'content');
+
+export default PreviewSearchWidget;
