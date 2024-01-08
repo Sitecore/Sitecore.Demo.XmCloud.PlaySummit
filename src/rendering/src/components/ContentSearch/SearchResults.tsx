@@ -1,10 +1,10 @@
 import React, { PropsWithChildren, useCallback } from 'react';
 import { useRouter } from 'next/router';
+
 import SearchEntityTabs, { Tab } from './SearchEntityTabs';
 import SearchFilters, { SearchFiltersProps } from './SearchFilters';
 import PreviewSearchInput from '../PreviewSearchContent/PreviewSearchInput';
 import PreviewSearchIcon from '../PreviewSearchContent/PreviewSearchIcon';
-import PreviewSearchContextProvider from '../PreviewSearchContent/PreviewSearchContextProvider';
 import { SEARCH_PAGE, SESSION_SEARCH_RESULT_TYPE } from '../../helpers/ContentSearchHelper';
 import Questions from './Questions';
 
@@ -40,14 +40,18 @@ const SearchResults = ({
     <div className="search-results">
       <div className="search-results-header">Search Results</div>
       <div className="search-results-header-search">
-        <PreviewSearchContextProvider defaultKeyphrase={keyphrase}>
-          <PreviewSearchInput
-            placeholder="Search..."
-            onEnter={onSearch}
-            className="search-results-header-search-input"
-          />
-          <PreviewSearchIcon onClick={onSearch} className="search-results-header-search-icon" />
-        </PreviewSearchContextProvider>
+        <PreviewSearchInput
+          placeholder="Search..."
+          onEnter={onSearch}
+          className="search-results-header-search-input"
+          value={keyphrase}
+          onChange={onKeyphraseChange}
+        />
+        <PreviewSearchIcon
+          onClick={onSearch}
+          className="search-results-header-search-icon"
+          keyphrase={keyphrase}
+        />
       </div>
       {keyphrase && (
         <Questions rfkId="rfkid_qa" keyphrase={keyphrase} defaultRelatedQuestions={4} />
