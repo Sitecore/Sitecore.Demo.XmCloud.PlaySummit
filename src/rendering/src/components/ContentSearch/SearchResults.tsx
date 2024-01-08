@@ -1,8 +1,7 @@
-import React, { PropsWithChildren, useCallback, useContext } from 'react';
+import React, { PropsWithChildren, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import SearchEntityTabs, { Tab } from './SearchEntityTabs';
 import SearchFilters, { SearchFiltersProps } from './SearchFilters';
-import { SearchContext } from './SearchProvider';
 import PreviewSearchInput from '../PreviewSearchContent/PreviewSearchInput';
 import PreviewSearchIcon from '../PreviewSearchContent/PreviewSearchIcon';
 import PreviewSearchContextProvider from '../PreviewSearchContent/PreviewSearchContextProvider';
@@ -13,11 +12,22 @@ type SearchResultsProps = PropsWithChildren & {
   selectedTab: string;
   filterOptions: SearchFiltersProps['options'];
   tabs: Tab[];
+  keyphrase: string;
+  totalItems: number;
+  onFilterClick: (id: string, value: string) => void;
+  onKeyphraseChange: (value: string) => void;
 };
 
-const SearchResults = (props: SearchResultsProps): JSX.Element => {
+const SearchResults = ({
+  selectedTab,
+  filterOptions,
+  tabs,
+  keyphrase,
+  totalItems,
+  onFilterClick,
+  onKeyphraseChange,
+}: SearchResultsProps): JSX.Element => {
   const router = useRouter();
-  const { keyphrase, onChangeFilter } = useContext(SearchContext);
 
   const onSearch = useCallback(
     (keyphrase: string) => {
@@ -43,14 +53,15 @@ const SearchResults = (props: SearchResultsProps): JSX.Element => {
         <Questions rfkId="rfkid_qa" keyphrase={keyphrase} defaultRelatedQuestions={4} />
       )}
       <SearchFilters
-        options={props.filterOptions}
-        onChange={onChangeFilter}
+        options={filterOptions}
+        onChange={onFilterClick}
         className="search-results-filters"
       />
       <SearchEntityTabs
-        selected={props.selectedTab || SESSION_SEARCH_RESULT_TYPE}
-        tabs={props.tabs}
+        selected={selectedTab || SESSION_SEARCH_RESULT_TYPE}
+        tabs={tabs}
         className="search-results-tabs"
+        totalItems={totalItems}
       />
     </div>
   );

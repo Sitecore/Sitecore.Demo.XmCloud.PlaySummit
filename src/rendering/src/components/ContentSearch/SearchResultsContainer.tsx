@@ -1,18 +1,7 @@
-import { useQuery } from '@tanstack/react-query';
-import React, { useMemo } from 'react';
-import {
-  ContentSearchWidgetResponseBase,
-  ContentSearchWidgetResponseFacet,
-} from '../../interfaces/contentSearch/ContentSearchWidgetResponse';
-import connectResultsTab from '../../hocs/connectResultsTab';
-import { isContentSearchEnabled, getSearchResults } from '../../services/ContentSearchService';
-import SearchNewsResultsTab from './SearchNewsResultsTab';
+import React, { useCallback, useEffect, useMemo } from 'react';
+import { ContentSearchWidgetResponseFacet } from '../../interfaces/contentSearch/ContentSearchWidgetResponse';
 import SearchSessionResultsTab from './SearchSessionResultsTab';
-import SearchSpeakerResultsTab from './SearchSpeakerResultsTab';
-import SearchSponsorResultsTab from './SearchSponsorResultsTab';
-import SearchVendorResultsTab from './SearchVendorResultsTab';
 import { SearchFiltersProps } from './SearchFilters';
-import SearchProvider from './SearchProvider';
 import SearchResults from './SearchResults';
 import {
   ACTIVITIES_FACET_TYPE,
@@ -33,110 +22,263 @@ import {
   VENDORS_FACET_TYPE,
   VENDOR_SEARCH_RESULT_TYPE,
 } from '../../helpers/ContentSearchHelper';
+import { isSearchSDKEnabled } from '../../services/SearchSDKService';
+import {
+  SearchResultsInitialState,
+  SearchResultsStoreState,
+  SearchResultsWidgetQuery,
+  WidgetDataType,
+  useSearchResults,
+  widget,
+} from '@sitecore-search/react';
+import { ContentSearchSession } from 'src/interfaces/contentSearch/ContentSearchSession';
+import SearchSpeakerResultsTab from './SearchSpeakerResultsTab';
+import { ContentSearchSpeaker } from 'src/interfaces/contentSearch/ContentSearchSpeaker';
+import SearchVendorResultsTab from './SearchVendorResultsTab';
+import { ContentSearchVendor } from 'src/interfaces/contentSearch/ContentSearchVendor';
+import SearchSponsorResultsTab from './SearchSponsorResultsTab';
+import { ContentSearchSponsor } from 'src/interfaces/contentSearch/ContentSearchSponsor';
+import SearchNewsResultsTab from './SearchNewsResultsTab';
+import { ContentSearchNews } from 'src/interfaces/contentSearch/ContentSearchNews';
+import { useRouter } from 'next/router';
 
 type SearchResultsContainerProps = {
-  q: string;
-  tab: string;
+  defaultSortType?: SearchResultsStoreState['sortType'];
+  defaultPage?: SearchResultsStoreState['page'];
+  defaultItemsPerPage?: SearchResultsStoreState['itemsPerPage'];
 };
 
-const widgetId = 'rfkid_7';
+type ContentItemModel = {
+  type: string;
+};
 
-const tabs = [
-  {
-    id: SESSION_SEARCH_RESULT_TYPE,
-    name: 'Sessions',
-    color: '#3d93ff',
-    Component: connectResultsTab({
-      entity: SESSION_SEARCH_RESULT_TYPE,
-      facetsTypes: [
-        AUDIENCE_FACET_TYPE,
-        IS_PREMIUM_FACET_TYPE,
-        SPONSORS_FACET_TYPE,
-        VENDORS_FACET_TYPE,
-        SPEAKERS_FACET_TYPE,
-      ],
-    })(SearchSessionResultsTab),
-  },
-  {
-    id: SPEAKER_SEARCH_RESULT_TYPE,
-    name: 'Speakers',
-    color: '#ff8d02',
-    Component: connectResultsTab({
-      entity: SPEAKER_SEARCH_RESULT_TYPE,
-      facetsTypes: [
-        COMPANY_FACET_TYPE,
-        JOB_TITLE_FACET_TYPE,
-        LOCATION_FACET_TYPE,
-        SESSIONS_FACET_TYPE,
-        IS_FEATURED_FACET_TYPE,
-      ],
-    })(SearchSpeakerResultsTab),
-  },
-  {
-    id: VENDOR_SEARCH_RESULT_TYPE,
-    name: 'Vendors',
-    color: '#ff1a87',
-    Component: connectResultsTab({
-      entity: VENDOR_SEARCH_RESULT_TYPE,
-      facetsTypes: [
-        ACTIVITIES_FACET_TYPE,
-        LEVEL_FACET_TYPE,
-        SPEAKERS_FACET_TYPE,
-        SESSIONS_FACET_TYPE,
-      ],
-    })(SearchVendorResultsTab),
-  },
-  {
-    id: SPONSOR_SEARCH_RESULT_TYPE,
-    name: 'Sponsors',
-    color: '#ffd51d',
-    Component: connectResultsTab({
-      entity: SPONSOR_SEARCH_RESULT_TYPE,
-      facetsTypes: [LEVEL_FACET_TYPE, SPEAKERS_FACET_TYPE, SESSIONS_FACET_TYPE],
-    })(SearchSponsorResultsTab),
-  },
-  {
-    id: CONTENT_SEARCH_RESULT_TYPE,
-    name: 'News',
-    color: '#000',
-    Component: connectResultsTab({
-      entity: CONTENT_SEARCH_RESULT_TYPE,
-      hasFilters: false,
-      facetsTypes: [AUDIENCE_FACET_TYPE],
-    })(SearchNewsResultsTab),
-  },
-];
+type InitialState = SearchResultsInitialState<'itemsPerPage' | 'keyphrase' | 'page' | 'sortType'>;
 
-const SearchResultsContainer = (props: SearchResultsContainerProps): JSX.Element => {
-  const { q: keyphrase, tab } = props;
+const SearchResultsContainer = ({
+  defaultSortType = 'featured_desc',
+  defaultPage = 1,
+  defaultItemsPerPage = 24,
+}: SearchResultsContainerProps): JSX.Element => {
+  const router = useRouter();
+  const q = (router?.query['q'] as string) ?? '';
+  const tab = (router?.query['tab'] as string) || 'sessions';
 
-  const searchResults = useQuery<ContentSearchWidgetResponseBase>([keyphrase, 'filters'], () =>
-    getSearchResults(
-      {
-        entity: SESSION_SEARCH_RESULT_TYPE,
-        widgetId,
-        keyphrase,
-        facets: ['days', 'rooms'],
-      },
-      {}
-    )
-  );
+  const {
+    widgetRef,
+    actions: {
+      onResultsPerPageChange,
+      onPageNumberChange,
+      // onItemClick,
+      onFilterClick,
+      onSortChange,
+      onFacetClick,
+      onClearFilters,
+      onKeyphraseChange,
+    },
+    state: { sortType, page, itemsPerPage },
+    queryResult: {
+      isLoading,
+      isFetching,
+      data: {
+        // limit = 1,
+        total_item: totalItems = 0,
+        sort: { choices: sortChoices = [] } = {},
+        facet: facets = [],
+        content: items = [],
+      } = {},
+    },
+  } = useSearchResults<ContentItemModel, InitialState>({
+    query: (query: SearchResultsWidgetQuery) => {
+      query
+        .getRequest()
+        .setSearchQueryHighlightFragmentSize(500)
+        .setSearchQueryHighlightFields(['subtitle', 'description']);
+    },
+    state: {
+      sortType: defaultSortType,
+      page: defaultPage,
+      itemsPerPage: defaultItemsPerPage,
+      keyphrase: q,
+    },
+  });
 
-  const { data: { facet: topFilters = [] } = {} } = !!searchResults?.data
-    ? searchResults
-    : { data: { facet: [] } };
+  const sessionFacets = [
+    AUDIENCE_FACET_TYPE,
+    IS_PREMIUM_FACET_TYPE,
+    SPONSORS_FACET_TYPE,
+    VENDORS_FACET_TYPE,
+    SPEAKERS_FACET_TYPE,
+  ];
+  const speakerFacets = [
+    COMPANY_FACET_TYPE,
+    JOB_TITLE_FACET_TYPE,
+    LOCATION_FACET_TYPE,
+    SESSIONS_FACET_TYPE,
+    IS_FEATURED_FACET_TYPE,
+  ];
+  const vendorFacets = [
+    ACTIVITIES_FACET_TYPE,
+    LEVEL_FACET_TYPE,
+    SPEAKERS_FACET_TYPE,
+    SESSIONS_FACET_TYPE,
+  ];
+  const sponsorFacets = [LEVEL_FACET_TYPE, SPEAKERS_FACET_TYPE, SESSIONS_FACET_TYPE];
+  const newsFacets = [AUDIENCE_FACET_TYPE];
+
+  const tabs = [
+    {
+      id: SESSION_SEARCH_RESULT_TYPE,
+      name: 'Sessions',
+      color: '#3d93ff',
+      Component: () => (
+        <SearchSessionResultsTab
+          facets={facets.filter((facet) => sessionFacets.includes(facet.name))}
+          filters={[]}
+          currentPage={page}
+          items={
+            items.filter(
+              (item) => item.type === SESSION_SEARCH_RESULT_TYPE
+            ) as unknown as ContentSearchSession[]
+          }
+          sortOptions={sortChoices}
+          totalItems={items.filter((item) => item.type === SESSION_SEARCH_RESULT_TYPE).length}
+          perPage={itemsPerPage}
+          loading={isLoading || isFetching}
+          sort={sortType}
+          onResultsPerPageChange={(numItems) => onResultsPerPageChange({ numItems })}
+          onPageChange={(page) => onPageNumberChange({ page })}
+          onFilterClick={onFilterClick}
+          onSortChange={(name) => onSortChange({ name })}
+          onFacetValueClick={onFacetClick}
+          onClearFilters={onClearFilters}
+        />
+      ),
+    },
+    {
+      id: SPEAKER_SEARCH_RESULT_TYPE,
+      name: 'Speakers',
+      color: '#ff8d02',
+      Component: () => (
+        <SearchSpeakerResultsTab
+          facets={facets.filter((facet) => speakerFacets.includes(facet.name))}
+          filters={[]}
+          currentPage={page}
+          items={
+            items.filter(
+              (item) => item.type === SPEAKER_SEARCH_RESULT_TYPE
+            ) as unknown as ContentSearchSpeaker[]
+          }
+          sortOptions={sortChoices}
+          totalItems={items.filter((item) => item.type === SPEAKER_SEARCH_RESULT_TYPE).length}
+          perPage={itemsPerPage}
+          loading={isLoading || isFetching}
+          sort={sortType}
+          onResultsPerPageChange={(numItems) => onResultsPerPageChange({ numItems })}
+          onPageChange={(page) => onPageNumberChange({ page })}
+          onFilterClick={onFilterClick}
+          onSortChange={(name) => onSortChange({ name })}
+          onFacetValueClick={onFacetClick}
+          onClearFilters={onClearFilters}
+        />
+      ),
+    },
+    {
+      id: VENDOR_SEARCH_RESULT_TYPE,
+      name: 'Vendors',
+      color: '#ff1a87',
+      Component: () => (
+        <SearchVendorResultsTab
+          facets={facets.filter((facet) => vendorFacets.includes(facet.name))}
+          filters={[]}
+          currentPage={page}
+          items={
+            items.filter(
+              (item) => item.type === VENDOR_SEARCH_RESULT_TYPE
+            ) as unknown as ContentSearchVendor[]
+          }
+          sortOptions={sortChoices}
+          totalItems={items.filter((item) => item.type === VENDOR_SEARCH_RESULT_TYPE).length}
+          perPage={itemsPerPage}
+          loading={isLoading || isFetching}
+          sort={sortType}
+          onResultsPerPageChange={(numItems) => onResultsPerPageChange({ numItems })}
+          onPageChange={(page) => onPageNumberChange({ page })}
+          onFilterClick={onFilterClick}
+          onSortChange={(name) => onSortChange({ name })}
+          onFacetValueClick={onFacetClick}
+          onClearFilters={onClearFilters}
+        />
+      ),
+    },
+    {
+      id: SPONSOR_SEARCH_RESULT_TYPE,
+      name: 'Sponsors',
+      color: '#ffd51d',
+      Component: () => (
+        <SearchSponsorResultsTab
+          facets={facets.filter((facet) => sponsorFacets.includes(facet.name))}
+          filters={[]}
+          currentPage={page}
+          items={
+            items.filter(
+              (item) => item.type === SPONSOR_SEARCH_RESULT_TYPE
+            ) as unknown as ContentSearchSponsor[]
+          }
+          sortOptions={sortChoices}
+          totalItems={items.filter((item) => item.type === SPONSOR_SEARCH_RESULT_TYPE).length}
+          perPage={itemsPerPage}
+          loading={isLoading || isFetching}
+          sort={sortType}
+          onResultsPerPageChange={(numItems) => onResultsPerPageChange({ numItems })}
+          onPageChange={(page) => onPageNumberChange({ page })}
+          onFilterClick={onFilterClick}
+          onSortChange={(name) => onSortChange({ name })}
+          onFacetValueClick={onFacetClick}
+          onClearFilters={onClearFilters}
+        />
+      ),
+    },
+    {
+      id: CONTENT_SEARCH_RESULT_TYPE,
+      name: 'News',
+      color: '#000',
+      Component: () => (
+        <SearchNewsResultsTab
+          facets={facets.filter((facet) => newsFacets.includes(facet.name))}
+          filters={[]}
+          currentPage={page}
+          items={
+            items.filter(
+              (item) => item.type === CONTENT_SEARCH_RESULT_TYPE
+            ) as unknown as ContentSearchNews[]
+          }
+          sortOptions={sortChoices}
+          totalItems={items.filter((item) => item.type === CONTENT_SEARCH_RESULT_TYPE).length}
+          perPage={itemsPerPage}
+          loading={isLoading || isFetching}
+          sort={sortType}
+          onResultsPerPageChange={(numItems) => onResultsPerPageChange({ numItems })}
+          onPageChange={(page) => onPageNumberChange({ page })}
+          onFilterClick={onFilterClick}
+          onSortChange={(name) => onSortChange({ name })}
+          onFacetValueClick={onFacetClick}
+          onClearFilters={onClearFilters}
+        />
+      ),
+    },
+  ];
 
   const days = useMemo(
     () =>
-      topFilters.find(({ name }) => name === 'days') ||
+      facets.find(({ name }) => name === 'days') ||
       ({ value: [] } as ContentSearchWidgetResponseFacet),
-    [topFilters]
+    [facets]
   );
   const rooms = useMemo(
     () =>
-      topFilters.find(({ name }) => name === 'rooms') ||
+      facets.find(({ name }) => name === 'rooms') ||
       ({ value: [] } as ContentSearchWidgetResponseFacet),
-    [topFilters]
+    [facets]
   );
 
   const filterOptions = useMemo<SearchFiltersProps['options']>(() => {
@@ -146,7 +288,18 @@ const SearchResultsContainer = (props: SearchResultsContainerProps): JSX.Element
     };
   }, [days, rooms]);
 
-  if (!isContentSearchEnabled) {
+  const handleKeyphraseChange = useCallback(
+    (value: string) => {
+      if (q !== value) {
+        onKeyphraseChange({ keyphrase: value });
+      }
+    },
+    [q, onKeyphraseChange]
+  );
+
+  useEffect(() => onKeyphraseChange({ keyphrase: q }), [onKeyphraseChange, q]);
+
+  if (!isSearchSDKEnabled) {
     return (
       <div>
         The search page is currently disabled because the content search integration is not
@@ -158,13 +311,27 @@ const SearchResultsContainer = (props: SearchResultsContainerProps): JSX.Element
   // using keyphrase as key allow us to re mount results, "resetting" any control in it
   return (
     <section className="section">
-      <div className="container">
-        <SearchProvider key={keyphrase} keyphrase={keyphrase}>
-          <SearchResults filterOptions={filterOptions} tabs={tabs} selectedTab={tab} />
-        </SearchProvider>
+      <div className="container" ref={widgetRef}>
+        <SearchResults
+          filterOptions={filterOptions}
+          tabs={tabs}
+          selectedTab={tab}
+          keyphrase={q}
+          totalItems={totalItems}
+          onFilterClick={(id, value) =>
+            onFilterClick({ facetId: id, facetValueId: value, type: 'text' })
+          }
+          onKeyphraseChange={handleKeyphraseChange}
+        />
       </div>
     </section>
   );
 };
 
-export default SearchResultsContainer;
+const SearchResultsWidget = widget(
+  SearchResultsContainer,
+  WidgetDataType.SEARCH_RESULTS,
+  'content'
+);
+
+export default SearchResultsWidget;
