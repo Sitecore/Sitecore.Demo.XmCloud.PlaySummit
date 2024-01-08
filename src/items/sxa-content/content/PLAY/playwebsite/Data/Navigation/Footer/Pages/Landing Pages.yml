@@ -19,3 +19,18 @@ Languages:
       Hint: Link
       Value: |
         <link class="" id="{4D587C56-3717-41CB-936C-5D0412A50B6B}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/landing-pages" />
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Pages d'atterrissage
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "967cb8c5-3a0e-463a-80f1-428ece3bdd57"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link class="" id="{4D587C56-3717-41CB-936C-5D0412A50B6B}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/landing-pages" />

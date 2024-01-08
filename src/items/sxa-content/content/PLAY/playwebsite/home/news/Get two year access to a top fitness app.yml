@@ -51,3 +51,40 @@ Languages:
     - ID: "f7d201d9-0ae6-4afa-8c5c-777f0504ebc3"
       Hint: Content
       Value: "<p>Everybody wants to find a competitive advantage. Well, one of the best tricks is also very achievable. Getting into a great exercise routine can help you improve your focus and make you more productive. Of course, jumping into a rigorous routine isn't without challenges of its own. From finding the workouts to do to dealing with the soreness and pain after working out, getting into shape is hard.</p><p>Fortunately, this deal on the Openfit Fitness App: 2-Year Subscription + DynaMini Massage Gun can help you in both regards. Valued at $141, this bundle is on sale for just $49.&nbsp;With this two-for-one deal, you'll get a two-year subscription to Openfit, one of the top fitness apps on the web, as well as a DynaMini Massage Gun from LifePro Fitness.</p><p>Openfit has earned 4.9 stars on the App Store and 4.6 stars on the Google Play Store, because it makes healthy living more achievable by integrating fitness, nutrition, and wellness into a single app. You can choose from structured programs, monthly challenges, as well as hundreds of live and on-demand workouts covering barre, cardio, strength training, and much more. Plus, with the app, you can create a customized meal plan, track your calories and macros, and access thousands of tasty recipes to ensure you have the right diet to meet all of your health goals. It's compatible with virtually all devices and will help you see results fast.</p>"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
+    - ID: "49461c19-39ae-4df4-abf5-15bd7fab54ce"
+      Hint: Audience
+      Value: "{4D758CED-1AD4-46C7-8E72-B42BE54A08E8}|{A69C357B-F4F9-4D4B-8262-44B0E60F051F}"
+    - ID: "5452a1d2-a7e3-421c-a6ee-dc69e58bf206"
+      Hint: Title
+      Value: Obtenez un accès de deux ans à une application de fitness de premier plan
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "90382e0e-4597-4e23-890c-9434f890e853"
+    - ID: "c60646d2-b021-4158-be5f-64943e445b1a"
+      Hint: PublishDate
+      Value: 20211030T040000Z
+    - ID: "ec2ff3e7-0a21-4808-8cf8-c13ccd6fffc8"
+      Hint: Excerpt
+      Value: |
+        Commencez à adopter une meilleure routine de fitness avec un ensemble d'applications de fitness disponibles pour les participants du Sommet PLAY!
+        
+        
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: Obtenez un accès de deux ans à une application de fitness de premier plan
+    - ID: "f3204d80-07b0-4680-8939-15c2c2f82dcb"
+      Hint: Image
+      Value: |
+        <image stylelabs-content-id="30896" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/30896/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/a2bb5300531b4cddbb2c97f2fa198a90?v=1fa6de83&amp;t=postcard" mediaid="" stylelabs-content-type="Image" alt="Smartwatch" height="3264" width="4896" />
+    - ID: "f7d201d9-0ae6-4afa-8c5c-777f0504ebc3"
+      Hint: Content
+      Value: |
+        <p>Tout le monde veut trouver un avantage concurrentiel. Eh bien, l'une des meilleures astuces est également très réalisable. Adopter une excellente routine d'exercice peut vous aider à améliorer votre concentration et à être plus productif. Bien sûr, se lancer dans une routine rigoureuse n'est pas sans défis. Trouver les exercices à faire et gérer les douleurs après l'entraînement, se mettre en forme est difficile.</p><p>Heureusement, cette offre sur l'application de fitness Openfit: Abonnement de 2 ans + DynaMini Massage Gun peut vous aider dans ces deux domaines. D'une valeur de 141 $, ce forfait est en vente pour seulement 49 $. Avec cette offre deux pour un, vous obtiendrez un abonnement de deux ans à Openfit, l'une des meilleures applications de fitness sur le web, ainsi qu'un DynaMini Massage Gun de LifePro Fitness.</p><p>Openfit a obtenu 4,9 étoiles sur l'App Store et 4,6 étoiles sur le Google Play Store, car il rend la vie saine plus réalisable en intégrant fitness, nutrition et bien-être dans une seule application. Vous pouvez choisir parmi des programmes structurés, des défis mensuels, ainsi que des centaines d'entraînements en direct et à la demande couvrant le barre, le cardio, la musculation et bien plus encore. De plus, avec l'application, vous pouvez créer un plan de repas personnalisé, suivre vos calories et macros, et accéder à des milliers de recettes savoureuses pour vous assurer d'avoir le bon régime pour atteindre tous vos objectifs de santé. Il est compatible avec pratiquement tous les appareils et vous aidera à voir des résultats rapidement.</p>
+        

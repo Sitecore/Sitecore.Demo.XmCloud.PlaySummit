@@ -3,6 +3,10 @@ ID: "105ab476-3edf-5a27-a49a-a5604bb6aca2"
 Parent: "99536ff1-02bf-5b2e-a94a-1bbba4cf50fa"
 Template: "1f476f1c-822a-5a88-8f7e-2431b77d1b70"
 Path: "/sitecore/content/PLAY/playwebsite/home/Data/Speaker Line-up Section"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 Languages:
 - Language: en
   Versions:
@@ -21,3 +25,26 @@ Languages:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
       Value: "4175cf82-9f8e-4011-abc9-92889998b8d7"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "05607296-e17f-567f-898f-46bb9665d619"
+      Hint: title
+      Value: Liste des conférenciers
+    - ID: "348777e9-0329-5c42-a43d-3db7d8a7a748"
+      Hint: content
+      Value: |
+        Rencontrez certains des professionnels du sport les plus en vue au monde, présents en personne et en ligne pour des entretiens exclusifs, des ateliers et des séances de questions-réponses.
+        
+        
+    - ID: "3df1996f-e6b3-52c9-82c7-c8ba54147c1f"
+      Hint: callToActionLink
+      Value: |
+        <link id="{1F4B781B-F2A5-5647-99DF-C0C369162C4D}" linktype="internal" text="Voir tous les conférenciers" querystring="" url="/PLAY/playwebsite/home/speakers" />
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{F103752C-F458-47E0-B322-99785275BDB9}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "849c2ab7-1542-4a77-ad9b-a8de4f3c8507"
