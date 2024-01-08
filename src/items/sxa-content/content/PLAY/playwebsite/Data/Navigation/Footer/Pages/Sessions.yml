@@ -15,3 +15,18 @@ Languages:
       Hint: Link
       Value: |
         <link class="" id="{68DC89A4-1B04-59A8-9C4E-3B49D6C61052}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/sessions" />
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Séances
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9e15abb6-b2b2-4b47-b790-76dcc6ef29e5"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link class="" id="{68DC89A4-1B04-59A8-9C4E-3B49D6C61052}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/sessions" />
