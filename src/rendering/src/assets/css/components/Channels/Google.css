@@ -1,0 +1,120 @@
+.google-header,
+.google-main {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.google-header {
+  @apply flex items-start px-8 pt-4 border-b border-gray-light bg-white-light;
+
+  .logo {
+    @apply w-20 h-auto mr-8;
+  }
+
+  input {
+    @apply w-full px-4 py-2 rounded-full bg-no-repeat bg-right text-[16px];
+
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAAAcCAIAAABgToMOAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFvGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4yLWMwMDAgMTE2LmRlZTNhNzcsIDIwMjIvMDkvMDEtMTM6NTc6MDggICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMy41IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMTItMDdUMTM6NDQ6NDkrMDI6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTEyLTA3VDEzOjU1OjU5KzAyOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTEyLTA3VDEzOjU1OjU5KzAyOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDplODM5NDk5Zi1jOTc0LTg1NGYtODNkMy04MDM4MjZhZWRjMjIiIHhtcE1NOkRvY3VtZW50SUQ9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');
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  }
+
+  svg {
+    @apply w-5 h-5 fill-black-lightest;
+  }
+
+  .avatar {
+    @apply w-8 h-8 rounded-full object-cover;
+  }
+
+  .google-header-main {
+    @apply w-[700px];
+
+    ul {
+      @apply flex gap-2 py-3;
+
+      li {
+        @apply text-[14px] text-black-light px-3 py-2 border border-[#dadce0] rounded-full;
+      }
+    }
+  }
+
+  .google-header-right {
+    @apply flex gap-4 items-center ml-auto;
+  }
+}
+
+.google-main {
+  @apply text-[16px] mx-36;
+
+  &-container {
+    @apply w-[700px];
+  }
+
+  .results-stats {
+    @apply text-xs text-[#70757a] my-4;
+  }
+}
+
+.google-result {
+  @apply mb-6;
+
+  .sponsored-label {
+    @apply font-semibold;
+  }
+
+  &-container {
+    @apply flex gap-4;
+  }
+
+  &-website {
+    @apply flex gap-2 items-center text-[#202124];
+  }
+
+  .website-icon {
+    @apply w-6 h-6 rounded-full object-cover;
+  }
+
+  div.website-icon {
+    @apply flex justify-center items-center font-bold text-orange-darkest bg-white;
+  }
+
+  &:nth-child(3),
+  &:nth-child(7) {
+    .website-icon {
+      @apply text-pink-darkest;
+    }
+  }
+
+  &:nth-child(4),
+  &:nth-child(8) {
+    .website-icon {
+      @apply text-blue-darkest;
+    }
+  }
+
+  &:nth-child(6),
+  &:nth-child(9) {
+    .website-icon {
+      @apply text-yellow-darkest;
+    }
+  }
+
+  .website-url {
+    @apply text-[12px];
+  }
+
+  .content-title {
+    @apply text-[22px] text-[#1a0dab] py-1 cursor-pointer;
+
+    &:hover {
+      @apply underline;
+    }
+  }
+
+  .content-body {
+    @apply text-[#4d5156] text-[14px];
+  }
+
+  .content-image {
+    @apply w-20 h-20 rounded-md object-cover shrink-0 shadow-sm;
+  }
+}

@@ -1,0 +1,20 @@
+﻿---
+ID: "da1acff9-42b6-4db2-a64b-d45a088a6713"
+Parent: "9b12542e-b2d5-48e5-96a5-eadc7561126f"
+Template: "101a196c-b4bb-46c5-85d8-2dcfb762115c"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder/Biggest Challenge/Eating healthy
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "014de293-46cd-4ac0-82af-30b5e86a5a00"
+      Hint: Text
+      Value: Eating healthy
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "372bfb94-9850-4f34-8b43-02f1a93ed7d8"
+    - ID: "e52785b2-2c6e-40b2-aaee-5a9b029d6b2e"
+      Hint: Image
+      Value: |
+        <image mediaid="{BDBDABA2-B5DD-42D2-8776-184076612C01}" />

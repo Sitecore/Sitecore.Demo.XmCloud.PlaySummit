@@ -1,0 +1,101 @@
+[
+  {
+    "libraryId": "generated",
+    "id": "MTqd5II-hy",
+    "componentId": "TlH-4IjNyG",
+    "name": "Default",
+    "status": "published",
+    "orderIdx": "03qKK",
+    "revision": 162,
+    "model": "",
+    "view": "<style data-format-version=\"26\">/* Type: grid Id: custom-grid Title: Custom grid Instance Id: Lin_ASEUQy */ .-grid--custom[data-instance-id=\"Lin_ASEUQy\"]:not(._._._._._._#_) { ---self--display: grid; display: var(---self--display); grid-template-rows: minmax(36px,36px) minmax(36px,36px) minmax(36px,36px) minmax(36px,36px) minmax(36px,36px) minmax(36px, auto); grid-template-columns: minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr); row-gap: var(---spacing--row-gap); column-gap: var(---spacing--column-gap); } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(1):not(._._._._._._#_) { grid-column: 1; grid-column-end: 7; grid-row: 1; grid-row-end: 2; order: 0; position: relative; } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(2):not(._._._._._._#_) { grid-column: 1; grid-column-end: 7; grid-row: 3; grid-row-end: 4; order: 0; position: relative; } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(3):not(._._._._._._#_) { grid-column: 7; grid-column-end: 13; grid-row: 1; grid-row-end: 6; order: 0; position: relative; } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(4):not(._._._._._._#_) { grid-column: 1; grid-column-end: 7; grid-row: 2; grid-row-end: 3; order: 0; position: relative; } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(5):not(._._._._._._#_) { grid-column: 1; grid-column-end: 7; grid-row: 4; grid-row-end: 6; order: 0; position: relative; } /* Data: {\"type\":\"grid\",\"details\":{\"title\":\"Custom grid\",\"description\":\"\",\"id\":\"custom-grid\",\"exampleContent\":null,\"slug\":\"custom\",\"isInternal\":true,\"isHidden\":true,\"instanceId\":\"Lin_ASEUQy\"},\"props\":{\"columns\":[{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}}],\"rows\":[{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":null}],\"items\":[{\"from\":{\"row\":1,\"column\":1},\"to\":{\"row\":2,\"column\":7},\"order\":0},{\"from\":{\"row\":3,\"column\":1},\"to\":{\"row\":4,\"column\":7},\"order\":0},{\"from\":{\"row\":1,\"column\":7},\"to\":{\"row\":6,\"column\":13},\"order\":0},{\"from\":{\"row\":2,\"column\":1},\"to\":{\"row\":3,\"column\":7},\"order\":0},{\"from\":{\"row\":4,\"column\":1},\"to\":{\"row\":6,\"column\":7},\"order\":0}]}} */</style><section class=\"-grid--custom\" data-instance-id=\"Lin_ASEUQy\" data-path-scope=\"Athlete.data.allAthlete.results.$[0:4]\"><div><h1><var data-path=\"Athlete.data.allAthlete.results.$.*.athleteName\"></var></h1></div><div><span class=\"-inline--eyebrow-accent\"><var data-path=\"Athlete.data.allAthlete.results.$.*.athleteQuote\"></var></span></div><div class=\"-block--media\" data-path-src=\"Athlete.data.allAthlete.results.$.*.relatedMedia.results.*.fileUrl\"><picture class=\"-image--foreground\"><img src=\"https://feaasstatic.blob.core.windows.net/assets/sample/image.svg\" /></picture></div><span class=\"-inline--eyebrow\"><var data-path=\"Athlete.data.allAthlete.results.$.*.nationality\"></var></span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></section>",
+    "diff": {},
+    "breakpointIds": null,
+    "datasourceIds": [
+      "Athlete"
+    ],
+    "forkOriginId": null,
+    "forkOriginRevision": 0,
+    "forkedAt": null,
+    "classList": [
+      "-theme--default"
+    ],
+    "createdAt": "2023-11-15T17:27:11.228Z",
+    "deletedAt": null,
+    "modifiedAt": "2023-11-16T18:10:05.908Z",
+    "modifiedBy": {
+      "id": "63ed31bdc5dac322725263de",
+      "name": "Alexander Doroshenko",
+      "givenName": "Alexander",
+      "familyName": "Doroshenko",
+      "email": "alexander.doroshenko@sitecore.com",
+      "picture": "https://s.gravatar.com/avatar/df9103e3d366714986d5e437d998bf3d?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fal.png"
+    }
+  },
+  {
+    "libraryId": "generated",
+    "id": "MTqd5II-hy",
+    "componentId": "TlH-4IjNyG",
+    "name": "Default",
+    "status": "staged",
+    "orderIdx": "03qKK",
+    "revision": 162,
+    "model": "",
+    "view": "<style data-format-version=\"26\">/* Type: grid Id: custom-grid Title: Custom grid Instance Id: Lin_ASEUQy */ .-grid--custom[data-instance-id=\"Lin_ASEUQy\"]:not(._._._._._._#_) { ---self--display: grid; display: var(---self--display); grid-template-rows: minmax(36px,36px) minmax(36px,36px) minmax(36px,36px) minmax(36px,36px) minmax(36px,36px) minmax(36px, auto); grid-template-columns: minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr); row-gap: var(---spacing--row-gap); column-gap: var(---spacing--column-gap); } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(1):not(._._._._._._#_) { grid-column: 1; grid-column-end: 7; grid-row: 1; grid-row-end: 2; order: 0; position: relative; } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(2):not(._._._._._._#_) { grid-column: 1; grid-column-end: 7; grid-row: 3; grid-row-end: 4; order: 0; position: relative; } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(3):not(._._._._._._#_) { grid-column: 7; grid-column-end: 13; grid-row: 1; grid-row-end: 6; order: 0; position: relative; } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(4):not(._._._._._._#_) { grid-column: 1; grid-column-end: 7; grid-row: 2; grid-row-end: 3; order: 0; position: relative; } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(5):not(._._._._._._#_) { grid-column: 1; grid-column-end: 7; grid-row: 4; grid-row-end: 6; order: 0; position: relative; } /* Data: {\"type\":\"grid\",\"details\":{\"title\":\"Custom grid\",\"description\":\"\",\"id\":\"custom-grid\",\"exampleContent\":null,\"slug\":\"custom\",\"isInternal\":true,\"isHidden\":true,\"instanceId\":\"Lin_ASEUQy\"},\"props\":{\"columns\":[{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}}],\"rows\":[{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":null}],\"items\":[{\"from\":{\"row\":1,\"column\":1},\"to\":{\"row\":2,\"column\":7},\"order\":0},{\"from\":{\"row\":3,\"column\":1},\"to\":{\"row\":4,\"column\":7},\"order\":0},{\"from\":{\"row\":1,\"column\":7},\"to\":{\"row\":6,\"column\":13},\"order\":0},{\"from\":{\"row\":2,\"column\":1},\"to\":{\"row\":3,\"column\":7},\"order\":0},{\"from\":{\"row\":4,\"column\":1},\"to\":{\"row\":6,\"column\":7},\"order\":0}]}} */</style><section class=\"-grid--custom\" data-instance-id=\"Lin_ASEUQy\" data-path-scope=\"Athlete.data.allAthlete.results.$[0:4]\"><div><h1><var data-path=\"Athlete.data.allAthlete.results.$.*.athleteName\"></var></h1></div><div><span class=\"-inline--eyebrow-accent\"><var data-path=\"Athlete.data.allAthlete.results.$.*.athleteQuote\"></var></span></div><div class=\"-block--media\" data-path-src=\"Athlete.data.allAthlete.results.$.*.relatedMedia.results.*.fileUrl\"><picture class=\"-image--foreground\"><img src=\"https://feaasstatic.blob.core.windows.net/assets/sample/image.svg\" /></picture></div><span class=\"-inline--eyebrow\"><var data-path=\"Athlete.data.allAthlete.results.$.*.nationality\"></var></span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></section>",
+    "diff": {},
+    "breakpointIds": null,
+    "datasourceIds": [
+      "Athlete"
+    ],
+    "forkOriginId": null,
+    "forkOriginRevision": 0,
+    "forkedAt": null,
+    "classList": [
+      "-theme--default"
+    ],
+    "createdAt": "2023-11-15T17:27:11.228Z",
+    "deletedAt": null,
+    "modifiedAt": "2023-11-16T18:10:05.908Z",
+    "modifiedBy": {
+      "id": "63ed31bdc5dac322725263de",
+      "name": "Alexander Doroshenko",
+      "givenName": "Alexander",
+      "familyName": "Doroshenko",
+      "email": "alexander.doroshenko@sitecore.com",
+      "picture": "https://s.gravatar.com/avatar/df9103e3d366714986d5e437d998bf3d?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fal.png"
+    }
+  },
+  {
+    "libraryId": "generated",
+    "id": "MTqd5II-hy",
+    "componentId": "TlH-4IjNyG",
+    "name": "Default",
+    "status": "saved",
+    "orderIdx": "03qKK",
+    "revision": 162,
+    "model": "",
+    "view": "<style data-format-version=\"26\">/* Type: grid Id: custom-grid Title: Custom grid Instance Id: Lin_ASEUQy */ .-grid--custom[data-instance-id=\"Lin_ASEUQy\"]:not(._._._._._._#_) { ---self--display: grid; display: var(---self--display); grid-template-rows: minmax(36px,36px) minmax(36px,36px) minmax(36px,36px) minmax(36px,36px) minmax(36px,36px) minmax(36px, auto); grid-template-columns: minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr) minmax(0px,1fr); row-gap: var(---spacing--row-gap); column-gap: var(---spacing--column-gap); } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(1):not(._._._._._._#_) { grid-column: 1; grid-column-end: 7; grid-row: 1; grid-row-end: 2; order: 0; position: relative; } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(2):not(._._._._._._#_) { grid-column: 1; grid-column-end: 7; grid-row: 3; grid-row-end: 4; order: 0; position: relative; } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(3):not(._._._._._._#_) { grid-column: 7; grid-column-end: 13; grid-row: 1; grid-row-end: 6; order: 0; position: relative; } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(4):not(._._._._._._#_) { grid-column: 1; grid-column-end: 7; grid-row: 2; grid-row-end: 3; order: 0; position: relative; } .-grid--custom[data-instance-id=\"Lin_ASEUQy\"] > :nth-child(5):not(._._._._._._#_) { grid-column: 1; grid-column-end: 7; grid-row: 4; grid-row-end: 6; order: 0; position: relative; } /* Data: {\"type\":\"grid\",\"details\":{\"title\":\"Custom grid\",\"description\":\"\",\"id\":\"custom-grid\",\"exampleContent\":null,\"slug\":\"custom\",\"isInternal\":true,\"isHidden\":true,\"instanceId\":\"Lin_ASEUQy\"},\"props\":{\"columns\":[{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}},{\"min\":{\"value\":0,\"unit\":\"px\"},\"max\":{\"value\":1,\"unit\":\"fr\"}}],\"rows\":[{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":{\"value\":36,\"unit\":\"px\"}},{\"min\":{\"value\":36,\"unit\":\"px\"},\"max\":null}],\"items\":[{\"from\":{\"row\":1,\"column\":1},\"to\":{\"row\":2,\"column\":7},\"order\":0},{\"from\":{\"row\":3,\"column\":1},\"to\":{\"row\":4,\"column\":7},\"order\":0},{\"from\":{\"row\":1,\"column\":7},\"to\":{\"row\":6,\"column\":13},\"order\":0},{\"from\":{\"row\":2,\"column\":1},\"to\":{\"row\":3,\"column\":7},\"order\":0},{\"from\":{\"row\":4,\"column\":1},\"to\":{\"row\":6,\"column\":7},\"order\":0}]}} */</style><section class=\"-grid--custom\" data-instance-id=\"Lin_ASEUQy\" data-path-scope=\"Athlete.data.allAthlete.results.$[0:4]\"><div><h1><var data-path=\"Athlete.data.allAthlete.results.$.*.athleteName\"></var></h1></div><div><span class=\"-inline--eyebrow-accent\"><var data-path=\"Athlete.data.allAthlete.results.$.*.athleteQuote\"></var></span></div><div class=\"-block--media\" data-path-src=\"Athlete.data.allAthlete.results.$.*.relatedMedia.results.*.fileUrl\"><picture class=\"-image--foreground\"><img src=\"https://feaasstatic.blob.core.windows.net/assets/sample/image.svg\" /></picture></div><span class=\"-inline--eyebrow\"><var data-path=\"Athlete.data.allAthlete.results.$.*.nationality\"></var></span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></section>",
+    "diff": {},
+    "breakpointIds": null,
+    "datasourceIds": [
+      "Athlete"
+    ],
+    "forkOriginId": null,
+    "forkOriginRevision": 0,
+    "forkedAt": null,
+    "classList": [
+      "-theme--default"
+    ],
+    "createdAt": "2023-11-15T17:27:11.228Z",
+    "deletedAt": null,
+    "modifiedAt": "2023-11-16T18:10:05.908Z",
+    "modifiedBy": {
+      "id": "63ed31bdc5dac322725263de",
+      "name": "Alexander Doroshenko",
+      "givenName": "Alexander",
+      "familyName": "Doroshenko",
+      "email": "alexander.doroshenko@sitecore.com",
+      "picture": "https://s.gravatar.com/avatar/df9103e3d366714986d5e437d998bf3d?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fal.png"
+    }
+  }
+]

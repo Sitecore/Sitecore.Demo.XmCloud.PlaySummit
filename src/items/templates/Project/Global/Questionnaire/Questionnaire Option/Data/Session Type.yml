@@ -1,0 +1,23 @@
+﻿---
+ID: "cdb8943a-f534-4497-a548-27a34f10a1bc"
+Parent: "c936b432-9628-4539-a26e-284e5c71ccbc"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/Global/Questionnaire/Questionnaire Option/Data/Session Type
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: /sitecore/content/PLAY/playwebsite/Data/CMP Data/Session Type
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Droplist
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "47a338e4-f1ce-4e5c-8163-99ec307030e5"

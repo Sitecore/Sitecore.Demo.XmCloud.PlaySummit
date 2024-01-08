@@ -1,8 +1,7 @@
 function extract(request, response) {
   function validateData(data, acceptPageType) {
-    const { query: { path: [pageType] = [] } = {} } = data;
-
-    return pageType === acceptPageType;
+    const { query: { path = [] } = {} } = data;
+    return path[1] === acceptPageType;
   }
 
   function getDisplayNameList(list) {
@@ -33,7 +32,14 @@ function extract(request, response) {
     } = data;
 
     const content = $('.section-content .right-column .rich-text p').text();
-    const { value: { thumbnailsrc: image_thumb_url, src: image_url } = {} } = Image;
+    const {
+      value: {
+        thumbnailsrc: image_thumb_url,
+        src: image_url,
+        alt: imageDescription,
+        'stylelabs-content-id': imageID,
+      } = {},
+    } = Image;
     const { value: content_html } = Content;
     const { value: excerpt } = Excerpt;
     const { value: publish_date } = PublishDate;
@@ -41,17 +47,25 @@ function extract(request, response) {
 
     return [
       {
-        type: 'content',
-        id: itemId,
-        name: displayName,
         content,
         content_html,
         excerpt,
         image_thumb_url,
         image_url,
-        url: urlPath,
         publish_date,
         audience,
+        type: 'news',
+        id: itemId,
+        name: displayName,
+        url: urlPath,
+      },
+      {
+        image_url,
+        image_thumb_url,
+        type: 'photo',
+        name: displayName,
+        id: imageID,
+        description: imageDescription,
       },
     ];
   }

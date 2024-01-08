@@ -1,0 +1,24 @@
+﻿---
+ID: "d78c313a-67e0-465d-a33d-e6901c4451ab"
+Parent: "1e262825-c2fb-4e56-8ca6-b09fd2c6007a"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/PLAY/playwebsite/home/landing-pages/sponsored-landing-page/Data/About us FB"
+BranchID: "c21cb9f5-9d4c-4904-b199-538835128fa3"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{189DEBA5-BB8E-4052-8A48-154799CE3091}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <h1>Unleash Your Passion for Sports at PLAY! Summit </h1>
+        <p>At PLAY! Summit, we're driven by the passion that fuels every sports enthusiast. Whether you're an athlete, a dedicated fan, or someone who lives and breathes the spirit of sports, PLAY! Summit is your ultimate destination.</p>
+        <p>Immerse yourself in a world where the thrill of sports meets a community of like-minded individuals. Our event is not just a gathering; it's a celebration of the unbridled passion that defines the world of sports. From dynamic sessions led by industry experts to interactive workshops that bring you closer to the action, PLAY! Summit offers an unparalleled experience.</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6e49a077-e589-4ba0-913a-591c3b160036"

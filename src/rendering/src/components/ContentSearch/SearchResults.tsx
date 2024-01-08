@@ -7,6 +7,7 @@ import PreviewSearchInput from '../PreviewSearchContent/PreviewSearchInput';
 import PreviewSearchIcon from '../PreviewSearchContent/PreviewSearchIcon';
 import PreviewSearchContextProvider from '../PreviewSearchContent/PreviewSearchContextProvider';
 import { SEARCH_PAGE, SESSION_SEARCH_RESULT_TYPE } from '../../helpers/ContentSearchHelper';
+import Questions from './Questions';
 
 type SearchResultsProps = PropsWithChildren & {
   selectedTab: string;
@@ -38,6 +39,9 @@ const SearchResults = (props: SearchResultsProps): JSX.Element => {
           <PreviewSearchIcon onClick={onSearch} className="search-results-header-search-icon" />
         </PreviewSearchContextProvider>
       </div>
+      {keyphrase && (
+        <Questions rfkId="rfkid_qa" keyphrase={keyphrase} defaultRelatedQuestions={4} />
+      )}
       <SearchFilters
         options={props.filterOptions}
         onChange={onChangeFilter}

@@ -1,0 +1,28 @@
+﻿---
+ID: "9b12542e-b2d5-48e5-96a5-eadc7561126f"
+Parent: "04bfec78-6a5e-4ded-b6b7-03b0ca932477"
+Template: "20c12fa9-b9f5-4d34-a9ff-61a768055ace"
+Path: /sitecore/content/PLAY/playwebsite/Data/Questionnaire/Session Finder/Biggest Challenge
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "3c4254ea-991c-4f4b-a24c-9bd9082ca446"
+      Hint: Body
+      Value: |
+        <p>By selecting "what do you find most challenging about exercise" <strong>PLAY! Lifestyle</strong> will personalize your experience to match your interest. You can change you interest at any time.</p>
+        <p>Select the interest that matches you best.</p>
+    - ID: "4b7d21d7-236e-4c01-a370-4e91d3767622"
+      Hint: Title
+      Value: "What do you find most challenging about exercise?"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "df68158d-87d9-4ddf-a15c-48ed215d28ad"

@@ -1,0 +1,131 @@
+﻿---
+ID: "ccb5368b-61e7-4487-a05c-960c9904fc95"
+Parent: "ea5ef0e0-4c3e-4585-9278-7cd88d9e35f3"
+Template: "1b2dfd3b-f2f2-4f40-a75c-f6c2490919c4"
+Path: /sitecore/system/Settings/Feature/PLAY/PLAY Microsite
+SharedFields:
+- ID: "41ac536a-923a-43f9-ac87-f3993f638125"
+  Hint: Tenant Modules
+  Value: |
+    {0DC2E395-4A95-4773-88CA-75B22A130849}
+    {4346A98A-D6E9-491E-A0ED-CD12F524CF4E}
+    {4CBC64BF-8116-48A1-ABAC-DB19103897A6}
+    {7574F439-0B48-48BE-BA6B-94B1A3CE01A3}
+    {D912C30C-7A98-4A8D-A094-611D9AF9605D}
+    {6DE1F4E9-815D-491D-923D-D5038100DBEE}
+    {02CD7086-1F87-41EC-B40F-B92C1226895B}
+    {1B0A98C0-1801-44A0-85F2-845694FEAFF3}
+    {D315A501-6503-4545-A5D8-B9FECBA1097D}
+- ID: "4a749557-242b-4372-8a20-b2db9d406301"
+  Hint: __AutoThumbnails
+  Value: 1
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
+- ID: "c262443b-653d-461d-96c8-7cfaa0ef2b2d"
+  Hint: Site Modules
+  Value: |
+    {5A2F6A6F-3028-4210-AAD3-82C1365C4802}
+    {9F10010E-49E2-4DCD-A5A1-4DA752ADED2A}
+    {4342A029-0186-4B0D-8959-FFEF4FD998C2}
+    {AE5D1384-BB75-4C6B-A8B5-4B008C2AC5DA}
+    {C4658673-5D70-44ED-9004-D66EAC1DC718}
+    {CA502DCF-20D2-4618-A735-E4FCB6D5E114}
+    {E2AF1A41-799E-481B-8FDC-B2D33FB729A1}
+    {66B9C663-2602-42B1-A5A2-3D04DB6C506A}
+    {1FD78E81-59A6-4513-90F1-165A95D4B16B}
+    {BEBF4026-24A3-4EA6-986A-518B76DBD71A}
+    {385F31BE-FF0C-4D84-A627-9ECD21295AFD}
+    {F0EA389E-F78D-440B-9429-F04FE735344A}
+    {107D65BD-40B6-4635-9D92-AB0378DF439F}
+    {AC1A27CA-6BF3-4D23-915E-668326D52CF1}
+    {D7EEAF4D-2B58-4029-B141-844221565EF0}
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{A2CA1005-6724-44E7-8130-3CC0B1ADD1BB}" />
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
+Languages:
+- Language: da
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Grundlæggende site
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "82e64b52-0b8a-4a38-8c78-530c5493814e"
+      Hint: Name
+      Value: Basis
+    - ID: "9f437e68-a84d-48ae-8ce1-a3e26c0b5e64"
+      Hint: Description
+      Value: Et eksempel på et enkelt website med startside, underside, navigation og footer
+- Language: "de-DE"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "Basis-Seite"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "82e64b52-0b8a-4a38-8c78-530c5493814e"
+      Hint: Name
+      Value: Grundlegend
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "02437782-6062-4909-ae4e-6815488603ea"
+    - ID: "9f437e68-a84d-48ae-8ce1-a3e26c0b5e64"
+      Hint: Description
+      Value: Ein Beispiel für eine einfache Website mit Startseite, Unterseite, Navigation und Fußzeile
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
+    - ID: "82e64b52-0b8a-4a38-8c78-530c5493814e"
+      Hint: Name
+      Value: "PLAY! Template"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "32e7c257-0320-47cc-9bd4-adb9d4a3eaa6"
+    - ID: "9f437e68-a84d-48ae-8ce1-a3e26c0b5e64"
+      Hint: Description
+      Value: "An example of a PLAY! branded template"
+- Language: "ja-JP"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 基本サイト
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "82e64b52-0b8a-4a38-8c78-530c5493814e"
+      Hint: Name
+      Value: ベーシック
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "02437782-6062-4909-ae4e-6815488603ea"
+    - ID: "9f437e68-a84d-48ae-8ce1-a3e26c0b5e64"
+      Hint: Description
+      Value: ホームページ、サブページ、ナビゲーション、フッターのあるシンプルなWebサイトの例
+- Language: "zh-CN"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 基本站点
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "82e64b52-0b8a-4a38-8c78-530c5493814e"
+      Hint: Name
+      Value: 基本
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "02437782-6062-4909-ae4e-6815488603ea"
+    - ID: "9f437e68-a84d-48ae-8ce1-a3e26c0b5e64"
+      Hint: Description
+      Value: 带有主页、子页、导航和页脚的简单站点示例

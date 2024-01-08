@@ -1,0 +1,20 @@
+﻿---
+ID: "65d7291f-2531-4449-a555-4f76d39840b2"
+Parent: "be7590d9-bd34-4d0e-8047-f23974894d37"
+Template: "be7590d9-bd34-4d0e-8047-f23974894d37"
+Path: /sitecore/templates/Project/Global/Questionnaire/Questionnaire/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{20C12FA9-B9F5-4D34-A9FF-61A768055ACE}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d6ae4cc9-99d7-44bb-b232-79b8ccde6a48"
+    - ID: "95db3a51-95bd-402d-b970-095aff3727de"
+      Hint: Title
+      Value: $name
