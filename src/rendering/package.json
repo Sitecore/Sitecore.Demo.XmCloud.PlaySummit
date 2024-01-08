@@ -151,7 +151,7 @@
     "graphql:update": "cross-env GRAPH_QL_ENDPOINT=https://cm.xmcloudcm.localhost/sitecore/api/graph/edge ts-node --project tsconfig.scripts.json ./scripts/fetch-graphql-introspection-data.ts",
     "END_CUSTOMIZATION_GRAPHQL_ENDPOINT": "",
     "next:build": "next build",
-    "next:dev": "cross-env NODE_OPTIONS='--inspect --max-old-space-size=32768' next dev",
+    "next:dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "next:start": "next start",
     "scaffold": "ts-node --project tsconfig.scripts.json scripts/scaffold-component/index.ts",
     "start:connected": "npm-run-all --serial bootstrap --parallel next:dev start:watch-components",
@@ -159,3 +159,4 @@
     "start:watch-components": "ts-node --project tsconfig.scripts.json scripts/generate-component-builder/index.ts --watch"
   }
 }
+
