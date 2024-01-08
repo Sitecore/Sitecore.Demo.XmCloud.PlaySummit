@@ -25,4 +25,8 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c56c5d3d-e777-4fe7-8a9e-8a260cb19774"
+      Value: "ee8cedb2-ceae-4e79-9f0b-ef44a3e4251b"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link class="" id="{1F4B781B-F2A5-5647-99DF-C0C369162C4D}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/speakers" />

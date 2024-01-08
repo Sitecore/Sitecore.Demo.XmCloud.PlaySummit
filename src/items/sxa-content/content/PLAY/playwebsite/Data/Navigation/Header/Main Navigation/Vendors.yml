@@ -25,4 +25,8 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "087788cb-66cf-468a-9c20-ea0e8bd6cda8"
+      Value: "fe610ab9-598c-473e-a1bc-c4be41b7c231"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link class="" id="{774E44E8-0F30-5879-B847-AD233FFB41AA}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/vendors" />
