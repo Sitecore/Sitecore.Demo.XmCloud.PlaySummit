@@ -13,6 +13,7 @@ import {
   JOB_TITLE_FACET_TYPE,
   LEVEL_FACET_TYPE,
   LOCATION_FACET_TYPE,
+  SEARCH_PAGE,
   SESSIONS_FACET_TYPE,
   SESSION_SEARCH_RESULT_TYPE,
   SPEAKERS_FACET_TYPE,
@@ -60,8 +61,8 @@ const SearchResultsContainer = ({
   defaultItemsPerPage = 24,
 }: SearchResultsContainerProps): JSX.Element => {
   const router = useRouter();
-  const q = (router?.query['q'] as string) ?? '';
-  const tab = (router?.query['tab'] as string) || 'sessions';
+  const q = useMemo(() => (router?.query['q'] as string) ?? '', [router?.query]);
+  const tab = (router?.query['tab'] as string) || 'session';
 
   const {
     widgetRef,
@@ -291,10 +292,11 @@ const SearchResultsContainer = ({
   const handleKeyphraseChange = useCallback(
     (value: string) => {
       if (q !== value) {
+        router.push(`${SEARCH_PAGE}?q=${value}`);
         onKeyphraseChange({ keyphrase: value });
       }
     },
-    [q, onKeyphraseChange]
+    [q, router, onKeyphraseChange]
   );
 
   useEffect(() => onKeyphraseChange({ keyphrase: q }), [onKeyphraseChange, q]);
