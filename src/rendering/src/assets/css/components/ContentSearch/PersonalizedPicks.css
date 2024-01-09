@@ -1,5 +1,5 @@
 .personalized-picks {
-  @apply bg-blue-lightest mb-8 w-full py-8 px-12;
+  @apply bg-blue-lightest w-full py-8 px-12;
 
   .container {
     @apply flex gap-6;
