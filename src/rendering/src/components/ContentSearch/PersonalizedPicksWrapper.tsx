@@ -1,14 +1,10 @@
-import { LayoutServicePageState, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 import { isSearchSDKEnabled } from '../../services/SearchSDKService';
 import PersonalizedPicks from './PersonalizedPicks';
 
-const PersonalizedPicksWrapper = () => {
-  const { sitecoreContext } = useSitecoreContext();
-  const isPageEditing = sitecoreContext.pageState === LayoutServicePageState.Edit;
-
+const PersonalizedPicksWrapper = () =>
   isSearchSDKEnabled ? (
     <PersonalizedPicks rfkId="rfkid_pp" />
-  ) : isPageEditing ? (
+  ) : (
     <div className="personalized-picks">
       <div className="container">
         <div>
@@ -55,9 +51,6 @@ const PersonalizedPicksWrapper = () => {
         </div>
       </div>
     </div>
-  ) : (
-    <></>
   );
-};
 
 export default PersonalizedPicksWrapper;
