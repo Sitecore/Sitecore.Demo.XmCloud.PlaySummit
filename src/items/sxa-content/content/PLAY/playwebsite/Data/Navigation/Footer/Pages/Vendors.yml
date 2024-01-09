@@ -15,3 +15,18 @@ Languages:
       Hint: Link
       Value: |
         <link class="" id="{774E44E8-0F30-5879-B847-AD233FFB41AA}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/vendors" />
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Fournisseurs
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "741c207b-3530-4ec2-b799-a661c8e65de8"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link class="" id="{774E44E8-0F30-5879-B847-AD233FFB41AA}" querystring="" anchor="" target="" title="" linktype="internal" text="" url="/PLAY/playwebsite/home/vendors" />

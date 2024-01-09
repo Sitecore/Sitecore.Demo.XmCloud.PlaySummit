@@ -38,35 +38,50 @@ const SearchResults = ({
 
   return (
     <div className="search-results">
-      <div className="search-results-header">Search Results</div>
-      <div className="search-results-header-search">
-        <PreviewSearchInput
-          placeholder="Search..."
-          onEnter={onSearch}
-          className="search-results-header-search-input"
-          value={keyphrase}
-          onChange={onKeyphraseChange}
-        />
-        <PreviewSearchIcon
-          onClick={onSearch}
-          className="search-results-header-search-icon"
-          keyphrase={keyphrase}
-        />
+      <div className="search-results-header">
+        <div className="container">
+          <div className="search-results-header-content">
+            <h6>FAST, ACCURATE, PERSONALIZED, MULTI-SITE SEARCH</h6>
+            <h1>FIND THE MOST RELEVANT CONTENT</h1>
+          </div>
+          <div className="search-results-header-container">
+            <div className="search-results-header-search">
+              <PreviewSearchInput
+                placeholder="Search..."
+                onEnter={onSearch}
+                className="search-results-header-search-input"
+                value={keyphrase}
+                onChange={onKeyphraseChange}
+              />
+              <PreviewSearchIcon
+                onClick={onSearch}
+                className="search-results-header-search-icon"
+                keyphrase={keyphrase}
+              />
+            </div>
+            {keyphrase && (
+              <Questions rfkId="rfkid_qa" keyphrase={keyphrase} defaultRelatedQuestions={4} />
+            )}
+          </div>
+        </div>
       </div>
-      {keyphrase && (
-        <Questions rfkId="rfkid_qa" keyphrase={keyphrase} defaultRelatedQuestions={4} />
-      )}
-      <SearchFilters
-        options={filterOptions}
-        onChange={onFilterClick}
-        className="search-results-filters"
-      />
-      <SearchEntityTabs
-        selected={selectedTab || SESSION_SEARCH_RESULT_TYPE}
-        tabs={tabs}
-        className="search-results-tabs"
-        totalItems={totalItems}
-      />
+      <div className="component container col-12 my-8">
+        <div className="component-content">
+          <div className="row">
+            <SearchFilters
+              options={filterOptions}
+              onChange={onFilterClick}
+              className="search-results-filters"
+            />
+            <SearchEntityTabs
+              selected={selectedTab || SESSION_SEARCH_RESULT_TYPE}
+              tabs={tabs}
+              className="search-results-tabs"
+              totalItems={totalItems}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

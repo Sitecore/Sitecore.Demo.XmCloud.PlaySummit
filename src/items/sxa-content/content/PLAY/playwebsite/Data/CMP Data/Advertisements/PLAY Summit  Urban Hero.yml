@@ -35,3 +35,26 @@ Languages:
     - ID: "e2d35418-b6ed-4838-90cb-26f98c1d7586"
       Hint: Title
       Value: Raise Your Game
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "69e8418c-5f11-40a8-9c0d-9e5eacc1229e"
+      Hint: Hero
+      Value: |
+        <image stylelabs-content-id="31904" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/31904/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/95619f8c034947a2aa2ce5b39146ccf5?v=5ae3562e" mediaid="" stylelabs-content-type="Image" alt="home-hero-background.jpg" height="850" width="2000" />
+    - ID: "81af116e-235f-44ad-a8e0-794bc3504c7c"
+      Hint: Slogan
+      Value: "À VOS MARQUES | PRÊT | JOUEZ !"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "faa65c19-5463-4585-a6f9-0eca5c47082b"
+    - ID: "957519d5-5c6b-40c0-b462-b1dac8f12a03"
+      Hint: Eyebrow
+      Value: Salon des sports et des loisirs
+    - ID: "c068953c-33ee-4889-b473-395d5e0aea0f"
+      Hint: Body
+      Value: "<p>Rejoignez-nous en personne ou en ligne pour la cinquième édition du sommet <strong>PLAY!</strong></p>"
+    - ID: "e2d35418-b6ed-4838-90cb-26f98c1d7586"
+      Hint: Title
+      Value: Élevez votre niveau

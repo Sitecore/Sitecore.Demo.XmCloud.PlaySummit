@@ -312,8 +312,8 @@ const SearchResultsContainer = ({
 
   // using keyphrase as key allow us to re mount results, "resetting" any control in it
   return (
-    <section className="section">
-      <div className="container" ref={widgetRef}>
+    <section className="w-full">
+      <div ref={widgetRef}>
         <SearchResults
           filterOptions={filterOptions}
           tabs={tabs}

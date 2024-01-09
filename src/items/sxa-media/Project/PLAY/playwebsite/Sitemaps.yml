@@ -1,0 +1,13 @@
+﻿---
+ID: "1131a977-f1a5-47a2-ae38-1f1e87a08177"
+Parent: "f9a560f3-bd85-4779-90f9-da0044f8bfa7"
+Template: "fe5dd826-48c6-436d-b87a-7c4210c7413b"
+Path: /sitecore/media library/Project/PLAY/playwebsite/Sitemaps
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "72471427-30f7-4649-a78a-92f281733469"
