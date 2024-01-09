@@ -72,6 +72,7 @@
 @import './components/ContentSearch/SearchPagination.css';
 @import './components/ContentSearch/SearchResults.css';
 @import './components/ContentSearch/SearchResultsTab.css';
+@import './components/ContentSearch/PersonalizedPicks.css';
 
 /* Forms */
 @import './components/Forms/AttendeeForm.css';
