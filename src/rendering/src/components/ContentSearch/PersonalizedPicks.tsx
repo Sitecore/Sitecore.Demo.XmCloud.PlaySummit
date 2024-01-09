@@ -43,30 +43,32 @@ const PersonalizedPicks = ({
 
   return (
     <div className="personalized-picks" ref={widgetRef}>
-      <div>
-        <h3 className="title">{title}</h3>
-        <p className="subtitle">
-          A handpicked selection of content recommendations based on your preferences and browsing
-          history.
-        </p>
-      </div>
-      {items.map((item, index) => (
-        <div key={item.id}>
-          <Link
-            href={getAbsoluteUrlPath(item?.url)}
-            className="item"
-            onClick={() => onItemClick({ index, id: item.id, sourceId: item?.source_id })}
-          >
-            <img
-              className="item-image"
-              src={item?.image_url || fallbackImageURL}
-              alt={item?.description || `${item?.type} image`}
-            />
-            <span className="item-type">{item?.type}</span>
-            <span className="item-name">{item?.name}</span>
-          </Link>
+      <div className="container">
+        <div>
+          <h3 className="title">{title}</h3>
+          <p className="subtitle">
+            A handpicked selection of content recommendations based on your preferences and browsing
+            history.
+          </p>
         </div>
-      ))}
+        {items.map((item, index) => (
+          <div key={item.id}>
+            <Link
+              href={getAbsoluteUrlPath(item?.url)}
+              className="item"
+              onClick={() => onItemClick({ index, id: item.id, sourceId: item?.source_id })}
+            >
+              <img
+                className="item-image"
+                src={item?.image_url || fallbackImageURL}
+                alt={item?.description || `${item?.type} image`}
+              />
+              <span className="item-type">{item?.type}</span>
+              <span className="item-name">{item?.name}</span>
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
