@@ -8,6 +8,7 @@ import { CdpScripts } from '../services/CdpService';
 import { SendScripts } from '../services/SendService';
 import { identifyVisitor } from '../services/IdentificationService';
 import { KeypressHandler } from '../services/KeypressHandlerService';
+import { trackPageViewEvent } from '@sitecore-search/react';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
@@ -22,6 +23,7 @@ import { isSearchSDKEnabled, config as searchSDKConfig } from '../services/Searc
 
 // DEMO TEAM CUSTOMIZATION - Implement per page layouts to conditionally load commerce on some pages https://nextjs.org/docs/basic-features/layouts#per-page-layouts
 import { NextPage } from 'next';
+import { usePathname } from 'next/navigation';
 
 type NextPageWithLayout<P = unknown, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactElement;
@@ -62,6 +64,14 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
       PageController.getContext().setLocaleCountry('us');
     }
   }, []);
+
+  const pageUri = usePathname();
+  useEffect(() => {
+    PageController.getContext().setPageUri(pageUri);
+    console.log(PageController.getContext());
+    trackPageViewEvent('page');
+  }, [pageUri]);
+
   // END CUSTOMIZATION
 
   // DEMO TEAM CUSTOMIZATION - Per page layouts
