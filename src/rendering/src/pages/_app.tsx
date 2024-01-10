@@ -67,9 +67,11 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
 
   const pageUri = usePathname();
   useEffect(() => {
-    PageController.getContext().setPageUri(pageUri);
-    console.log(PageController.getContext());
-    trackPageViewEvent('page');
+    if (isSearchSDKEnabled) {
+      PageController.getContext().setPageUri(pageUri);
+      console.log(PageController.getContext());
+      trackPageViewEvent('page');
+    }
   }, [pageUri]);
 
   // END CUSTOMIZATION
