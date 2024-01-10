@@ -16,7 +16,7 @@ config.autoAddCss = false;
 import 'assets/css/main.css'; // DEMO TEAM CUSTOMIZATION - Different CSS file name.
 
 // DEMO TEAM CUSTOMIZATION - Search SDK integration
-import {  WidgetsProvider } from '@sitecore-search/react';
+import { WidgetsProvider } from '@sitecore-search/react';
 import { isSearchSDKEnabled, config as searchSDKConfig } from '../services/SearchSDKService';
 // END CUSTOMIZATION
 
