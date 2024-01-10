@@ -69,7 +69,6 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
   useEffect(() => {
     if (isSearchSDKEnabled) {
       PageController.getContext().setPageUri(pageUri);
-      console.log(PageController.getContext());
       trackPageViewEvent('page');
     }
   }, [pageUri]);
