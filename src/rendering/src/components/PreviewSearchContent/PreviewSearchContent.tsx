@@ -116,6 +116,15 @@ const PreviewSearchContent = ({
     [onKeyphraseChange, keyphrase]
   );
 
+  const handleKeyphraseClear = useCallback(() => {
+    onKeyphraseChange({ keyphrase: '' });
+
+    const previewSearchInput = document.querySelector(
+      'input.search-input-play'
+    ) as HTMLInputElement;
+    previewSearchInput.value = '';
+  }, [onKeyphraseChange]);
+
   ClickOutside([containerRef], onClose);
 
   // Hide preview search when on search page
@@ -136,6 +145,7 @@ const PreviewSearchContent = ({
         onEscapePressed={onEscapePressed}
         onChange={handleKeyphraseChange}
         value={keyphrase}
+        onClear={handleKeyphraseClear}
       />
       <PreviewSearchIcon
         onClick={onSearchIconClick}
