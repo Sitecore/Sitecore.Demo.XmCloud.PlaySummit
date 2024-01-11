@@ -118,11 +118,6 @@ const PreviewSearchContent = ({
 
   ClickOutside([containerRef], onClose);
 
-  // Hide preview search when processing
-  if (isLoading || isFetching) {
-    return null;
-  }
-
   // Hide preview search when on search page
   if (router?.pathname === SEARCH_PAGE) {
     return null;
@@ -130,13 +125,13 @@ const PreviewSearchContent = ({
 
   return (
     <div ref={containerRef}>
-      {isPreviewSearchOpen && (
+      {isPreviewSearchOpen && !isLoading && !isFetching && (
         <PreviewSearchContainer suggestions={suggestions} items={items} widgetRef={widgetRef} />
       )}
       <PreviewSearchInput
         placeholder="Search content"
         onEnter={onRedirect}
-        className={`search-input-play ${!isPreviewSearchOpen ? 'search-input-play-hidden' : ''}`}
+        className="search-input-play"
         onFocus={onInputFocus}
         onEscapePressed={onEscapePressed}
         onChange={handleKeyphraseChange}
