@@ -16,6 +16,7 @@ type SearchResultsProps = PropsWithChildren & {
   totalItems: number;
   onFilterClick: (id: string, value: string) => void;
   onKeyphraseChange: (value: string) => void;
+  onKeyphraseClear: () => void;
 };
 
 const SearchResults = ({
@@ -26,6 +27,7 @@ const SearchResults = ({
   totalItems,
   onFilterClick,
   onKeyphraseChange,
+  onKeyphraseClear,
 }: SearchResultsProps): JSX.Element => {
   const router = useRouter();
 
@@ -52,6 +54,7 @@ const SearchResults = ({
                 className="search-results-header-search-input"
                 value={keyphrase}
                 onChange={onKeyphraseChange}
+                onClear={onKeyphraseClear}
               />
               <PreviewSearchIcon
                 onClick={onSearch}
