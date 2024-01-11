@@ -23,7 +23,7 @@ SharedFields:
     {587F8FBD-E38F-4E2B-8DE4-1F474D9DDD00}
 - ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
   Hint: Parameters Template
-  Value: "{3C13BF6C-32DD-4F40-BCC9-208B47F21BB5}"
+  Value: "{DA39332E-5CA7-4254-961C-432123411FD8}"
 - ID: "b0b15510-b138-470e-8f33-8da2e228aafe"
   Hint: Rendering Contents Resolver
   Value: 
@@ -37,4 +37,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "57e52322-6291-4872-aeb4-e8fe0092de28"
+      Value: "04358be7-f269-4583-9ae9-15c13360e3cd"

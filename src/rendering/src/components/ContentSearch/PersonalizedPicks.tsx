@@ -15,14 +15,12 @@ type PersonalizedPick = (ContentSearchSession | ContentSearchSponsor | ContentSe
 type PersonalizedPicksProps = {
   title?: string;
   itemsToDisplay?: number;
+  sxaStyles?: string;
 };
 
 type InitialState = SearchResultsInitialState<'itemsPerPage'>;
 
-const PersonalizedPicks = ({
-  title = 'Personalized Picks',
-  itemsToDisplay = 3,
-}: PersonalizedPicksProps) => {
+const PersonalizedPicks = ({ itemsToDisplay = 6, sxaStyles = '' }: PersonalizedPicksProps) => {
   const {
     widgetRef,
     actions: { onItemClick },
@@ -42,15 +40,8 @@ const PersonalizedPicks = ({
   }
 
   return (
-    <div className="personalized-picks" ref={widgetRef}>
+    <div className={`personalized-picks ${sxaStyles}`} ref={widgetRef}>
       <div className="container">
-        <div>
-          <h3 className="title">{title}</h3>
-          <p className="subtitle">
-            A handpicked selection of content recommendations based on your preferences and browsing
-            history.
-          </p>
-        </div>
         {items.map((item, index) => (
           <div key={item.id}>
             <Link
