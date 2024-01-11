@@ -1,3 +1,4 @@
+import { LayoutServicePageState, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 import { isSearchSDKEnabled } from '../../services/SearchSDKService';
 import PersonalizedPicks from './PersonalizedPicks';
 import { ComponentProps } from 'lib/component-props';
@@ -9,15 +10,18 @@ type PersonalizedPicksWrapperProps = ComponentProps & {
   };
 };
 
-const PersonalizedPicksWrapper = (props: PersonalizedPicksWrapperProps) =>
-  isSearchSDKEnabled ? (
+const PersonalizedPicksWrapper = (props: PersonalizedPicksWrapperProps) => {
+  const { sitecoreContext } = useSitecoreContext();
+  const isPageEditing = sitecoreContext.pageState === LayoutServicePageState.Edit;
+
+  return isSearchSDKEnabled && !isPageEditing ? (
     <PersonalizedPicks
       itemsToDisplay={props.params.Items ? Number(props.params.Items) : 3}
       sxaStyles={props.params.styles}
       rfkId="rfkid_pp"
     />
   ) : (
-    <div className="personalized-picks">
+    <div className={`personalized-picks ${props.params.styles}`}>
       <div className="container">
         <div>
           <a className="item" href="#">
@@ -56,5 +60,6 @@ const PersonalizedPicksWrapper = (props: PersonalizedPicksWrapperProps) =>
       </div>
     </div>
   );
+};
 
 export default PersonalizedPicksWrapper;
