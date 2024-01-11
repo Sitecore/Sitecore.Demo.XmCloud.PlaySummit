@@ -36,7 +36,7 @@ services:
         # DEMO TEAM CUSTOMIZATION - demo subfolder, custom tag
         PARENT_IMAGE: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-nodejs:${VERSION:-latest}-${DEMO_VERSION}
     # DEMO TEAM CUSTOMIZATION - More RAM
-    mem_limit: 2GB
+    mem_limit: 4GB
     # DEMO TEAM CUSTOMIZATION - Add port mapping to allow opening a ngrok tunnel to the rendering host
     ports:
       - "8099:3000"
