@@ -15,7 +15,7 @@
   @apply xl:flex-row;
 }
 
-.preview-search-clear {
+.search-input-clear {
   @apply absolute flex gap-2 top-2 right-0 z-10 mr-4 cursor-pointer items-center;
 
   &-text {
@@ -24,5 +24,11 @@
 
   &-icon {
     @apply text-gray;
+  }
+}
+
+.search-results-header-search {
+  .search-input-clear {
+    @apply top-[0.15rem];
   }
 }
