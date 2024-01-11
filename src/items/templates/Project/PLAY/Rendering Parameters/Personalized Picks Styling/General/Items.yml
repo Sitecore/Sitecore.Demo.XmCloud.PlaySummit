@@ -13,12 +13,12 @@ SharedFields:
 Languages:
 - Language: en
   Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Items to display
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Number of items to display
   Versions:
   - Version: 1
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b2a5d3e4-b2ca-4eff-bd6e-e4ceac0b80c7"
+      Value: "76618774-9a09-4d5f-8ca9-7272bbe0608b"
