@@ -38,7 +38,6 @@ const PreviewSearchInput = ({
         onChange={(e) => onKeyphraseChangeDebounced(e.target.value, onChange)}
         autoComplete="off"
         className={className}
-        autoFocus
       />
       {value && (
         <div className="search-input-clear" onClick={onClear}>
