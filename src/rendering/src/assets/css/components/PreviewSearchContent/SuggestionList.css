@@ -7,7 +7,7 @@
     }
 
     .suggestion-container {
-      @apply flex flex-col;
+      @apply flex flex-col gap-3;
 
       .suggestion-item {
         @apply text-blue bg-white rounded-lg p-2;

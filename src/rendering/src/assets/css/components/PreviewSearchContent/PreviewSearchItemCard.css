@@ -2,7 +2,7 @@
   @apply w-full flex;
 
   .item-image {
-    @apply w-36 object-contain;
+    @apply w-32 object-contain;
   }
 
   .item-details {
