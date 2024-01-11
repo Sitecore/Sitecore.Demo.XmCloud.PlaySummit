@@ -40,14 +40,9 @@ const PreviewSearchInput = ({
         className={className}
         autoFocus
       />
-      <div className="preview-search-clear">
+      <div className="preview-search-clear" onClick={onClear}>
         <span className="preview-search-clear-text">Clear</span>
-        <FontAwesomeIcon
-          className="preview-search-clear-icon"
-          icon={faTimes}
-          onClick={onClear}
-          size="lg"
-        />
+        <FontAwesomeIcon className="preview-search-clear-icon" icon={faTimes} size="lg" />
       </div>
     </>
   );
