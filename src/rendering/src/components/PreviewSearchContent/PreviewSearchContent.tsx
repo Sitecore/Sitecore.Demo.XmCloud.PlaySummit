@@ -1,10 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
-import PreviewSearchContainer from './PreviewSearchContainer';
-import ClickOutside from '../ShopCommon/ClickOutside';
-import PreviewSearchInput from './PreviewSearchInput';
-import PreviewSearchIcon from './PreviewSearchIcon';
-import { SEARCH_PAGE } from '../../helpers/ContentSearchHelper';
 import {
   PreviewSearchInitialState,
   PreviewSearchWidgetQuery,
@@ -13,9 +8,12 @@ import {
   widget,
 } from '@sitecore-search/react';
 
-type ContentItemModel = {
-  type: string;
-};
+import PreviewSearchContainer from './PreviewSearchContainer';
+import ClickOutside from '../ShopCommon/ClickOutside';
+import PreviewSearchInput from './PreviewSearchInput';
+import PreviewSearchIcon from './PreviewSearchIcon';
+import { SEARCH_PAGE } from '../../helpers/ContentSearchHelper';
+import { PreviewSearchItemCardProps } from './PreviewSearchItemCard';
 
 type InitialState = PreviewSearchInitialState<'itemsPerPage' | 'suggestionsList'>;
 
@@ -24,7 +22,7 @@ type PreviewSearchContentProps = {
 };
 
 const PreviewSearchContent = ({
-  defaultItemsPerPage = 32,
+  defaultItemsPerPage = 4,
 }: PreviewSearchContentProps): JSX.Element => {
   const router = useRouter();
   const { q } = router.query;
@@ -36,12 +34,12 @@ const PreviewSearchContent = ({
       isFetching,
       isLoading,
       data: {
-        content: allData,
+        content: items,
         suggestion: { content_name_context_aware: suggestions = [] } = {},
       } = {},
     },
     state: { keyphrase = (q as string) || '' },
-  } = usePreviewSearch<ContentItemModel, InitialState>({
+  } = usePreviewSearch<PreviewSearchItemCardProps, InitialState>({
     query: (query: PreviewSearchWidgetQuery) =>
       query
         .getRequest()
@@ -133,14 +131,7 @@ const PreviewSearchContent = ({
   return (
     <div ref={containerRef}>
       {isPreviewSearchOpen && (
-        <PreviewSearchContainer
-          sessions={allData?.filter((item) => item.type === 'session')?.slice(0, 4)}
-          speakers={allData?.filter((item) => item.type === 'speaker')?.slice(0, 4)}
-          news={allData?.filter((item) => item.type === 'news')?.slice(0, 4)}
-          suggestions={suggestions}
-          keyphrase={keyphrase}
-          widgetRef={widgetRef}
-        />
+        <PreviewSearchContainer suggestions={suggestions} items={items} widgetRef={widgetRef} />
       )}
       <PreviewSearchInput
         placeholder="Search content"
