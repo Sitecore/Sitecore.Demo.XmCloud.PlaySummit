@@ -16,7 +16,7 @@ config.autoAddCss = false;
 import 'assets/css/main.css'; // DEMO TEAM CUSTOMIZATION - Different CSS file name.
 
 // DEMO TEAM CUSTOMIZATION - Search SDK integration
-import { WidgetsProvider } from '@sitecore-search/react';
+import { PageController, WidgetsProvider } from '@sitecore-search/react';
 import { isSearchSDKEnabled, config as searchSDKConfig } from '../services/SearchSDKService';
 // END CUSTOMIZATION
 
@@ -53,6 +53,15 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
     // Register a key press handler to close CDP sessions and forget CDP guests
     KeypressHandler();
   });
+  // END CUSTOMIZATION
+
+  // DEMO TEAM CUSTOMIZATION - Search SDK integration
+  useEffect(() => {
+    if (isSearchSDKEnabled) {
+      PageController.getContext().setLocaleLanguage('en');
+      PageController.getContext().setLocaleCountry('us');
+    }
+  }, []);
   // END CUSTOMIZATION
 
   // DEMO TEAM CUSTOMIZATION - Per page layouts
