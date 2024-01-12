@@ -1,0 +1,17 @@
+﻿---
+ID: "b30450e2-7c84-4467-8c94-6821e1a0ae36"
+Parent: "d1d2140c-755e-43f6-8b45-9742188684fa"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Available Renderings/Personalized Picks
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: "{B00B0079-2FAF-4BFA-AF3C-4E98EF164C9F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "65ed84d8-7cb9-4b7f-a265-ebdc27a4065e"

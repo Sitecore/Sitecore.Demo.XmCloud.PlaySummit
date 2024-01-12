@@ -15,6 +15,9 @@ import { sitecorePagePropsFactory } from 'lib/page-props-factory';
 import { componentBuilder } from 'temp/componentBuilder';
 import { sitemapFetcher } from 'lib/sitemap-fetcher';
 import { initialize as initializeSend } from '../services/SendService'; // DEMO TEAM CUSTOMIZATION - Sitecore Send integration
+import { usePathname } from 'next/navigation';
+import { PageController, trackEntityPageViewEvent } from '@sitecore-search/react';
+import { isSearchSDKEnabled } from 'src/services/SearchSDKService';
 
 const SitecorePage = ({
   notFound,
@@ -31,6 +34,25 @@ const SitecorePage = ({
   useEffect(() => {
     initializeSend(layoutData.sitecore.context.pageState);
   }, [layoutData.sitecore.context.pageState]);
+  // END CUSTOMIZATION
+
+  // DEMO TEAM CUSTOMIZATION - Search SDK integration
+  useEffect(() => {
+    if (isSearchSDKEnabled) {
+      PageController.getContext().setLocaleLanguage('en');
+      PageController.getContext().setLocaleCountry('us');
+    }
+  }, []);
+
+  const pageUri = usePathname();
+  useEffect(() => {
+    if (isSearchSDKEnabled) {
+      PageController.getContext().setPageUri(pageUri);
+      trackEntityPageViewEvent('content', {
+        items: [{ id: layoutData.sitecore.route.itemId }],
+      });
+    }
+  }, [pageUri, layoutData.sitecore.route.itemId]);
   // END CUSTOMIZATION
 
   if (notFound || !layoutData.sitecore.route) {

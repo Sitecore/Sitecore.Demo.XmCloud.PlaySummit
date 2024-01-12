@@ -74,6 +74,7 @@
 @import './components/ContentSearch/SearchResultsListing.css';
 @import './components/ContentSearch/SearchResultsTab.css';
 @import './components/ContentSearch/SearchResultsWidget.css';
+@import './components/ContentSearch/PersonalizedPicks.css';
 
 /* Forms */
 @import './components/Forms/AttendeeForm.css';
