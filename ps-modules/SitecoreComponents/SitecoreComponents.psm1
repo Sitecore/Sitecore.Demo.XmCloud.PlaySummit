@@ -115,12 +115,15 @@ function Restore-Components {
                     $versionsUrl = "$endpoint/libraries/$libraryId/collections/$($collection.id)/components/$($component.id)/versions"
                     $result = Invoke-WebRequest -Uri $versionsUrl -Method Post -Body ($version | ConvertTo-Json -depth 100) -Headers $headers -ContentType "application/json"
                 }
+
+                Write-Host "  (Restored) Component: " $component.Name
+
             }
             catch {
+                Write-Host "  (Failed to restore) Component: " $component.Name
+
                 $_.Exception.Response.StatusCode.Value__
             }
-
-            Write-Host "  (Restored) Component: " $component.Name
         }
     }
 
@@ -139,6 +142,7 @@ function Restore-Components {
         }
     }
     catch {
+        Write-Host "(Failed to restore) Styles"
         $_.Exception.Response.StatusCode.Value__
     }
 
@@ -151,6 +155,7 @@ function Restore-Components {
         Write-Host "Datasource: " $datasource.Name
 
         try { $result = Invoke-WebRequest -Uri $datasourcesUrl -Method Post -Body ($datasource | ConvertTo-Json -depth 100) -Headers $headers -ContentType "application/json" } catch {
+            Write-Host "(Failed to restore) Datasources"
             $_.Exception.Response.StatusCode.Value__
         }
     }
