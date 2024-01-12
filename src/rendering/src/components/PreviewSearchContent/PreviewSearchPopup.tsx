@@ -20,7 +20,7 @@ const PreviewSearchPopup = ({
     <div className="preview-search-content-container" ref={widgetRef}>
       <div className="preview-search-content">
         <div className="preview-search-content-popup">
-          {suggestions?.length > 0 && <SuggestionList title="Did you mean?" list={suggestions} />}
+          <SuggestionList title="Did you mean?" list={suggestions} />
           {items?.length > 0 && <PreviewSearchItemList items={items} />}
         </div>
       </div>
