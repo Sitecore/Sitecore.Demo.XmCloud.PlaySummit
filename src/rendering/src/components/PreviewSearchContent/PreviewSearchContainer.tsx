@@ -8,6 +8,7 @@ type PreviewSearchContainerProps = {
   suggestions: SearchResponseSuggestion[];
   items: PreviewSearchItemCardProps[];
   widgetRef: (node: Element) => void;
+  keyphrase: string;
 };
 
 const PreviewSearchContainer = ({
@@ -15,6 +16,7 @@ const PreviewSearchContainer = ({
   suggestions,
   items,
   widgetRef,
+  keyphrase,
 }: PreviewSearchContainerProps): JSX.Element => {
   return (
     <PreviewSearchPopup
@@ -22,6 +24,7 @@ const PreviewSearchContainer = ({
       items={items}
       close={close}
       widgetRef={widgetRef}
+      keyphrase={keyphrase}
     />
   );
 };

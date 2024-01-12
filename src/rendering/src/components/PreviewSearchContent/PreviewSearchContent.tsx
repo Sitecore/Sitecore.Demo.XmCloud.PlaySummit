@@ -135,7 +135,12 @@ const PreviewSearchContent = ({
   return (
     <div ref={containerRef}>
       {isPreviewSearchOpen && !isLoading && !isFetching && (
-        <PreviewSearchContainer suggestions={suggestions} items={items} widgetRef={widgetRef} />
+        <PreviewSearchContainer
+          suggestions={suggestions}
+          items={items}
+          widgetRef={widgetRef}
+          keyphrase={keyphrase}
+        />
       )}
       <PreviewSearchInput
         placeholder="Search content"

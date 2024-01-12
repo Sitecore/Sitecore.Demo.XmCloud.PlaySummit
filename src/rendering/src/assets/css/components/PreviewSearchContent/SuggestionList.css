@@ -1,6 +1,6 @@
 .preview-search-content-container {
   .suggestion-list {
-    @apply flex flex-col gap-3 p-8 bg-pink-darkest max-w-[14rem];
+    @apply flex flex-col gap-3 p-8 bg-pink-darkest w-[14rem];
 
     .suggestion-list-title {
       @apply font-bold whitespace-nowrap text-white;
