@@ -1,6 +1,6 @@
 .search-input-container {
   @apply block relative mx-5 my-3 order-first h-10;
-  @apply xl:ml-4 xl:my-0 xl:mr-0 xl:order-none xl:h-auto xl:w-[16rem];
+  @apply xl:ml-4 xl:my-0 xl:mr-0 xl:order-none xl:h-auto;
 
   &:empty {
     @apply hidden;

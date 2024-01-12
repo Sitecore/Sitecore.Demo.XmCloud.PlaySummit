@@ -140,7 +140,7 @@ const PreviewSearchContent = ({
       <PreviewSearchInput
         placeholder="Search content"
         onEnter={onRedirect}
-        className="search-input-play"
+        className={`search-input-play ${!isPreviewSearchOpen ? 'search-input-play-hidden' : ''}`}
         onFocus={onInputFocus}
         onEscapePressed={onEscapePressed}
         onChange={handleKeyphraseChange}
