@@ -75,7 +75,7 @@ const QuestionsComponent = ({
 
   return (
     <>
-      {answer && question && (
+      {answer && question && keyphrase === mockData.question && (
         <div ref={widgetRef} className="questions">
           <div className="primary-question">
             <h4 className="primary-question-title">{question}</h4>

@@ -1,15 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { useContext } from 'react';
-import { PreviewSearchContext } from './PreviewSearchContextProvider';
 
 export type PreviewSearchIconProps = {
   onClick?: (keyphrase: string) => void;
   className?: string;
+  keyphrase: string;
 };
 
-const PreviewSearchIcon = ({ onClick, className }: PreviewSearchIconProps): JSX.Element => {
-  const { keyphrase } = useContext(PreviewSearchContext);
+const PreviewSearchIcon = ({
+  onClick,
+  className,
+  keyphrase,
+}: PreviewSearchIconProps): JSX.Element => {
   return (
     <FontAwesomeIcon
       className={`preview-search-content-icon ${className || ''}`}

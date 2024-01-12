@@ -37,13 +37,6 @@ const SitecorePage = ({
   // END CUSTOMIZATION
 
   // DEMO TEAM CUSTOMIZATION - Search SDK integration
-  useEffect(() => {
-    if (isSearchSDKEnabled) {
-      PageController.getContext().setLocaleLanguage('en');
-      PageController.getContext().setLocaleCountry('us');
-    }
-  }, []);
-
   const pageUri = usePathname();
   useEffect(() => {
     if (isSearchSDKEnabled) {

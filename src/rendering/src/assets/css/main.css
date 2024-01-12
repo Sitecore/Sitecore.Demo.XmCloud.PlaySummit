@@ -140,6 +140,8 @@
 @import './components/PreviewSearchContent/PreviewSearchContent.css';
 @import './components/PreviewSearchContent/PreviewSearchIcon.css';
 @import './components/PreviewSearchContent/PreviewSearchInput.css';
+@import './components/PreviewSearchContent/PreviewSearchItemCard.css';
+@import './components/PreviewSearchContent/PreviewSearchItemList.css';
 @import './components/PreviewSearchContent/SessionCard.css';
 @import './components/PreviewSearchContent/SpeakerCard.css';
 @import './components/PreviewSearchContent/SuggestionList.css';
