@@ -2,7 +2,7 @@
   @apply w-full flex;
 
   .item-image {
-    @apply w-32 object-contain;
+    @apply w-24 object-contain;
   }
 
   .item-details {
@@ -17,7 +17,7 @@
     }
 
     .item-name {
-      @apply text-black text-xl font-bold;
+      @apply text-black text-xl font-bold line-clamp-1;
     }
   }
 }

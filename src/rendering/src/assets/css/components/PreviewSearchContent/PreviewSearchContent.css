@@ -7,7 +7,7 @@
   }
 
   .preview-search-content-container {
-    @apply absolute right-0 top-[3.6rem] w-[56rem];
+    @apply absolute right-0 top-[3.6rem] w-[42rem];
 
     .icon {
       @apply mr-2;
