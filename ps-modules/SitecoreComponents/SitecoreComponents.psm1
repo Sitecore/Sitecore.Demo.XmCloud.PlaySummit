@@ -120,7 +120,7 @@ function Restore-Components {
 
             }
             catch {
-                Write-Host "  (Failed to restore) Component: " $component.Name
+                Write-Host "  (Failed to restore) Component: " $component.Name " Version: " $version.Name "(" $version.status "," $version.revision ")"
 
                 $_.Exception.Response.StatusCode.Value__
             }
