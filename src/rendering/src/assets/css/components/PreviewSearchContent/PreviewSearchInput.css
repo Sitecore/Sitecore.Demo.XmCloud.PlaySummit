@@ -12,7 +12,7 @@
 
   &:not(.search-input-play-hidden) {
     @apply w-full bg-white-light;
-    @apply xl:w-[46rem];
+    @apply xl:w-[42rem];
   }
 }
 
