@@ -1,14 +1,13 @@
-import { useCallback, useContext, useState, FC, useEffect } from 'react';
+import { useCallback, useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import SearchEntityTab from './SearchEntityTab';
 import SearchEntityTabContent from './SearchEntityTabContent';
-import { SearchContext } from './SearchProvider';
 
 export type Tab = {
   id: string;
   name: string;
   color?: string;
-  Component: FC;
+  Component: React.ElementType;
 };
 
 type SearchEntityTabsProps = {
@@ -16,10 +15,10 @@ type SearchEntityTabsProps = {
   theme?: string;
   selected: Tab['id'];
   tabs: Tab[];
+  totalItems: number;
 };
 
 const SearchEntityTabs = (props: SearchEntityTabsProps): JSX.Element => {
-  const { totals } = useContext(SearchContext);
   const { selected } = props;
   const router = useRouter();
   const themeClass = props.theme ? `entity-tabs-${props.theme}` : '';
@@ -56,15 +55,15 @@ const SearchEntityTabs = (props: SearchEntityTabsProps): JSX.Element => {
             key={id}
             id={id}
             active={activeTab === id}
-            name={`${name}${totals[id] >= 0 ? ` (${totals[id]})` : ''}`}
+            name={`${name} (${props.totalItems})`}
             color={color}
             onSelect={onSelectTab}
           />
         ))}
       </div>
-      {props.tabs.map(({ id, Component: TabContentComponent }) => (
+      {props.tabs.map(({ id, Component: TabEntityComponent }) => (
         <SearchEntityTabContent key={id} active={activeTab === id}>
-          <TabContentComponent />
+          <TabEntityComponent />
         </SearchEntityTabContent>
       ))}
     </div>

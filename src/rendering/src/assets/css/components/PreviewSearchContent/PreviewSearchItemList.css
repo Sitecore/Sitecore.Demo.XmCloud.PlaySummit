@@ -1,0 +1,3 @@
+.preview-search-item-list {
+  @apply flex flex-col gap-4 p-8 w-full;
+}

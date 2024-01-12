@@ -1,8 +1,6 @@
 import { faCheck, faChevronDown, faSlidersH, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useContext } from 'react';
 import { FacetValueClickedActionPayload } from '../../interfaces/contentSearch/FacetValueClickedActionPayload';
-import { SearchContext } from './SearchProvider';
 import { AccordionFacets } from '@sitecore-discover/ui';
 import { ContentSearchRequestFilter } from '../../services/ContentSearchService';
 
@@ -38,7 +36,8 @@ const getFacetLabel = ({ text }: FacetValue): string => {
 };
 
 const SearchFacets = (props: SearchFacetsProps): JSX.Element => {
-  const { filters } = useContext(SearchContext);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const filters: any[] = [];
   const filterIds = filters.map(({ facetId }) => facetId);
   const appliedFilters = props.filters.filter(({ facetId }) => !filterIds.includes(facetId));
   const facetsMap = Object.fromEntries(props.facets.map((facet) => [facet.name, facet]));
@@ -65,7 +64,9 @@ const SearchFacets = (props: SearchFacetsProps): JSX.Element => {
                     </span>
                     <button
                       className="search-facets-filters-list-item-button"
-                      onClick={() => props.onFilterClick({ facetId, facetValueId, checked: false })}
+                      onClick={() =>
+                        props.onFilterClick({ facetId, facetValueId, checked: false, type: 'text' })
+                      }
                     >
                       <FontAwesomeIcon icon={faTimes} />
                     </button>

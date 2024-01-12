@@ -1,7 +1,6 @@
 import { Meta, StoryFn } from '@storybook/react';
 import React from 'react';
 
-import SearchProvider from '../../components/ContentSearch/SearchProvider';
 import SearchResults from '../../components/ContentSearch/SearchResults';
 import { filterOptionsProp, tabsProp } from '../mock-search-data';
 
@@ -11,9 +10,7 @@ export default {
 } as Meta<typeof SearchResults>;
 
 const Template: StoryFn<typeof SearchResults> = (args) => (
-  <SearchProvider keyphrase="test">
-    <SearchResults {...args}>My content</SearchResults>
-  </SearchProvider>
+  <SearchResults {...args}>My content</SearchResults>
 );
 
 export const Default = {
