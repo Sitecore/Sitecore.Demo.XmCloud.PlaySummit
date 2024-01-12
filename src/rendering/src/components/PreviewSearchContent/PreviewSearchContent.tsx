@@ -151,6 +151,7 @@ const PreviewSearchContent = ({
         onChange={handleKeyphraseChange}
         value={keyphrase}
         onClear={handleKeyphraseClear}
+        inputRef={inputRef}
       />
       <PreviewSearchIcon
         onClick={onSearchIconClick}
