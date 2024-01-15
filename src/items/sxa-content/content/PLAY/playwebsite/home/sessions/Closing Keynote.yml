@@ -32,10 +32,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+        <p>As the culminating event of the PLAY! Summit Conference, the Closing Keynote is a much-anticipated session that will leave attendees inspired and motivated. This final presentation will bring together the themes and ideas discussed throughout the conference, providing a comprehensive look at the current state of the fitness and sports industry. The keynote speaker, an eminent figure in the field, will share their insights and visions for the future, drawing on their wealth of experience and deep understanding of the industry.<br />
+        <br />
+        The Closing Keynote is more than a wrap-up; it is an opportunity to reflect on the learnings from the conference and look ahead to the future. The speaker will highlight significant trends and innovations, discussing their potential impact on fitness brands, sports professionals, and users. Attendees will leave with a clear sense of direction and actionable strategies to implement in their respective fields. The session promises to be a powerful and enlightening finale to an eventful conference, leaving participants energized and ready to take on new challenges.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{92BBBDC4-23AE-480D-964A-19E005E9EDAA}|{87223FA1-B672-4201-BE61-0011EE4A7A09}|{80C74986-8EEB-47E7-B9FF-CA95CB103F16}"
@@ -63,7 +62,7 @@ Languages:
       Value: "{C53A4814-4956-427E-A3C0-1DAEE197459C}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "27fab42c-9bd7-4d4b-8173-26edf6934948"
+      Value: "7dcb42d6-93a8-4cc5-b027-ab652c839ed9"
     - ID: "cb19a833-48b8-4ad4-a841-09769bbef5c6"
       Hint: Sponsors
       Value: "{5319CA3C-CD21-4D68-A68A-1EAF4D34F63D}"

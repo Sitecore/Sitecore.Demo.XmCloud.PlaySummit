@@ -29,10 +29,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+        <p>The session titled "Healthy Living: Reality vs. Theory" is designed to debunk common myths and misconceptions about health and wellness. It aims to bridge the gap between theoretical knowledge and practical application, guiding attendees on how to incorporate healthy habits into their daily lives. The discussion will be led by industry experts who will provide evidence-based insights on various aspects of healthy living, including balanced nutrition, regular physical activity, mental health, and preventive healthcare. Participants will gain a deeper understanding of how to translate health theories into sustainable lifestyle changes.<br />
+        <br />
+        In the latter part of the session, attendees will have the opportunity to engage in an interactive Q&amp;A with the experts. This will allow them to raise any queries or challenges they face when trying to lead a healthier lifestyle. The experts will provide practical solutions and strategies, emphasizing the importance of personalizing health practices to suit individual needs and circumstances. This session will empower attendees to navigate their health journey more effectively, armed with practical knowledge and realistic strategies for maintaining a healthy lifestyle in the long term.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{465AEE87-D244-403F-B913-A979FE00F7A4}|{B514A206-CC4D-4815-989A-5B4DA2641D7F}"
@@ -60,7 +59,7 @@ Languages:
       Value: "{42254A3E-44A5-4572-8C62-F918F36B034B}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d9e0e9d1-0033-4dc9-bb2a-8c6d9b60c426"
+      Value: "2b30c6af-e358-4bc0-b890-79d0fa25e00b"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "Healthy living: reality vs. theory"

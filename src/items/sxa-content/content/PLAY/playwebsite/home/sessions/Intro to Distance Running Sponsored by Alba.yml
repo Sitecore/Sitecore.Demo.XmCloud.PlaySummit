@@ -32,10 +32,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+        <p>The "Intro to Distance Running" session, presented by Alba, is an invaluable resource for those interested in delving into the world of long-distance running. Experienced runners and professional coaches will provide an in-depth overview of distance running, outlining the necessary preparation, training techniques, and endurance strategies. Attendees will learn how to properly pace themselves, select suitable running gear, and build up their stamina gradually to prevent injuries. The session aims to ensure that participants are well-equipped to start their journey in distance running, regardless of their current fitness level.<br />
+        <br />
+        In the latter part of the session, the focus will shift to the benefits of distance running and how to maintain motivation over long periods. The speakers will discuss the profound physical and mental health benefits of distance running, including enhanced cardiovascular health, improved mental resilience, and weight management. Moreover, they will share tips on setting realistic goals and using Alba's cutting-edge fitness technology to track progress and keep motivation high. By the end of this session, attendees will have gained a comprehensive understanding of distance running, backed by expert advice and innovative fitness solutions.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{4C23E8E4-BA94-4840-8888-D769F0F57835}"
@@ -63,7 +62,7 @@ Languages:
       Value: "{4D920373-9BC1-44A5-A586-0AF23C5711A1}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a08b7a13-e0e0-43e5-8222-9b162c21297b"
+      Value: "b365ce5a-5149-4706-a4b8-568eed026f71"
     - ID: "cb19a833-48b8-4ad4-a841-09769bbef5c6"
       Hint: Sponsors
       Value: "{5319CA3C-CD21-4D68-A68A-1EAF4D34F63D}"
