@@ -37,7 +37,7 @@ Languages:
       Value: "{5EE51C40-8986-44C0-B44A-D030D4482A43}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "989e7437-0e98-46c2-a586-15baacdd241f"
+      Value: "6b9dee46-0ba6-4157-a9b3-30410293442b"
     - ID: "94f8d6fc-b9c3-41dc-8cdf-5e967d108a40"
       Hint: Company
       Value: Alba
@@ -47,10 +47,15 @@ Languages:
     - ID: "d0b11041-4e9d-4066-b833-2fb20c0cc47d"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+        <p>Ed Jones is an influential figure in the world of sports analytics and sports technology. With a career spanning more than 20 years, Ed has made significant contributions to the integration of data-driven strategies and advanced technology in sports.<br />
+        <br />
+        Ed holds a Bachelor's degree in Statistics and a Master's degree in Data Science. He began his career as a data analyst for a major sports league, where he utilized statistical analysis to optimize team performance. His innovative use of analytics in sports strategy led him to establish his own sports analytics firm.<br />
+        <br />
+        As the CEO of his firm, Ed provides comprehensive data analysis and strategic insights to sports organizations worldwide. His firm's work has helped numerous teams improve their performances, streamline their operations, and increase fan engagement.<br />
+        <br />
+        Ed is a recognized authority in the application of machine learning and artificial intelligence in sports. His research in this area has been published in several prestigious journals, and he has been invited to speak at numerous international conferences.<br />
+        <br />
+        At the PLAY! Summit Conference, Ed will share his insights into the future of sports analytics, discussing the latest trends, challenges, and opportunities in this rapidly evolving field. With his wealth of experience and forward-thinking approach, Ed's presentation is sure to be a highlight of the conference.</p>
     - ID: "d410c57e-fdc1-43f4-b028-8b313217b6f9"
       Hint: JobTitle
       Value: Director of Sales

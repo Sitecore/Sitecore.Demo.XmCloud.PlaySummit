@@ -40,7 +40,7 @@ Languages:
       Value: "{01E09652-ABD7-4BB0-AD96-E609966330BD}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ec42c0c6-3472-4950-b8f1-a46095b78b59"
+      Value: "349123d5-4927-4148-a10b-b4839f47ceb8"
     - ID: "94f8d6fc-b9c3-41dc-8cdf-5e967d108a40"
       Hint: Company
       Value: Solstice
@@ -50,10 +50,13 @@ Languages:
     - ID: "d0b11041-4e9d-4066-b833-2fb20c0cc47d"
       Hint: Description
       Value: |
-        <p>Alex Mena is one of the best in business.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+        <p>Alex Mena is a globally recognized fitness expert and motivational speaker, best known for his innovative approach to health and wellness. With over two decades of experience in the sports and fitness industry, Alex has established himself as a leading authority, advising both individual clients and multinational corporations.<br />
+        <br />
+        He started his career as a personal trainer and quickly moved up the ranks to become the director of fitness at one of the top fitness chains in the United States. His commitment to improving the health and wellbeing of others led him to develop unique fitness programs that have been implemented in gyms and wellness centers worldwide.<br />
+        <br />
+        Alex holds a master's degree in Exercise Science and Health Promotion, and is a certified Personal Trainer from the American Council on Exercise (ACE). He is also a certified Nutrition Specialist, and a frequent contributor to various health and fitness publications.<br />
+        <br />
+        With his infectious enthusiasm and passion for fitness, Alex has inspired thousands of people to transform their lives through his speeches, workshops, and personal coaching. At the PLAY! Summit Conference, he will share his insights on the latest trends in fitness and wellness, and provide practical tips on how to stay motivated and achieve your health goals.</p>
     - ID: "d410c57e-fdc1-43f4-b028-8b313217b6f9"
       Hint: JobTitle
       Value: International Sales Director
