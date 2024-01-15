@@ -50,12 +50,10 @@ Languages:
       Value: "{F31705C9-7A5A-42DB-8651-B0665EEEC77B}|{7A6E3432-E82B-4F09-A2AE-5D13646E0BD6}|{57011604-34AF-40B5-8892-5A194F76EEBE}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1a9f6d0d-0259-4d3b-bbf4-bed43ef0d177"
+      Value: "8c959f66-58bd-4aba-885b-8b051470517f"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>Sydney Cummings is a renowned fitness trainer and entrepreneur. She is the founder of Royal Change, a digital fitness platform that provides a variety of high-intensity workout programs. Known for her dynamic approach to fitness, Sydney offers a wide range of workout styles including strength training, HIIT, cardio, and more. Her mission is to help individuals achieve their fitness goals through effective and engaging workouts that can be done anywhere. At the PLAY! Summit Conference, Sydney Cummings will be sharing her expertise on fitness training and discussing her innovative approach to digital fitness.</p>"
     - ID: "d57b5629-9801-4418-9088-8a8dfa8fc84c"
       Hint: Name
       Value: Sydney Cummings
