@@ -92,41 +92,6 @@ function Restore-Components {
         "x-api-key" = $apiKey
     }
 
-    # Components
-    $collections = Get-Content "$rootFolder\collections.json" | ConvertFrom-Json
-    foreach ($collection in $collections) {
-        Write-Host "Collection: " $collection.Name
-        $result = Invoke-WebRequest -Uri "$endpoint/libraries/$libraryId/collections" -Method Post -Body ($collection | ConvertTo-Json -depth 100) -Headers $headers -ContentType "application/json"
-
-        foreach ($component in $collection.components) {
-            Write-Host "  Component: " $component.Name
-
-            try { 
-
-                $componentUrl = "$endpoint/libraries/$libraryId/collections/$($collection.id)/components"
-                $result = Invoke-WebRequest -Uri $componentUrl -Method Post -Body ($component | ConvertTo-Json -depth 100) -Headers $headers -ContentType "application/json"
-
-                $sortOrder = "draft", "saved", "staged", "published"
-                $versions = Get-Content "$rootFolder\components\$($component.id).json" | ConvertFrom-Json | Sort-Object { $sortOrder.IndexOf($_.status) }
-
-                foreach ($version in $versions) {
-                    Write-Host "    Version: " $version.Name "(" $version.status "," $version.revision ")"
-
-                    $versionsUrl = "$endpoint/libraries/$libraryId/collections/$($collection.id)/components/$($component.id)/versions"
-                    $result = Invoke-WebRequest -Uri $versionsUrl -Method Post -Body ($version | ConvertTo-Json -depth 100) -Headers $headers -ContentType "application/json"
-                }
-
-                Write-Host "  (Restored) Component: " $component.Name
-
-            }
-            catch {
-                Write-Host "  (Failed to restore) Component: " $component.Name " Version: " $version.Name "(" $version.status "," $version.revision ")"
-
-                $_.Exception.Response.StatusCode.Value__
-            }
-        }
-    }
-
     # Styles
     Write-Host "Restoring Styles"
     $stylesUrl = "$endpoint/libraries/$libraryId/stylesheets"
@@ -169,7 +134,49 @@ function Restore-Components {
         }
     }
 
-    Invoke-WebRequest -Uri "$endpoint/libraries/$libraryId" -Method Put -Body ($settings | ConvertTo-Json -depth 100) -Headers $headers -ContentType "application/json"
+    try {
+        $result = Invoke-WebRequest -Uri "$endpoint/libraries/$libraryId" -Method Put -Body ($settings | ConvertTo-Json -depth 100) -Headers $headers -ContentType "application/json"
+    }
+    catch {
+        Write-Host "(Failed to restore) CH ONE API Key"
+        $_.Exception.Response.StatusCode.Value__
+    }
+
+    # Components
+    $collections = Get-Content "$rootFolder\collections.json" | ConvertFrom-Json
+    foreach ($collection in $collections) {
+        Write-Host "Collection: " $collection.Name
+        $result = Invoke-WebRequest -Uri "$endpoint/libraries/$libraryId/collections" -Method Post -Body ($collection | ConvertTo-Json -depth 100) -Headers $headers -ContentType "application/json"
+
+        foreach ($component in $collection.components) {
+            Write-Host "  Component: " $component.Name
+
+            try {
+
+                $componentUrl = "$endpoint/libraries/$libraryId/collections/$($collection.id)/components"
+                $result = Invoke-WebRequest -Uri $componentUrl -Method Post -Body ($component | ConvertTo-Json -depth 100) -Headers $headers -ContentType "application/json"
+
+                $sortOrder = "draft", "saved", "staged", "published"
+                $versions = Get-Content "$rootFolder\components\$($component.id).json" | ConvertFrom-Json | Sort-Object { $sortOrder.IndexOf($_.status) }
+
+                foreach ($version in $versions) {
+                    Write-Host "    Version: " $version.Name "(" $version.status "," $version.revision ")"
+
+                    $versionsUrl = "$endpoint/libraries/$libraryId/collections/$($collection.id)/components/$($component.id)/versions"
+                    $result = Invoke-WebRequest -Uri $versionsUrl -Method Post -Body ($version | ConvertTo-Json -depth 100) -Headers $headers -ContentType "application/json"
+                }
+
+                Write-Host "  (Restored) Component: " $component.Name
+
+            }
+            catch {
+                Write-Host "  (Failed to restore) Component: " $component.Name " Version: " $version.Name "(" $version.status "," $version.revision ")"
+
+                $_.Exception.Response.StatusCode.Value__
+            }
+        }
+    }
+
 
     Write-Host "Restore-Components Complete"
 }
