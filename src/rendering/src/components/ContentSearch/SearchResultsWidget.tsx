@@ -113,6 +113,16 @@ const SearchResults = ({
     [q, router, onKeyphraseChange]
   );
 
+  const handleKeyphraseClear = useCallback(() => {
+    router.push(`${SEARCH_PAGE}?q=`);
+    onKeyphraseChange({ keyphrase: '' });
+
+    const searchInput = document.querySelector(
+      'input.search-results-header-search-input'
+    ) as HTMLInputElement;
+    searchInput.value = '';
+  }, [onKeyphraseChange, router]);
+
   useEffect(() => onKeyphraseChange({ keyphrase: q }), [onKeyphraseChange, q]);
 
   if (!isSearchSDKEnabled) {
@@ -127,7 +137,11 @@ const SearchResults = ({
   return (
     <section className="search-results-widget" ref={widgetRef}>
       <div>
-        <SearchResultsLayout keyphrase={q} onKeyphraseChange={handleKeyphraseChange}>
+        <SearchResultsLayout
+          keyphrase={q}
+          onKeyphraseChange={handleKeyphraseChange}
+          onKeyphraseClear={handleKeyphraseClear}
+        >
           {!items.length ? (
             <p className="search-results-widget-no-results">No results found</p>
           ) : (

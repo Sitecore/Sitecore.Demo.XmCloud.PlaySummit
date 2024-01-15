@@ -6,12 +6,14 @@ import Questions from './Questions';
 type SearchResultsLayoutProps = PropsWithChildren & {
   keyphrase: string;
   onKeyphraseChange: (value: string) => void;
+  onKeyphraseClear: () => void;
 };
 
 const SearchResultsLayout = ({
   children,
   keyphrase,
   onKeyphraseChange,
+  onKeyphraseClear,
 }: SearchResultsLayoutProps): JSX.Element => {
   return (
     <>
@@ -29,6 +31,7 @@ const SearchResultsLayout = ({
                 className="search-results-header-search-input"
                 value={keyphrase}
                 onChange={onKeyphraseChange}
+                onClear={onKeyphraseClear}
               />
               <PreviewSearchIcon
                 onClick={onKeyphraseChange}
