@@ -1,0 +1,13 @@
+﻿---
+ID: "43a01973-f770-452a-b973-5f065519295a"
+Parent: "da39332e-5ca7-4254-961c-432123411fd8"
+Template: "da39332e-5ca7-4254-961c-432123411fd8"
+Path: /sitecore/templates/Project/PLAY/Rendering Parameters/Personalized Picks Styling/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "adeba22c-d863-42b9-87a5-b095323a2b1a"

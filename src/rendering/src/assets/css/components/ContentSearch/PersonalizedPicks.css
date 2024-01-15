@@ -1,8 +1,8 @@
 .personalized-picks {
-  @apply bg-blue-lightest w-full py-8 px-12;
+  @apply w-full py-6 px-12;
 
   .container {
-    @apply flex gap-6;
+    @apply gap-8 grid grid-cols-3 justify-between;
 
     > div {
       @apply flex-1;
@@ -20,15 +20,15 @@
       @apply flex flex-col h-full;
 
       &-image {
-        @apply mb-3 bg-white h-3/4;
+        @apply mb-3 bg-white h-40 object-cover;
       }
 
       &-type {
-        @apply bg-white text-blue-darkest capitalize px-2 max-w-fit;
+        @apply bg-gray-light text-blue-darkest capitalize px-2 max-w-fit;
       }
 
       &-name {
-        @apply font-bold text-2xl line-clamp-1;
+        @apply font-bold text-xl;
       }
     }
   }

@@ -299,6 +299,16 @@ const SearchResultsContainer = ({
     [q, router, onKeyphraseChange]
   );
 
+  const handleKeyphraseClear = useCallback(() => {
+    router.push(`${SEARCH_PAGE}?q=`);
+    onKeyphraseChange({ keyphrase: '' });
+
+    const searchInput = document.querySelector(
+      'input.search-results-header-search-input'
+    ) as HTMLInputElement;
+    searchInput.value = '';
+  }, [onKeyphraseChange, router]);
+
   useEffect(() => onKeyphraseChange({ keyphrase: q }), [onKeyphraseChange, q]);
 
   if (!isSearchSDKEnabled) {
@@ -324,6 +334,7 @@ const SearchResultsContainer = ({
             onFilterClick({ facetId: id, facetValueId: value, type: 'text' })
           }
           onKeyphraseChange={handleKeyphraseChange}
+          onKeyphraseClear={handleKeyphraseClear}
         />
       </div>
     </section>

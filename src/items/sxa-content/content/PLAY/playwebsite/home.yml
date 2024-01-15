@@ -114,9 +114,9 @@ SharedFields:
           uid="{9C37536D-E2AA-5BF2-8103-FA15D43F5121}"
           p:after="*[1=2]"
           s:rname="ProductCategoriesGrid"
-          s:ds="{B480E5FA-E4D0-4C4A-B42D-033E697680ED}"
-          s:id="{9B5E1E18-FD8D-5E80-8028-861D007DCA15}"
-          s:par=""
+          s:ds=""
+          s:id="{B00B0079-2FAF-4BFA-AF3C-4E98EF164C9F}"
+          s:par="Items=6&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1/jss-section-content-{47F9A467-6F47-5D35-9F6F-70D4FA338EC6}-0"
           s:ccb="Clear on publish" />
       </d>
@@ -141,7 +141,7 @@ Languages:
       Value: home
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e517bd57-e4a7-47c3-a34a-535106aa2a72"
+      Value: "1975fbbb-e0d8-49dd-a055-d5176e039a69"
 - Language: "fr-CA"
   Versions:
   - Version: 1

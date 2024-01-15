@@ -1,53 +1,35 @@
-import PreviewSearchNewsList from './PreviewSearchNewsList';
-import PreviewSearchSessionList from './PreviewSearchSessionList';
-import PreviewSearchSpeakerList from './PreviewSearchSpeakerList';
-import SuggestionList from './SuggestionList';
 import { SearchResponseSuggestion } from '@sitecore-search/react';
-import { NewsCardProps } from './NewsCard';
-import { SpeakerCardProps } from './SpeakerCard';
-import { SessionCardProps } from './SessionCard';
+
+import SuggestionList, { Suggestion } from './SuggestionList';
+import PreviewSearchItemList from './PreviewSearchItemList';
+import { PreviewSearchItemCardProps } from './PreviewSearchItemCard';
 
 type PreviewSearchPopupProps = {
-  resultsUrl: string;
-  sessions: unknown[];
-  speakers: unknown[];
-  news: unknown[];
   suggestions: SearchResponseSuggestion[];
+  items: PreviewSearchItemCardProps[];
   close?: () => void;
   widgetRef: (node: Element) => void;
+  keyphrase: string;
 };
 
 const PreviewSearchPopup = ({
-  resultsUrl,
-  sessions,
-  speakers,
-  news,
   suggestions,
+  items,
   widgetRef,
+  keyphrase,
 }: PreviewSearchPopupProps): JSX.Element => {
+  const keyphraseSuggestion = { text: keyphrase.trim(), freq: 1 } as Suggestion;
+
   return (
     <div className="preview-search-content-container" ref={widgetRef}>
       <div className="preview-search-content">
         <div className="preview-search-content-popup">
-          {suggestions?.length > 0 && <SuggestionList title="Do you mean?" list={suggestions} />}
-          {sessions?.length > 0 && (
-            <PreviewSearchSessionList
-              resultsUrl={resultsUrl}
-              list={sessions as unknown as SessionCardProps[]}
-            />
+          {suggestions?.length > 0 ? (
+            <SuggestionList title="Did you mean?" list={suggestions} />
+          ) : (
+            <SuggestionList list={[keyphraseSuggestion]} />
           )}
-          {speakers?.length > 0 && (
-            <PreviewSearchSpeakerList
-              resultsUrl={resultsUrl}
-              list={speakers as unknown as SpeakerCardProps[]}
-            />
-          )}
-          {news?.length > 0 && (
-            <PreviewSearchNewsList
-              resultsUrl={resultsUrl}
-              list={news as unknown as NewsCardProps[]}
-            />
-          )}
+          {items?.length > 0 && <PreviewSearchItemList items={items} />}
         </div>
       </div>
     </div>

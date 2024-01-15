@@ -14,17 +14,16 @@ Languages:
     Fields:
     - ID: "05607296-e17f-567f-898f-46bb9665d619"
       Hint: title
-      Value: Game Changers
+      Value: Personalized Picks
     - ID: "348777e9-0329-5c42-a43d-3db7d8a7a748"
       Hint: content
-      Value: Check out over 2000 sports brands and test drive the latest fitness equipment and technology in our interactive demo space.
+      Value: A handpicked selection of content recommendations based on your preferences and browsing history.
     - ID: "3df1996f-e6b3-52c9-82c7-c8ba54147c1f"
       Hint: callToActionLink
-      Value: |
-        <link text="Discover More" linktype="external" url="/shop" anchor="" target="" />
+      Value: 
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ff3fb52d-fe25-4ca5-a7d9-f241cfd49d9b"
+      Value: "b98c6aa2-31c5-4678-a1c4-de045bee6cb6"
 - Language: "fr-CA"
   Versions:
   - Version: 1
