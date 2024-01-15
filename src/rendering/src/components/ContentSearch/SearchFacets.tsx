@@ -28,16 +28,22 @@ const getFacetLabel = ({ text }: SearchResponseFacetItem): string => {
 };
 
 const SearchFacets = (props: SearchFacetsProps): JSX.Element => {
+  console.log(
+    props.facets?.filter(
+      (facet) => facet.name === 'activities' || facet.name === 'audience' || facet.name === 'type'
+    )
+  );
+  console.log(props.selectedFacets);
   return (
     <>
-      {props.selectedFacets.length > 0 && (
+      {props.selectedFacets?.length > 0 && (
         <div className="search-facets-active">
           <div className="search-facets-active-title">
             <FontAwesomeIcon icon={faSlidersH} />
             <span>Active filters</span>
           </div>
           <ul className="search-facets-filters-list">
-            {props.selectedFacets.map((selectedFacet) => (
+            {props.selectedFacets?.map((selectedFacet) => (
               <li
                 key={`${selectedFacet.facetId}${selectedFacet.facetLabel}${selectedFacet.valueLabel}`}
                 className="search-facets-filters-list-item"
@@ -66,7 +72,7 @@ const SearchFacets = (props: SearchFacetsProps): JSX.Element => {
         onFacetValueClick={props.onFacetValueClick}
         className="search-facets-root"
       >
-        {props.facets.map((f) => (
+        {props.facets?.map((f) => (
           <AccordionFacets.Facet facetId={f.name} className="search-facets-root-facet" key={f.name}>
             <AccordionFacets.Header className="search-facets-root-facet-header">
               <AccordionFacets.Trigger className="search-facets-root-facet-trigger">
@@ -76,7 +82,7 @@ const SearchFacets = (props: SearchFacetsProps): JSX.Element => {
             </AccordionFacets.Header>
             <AccordionFacets.Content className="search-facets-root-facet-content">
               <AccordionFacets.ValueList className="search-facets-root-facet-list">
-                {f.value.map((v, index) => (
+                {f.value?.map((v, index) => (
                   <FacetItem
                     key={v.id}
                     {...{ index, facetValueId: v.id }}
