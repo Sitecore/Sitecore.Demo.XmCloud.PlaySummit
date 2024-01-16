@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import Head from 'next/head';
 
 import SummitLayout from '../../components/NonSitecore/SummitLayout';
-import SearchResultsWidget from '../../components/ContentSearch/SearchResultsContainer';
+import SearchResultsWidget from '../../components/ContentSearch/SearchResultsWidget';
 import { isSearchSDKEnabled } from '../../services/SearchSDKService';
 
 const Search = (): JSX.Element => {

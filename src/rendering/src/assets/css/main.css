@@ -62,17 +62,12 @@
 @import './components/Checkout/ThankYouSection.css';
 
 /* Sitecore Search */
-@import './components/ContentSearch/Questions.css';
-@import './components/ContentSearch/SearchEntityTab.css';
-@import './components/ContentSearch/SearchEntityTabContent.css';
-@import './components/ContentSearch/SearchEntityTabs.css';
-@import './components/ContentSearch/SearchFacets.css';
-@import './components/ContentSearch/SearchFilter.css';
-@import './components/ContentSearch/SearchFilters.css';
-@import './components/ContentSearch/SearchPagination.css';
-@import './components/ContentSearch/SearchResults.css';
-@import './components/ContentSearch/SearchResultsTab.css';
 @import './components/ContentSearch/PersonalizedPicks.css';
+@import './components/ContentSearch/Questions.css';
+@import './components/ContentSearch/SearchFacets.css';
+@import './components/ContentSearch/SearchPagination.css';
+@import './components/ContentSearch/SearchResultsListing.css';
+@import './components/ContentSearch/SearchResultsWidget.css';
 
 /* Forms */
 @import './components/Forms/AttendeeForm.css';

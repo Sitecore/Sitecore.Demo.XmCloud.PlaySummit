@@ -6,7 +6,7 @@ import Pagination, { SearchPaginationProps } from './SearchPagination';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSlidersH } from '@fortawesome/free-solid-svg-icons';
 
-export type SearchResultsTabProps = PropsWithChildren &
+export type SearchResultsListingProps = PropsWithChildren &
   SearchFacetsProps &
   SearchPaginationProps & {
     onResultsPerPageChange: (perPage: number) => void;
@@ -16,7 +16,7 @@ export type SearchResultsTabProps = PropsWithChildren &
     loading: boolean;
   };
 
-const SearchResultsTab: FC<SearchResultsTabProps> = (props) => {
+const SearchResultsListing: FC<SearchResultsListingProps> = (props) => {
   const [toggle, setToggle] = useState(false);
 
   const onToggleClick = () => {
@@ -26,9 +26,9 @@ const SearchResultsTab: FC<SearchResultsTabProps> = (props) => {
   };
 
   return (
-    <div className="search-results-tab">
+    <div className="search-results-listing">
       <div className="facet-panel-mask"></div>
-      <div className="search-results-tab-facets">
+      <div className="search-results-listing-facets">
         <div className="facets-container">
           <button className="btn-secondary search-results-facets-toggle" onClick={onToggleClick}>
             <FontAwesomeIcon icon={faSlidersH} />
@@ -36,10 +36,10 @@ const SearchResultsTab: FC<SearchResultsTabProps> = (props) => {
           </button>
           <SearchFacets
             facets={props.facets}
-            filters={props.filters}
             onFacetValueClick={props.onFacetValueClick}
-            onFilterClick={props.onFilterClick}
             onClearFilters={props.onClearFilters}
+            selectedFacets={props.selectedFacets}
+            onRemoveFilter={props.onRemoveFilter}
           />
         </div>
         <div className="button-container">
@@ -48,51 +48,55 @@ const SearchResultsTab: FC<SearchResultsTabProps> = (props) => {
           </button>
         </div>
       </div>
-      <div className="search-results-tab-content">
-        <div className="search-results-tab-header">
+
+      <div className="search-results-listing-content">
+        <div className="search-results-listing-header">
           {props.sortOptions.length > 0 && (
-            <div className="search-results-tab-sort">
+            <div className="search-results-listing-sort">
               <label>Sort by:</label>
-              <select
-                value={props.sort}
-                onChange={(e) => {
-                  props.onSortChange(e.currentTarget.value);
-                }}
-              >
-                {props.sortOptions.map(({ name, label }) => (
-                  <option key={name} value={name}>
-                    {label}
-                  </option>
-                ))}
-              </select>
+              {props.sortOptions.map(({ name, label }) => (
+                <button
+                  key={name}
+                  value={name}
+                  onClick={(e) => {
+                    props.onSortChange(e.currentTarget.value);
+                  }}
+                  className={props.sort === name ? 'active' : ''}
+                >
+                  {label}
+                </button>
+              ))}
             </div>
           )}
-          <div className="search-results-tab-filter-toggle">
+          <div className="search-results-listing-filter-toggle">
             <button className="btn-main search-results-facets-toggle" onClick={onToggleClick}>
               <FontAwesomeIcon icon={faSlidersH} />
               Filter
             </button>
           </div>
         </div>
-        <div className="search-results-tab-results">
+
+        <div className="search-results-listing-results">
           {props.loading ? (
             <div className="search-results-spinner">
               <Spinner loading={props.loading} />
             </div>
           ) : (
-            props.children
+            <ul className="search-results-list">{props.children}</ul>
           )}
         </div>
-        <div className="search-results-tab-footer">
+
+        <div className="search-results-listing-footer">
           <div>
             <label>Results Per Page</label>
             <select
               value={props.perPage}
-              className="search-results-tab-per-page"
+              className="search-results-listing-per-page"
               onChange={(e) => {
                 props.onResultsPerPageChange(Number(e.currentTarget.value));
               }}
             >
+              <option value={6}>6</option>
               <option value={12}>12</option>
               <option value={24}>24</option>
               <option value={48}>48</option>
@@ -111,4 +115,4 @@ const SearchResultsTab: FC<SearchResultsTabProps> = (props) => {
   );
 };
 
-export default SearchResultsTab;
+export default SearchResultsListing;
