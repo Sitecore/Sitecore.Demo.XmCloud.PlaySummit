@@ -64,6 +64,15 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
   }, []);
   // END CUSTOMIZATION
 
+  // DEMO TEAM CUSTOMIZATION - Search SDK integration
+  useEffect(() => {
+    if (isSearchSDKEnabled) {
+      PageController.getContext().setLocaleLanguage('en');
+      PageController.getContext().setLocaleCountry('us');
+    }
+  }, []);
+  // END CUSTOMIZATION
+
   // DEMO TEAM CUSTOMIZATION - Per page layouts
   const { dictionary } = pageProps;
 

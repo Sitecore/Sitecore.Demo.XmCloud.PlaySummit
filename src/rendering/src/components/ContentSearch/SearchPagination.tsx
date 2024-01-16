@@ -1,6 +1,6 @@
 import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons';
 import { MouseEventHandler } from 'react';
-import { Pagination } from '@sitecore-discover/ui';
+import { Pagination } from '@sitecore-search/ui';
 
 export type SearchPaginationProps = {
   currentPage: number;
@@ -36,21 +36,18 @@ const SearchPagination = (props: SearchPaginationProps): JSX.Element => {
         <ArrowLeftIcon />
       </Pagination.PrevPage>
       <Pagination.Pages className="search-pagination-pages">
-        {
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore This is something Sitecore Search has to fix in their SDK
-          ({ pages }) =>
-            pages.map(({ page }) => (
-              <Pagination.Page
-                key={page}
-                className="search-pagination-link"
-                aria-label={`Page ${page}`}
-                page={page}
-                onClick={onChangePageHandler}
-              >
-                {page}
-              </Pagination.Page>
-            ))
+        {({ pages }) =>
+          pages.map(({ page }) => (
+            <Pagination.Page
+              key={page}
+              className="search-pagination-link"
+              aria-label={`Page ${page}`}
+              page={page}
+              onClick={onChangePageHandler}
+            >
+              {page}
+            </Pagination.Page>
+          ))
         }
       </Pagination.Pages>
       <Pagination.NextPage className="search-pagination-nav-link" onClick={onChangePageHandler}>

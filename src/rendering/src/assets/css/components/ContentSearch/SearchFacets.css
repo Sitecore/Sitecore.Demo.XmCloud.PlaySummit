@@ -10,10 +10,10 @@
   }
 
   .search-facets-root-facet-header {
-    @apply flex justify-between items-center py-1 cursor-pointer;
+    @apply py-1 cursor-pointer;
 
     button {
-      @apply basis-full text-left font-bold capitalize;
+      @apply flex justify-between items-center w-full text-left font-bold capitalize;
     }
 
     svg {
@@ -40,7 +40,7 @@
 
     .search-facets-root-facet-list {
       li {
-        @apply flex items-center;
+        @apply flex items-center capitalize;
 
         &:not(:last-child) {
           @apply mb-1;
@@ -92,6 +92,10 @@
 
     .search-facets-filters-list-item-text {
       @apply max-w-full overflow-hidden whitespace-nowrap text-ellipsis;
+
+      button {
+        @apply flex;
+      }
     }
   }
 }
@@ -100,7 +104,7 @@
   @apply ml-auto text-base;
   @apply lg:hidden;
 
-  .search-results-tab-facets & {
+  .search-results-listing-facets & {
     @apply mb-2 ml-auto;
   }
 
