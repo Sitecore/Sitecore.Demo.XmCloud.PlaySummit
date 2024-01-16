@@ -29,10 +29,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat matti malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+        <p>The "Seven Mindset Strategies to Raise Your Game" session will explore the pivotal role of mental preparedness in achieving sports and fitness goals. Led by experienced sports psychologists and elite athletes, this session will delve into the psychological aspects of sports performance and the importance of cultivating a positive and resilient mindset. Attendees will learn about various mental strategies, such as goal setting, visualization, positive self-talk, and stress management, that can help athletes enhance their performance and cope with pressures of competition.<br />
+        <br />
+        In the second part of the session, attendees will learn practical ways to apply these mindset strategies in their daily training routines and competitive scenarios. Real-life examples of how these strategies have helped professional athletes overcome hurdles and achieve success will be shared. The session will also address the challenges athletes may face when trying to change their mindset and provide advice on how to overcome these. By the end of this session, attendees will have a deeper understanding of the power of mindset in sports and be equipped with practical strategies to elevate their own game.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{4C23E8E4-BA94-4840-8888-D769F0F57835}"
@@ -60,7 +59,7 @@ Languages:
       Value: "{A5673B41-FABE-450B-9037-14132FA734DA}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6201bf8a-2ee6-45c3-ae60-d263d84efd5d"
+      Value: "df489af0-7c10-4f32-93ee-652d901bb298"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: Seven mindset strategies to raise your game

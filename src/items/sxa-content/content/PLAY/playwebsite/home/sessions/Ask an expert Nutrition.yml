@@ -31,11 +31,7 @@ Languages:
       Value: "{E67E1029-D58F-45E7-B85F-0E7E0086099E}"
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
-      Value: |
-        <p>The Internet is still the wild west when it comes to finding nutrition information that is credible and stands up to serious scientific scrutiny. That&rsquo;s why it&rsquo;s so hard to find reliable information&mdash;how can you be sure that what you are reading is accurate&nbsp;<em>and</em>&nbsp;unbiased?</p>
-        
-        <p>Join a leading online expert who embraces the latest scientific evidence to craft personalized nutrition advice for people just like you.</p>
-               
+      Value: <p>This interactive session will provide an invaluable opportunity for attendees to engage directly with a renowned nutritional expert. Participants can look forward to gaining insights into the importance of nutrition in sports performance, understanding the impact of different diets, and learning about the latest research in sports nutrition. They will also have the chance to ask their burning questions related to nutrition, debunk common myths, and receive personalized advice on dietary strategies to optimize their fitness routines. Whether you're a fitness brand looking to enhance your product line, a sports professional striving for peak performance, or a user aiming for personal fitness goals, this session is designed to equip you with the nutritional knowledge you need.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{87223FA1-B672-4201-BE61-0011EE4A7A09}"
@@ -63,7 +59,7 @@ Languages:
       Value: "{421831DC-EE86-4E05-B974-8C0AE7A21D0E}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "eda77bfd-ea4a-4bec-8f32-129f34c54024"
+      Value: "79b098fa-5050-46ca-b486-471168e6b2ac"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "Ask an expert: nutrition"

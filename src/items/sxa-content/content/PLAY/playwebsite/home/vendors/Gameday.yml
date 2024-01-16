@@ -50,14 +50,10 @@ Languages:
       Value: "{F31705C9-7A5A-42DB-8651-B0665EEEC77B}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1dd64c43-8e3e-40c0-873a-9ad27d4ddbd3"
+      Value: "d0e1125e-15a9-44dd-b59e-533017deac0c"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>Gameday is a leading sports apparel and equipment brand, known for its innovative, high-performance products. They cater to a wide range of sports disciplines and are committed to helping athletes and fitness enthusiasts achieve their best performance. Gameday offers a diverse selection of items from activewear, shoes, to sports gear. At the PLAY! Summit Conference, Gameday will be showcasing their latest collection, demonstrating their commitment to quality, functionality, and design.</p>"
     - ID: "d57b5629-9801-4418-9088-8a8dfa8fc84c"
       Hint: Name
       Value: Gameday

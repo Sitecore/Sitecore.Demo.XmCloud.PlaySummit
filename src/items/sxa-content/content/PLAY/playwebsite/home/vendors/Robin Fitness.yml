@@ -50,12 +50,10 @@ Languages:
       Value: "{F31705C9-7A5A-42DB-8651-B0665EEEC77B}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b84969c8-103e-4289-a304-7e1605f385ae"
+      Value: "a5a89a41-baa1-4b84-b36a-01c4dd24caa1"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>Robin Fitness is a forward-thinking fitness brand that specializes in creating innovative, high-quality home workout equipment and digital fitness solutions. Their product line includes everything from weights and resistance bands to smart fitness machines, all designed to enhance the home workout experience. Robin Fitness also offers a fitness app with personalized training programs and live workout sessions. At the PLAY! Summit Conference, Robin Fitness will be showcasing their latest home fitness solutions, demonstrating how technology and innovation can make fitness more accessible and enjoyable.</p>"
     - ID: "d57b5629-9801-4418-9088-8a8dfa8fc84c"
       Hint: Name
       Value: Robin Fitness

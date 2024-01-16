@@ -29,8 +29,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Daily breakfast available to all attendees...</p>
-                       
+        <p>The "Breakfast" session of the PLAY! Summit Conference provides a great opportunity for attendees to network and connect with each other in a relaxed and informal setting. As the most important meal of the day, breakfast is a perfect metaphor for the kind of fuel attendees will need for the exciting day of learning and networking ahead. This session will kick-start the day's events with a variety of healthy and nutritious breakfast options that cater to all dietary preferences.<br />
+        <br />
+        In addition to enjoying a delicious meal, attendees will have a chance to engage in casual conversations with other professionals, fostering a sense of community among participants. They will have the chance to meet like-minded individuals, exchange ideas, and potentially forge lasting connections. The "Breakfast" session sets the tone for the day, offering a blend of nourishment, relaxation, and networking opportunities to ensure that all attendees start their day on a positive note.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: 
@@ -58,7 +59,7 @@ Languages:
       Value: "{D1518172-C562-4572-A6F8-0ACFDC811F29}|{CE3A0E1D-2DCA-4D50-8D42-5E8BA22B73C2}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "17d4c442-9db1-494a-abe1-bbede464a70b"
+      Value: "9333fa49-94bc-467c-97c4-c41f3b8f8c0e"
     - ID: "cb19a833-48b8-4ad4-a841-09769bbef5c6"
       Hint: Sponsors
       Value: "{C5CEF7C2-8DC6-4B8A-9AD4-D04DEB7B5DAB}|{B7037186-1A7E-4F74-AC52-7C99510FA529}"

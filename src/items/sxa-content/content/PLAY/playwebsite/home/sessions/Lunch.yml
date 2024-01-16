@@ -29,8 +29,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+        <p>The Lunch session at the PLAY! Summit Conference offers a fantastic opportunity for participants to relax, refuel, and network. This break in the conference schedule is thoughtfully designed to provide attendees with a delightful culinary experience that complements the overall theme of the conference - fitness and health. The food served will cater to diverse dietary needs and preferences, focusing on balanced meals that are as nutritious as they are delicious. It's a chance for delegates to replenish their energy while savoring a variety of dishes prepared with fresh, wholesome ingredients.<br />
+        <br />
+        Beyond the gastronomic aspect, the Lunch session also serves as a valuable networking platform. Attendees will have the chance to meet and connect with other sports professionals, fitness brand representatives, and fitness enthusiasts from around the globe. Casual discussions over lunch could lead to potential collaborations, partnerships, or simply broaden one's perspective on health and fitness trends worldwide. This mid-day interlude is sure to leave participants refreshed and ready for the insightful sessions to follow in the latter half of the day.</p>
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
@@ -52,7 +53,7 @@ Languages:
       Value: "{CE3A0E1D-2DCA-4D50-8D42-5E8BA22B73C2}|{D1518172-C562-4572-A6F8-0ACFDC811F29}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f47d54cc-2b80-42c0-b123-85c3219bbd8c"
+      Value: "b1f6971a-2083-49af-ada7-3228a275cf81"
     - ID: "cb19a833-48b8-4ad4-a841-09769bbef5c6"
       Hint: Sponsors
       Value: "{C5CEF7C2-8DC6-4B8A-9AD4-D04DEB7B5DAB}|{B7037186-1A7E-4F74-AC52-7C99510FA529}"

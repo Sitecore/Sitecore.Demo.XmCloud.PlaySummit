@@ -35,9 +35,7 @@ Languages:
       Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "5a1f6707-d155-4618-b051-966216449b1c"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>Redsand is an iconic surf and outdoor lifestyle brand known for its unique blend of style, comfort, and functionality. They offer a range of products including surfboards, clothing, and accessories, all designed to enhance the outdoor adventure experience. By sponsoring the PLAY! Summit Conference, Redsand showcases its commitment to promoting active lifestyles and the exciting world of outdoor sports and fitness.</p>"
     - ID: "752f4b39-259c-42b8-a100-fb6123faed7f"
       Hint: Speakers
       Value: "{32C9CADA-A708-49DB-A42C-220443BD3C59}"
@@ -46,7 +44,7 @@ Languages:
       Value: Redsand
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d880624a-45a6-44fa-ad96-6cb14aac3a70"
+      Value: "91c50101-35fa-47eb-8a87-86c0dd01a6b9"
     - ID: "cf42c29f-ee3a-4f06-92ac-10fc51a42099"
       Hint: Level
       Value: Silver

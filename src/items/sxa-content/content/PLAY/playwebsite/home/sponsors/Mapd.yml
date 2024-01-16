@@ -30,17 +30,15 @@ Languages:
       Hint: Logo
       Value: |
         <image stylelabs-content-id="36881" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/36881/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/a48e4a4e2dff4038b0b0956b3e15beed?v=5ca8c513&amp;t=medium" mediaid="" stylelabs-content-type="Image" alt="mapd logo" height="1200" width="1200" ></image>
-    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
-      Hint: __Workflow state
-      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "12c0fdc3-9c18-41c4-aeda-8dcca687eb59"
       Hint: Sessions
       Value: "{92029EB9-8397-4774-ABEB-A0043128AE2A}|{6B4A88ED-0CD7-4C84-BF7B-8BBC3EF3EA49}"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "5a1f6707-d155-4618-b051-966216449b1c"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>MapD is a pioneering tech company specializing in analytics and data visualization. They utilize the power of Graphics Processing Units (GPUs) to create software that can process massive datasets with exceptional speed. As a sponsor for the PLAY! Summit Conference, MapD offers valuable insights into the role of big data and advanced analytics in improving sports performance, fitness management, and overall user experience in the industry.</p>"
     - ID: "752f4b39-259c-42b8-a100-fb6123faed7f"
       Hint: Speakers
       Value: "{AFB23041-6733-44B0-843C-193713F55C7D}"
@@ -49,7 +47,7 @@ Languages:
       Value: Mapd
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "917e7b8b-f475-4930-a57e-e00b30575a65"
+      Value: "cdd540f2-1247-4c94-bbd2-e4b1994b9d7e"
     - ID: "cf42c29f-ee3a-4f06-92ac-10fc51a42099"
       Hint: Level
       Value: Silver

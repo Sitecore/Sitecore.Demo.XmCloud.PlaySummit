@@ -50,12 +50,10 @@ Languages:
       Value: "{F31705C9-7A5A-42DB-8651-B0665EEEC77B}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "bf1bded2-6d42-4989-b7c2-17e5e7b7512a"
+      Value: "1ba0f555-4103-4d85-9067-73bef1ede5eb"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>Outrace is a cutting-edge fitness equipment company, known for its innovative modular training systems. Their products are designed to accommodate a wide variety of training techniques and are highly customizable, making them suitable for all types of fitness facilities and users. Outrace's equipment is known for its quality, durability, and adaptability, offering endless possibilities for functional and suspended training exercises. At the PLAY! Summit Conference, Outrace will be demonstrating their latest training systems and sharing their vision for the future of fitness training.</p>"
     - ID: "d57b5629-9801-4418-9088-8a8dfa8fc84c"
       Hint: Name
       Value: Outrace
