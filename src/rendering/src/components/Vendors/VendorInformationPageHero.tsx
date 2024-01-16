@@ -30,9 +30,9 @@ const VendorInformationPageHero = (props: VendorInformationPageHeroProps): JSX.E
   return (
     <>
       <Head>
-        <meta name="og:title" content={props.fields?.Name.value} />
-        <meta name="og:image" content={props.fields?.Logo?.value.src} />
-        <meta name="og:type" content="vendor" />
+        <meta property="og:title" content={props.fields?.Name.value} />
+        <meta property="og:image" content={props.fields?.Logo?.value.src} />
+        <meta property="og:type" content="vendor" />
       </Head>
       <InformationPageHero
         {...propsRest}

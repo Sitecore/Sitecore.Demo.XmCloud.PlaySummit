@@ -26,10 +26,10 @@ const NewsDetail = (props: NewsDetailProps): JSX.Element => {
   return (
     <>
       <Head>
-        <meta name="og:description" content={props.fields?.Excerpt?.value} />
-        <meta name="og:title" content={props.fields?.Title?.value} />
-        <meta name="og:image" content={props.fields?.Image?.value.src} />
-        <meta name="og:type" content="news" />
+        <meta property="og:description" content={props.fields?.Excerpt?.value} />
+        <meta property="og:title" content={props.fields?.Title?.value} />
+        <meta property="og:image" content={props.fields?.Image?.value.src} />
+        <meta property="og:type" content="news" />
       </Head>
       <section className={`section news-detail ${sxaStyles}`}>
         <div className="section-content left-content">

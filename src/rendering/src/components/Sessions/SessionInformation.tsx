@@ -34,10 +34,10 @@ const SessionInformation = (props: SessionInformationProps): JSX.Element => {
     <>
       <Head>
         <meta name="premiumSession" content={premiumSessionMetaValue} />
-        <meta name="og:description" content={props.fields?.Description?.value} />
-        <meta name="og:title" content={props.fields?.Name?.value} />
-        <meta name="og:image" content={props.fields?.Image?.value.src} />
-        <meta name="og:type" content="session" />
+        <meta property="og:description" content={props.fields?.Description?.value} />
+        <meta property="og:title" content={props.fields?.Name?.value} />
+        <meta property="og:image" content={props.fields?.Image?.value.src} />
+        <meta property="og:type" content="session" />
       </Head>
       <section className={`section information-section ${sxaStyles}`}>
         <div className="section-content container">

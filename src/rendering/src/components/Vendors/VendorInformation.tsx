@@ -18,7 +18,7 @@ const VendorInformation = (props: VendorInformationProps): JSX.Element => {
   return (
     <>
       <Head>
-        <meta name="og:description" content={props.fields?.Description?.value} />
+        <meta property="og:description" content={props.fields?.Description?.value} />
       </Head>
       <section className={`section information-section ${sxaStyles}`}>
         <div className="section-content container">
