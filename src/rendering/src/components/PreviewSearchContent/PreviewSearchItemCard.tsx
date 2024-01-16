@@ -1,6 +1,4 @@
 import Link from 'next/link';
-
-import { getAbsoluteUrlPath } from '../../helpers/UrlHelper';
 import { useCallback } from 'react';
 
 export type PreviewSearchItemCardProps = {
@@ -33,7 +31,7 @@ const PreviewSearchItemCard = ({
   );
 
   return (
-    <Link href={getAbsoluteUrlPath(url)} className="preview-search-item-card">
+    <Link href={url} className="preview-search-item-card">
       <img className="item-image" src={image_url} alt={`${name} image`} />
       <div className="item-details">
         <div className="item-info">
