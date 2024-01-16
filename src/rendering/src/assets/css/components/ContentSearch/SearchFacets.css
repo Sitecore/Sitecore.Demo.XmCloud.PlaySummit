@@ -40,7 +40,7 @@
 
     .search-facets-root-facet-list {
       li {
-        @apply flex items-center;
+        @apply flex items-center capitalize;
 
         &:not(:last-child) {
           @apply mb-1;

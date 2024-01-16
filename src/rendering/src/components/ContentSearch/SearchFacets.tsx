@@ -28,12 +28,6 @@ const getFacetLabel = ({ text }: SearchResponseFacetItem): string => {
 };
 
 const SearchFacets = (props: SearchFacetsProps): JSX.Element => {
-  console.log(
-    props.facets?.filter(
-      (facet) => facet.name === 'activities' || facet.name === 'audience' || facet.name === 'type'
-    )
-  );
-  console.log(props.selectedFacets);
   return (
     <>
       {props.selectedFacets?.length > 0 && (
