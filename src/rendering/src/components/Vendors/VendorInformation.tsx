@@ -1,5 +1,6 @@
 import { ComponentWithChildrenProps } from 'lib/component-props';
 import { Field, Placeholder, RichText } from '@sitecore-jss/sitecore-jss-nextjs';
+import Head from 'next/head';
 
 export type VendorInformationProps = ComponentWithChildrenProps & {
   fields: {
@@ -15,21 +16,26 @@ const VendorInformation = (props: VendorInformationProps): JSX.Element => {
   );
 
   return (
-    <section className={`section information-section ${sxaStyles}`}>
-      <div className="section-content container">
-        <div className="information-grid">
-          <div className="main-col">
-            <div className="column-title">Vendor history:</div>
-            <RichText className="rich-text" field={props.fields.Description} />
-          </div>
-          <div className="sidebar-col">
-            <div className="column-title">Sessions:</div>
-            {placeholder}
-            {props.children}
+    <>
+      <Head>
+        <meta name="og:description" content={props.fields?.Description?.value} />
+      </Head>
+      <section className={`section information-section ${sxaStyles}`}>
+        <div className="section-content container">
+          <div className="information-grid">
+            <div className="main-col">
+              <div className="column-title">Vendor history:</div>
+              <RichText className="rich-text" field={props.fields.Description} />
+            </div>
+            <div className="sidebar-col">
+              <div className="column-title">Sessions:</div>
+              {placeholder}
+              {props.children}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 export const Default = VendorInformation;

@@ -8,6 +8,7 @@ import {
 import { ComponentProps } from 'lib/component-props';
 import InformationPageHero from '../NonSitecore/InformationPageHero';
 import { useI18n } from 'next-localization';
+import Head from 'next/head';
 
 export type SpeakerInformationPageHeroProps = ComponentProps & {
   fields: {
@@ -70,13 +71,20 @@ const SpeakerInformationPageHero = (props: SpeakerInformationPageHeroProps): JSX
     ) : undefined;
 
   return (
-    <InformationPageHero
-      {...propsRest}
-      fields={newFields}
-      type="speaker"
-      qualificative={qualificative}
-      informations={informations}
-    />
+    <>
+      <Head>
+        <meta name="og:title" content={props.fields?.Name.value} />
+        <meta name="og:image" content={props.fields?.Picture?.value.src} />
+        <meta name="og:type" content="speaker" />
+      </Head>
+      <InformationPageHero
+        {...propsRest}
+        fields={newFields}
+        type="speaker"
+        qualificative={qualificative}
+        informations={informations}
+      />
+    </>
   );
 };
 
