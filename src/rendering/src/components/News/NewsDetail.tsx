@@ -9,6 +9,7 @@ import {
 import { ComponentProps } from 'lib/component-props';
 import { newsDateFormatter } from '../../helpers/DateHelper';
 import Head from 'next/head';
+import { removeTags } from 'src/helpers/ContentSearchHelper';
 
 type NewsDetailProps = ComponentProps & {
   fields: {
@@ -26,7 +27,7 @@ const NewsDetail = (props: NewsDetailProps): JSX.Element => {
   return (
     <>
       <Head>
-        <meta property="og:description" content={props.fields?.Excerpt?.value} />
+        <meta property="og:description" content={removeTags(props.fields?.Excerpt?.value)} />
         <meta property="og:title" content={props.fields?.Title?.value} />
         <meta property="og:image" content={props.fields?.Image?.value.src} />
         <meta property="og:type" content="news" />

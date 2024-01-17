@@ -2,6 +2,7 @@ import { ComponentWithChildrenProps } from 'lib/component-props';
 import { Field, Placeholder, RichText } from '@sitecore-jss/sitecore-jss-nextjs';
 import { useI18n } from 'next-localization';
 import Head from 'next/head';
+import { removeTags } from 'src/helpers/ContentSearchHelper';
 
 export type SpeakerInformationProps = ComponentWithChildrenProps & {
   fields: {
@@ -20,7 +21,7 @@ const SpeakerInformation = (props: SpeakerInformationProps): JSX.Element => {
   return (
     <>
       <Head>
-        <meta property="og:description" content={props.fields?.Description?.value} />
+        <meta property="og:description" content={removeTags(props.fields?.Description?.value)} />
       </Head>
       <section className={`section information-section ${sxaStyles}`}>
         <div className="section-content container">
