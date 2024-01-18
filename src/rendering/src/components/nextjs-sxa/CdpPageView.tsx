@@ -3,7 +3,6 @@ import {
   LayoutServicePageState,
   SiteInfo,
   useSitecoreContext,
-  PosResolver,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { useEffect } from 'react';
 import config from 'temp/config';
@@ -33,7 +32,8 @@ const CdpPageView = (): JSX.Element => {
   ) => {
     // DEMO TEAM CUSTOMIZATION - Only initialize if the environment variables are set
     if (isEmbeddedPersonalizationEnabled) {
-      const pointOfSale = PosResolver.resolve(site, language);
+      console.log(site);
+      const pointOfSale = 'playwebsite';
       const engage = await init({
         clientKey: process.env.NEXT_PUBLIC_CDP_CLIENT_KEY || '',
         targetURL: process.env.NEXT_PUBLIC_CDP_TARGET_URL || '',
