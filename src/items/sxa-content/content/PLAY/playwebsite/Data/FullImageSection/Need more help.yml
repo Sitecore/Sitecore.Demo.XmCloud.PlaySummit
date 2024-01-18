@@ -1,0 +1,27 @@
+﻿---
+ID: "7fca0f0a-4237-417f-ac85-d5a0e8a56a2f"
+Parent: "d683a83e-24b9-5c38-b7f7-4108b7c8c3ba"
+Template: "5954b01b-2adb-53d6-85ee-e8408d2cc2a4"
+Path: /sitecore/content/PLAY/playwebsite/Data/FullImageSection/Need more help
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0f531c03-8501-5776-be06-03ac387d1076"
+      Hint: callToActionLink
+      Value: |
+        <link text="Session Finder" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{F0F59E9F-A9D5-4B8A-9A11-A1A0A08FC6C9}" />
+    - ID: "52db75bc-b548-42bf-8fff-7ed04af8cb58"
+      Hint: backgroundImage
+      Value: |
+        <image mediaid="{D768C75C-1318-47B5-A64E-E40183A2BA2E}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0291fcb5-cdf3-4fa7-86e1-e0b14b01c801"
+    - ID: "a41c61bb-5abb-5773-9870-c06f637dd22c"
+      Hint: content
+      Value: Change your preferences to see new recommendations. Three easy questions to keep your experience fresh.
+    - ID: "e93c0025-7f3b-5484-ad56-198d8c5f9c22"
+      Hint: title
+      Value: "Need more help?"
