@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PersonalizeMiddleware } from '@sitecore-jss/sitecore-jss-nextjs/middleware';
 import { MiddlewarePlugin } from '..';
+import clientFactory from 'lib/graphql-client-factory';
 import config from 'temp/config';
 import { siteResolver } from 'lib/site-resolver';
 import { isEmbeddedPersonalizationEnabled } from '../../../helpers/EmbeddedPersonalizationHelper'; // DEMO TEAM CUSTOMIZATION
@@ -24,8 +25,7 @@ class PersonalizePlugin implements MiddlewarePlugin {
     this.personalizeMiddleware = new PersonalizeMiddleware({
       // Configuration for your Sitecore Experience Edge endpoint
       edgeConfig: {
-        endpoint: config.graphQLEndpoint,
-        apiKey: config.sitecoreApiKey,
+        clientFactory,
         timeout:
           (process.env.PERSONALIZE_MIDDLEWARE_EDGE_TIMEOUT &&
             parseInt(process.env.PERSONALIZE_MIDDLEWARE_EDGE_TIMEOUT)) ||
@@ -34,8 +34,8 @@ class PersonalizePlugin implements MiddlewarePlugin {
       },
       // Configuration for your Sitecore CDP endpoint
       cdpConfig: {
-        endpoint: process.env.NEXT_PUBLIC_CDP_TARGET_URL || '',
-        clientKey: process.env.NEXT_PUBLIC_CDP_CLIENT_KEY || '',
+        sitecoreEdgeUrl: config.sitecoreEdgeUrl,
+        sitecoreEdgeContextId: config.sitecoreEdgeContextId,
         timeout:
           (process.env.PERSONALIZE_MIDDLEWARE_CDP_TIMEOUT &&
             parseInt(process.env.PERSONALIZE_MIDDLEWARE_CDP_TIMEOUT)) ||
@@ -53,9 +53,6 @@ class PersonalizePlugin implements MiddlewarePlugin {
       excludeRoute: () => false,
       // Site resolver implementation
       siteResolver,
-      // Personalize middleware will use PosResolver.resolve(site, language) (same as CdpPageView) by default to get point of sale.
-      // You can also pass a custom point of sale resolver into middleware to override it like so:
-      // getPointOfSale: (site, language) => { ... }
     });
   }
 
