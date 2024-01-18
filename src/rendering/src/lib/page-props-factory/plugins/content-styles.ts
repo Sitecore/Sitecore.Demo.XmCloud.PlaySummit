@@ -1,5 +1,6 @@
 import { SitecorePageProps } from 'lib/page-props';
-//import { getContentStylesheetLink } from '@sitecore-jss/sitecore-jss-nextjs';
+// DEMO TEAM CUSTOMIZATION - Disabled temporarily, build fails
+// import { getContentStylesheetLink } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Plugin } from '..';
 
 class ContentStylesPlugin implements Plugin {
