@@ -6,6 +6,7 @@ import { Speaker } from 'src/types/speaker';
 import { Day } from 'src/types/day';
 import { Room } from 'src/types/room';
 import { useI18n } from 'next-localization';
+import { removeTags } from 'src/helpers/ContentSearchHelper';
 
 export type SessionInformationProps = ComponentWithChildrenProps & {
   fields: {
@@ -34,6 +35,10 @@ const SessionInformation = (props: SessionInformationProps): JSX.Element => {
     <>
       <Head>
         <meta name="premiumSession" content={premiumSessionMetaValue} />
+        <meta property="og:description" content={removeTags(props.fields?.Description?.value)} />
+        <meta property="og:title" content={props.fields?.Name?.value} />
+        <meta property="og:image" content={props.fields?.Image?.value.src} />
+        <meta property="og:type" content="session" />
       </Head>
       <section className={`section information-section ${sxaStyles}`}>
         <div className="section-content container">

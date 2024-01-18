@@ -1,6 +1,7 @@
 import { Field, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import InformationPageHero from '../NonSitecore/InformationPageHero';
+import Head from 'next/head';
 
 export type VendorInformationPageHeroProps = ComponentProps & {
   fields: {
@@ -27,12 +28,19 @@ const VendorInformationPageHero = (props: VendorInformationPageHeroProps): JSX.E
   const qualificative = props.fields.Level?.value ? props.fields.Level.value : '';
 
   return (
-    <InformationPageHero
-      {...propsRest}
-      fields={newFields}
-      type="vendor"
-      qualificative={qualificative}
-    />
+    <>
+      <Head>
+        <meta property="og:title" content={props.fields?.Name.value} />
+        <meta property="og:image" content={props.fields?.Logo?.value.src} />
+        <meta property="og:type" content="vendor" />
+      </Head>
+      <InformationPageHero
+        {...propsRest}
+        fields={newFields}
+        type="vendor"
+        qualificative={qualificative}
+      />
+    </>
   );
 };
 

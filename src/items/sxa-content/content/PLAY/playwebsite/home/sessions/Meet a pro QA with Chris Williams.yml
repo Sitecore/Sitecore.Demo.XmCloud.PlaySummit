@@ -32,10 +32,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+        <p>The "Meet a Pro: Q&amp;A with Chris Williams" session provides attendees with an incredible opportunity to interact with the esteemed professional athlete, Chris Williams. Williams, known for his exceptional accomplishments and significant influence in the sports industry, will share insights from his journey, shedding light on his rise to professional status. This session will offer attendees a unique, behind-the-scenes look at the life of a professional athlete, including detailed discussions about training routines, mental conditioning, and overcoming the hurdles that come with pursuing a career in sports.<br />
+        <br />
+        In the second half of the session, attendees will have the opportunity to ask Williams their questions directly. This could range from inquiries about his diet and nutrition strategies, his methods for tackling setbacks, or even his advice for those looking to break into the professional sports industry. This Q&amp;A will not only inspire but will also provide practical advice and strategies that can be applied to the attendees' own fitness goals and aspirations. This session is a must-attend for anyone passionate about sports and those looking to elevate their performance to the next level.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{D5033FBA-96EB-47F3-B239-C8F7094464FD}"
@@ -63,7 +62,7 @@ Languages:
       Value: "{05508583-1AE2-40C8-A87E-1A54351B0117}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "28136e35-81dd-4ca5-bf58-495d92c28c46"
+      Value: "8efe411f-62e3-4641-91de-2e85a3bd8da3"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "Meet a pro: Q&A with Chris Williams"

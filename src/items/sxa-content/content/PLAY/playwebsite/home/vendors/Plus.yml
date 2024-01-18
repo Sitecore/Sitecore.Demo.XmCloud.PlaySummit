@@ -47,12 +47,10 @@ Languages:
         <image stylelabs-content-id="33905" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/33905/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/4c2433d5bbef432fa6004c286c3ba91d?v=e09c1419&amp;t=medium" mediaid="" stylelabs-content-type="Image" alt="Plus Logo" height="1001" width="1001" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e07ee633-7c57-466f-bf1f-28268adc264c"
+      Value: "aeba6057-bbd9-4285-983e-124bb475496c"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>Plus is a groundbreaking fitness technology company that specializes in creating smart workout equipment and applications. They offer a range of products, including smart treadmills, bikes, and wearable devices, all integrated with their unique fitness app. Their technology allows users to track their progress, set goals, and even join virtual workout classes. Plus aims to make fitness more accessible and engaging through technology. At the PLAY! Summit Conference, Plus will be demonstrating their latest innovations in fitness technology and sharing insights into the future of digital fitness.</p>"
     - ID: "d57b5629-9801-4418-9088-8a8dfa8fc84c"
       Hint: Name
       Value: Plus

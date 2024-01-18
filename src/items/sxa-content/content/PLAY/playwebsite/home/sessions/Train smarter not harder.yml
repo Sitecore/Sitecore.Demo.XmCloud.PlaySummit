@@ -29,8 +29,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-                        
+        <p>The "Train Smarter, Not Harder" session is all about maximizing your training efficiency by utilizing intelligent strategies and techniques. Led by renowned fitness coaches and sports scientists, this session will delve into the science of effective training. Attendees will learn about the importance of personalized training plans, recovery periods, and the role of nutrition in improving performance. The discussion will emphasize how working smarter, not necessarily harder, can lead to significant improvements in athletic performance and overall fitness levels.<br />
+        <br />
+        The second part of the session will focus on practical demonstrations and discussions around state-of-the-art training methodologies. Attendees will get a chance to explore the latest technological advancements in fitness, like wearable devices and fitness apps, and their role in enhancing training efficiency. Sports psychologists will also address the mental aspects of training, discussing how mental resilience and a positive mindset can contribute to smarter training. By the end of this session, attendees will be equipped with knowledge and tools to train more efficiently, making the most of each workout session.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{BB90AE1B-06D6-480D-A238-F2998721A00D}"
@@ -58,7 +59,7 @@ Languages:
       Value: "{80268225-1D8E-477C-A866-0EA047A7876A}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "299978ef-2ee1-4092-964e-cba8bc58963d"
+      Value: "297dd6ac-b18e-456c-b61a-eab1f42d87ac"
     - ID: "cb19a833-48b8-4ad4-a841-09769bbef5c6"
       Hint: Sponsors
       Value: "{C5CEF7C2-8DC6-4B8A-9AD4-D04DEB7B5DAB}"

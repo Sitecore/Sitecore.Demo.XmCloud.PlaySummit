@@ -47,12 +47,10 @@ Languages:
         <image stylelabs-content-id="34199" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/34199/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/893cf2ebf17344d887e4cc5c35013541?v=bd27157d&amp;t=medium" mediaid="" stylelabs-content-type="Image" alt="Run Right Through Logo" height="1001" width="1001" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "75bdb8ce-6622-41ad-85c6-162ea21da835"
+      Value: "709461bb-c5d8-4a5c-a3f7-b25c60916fdb"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>Run Right Through is a leading brand in the running and athletics industry. They specialize in high-performance running shoes, apparel, and accessories. Known for their innovative designs, advanced materials, and commitment to comfort and durability, Run Right Through products cater to both professional athletes and everyday runners. At the PLAY! Summit Conference, they will be showcasing their latest running gear, including shoes with the latest technology for improved performance and injury prevention.</p>"
     - ID: "d57b5629-9801-4418-9088-8a8dfa8fc84c"
       Hint: Name
       Value: Run Right Through

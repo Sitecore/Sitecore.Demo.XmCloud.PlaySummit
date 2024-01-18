@@ -41,7 +41,12 @@ Languages:
       Value: "{A39F9FBC-DA18-473D-BD74-47429B695614}|{7A6E3432-E82B-4F09-A2AE-5D13646E0BD6}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9a281721-1e12-46ad-ae70-f48d07cb0583"
+      Value: "2ca505da-36e1-4262-ba32-4fdf9bb6cc30"
+    - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
+      Hint: Description
+      Value: |
+        <p>Fruitful is a renowned company that specializes in offering nutritious and delicious fruit-based snacks and beverages. They are recognized for their commitment to promoting health and wellness by providing high-quality, naturally sourced products. Their offerings are not only popular among health-conscious individuals, but also greatly appreciated by athletes and fitness enthusiasts for their nutrient-rich content that aids in energy replenishment and recovery. At the PLAY! Summit Conference, Fruitful will be showcasing their newest product line and providing insights into the benefits of incorporating fruit-based products in daily fitness routines.</p>
+        <br />
     - ID: "d57b5629-9801-4418-9088-8a8dfa8fc84c"
       Hint: Name
       Value: Fruitful

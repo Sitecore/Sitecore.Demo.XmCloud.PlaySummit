@@ -47,12 +47,10 @@ Languages:
         <image stylelabs-content-id="34178" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/34178/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/2c6390c36dbc4af0a2033d0b46799643?v=ce0be08d&amp;t=medium" mediaid="" stylelabs-content-type="Image" alt="OnTheGreen Logo" height="1001" width="1001" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "43c78600-20af-4a58-b3af-3e528ad0d7f5"
+      Value: "3aaaa9e4-b3b8-41ac-8d43-4854371a12fd"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>On The Green is a premier golf equipment and apparel company. They specialize in high-quality golf clubs, bags, balls, and stylish apparel suited for both professional and amateur golfers. Dedicated to improving the game of golf for all, On The Green is known for their innovative technology that enhances performance on the course. At the PLAY! Summit Conference, they will be showcasing their latest products, and sharing insights on the future trends in golf equipment and apparel.</p>"
     - ID: "d57b5629-9801-4418-9088-8a8dfa8fc84c"
       Hint: Name
       Value: On The Green
