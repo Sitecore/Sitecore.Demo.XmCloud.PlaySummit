@@ -16,7 +16,9 @@ export const Default = {
 
   args: {
     facets: facetsProp,
-    filters: [],
+    onFacetValueClick: () => {
+      return;
+    },
   } as SearchFacetsProps,
 };
 
@@ -25,6 +27,6 @@ export const WithActiveFilters = {
 
   args: {
     facets: facetsProp,
-    filters: filtersProp,
+    selectedFacets: filtersProp,
   },
 };

@@ -29,10 +29,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+        <p>This session provides the golden chance to connect directly with industry experts in ski and snowboard gear. Whether you're an avid snow sports enthusiast or a beginner seeking advice, you'll find this discussion incredibly informative. The experts will provide comprehensive insights into the latest trends in ski and snowboard equipment, sharing their knowledge on selecting the right gear, maintaining equipment, and understanding the role of different gear in enhancing performance and safety on the slopes. Participants will have the opportunity to ask questions, ensuring they leave with a solid understanding of the best equipment to match their needs and skill level.<br />
+        <br />
+        The second part of the session is designed to help participants understand the intricacies of ski and snowboard gear technology. The experts will delve into the science behind gear design, discussing how advancements in technology have revolutionized snow sports and improved safety measures. From the importance of choosing the right boots to the evolution of ski and snowboard design, this session will equip attendees with the knowledge to make informed choices about their gear. This is a must-attend for anyone looking to elevate their snow sports experience.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{5F107763-694B-4E24-B7C7-308180ABABAD}"
@@ -60,7 +59,7 @@ Languages:
       Value: "{FD2E5B87-2430-4051-ADF9-8B76481774C2}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "689956e5-d977-4ff4-a23e-4d6cc9dab979"
+      Value: "4b844ca7-793b-4eef-b327-81ce673335a8"
     - ID: "cb19a833-48b8-4ad4-a841-09769bbef5c6"
       Hint: Sponsors
       Value: "{8C5F5B0A-B6A6-46CE-A34A-6A76E7B4FD2E}"

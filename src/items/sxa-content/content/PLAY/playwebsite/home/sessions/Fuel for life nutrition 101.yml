@@ -29,8 +29,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.&nbsp;adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, suscipit, posuere a, pede.&nbsp;adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
-                        
+        <p>In the "Fuel for Life: Nutrition 101" session, attendees will explore the essential role nutrition plays in achieving optimal physical performance and maintaining overall health. Led by experienced nutritionists and dietitians, the session will discuss the fundamental principles of nutrition, emphasizing the importance of balanced diets and hydration. Attendees will gain an understanding of how different nutrients affect the body's performance and recovery, and how to plan meals to support their fitness goals. This session is ideal for fitness enthusiasts, sports professionals, and anyone interested in enhancing their wellbeing through nutrition.<br />
+        <br />
+        The second part of this session will delve into the practical aspects of sports nutrition. The experts will provide tips on how to make informed food choices, tailor diet plans according to specific fitness goals, and ensure adequate nutrient intake. Whether you're an athlete looking to maximize your performance, a fitness professional wanting to guide your clients, or simply someone interested in leading a healthier lifestyle, this session will equip you with the knowledge and tools to make informed nutrition decisions. The emphasis will be on practical, achievable changes that can make a significant impact on health and performance.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{87223FA1-B672-4201-BE61-0011EE4A7A09}"
@@ -58,7 +59,7 @@ Languages:
       Value: "{05508583-1AE2-40C8-A87E-1A54351B0117}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "72b3cc06-22e1-4fcf-aec8-415122576c15"
+      Value: "45bd6ef1-508d-443c-b4a0-3dc28481e62b"
     - ID: "cb19a833-48b8-4ad4-a841-09769bbef5c6"
       Hint: Sponsors
       Value: "{A512C4FC-301E-4191-ADE1-E618F4F6895B}"

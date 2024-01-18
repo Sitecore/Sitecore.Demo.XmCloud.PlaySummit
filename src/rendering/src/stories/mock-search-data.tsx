@@ -1,13 +1,3 @@
-import {
-  AUDIENCE_FACET_TYPE,
-  CONTENT_SEARCH_RESULT_TYPE,
-  SESSION_SEARCH_RESULT_TYPE,
-  SPEAKER_SEARCH_RESULT_TYPE,
-  SPONSOR_SEARCH_RESULT_TYPE,
-  VENDOR_SEARCH_RESULT_TYPE,
-} from '../helpers/ContentSearchHelper';
-import { ContentSearchWidgetResponseFacet } from '../interfaces/contentSearch/ContentSearchWidgetResponse';
-
 export const filterOptionsProp = {
   rooms: [
     {
@@ -55,286 +45,160 @@ export const filterOptionsProp = {
   ],
 };
 
-export const facetsProp: ContentSearchWidgetResponseFacet[] = [
+export const facetsProp = [
+  {
+    name: 'activities',
+    label: 'Activities',
+    value: [
+      {
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYWN0aXZpdGllcyIsInZhbHVlIjoiQ3ljbGluZyJ9',
+        text: 'Cycling',
+        count: 3,
+      },
+      {
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYWN0aXZpdGllcyIsInZhbHVlIjoiTW91bnRhaW4gQmlraW5nIn0=',
+        text: 'Mountain Biking',
+        count: 3,
+        min: 0,
+        max: 0,
+      },
+      {
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYWN0aXZpdGllcyIsInZhbHVlIjoiSGlraW5nIn0=',
+        text: 'Hiking',
+        count: 2,
+        min: 0,
+        max: 0,
+      },
+      {
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYWN0aXZpdGllcyIsInZhbHVlIjoiUnVubmluZyJ9',
+        text: 'Running',
+        count: 2,
+        min: 0,
+        max: 0,
+      },
+      {
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYWN0aXZpdGllcyIsInZhbHVlIjoiU3dpbW1pbmcifQ==',
+        text: 'Swimming',
+        count: 2,
+        min: 0,
+        max: 0,
+      },
+      {
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYWN0aXZpdGllcyIsInZhbHVlIjoiS2F5YWtpbmcifQ==',
+        text: 'Kayaking',
+        count: 1,
+        min: 0,
+        max: 0,
+      },
+      {
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYWN0aXZpdGllcyIsInZhbHVlIjoiU2FpbGluZyJ9',
+        text: 'Sailing',
+        count: 1,
+        min: 0,
+        max: 0,
+      },
+      {
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYWN0aXZpdGllcyIsInZhbHVlIjoiU2N1YmEgRGl2aW5nIn0=',
+        text: 'Scuba Diving',
+        count: 1,
+        min: 0,
+        max: 0,
+      },
+      {
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYWN0aXZpdGllcyIsInZhbHVlIjoiU2tpaW5nIn0=',
+        text: 'Skiing',
+        count: 1,
+        min: 0,
+        max: 0,
+      },
+      {
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYWN0aXZpdGllcyIsInZhbHVlIjoiU3VyZmluZyJ9',
+        text: 'Surfing',
+        count: 1,
+        min: 0,
+        max: 0,
+      },
+    ],
+  },
   {
     name: 'audience',
     label: 'Audience',
     value: [
       {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYXVkaWVuY2UiLCJ2YWx1ZSI6IldlZWtlbmQgV2FycmlvciJ9',
-        text: 'Weekend Warrior',
-        count: 14,
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYXVkaWVuY2UiLCJ2YWx1ZSI6IkFkdmVudHVyZSBTZWVrZXIifQ==',
+        text: 'Adventure Seeker',
+        count: 3,
+        min: 0,
+        max: 0,
       },
       {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYXVkaWVuY2UiLCJ2YWx1ZSI6IkhlYWx0aHkgTGl2aW5nIn0=',
-        text: 'Healthy Living',
-        count: 13,
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYXVkaWVuY2UiLCJ2YWx1ZSI6IldlZWtlbmQgV2FycmlvciJ9',
+        text: 'Weekend Warrior',
+        count: 3,
+        min: 0,
+        max: 0,
       },
       {
         id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYXVkaWVuY2UiLCJ2YWx1ZSI6Ik91dGRvb3IgRW50aHVzaWFzdCJ9',
         text: 'Outdoor Enthusiast',
-        count: 10,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYXVkaWVuY2UiLCJ2YWx1ZSI6IkZpdG5lc3MgRmFuYXRpYyJ9',
-        text: 'Fitness Fanatic',
-        count: 9,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYXVkaWVuY2UiLCJ2YWx1ZSI6IkFkdmVudHVyZSBTZWVrZXIifQ==',
-        text: 'Adventure Seeker',
-        count: 7,
+        count: 2,
+        min: 0,
+        max: 0,
       },
     ],
   },
   {
-    name: 'days',
-    label: 'Days',
+    name: 'type',
+    label: 'Content Type',
     value: [
       {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiZGF5cyIsInZhbHVlIjoiRGF5IDEifQ==',
-        text: 'Day 1',
-        count: 10,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiZGF5cyIsInZhbHVlIjoiRGF5IDIifQ==',
-        text: 'Day 2',
-        count: 10,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiZGF5cyIsInZhbHVlIjoiRGF5IDMifQ==',
-        text: 'Day 3',
-        count: 10,
-      },
-    ],
-  },
-  {
-    name: 'is_premium',
-    label: 'Featured',
-    value: [
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiaXNfcHJlbWl1bSIsInZhbHVlIjoiZmFsc2UifQ==',
-        text: 'false',
-        count: 19,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiaXNfcHJlbWl1bSIsInZhbHVlIjoidHJ1ZSJ9',
-        text: 'true',
-        count: 6,
-      },
-    ],
-  },
-  {
-    name: 'rooms',
-    label: 'Rooms',
-    value: [
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoicm9vbXMiLCJ2YWx1ZSI6IktleW5vdGUgU3RhZ2UifQ==',
-        text: 'Keynote Stage',
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidHlwZSIsInZhbHVlIjoidmVuZG9yIn0=',
+        text: 'vendor',
         count: 4,
+        min: 0,
+        max: 0,
       },
       {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoicm9vbXMiLCJ2YWx1ZSI6IkN1cmllIEhhbGwifQ==',
-        text: 'Curie Hall',
-        count: 2,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoicm9vbXMiLCJ2YWx1ZSI6IlByb3N0YWZmIERpbmluZyBIYWxsIn0=',
-        text: 'Prostaff Dining Hall',
-        count: 2,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoicm9vbXMiLCJ2YWx1ZSI6IlJvb20gMTAxIn0=',
-        text: 'Room 101',
-        count: 2,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoicm9vbXMiLCJ2YWx1ZSI6IlJvb20gMTAzIn0=',
-        text: 'Room 103',
-        count: 2,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoicm9vbXMiLCJ2YWx1ZSI6IlN0cml2YSBEaW5pbmcgSGFsbCJ9',
-        text: 'Striva Dining Hall',
-        count: 2,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoicm9vbXMiLCJ2YWx1ZSI6IldvcmtzaG9wIFJvb20gMSJ9',
-        text: 'Workshop Room 1',
-        count: 2,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoicm9vbXMiLCJ2YWx1ZSI6IldvcmtzaG9wIFJvb20gMiJ9',
-        text: 'Workshop Room 2',
-        count: 2,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoicm9vbXMiLCJ2YWx1ZSI6IldvcmtzaG9wIFJvb20gMyJ9',
-        text: 'Workshop Room 3',
-        count: 2,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoicm9vbXMiLCJ2YWx1ZSI6IkZhcmFkYXkgSGFsbCJ9',
-        text: 'Faraday Hall',
-        count: 1,
-      },
-    ],
-  },
-  {
-    name: 'speakers',
-    label: 'Speakers',
-    value: [
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BlYWtlcnMiLCJ2YWx1ZSI6Ikplc3NpZSBNYWhlciJ9',
-        text: 'Jessie Maher',
-        count: 5,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BlYWtlcnMiLCJ2YWx1ZSI6IkFseSBOaWNob2xzIn0=',
-        text: 'Aly Nichols',
-        count: 4,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BlYWtlcnMiLCJ2YWx1ZSI6IkphbGVuIFdpbGxpYW1zIn0=',
-        text: 'Jalen Williams',
-        count: 4,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BlYWtlcnMiLCJ2YWx1ZSI6IkFsZXggTWVuYSJ9',
-        text: 'Alex Mena',
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidHlwZSIsInZhbHVlIjoiZXZlbnQifQ==',
+        text: 'event',
         count: 3,
+        min: 0,
+        max: 0,
       },
       {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BlYWtlcnMiLCJ2YWx1ZSI6IkFuZHJlIEZhdnJlYXUifQ==',
-        text: 'Andre Favreau',
-        count: 3,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BlYWtlcnMiLCJ2YWx1ZSI6IkNocmlzIFdpbGxpYW1zIn0=',
-        text: 'Chris Williams',
-        count: 3,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BlYWtlcnMiLCJ2YWx1ZSI6IkNsaW50IEFkYW1zIn0=',
-        text: 'Clint Adams',
-        count: 3,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BlYWtlcnMiLCJ2YWx1ZSI6Ikpha2UgSm9oYW5zc2VuIn0=',
-        text: 'Jake Johanssen',
-        count: 3,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BlYWtlcnMiLCJ2YWx1ZSI6IkVkIEpvbmVzIn0=',
-        text: 'Ed Jones',
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidHlwZSIsInZhbHVlIjoicGhvdG8ifQ==',
+        text: 'photo',
         count: 2,
+        min: 0,
+        max: 0,
       },
       {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BlYWtlcnMiLCJ2YWx1ZSI6IkphY29iIEdvbnphbGV6In0=',
-        text: 'Jacob Gonzalez',
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidHlwZSIsInZhbHVlIjoic2Vzc2lvbiJ9',
+        text: 'session',
         count: 2,
-      },
-    ],
-  },
-  {
-    name: 'sponsors',
-    label: 'Sponsors',
-    value: [
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BvbnNvcnMiLCJ2YWx1ZSI6IlN0cml2YSJ9',
-        text: 'Striva',
-        count: 6,
+        min: 0,
+        max: 0,
       },
       {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BvbnNvcnMiLCJ2YWx1ZSI6IlNwYXJrIn0=',
-        text: 'Spark',
-        count: 3,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BvbnNvcnMiLCJ2YWx1ZSI6IkFsYmEifQ==',
-        text: 'Alba',
-        count: 2,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BvbnNvcnMiLCJ2YWx1ZSI6IlByb3N0YWZmIn0=',
-        text: 'Prostaff',
-        count: 2,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BvbnNvcnMiLCJ2YWx1ZSI6Ik1hcGQifQ==',
-        text: 'Mapd',
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidHlwZSIsInZhbHVlIjoibmV3cyJ9',
+        text: 'news',
         count: 1,
+        min: 0,
+        max: 0,
       },
       {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BvbnNvcnMiLCJ2YWx1ZSI6Ik92ZXJ1bmRlciJ9',
-        text: 'Overunder',
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidHlwZSIsInZhbHVlIjoic3BlYWtlciJ9',
+        text: 'speaker',
         count: 1,
+        min: 0,
+        max: 0,
       },
       {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BvbnNvcnMiLCJ2YWx1ZSI6IlBhY2lmaXF1ZSJ9',
-        text: 'Pacifique',
+        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidHlwZSIsInZhbHVlIjoic3BvbnNvciJ9',
+        text: 'sponsor',
         count: 1,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoic3BvbnNvcnMiLCJ2YWx1ZSI6IldhdmU1MiJ9',
-        text: 'Wave52',
-        count: 1,
-      },
-    ],
-  },
-  {
-    name: 'vendors',
-    label: 'Vendors',
-    value: [
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidmVuZG9ycyIsInZhbHVlIjoiU3RyaXZhIn0=',
-        text: 'Striva',
-        count: 4,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidmVuZG9ycyIsInZhbHVlIjoiQWxiYSJ9',
-        text: 'Alba',
-        count: 3,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidmVuZG9ycyIsInZhbHVlIjoiQ2VudGVyQ3ljbGUifQ==',
-        text: 'CenterCycle',
-        count: 3,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidmVuZG9ycyIsInZhbHVlIjoiU3lkbmV5IEN1bW1pbmdzIn0=',
-        text: 'Sydney Cummings',
-        count: 3,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidmVuZG9ycyIsInZhbHVlIjoiRnJ1aXRmdWwifQ==',
-        text: 'Fruitful',
-        count: 2,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidmVuZG9ycyIsInZhbHVlIjoiUHJvc3RhZmYifQ==',
-        text: 'Prostaff',
-        count: 2,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidmVuZG9ycyIsInZhbHVlIjoiRHdlbGwifQ==',
-        text: 'Dwell',
-        count: 1,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidmVuZG9ycyIsInZhbHVlIjoiR2FtZWRheSJ9',
-        text: 'Gameday',
-        count: 1,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidmVuZG9ycyIsInZhbHVlIjoiT3V0cmFjZSJ9',
-        text: 'Outrace',
-        count: 1,
-      },
-      {
-        id: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidmVuZG9ycyIsInZhbHVlIjoiT3ZlcnVuZGVyIn0=',
-        text: 'Overunder',
-        count: 1,
+        min: 0,
+        max: 0,
       },
     ],
   },
@@ -342,46 +206,17 @@ export const facetsProp: ContentSearchWidgetResponseFacet[] = [
 
 export const filtersProp = [
   {
-    facetId: AUDIENCE_FACET_TYPE,
-    facetValueId:
-      'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYXVkaWVuY2UiLCJ2YWx1ZSI6IldlZWtlbmQgV2FycmlvciJ9',
+    facetId: 'type',
+    facetValueId: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoidHlwZSIsInZhbHVlIjoidmVuZG9yIn0=',
+    facetLabel: 'Content Type',
+    valueLabel: 'vendor',
+    type: 'valueId',
   },
   {
-    facetId: AUDIENCE_FACET_TYPE,
-    facetValueId:
-      'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYXVkaWVuY2UiLCJ2YWx1ZSI6IkZpdG5lc3MgRmFuYXRpYyJ9',
-  },
-];
-
-export const tabsProp = [
-  {
-    id: SESSION_SEARCH_RESULT_TYPE,
-    name: 'Sessions (8)',
-    color: '#3d93ff',
-    Component: (): JSX.Element => <div>Sessions component</div>,
-  },
-  {
-    id: SPEAKER_SEARCH_RESULT_TYPE,
-    name: 'Speakers (6)',
-    color: '#ff8d02',
-    Component: (): JSX.Element => <div>Speakers component</div>,
-  },
-  {
-    id: VENDOR_SEARCH_RESULT_TYPE,
-    name: 'Vendors (3)',
-    color: '#ff1a87',
-    Component: (): JSX.Element => <div>Vendors component</div>,
-  },
-  {
-    id: SPONSOR_SEARCH_RESULT_TYPE,
-    name: 'Sponsors (1)',
-    color: '#ffd51d',
-    Component: (): JSX.Element => <div>Sponsors component</div>,
-  },
-  {
-    id: CONTENT_SEARCH_RESULT_TYPE,
-    name: 'News (10)',
-    color: '#000',
-    Component: (): JSX.Element => <div>News Articles component</div>,
+    facetId: 'activities',
+    facetValueId: 'facetid_eyJ0eXBlIjoiZXEiLCJuYW1lIjoiYWN0aXZpdGllcyIsInZhbHVlIjoiQ3ljbGluZyJ9',
+    facetLabel: 'Activities',
+    valueLabel: 'Cycling',
+    type: 'valueId',
   },
 ];

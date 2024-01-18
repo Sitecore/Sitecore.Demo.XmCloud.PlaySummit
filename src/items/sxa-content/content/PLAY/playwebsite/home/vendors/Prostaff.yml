@@ -47,12 +47,10 @@ Languages:
       Value: "{76B1D64B-C80D-4FE8-8FF2-7FF22360E341}|{DB5BFBE7-B584-4BBE-94C5-A67F20F1BB81}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d7af54af-e142-4855-8285-0f5eb759a108"
+      Value: "a261e570-d8c7-49a0-83f5-c63c8980c4b0"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>Prostaff is a renowned brand in the sports industry, specializing in high-quality equipment for various sporting disciplines. They are known for their professional-grade gear, which is trusted by athletes and sports enthusiasts around the world. Prostaff's product range includes everything from tennis rackets and golf clubs to basketballs and soccer cleats. At the PLAY! Summit Conference, Prostaff will be showcasing their latest product innovations and sharing their commitment to improving sports performance through superior equipment.</p>"
     - ID: "d57b5629-9801-4418-9088-8a8dfa8fc84c"
       Hint: Name
       Value: Prostaff

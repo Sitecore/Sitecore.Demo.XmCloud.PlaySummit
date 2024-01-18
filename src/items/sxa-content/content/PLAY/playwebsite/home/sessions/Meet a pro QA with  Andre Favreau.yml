@@ -32,10 +32,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+        <p>The "Meet a Pro: Q&amp;A with Andre Favreau" session is a rare opportunity for attendees to engage directly with the renowned professional athlete, Andre Favreau. Known for his impressive career and immense contributions to the sports world, Favreau will share insights from his personal journey, revealing how he reached the pinnacle of his sport. Attendees will get the chance to learn more about his training routines, mental preparation, and the challenges he faced along his path to becoming a professional athlete. This session will provide an in-depth look into the life of a pro, offering attendees a unique perspective on sports and fitness.<br />
+        <br />
+        In the second part of the session, the floor will be open for attendees to ask their questions. Whether they're interested in Favreau's nutrition regimen, his strategies for overcoming adversity, or his advice for aspiring athletes, this is their chance to gain knowledge directly from a seasoned professional. This Q&amp;A session will not only inspire attendees but also equip them with practical tips and strategies that they can apply in their own fitness journey. It&rsquo;s a must-attend for anyone passionate about sports and aspiring to elevate their game.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{BB90AE1B-06D6-480D-A238-F2998721A00D}"
@@ -63,7 +62,7 @@ Languages:
       Value: "{374B55AB-B656-4588-A347-A0D28CB2AC99}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "cff97dfa-99bb-4a98-b2d7-34eabd94ce24"
+      Value: "94655678-b369-4b80-9533-ad3cd8a64987"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "Meet a pro: Q&A with Andre Favreau"

@@ -40,13 +40,13 @@ Languages:
       Value: "PLAY! Summit Goes Live"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9da0a6cb-d3aa-4725-afc1-171dafde982c"
+      Value: "c88f9a00-0ec1-4bcc-a0b2-cf5cf3307ceb"
     - ID: "c60646d2-b021-4158-be5f-64943e445b1a"
       Hint: PublishDate
       Value: 20210804T172751Z
     - ID: "ec2ff3e7-0a21-4808-8cf8-c13ccd6fffc8"
       Hint: Excerpt
-      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan posuere orci, placerat tristique quam vulputate non. Aliquam erat volutpat. Vestibulum ante ipsum primis in orci luctus et posuere cubilia Sed mollis tincidunt eu. Vestibulum ante ipsum primis in orci luctus et posuere cubilia Sed mollis tincidunt eu.
+      Value: "The PLAY! Summit Conference, a global gathering of fitness brands, sports professionals, and users, has officially gone live. This revolutionary platform offers an unprecedented opportunity to connect, share insights and explore the latest trends in the world of fitness and sports."
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "PLAY! Summit Goes Live"
@@ -56,7 +56,20 @@ Languages:
         <image stylelabs-content-id="30591" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/30591/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/394a9ffe7b5f4cf29b6646571fe96248?v=05668867&amp;t=postcard" mediaid="" stylelabs-content-type="Image" alt="Play Summit Speaking Hall2" height="1080" width="1595" />
     - ID: "f7d201d9-0ae6-4afa-8c5c-777f0504ebc3"
       Hint: Content
-      Value: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan posuere orci, placerat tristique quam vulputate non. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed mollis tincidunt magna eu blandit. Praesent at urna in massa tempus varius a eu diam. Etiam at porta nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ultricies sed purus a interdum.&nbsp;</p><p>Nullam ut tempus tellus. Pellentesque venenatis, nisi vitae iaculis auctor, tellus quam dignissim lorem, sit amet aliquet enim nulla vitae neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Fusce non mauris interdum, cursus nibh a, facilisis ex. Ut in placerat orci, ut pretium quam. Donec id odio ac tellus lacinia ullamcorper sed quis purus. Sed consectetur molestie congue. Pellentesque eu nisl vitae est hendrerit cursus vel a mauris. Etiam feugiat ultrices lacus ut vehicula. Donec diam erat, efficitur nec orci at, volutpat mattis justo.&nbsp;</p><p>Fusce egestas non tortor nec interdum. Fusce nec augue hendrerit, facilisis lorem eu, molestie libero. Donec eget sem egestas orci ullamcorper molestie. Sed felis turpis, interdum et est vel, eleifend tincidunt magna. Nulla vel nisl et odio lacinia congue. Curabitur suscipit cursus tellus, vitae pulvinar ex imperdiet non. In pulvinar tellus quam, et gravida felis mattis id. Integer congue ligula ac nunc vulputate viverra nec et lectus. Pellentesque malesuada magna malesuada fermentum placerat. Fusce sit amet arcu nec tortor laoreet volutpat sed eget libero. Quisque convallis arcu eu nisl consectetur egestas. Praesent imperdiet dictum ex at aliquet. Sed rhoncus venenatis purus et dapibus. Nulla tincidunt sit amet erat eu elementum. Cras in ipsum sed dolor laoreet ornare. Nulla facilisi.</p>
+      Value: |
+        <p>The PLAY! Summit Conference, a global gathering of fitness brands, sports professionals, and users, has officially gone live. This revolutionary platform offers an unprecedented opportunity to connect, share insights and explore the latest trends in the world of fitness and sports.<br />
+        <br />
+        Highlighting the significance of health and wellness, the PLAY! Summit aims to bring together industry influencers, leading sports professionals, and fitness enthusiasts from around the globe. This year&rsquo;s event boasts an impressive roster of keynote speakers, interactive sessions, and a unique opportunity for attendees to engage directly with industry leaders.<br />
+        <br />
+        The conference is set to cover a wide range of topics, from innovative fitness technology to the role of sports in society. Through panel discussions, attendees will gain insights into the latest fitness trends, the impact of technology on sports, and the future of the industry.<br />
+        <br />
+        One of the Summit's primary objectives is to foster an environment of learning and networking. To achieve this, the conference features a mix of keynote presentations, breakout sessions, and interactive workshops. These segments are designed to encourage conversations around the current challenges and opportunities in the fitness industry, foster collaborations, and inspire new ideas.<br />
+        <br />
+        In addition to the enriching sessions, the PLAY! Summit also offers a unique platform for fitness brands to showcase their products and services. The expo area will feature a variety of brands, from established names in the industry to promising startups, providing a unique opportunity for them to connect with potential customers and partners.<br />
+        <br />
+        The PLAY! Summit is more than just a conference. It's a celebration of the power of sports and fitness, an exploration of the industry's future, and a chance for like-minded individuals to connect. Whether you're a fitness professional, a sports enthusiast, or a brand looking to make your mark, the PLAY! Summit is the place to be.<br />
+        <br />
+        Stay tuned for live updates, highlights, and insights from the PLAY! Summit Conference. Experience the future of fitness and sports, only at PLAY! Summit.</p>
 - Language: "fr-CA"
   Versions:
   - Version: 1

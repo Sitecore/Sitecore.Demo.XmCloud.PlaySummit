@@ -32,10 +32,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+        <p>The "Meet a Pro: Q&amp;A with Zoran Borovic" session is an interactive segment designed to offer participants unparalleled access to the world-renowned professional athlete, Zoran Borovic. Esteemed for his significant achievements and contributions to his sport, Borovic will share valuable insights from his personal and professional journey. This will provide attendees with an exclusive peek into his training regimen, mental fortitude, resilience, and the challenges he has surmounted on his path to success. This engaging session aims to give attendees a comprehensive understanding of what it takes to excel in the sports arena.<br />
+        <br />
+        During the second half of the session, attendees will have the chance to engage in a direct Q&amp;A with Borovic. This is their opportunity to delve deeper into topics such as his nutritional practices, his techniques for overcoming adversity, and his advice for budding athletes. The session promises to be not just inspiring, but also educational, equipping attendees with practical tips and strategies that they can implement in their own fitness journey. This open conversation with Borovic is a must-attend for anyone passionate about sports and striving to take their game to the next level.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{214DE422-5240-44D6-8279-1454742A55FE}"
@@ -63,7 +62,7 @@ Languages:
       Value: "{72DD2F9A-9EA1-4BD3-A8F5-927795E58AF9}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9a3c2f1f-b9f5-4c5f-a8bd-4eeada497075"
+      Value: "51a108d4-fc6e-4d76-950f-c02421cc7049"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "Meet a pro: Q&A with Zoran Borovic"
