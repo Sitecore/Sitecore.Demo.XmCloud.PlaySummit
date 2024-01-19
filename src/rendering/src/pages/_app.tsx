@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app';
 import { I18nProvider } from 'next-localization';
 import { SitecorePageProps } from 'lib/page-props';
+import Bootstrap from 'src/Bootstrap';
 // DEMO TEAM CUSTOMIZATION - CDP and Sitecore Send integration. Per page layouts. Fonts and icons. etc.
 import { ReactElement, useEffect } from 'react';
 import Head from 'next/head';
@@ -34,6 +35,8 @@ type AppPropsWithLayout = AppProps<SitecorePageProps> & {
 
 // DEMO TEAM CUSTOMIZATION (next line) - Different prop type. Add router.
 function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element {
+  const { dictionary, ...rest } = pageProps;
+  
   // DEMO TEAM CUSTOMIZATION
   useEffect(() => {
     // Identify the user from an email address from the query string to handle clicks on email links
@@ -74,8 +77,6 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
   // END CUSTOMIZATION
 
   // DEMO TEAM CUSTOMIZATION - Per page layouts
-  const { dictionary } = pageProps;
-
   const getLayout = Component.getLayout ?? ((page) => page);
   const component = getLayout(<Component {...pageProps} />);
   // END CUSTOMIZATION
@@ -89,6 +90,8 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <meta name="description" content="PLAY! Summit" />
       </Head>
+      
+      <Bootstrap {...pageProps} />
 
       {/* DEMO TEAM CUSTOMIZATION - CDP integration. It is important this script is rendered before the <Component> so the CDP calls made on the first page load are successful. */}
       {CdpScripts}
@@ -99,9 +102,9 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
       {/* END CUSTOMIZATION*/}
 
       {/*
-        Use the next-localization (w/ rosetta) library to provide our translation dictionary to the app.
-        Note Next.js does not (currently) provide anything for translation, only i18n routing.
-        If your app is not multilingual, next-localization and references to it can be removed.
+        // Use the next-localization (w/ rosetta) library to provide our translation dictionary to the app.
+        // Note Next.js does not (currently) provide anything for translation, only i18n routing.
+        // If your app is not multilingual, next-localization and references to it can be removed.
       */}
       <I18nProvider lngDict={dictionary} locale={pageProps.locale}>
         {isSearchSDKEnabled ? (
