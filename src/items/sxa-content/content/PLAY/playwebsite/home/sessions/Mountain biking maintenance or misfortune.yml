@@ -35,10 +35,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+        <p>The "Mountain Biking: Maintenance or Misfortune" session is designed to emphasize the importance of regular bike maintenance for ensuring a smooth and safe mountain biking experience. Led by experts in the field, the session will discuss common maintenance issues that mountain bikers face and will provide practical solutions to prevent and address these issues. Attendees will learn about the essentials of bike maintenance, including tire pressure checks, brake inspections, and chain lubrication. They will understand how regular maintenance can significantly reduce the risk of mechanical failures and accidents, ensuring a more enjoyable and secure ride.<br />
+        <br />
+        In the second part of the session, the focus will be on how proper maintenance can prevent misfortunes on the trail. Experienced mountain bikers and mechanics will share real-life scenarios where regular maintenance made the difference between a successful ride and a potential disaster. Attendees will learn how to identify early signs of wear and tear and how to perform basic repairs on the trail. The session aims to empower mountain bikers with the knowledge and skills to maintain their bikes in top condition, thereby enhancing their performance and safety on the trails.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{AFB23041-6733-44B0-843C-193713F55C7D}"
@@ -66,7 +65,7 @@ Languages:
       Value: "{2ACD0217-A6FE-401C-9E0C-FF625CAD8CC3}|{6FE42A91-749B-4B13-BBA6-826DABE94B00}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "100363e1-47f1-4c4f-86fd-3a56d13137ec"
+      Value: "2ba3e6bf-83ec-4afe-b45d-0db496c5247f"
     - ID: "cb19a833-48b8-4ad4-a841-09769bbef5c6"
       Hint: Sponsors
       Value: "{8C5F5B0A-B6A6-46CE-A34A-6A76E7B4FD2E}"

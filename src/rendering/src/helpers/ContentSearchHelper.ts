@@ -165,3 +165,7 @@ export const newsAdapter = ({
     },
   },
 });
+
+export const removeTags = (text: string): string => {
+  return text.replace(/(<([^>]+)>)/gi, '');
+};

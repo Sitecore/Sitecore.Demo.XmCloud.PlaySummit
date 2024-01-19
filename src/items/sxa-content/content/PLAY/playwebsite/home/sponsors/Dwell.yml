@@ -35,9 +35,7 @@ Languages:
       Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "5a1f6707-d155-4618-b051-966216449b1c"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>Dwell is a renowned media brand that focuses on modern design, architecture, and interiors. Known for its commitment to aesthetics and functionality, Dwell provides inspiration and information about the latest trends and innovations in the design world. As a sponsor for the PLAY! Summit Conference, they emphasize the importance of well-crafted spaces and equipment in enhancing the sports and fitness experience.</p>"
     - ID: "752f4b39-259c-42b8-a100-fb6123faed7f"
       Hint: Speakers
       Value: "{B4A33A3E-D11A-48AC-BC63-1CFD547239E8}"
@@ -46,7 +44,7 @@ Languages:
       Value: Dwell
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "48712431-aecf-424b-9586-0240eceba932"
+      Value: "8f429a79-20fc-4e14-8c6b-32e7e10d3020"
     - ID: "cf42c29f-ee3a-4f06-92ac-10fc51a42099"
       Hint: Level
       Value: Platinum

@@ -32,8 +32,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pedeposuere a.</p>
-                        
+        <p>The "Mountain Biking: Tales from the Trail" session presents an exciting opportunity for attendees to hear firsthand accounts from seasoned mountain bikers. This session will take attendees on a virtual adventure, exploring the exhilarating highs and the challenging lows of mountain biking. Experienced bikers will share their most memorable experiences, recounting thrilling descents, challenging climbs, and breathtaking views. They will also share their encounters with unexpected obstacles and how they overcame them, providing valuable lessons for attendees.<br />
+        <br />
+        In the second half of the session, the speakers will delve into the less explored aspects of mountain biking. They will share stories about the camaraderie formed on the trails, the sense of accomplishment after conquering a tough ride, and the profound connection with nature that mountain biking offers. These narratives will not only entertain but also inspire attendees to pursue their own mountain biking adventures. Through these personal stories, attendees will gain a deeper understanding and appreciation of mountain biking as a sport and a lifestyle.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{AFB23041-6733-44B0-843C-193713F55C7D}"
@@ -61,7 +62,7 @@ Languages:
       Value: "{D3A3A6DF-FBF9-48B5-947C-A9A1257006F7}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0eae3438-8b50-4a5f-8987-a70bc58026be"
+      Value: "a917bae3-af09-407d-929a-c70e02e3e920"
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
       Value: "Mountain biking: tales from the trail"

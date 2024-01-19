@@ -47,12 +47,10 @@ Languages:
       Value: "{F31705C9-7A5A-42DB-8651-B0665EEEC77B}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d6b49855-c344-475b-ac44-26e3756cddca"
+      Value: "574b7483-4f97-4eb7-9be9-a2a1627afd1c"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>Overunder is a dynamic sports and outdoor equipment brand renowned for creating versatile, high-quality gear for a wide range of sports and outdoor activities. Their product range includes everything from climbing ropes and harnesses to camping gear and outdoor clothing. Overunder is committed to supporting adventurers, athletes, and fitness enthusiasts in their pursuit of active lifestyles. At the PLAY! Summit Conference, Overunder will be showcasing their latest products, sharing their innovative approaches to design and functionality, and demonstrating their commitment to sustainable and responsible outdoor practices.</p>"
     - ID: "d57b5629-9801-4418-9088-8a8dfa8fc84c"
       Hint: Name
       Value: Overunder

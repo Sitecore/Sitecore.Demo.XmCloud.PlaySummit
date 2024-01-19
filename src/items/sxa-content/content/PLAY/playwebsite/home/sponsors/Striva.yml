@@ -27,17 +27,15 @@ Languages:
       Hint: Logo
       Value: |
         <image stylelabs-content-id="57878" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/57878/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/0568eb4ee9a241579b786d1a21e41554?v=fdec6fcb&amp;t=medium" mediaid="" stylelabs-content-type="Image" alt="Striva.png" height="1001" width="1001" />
-    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
-      Hint: __Workflow state
-      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "12c0fdc3-9c18-41c4-aeda-8dcca687eb59"
       Hint: Sessions
       Value: "{9E25E09B-971E-409E-AA42-8D54BA7CC570}|{76B1D64B-C80D-4FE8-8FF2-7FF22360E341}|{E35FD211-A2CD-49D4-87CC-4DD07BC14B8C}|{A789A9C9-E3E8-45A5-9B0C-621B760C7D32}|{BA087B4F-7F17-4461-98E0-9514123F1EBE}|{DB5BFBE7-B584-4BBE-94C5-A67F20F1BB81}"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "5a1f6707-d155-4618-b051-966216449b1c"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>Striva is a renowned footwear brand that focuses on creating high-performance athletic shoes. Their products are designed to provide maximum comfort, durability, and support for a wide variety of sports and fitness activities. By sponsoring the PLAY! Summit Conference, Striva affirms its commitment to promoting an active lifestyle and supporting the global sports and fitness community.</p>"
     - ID: "752f4b39-259c-42b8-a100-fb6123faed7f"
       Hint: Speakers
       Value: "{209A438A-C1E2-4E02-BC8E-568235F16D1D}"
@@ -46,7 +44,7 @@ Languages:
       Value: Striva
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c94a03d8-dbeb-4797-849f-de607f007b88"
+      Value: "1cef5dee-63da-4b4e-b476-16a3ad8d5912"
     - ID: "cf42c29f-ee3a-4f06-92ac-10fc51a42099"
       Hint: Level
       Value: Platinum

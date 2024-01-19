@@ -30,17 +30,15 @@ Languages:
       Hint: Logo
       Value: |
         <image stylelabs-content-id="36792" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/36792/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/61803a38d0a943d5913c70dc2bb6cb55?v=f79a617e&amp;t=medium" mediaid="" stylelabs-content-type="Image" alt="Spark logo" height="1200" width="1200" ></image>
-    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
-      Hint: __Workflow state
-      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "12c0fdc3-9c18-41c4-aeda-8dcca687eb59"
       Hint: Sessions
       Value: "{39226DC6-0A62-459B-9299-54EC88AF6935}|{349CE17E-AB72-4C9B-BF43-8DE819D2E8B2}|{2BA9C4D5-7935-4E84-A0A3-DF8623B1B73C}"
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
     - ID: "5a1f6707-d155-4618-b051-966216449b1c"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>Spark is a forward-thinking tech company specializing in wearable fitness technology. They design and manufacture devices like smartwatches and fitness trackers that help users monitor their health and physical performance. By sponsoring the PLAY! Summit Conference, Spark highlights its dedication to promoting a healthy lifestyle and its ongoing support for technological innovation in the fitness industry.</p>"
     - ID: "752f4b39-259c-42b8-a100-fb6123faed7f"
       Hint: Speakers
       Value: "{ABC74708-2A5A-4AD9-94E6-15A6029252EC}"
@@ -49,7 +47,7 @@ Languages:
       Value: Spark
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "048339d4-1422-4d10-ac87-a1a56725e617"
+      Value: "9babf887-eb0b-4e5e-a7e1-0e5876a8341a"
     - ID: "cf42c29f-ee3a-4f06-92ac-10fc51a42099"
       Hint: Level
       Value: Silver

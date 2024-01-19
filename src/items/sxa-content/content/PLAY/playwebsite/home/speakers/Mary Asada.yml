@@ -37,7 +37,7 @@ Languages:
       Value: "{01E09652-ABD7-4BB0-AD96-E609966330BD}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ae0ddc2f-593e-4d97-83b2-37243d572cc5"
+      Value: "2885ac18-5f20-436e-9d9c-6adc802039d0"
     - ID: "94f8d6fc-b9c3-41dc-8cdf-5e967d108a40"
       Hint: Company
       Value: Striva
@@ -47,10 +47,17 @@ Languages:
     - ID: "d0b11041-4e9d-4066-b833-2fb20c0cc47d"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+        <p>Mary Asada is a celebrated professional athlete turned fitness entrepreneur. Known for her exceptional career in professional tennis, Mary has gracefully transitioned into the world of business, founding a successful line of athletic wear and launching a fitness app that has gained popularity worldwide.<br />
+        <br />
+        Mary, a native of Japan, started her career as a professional tennis player at the age of 16. Over the course of her 12-year career, she won numerous prestigious titles, including two Grand Slams. However, her impact on the world of sports extends beyond her prowess on the tennis court.<br />
+        <br />
+        After retiring from professional tennis, Mary pursued her passion for business and fitness. She launched Asada Athletic Wear, a line of high-quality, sustainable sports apparel. The brand has quickly gained a global following for its stylish designs and commitment to eco-friendly practices.<br />
+        <br />
+        In addition to her successful athletic wear line, Mary developed FitTennis, a mobile app that offers virtual tennis coaching and fitness training. The app uses innovative technology to provide personalized training plans and has been praised for making fitness and tennis coaching accessible to a wider audience.<br />
+        <br />
+        Mary is also an advocate for women in sports and regularly uses her platform to encourage young girls to pursue athletics. She has been recognized for her contributions to sports and her efforts to promote gender equality.<br />
+        <br />
+        At the PLAY! Summit Conference, Mary Asada will share her journey from professional athlete to entrepreneur, discuss the intersection of sports and business, and share her insights on promoting gender equality in sports. Her experiences and insights promise to inspire and educate all attendees.</p>
     - ID: "d410c57e-fdc1-43f4-b028-8b313217b6f9"
       Hint: JobTitle
       Value: Chief Product Officer
