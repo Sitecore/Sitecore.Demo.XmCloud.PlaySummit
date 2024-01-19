@@ -32,6 +32,7 @@ const CdpPageView = (): JSX.Element => {
   ) => {
     // DEMO TEAM CUSTOMIZATION - Only initialize if the environment variables are set
     if (isEmbeddedPersonalizationEnabled) {
+      console.debug(site);
       const pointOfSale = 'playwebsite';
       const engage = await init({
         clientKey: process.env.NEXT_PUBLIC_CDP_CLIENT_KEY || '',
