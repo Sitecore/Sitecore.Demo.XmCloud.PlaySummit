@@ -231,7 +231,7 @@ export const storeSearchProfileData = (payload: {
   const pageViews = payload.entities[0].events.views
     ?.slice(0, 5)
     .reduce(
-      (obj, item, index) => ((obj[`page${index + 1}`] = item.id), obj),
+      (obj, item, index) => ((obj[`page${index + 1}`] = sessionStorage.getItem(item.id)), obj),
       {} as Record<string, string>
     );
 
