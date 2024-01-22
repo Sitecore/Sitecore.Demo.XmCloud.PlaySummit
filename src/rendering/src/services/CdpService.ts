@@ -215,7 +215,7 @@ export const storeSearchProfileData = (payload: {
   const dataExtensionName = 'SearchProfileData';
 
   // Transform the affinity scores & page views into suitable forms for the guest data extension
-  const affinities = payload.entities?.[0].affinity?.audience?.reduce(
+  const affinities = payload?.entities?.[0].affinity?.audience?.reduce(
     (obj, item) => (
       (obj[
         item.value
@@ -228,7 +228,7 @@ export const storeSearchProfileData = (payload: {
     {} as Record<string, number>
   );
 
-  const pageViews = payload.entities?.[0].events?.views
+  const pageViews = payload?.entities?.[0].events?.views
     ?.slice(0, 5)
     .reduce(
       (obj, item, index) => ((obj[`page${index + 1}`] = sessionStorage.getItem(item.id)), obj),
