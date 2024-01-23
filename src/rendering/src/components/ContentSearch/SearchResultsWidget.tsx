@@ -14,6 +14,7 @@ import { useRouter } from 'next/router';
 import SearchResultsLayout from './SearchResultsLayout';
 import SearchResultsListing from './SearchResultsListing';
 import Link from 'next/link';
+import { getSearchItemHref } from 'src/helpers/UrlHelper';
 
 type SearchResultsProps = {
   defaultSortType?: SearchResultsStoreState['sortType'];
@@ -22,6 +23,7 @@ type SearchResultsProps = {
 };
 
 type ContentItemModel = {
+  id: string;
   type: string;
   name: string;
   url: string;
@@ -77,7 +79,7 @@ const SearchResults = ({
   const searchResultsItems = useMemo(
     () =>
       items.map((item) => (
-        <Link key={item.url} href={item.url}>
+        <Link key={item.id} href={getSearchItemHref(item.type, item.url)}>
           <li className={`item-${item.type}`}>
             {item.image_url && (
               <div className="item-image">
