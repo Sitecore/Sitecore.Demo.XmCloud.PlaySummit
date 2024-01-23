@@ -13,8 +13,7 @@ namespace Sitecore.Demo.Edge.Website.Utilities
                 item.Editing.BeginEdit();
                 try
                 {
-                    item["POS"] = "*=playwebsite";
-                    item.Editing.EndEdit();
+                    item.Editing.EndEdit(true, false);
                 }
                 catch (Exception ex)
                 {
