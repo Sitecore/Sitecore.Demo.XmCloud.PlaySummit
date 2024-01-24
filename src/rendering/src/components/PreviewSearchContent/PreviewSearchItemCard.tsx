@@ -4,10 +4,10 @@ import { useCallback } from 'react';
 export type PreviewSearchItemCardProps = {
   id: string;
   name: string;
-  description: string;
   url: string;
   image_url: string;
   type: string;
+  description?: string;
   publish_date?: string;
 };
 
