@@ -42,6 +42,10 @@
       @apply flex-grow bg-black-light py-5;
       @apply xl:bg-transparent xl:py-0;
 
+      > .container {
+        @apply mr-0;
+      }
+
       &.opened {
         @apply flex w-full;
       }
@@ -53,7 +57,7 @@
 
       ul {
         @apply flex flex-col list-none;
-        @apply xl:flex-row xl:items-center xl:ml-auto xl:mr-0 xl:p-0 xl:w-auto;
+        @apply xl:flex-row xl:items-center xl:p-0 xl:w-auto;
 
         .text-menu-item a {
           @apply text-base leading-loose text-white;

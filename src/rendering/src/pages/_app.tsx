@@ -15,6 +15,11 @@ config.autoAddCss = false;
 
 import 'assets/css/main.css'; // DEMO TEAM CUSTOMIZATION - Different CSS file name.
 
+// DEMO TEAM CUSTOMIZATION - Search SDK integration
+import { PageController, WidgetsProvider } from '@sitecore-search/react';
+import { isSearchSDKEnabled, config as searchSDKConfig } from '../services/SearchSDKService';
+// END CUSTOMIZATION
+
 // DEMO TEAM CUSTOMIZATION - Implement per page layouts to conditionally load commerce on some pages https://nextjs.org/docs/basic-features/layouts#per-page-layouts
 import { NextPage } from 'next';
 
@@ -50,6 +55,24 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
   });
   // END CUSTOMIZATION
 
+  // DEMO TEAM CUSTOMIZATION - Search SDK integration
+  useEffect(() => {
+    if (isSearchSDKEnabled) {
+      PageController.getContext().setLocaleLanguage('en');
+      PageController.getContext().setLocaleCountry('us');
+    }
+  }, []);
+  // END CUSTOMIZATION
+
+  // DEMO TEAM CUSTOMIZATION - Search SDK integration
+  useEffect(() => {
+    if (isSearchSDKEnabled) {
+      PageController.getContext().setLocaleLanguage('en');
+      PageController.getContext().setLocaleCountry('us');
+    }
+  }, []);
+  // END CUSTOMIZATION
+
   // DEMO TEAM CUSTOMIZATION - Per page layouts
   const { dictionary } = pageProps;
 
@@ -81,8 +104,13 @@ function App({ Component, pageProps, router }: AppPropsWithLayout): JSX.Element 
         If your app is not multilingual, next-localization and references to it can be removed.
       */}
       <I18nProvider lngDict={dictionary} locale={pageProps.locale}>
-        {/* DEMO TEAM CUSTOMIZATION (next line) - Per page layouts */}
-        {component}
+        {isSearchSDKEnabled ? (
+          // DEMO TEAM CUSTOMIZATION (next line) - Search SDK integration
+          <WidgetsProvider {...searchSDKConfig}>{component}</WidgetsProvider>
+        ) : (
+          // DEMO TEAM CUSTOMIZATION (next line) - Per page layouts
+          component
+        )}
       </I18nProvider>
     </>
   );

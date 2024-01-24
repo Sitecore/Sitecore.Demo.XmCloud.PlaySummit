@@ -22,3 +22,17 @@ Languages:
     - ID: "ceb0f7a3-e5e1-4e8c-a95a-8bff6f13708f"
       Hint: Title
       Value: Motor Sports
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "26e44e63-d183-4c70-b50d-ad2358a9c1af"
+      Hint: Picture
+      Value: |
+        <image mediaid="{7071C7CE-784D-434B-BBDB-C3552D5CD116}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c33431b6-ad23-4e24-98e1-e641d5e5f032"
+    - ID: "ceb0f7a3-e5e1-4e8c-a95a-8bff6f13708f"
+      Hint: Title
+      Value: Sports motorisés

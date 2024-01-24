@@ -22,3 +22,17 @@ Languages:
     - ID: "ceb0f7a3-e5e1-4e8c-a95a-8bff6f13708f"
       Hint: Title
       Value: Hiking
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "26e44e63-d183-4c70-b50d-ad2358a9c1af"
+      Hint: Picture
+      Value: |
+        <image mediaid="{F94990A4-AE43-46DF-9CF7-DBC6BA46E463}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9dc4cd1b-8c9b-4712-a427-65e7a2e8fdcf"
+    - ID: "ceb0f7a3-e5e1-4e8c-a95a-8bff6f13708f"
+      Hint: Title
+      Value: Randonnée

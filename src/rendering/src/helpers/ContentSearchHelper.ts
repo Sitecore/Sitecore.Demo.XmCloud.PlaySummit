@@ -1,4 +1,3 @@
-import { QueryClient } from '@tanstack/react-query';
 import { ContentSearchNews } from '../interfaces/contentSearch/ContentSearchNews';
 import { ContentSearchWidgetResponseSortChoice } from '../interfaces/contentSearch/ContentSearchWidgetResponse';
 import { ContentSearchSession } from '../interfaces/contentSearch/ContentSearchSession';
@@ -13,15 +12,6 @@ import { Vendor } from '../types/vendor';
 import { getAbsoluteUrlPath } from './UrlHelper';
 
 export const SEARCH_PAGE = '/search';
-
-export const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      keepPreviousData: true,
-      refetchOnWindowFocus: false,
-    },
-  },
-});
 
 const getUrlFromName = (type: string, name: string): string =>
   `/${type}/${name.replaceAll(' ', '-')}`;
@@ -175,3 +165,7 @@ export const newsAdapter = ({
     },
   },
 });
+
+export const removeTags = (text: string): string => {
+  return text.replace(/(<([^>]+)>)/gi, '');
+};

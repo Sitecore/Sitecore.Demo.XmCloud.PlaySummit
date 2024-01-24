@@ -19,3 +19,18 @@ Languages:
       Hint: Link
       Value: |
         <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{A7BDFBDA-D5CC-5388-A039-F262BC768721}" />
+- Language: "fr-CA"
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Réservez des billets
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cd50df62-7340-4ade-bff5-d39637d10ce1"
+    - ID: "a277748b-2c48-44a6-a99f-c9f353933027"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{A7BDFBDA-D5CC-5388-A039-F262BC768721}" />

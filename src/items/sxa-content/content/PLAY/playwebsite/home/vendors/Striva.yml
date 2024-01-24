@@ -50,12 +50,10 @@ Languages:
       Value: "{F31705C9-7A5A-42DB-8651-B0665EEEC77B}|{76B1D64B-C80D-4FE8-8FF2-7FF22360E341}|{E35FD211-A2CD-49D4-87CC-4DD07BC14B8C}|{DB5BFBE7-B584-4BBE-94C5-A67F20F1BB81}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ef4df2c2-ca06-46cf-a872-6e788aad4732"
+      Value: "e499d88f-49d6-423b-a669-96a408959e0a"
     - ID: "be48543c-ebb6-47d2-a0be-508184f2796b"
       Hint: Description
-      Value: |
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede posuere.</p>
-        
+      Value: "<p>Striva is a global leader in sports and fitness technology. They specialize in developing wearable devices and software platforms that help athletes and fitness enthusiasts optimize their training, track performance, and achieve their goals. Striva's product range includes heart rate monitors, GPS watches, fitness trackers, and a comprehensive training app. Their innovative solutions are used by a wide range of sports professionals, from runners and cyclists to swimmers and triathletes. At the PLAY! Summit Conference, Striva will be showcasing their latest products and sharing insights into the future of sports and fitness technology.</p>"
     - ID: "d57b5629-9801-4418-9088-8a8dfa8fc84c"
       Hint: Name
       Value: Striva

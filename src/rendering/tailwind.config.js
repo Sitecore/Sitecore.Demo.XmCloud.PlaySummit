@@ -114,8 +114,11 @@ module.exports = {
         'checkbox-check': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17.121' height='13.121' viewBox='0 0 17.121 13.121'%3E%3Cg id='Group_277' data-name='Group 277' transform='translate(1.061 1.061)'%3E%3Cg id='Group_276' data-name='Group 276'%3E%3Cline id='Line_3' data-name='Line 3' x1='6' y1='6' transform='translate(0 5)' fill='none' stroke='%23707070' stroke-width='3'/%3E%3Cline id='Line_4' data-name='Line 4' x1='11' y2='11' transform='translate(4)' fill='none' stroke='%23707070' stroke-width='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A\")",
         'play-element-gray': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='291.333' height='347.475' viewBox='0 0 291.333 347.475'%3E%3Cg id='featured-section-element-right' opacity='0.3'%3E%3Cpath id='Path_53' data-name='Path 53' d='M703.844,136.166,462.176,381.111,414.3,268.33,546.913,136.173Z' transform='translate(-414.299 -136.166)' fill='%23ccc'/%3E%3Cpath id='Path_54' data-name='Path 54' d='M656.01,282.9v123.63L413.382,304.005l85.31-86.761Z' transform='translate(-364.677 -59.059)' fill='%23efefef'/%3E%3C/g%3E%3C/svg%3E%0A\")",
         'play-element-color': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='290.333' height='347.475' viewBox='0 0 290.333 347.475'%3E%3Cg id='featured-section-element-right' transform='translate(-1)' opacity='0.3'%3E%3Cpath id='Path_53' data-name='Path 53' d='M703.844,136.166,462.176,381.111,414.3,268.33,546.913,136.173Z' transform='translate(-413.299 -136.166)' fill='%23ffb059'/%3E%3Cpath id='Path_54' data-name='Path 54' d='M656.01,282.9v123.63L413.382,304.005l85.31-86.761Z' transform='translate(-364.677 -59.059)' fill='%233d94ff'/%3E%3C/g%3E%3C/svg%3E%0A\")",
+        'play-element-full-color': "url(\"data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_2' data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 61.3 73.4'%3E%3Cg id='Layer_2-2' data-name='Layer 2'%3E%3Cg%3E%3Cpolygon fill='%23ff8d00' points='61.3 27.9 51.2 51.7 .3 0 33.4 0 61.3 27.9'/%3E%3Cpolygon fill='%231c80ff' points='0 73.4 0 47.3 33.2 33.4 51.2 51.7 0 73.4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }

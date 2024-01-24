@@ -1,34 +1,11 @@
 function extract(request, response) {
   function validateData(data, acceptPageType) {
-    const { query: { path: [pageType] = [] } = {} } = data;
-
-    return pageType === acceptPageType;
+    const { query: { path = [] } = {} } = data;
+    return path[1] === acceptPageType;
   }
 
   function getDisplayNameList(list) {
     return list.map(({ displayName }) => displayName);
-  }
-
-  function getTargetItemsList(obj) {
-    return obj ? obj.targetItems.map(({ name: { value } }) => value) : [];
-  }
-
-  function buildTargetItemsList(list = [], set) {
-    return [...new Set(list.concat(getTargetItemsList(set)))];
-  }
-
-  function extractSessionsData(sessions) {
-    return sessions.reduce((mem, { rooms, day, timeslots }) => {
-      const sessionDays = buildTargetItemsList(mem.days, day);
-      const sessionTimeSlots = buildTargetItemsList(mem.time_slots, timeslots);
-
-      return {
-        ...mem,
-        rooms: buildTargetItemsList(mem.rooms, rooms),
-        days: sessionDays,
-        time_slots: sessionTimeSlots,
-      };
-    }, {});
   }
 
   function processData(data, acceptPageType) {
@@ -52,46 +29,55 @@ function extract(request, response) {
       displayName,
       itemId,
       fields: { Logo, Sessions, ActivityType, Speakers, Level },
-      placeholders: {
-        'headless-main': [
-          {
-            placeholders: {
-              'sxa-vendor-content': [
-                _,
-                {
-                  fields: {
-                    data: {
-                      contextItem: { sessions },
-                    },
-                  },
-                },
-              ],
-            },
-          },
-        ],
-      },
     } = data;
 
     const description = $('.section-content .rich-text').text();
-    const { value: { thumbnailsrc: image_thumb_url, src: image_url } = {} } = Logo;
+    const {
+      value: {
+        thumbnailsrc: image_thumb_url,
+        src: image_url,
+        alt: imageDescription,
+        'stylelabs-content-id': imageID,
+      } = {},
+    } = Logo;
     const { value: level } = Level;
     const activities = getDisplayNameList(ActivityType);
     const speakers = getDisplayNameList(Speakers);
 
+    const days = [...new Set([...$('.session-info-date')].map((e) => $(e).text().trim()))];
+    const time_slots = [...new Set([...$('.session-info-time')].map((e) => $(e).text().trim()))];
+    const rooms = [
+      ...new Set(
+        [
+          ...$('div.info-col-content > div.info-text > span:nth-child(2):not(.session-info-time)'),
+        ].map((e) => $(e).text().trim())
+      ),
+    ];
+
     return [
       {
-        type: 'vendor',
-        id: itemId,
-        name: displayName,
         description,
         image_thumb_url,
         image_url,
-        url: urlPath,
         activities,
         speakers,
         level,
+        rooms,
+        days,
+        time_slots,
+        type: 'vendor',
+        id: itemId,
+        name: displayName,
+        url: urlPath,
         sessions: getDisplayNameList(Sessions),
-        ...extractSessionsData(sessions.targetItems),
+      },
+      {
+        image_url,
+        image_thumb_url,
+        type: 'photo',
+        name: displayName,
+        id: imageID,
+        description: imageDescription,
       },
     ];
   }

@@ -34,7 +34,52 @@ Languages:
       Value: "Striva to premiere new fitness app at PLAY! Summit"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a10c58e3-0a99-4a87-837b-5804aa926a76"
+      Value: "35d87ce8-3cfa-4569-bd6a-e0ad51318af0"
+    - ID: "c60646d2-b021-4158-be5f-64943e445b1a"
+      Hint: PublishDate
+      Value: 20210807T182227Z
+    - ID: "ec2ff3e7-0a21-4808-8cf8-c13ccd6fffc8"
+      Hint: Excerpt
+      Value: "Leading fitness brand, Striva, is set to premiere its innovative new fitness app at this year's PLAY! Summit Conference. The unveiling is highly anticipated by both sports professionals and fitness enthusiasts who are eager to experience the latest advancements in fitness technology."
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: "Striva to premiere new fitness app at PLAY! Summit"
+    - ID: "f3204d80-07b0-4680-8939-15c2c2f82dcb"
+      Hint: Image
+      Value: |
+        <image stylelabs-content-id="30841" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/30841/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/fb61d88ba91147109496119795169279?v=7127f275&amp;t=postcard" mediaid="" stylelabs-content-type="Image" alt="Striva Habitat5 Fitness Tracker" height="625" width="770" />
+    - ID: "f7d201d9-0ae6-4afa-8c5c-777f0504ebc3"
+      Hint: Content
+      Value: |
+        <p style="text-align:justify;">Leading fitness brand, Striva, is set to premiere its innovative new fitness app at this year's PLAY! Summit Conference. The unveiling is highly anticipated by both sports professionals and fitness enthusiasts who are eager to experience the latest advancements in fitness technology.<br />
+        <br />
+        The new app, named 'StrivaFit', is expected to revolutionize the way users approach fitness by offering tailored workouts, comprehensive progress tracking, and a unique social platform to connect with other fitness enthusiasts. Striva has been tight-lipped about the app's features, adding to the mounting excitement and speculation.<br />
+        <br />
+        Striva's mission to promote health and wellness aligns perfectly with the ethos of the PLAY! Summit. The conference, which aims to explore the future of sports and fitness, offers the ideal platform for Striva to launch its groundbreaking app.<br />
+        <br />
+        The app is expected to leverage state-of-the-art technology to provide users with a personalized fitness experience. StrivaFit is designed to adapt to the user's fitness level, goals, and preferences, creating a truly individualized workout plan. It also boasts features that track progress and provide real-time feedback, helping users stay motivated and achieve their fitness goals.<br />
+        <br />
+        The social element of the app aims to build a community of users who can connect, motivate, and inspire each other. Users will be able to share their progress, participate in challenges, and even connect with fitness experts.<br />
+        <br />
+        Striva's new app is set to be one of the highlights of the PLAY! Summit Conference. The brand's representatives will be available for product demonstrations and to answer any questions during the event. Attendees will also have the opportunity to be among the first to download and experience StrivaFit.<br />
+        <br />
+        With StrivaFit, Striva continues to push the boundaries of fitness technology, creating new ways for people to engage with fitness and sports. Be sure to tune in to the PLAY! Summit to witness the premiere of StrivaFit.</p>
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
+    - ID: "49461c19-39ae-4df4-abf5-15bd7fab54ce"
+      Hint: Audience
+      Value: "{4D758CED-1AD4-46C7-8E72-B42BE54A08E8}|{A69C357B-F4F9-4D4B-8262-44B0E60F051F}"
+    - ID: "5452a1d2-a7e3-421c-a6ee-dc69e58bf206"
+      Hint: Title
+      Value: "Striva dévoilera sa nouvelle application de fitness lors du Sommet PLAY!"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b3bf78c8-e8ea-4f87-8c77-17ef4416c327"
     - ID: "c60646d2-b021-4158-be5f-64943e445b1a"
       Hint: PublishDate
       Value: 20210807T182227Z
@@ -43,7 +88,7 @@ Languages:
       Value: Ut et suscipit justo. Fusce sit amet sollicitudin arcu. Curabitur et elit ut sapien varius faucibus a volutpat felis. Duis congue consectetur vehicula. Vestibulum diam erat, varius a facilisis eget, mollis a ligula. Quisque dictum convallis odio, ac condimentum lacus maximus eget. Cras id mattis diam.
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
-      Value: "Striva to premiere new fitness app at PLAY! Summit"
+      Value: "Striva dévoilera sa nouvelle application de fitness lors du Sommet PLAY!"
     - ID: "f3204d80-07b0-4680-8939-15c2c2f82dcb"
       Hint: Image
       Value: |

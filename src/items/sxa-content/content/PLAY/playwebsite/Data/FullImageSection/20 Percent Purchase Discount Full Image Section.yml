@@ -25,3 +25,27 @@ Languages:
     - ID: "e93c0025-7f3b-5484-ad56-198d8c5f9c22"
       Hint: title
       Value: "PLAY! Summit Exclusive Offer"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0f531c03-8501-5776-be06-03ac387d1076"
+      Hint: callToActionLink
+      Value: |
+        <link text="Obtenez le code de réduction" linktype="external" url="/shop" anchor="" target="" />
+    - ID: "52db75bc-b548-42bf-8fff-7ed04af8cb58"
+      Hint: backgroundImage
+      Value: |
+        <image mediaid="{66DCB99C-1425-4CC5-9E90-CF909CE08382}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b82a98e0-965d-4724-a462-9f3bd0ef79e0"
+    - ID: "a41c61bb-5abb-5773-9870-c06f637dd22c"
+      Hint: content
+      Value: |
+        Nous nous associons avec plus de 2000 marques pour offrir aux participants du sommet PLAY! une <strong>réduction de 20 %</strong> sur tous les achats en ligne et en personne effectués lors de l'événement de cette année.
+        
+        
+    - ID: "e93c0025-7f3b-5484-ad56-198d8c5f9c22"
+      Hint: title
+      Value: "Offre exclusive du sommet PLAY!"

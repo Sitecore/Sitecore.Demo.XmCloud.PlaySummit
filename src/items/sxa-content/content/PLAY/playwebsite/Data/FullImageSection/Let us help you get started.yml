@@ -1,0 +1,27 @@
+﻿---
+ID: "11dc106c-d27b-4a4a-ba72-80ddebbb23d2"
+Parent: "d683a83e-24b9-5c38-b7f7-4108b7c8c3ba"
+Template: "5954b01b-2adb-53d6-85ee-e8408d2cc2a4"
+Path: /sitecore/content/PLAY/playwebsite/Data/FullImageSection/Let us help you get started
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0f531c03-8501-5776-be06-03ac387d1076"
+      Hint: callToActionLink
+      Value: |
+        <link text="Start here" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{F0F59E9F-A9D5-4B8A-9A11-A1A0A08FC6C9}" />
+    - ID: "52db75bc-b548-42bf-8fff-7ed04af8cb58"
+      Hint: backgroundImage
+      Value: |
+        <image mediaid="{82FE5E2A-CB16-4235-BBD1-2D89955A0EC1}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e8ee33d1-577a-455d-b768-155925c02f0c"
+    - ID: "a41c61bb-5abb-5773-9870-c06f637dd22c"
+      Hint: content
+      Value: "So many choices can be overwhelming. Whether you're a beginner or expert, our quick three-step questionnaire will get you moving."
+    - ID: "e93c0025-7f3b-5484-ad56-198d8c5f9c22"
+      Hint: title
+      Value: Let us help you get started

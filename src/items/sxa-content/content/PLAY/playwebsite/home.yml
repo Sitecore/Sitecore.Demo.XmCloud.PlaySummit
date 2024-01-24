@@ -70,9 +70,9 @@ SharedFields:
           uid="{45FCA8EC-2A99-531D-B270-0389AB473563}"
           p:after="r[@uid='{368C89F1-3640-58A1-BDE0-A1C0E8426D3E}']"
           s:rname="FullImageSection"
-          s:ds="{BD8B0390-574A-57F3-B801-1C3A4F42B3D6}"
+          s:ds="{11DC106C-D27B-4A4A-BA72-80DDEBBB23D2}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles=%7b3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7d&amp;CSSStyles"
+          s:par="FieldNames&amp;Styles=%7B3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7D&amp;RenderingIdentifier&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1"
           s:ccb="Clear on publish" />
         <r
@@ -114,9 +114,9 @@ SharedFields:
           uid="{9C37536D-E2AA-5BF2-8103-FA15D43F5121}"
           p:after="*[1=2]"
           s:rname="ProductCategoriesGrid"
-          s:ds="{B480E5FA-E4D0-4C4A-B42D-033E697680ED}"
-          s:id="{9B5E1E18-FD8D-5E80-8028-861D007DCA15}"
-          s:par=""
+          s:ds=""
+          s:id="{B00B0079-2FAF-4BFA-AF3C-4E98EF164C9F}"
+          s:par="Items=6&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1/jss-section-content-{47F9A467-6F47-5D35-9F6F-70D4FA338EC6}-0"
           s:ccb="Clear on publish" />
       </d>
@@ -130,6 +130,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
       Hint: Title
       Value: Home
@@ -141,4 +144,17 @@ Languages:
       Value: home
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e517bd57-e4a7-47c3-a34a-535106aa2a72"
+      Value: "93e39e8f-98c8-483f-94cf-19ff53285bfb"
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
+      Hint: Title
+      Value: Accueil
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "40d9357c-a029-4f37-8d36-2be9d6918eb5"

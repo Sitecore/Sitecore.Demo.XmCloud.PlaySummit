@@ -32,8 +32,9 @@ Languages:
     - ID: "21df785e-14dd-4c8d-abff-5ae00b693e5e"
       Hint: Description
       Value: |
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a rhoncus ipsum, sit amet pharetra ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a rhoncus ipsum, sit amet pharetra ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ipsum, sit amet pharetra ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        
+        <p>The "Intro to Cycling" session, sponsored by Striva, serves as an excellent starting point for those who are new to cycling or want to incorporate this low-impact, high-energy exercise into their fitness routine. Expert cyclists and fitness trainers will provide comprehensive knowledge about the basics of cycling, from choosing the right bicycle and understanding its mechanics to learning basic riding techniques and safety protocols. Attendees will also be introduced to different cycling disciplines, such as road cycling, mountain biking, and indoor cycling, to help them determine which suits their fitness goals and preferences best.<br />
+        <br />
+        In the second part of this session, there will be a focus on how cycling can be utilized for overall health and wellness. The experts will discuss the physical and mental health benefits of regular cycling, and how it contributes to cardiovascular fitness, muscle tone, weight management, and stress reduction. Attendees will also learn how to use Striva's innovative technology to monitor their cycling performance and track their progress, adding a new dimension to their cycling experience. This session promises to inspire and equip attendees with the knowledge and enthusiasm to embark on their cycling journey.</p>
     - ID: "3647d085-16e3-44ee-a3f7-c613d0fe17ce"
       Hint: Speakers
       Value: "{04013CFE-C1DD-4D16-BBC1-AD0B548FCD7F}|{209A438A-C1E2-4E02-BC8E-568235F16D1D}"
@@ -61,7 +62,7 @@ Languages:
       Value: "{6FE42A91-749B-4B13-BBA6-826DABE94B00}|{2ACD0217-A6FE-401C-9E0C-FF625CAD8CC3}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0bf7a0a0-471e-490b-9f82-806e955fa33a"
+      Value: "2926b6b7-e892-4b73-b00d-c518b3545224"
     - ID: "cb19a833-48b8-4ad4-a841-09769bbef5c6"
       Hint: Sponsors
       Value: "{C5CEF7C2-8DC6-4B8A-9AD4-D04DEB7B5DAB}"

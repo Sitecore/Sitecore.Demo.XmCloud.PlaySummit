@@ -40,7 +40,52 @@ Languages:
       Value: "PLAY! Summit Goes Live"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9da0a6cb-d3aa-4725-afc1-171dafde982c"
+      Value: "c88f9a00-0ec1-4bcc-a0b2-cf5cf3307ceb"
+    - ID: "c60646d2-b021-4158-be5f-64943e445b1a"
+      Hint: PublishDate
+      Value: 20210804T172751Z
+    - ID: "ec2ff3e7-0a21-4808-8cf8-c13ccd6fffc8"
+      Hint: Excerpt
+      Value: "The PLAY! Summit Conference, a global gathering of fitness brands, sports professionals, and users, has officially gone live. This revolutionary platform offers an unprecedented opportunity to connect, share insights and explore the latest trends in the world of fitness and sports."
+    - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
+      Hint: pageTitle
+      Value: "PLAY! Summit Goes Live"
+    - ID: "f3204d80-07b0-4680-8939-15c2c2f82dcb"
+      Hint: Image
+      Value: |
+        <image stylelabs-content-id="30591" thumbnailsrc="https://playsummit.sitecoresandbox.cloud/api/gateway/30591/thumbnail" src="https://playsummit.sitecoresandbox.cloud/api/public/content/394a9ffe7b5f4cf29b6646571fe96248?v=05668867&amp;t=postcard" mediaid="" stylelabs-content-type="Image" alt="Play Summit Speaking Hall2" height="1080" width="1595" />
+    - ID: "f7d201d9-0ae6-4afa-8c5c-777f0504ebc3"
+      Hint: Content
+      Value: |
+        <p>The PLAY! Summit Conference, a global gathering of fitness brands, sports professionals, and users, has officially gone live. This revolutionary platform offers an unprecedented opportunity to connect, share insights and explore the latest trends in the world of fitness and sports.<br />
+        <br />
+        Highlighting the significance of health and wellness, the PLAY! Summit aims to bring together industry influencers, leading sports professionals, and fitness enthusiasts from around the globe. This year&rsquo;s event boasts an impressive roster of keynote speakers, interactive sessions, and a unique opportunity for attendees to engage directly with industry leaders.<br />
+        <br />
+        The conference is set to cover a wide range of topics, from innovative fitness technology to the role of sports in society. Through panel discussions, attendees will gain insights into the latest fitness trends, the impact of technology on sports, and the future of the industry.<br />
+        <br />
+        One of the Summit's primary objectives is to foster an environment of learning and networking. To achieve this, the conference features a mix of keynote presentations, breakout sessions, and interactive workshops. These segments are designed to encourage conversations around the current challenges and opportunities in the fitness industry, foster collaborations, and inspire new ideas.<br />
+        <br />
+        In addition to the enriching sessions, the PLAY! Summit also offers a unique platform for fitness brands to showcase their products and services. The expo area will feature a variety of brands, from established names in the industry to promising startups, providing a unique opportunity for them to connect with potential customers and partners.<br />
+        <br />
+        The PLAY! Summit is more than just a conference. It's a celebration of the power of sports and fitness, an exploration of the industry's future, and a chance for like-minded individuals to connect. Whether you're a fitness professional, a sports enthusiast, or a brand looking to make your mark, the PLAY! Summit is the place to be.<br />
+        <br />
+        Stay tuned for live updates, highlights, and insights from the PLAY! Summit Conference. Experience the future of fitness and sports, only at PLAY! Summit.</p>
+- Language: "fr-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{836E0687-CDFF-4087-9E3B-C8ECAFE11746}"
+    - ID: "49461c19-39ae-4df4-abf5-15bd7fab54ce"
+      Hint: Audience
+      Value: "{D7E74E60-9708-48B2-9D37-C34D165BEC43}|{6AB3A378-547F-4B38-8BE4-7538313020B2}|{A69C357B-F4F9-4D4B-8262-44B0E60F051F}|{4D758CED-1AD4-46C7-8E72-B42BE54A08E8}|{EB7D2E35-46BD-4EA3-A142-6B524DF4ED97}"
+    - ID: "5452a1d2-a7e3-421c-a6ee-dc69e58bf206"
+      Hint: Title
+      Value: "Le Sommet PLAY! est en direct"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "109d50fd-08b0-4beb-b31d-5dc62926c074"
     - ID: "c60646d2-b021-4158-be5f-64943e445b1a"
       Hint: PublishDate
       Value: 20210804T172751Z
@@ -49,7 +94,7 @@ Languages:
       Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan posuere orci, placerat tristique quam vulputate non. Aliquam erat volutpat. Vestibulum ante ipsum primis in orci luctus et posuere cubilia Sed mollis tincidunt eu. Vestibulum ante ipsum primis in orci luctus et posuere cubilia Sed mollis tincidunt eu.
     - ID: "ed69eacf-5eb2-5050-9d5b-997812318dde"
       Hint: pageTitle
-      Value: "PLAY! Summit Goes Live"
+      Value: "Le Sommet PLAY! est en direct"
     - ID: "f3204d80-07b0-4680-8939-15c2c2f82dcb"
       Hint: Image
       Value: |

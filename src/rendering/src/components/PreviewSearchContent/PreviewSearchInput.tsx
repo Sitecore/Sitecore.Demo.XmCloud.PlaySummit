@@ -1,63 +1,76 @@
-import { forwardRef, KeyboardEvent, useCallback, useContext } from 'react';
-import debounce from 'lodash/debounce';
-import { PreviewSearchContext } from './PreviewSearchContextProvider';
+import { debounce } from 'lodash';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { MutableRefObject, useCallback, KeyboardEvent } from 'react';
 
 type PreviewSearchInputProps = {
-  onKeyphraseChange?: (value: string) => void;
+  onChange: (value: string) => void;
   onFocus?: () => void;
   onBlur?: () => void;
   placeholder?: string;
   className?: string;
   onEnter?: (value: string) => void;
   onEscapePressed?: () => void;
+  value: string;
+  onClear: () => void;
+  inputRef?: MutableRefObject<HTMLInputElement>;
 };
 
-const onKeyphraseChangeDebounced = debounce(
-  (value: string, onKeyphraseChange: (value: string) => void) => onKeyphraseChange(value),
-  500
-);
+const PreviewSearchInput = ({
+  onChange,
+  onFocus,
+  onBlur,
+  placeholder,
+  className,
+  onEnter,
+  onEscapePressed,
+  value,
+  onClear,
+  inputRef,
+}: PreviewSearchInputProps): JSX.Element => {
+  const onKeyphraseChangeDebounced = debounce(
+    (value: string, onKeyphraseChange: (value: string) => void) => onKeyphraseChange(value),
+    500
+  );
 
-const PreviewSearchInput = forwardRef<HTMLInputElement, PreviewSearchInputProps>(
-  (
-    { onFocus, onBlur, placeholder, onKeyphraseChange, className, onEnter, onEscapePressed },
-    forwardedRef
-  ): JSX.Element => {
-    const { keyphrase, onKeyphraseChange: onKeyphraseUpdate } = useContext(PreviewSearchContext);
-    const keyListener = useCallback(
-      (event: KeyboardEvent<HTMLInputElement>): void => {
-        const value = (event.target as HTMLInputElement).value;
-        switch (event.key) {
-          case 'Escape':
-            onEscapePressed && onEscapePressed();
-            break;
-          case 'Enter':
-            onEnter && onEnter(value);
-            break;
-          default:
-            onKeyphraseChangeDebounced(value, (keyphrase: string) => {
-              onKeyphraseChange && onKeyphraseChange(keyphrase);
-              onKeyphraseUpdate(keyphrase);
-            });
-            break;
-        }
-      },
-      [onEnter, onKeyphraseChange, onKeyphraseUpdate, onEscapePressed]
-    );
+  const handleKeyUp = useCallback(
+    (event: KeyboardEvent<HTMLInputElement>): void => {
+      const value = (event.target as HTMLInputElement).value;
+      switch (event.key) {
+        case 'Escape':
+          onEscapePressed && onEscapePressed();
+          break;
+        case 'Enter':
+          onEnter && onEnter(value);
+          break;
+        default:
+          onKeyphraseChangeDebounced(value, onChange);
+          break;
+      }
+    },
+    [onEscapePressed, onEnter, onKeyphraseChangeDebounced, onChange]
+  );
 
-    return (
+  return (
+    <>
       <input
-        ref={forwardedRef}
-        defaultValue={keyphrase}
+        ref={inputRef}
+        defaultValue={value}
         onFocus={onFocus}
         onBlur={onBlur}
         placeholder={placeholder}
-        onKeyUp={keyListener}
         autoComplete="off"
         className={className}
+        onKeyUp={handleKeyUp}
       />
-    );
-  }
-);
-PreviewSearchInput.displayName = 'PreviewSearchInput';
+      {value && (
+        <div className="search-input-clear" onClick={onClear}>
+          <span className="search-input-clear-text">Clear</span>
+          <FontAwesomeIcon className="search-input-clear-icon" icon={faTimes} size="lg" />
+        </div>
+      )}
+    </>
+  );
+};
 
 export default PreviewSearchInput;

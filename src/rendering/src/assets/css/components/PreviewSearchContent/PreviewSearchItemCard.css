@@ -1,0 +1,23 @@
+.preview-search-item-card {
+  @apply w-full flex;
+
+  .item-image {
+    @apply w-24 object-contain;
+  }
+
+  .item-details {
+    @apply bg-white w-full flex flex-col justify-center px-4 gap-0.5;
+
+    .item-info {
+      @apply flex text-gray;
+
+      .item-type {
+        @apply bg-white-light capitalize px-2 mr-3;
+      }
+    }
+
+    .item-name {
+      @apply text-black text-xl font-bold line-clamp-1;
+    }
+  }
+}

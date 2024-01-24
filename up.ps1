@@ -47,7 +47,7 @@ $currentNodeJsVersion = node -v
 $currentNodeJsVersion = $currentNodeJsVersion.substring(1)
 
 if ($currentNodeJsVersion -ne $nodeVersion) {
-    throw "ERROR: You are currently running NodeJs $currentNodeJsVersion and this project requires a different version. Please switch to NodeJs $nodeVersion. Then delete the /src/rendering/node_modules folder. Then run this script again."
+    Write-Warning "ERROR: You are currently running NodeJs $currentNodeJsVersion and this project requires a different version. Please switch to NodeJs $nodeVersion. Then delete the /src/rendering/node_modules folder. Then run this script again."
 }
 # END CUSTOMIZATION
 

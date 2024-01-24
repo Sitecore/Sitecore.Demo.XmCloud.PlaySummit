@@ -1,0 +1,107 @@
+.search-results-widget {
+  @apply w-full overflow-x-hidden;
+}
+
+.search-results-widget-no-results {
+  @apply py-12 text-3xl font-black uppercase text-center;
+}
+
+.search-results-header {
+  @apply relative bg-black py-8;
+
+  &::before,
+  &::after {
+    @apply content-[""] absolute top-0 w-48 h-48 bg-play-element-full-color bg-no-repeat z-10;
+  }
+
+  &::before {
+    @apply left-0;
+  }
+
+  &::after {
+    @apply right-0 -scale-x-100;
+  }
+
+  &-content {
+    @apply relative text-white uppercase mb-5 text-center z-20;
+
+    h1 {
+      @apply text-5xl font-black mt-3;
+    }
+  }
+
+  &-container {
+    @apply relative max-w-xl mx-auto z-20;
+  }
+
+  &-search {
+    @apply relative mb-4;
+
+    &-input {
+      @apply w-full pl-10 pr-3 py-1 text-sm;
+    }
+
+    &-icon {
+      @apply absolute left-3 top-[0.35em] w-4 h-4;
+      @apply hover:text-blue;
+    }
+  }
+}
+
+.search-results-content {
+  @apply my-8;
+}
+
+.search-results-list {
+  @apply w-full;
+
+  li {
+    @apply flex items-stretch min-h-[5rem] mb-4 bg-white;
+
+    em {
+      @apply not-italic bg-yellow-lightest;
+    }
+
+    .item-image {
+      @apply w-40 shrink-0 grow-0 max-w-[30%];
+
+      img {
+        @apply w-full h-full object-cover;
+      }
+    }
+
+    .item-content {
+      @apply p-4 self-center;
+    }
+
+    .item-type-label {
+      @apply bg-white-light capitalize px-2 text-xs text-black-lightest;
+    }
+
+    .item-date-label {
+      @apply px-2 text-xs text-black-lightest;
+    }
+
+    h3 {
+      @apply font-bold mt-1;
+    }
+
+    &.item-vendor,
+    &.item-sponsor,
+    &.item-speaker {
+      img {
+        @apply object-contain;
+      }
+    }
+
+    &.item-speaker {
+      .item-image {
+        @apply bg-element bg-no-repeat bg-left-bottom bg-contain bg-blue pt-2;
+
+        &.featured-speaker {
+          @apply bg-orange;
+        }
+      }
+    }
+  }
+}
