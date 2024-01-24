@@ -9,15 +9,16 @@ namespace Sitecore.Demo.Edge.Website.Utilities
             using (new Sitecore.SecurityModel.SecurityDisabler())
             {
                 var item = Sitecore.Context.Database.GetItem("/sitecore/content/PLAY/playwebsite/Settings/Site Grouping/playwebsite");
+                var originalValue = item["POS"];
 
                 using (new Sitecore.Data.Items.EditContext(item))
                 {
-                    item["POS"] = item["POS"] + "warmup";
+                    item["POS"] = originalValue + "&test=test";
                 }
 
                 using (new Sitecore.Data.Items.EditContext(item))
                 {
-                    item["POS"] = item["POS"].Replace("warmup", string.Empty);
+                    item["POS"] = originalValue;
                 }
 
                 Response.Write("Success!");
