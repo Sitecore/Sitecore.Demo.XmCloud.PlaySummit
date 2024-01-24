@@ -9,16 +9,9 @@ namespace Sitecore.Demo.Edge.Website.Utilities
             using (new Sitecore.SecurityModel.SecurityDisabler())
             {
                 var item = Sitecore.Context.Database.GetItem("/sitecore/content/PLAY/playwebsite/Settings/Site Grouping/playwebsite");
-                var originalValue = item["POS"];
-
                 using (new Sitecore.Data.Items.EditContext(item))
                 {
-                    item["POS"] = originalValue + "&test=test";
-                }
-
-                using (new Sitecore.Data.Items.EditContext(item))
-                {
-                    item["POS"] = originalValue;
+                    item["__Updated by"] = "sitecore\\Admin";
                 }
 
                 Response.Write("Success!");
