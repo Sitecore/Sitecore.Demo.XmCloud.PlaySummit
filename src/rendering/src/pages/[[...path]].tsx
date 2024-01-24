@@ -17,7 +17,8 @@ import { sitemapFetcher } from 'lib/sitemap-fetcher';
 import { initialize as initializeSend } from '../services/SendService'; // DEMO TEAM CUSTOMIZATION - Sitecore Send integration
 import { usePathname } from 'next/navigation';
 import { PageController, trackEntityPageViewEvent } from '@sitecore-search/react';
-import { isSearchSDKEnabled } from 'src/services/SearchSDKService';
+import { fetchUserProfileData, isSearchSDKEnabled } from '../services/SearchSDKService';
+import { storeSearchProfileData } from '../services/CdpService';
 
 const SitecorePage = ({
   notFound,
@@ -39,12 +40,21 @@ const SitecorePage = ({
   // DEMO TEAM CUSTOMIZATION - Search SDK integration
   const pageUri = usePathname();
   useEffect(() => {
-    if (isSearchSDKEnabled) {
-      PageController.getContext().setPageUri(pageUri);
-      trackEntityPageViewEvent('content', {
-        items: [{ id: layoutData.sitecore.route.itemId }],
-      });
-    }
+    (async () => {
+      if (isSearchSDKEnabled) {
+        PageController.getContext().setPageUri(pageUri);
+        await trackEntityPageViewEvent('content', {
+          items: [{ id: layoutData.sitecore.route.itemId }],
+        });
+
+        // Save corresponding pageUri to session storage as a workaround because Search API does not return custom attributes
+        sessionStorage.setItem(layoutData.sitecore.route.itemId, pageUri);
+
+        const userProfileData = await fetchUserProfileData();
+
+        storeSearchProfileData(userProfileData);
+      }
+    })();
   }, [pageUri, layoutData.sitecore.route.itemId]);
   // END CUSTOMIZATION
 

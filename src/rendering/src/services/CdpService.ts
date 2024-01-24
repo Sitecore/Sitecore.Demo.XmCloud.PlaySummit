@@ -1,3 +1,6 @@
+import { RouteData } from '@sitecore-jss/sitecore-jss-nextjs';
+import Cookies from 'js-cookie';
+
 import {
   BoxeverScripts,
   logViewEvent as boxeverLogViewEvent,
@@ -14,7 +17,6 @@ import {
   shouldCloseSession as boxeverShouldCloseSession,
   ShouldCloseSessionResponse,
 } from './BoxeverService';
-import { RouteData } from '@sitecore-jss/sitecore-jss-nextjs';
 import { TICKETS } from '../models/mock-tickets';
 import { SessionPageFields } from '../types/session';
 import { DLineItem } from '../models/ordercloud/DLineItem';
@@ -198,3 +200,47 @@ export async function getGuestLastName(): Promise<string> {
 export function shouldCloseSession(): Promise<ShouldCloseSessionResponse> {
   return boxeverShouldCloseSession();
 }
+
+/**
+ * Stores the Search profile data for the current user in the visitor CDP profile.
+ */
+export const storeSearchProfileData = (payload: {
+  entities: [
+    {
+      affinity: { audience: [{ value: string; score: number }] };
+      events: { views: [{ id: string }] };
+    }
+  ];
+}): Promise<unknown> => {
+  const dataExtensionName = 'SearchProfileData';
+
+  // Transform the affinity scores & page views into suitable forms for the guest data extension
+  const affinities = payload?.entities?.[0].affinity?.audience?.reduce(
+    (obj, item) => (
+      (obj[
+        item.value
+          .split(' ')
+          .map((x, index) => (index === 0 ? x.toLowerCase() : x))
+          .join('')
+      ] = Math.round((item.score + Number.EPSILON) * 100) / 100),
+      obj
+    ),
+    {} as Record<string, number>
+  );
+
+  const pageViews = payload?.entities?.[0].events?.views
+    ?.slice(0, 5)
+    .reduce(
+      (obj, item, index) => ((obj[`page${index + 1}`] = sessionStorage.getItem(item.id)), obj),
+      {} as Record<string, string>
+    );
+
+  const dataExtensionPayload = {
+    key: dataExtensionName,
+    uuid: Cookies.get('__rutma').split('.')[0],
+    ...affinities,
+    ...pageViews,
+  };
+
+  return saveDataExtension(dataExtensionName, dataExtensionPayload);
+};
