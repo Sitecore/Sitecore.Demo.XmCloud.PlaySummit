@@ -15,14 +15,10 @@
     "language": "en",
     "templates": [
       "nextjs",
+      "nextjs-xmcloud",
       "nextjs-sxa",
-      "nextjs-personalize",
       "nextjs-multisite"
     ]
-  },
-  "engines": {
-    "node": ">=12",
-    "npm": ">=6"
   },
   "author": {
     "name": "Sitecore Demo Solutions Team",

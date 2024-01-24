@@ -13,6 +13,7 @@ namespace Sitecore.Demo.Edge.Website.Utilities
                 item.Editing.BeginEdit();
                 try
                 {
+                    item["__Updated by"] = "sitecore\\Admin";
                     item.Editing.EndEdit(true, false);
                 }
                 catch (Exception ex)
@@ -21,7 +22,6 @@ namespace Sitecore.Demo.Edge.Website.Utilities
                 }
 
                 Response.Write("Success!");
-               
             }
         }
     }
