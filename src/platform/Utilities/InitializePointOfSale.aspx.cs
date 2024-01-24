@@ -10,15 +10,14 @@ namespace Sitecore.Demo.Edge.Website.Utilities
             {
                 var item = Sitecore.Context.Database.GetItem("/sitecore/content/PLAY/playwebsite/Settings/Site Grouping/playwebsite");
 
-                item.Editing.BeginEdit();
-                try
+                using (new Sitecore.Data.Items.EditContext(item))
                 {
-                    item["__Updated by"] = "sitecore\\Admin";
-                    item.Editing.EndEdit(true, false);
+                    item["POS"] = item["POS"] + "warmup";
                 }
-                catch (Exception ex)
+
+                using (new Sitecore.Data.Items.EditContext(item))
                 {
-                    item.Editing.CancelEdit();
+                    item["POS"] = item["POS"].Replace("warmup", string.Empty);
                 }
 
                 Response.Write("Success!");
