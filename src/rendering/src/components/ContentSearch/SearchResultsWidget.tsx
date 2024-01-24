@@ -134,8 +134,6 @@ const SearchResults = ({
     );
   }
 
-  console.log(items);
-
   return (
     <section className="search-results-widget" ref={widgetRef}>
       <div>
