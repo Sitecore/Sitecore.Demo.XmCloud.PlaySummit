@@ -13,8 +13,7 @@ import {
 import { useRouter } from 'next/router';
 import SearchResultsLayout from './SearchResultsLayout';
 import SearchResultsListing from './SearchResultsListing';
-import Link from 'next/link';
-import { getSearchItemHref } from 'src/helpers/UrlHelper';
+import SearchResultsListItem from './SearchResultsListItem';
 
 type SearchResultsProps = {
   defaultSortType?: SearchResultsStoreState['sortType'];
@@ -22,13 +21,16 @@ type SearchResultsProps = {
   defaultItemsPerPage?: SearchResultsStoreState['itemsPerPage'];
 };
 
-type ContentItemModel = {
+export type ContentItemModel = {
   id: string;
   type: string;
   name: string;
   url: string;
   image_url?: string;
   publish_date?: string;
+  highlight?: {
+    [key: string]: string;
+  };
 };
 
 type InitialState = SearchResultsInitialState<'itemsPerPage' | 'keyphrase' | 'page' | 'sortType'>;
@@ -65,7 +67,26 @@ const SearchResults = ({
     },
   } = useSearchResults<ContentItemModel, InitialState>({
     query: (query: SearchResultsWidgetQuery) => {
-      query.getRequest();
+      query
+        .getRequest()
+        .setSearchQueryHighlightFragmentSize(250)
+        .setSearchQueryHighlightFields([
+          'name',
+          'description',
+          'excerpt',
+          'content',
+          'audience',
+          'sport',
+          'activities',
+          'sessions',
+          'speakers',
+          'sponsors',
+          'vendors',
+          'company',
+          'job_title',
+          'rooms',
+          'days',
+        ]);
     },
     state: {
       sortType: defaultSortType,
@@ -78,30 +99,7 @@ const SearchResults = ({
 
   const searchResultsItems = useMemo(
     () =>
-      items.map((item) => (
-        <Link key={item.id} href={getSearchItemHref(item.type, item.url)}>
-          <li className={`item-${item.type}`}>
-            {item.image_url && (
-              <div className="item-image">
-                <img src={item.image_url} alt={item.name} />
-              </div>
-            )}
-            <div className="item-content">
-              <span className="item-type-label">{item.type}</span>
-              {item.publish_date && (
-                <span className="item-date-label">
-                  {new Date(item.publish_date).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'short',
-                    day: 'numeric',
-                  })}
-                </span>
-              )}
-              <h3>{item.name}</h3>
-            </div>
-          </li>
-        </Link>
-      )),
+      items.map((item: ContentItemModel) => <SearchResultsListItem key={item.id} item={item} />),
     [items]
   );
 
@@ -135,6 +133,8 @@ const SearchResults = ({
       </div>
     );
   }
+
+  console.log(items);
 
   return (
     <section className="search-results-widget" ref={widgetRef}>
