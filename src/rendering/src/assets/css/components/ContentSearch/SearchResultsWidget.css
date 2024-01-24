@@ -58,6 +58,10 @@
   li {
     @apply flex items-stretch min-h-[5rem] mb-4 bg-white;
 
+    em {
+      @apply not-italic bg-yellow-lightest;
+    }
+
     .item-image {
       @apply w-40 shrink-0 grow-0 max-w-[30%];
 
