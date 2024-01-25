@@ -5,7 +5,7 @@ import React, { useEffect } from 'react'; // DEMO TEAM CUSTOMIZATION - Log page 
 import Head from 'next/head';
 // DEMO TEAM CUSTOMIZATION - Add LayoutServicePageState
 import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';
-import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs/utils';
+import config from 'temp/config';
 import Scripts from 'src/Scripts';
 // DEMO TEAM CUSTOMIZATION - CDP and Sitecore Send integration
 import { trackViewEvent } from './services/TrackingService';
@@ -15,7 +15,7 @@ import { isEditingOrPreviewingPage } from './helpers/LayoutServiceHelper';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
-const publicUrl = getPublicUrl();
+const publicUrl = config.publicUrl;
 
 interface LayoutProps {
   layoutData: LayoutServiceData;
