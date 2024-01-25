@@ -4,7 +4,6 @@ import PreviewSearchPopup from './PreviewSearchPopup';
 import { PreviewSearchItemCardProps } from './PreviewSearchItemCard';
 
 type PreviewSearchContainerProps = {
-  close?: () => void;
   suggestions: SearchResponseSuggestion[];
   items: PreviewSearchItemCardProps[];
   widgetRef: (node: Element) => void;
@@ -12,7 +11,6 @@ type PreviewSearchContainerProps = {
 };
 
 const PreviewSearchContainer = ({
-  close,
   suggestions,
   items,
   widgetRef,
@@ -22,7 +20,6 @@ const PreviewSearchContainer = ({
     <PreviewSearchPopup
       suggestions={suggestions}
       items={items}
-      close={close}
       widgetRef={widgetRef}
       keyphrase={keyphrase}
     />

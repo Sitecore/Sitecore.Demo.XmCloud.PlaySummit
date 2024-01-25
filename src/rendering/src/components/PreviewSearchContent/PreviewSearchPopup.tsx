@@ -7,7 +7,6 @@ import { PreviewSearchItemCardProps } from './PreviewSearchItemCard';
 type PreviewSearchPopupProps = {
   suggestions: SearchResponseSuggestion[];
   items: PreviewSearchItemCardProps[];
-  close?: () => void;
   widgetRef: (node: Element) => void;
   keyphrase: string;
 };

@@ -1,18 +1,23 @@
 import { PropsWithChildren, FC, useState } from 'react';
-import { ContentSearchWidgetResponseSortChoice } from '../../interfaces/contentSearch/ContentSearchWidgetResponse';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSlidersH } from '@fortawesome/free-solid-svg-icons';
+
 import Spinner from '../ShopCommon/Spinner';
 import SearchFacets, { SearchFacetsProps } from './SearchFacets';
 import Pagination, { SearchPaginationProps } from './SearchPagination';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSlidersH } from '@fortawesome/free-solid-svg-icons';
+
+type SortOption = {
+  name: string;
+  label: string;
+};
 
 export type SearchResultsListingProps = PropsWithChildren &
   SearchFacetsProps &
   SearchPaginationProps & {
     onResultsPerPageChange: (perPage: number) => void;
     onSortChange: (sortChoice: string) => void;
-    sort: ContentSearchWidgetResponseSortChoice['name'];
-    sortOptions: ContentSearchWidgetResponseSortChoice[];
+    sort: string;
+    sortOptions: SortOption[];
     loading: boolean;
   };
 
