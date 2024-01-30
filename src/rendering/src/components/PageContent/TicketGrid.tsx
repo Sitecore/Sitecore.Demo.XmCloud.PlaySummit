@@ -4,11 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { TICKETS } from '../../models/mock-tickets';
 import { ComponentProps } from 'lib/component-props';
 import { useI18n } from 'next-localization';
+import { logTicketSelected } from 'src/services/CdpService';
 
 const TicketGrid = (props: ComponentProps): JSX.Element => {
   const ticketsToDisplay = TICKETS.filter((ticket) => !ticket.isUpgrade);
   const sxaStyles = `${props.params?.styles || ''}`;
   const { t } = useI18n();
+
+  const handleTicketSelect = () => {
+    return logTicketSelected();
+  };
 
   const tickets =
     ticketsToDisplay &&
@@ -35,7 +40,11 @@ const TicketGrid = (props: ComponentProps): JSX.Element => {
           </div>
         </div>
         <div className="ticket-button-container">
-          <Link href={`/tickets/registration/attendee?ticket=${ticket.id}`} className="btn-main">
+          <Link
+            href={`/tickets/registration/attendee?ticket=${ticket.id}`}
+            className="btn-main"
+            onClick={handleTicketSelect}
+          >
             {t('Get Tickets') || 'Get Tickets'}
           </Link>
         </div>

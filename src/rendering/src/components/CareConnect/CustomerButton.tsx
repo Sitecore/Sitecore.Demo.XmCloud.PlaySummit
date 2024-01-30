@@ -1,19 +1,19 @@
-import { Customer } from './CareConnect';
+import { Customer, getCustomerTicketStatus } from './CareConnect';
 
 type CustomerButtonProps = {
   customer: Customer;
-  onClick: (id: string) => void;
+  onClick: (ref: string) => void;
   isActive?: boolean;
 };
 
 const CustomerButton = ({ customer, onClick, isActive }: CustomerButtonProps) => {
   return (
-    <button className={isActive ? 'active' : ''} onClick={() => onClick(customer.id)}>
+    <button className={isActive ? 'active' : ''} onClick={() => onClick(customer.ref)}>
       <h5 className="customer-name">
         {customer.firstName} {customer.lastName}
       </h5>
-      <span className="customer-date">{customer.date}</span>
-      <span className="customer-status">{customer.status}</span>
+      <span className="customer-date">{new Date(customer.firstSeen).toLocaleDateString()}</span>
+      <span className="customer-status">{getCustomerTicketStatus(customer)}</span>
     </button>
   );
 };

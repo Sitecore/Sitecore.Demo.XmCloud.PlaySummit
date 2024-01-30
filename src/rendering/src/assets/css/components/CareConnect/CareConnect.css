@@ -31,7 +31,7 @@
 
       li {
         button {
-          @apply flex justify-between items-center w-full p-4 border-4 border-white-light bg-white-light rounded-md transition-colors;
+          @apply grid grid-cols-3 items-center w-full p-4 border-4 border-white-light bg-white-light rounded-md transition-colors;
           @apply hover:border-blue-lightest;
 
           &.active {
@@ -39,15 +39,15 @@
           }
 
           .customer-name {
-            @apply font-bold text-2xl;
+            @apply text-left font-bold text-2xl;
           }
 
           .customer-date {
-            @apply text-gray;
+            @apply text-center text-gray;
           }
 
           .customer-status {
-            @apply text-blue-light;
+            @apply text-right text-blue-light;
           }
         }
       }
@@ -82,7 +82,7 @@
       @apply border-4 border-white-dark rounded-md p-4;
 
       ul {
-        @apply flex flex-col gap-6;
+        @apply flex flex-col gap-6 mt-3;
 
         li {
           @apply relative pl-7;

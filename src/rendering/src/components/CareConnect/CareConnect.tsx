@@ -1,48 +1,93 @@
 import CustomerInfoSidebar from './CustomerInfoSidebar';
 import CareConnectHeader from './CareConnectHeader';
 import CustomerButton from './CustomerButton';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+import { getAllGuests, getExtendedGuest } from 'src/services/BoxeverService';
+
+export interface CdpEvent {
+  ref: string;
+  type: string;
+  createdAt: string;
+  arbitraryData?: {
+    ticketId?: number;
+    ticketName?: string;
+  };
+}
 
 export interface Customer {
-  id: string;
+  ref: string;
   firstName: string;
   lastName: string;
-  date: string;
+  firstSeen: string;
   status: string;
   phone: string;
   address: string;
   email: string;
+  dataExtensions: {
+    key?: string;
+    values?: {
+      ticketId?: number;
+      ticketName?: string;
+    };
+  }[];
+  sessions: {
+    events: CdpEvent[];
+  }[];
 }
 
-const MOCK_DATA = [
-  {
-    id: '1',
-    firstName: 'Alexandra',
-    lastName: 'Alvarez',
-    date: '25/01/2024',
-    status: 'Regular ticket purchase',
-    phone: '+359 879 333 333',
-    address: 'Maple St. 12/14',
-    email: 'demouser@gmail.com',
-  },
-  {
-    id: '2',
-    firstName: 'Benjamin',
-    lastName: 'Bennett',
-    date: '09/02/2023',
-    status: 'Abandoned ticket purchase',
-    phone: '+359 879 222 222',
-    address: 'Jumbo St. 16',
-    email: 'ben.bennet@gmail.com',
-  },
-];
+export const getCustomerTicketStatus = (customer: Customer) => {
+  const attendeeFormCompleted = !!customer?.dataExtensions?.find(
+    (ext: { key: string }) => ext.key === 'AttendeeFormCompleted'
+  );
+
+  const ticketName = customer?.dataExtensions?.find((ext: { key: string }) => ext.key === 'Ticket')
+    ?.values.ticketName;
+
+  return !!ticketName
+    ? `${ticketName}`
+    : attendeeFormCompleted
+    ? 'Abandoned purchase'
+    : 'No ticket';
+};
 
 const CareConnect = () => {
-  const [activeCustomerId, setActiveCustomerId] = useState(MOCK_DATA[0].id);
+  const [customers, setCustomers] = useState([]);
+  const [activeCustomerRef, setActiveCustomerRef] = useState('');
 
-  const handleCustomerChange = useCallback((id: string) => {
-    setActiveCustomerId(id);
+  const handleCustomerChange = useCallback((ref: string) => {
+    setActiveCustomerRef(ref);
   }, []);
+
+  useEffect(() => {
+    const getGuestFullData = async (ref: string) => {
+      return await getExtendedGuest(ref).then((res) => res);
+    };
+
+    const getCustomers = async () => {
+      try {
+        const guests = await getAllGuests().then((res: { items: Customer[] }) => res.items);
+
+        const customers = await Promise.all(
+          guests.map(async (customer: Customer) => {
+            const extendedCustomer = await getGuestFullData(customer.ref);
+            return extendedCustomer;
+          })
+        );
+
+        setCustomers(customers);
+      } catch (error) {
+        console.error('Error fetching customers:', error);
+      }
+    };
+
+    getCustomers();
+  }, []);
+
+  useEffect(() => {
+    if (!!customers) {
+      setActiveCustomerRef(customers[0]?.ref);
+    }
+  }, [customers]);
 
   return (
     <>
@@ -51,19 +96,19 @@ const CareConnect = () => {
         <div className="customers-list">
           <h1>Customer Information</h1>
           <ul>
-            {MOCK_DATA.map((customer) => (
-              <li key={customer.id}>
+            {customers?.map((customer) => (
+              <li key={customer?.ref}>
                 <CustomerButton
                   customer={customer}
                   onClick={handleCustomerChange}
-                  isActive={activeCustomerId === customer.id}
+                  isActive={activeCustomerRef === customer?.ref}
                 />
               </li>
             ))}
           </ul>
         </div>
         <CustomerInfoSidebar
-          customer={MOCK_DATA.find((customer) => customer.id === activeCustomerId)}
+          customer={customers?.find((customer) => customer?.ref === activeCustomerRef)}
         />
       </main>
     </>

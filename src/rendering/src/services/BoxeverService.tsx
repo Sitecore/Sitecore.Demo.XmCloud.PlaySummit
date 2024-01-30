@@ -652,6 +652,29 @@ export function getGuestEmail(guestRef?: GuestRef): Promise<string | undefined> 
     });
 }
 
+export function getAllGuests(): Promise<unknown> {
+  const defaultValue = [] as unknown[];
+
+  if (!isBoxeverConfiguredInBrowser()) {
+    return new Promise(function (resolve) {
+      resolve(defaultValue);
+    });
+  }
+  return boxeverGet('/getguests').then((res) => res.data);
+}
+
+export function getExtendedGuest(guestRef: string): Promise<unknown> {
+  const defaultValue = [] as unknown[];
+
+  if (!isBoxeverConfiguredInBrowser()) {
+    return new Promise(function (resolve) {
+      resolve(defaultValue);
+    });
+  }
+
+  return boxeverGet(`/getguestextendeddata?guestRef=${guestRef}`).then((res) => res.data);
+}
+
 // ********************************
 // Get Dynamic welcome message
 // ********************************
