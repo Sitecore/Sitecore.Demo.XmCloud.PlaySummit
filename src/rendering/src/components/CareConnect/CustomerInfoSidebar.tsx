@@ -15,16 +15,16 @@ const CustomerInfoSidebar = ({ customer }: CustomerInfoSidebarProps) => {
       </h1>
       <div className="customer-details">
         <span className="customer-status">{getCustomerTicketStatus(customer)}</span>
-        {!!customer?.phone && (
+        {!!customer?.phoneNumbers?.length && (
           <span className="customer-phone">
             <FontAwesomeIcon icon={faPhone} />
-            {customer.phone}
+            {customer.phoneNumbers[0]}
           </span>
         )}
-        {!!customer?.address && (
+        {!!customer?.city && (
           <span className="customer-address">
             <FontAwesomeIcon icon={faLocationArrow} />
-            {customer.address}
+            {customer.city}
           </span>
         )}
         <span className="customer-email">

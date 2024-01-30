@@ -20,8 +20,8 @@ export interface Customer {
   lastName: string;
   firstSeen: string;
   status: string;
-  phone: string;
-  address: string;
+  phoneNumbers: string[];
+  city: string;
   email: string;
   dataExtensions: {
     key?: string;
