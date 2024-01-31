@@ -18,7 +18,11 @@
       }
 
       button {
-        @apply flex;
+        @apply flex transition-colors;
+
+        &:hover {
+          @apply text-blue;
+        }
       }
     }
 
