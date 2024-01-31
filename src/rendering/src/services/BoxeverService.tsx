@@ -675,6 +675,25 @@ export function getExtendedGuest(guestRef: string): Promise<unknown> {
   return boxeverGet(`/getguestextendeddata?guestRef=${guestRef}`).then((res) => res.data);
 }
 
+export function setGuestDataExtension(
+  guestRef: string,
+  dataExtensionName: string,
+  payload?: Record<string, unknown>
+): Promise<unknown> {
+  const defaultValue = [] as unknown[];
+
+  if (!isBoxeverConfiguredInBrowser()) {
+    return new Promise(function (resolve) {
+      resolve(defaultValue);
+    });
+  }
+
+  return boxeverPost(
+    `/createguestdataextension?guestRef=${guestRef}&dataExtensionName=${dataExtensionName}`,
+    payload
+  );
+}
+
 // ********************************
 // Get Dynamic welcome message
 // ********************************

@@ -1,13 +1,12 @@
-import { faEnvelope, faHistory, faLocationArrow, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faLocationArrow, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Customer, getCustomerTicketStatus } from './CareConnect';
 import CustomerHistory from './CustomerHistory';
+import CustomerNextBestOffer from './CustomerNextBestOffer';
 
-type CustomerInfoSidebarProps = {
-  customer: Customer;
-};
+const CustomerInfoSidebar = ({ customer }: { customer: Customer }) => {
+  if (!customer) return <></>;
 
-const CustomerInfoSidebar = ({ customer }: CustomerInfoSidebarProps) => {
   return (
     <aside className="customer-info-sidebar">
       <h1 className="customer-name">
@@ -32,14 +31,7 @@ const CustomerInfoSidebar = ({ customer }: CustomerInfoSidebarProps) => {
           {customer?.email}
         </span>
       </div>
-      <div className="next-best-offer">
-        <h6>
-          <FontAwesomeIcon icon={faHistory} />
-          Next best offer
-        </h6>
-        <p>Upgrade to VIP ticket and enjoy a 20% discount on the VIP ticket price!</p>
-        <button>Apply offer</button>
-      </div>
+      <CustomerNextBestOffer customer={customer} />
       <CustomerHistory customer={customer} />
     </aside>
   );

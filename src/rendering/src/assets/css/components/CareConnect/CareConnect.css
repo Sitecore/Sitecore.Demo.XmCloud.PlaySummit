@@ -11,7 +11,15 @@
     @apply flex bg-white-dark min-h-screen;
 
     h1 {
-      @apply text-4xl font-bold mb-4;
+      @apply flex items-center text-4xl font-bold mb-4;
+
+      svg {
+        @apply text-lg ml-4;
+      }
+
+      button {
+        @apply flex;
+      }
     }
 
     h6 {
@@ -75,6 +83,10 @@
       button {
         @apply bg-white text-blue-light font-bold px-4 py-2 rounded-md ml-auto transition-opacity;
         @apply hover:opacity-90;
+
+        &:disabled {
+          @apply opacity-90;
+        }
       }
     }
 
@@ -123,4 +135,8 @@
       }
     }
   }
+}
+
+.spinning-loader {
+  @apply mr-0 animate-spin;
 }
