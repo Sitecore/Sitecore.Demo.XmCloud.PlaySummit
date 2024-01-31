@@ -38,7 +38,7 @@ const CustomerNextBestOffer = ({ customer }: { customer: Customer }) => {
     const extensionName = 'TicketOffer';
     const ticket = {
       key: extensionName,
-      ticketId: nextTicket.id,
+      ticketId: parseInt(nextTicket.id),
       ticketName: nextTicket.name,
       salePrice: Math.round(0.8 * nextTicket.price),
     };

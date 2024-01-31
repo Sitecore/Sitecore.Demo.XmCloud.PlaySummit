@@ -5,8 +5,11 @@ import { TICKETS } from '../../models/mock-tickets';
 import { ComponentProps } from 'lib/component-props';
 import { useI18n } from 'next-localization';
 import { logTicketSelected } from 'src/services/CdpService';
+import useTicketOfferId from 'src/hooks/useTicketOffer';
 
 const TicketGrid = (props: ComponentProps): JSX.Element => {
+  const ticketOfferId = useTicketOfferId();
+
   const ticketsToDisplay = TICKETS.filter((ticket) => !ticket.isUpgrade);
   const sxaStyles = `${props.params?.styles || ''}`;
   const { t } = useI18n();
@@ -27,7 +30,12 @@ const TicketGrid = (props: ComponentProps): JSX.Element => {
             {t('Save 20% on early bird!') || 'Save 20% on early bird!'}
           </span>
           <div>
-            <span className="ticket-price">${ticket.price}</span>
+            <div className="ticket-price-block">
+              {ticketIndex === ticketOfferId && (
+                <span className="ticket-sale-price">${ticket.salePrice}</span>
+              )}
+              <span className="ticket-price">${ticket.price}</span>
+            </div>
             {ticket.benefits && (
               <ul>
                 {ticket.benefits.map((benefit, benefitIndex) => (

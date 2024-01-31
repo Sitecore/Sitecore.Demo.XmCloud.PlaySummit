@@ -663,7 +663,7 @@ export function getAllGuests(): Promise<unknown> {
   return boxeverGet('/getguests').then((res) => res.data);
 }
 
-export function getExtendedGuest(guestRef: string): Promise<unknown> {
+export function getExtendedGuest(guestRef?: string): Promise<unknown> {
   const defaultValue = [] as unknown[];
 
   if (!isBoxeverConfiguredInBrowser()) {
@@ -672,7 +672,11 @@ export function getExtendedGuest(guestRef: string): Promise<unknown> {
     });
   }
 
-  return boxeverGet(`/getguestextendeddata?guestRef=${guestRef}`).then((res) => res.data);
+  if (!guestRef) {
+    return getGuestRef().then((res) => getExtendedGuest(res.guestRef));
+  } else {
+    return boxeverGet(`/getguestextendeddata?guestRef=${guestRef}`).then((res) => res.data);
+  }
 }
 
 export function setGuestDataExtension(

@@ -91,6 +91,12 @@
         &:disabled {
           @apply opacity-90;
         }
+
+        &.loading {
+          svg {
+            @apply mr-0;
+          }
+        }
       }
     }
 
