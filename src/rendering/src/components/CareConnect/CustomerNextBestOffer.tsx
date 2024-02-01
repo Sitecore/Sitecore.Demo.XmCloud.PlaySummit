@@ -27,13 +27,16 @@ const CustomerNextBestOffer = ({ customer }: { customer: Customer }) => {
     const ticketId = customer?.dataExtensions?.find((ext: { key: string }) => ext.key === 'Ticket')
       ?.values.ticketId;
 
-    return ticketId === 0
-      ? TICKETS.find((t) => parseInt(t.id) === 1)
-      : ticketId === 1
-      ? TICKETS.find((t) => parseInt(t.id) === 2)
-      : !!attendeeFormCompleted
-      ? TICKETS.find((t) => parseInt(t.id) === 0)
-      : null;
+    switch (ticketId) {
+      case 0:
+        return TICKETS.find((t) => parseInt(t.id) === 1);
+      case 1:
+        return TICKETS.find((t) => parseInt(t.id) === 2);
+      case 2:
+        return null;
+      default:
+        return attendeeFormCompleted ? TICKETS.find((t) => parseInt(t.id) === 0) : null;
+    }
   }, [customer]);
 
   const handleApplyOffer = useCallback(async () => {
@@ -74,6 +77,8 @@ const CustomerNextBestOffer = ({ customer }: { customer: Customer }) => {
         return <button onClick={handleApplyOffer}>Apply offer</button>;
     }
   }, [buttonState, handleApplyOffer]);
+
+  if (!nextTicket) return <></>;
 
   return (
     <div className="next-best-offer">

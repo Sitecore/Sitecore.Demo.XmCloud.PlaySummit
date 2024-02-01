@@ -82,7 +82,7 @@
     }
 
     .next-best-offer {
-      @apply flex flex-col gap-4 text-white bg-blue-light border-4 border-blue-lightest rounded-md p-4 my-6;
+      @apply flex flex-col gap-4 text-white bg-blue-light border-4 border-blue-lightest rounded-md p-4 mt-6;
 
       button {
         @apply bg-white text-blue-light font-bold px-4 py-2 rounded-md ml-auto transition-opacity;
@@ -101,7 +101,7 @@
     }
 
     .customer-history {
-      @apply border-4 border-white-dark rounded-md p-4;
+      @apply border-4 border-white-dark rounded-md p-4 mt-6;
 
       ul {
         @apply flex flex-col gap-6 mt-3;
