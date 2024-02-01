@@ -13,6 +13,7 @@ const HeroImage = (props: HeroImageProps): JSX.Element => {
   if (props.fields?.hero?.value?.src) {
     return (
       <section className={`hero-image ${sxaStyles}`}>
+        <h2>This is a hero image!</h2>
         <Image field={props.fields?.hero} alt="" loading="lazy" />
       </section>
     );
