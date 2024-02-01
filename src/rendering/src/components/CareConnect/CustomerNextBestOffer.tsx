@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { faCheck, faHistory } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Customer } from './CareConnect';
@@ -14,6 +14,10 @@ const BUTTON_STATES = {
 
 const CustomerNextBestOffer = ({ customer }: { customer: Customer }) => {
   const [buttonState, setButtonState] = useState(BUTTON_STATES.default);
+
+  useEffect(() => {
+    setButtonState(BUTTON_STATES.default);
+  }, [customer]);
 
   const nextTicket = useMemo(() => {
     const attendeeFormCompleted = !!customer?.dataExtensions?.find(
@@ -35,19 +39,20 @@ const CustomerNextBestOffer = ({ customer }: { customer: Customer }) => {
   const handleApplyOffer = useCallback(async () => {
     setButtonState(BUTTON_STATES.loading);
 
-    const extensionName = 'TicketOffer';
-    const ticket = {
-      key: extensionName,
-      ticketId: parseInt(nextTicket.id),
-      ticketName: nextTicket.name,
-      salePrice: Math.round(0.8 * nextTicket.price),
-    };
+    try {
+      const extensionName = 'TicketOffer';
+      const ticket = {
+        key: extensionName,
+        ticketId: parseInt(nextTicket.id),
+        ticketName: nextTicket.name,
+      };
 
-    console.log(ticket);
-
-    return await setGuestDataExtension(customer.ref, extensionName, ticket).then(() =>
-      setButtonState(BUTTON_STATES.inactive)
-    );
+      await setGuestDataExtension(customer.ref, extensionName, ticket);
+      setButtonState(BUTTON_STATES.inactive);
+    } catch (error) {
+      console.error('Error applying offer:', error);
+      setButtonState(BUTTON_STATES.default);
+    }
   }, [customer, nextTicket]);
 
   const offerButton = useMemo(() => {

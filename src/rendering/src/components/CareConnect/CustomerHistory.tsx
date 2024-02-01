@@ -6,7 +6,7 @@ import { CDP_CUSTOM_EVENTS } from 'src/constants/cdp-custom-events';
 
 const getHistoryEvents = (customer: Customer): CdpEvent[] => {
   const historyEvents = Object.values(CDP_CUSTOM_EVENTS).map((event) => event.type);
-  const maxResults = 6;
+  const maxResults = 8;
   const matchingEvents: CdpEvent[] = [];
 
   for (const session of customer.sessions) {
@@ -31,6 +31,8 @@ const getHistoryEvents = (customer: Customer): CdpEvent[] => {
 const getEventDisplayName = (event: CdpEvent): string => {
   if (event.type === CDP_CUSTOM_EVENTS.ticketPurchased.type) {
     return `${event.arbitraryData?.ticketName} purchased`;
+  } else if (event.type === CDP_CUSTOM_EVENTS.ticketOfferApplied.type) {
+    return `Offer: ${event.arbitraryData?.ticketName} discount`;
   } else {
     return Object.values(CDP_CUSTOM_EVENTS).find((e) => e.type === event.type).displayName;
   }
@@ -40,13 +42,11 @@ function calculateTimeDifference(date: string | Date) {
   const currentDate = new Date();
   const inputDate = new Date(date);
 
-  // Check if the input date is today
   if (
     inputDate.getDate() === currentDate.getDate() &&
     inputDate.getMonth() === currentDate.getMonth() &&
     inputDate.getFullYear() === currentDate.getFullYear()
   ) {
-    // Calculate time difference
     const timeDifference = currentDate.getTime() - inputDate.getTime();
     const seconds = Math.floor(timeDifference / 1000);
     const minutes = Math.floor(seconds / 60);
@@ -60,7 +60,6 @@ function calculateTimeDifference(date: string | Date) {
       return `${hours} hour${hours === 1 ? '' : 's'} ago`;
     }
   } else {
-    // Return formatted date if not today
     return inputDate.toLocaleDateString();
   }
 }

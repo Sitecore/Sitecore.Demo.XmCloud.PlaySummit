@@ -23,4 +23,8 @@ export const CDP_CUSTOM_EVENTS = {
     type: 'TICKET_PURCHASED',
     displayName: 'Ticket purchased',
   },
+  ticketOfferApplied: {
+    type: 'TICKET_OFFER_SEEN',
+    displayName: 'Ticket Offer Seen',
+  },
 };
