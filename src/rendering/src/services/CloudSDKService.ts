@@ -43,3 +43,20 @@ export const identifyVisitor = async (
   const Events = await context.getSDK('Events');
   return await Events.identity(eventData);
 };
+
+export const logAudiencePreferenceEvent = async (audience: string): Promise<EPResponse> => {
+  if (isDisabled) {
+    console.warn('AUDIENCE_PREFERENCE CDP event not available in development mode');
+    return null;
+  }
+
+  const Events = await context.getSDK('Events');
+  return await Events.event(
+    'AUDIENCE_PREFERENCE',
+    {
+      channel,
+      currency,
+    },
+    { audience }
+  );
+};
