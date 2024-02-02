@@ -1,4 +1,4 @@
-import { identifyVisitor as identifyVisitorInCdp } from './CdpService';
+import { identifyVisitor as identifyVisitorInCdp } from './CloudSDKService';
 import { identifyVisitor as identifyVisitorInSend } from './SendService';
 
 export function identifyVisitor(
