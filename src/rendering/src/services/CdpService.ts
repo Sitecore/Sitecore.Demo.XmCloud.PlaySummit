@@ -10,7 +10,6 @@ import {
   WelcomeMessage,
   getDynamicWelcomeMessage as boxeverGetDynamicWelcomeMessage,
   isCdpConfigured as boxeverIsCdpConfigured,
-  closeSession as boxeverCloseSession,
   getGuestEmail as boxeverGetGuestEmail,
   getGuestFirstName as boxeverGetGuestFirstName,
   getGuestLastName as boxeverGetGuestLastName,
@@ -80,7 +79,7 @@ export function identifyVisitor(
 /**
  * Logs the purchase of a ticket as an event, and stores the owned ticket in the visitor CDP profile.
  */
-export function logTicketPurchase(ticketId: number): Promise<unknown> {
+export async function logTicketPurchase(ticketId: number): Promise<unknown> {
   const purchasedTicketItem = TICKETS[ticketId];
   // If the purchased ticket is an upgrade, store the target upgrade ticket in the data extension
   const ownedTicket =
@@ -100,23 +99,8 @@ export function logTicketPurchase(ticketId: number): Promise<unknown> {
     ticketName: ownedTicket.name,
   };
 
-  return logEvent('TICKET_PURCHASED', eventPayload).then(() =>
-    saveDataExtension(dataExtensionName, dataExtensionPayload)
-  );
-}
-
-/**
- * Logs a custom event when a user scans a QR code on the TV app
- */
-export function logQRCodeEvent(
-  eventName: string,
-  payload?: Record<string, unknown>
-): Promise<unknown> {
-  return logEvent(eventName, payload);
-}
-
-export function closeCurrentSession(): Promise<unknown> {
-  return boxeverCloseSession();
+  await logEvent('TICKET_PURCHASED', eventPayload);
+  return await saveDataExtension(dataExtensionName, dataExtensionPayload);
 }
 
 /**
