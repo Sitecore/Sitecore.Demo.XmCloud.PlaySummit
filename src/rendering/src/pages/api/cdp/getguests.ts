@@ -1,7 +1,7 @@
 import { NextApiHandler } from 'next';
 import { cdpConfig } from './config';
 
-const handler: NextApiHandler<unknown> = async (request, response) => {
+const handler: NextApiHandler<unknown> = async (_request, response) => {
   try {
     const resData = await fetch(
       `${cdpConfig.apiTargetEndpoint}/guests?expand=true&limit=10&offset=0&sort=lastSeen%3A%3ADESC&identityStatus=customer`,
