@@ -10,19 +10,12 @@ const language = (
   typeof window !== 'undefined' ? window?.navigator?.language : config.defaultLanguage
 )?.slice(0, 2);
 
-const isDisabled = process.env.NODE_ENV === 'development';
-
 export const identifyVisitor = async (
   email: string,
   firstName = '',
   lastName = '',
   phone = ''
 ): Promise<EPResponse> => {
-  if (isDisabled) {
-    console.warn('IDENTITY CDP event not available in development mode');
-    return null;
-  }
-
   const eventData: IdentityEventAttributesInput = {
     email,
     channel,
@@ -45,11 +38,6 @@ export const identifyVisitor = async (
 };
 
 export const logAudiencePreferenceEvent = async (audience: string): Promise<EPResponse> => {
-  if (isDisabled) {
-    console.warn('AUDIENCE_PREFERENCE CDP event not available in development mode');
-    return null;
-  }
-
   const Events = await context.getSDK('Events');
   return await Events.event(
     'AUDIENCE_PREFERENCE',
