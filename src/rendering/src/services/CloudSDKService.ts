@@ -2,6 +2,7 @@ import { EPResponse } from '@sitecore-cloudsdk/core';
 import { IdentityEventAttributesInput } from '@sitecore-cloudsdk/events/browser';
 
 import { context } from 'lib/context';
+import { TICKETS } from 'src/models/mock-tickets';
 import config from 'temp/config';
 
 const channel = 'WEB';
@@ -46,5 +47,19 @@ export const logAudiencePreferenceEvent = async (audience: string): Promise<EPRe
       currency,
     },
     { audience }
+  );
+};
+
+export const logTicketPurchase = async (ticketId: number): Promise<EPResponse> => {
+  const purchasedTicketItem = TICKETS[ticketId];
+
+  const Events = await context.getSDK('Events');
+  return await Events.event(
+    'TICKET_PURCHASE',
+    {
+      channel,
+      currency,
+    },
+    { ticketId, ticketName: purchasedTicketItem.name, pricePaid: purchasedTicketItem.price }
   );
 };

@@ -1,7 +1,8 @@
 import { FormEvent } from 'react';
 import Router from 'next/router';
-import { logTicketPurchase } from '../../services/CdpService';
+
 import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
+import { logTicketPurchase } from '../../services/CloudSDKService';
 
 const PaymentAndBillingForm = (): JSX.Element => {
   const publicUrl = getPublicAssetUrl();
