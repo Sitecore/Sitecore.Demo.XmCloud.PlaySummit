@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PersonalizeMiddleware } from '@sitecore-jss/sitecore-jss-nextjs/middleware';
 import { MiddlewarePlugin } from '..';
+import clientFactory from 'lib/graphql-client-factory';
 import config from 'temp/config';
 import { siteResolver } from 'lib/site-resolver';
-import { isEmbeddedPersonalizationEnabled } from '../../../helpers/EmbeddedPersonalizationHelper'; // DEMO TEAM CUSTOMIZATION
 
 /**
  * This is the personalize middleware plugin for Next.js.
@@ -24,8 +24,7 @@ class PersonalizePlugin implements MiddlewarePlugin {
     this.personalizeMiddleware = new PersonalizeMiddleware({
       // Configuration for your Sitecore Experience Edge endpoint
       edgeConfig: {
-        endpoint: config.graphQLEndpoint,
-        apiKey: config.sitecoreApiKey,
+        clientFactory,
         timeout:
           (process.env.PERSONALIZE_MIDDLEWARE_EDGE_TIMEOUT &&
             parseInt(process.env.PERSONALIZE_MIDDLEWARE_EDGE_TIMEOUT)) ||
@@ -34,8 +33,8 @@ class PersonalizePlugin implements MiddlewarePlugin {
       },
       // Configuration for your Sitecore CDP endpoint
       cdpConfig: {
-        endpoint: process.env.NEXT_PUBLIC_CDP_TARGET_URL || '',
-        clientKey: process.env.NEXT_PUBLIC_CDP_CLIENT_KEY || '',
+        sitecoreEdgeUrl: config.sitecoreEdgeUrl,
+        sitecoreEdgeContextId: config.sitecoreEdgeContextId,
         timeout:
           (process.env.PERSONALIZE_MIDDLEWARE_CDP_TIMEOUT &&
             parseInt(process.env.PERSONALIZE_MIDDLEWARE_CDP_TIMEOUT)) ||
@@ -44,18 +43,13 @@ class PersonalizePlugin implements MiddlewarePlugin {
       // This function determines if the middleware should be turned off.
       // IMPORTANT: You should implement based on your cookie consent management solution of choice.
       // You may wish to keep it disabled while in development mode.
-      // DEMO TEAM CUSTOMIZATION - Disable if the environment variables are not set
-      disabled: () => process.env.NODE_ENV === 'development' || !isEmbeddedPersonalizationEnabled,
-      // END CUSTOMIZATION
+      disabled: () => process.env.NODE_ENV === 'development',
       // This function determines if a route should be excluded from personalization.
       // Certain paths are ignored by default (e.g. files and Next.js API routes), but you may wish to exclude more.
       // This is an important performance consideration since Next.js Edge middleware runs on every request.
       excludeRoute: () => false,
       // Site resolver implementation
       siteResolver,
-      // Personalize middleware will use PosResolver.resolve(site, language) (same as CdpPageView) by default to get point of sale.
-      // You can also pass a custom point of sale resolver into middleware to override it like so:
-      // getPointOfSale: (site, language) => { ... }
     });
   }
 
