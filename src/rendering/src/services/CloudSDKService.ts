@@ -35,12 +35,12 @@ export const identifyVisitor = async (
   };
 
   const Events = await context.getSDK('Events');
-  return await Events.identity(eventData);
+  return Events?.identity(eventData);
 };
 
 export const logAudiencePreferenceEvent = async (audience: string): Promise<EPResponse> => {
   const Events = await context.getSDK('Events');
-  return await Events.event(
+  return Events?.event(
     'AUDIENCE_PREFERENCE',
     {
       channel,
@@ -54,7 +54,7 @@ export const logTicketPurchase = async (ticketId: number): Promise<EPResponse> =
   const purchasedTicketItem = TICKETS[ticketId];
 
   const Events = await context.getSDK('Events');
-  return await Events.event(
+  return Events?.event(
     'TICKET_PURCHASE',
     {
       channel,
