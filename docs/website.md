@@ -22,6 +22,7 @@ This repository contains:
 - Sitecore CLI configuration.
 - A `\docker` folder that has:
   - A `\deploy` folder that is volume mounted to the CM container. It is used to deploy from Visual Studio to the running container.
+- A `\ch-one` folder that is a Git sub-module referencing https://github.com/Sitecore/Sitecore.Demo.CHONE, it is used for Sitecore Demo Portal deployments.
 - A `\src` folder that has:
   - The Sitecore Content Serialization (SCS) configuration JSON files.
   - `\Foundation\BranchPresets`: .Net project to enable branch presets in Sitecore.
