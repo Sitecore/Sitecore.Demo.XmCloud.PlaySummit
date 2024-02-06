@@ -2,7 +2,8 @@ import { FormEvent } from 'react';
 import Router from 'next/router';
 
 import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
-import { logTicketPurchase } from '../../services/CloudSDKService';
+import { logTicketPurchase as logTicketPurchaseCloudSDK } from '../../services/CloudSDKService';
+import { logTicketPurchase } from '../../services/CdpService';
 
 const PaymentAndBillingForm = (): JSX.Element => {
   const publicUrl = getPublicAssetUrl();
@@ -22,7 +23,14 @@ const PaymentAndBillingForm = (): JSX.Element => {
       return;
     }
 
-    return await logTicketPurchase(parseInt(ticketId))
+    // Log the 'TICKET_PURCHASE' custom event to CDP using the Cloud SDK
+    try {
+      await logTicketPurchaseCloudSDK(parseInt(ticketId));
+    } catch (e) {
+      console.error(e);
+    }
+
+    return logTicketPurchase(parseInt(ticketId))
       .then(() => Router.push(`/tickets/payment/confirmed?ticket=${ticketId}`))
       .catch((e) => {
         console.log(e);
