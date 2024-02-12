@@ -133,7 +133,7 @@ export const logSearchProfileData = async (payload: {
 
   const Events = await context.getSDK('Events');
   return Events?.event(
-    'SEARCH_PROFILE_DATA',
+    CDP_CUSTOM_EVENTS.searchProfileData.type,
     {
       channel,
       currency,

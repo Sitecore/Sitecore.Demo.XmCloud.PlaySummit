@@ -30,4 +30,7 @@ export const CDP_CUSTOM_EVENTS = {
   audiencePreference: {
     type: 'AUDIENCE_PREFERENCE',
   },
+  searchProfileData: {
+    type: 'SEARCH_PROFILE_DATA',
+  },
 };
