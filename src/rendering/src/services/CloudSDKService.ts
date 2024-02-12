@@ -80,6 +80,14 @@ export const logTicketPurchase = async (ticketId: number): Promise<EPResponse> =
   );
 };
 
+export const logAttendeeFormCompleted = async (): Promise<EPResponse> => {
+  const Events = await context.getSDK('Events');
+  return Events?.event(CDP_CUSTOM_EVENTS.attendeeFormCompleted.type, {
+    channel,
+    currency,
+  });
+};
+
 export const logSearchProfileData = async (payload: {
   entities: [
     {
