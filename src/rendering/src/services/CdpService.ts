@@ -64,7 +64,7 @@ export function logViewEvent(route?: RouteData): Promise<unknown> {
  * Logs a custom audience preference event
  */
 export function logAudiencePreferenceEvent(audience: string): Promise<unknown> {
-  return logEvent('AUDIENCE_PREFERENCE', { audience });
+  return logEvent(CDP_CUSTOM_EVENTS.audiencePreference.type, { audience });
 }
 
 /**

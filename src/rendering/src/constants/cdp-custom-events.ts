@@ -27,4 +27,7 @@ export const CDP_CUSTOM_EVENTS = {
     type: 'TICKET_OFFER_SEEN',
     displayName: 'Ticket Offer Seen',
   },
+  audiencePreference: {
+    type: 'AUDIENCE_PREFERENCE',
+  },
 };

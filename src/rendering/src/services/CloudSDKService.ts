@@ -3,6 +3,7 @@ import { IdentityEventAttributesInput } from '@sitecore-cloudsdk/events/browser'
 import Cookies from 'js-cookie';
 
 import { context } from 'lib/context';
+import { CDP_CUSTOM_EVENTS } from 'src/constants/cdp-custom-events';
 import { TICKETS } from 'src/models/mock-tickets';
 import config from 'temp/config';
 
@@ -42,7 +43,7 @@ export const identifyVisitor = async (
 export const logAudiencePreferenceEvent = async (audience: string): Promise<EPResponse> => {
   const Events = await context.getSDK('Events');
   return Events?.event(
-    'AUDIENCE_PREFERENCE',
+    CDP_CUSTOM_EVENTS.audiencePreference.type,
     {
       channel,
       currency,
