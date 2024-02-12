@@ -22,6 +22,7 @@ This repository contains:
 - Sitecore CLI configuration.
 - A `\docker` folder that has:
   - A `\deploy` folder that is volume mounted to the CM container. It is used to deploy from Visual Studio to the running container.
+- A `\ch-one` folder that is a Git sub-module referencing https://github.com/Sitecore/Sitecore.Demo.CHONE, it is used for Sitecore Demo Portal deployments.
 - A `\src` folder that has:
   - The Sitecore Content Serialization (SCS) configuration JSON files.
   - `\Foundation\BranchPresets`: .Net project to enable branch presets in Sitecore.
@@ -139,22 +140,23 @@ If you want the website to use Sitecore Content Hub DAM and CMP, you must:
 
 ## Optional: Sitecore Search Custom Configuration
 
-Sitecore Search is enabled by default when running the Docker containers. It uses a shared Sitecore Search domain where all the sessions, speakers, sponsors, vendors, and news are indexed. You do not have access to that shared Sitecore Search domain, so you cannot change or update what is indexed.
+Sitecore Search is enabled when the search environment variables are set. When deployed from the Demo Portal, it uses a shared Sitecore Search domain where all the sessions, speakers, sponsors, vendors, and news are indexed. You do not have access to that shared Sitecore Search domain, so you cannot change or update what is indexed.
 
 If you want the website to use a custom Sitecore Search domain, you must:
 
-1. Have a Sitecore Search domain based on the "PLAY Summit Demo" domain configuration.
+1. Have a Sitecore Search domain based on the "PLAY! Summit Demo" domain configuration.
    1. [Contact the demo team on Slack](../README.md#how-can-i-get-help-with-play-summit) for more information about this domain.
 2. Edit the `.\.env` file.
 3. Change the following values:
 
    ```shell
-   # Search API
-   SEARCH_API_DOMAIN=YOUR_CUSTOM_DOMAIN
-   SEARCH_API_HOST=YOUR_SEARCH_API_HOST
+   # Search SDK
+   SEARCH_ENV=prod
+   SEARCH_CUSTOMER_KEY=YOUR_SEARCH_CUSTOMER_KEY
+   SEARCH_API_KEY=YOUR_SEARCH_API_KEY
    ```
 
-   - Your search API host will be in the form of `something.rfksrv.com` without the URL scheme.
+   - In general, you can use any search domain, just add a sorting option called "featured_desc" and a suggestion block called "content_name_context_aware". These are referenced in code and the widgets will not load if they do not exist in your Sitecore Search domain.
 
 4. Save the file.
 
