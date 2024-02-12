@@ -1,3 +1,4 @@
+import useTicketOfferId from 'src/hooks/useTicketOffer';
 import { TICKETS } from '../../models/mock-tickets';
 
 type OrderSummaryProps = {
@@ -5,6 +6,8 @@ type OrderSummaryProps = {
 };
 
 const OrderSummary = (props?: OrderSummaryProps): JSX.Element => {
+  const ticketOfferId = useTicketOfferId();
+
   let ticketId = '0';
   if (props?.ticket) {
     ticketId = props.ticket;
@@ -31,6 +34,8 @@ const OrderSummary = (props?: OrderSummaryProps): JSX.Element => {
       <div></div>
     );
 
+  const ticketPrice = parseInt(ticketId) === ticketOfferId ? ticket.salePrice : ticket.price;
+
   return (
     <div className="order-summary">
       <div className="summary-header">Order Summary</div>
@@ -39,14 +44,14 @@ const OrderSummary = (props?: OrderSummaryProps): JSX.Element => {
         <div>
           <div className="line-item">
             <div className="item-name">{ticket.name}</div>
-            <div className="item-price">${ticket.price}.00</div>
+            <div className="item-price">${ticketPrice}.00</div>
           </div>
           <div>x 1 {ticket.pass}</div>
         </div>
         {fees}
         <div className="line-item total-line">
           <div>Total</div>
-          <div>${ticket.price + ticket.fees}.00</div>
+          <div>${ticketPrice + ticket.fees}.00</div>
         </div>
       </div>
     </div>

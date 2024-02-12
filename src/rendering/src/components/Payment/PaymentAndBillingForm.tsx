@@ -2,8 +2,10 @@ import { FormEvent } from 'react';
 import Router from 'next/router';
 import { logTicketPurchase } from '../../services/CdpService';
 import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
+import useTicketOfferId from 'src/hooks/useTicketOffer';
 
 const PaymentAndBillingForm = (): JSX.Element => {
+  const ticketOfferId = useTicketOfferId();
   const publicUrl = getPublicAssetUrl();
 
   const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -21,7 +23,7 @@ const PaymentAndBillingForm = (): JSX.Element => {
       return;
     }
 
-    return await logTicketPurchase(parseInt(ticketId))
+    return await logTicketPurchase(parseInt(ticketId), parseInt(ticketId) === ticketOfferId)
       .then(() => Router.push(`/tickets/payment/confirmed?ticket=${ticketId}`))
       .catch((e) => {
         console.log(e);
