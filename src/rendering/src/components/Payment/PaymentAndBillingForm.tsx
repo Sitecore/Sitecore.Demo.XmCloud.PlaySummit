@@ -25,7 +25,7 @@ const PaymentAndBillingForm = (): JSX.Element => {
       return;
     }
 
-    // Log the 'TICKET_PURCHASE' custom event to CDP using the Cloud SDK
+    // Log the 'TICKET_PURCHASED' custom event to CDP using the Cloud SDK
     try {
       await logTicketPurchaseCloudSDK(parseInt(ticketId));
     } catch (e) {
