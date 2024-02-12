@@ -150,7 +150,7 @@ If you want the website to use a custom Sitecore Search domain, you must:
 3. Change the following values:
 
    ```shell
-   # Search API
+   # Search SDK
    SEARCH_ENV=prod
    SEARCH_CUSTOMER_KEY=YOUR_SEARCH_CUSTOMER_KEY
    SEARCH_API_KEY=YOUR_SEARCH_API_KEY
