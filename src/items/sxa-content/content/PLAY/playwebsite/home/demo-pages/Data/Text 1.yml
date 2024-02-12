@@ -14,11 +14,17 @@ Languages:
     - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
       Hint: Text
       Value: |
+        <br />
+        <b>Social Media Channels</b>
         <ul>
             <li><a href="/channels/facebook">Facebook</a></li>
             <li><a href="/channels/linkedin">LinkedIn</a></li>
             <li><a href="/channels/google">Google</a></li>
         </ul>
+        <b>Call Center App</b>
+        <ul>
+            <li><a href="/careconnect">CareConnect</a></li>
+        </ul>
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7d7ca511-e970-45c0-ae1f-05edf98cf2ac"
+      Value: "f4a63e0b-1c34-4ab1-add4-3a2438911b2d"

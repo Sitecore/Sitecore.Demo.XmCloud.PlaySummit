@@ -45,6 +45,9 @@
 /* BYOCC */
 @import './components/BYOCC/CountdownTimer.css';
 
+/* CareConnect */
+@import './components/CareConnect/CareConnect.css';
+
 /* Channels */
 @import './components/Channels/Facebook.css';
 @import './components/Channels/Google.css';

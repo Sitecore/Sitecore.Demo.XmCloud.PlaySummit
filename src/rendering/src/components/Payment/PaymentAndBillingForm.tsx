@@ -4,8 +4,10 @@ import Router from 'next/router';
 import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 import { logTicketPurchase as logTicketPurchaseCloudSDK } from '../../services/CloudSDKService';
 import { logTicketPurchase } from '../../services/CdpService';
+import useTicketOfferId from 'src/hooks/useTicketOffer';
 
 const PaymentAndBillingForm = (): JSX.Element => {
+  const ticketOfferId = useTicketOfferId();
   const publicUrl = getPublicAssetUrl();
 
   const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -30,7 +32,7 @@ const PaymentAndBillingForm = (): JSX.Element => {
       console.error(e);
     }
 
-    return logTicketPurchase(parseInt(ticketId))
+    return await logTicketPurchase(parseInt(ticketId), parseInt(ticketId) === ticketOfferId)
       .then(() => Router.push(`/tickets/payment/confirmed?ticket=${ticketId}`))
       .catch((e) => {
         console.log(e);
