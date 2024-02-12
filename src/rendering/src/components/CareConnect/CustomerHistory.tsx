@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CdpEvent, Customer } from './CareConnect';
 import { useEffect, useState } from 'react';
 import { CDP_CUSTOM_EVENTS } from 'src/constants/cdp-custom-events';
+import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs/utils';
 
 const getHistoryEvents = (customer: Customer): CdpEvent[] => {
   const historyEvents = Object.values(CDP_CUSTOM_EVENTS).map((event) => event.type);
@@ -10,12 +11,14 @@ const getHistoryEvents = (customer: Customer): CdpEvent[] => {
   const matchingEvents: CdpEvent[] = [];
 
   for (const session of customer.sessions) {
-    for (const event of session.events) {
-      if (historyEvents.includes(event.type)) {
-        matchingEvents.push(event);
+    if (session.referer?.includes(getPublicUrl())) {
+      for (const event of session.events) {
+        if (historyEvents.includes(event.type)) {
+          matchingEvents.push(event);
 
-        if (matchingEvents.length === maxResults) {
-          break;
+          if (matchingEvents.length === maxResults) {
+            break;
+          }
         }
       }
     }

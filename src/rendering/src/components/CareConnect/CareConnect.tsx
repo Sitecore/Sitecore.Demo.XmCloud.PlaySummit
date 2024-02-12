@@ -6,6 +6,7 @@ import { getAllGuests, getExtendedGuest } from 'src/services/BoxeverService';
 import SpinningLoader from './SpinningLoader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSyncAlt } from '@fortawesome/free-solid-svg-icons';
+import { getPublicUrl } from '@sitecore-jss/sitecore-jss-nextjs/utils';
 
 export interface CdpEvent {
   ref: string;
@@ -34,6 +35,7 @@ export interface Customer {
     };
   }[];
   sessions: {
+    referer: string;
     events: CdpEvent[];
   }[];
 }
@@ -65,14 +67,20 @@ const CareConnect = () => {
     try {
       const guests = await getAllGuests().then((res: { items: Customer[] }) => res.items);
 
-      const customers = await Promise.all(
+      const customers = (await Promise.all(
         guests.map(async (customer: Customer) => {
           const extendedCustomer = await getGuestFullData(customer.ref);
           return extendedCustomer;
         })
-      );
+      )) as Customer[];
 
-      setCustomers(customers);
+      const customersFromCurrentInstance = customers
+        .filter((customer) =>
+          customer.sessions?.some((session) => session?.referer?.includes(getPublicUrl()))
+        )
+        .slice(0, 10);
+
+      setCustomers(customersFromCurrentInstance);
     } catch (error) {
       console.error('Error fetching customers:', error);
     }
