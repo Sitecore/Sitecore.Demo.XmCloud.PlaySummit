@@ -19,6 +19,7 @@ import { usePathname } from 'next/navigation';
 import { PageController, trackEntityPageViewEvent } from '@sitecore-search/react';
 import { fetchUserProfileData, isSearchSDKEnabled } from '../services/SearchSDKService';
 import { storeSearchProfileData } from '../services/CdpService';
+import { logSearchProfileData } from 'src/services/CloudSDKService';
 
 const SitecorePage = ({
   notFound,
@@ -50,9 +51,14 @@ const SitecorePage = ({
         // Save corresponding pageUri to session storage as a workaround because Search API does not return custom attributes
         sessionStorage.setItem(layoutData.sitecore.route.itemId, pageUri);
 
+        // Fetch the Sitecore Search user profile data
         const userProfileData = await fetchUserProfileData();
 
+        // Store it as a guest data extension in legacy CDP
         storeSearchProfileData(userProfileData);
+
+        // Log it as a custom event in corresponding Context ID CDP using the Cloud SDK
+        logSearchProfileData(userProfileData);
       }
     })();
   }, [pageUri, layoutData.sitecore.route.itemId]);
