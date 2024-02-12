@@ -56,8 +56,22 @@ export const logTicketPurchase = async (ticketId: number): Promise<EPResponse> =
   const purchasedTicketItem = TICKETS[ticketId];
 
   const Events = await context.getSDK('Events');
+
+  // Log PAYMENT_FORM_COMPLETED custom event
+  await Events?.event(CDP_CUSTOM_EVENTS.paymentFormCompleted.type, {
+    channel,
+    currency,
+  });
+
+  // Log PAYMENT_SUCCESSFUL custom event
+  await Events?.event(CDP_CUSTOM_EVENTS.paymentSuccessful.type, {
+    channel,
+    currency,
+  });
+
+  // Log TICKET_PURCHASED custom event
   return Events?.event(
-    'TICKET_PURCHASE',
+    CDP_CUSTOM_EVENTS.ticketPurchased.type,
     {
       channel,
       currency,
