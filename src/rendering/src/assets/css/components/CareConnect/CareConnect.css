@@ -1,0 +1,152 @@
+.careconnect {
+  &-header {
+    @apply flex static justify-between px-14 bg-white-dark py-2;
+  }
+
+  &-logo {
+    @apply w-72;
+  }
+
+  &-main {
+    @apply flex bg-white-dark min-h-screen;
+
+    h1 {
+      @apply flex items-center text-4xl font-bold mb-4;
+
+      svg {
+        @apply text-lg ml-4;
+      }
+
+      button {
+        @apply flex transition-colors;
+
+        &:hover {
+          @apply text-blue;
+        }
+      }
+    }
+
+    h6 {
+      @apply font-bold;
+
+      svg {
+        @apply mr-3;
+      }
+    }
+
+    .customers-list {
+      @apply w-3/5 px-14 py-6;
+
+      ul {
+        @apply space-y-4;
+      }
+
+      li {
+        button {
+          @apply grid grid-cols-3 items-center w-full p-4 border-4 border-white-light bg-white-light rounded-md transition-colors;
+          @apply hover:border-blue-lightest;
+
+          &.active {
+            @apply border-blue-light;
+          }
+
+          .customer-name {
+            @apply text-left font-bold text-2xl;
+          }
+
+          .customer-date {
+            @apply text-center text-gray;
+          }
+
+          .customer-status {
+            @apply text-right text-blue-light;
+          }
+        }
+      }
+    }
+
+    .customer-info-sidebar {
+      @apply w-2/5 px-14 py-6 bg-white-light;
+
+      svg {
+        @apply mr-3;
+      }
+
+      .customer-details {
+        @apply grid grid-cols-2 gap-4 items-center;
+      }
+
+      .customer-status {
+        @apply justify-self-start text-blue-light border-4 border-blue-light rounded-md px-4 py-1 font-bold;
+      }
+    }
+
+    .next-best-offer {
+      @apply flex flex-col gap-4 text-white bg-blue-light border-4 border-blue-lightest rounded-md p-4 mt-6;
+
+      button {
+        @apply bg-white text-blue-light font-bold px-4 py-2 rounded-md ml-auto transition-opacity;
+        @apply hover:opacity-90;
+
+        &:disabled {
+          @apply opacity-90;
+        }
+
+        &.loading {
+          svg {
+            @apply mr-0;
+          }
+        }
+      }
+    }
+
+    .customer-history {
+      @apply border-4 border-white-dark rounded-md p-4 mt-6;
+
+      ul {
+        @apply flex flex-col gap-6 mt-3;
+
+        li {
+          @apply relative pl-7;
+
+          &::before {
+            @apply content-[""] absolute top-[calc(50%-8px)] left-0 w-[15px] h-[15px] rounded-full bg-black-lightest z-10;
+          }
+
+          &::after {
+            @apply content-[""] absolute top-[calc(50%-8px)] left-[6px] w-[3px] h-[calc(100%+1.5rem)] bg-gray;
+          }
+
+          &:first-child {
+            p,
+            span {
+              @apply text-blue-light;
+            }
+
+            &::before {
+              @apply bg-blue-light;
+            }
+          }
+
+          &:last-child {
+            &::after {
+              @apply hidden;
+            }
+          }
+
+          p {
+            @apply font-bold text-black-lightest;
+          }
+
+          span {
+            @apply text-gray;
+          }
+        }
+      }
+    }
+  }
+}
+
+.spinning-loader {
+  @apply mr-0 animate-spin;
+}

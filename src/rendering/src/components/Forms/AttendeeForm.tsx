@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ComponentProps } from 'lib/component-props';
 import { identifyVisitor } from '../../services/IdentificationService';
 import { getUserData } from '../../helpers/GuestDataHelper';
+import { logAttendeeFormCompleted } from 'src/services/CdpService';
 
 const AttendeeForm = (props: ComponentProps): JSX.Element => {
   const ticketId =
@@ -35,8 +36,10 @@ const AttendeeForm = (props: ComponentProps): JSX.Element => {
       return;
     }
 
-    return await identifyVisitor(email, firstName, lastName).then(() => {
-      Router.push(`/tickets/payment?ticket=${ticketId}`);
+    return await identifyVisitor(email, firstName, lastName).then(async () => {
+      await logAttendeeFormCompleted().then(() => {
+        Router.push(`/tickets/payment?ticket=${ticketId}`);
+      });
     });
   };
 

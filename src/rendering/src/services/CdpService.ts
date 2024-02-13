@@ -24,6 +24,7 @@ import { AddToCartPayload } from '../models/cdp/AddToCartPayload';
 import { OrderCheckoutPayload, OrderItem } from '../models/cdp/OrderCheckoutPayload';
 import { DOrder } from '../models/ordercloud/DOrder';
 import { DPayment } from '../models/ordercloud/DPayment';
+import { CDP_CUSTOM_EVENTS } from 'src/constants/cdp-custom-events';
 
 export const isCdpConfigured = boxeverIsCdpConfigured;
 
@@ -60,6 +61,9 @@ export function logViewEvent(route?: RouteData): Promise<unknown> {
   return boxeverLogViewEvent(additionalData);
 }
 
+/**
+ * Logs a custom audience preference event
+ */
 export function logAudiencePreferenceEvent(audience: string): Promise<unknown> {
   return logEvent('AUDIENCE_PREFERENCE', { audience });
 }
@@ -80,7 +84,7 @@ export function identifyVisitor(
 /**
  * Logs the purchase of a ticket as an event, and stores the owned ticket in the visitor CDP profile.
  */
-export function logTicketPurchase(ticketId: number): Promise<unknown> {
+export function logTicketPurchase(ticketId: number, onSale: boolean): Promise<unknown> {
   const purchasedTicketItem = TICKETS[ticketId];
   // If the purchased ticket is an upgrade, store the target upgrade ticket in the data extension
   const ownedTicket =
@@ -92,17 +96,42 @@ export function logTicketPurchase(ticketId: number): Promise<unknown> {
   const eventPayload = {
     ticketId: ticketId,
     ticketName: purchasedTicketItem.name,
-    pricePaid: purchasedTicketItem.price,
+    pricePaid: onSale ? purchasedTicketItem.salePrice : purchasedTicketItem.price,
   };
+
   const dataExtensionPayload = {
     key: dataExtensionName,
     ticketId: parseInt(ownedTicket.id),
     ticketName: ownedTicket.name,
   };
 
-  return logEvent('TICKET_PURCHASED', eventPayload).then(() =>
+  return logEvent(CDP_CUSTOM_EVENTS.paymentFormCompleted.type).then(() =>
+    logEvent(CDP_CUSTOM_EVENTS.paymentSuccessful.type).then(() =>
+      logEvent(CDP_CUSTOM_EVENTS.ticketPurchased.type, eventPayload).then(() =>
+        saveDataExtension(dataExtensionName, dataExtensionPayload)
+      )
+    )
+  );
+}
+
+/**
+ * Logs a custom event and stores the data in the visitor CDP profile.
+ */
+export function logAttendeeFormCompleted(): Promise<unknown> {
+  const dataExtensionName = 'AttendeeFormCompleted';
+  const dataExtensionPayload = {
+    key: dataExtensionName,
+  };
+  return logEvent(CDP_CUSTOM_EVENTS.attendeeFormCompleted.type).then(() =>
     saveDataExtension(dataExtensionName, dataExtensionPayload)
   );
+}
+
+/**
+ * Logs a custom event when a ticket is selected
+ */
+export function logTicketSelected(): Promise<unknown> {
+  return logEvent(CDP_CUSTOM_EVENTS.ticketSelected.type);
 }
 
 /**
