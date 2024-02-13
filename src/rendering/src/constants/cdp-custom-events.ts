@@ -27,4 +27,12 @@ export const CDP_CUSTOM_EVENTS = {
     type: 'TICKET_OFFER_SEEN',
     displayName: 'Ticket Offer Seen',
   },
+  audiencePreference: {
+    type: 'AUDIENCE_PREFERENCE',
+    displayName: 'Audience preference',
+  },
+  searchProfileData: {
+    type: 'SEARCH_PROFILE_DATA',
+    displayName: 'Search profile data',
+  },
 };

@@ -1,7 +1,9 @@
 import { FormEvent } from 'react';
 import Router from 'next/router';
-import { logTicketPurchase } from '../../services/CdpService';
+
 import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
+import { logTicketPurchase as logTicketPurchaseCloudSDK } from '../../services/CloudSDKService';
+import { logTicketPurchase } from '../../services/CdpService';
 import useTicketOfferId from 'src/hooks/useTicketOffer';
 
 const PaymentAndBillingForm = (): JSX.Element => {
@@ -21,6 +23,13 @@ const PaymentAndBillingForm = (): JSX.Element => {
         'Ticket information unavailable. Please go back to the tickets page and select a valid ticket.'
       );
       return;
+    }
+
+    // Log the 'TICKET_PURCHASED' custom event to CDP using the Cloud SDK
+    try {
+      await logTicketPurchaseCloudSDK(parseInt(ticketId));
+    } catch (e) {
+      console.error(e);
     }
 
     return await logTicketPurchase(parseInt(ticketId), parseInt(ticketId) === ticketOfferId)
