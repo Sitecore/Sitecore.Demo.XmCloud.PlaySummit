@@ -220,10 +220,10 @@ const Template: StoryFn<typeof HeroSection> = () => {
         <HeaderCdpMessageBar />
         <HeroSection {...heroProps} />
         <ThreeColumnsSection {...threeColProps} />
+        <SelectedSponsorsGrid {...sponsorProps} />
         <Section {...sectionProps}>
           <PersonalizedPicksWrapper {...personalizedPicksProps} />
         </Section>
-        <SelectedSponsorsGrid {...sponsorProps} />
       </main>
       <footer>
         <Footer {...mockFooterProps} />
