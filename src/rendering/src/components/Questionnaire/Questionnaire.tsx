@@ -9,6 +9,7 @@ import { ComponentProps } from 'lib/component-props';
 import { QuestionnaireQuestion } from './QuestionnaireQuestion';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { logAudiencePreferenceEvent } from 'src/services/CdpService';
+import { logAudiencePreferenceEvent as logAudiencePreferenceEventCloudSDK } from 'src/services/CloudSDKService';
 import { GraphQLSession } from 'src/types/session';
 import SessionItem from 'components/Sessions/SessionItem';
 
@@ -97,7 +98,7 @@ const Questionnaire = (props: QuestionnaireProps): JSX.Element => {
   }, [selectedAudience, selectedSessionType, sessions]);
 
   const handleOptionSelect = useCallback(
-    (option: QuestionnaireOption) => {
+    async (option: QuestionnaireOption) => {
       setSelectedOptionId(option.id);
 
       const audience = option.audience.jsonValue.value as string;
@@ -110,6 +111,13 @@ const Questionnaire = (props: QuestionnaireProps): JSX.Element => {
       };
 
       if (!!audience) {
+        // Log the 'AUDIENCE_PREFERENCE' custom event to CDP using the Cloud SDK
+        try {
+          await logAudiencePreferenceEventCloudSDK(audience);
+        } catch (e) {
+          console.error(e);
+        }
+
         logAudiencePreferenceEvent(audience).then(() => {
           setSelectedAudience(audience);
           goToNext();
