@@ -3,7 +3,7 @@ import { isSearchSDKEnabled } from '../../services/SearchSDKService';
 import PersonalizedPicks from './PersonalizedPicks';
 import { ComponentProps } from 'lib/component-props';
 
-type PersonalizedPicksWrapperProps = ComponentProps & {
+export type PersonalizedPicksWrapperProps = ComponentProps & {
   params: {
     Items: number;
     styles: string;
