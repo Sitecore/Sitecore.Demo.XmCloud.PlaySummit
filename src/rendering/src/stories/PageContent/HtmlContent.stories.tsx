@@ -11,8 +11,9 @@ export const Default = {
   args: {
     fields: {
       Html: {
-        value: '<h1>Test</h1>',
-      }
+        value:
+          '<h1>Lorem ipsum</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>',
+      },
     },
     rendering: {
       componentName: 'Rendering',
