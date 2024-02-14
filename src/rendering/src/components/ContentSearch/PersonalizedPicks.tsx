@@ -14,7 +14,7 @@ type PersonalizedPick = {
   image_url?: string;
 };
 
-type PersonalizedPicksProps = {
+export type PersonalizedPicksProps = {
   title?: string;
   itemsToDisplay?: number;
   sxaStyles?: string;
