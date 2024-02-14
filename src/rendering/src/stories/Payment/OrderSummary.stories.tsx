@@ -9,12 +9,12 @@ export default {
 
 export const WithFees = {
   args: {
-    ticket: '0',
+    ticketID: 0,
   },
 };
 
 export const WithoutFees = {
   args: {
-    ticket: '3',
+    ticketID: 3,
   },
 };
