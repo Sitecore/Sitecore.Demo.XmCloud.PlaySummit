@@ -1,6 +1,10 @@
 # PLAY! Summit Demo on XM Cloud
 
-This repository is used for the primary Sitecore DXP demo that uses:
+A headless site built to showcase the power of Sitecore's composable digital solutions, on XM Cloud
+
+![PLAY! Website Home Page](docs/play-website-thumbnail.png)
+
+This repository is a Sitecore DXP demo that uses:
 
 - Sitecore XM Cloud
   - XM Cloud Pages Personalize
@@ -12,6 +16,14 @@ This repository is used for the primary Sitecore DXP demo that uses:
 - Vercel
 - Tailwind CSS
 - Storybook
+
+## Live Demo
+
+View the live demo at <https://play-website.sitecoredemo.com>
+
+## Storybook
+
+View the [Storybook](https://github.com/storybookjs/storybook) at <https://play-summit-storybook.vercel.app>
 
 ## [📖 Documentation](docs/README.md)
 
