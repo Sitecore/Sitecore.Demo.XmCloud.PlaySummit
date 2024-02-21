@@ -19,7 +19,7 @@ This repository is a Sitecore DXP demo that uses:
 
 ## Live Demo
 
-View the live demo at [play-website.sitecoredemo.com](https://play-website.sitecoredemo.com)
+View the live demo at [play-website.sitecoredemo.com](https://play-website.sitecoredemo.com/)
 
 ## Storybook
 
