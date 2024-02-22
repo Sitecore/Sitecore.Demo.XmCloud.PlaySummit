@@ -1,5 +1,6 @@
 # 📖 PLAY! Summit Documentation
 
+0. [Quick Start](quick.md)
 1. [Global Prerequisites](prerequisites.md)
 2. [Docker](docker.md)
 3. [PLAY! Summit website](website.md)
