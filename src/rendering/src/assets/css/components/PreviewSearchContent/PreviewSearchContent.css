@@ -1,14 +1,15 @@
 .search-input-container {
   @apply block relative mx-5 my-3 order-first h-10;
-  @apply xl:ml-4 xl:my-0 xl:mr-0 xl:order-none xl:h-auto;
+  @apply lg:ml-4 lg:my-0 lg:mr-0 lg:order-none lg:h-auto;
 
   &:empty {
     @apply hidden;
   }
 
   .preview-search-content-container {
-    @apply absolute right-0 top-[3.6rem] w-full;
-    @apply xl:w-[42rem];
+    @apply absolute right-0 top-[3.75rem] w-full z-50;
+    @apply lg:w-[42rem];
+    @apply xl:top-[3.6rem];
 
     .icon {
       @apply mr-2;

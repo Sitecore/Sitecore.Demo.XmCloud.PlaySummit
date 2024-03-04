@@ -1,24 +1,24 @@
 .search-input-play {
   @apply absolute right-0 py-2 pl-12 pr-8 transition-all bg-white-light w-full;
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1024px) {
     @apply w-full left-0 right-0 pr-4 bg-white-light;
   }
 
   &-hidden {
-    @apply xl:hidden;
-    @apply placeholder:xl:text-transparent;
+    @apply lg:hidden;
+    @apply placeholder:lg:text-transparent;
   }
 
   &:not(.search-input-play-hidden) {
     @apply w-full bg-white-light;
-    @apply xl:w-[42rem];
+    @apply lg:w-[42rem];
   }
 }
 
 .main-navigation .navigation-content .items-container.opened {
   @apply flex-col;
-  @apply xl:flex-row;
+  @apply lg:flex-row;
 }
 
 .search-input-clear {
