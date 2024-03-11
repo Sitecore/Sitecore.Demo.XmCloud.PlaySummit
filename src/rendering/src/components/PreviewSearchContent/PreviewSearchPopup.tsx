@@ -18,6 +18,11 @@ const PreviewSearchPopup = ({
   keyphrase,
 }: PreviewSearchPopupProps): JSX.Element => {
   const keyphraseSuggestion = { text: keyphrase.trim(), freq: 1 } as Suggestion;
+  const fallbackSuggestions = [
+    { text: 'outdoor sports', freq: 1 },
+    { text: 'healthy living', freq: 1 },
+    { text: 'cycling', freq: 1 },
+  ];
 
   return (
     <div className="preview-search-content-container" ref={widgetRef}>
@@ -25,8 +30,10 @@ const PreviewSearchPopup = ({
         <div className="preview-search-content-popup">
           {suggestions?.length > 0 ? (
             <SuggestionList title="Did you mean?" list={suggestions} />
-          ) : (
+          ) : keyphrase ? (
             <SuggestionList list={[keyphraseSuggestion]} />
+          ) : (
+            <SuggestionList title="Try searching for:" list={fallbackSuggestions} />
           )}
           {items?.length > 0 && <PreviewSearchItemList items={items} />}
         </div>
