@@ -1,12 +1,16 @@
 import React, { PropsWithChildren } from 'react';
+import { SearchResponseSuggestion } from '@sitecore-search/react';
+
 import PreviewSearchInput from '../PreviewSearchContent/PreviewSearchInput';
 import PreviewSearchIcon from '../PreviewSearchContent/PreviewSearchIcon';
 import Questions from './Questions';
+import SuggestionList from '../../components/PreviewSearchContent/SuggestionList';
 
 type SearchResultsLayoutProps = PropsWithChildren & {
   keyphrase: string;
   onKeyphraseChange: (value: string) => void;
   onKeyphraseClear: () => void;
+  suggestions: SearchResponseSuggestion[];
 };
 
 const SearchResultsLayout = ({
@@ -14,6 +18,7 @@ const SearchResultsLayout = ({
   keyphrase,
   onKeyphraseChange,
   onKeyphraseClear,
+  suggestions,
 }: SearchResultsLayoutProps): JSX.Element => {
   return (
     <>
@@ -42,6 +47,7 @@ const SearchResultsLayout = ({
             {keyphrase && (
               <Questions rfkId="rfkid_qa" keyphrase={keyphrase} defaultRelatedQuestions={4} />
             )}
+            {suggestions?.length > 0 && <SuggestionList title="Did you mean?" list={suggestions} />}
           </div>
         </div>
       </div>

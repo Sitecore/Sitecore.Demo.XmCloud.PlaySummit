@@ -143,6 +143,7 @@ const SearchResults = ({
           keyphrase={q}
           onKeyphraseChange={handleKeyphraseChange}
           onKeyphraseClear={handleKeyphraseClear}
+          suggestions={suggestions}
         >
           {!items.length ? (
             <p className="search-results-widget-no-results">No results found</p>
