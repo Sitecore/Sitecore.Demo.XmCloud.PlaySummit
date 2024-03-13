@@ -71,6 +71,7 @@
 @import './components/ContentSearch/SearchPagination.css';
 @import './components/ContentSearch/SearchResultsListing.css';
 @import './components/ContentSearch/SearchResultsWidget.css';
+@import './components/ContentSearch/SuggestionList.css';
 
 /* Forms */
 @import './components/Forms/AttendeeForm.css';
