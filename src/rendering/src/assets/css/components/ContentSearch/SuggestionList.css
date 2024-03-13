@@ -1,0 +1,18 @@
+.search-results-header-container {
+  .suggestion-list {
+    @apply flex flex-col gap-3 p-8 bg-pink-darkest max-w-xl mx-auto;
+
+    .suggestion-list-title {
+      @apply font-bold whitespace-nowrap text-white;
+    }
+
+    .suggestion-container {
+      @apply flex flex-col gap-3 w-fit;
+
+      .suggestion-item {
+        @apply text-blue bg-white rounded-lg p-2;
+        @apply first-letter:capitalize;
+      }
+    }
+  }
+}
