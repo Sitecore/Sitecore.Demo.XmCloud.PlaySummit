@@ -104,3 +104,7 @@
     left: 125%;
   }
 }
+
+.ck.ck-editor__editable_inline {
+  overflow: inherit !important;
+}
