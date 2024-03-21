@@ -1,4 +1,4 @@
-import { engage } from 'src/components/Symposium/CdpPageView';
+import { engage } from 'components/Symposium/PageViewCdp';
 
 const POS = process.env.NEXT_PUBLIC_CDP_POINTOFSALE || '';
 const channel = 'WEB';

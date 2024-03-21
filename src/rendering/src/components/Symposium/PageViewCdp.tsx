@@ -15,7 +15,7 @@ import {
    * See Sitecore Engage SDK documentation for details.
    * https://www.npmjs.com/package/@sitecore/engage
    */
-  const CdpPageView = (): JSX.Element => {
+  const PageViewCdp = (): JSX.Element => {
     const {
       sitecoreContext: { pageState, route, variantId },
     } = useSitecoreContext();
@@ -84,7 +84,7 @@ import {
     return <></>;
   };
   
-  export default CdpPageView;
+  export default PageViewCdp;
   
   export { engage };
   

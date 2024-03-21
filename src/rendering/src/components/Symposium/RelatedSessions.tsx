@@ -5,7 +5,7 @@ import {
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { sessionDataResponse, getVariant } from 'src/utility/CDPPersonalizeService';
-import { engage } from 'src/components/Symposium/CdpPageView';
+import { engage } from './PageViewCdp';
 
 interface MyComponentProps {
     rendering: ComponentRendering & { params: ComponentParams };
