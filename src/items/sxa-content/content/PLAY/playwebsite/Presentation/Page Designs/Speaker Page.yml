@@ -7,6 +7,13 @@ SharedFields:
 - ID: "0966b999-0d0e-4278-acc9-9da69d461fe6"
   Hint: PartialDesigns
   Value: "{E56290B7-DAEB-4355-8C07-974CEB0D7941}|{4CB3B9C7-53CB-4CF5-A7C7-E193C2857B4A}|{816F91B6-BDD2-4BCC-81FD-D6092F8EB3E7}|{462EFF9E-C56A-414A-9DE3-F0E913233070}"
+- ID: "4a749557-242b-4372-8a20-b2db9d406301"
+  Hint: __AutoThumbnails
+  Value: 
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{EBE75470-F8BF-439E-835F-EB2EC1B46F9F}" />
 Languages:
 - Language: en
   Versions:
@@ -14,4 +21,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a3fcc938-384d-4d8e-9697-7fe0e78a83a5"
+      Value: "2e1a1941-4756-46cb-bba2-ce3dc8785423"

@@ -4,13 +4,16 @@ Parent: "df1e7793-5333-49f5-b626-f113d2ea42e0"
 Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
 Path: /sitecore/content/PLAY/playwebsite/Presentation/Partial Designs/Common Content/Exclusive Offer
 SharedFields:
+- ID: "4a749557-242b-4372-8a20-b2db9d406301"
+  Hint: __AutoThumbnails
+  Value: 
 - ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
   Hint: Signature
   Value: "exclusive-offer"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{2800B44C-19B2-4A1F-83AD-88675F4066A3}" />
+    <image mediaid="{C6DAD05F-095B-4A5D-9548-7D6BC65F2643}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -37,7 +40,7 @@ Languages:
       Value: <r />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1a695bf1-4377-4dca-bc2a-422fe5625c02"
+      Value: "cd1a3038-a269-4523-8d3a-c1a1a1c74559"
 - Language: "fr-CA"
   Versions:
   - Version: 1

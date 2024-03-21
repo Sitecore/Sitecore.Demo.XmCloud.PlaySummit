@@ -4,13 +4,16 @@ Parent: "df1e7793-5333-49f5-b626-f113d2ea42e0"
 Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
 Path: /sitecore/content/PLAY/playwebsite/Presentation/Partial Designs/Common Content/News and Media
 SharedFields:
+- ID: "4a749557-242b-4372-8a20-b2db9d406301"
+  Hint: __AutoThumbnails
+  Value: 
 - ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
   Hint: Signature
   Value: "pre-footer"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{7E5ECC44-55A6-4835-8772-BDDAAE8CFEA4}" />
+    <image mediaid="{47016849-B41C-44FE-9FD2-0B6BFC3A60CD}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -46,7 +49,7 @@ Languages:
       Value: <r />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "acb3b01e-ecd2-464d-ba83-d04fef64454e"
+      Value: "e1cf37c0-8191-4675-bc40-38bd1209fa99"
 - Language: "fr-CA"
   Versions:
   - Version: 1
