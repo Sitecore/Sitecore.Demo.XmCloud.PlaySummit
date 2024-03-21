@@ -73,7 +73,7 @@ const SpeakerInformationPageHero = (props: SpeakerInformationPageHeroProps): JSX
   return (
     <>
       <Head>
-        <meta property="og:title" content={props.fields?.Name.value} />
+        <meta property="og:title" content={props.fields?.Name?.value} />
         <meta property="og:image" content={props.fields?.Picture?.value.src} />
         <meta property="og:type" content="speaker" />
       </Head>
