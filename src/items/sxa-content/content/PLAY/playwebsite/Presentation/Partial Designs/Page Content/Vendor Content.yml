@@ -4,13 +4,16 @@ Parent: "13f126f8-089c-4c94-a800-7a73c6659b16"
 Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
 Path: /sitecore/content/PLAY/playwebsite/Presentation/Partial Designs/Page Content/Vendor Content
 SharedFields:
+- ID: "4a749557-242b-4372-8a20-b2db9d406301"
+  Hint: __AutoThumbnails
+  Value: 
 - ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
   Hint: Signature
   Value: "vendor-content"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{42F9F57F-7139-423A-A11F-F0ACC0D75674}" />
+    <image mediaid="{459FD860-1878-4481-BBCF-0D126E52979F}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -50,4 +53,4 @@ Languages:
       Value: <r />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f2481a86-de1b-4569-923f-016ba9a4abe1"
+      Value: "f1d3342c-b9f2-4c66-b500-385fa5e94c05"
