@@ -1,0 +1,17 @@
+﻿---
+ID: "f9081eda-5247-4b40-9d72-fa96e3252709"
+Parent: "20cc16ef-0414-4a53-800c-537c9bcb6453"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: /sitecore/layout/Renderings/Project/Symposium/RelatedSessions
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: RelatedSessions
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2eaea4be-e002-4561-9b8b-b05397a0eb74"

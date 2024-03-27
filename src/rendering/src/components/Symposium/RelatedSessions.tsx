@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 import {
   ComponentParams,
   ComponentRendering,
@@ -12,22 +13,22 @@ interface MyComponentProps {
     params: ComponentParams;
   }
 
-export const RelatedSessions = (props: MyComponentProps): JSX.Element => {
+  const RelatedSessions = (props: MyComponentProps): JSX.Element => {
     const {
         sitecoreContext: { pageState },
     } = useSitecoreContext();
 
-    const id = props.params.RenderingIdentifier;
+    console.log(props);
 
     const [sessions, setSessions] = useState<sessionDataResponse>();
-    const [engageLoaded, setengageLoaded] = useState<boolean>(false);
+    const [engageLoaded, setEngageLoaded] = useState<boolean>(false);
     const [responseReady, setResponseReady] = useState(false);
     const friendlyId = 'jzisymposium';
 
     useEffect(() => {
         const engageLoadededInterval = setInterval(() => {
-          if (engage && pageState === 'normal') {
-            setengageLoaded(true);
+          if (engage && pageState === 'preview') {
+            setEngageLoaded(true);
             clearInterval(engageLoadededInterval);
           }
         }, 100);
@@ -40,32 +41,38 @@ export const RelatedSessions = (props: MyComponentProps): JSX.Element => {
         async function fetchData() {
           try {
             const response = await getVariant(friendlyId);
-
             setSessions(response);
             setResponseReady(true);
-          } catch (error) {}
+          } catch (error) {
+          }
         }
     
-        if (engageLoaded && pageState === 'normal') {
+        if (engageLoaded && pageState === 'preview') {
           fetchData();
         }
       }, [engageLoaded, friendlyId, pageState]);
-    
+
       if (
-        (pageState === 'normal' && responseReady) ||
-        pageState === 'edit' ||
-        pageState === 'preview'
+        (pageState === 'preview' && responseReady)
       ) {
         return (
-          <div>
-              <h1>{sessions.sessions.data.sessions.results[0].pageTitle.value}</h1>
+          <div className="w-full columns-3 text-center">
+             {sessions.sessions.data.sessions.results.map((item, index) => (
+                <div className="session" key={index}>
+                  <Link href={item.url.path}>
+                    <h2>{item.pageTitle.value}</h2>
+                    <img src={item.image.jsonValue.value.src} alt={item.image.jsonValue.value.alt} />
+                    <p dangerouslySetInnerHTML={{ __html: item.description.value }} className="truncate"></p>
+                  </Link>
+                </div>
+              ))}
           </div>
         );
       } else {
         return (
           <div
-            className={`component contract-data ${props.params.styles.trimEnd()}`}
-            id={id ? id : undefined}
+            //className={`component contract-data ${props.params.styles.trimEnd()}`}
+            //id={id ? id : undefined}
           >Not loaded?</div>
         );
       }

@@ -1,6 +1,5 @@
 import {
     CdpHelper,
-    LayoutServicePageState,
     useSitecoreContext,
   } from '@sitecore-jss/sitecore-jss-nextjs';
   import { useEffect } from 'react';
@@ -31,8 +30,8 @@ import {
       const startTime = Date.now();
   
       engage = await init({
-        clientKey: process.env.NEXT_PUBLIC_CDP_CLIENT_KEY || '',
-        targetURL: process.env.NEXT_PUBLIC_CDP_TARGET_URL || '',
+        clientKey: '9f46c27c71691685ad1d5419b225529b',
+        targetURL: 'https://api-engage-us.sitecorecloud.io',
         // Replace with the top level cookie domain of the website that is being integrated e.g ".example.com" and not "www.example.com"
         //cookieDomain: window.location.host.replace(/^www\./, ''),
         // Cookie may be created in personalize middleware (server), but if not we should create it here
@@ -67,9 +66,9 @@ import {
   
     useEffect(() => {
       // Do not create events in editing or preview mode or if missing route data
-      if (pageState !== LayoutServicePageState.Normal || !route?.itemId) {
-        return;
-      }
+      // if (pageState !== LayoutServicePageState.Normal || !route?.itemId) {
+      //   return;
+      // }
       // Do not create events if disabled (e.g. we don't have consent)
       //if (disabled()) {
       //  return;
