@@ -21,6 +21,11 @@ import './generate-config';
 import './generate-component-builder';
 
 /*
+  META DATA GENERATION
+*/
+import './generate-metadata';
+
+/*
   DEMO TEAM CUSTOMIZATION
   Generates the /src/temp/categoriesData.ts file in order to be used
   by the CategoryBreadcrumb component
