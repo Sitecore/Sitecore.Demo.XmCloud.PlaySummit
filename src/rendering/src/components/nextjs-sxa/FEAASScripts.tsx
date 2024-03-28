@@ -18,7 +18,8 @@ const FEAASScripts = (): JSX.Element => {
       return (
         domains.some((domain) => url.hostname === domain) ||
         remotePatterns.some(
-          (pattern) =>
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          (pattern: any) =>
             pattern.protocol === url.protocol.slice(0, -1) &&
             new RegExp('^' + convertToRegex(pattern.hostname) + '$').test(url.hostname)
         )
