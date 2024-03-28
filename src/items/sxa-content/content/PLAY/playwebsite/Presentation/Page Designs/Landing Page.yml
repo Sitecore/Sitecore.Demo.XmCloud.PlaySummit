@@ -6,7 +6,7 @@ Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Designs/Landing Page
 SharedFields:
 - ID: "0966b999-0d0e-4278-acc9-9da69d461fe6"
   Hint: PartialDesigns
-  Value: "e56290b7-daeb-4355-8c07-974ceb0d7941|462eff9e-c56a-414a-9de3-f0e913233070|1267bbd4-5e94-4fe4-a966-e37975d41302"
+  Value: "{E56290B7-DAEB-4355-8C07-974CEB0D7941}|{462EFF9E-C56A-414A-9DE3-F0E913233070}"
 - ID: "4a749557-242b-4372-8a20-b2db9d406301"
   Hint: __AutoThumbnails
   Value: 
