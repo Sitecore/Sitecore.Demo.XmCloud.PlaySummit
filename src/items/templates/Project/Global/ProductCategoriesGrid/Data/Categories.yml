@@ -6,7 +6,7 @@ Path: /sitecore/templates/Project/Global/ProductCategoriesGrid/Data/Categories
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
   Hint: Source
-  Value: /sitecore/content/PLAY/playwebsite/Data/Product Categories
+  Value: "query:self::"
 - ID: "39847666-389d-409b-95bd-f2016f11eed5"
   Hint: Unversioned
   Value: 
@@ -26,4 +26,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "42cfa791-6131-4a6f-9a67-77c241da9485"
+      Value: "2adaa82c-e578-4153-adca-d949423d8888"
