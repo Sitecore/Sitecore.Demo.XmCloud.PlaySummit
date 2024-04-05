@@ -146,7 +146,7 @@ services:
         PARENT_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xmcloud-cm:${SITECORE_VERSION}
         # DEMO TEAM CUSTOMIZATION - demo subfolder, custom tag
         SOLUTION_IMAGE: ${REGISTRY}demo/${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}-${DEMO_VERSION}
-        TOOLS_IMAGE: ${TOOLS_IMAGE}
+        TOOLS_IMAGE: ${TOOLS_IMAGE}:${SITECORE_VERSION}
     depends_on:
       - solution
     volumes:
@@ -183,4 +183,4 @@ services:
       Sitecore_ConnectionStrings_DAM_dot_SearchPage: ${SITECORE_DAM_SearchPage}
       Sitecore_ConnectionStrings_DAM_dot_ExternalRedirectKey: ${SITECORE_DAM_ExternalRedirectKey}
       # END CUSTOMIZATION
-    entrypoint: powershell -Command "& C:/tools/entrypoints/iis/Development.ps1"
+    entrypoint: powershell -Command "& C:/tools/entrypoints/iis/XmCloudDevelopment.ps1"
