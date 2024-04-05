@@ -2,12 +2,10 @@
     "renderingHosts": {
         "playwebsite": {
             "path": "./src/rendering",
-            "nodeVersion": "16.15.1",
+            "nodeVersion": "20.10.0",
             "jssDeploymentSecret":"511cdfab92b7440db866ac0fb817b490",
             "enabled": true,
             "type": "sxa",
-            "lintCommand": "lint",
-            "startCommand": "start:production",
             "buildCommand": "build",
             "runCommand": "next:start"
         }
