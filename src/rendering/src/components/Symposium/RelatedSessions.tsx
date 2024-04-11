@@ -65,7 +65,7 @@ const RelatedSessions = (props: MyComponentProps): JSX.Element => {
               <Link href={item.url.path}>
                 <h2>{item.pageTitle.value}</h2>
                 <img src={item.image.jsonValue.value.src} alt={item.image.jsonValue.value.alt} />
-                <div dangerouslySetInnerHTML={{ __html: item.description.value }} className='truncate'></div>
+                <div dangerouslySetInnerHTML={{ __html: item.description.value }} className="truncate"></div>
               </Link>
             </div>
           ))}
