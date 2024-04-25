@@ -25,9 +25,9 @@
         "actions":{
           "scsModules": {
             "modules": [
+              "InitItems",
               "HeadlessSxaWebsite",
               "HeadlessSxaWebsite-Content",
-              "InitItems",
               "Roles"
             ]
           },
