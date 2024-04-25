@@ -16,6 +16,11 @@
             "targetPath": "/"
         }
     ],
+    "deployItems": {
+      "modules": [
+        "renderinghost.module.json"
+      ]
+    },
     "postActions": {
         "actions":{
           "warmUpCm": {
@@ -25,6 +30,14 @@
               "/sitecore/client/Applications/Launchpad",
               "/Utilities/InitializeComponentsLibraryId.aspx",
               "/Utilities/InitializePointOfSale.aspx"
+            ]
+          },
+          "scsModules": {
+            "modules": [
+              "HeadlessSxaWebsite.module.json",
+              "HeadlessSxaWebsite-Content.module.json",
+              "InitItems.module.json",
+              "Roles.module.json"
             ]
           },
           "populateSchema": {
