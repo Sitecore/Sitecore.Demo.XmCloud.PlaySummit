@@ -18,7 +18,7 @@
     ],
     "deployItems": {
       "modules": [
-        "renderinghost.module.json"
+        "renderinghost"
       ]
     },
     "postActions": {
@@ -34,10 +34,10 @@
           },
           "scsModules": {
             "modules": [
-              "HeadlessSxaWebsite.module.json",
-              "HeadlessSxaWebsite-Content.module.json",
-              "InitItems.module.json",
-              "Roles.module.json"
+              "HeadlessSxaWebsite",
+              "HeadlessSxaWebsite-Content",
+              "InitItems",
+              "Roles"
             ]
           },
           "populateSchema": {
