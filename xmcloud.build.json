@@ -41,16 +41,10 @@
             ]
           },
           "populateSchema": {
-            "indexNames": [
-              "sitecore_core_index",
-              "sitecore_master_index"
-            ]
+            "indexNames": []
           },
           "reindex": {
-            "indexNames": [
-              "sitecore_core_index",
-              "sitecore_master_index"
-            ]
+            "indexNames": []
           },
           "publish": {
             "path": "/sitecore",
@@ -60,7 +54,7 @@
             ],
             "itemIds": [],
             "targets": ["Edge"],
-            "republish": false
+            "republish": true
           }
         }
     }
