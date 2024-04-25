@@ -23,6 +23,14 @@
     },
     "postActions": {
         "actions":{
+          "scsModules": {
+            "modules": [
+              "HeadlessSxaWebsite",
+              "HeadlessSxaWebsite-Content",
+              "InitItems",
+              "Roles"
+            ]
+          },
           "warmUpCm": {
             "urls": [
               "/sitecore/shell",
@@ -30,14 +38,6 @@
               "/sitecore/client/Applications/Launchpad",
               "/Utilities/InitializeComponentsLibraryId.aspx",
               "/Utilities/InitializePointOfSale.aspx"
-            ]
-          },
-          "scsModules": {
-            "modules": [
-              "HeadlessSxaWebsite",
-              "HeadlessSxaWebsite-Content",
-              "InitItems",
-              "Roles"
             ]
           },
           "populateSchema": {
