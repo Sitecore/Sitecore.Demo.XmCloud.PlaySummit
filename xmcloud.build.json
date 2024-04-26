@@ -52,7 +52,7 @@
             ],
             "itemIds": [],
             "targets": ["Edge"],
-            "republish": true
+            "republish": false
           }
         }
     }
