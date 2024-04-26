@@ -27,8 +27,7 @@
             "modules": [
               "InitItems",
               "HeadlessSxaWebsite",
-              "HeadlessSxaWebsite-Content",
-              "Roles"
+              "HeadlessSxaWebsite-Content"
             ]
           },
           "warmUpCm": {
