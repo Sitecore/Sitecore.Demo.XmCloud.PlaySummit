@@ -74,4 +74,4 @@ const SpeakerList = (props: SpeakerListProps): JSX.Element => {
   return <>{speakers}</>;
 };
 
-export default SpeakerList;
+export const Default = SpeakerList;
