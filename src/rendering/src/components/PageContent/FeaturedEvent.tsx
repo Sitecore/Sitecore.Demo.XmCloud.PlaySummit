@@ -1,6 +1,12 @@
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Field, Image, ImageField, Text } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  Field,
+  Image,
+  ImageField,
+  Text,
+  withDatasourceCheck,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { useI18n } from 'next-localization';
 import Link from 'next/link';
@@ -52,4 +58,4 @@ const FeaturedEvent = (props: FeaturedEventProps): JSX.Element => {
   );
 };
 
-export const Default = FeaturedEvent;
+export const Default = withDatasourceCheck()<FeaturedEventProps>(FeaturedEvent);
