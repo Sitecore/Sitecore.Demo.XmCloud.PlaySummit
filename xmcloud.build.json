@@ -18,16 +18,17 @@
     ],
     "deployItems": {
       "modules": [
-        "renderinghost"
+        "renderinghost",
+        "InitItems",
+        "HeadlessSxaWebsite",
+        "HeadlessSxaWebsite-Content"
       ]
     },
     "postActions": {
         "actions":{
           "scsModules": {
             "modules": [
-              "InitItems",
-              "HeadlessSxaWebsite",
-              "HeadlessSxaWebsite-Content"
+              "HeadlessSxaWebsite-Media"
             ]
           },
           "warmUpCm": {
