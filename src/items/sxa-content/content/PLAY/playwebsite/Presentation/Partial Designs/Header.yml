@@ -4,12 +4,19 @@ Parent: "acee8ee1-8f3a-4901-982e-40d501989f64"
 Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
 Path: /sitecore/content/PLAY/playwebsite/Presentation/Partial Designs/Header
 SharedFields:
+- ID: "4a749557-242b-4372-8a20-b2db9d406301"
+  Hint: __AutoThumbnails
+  Value: 
 - ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
   Hint: Signature
   Value: header
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 300
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{DC4E0557-0E7A-4164-A587-51BF0C31776F}" />
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -41,4 +48,4 @@ Languages:
       Value: <r />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f484f7e0-86ab-4e11-8efc-8691a4cfb50c"
+      Value: "ca81e335-7dcb-4bfb-8b21-6ecef9d909e3"

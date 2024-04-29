@@ -8,12 +8,13 @@
     "Sitecore.DevEx.Extensibility.Publishing@5.1.25",
     "Sitecore.DevEx.Extensibility.Indexing@5.1.25",
     "Sitecore.DevEx.Extensibility.ResourcePackage@5.1.25",
-    "Sitecore.DevEx.Extensibility.XMCloud@1.1.30"
+    "Sitecore.DevEx.Extensibility.XMCloud@1.1.73"
   ],
   "serialization": {
     "defaultMaxRelativeItemPathLength": 100,
     "defaultModuleRelativeSerializationPath": "items",
     "removeOrphansForRoles": true,
+    "removeOrphansForUsers": true,
     "continueOnItemFailure": false,
     "excludedFields": [
       {
@@ -40,6 +41,8 @@
   },
   "settings": {
     "telemetryEnabled": false,
-    "versionComparingEnabled": true
+    "cacheAuthenticationToken": true,
+    "versionComparisonEnabled": true,
+    "apiClientTimeoutInMinutes": 5
   }
 }

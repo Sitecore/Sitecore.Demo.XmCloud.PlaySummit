@@ -1,4 +1,5 @@
-.component.rich-text {
+.component.rich-text,
+.component.content {
   > .component-content > div > {
     h1,
     h2,
@@ -70,5 +71,55 @@
 
   a:not([class^='btn']) {
     @apply text-blue;
+  }
+
+  img {
+    @apply !h-auto;
+  }
+
+  .rte-align-center {
+    @apply text-center;
+  }
+
+  .rte-align-right {
+    @apply text-right;
+  }
+
+  .rte-align-justify {
+    @apply text-justify;
+  }
+
+  .rte-indent {
+    &-1 {
+      @apply pl-4;
+    }
+
+    &-2 {
+      @apply pl-8;
+    }
+
+    &-3 {
+      @apply pl-12;
+    }
+
+    &-4 {
+      @apply pl-16;
+    }
+
+    &-5 {
+      @apply pl-20;
+    }
+
+    &-6 {
+      @apply pl-24;
+    }
+
+    &-7 {
+      @apply pl-28;
+    }
+
+    &-8 {
+      @apply pl-32;
+    }
   }
 }

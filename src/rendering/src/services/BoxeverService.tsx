@@ -652,6 +652,52 @@ export function getGuestEmail(guestRef?: GuestRef): Promise<string | undefined> 
     });
 }
 
+export function getAllGuests(): Promise<unknown> {
+  const defaultValue = [] as unknown[];
+
+  if (!isBoxeverConfiguredInBrowser()) {
+    return new Promise(function (resolve) {
+      resolve(defaultValue);
+    });
+  }
+  return boxeverGet('/getguests').then((res) => res.data);
+}
+
+export function getExtendedGuest(guestRef?: string): Promise<unknown> {
+  const defaultValue = [] as unknown[];
+
+  if (!isBoxeverConfiguredInBrowser()) {
+    return new Promise(function (resolve) {
+      resolve(defaultValue);
+    });
+  }
+
+  if (!guestRef) {
+    return getGuestRef().then((res) => getExtendedGuest(res.guestRef));
+  } else {
+    return boxeverGet(`/getguestextendeddata?guestRef=${guestRef}`).then((res) => res.data);
+  }
+}
+
+export function setGuestDataExtension(
+  guestRef: string,
+  dataExtensionName: string,
+  payload?: Record<string, unknown>
+): Promise<unknown> {
+  const defaultValue = [] as unknown[];
+
+  if (!isBoxeverConfiguredInBrowser()) {
+    return new Promise(function (resolve) {
+      resolve(defaultValue);
+    });
+  }
+
+  return boxeverPost(
+    `/createguestdataextension?guestRef=${guestRef}&dataExtensionName=${dataExtensionName}`,
+    payload
+  );
+}
+
 // ********************************
 // Get Dynamic welcome message
 // ********************************

@@ -24,8 +24,20 @@
         @apply text-xl py-2 font-semibold;
       }
 
-      .ticket-price {
+      .ticket-price-block {
+        @apply relative;
+      }
+
+      .ticket-sale-price {
         @apply text-6xl font-semibold;
+
+        + .ticket-price {
+          @apply absolute -top-2 text-3xl text-black-light line-through;
+        }
+      }
+
+      .ticket-price {
+        @apply text-6xl font-semibold transition-all;
       }
 
       ul {
@@ -64,6 +76,7 @@
       }
 
       .ticket-name,
+      .ticket-sale-price,
       .ticket-price,
       ul li svg {
         @apply text-pink;
@@ -76,6 +89,7 @@
       }
 
       .ticket-name,
+      .ticket-sale-price,
       .ticket-price,
       ul li svg {
         @apply text-orange;
@@ -88,6 +102,7 @@
       }
 
       .ticket-name,
+      .ticket-sale-price,
       .ticket-price,
       ul li svg {
         @apply text-blue;

@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { ComponentProps } from 'lib/component-props';
 import { identifyVisitor } from '../../services/IdentificationService';
 import { getUserData } from '../../helpers/GuestDataHelper';
+import { logAttendeeFormCompleted } from 'src/services/CdpService';
+import { logAttendeeFormCompleted as logAttendeeFormCompletedCloudSDK } from 'src/services/CloudSDKService';
 
 const AttendeeForm = (props: ComponentProps): JSX.Element => {
   const ticketId =
@@ -35,9 +37,17 @@ const AttendeeForm = (props: ComponentProps): JSX.Element => {
       return;
     }
 
-    return await identifyVisitor(email, firstName, lastName).then(() => {
-      Router.push(`/tickets/payment?ticket=${ticketId}`);
-    });
+    await identifyVisitor(email, firstName, lastName);
+    await logAttendeeFormCompleted();
+
+    // Log the 'ATTENDEE_FORM_COMPLETED' custom event to CDP using the Cloud SDK
+    try {
+      await logAttendeeFormCompletedCloudSDK();
+    } catch (e) {
+      console.error(e);
+    }
+
+    Router.push(`/tickets/payment?ticket=${ticketId}`);
   };
 
   return (

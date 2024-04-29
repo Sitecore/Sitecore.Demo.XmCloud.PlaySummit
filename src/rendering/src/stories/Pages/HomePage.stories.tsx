@@ -15,6 +15,10 @@ import {
 import { Default as Footer } from '../../components/Navigation/Footer';
 import { Sponsor } from 'src/types/sponsor';
 import { mockFooterProps, mockHeaderProps } from './PageStoriesCommon';
+import PersonalizedPicksWrapper, {
+  PersonalizedPicksWrapperProps,
+} from 'components/ContentSearch/PersonalizedPicksWrapper';
+import { Default as Section } from '../../components/PageContent/Section';
 
 export default {
   title: 'Pages/Home Page',
@@ -182,6 +186,30 @@ const threeColProps = {
   },
 } as ThreeColumnsSectionProps;
 
+const personalizedPicksProps = { params: { styles: 'test' } } as PersonalizedPicksWrapperProps;
+
+const sectionProps = {
+  params: {
+    styles: 'section-light',
+  },
+  fields: {
+    title: {
+      value: 'Personalized Picks',
+    },
+    content: {
+      value:
+        'A handpicked selection of content recommendations based on your preferences and browsing history.',
+    },
+    callToActionLink: {
+      value: {},
+    },
+  },
+  rendering: {
+    componentName: 'Section',
+    dataSource: '/AnythingForTheWithDatasourceCheckHocToDisplayTheComponent',
+  },
+};
+
 const Template: StoryFn<typeof HeroSection> = () => {
   return (
     <>
@@ -193,6 +221,9 @@ const Template: StoryFn<typeof HeroSection> = () => {
         <HeroSection {...heroProps} />
         <ThreeColumnsSection {...threeColProps} />
         <SelectedSponsorsGrid {...sponsorProps} />
+        <Section {...sectionProps}>
+          <PersonalizedPicksWrapper {...personalizedPicksProps} />
+        </Section>
       </main>
       <footer>
         <Footer {...mockFooterProps} />

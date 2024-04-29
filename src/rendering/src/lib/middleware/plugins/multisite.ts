@@ -29,7 +29,8 @@ class MultisitePlugin implements MiddlewarePlugin {
           pathname.startsWith('/search') ||
           pathname.startsWith('/shop') ||
           pathname.startsWith('/account') ||
-          pathname.startsWith('/channels')
+          pathname.startsWith('/channels') ||
+          pathname.startsWith('/careconnect')
         ) {
           return true;
         }
