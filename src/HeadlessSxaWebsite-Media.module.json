@@ -13,7 +13,7 @@
             {
                 "name": "system-media",
                 "path": "/sitecore/media library/System",
-                "scope": "descendantsOnly",,
+                "scope": "descendantsOnly",
                 "allowedPushOperations": "CreateOnly",
                 "rules": [
                     {
