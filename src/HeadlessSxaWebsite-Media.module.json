@@ -1,6 +1,6 @@
 {
     "$schema": "../.sitecore/schemas/ModuleFile.schema.json",
-    "namespace": "HeadlessSxaWebsite-Content",
+    "namespace": "HeadlessSxaWebsite-Media",
     "references": [ "HeadlessSxaWebsite" ],
     "items": {
         "includes": [
