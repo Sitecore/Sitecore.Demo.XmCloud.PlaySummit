@@ -1,5 +1,5 @@
 import { EPResponse } from '@sitecore-cloudsdk/core';
-import { IdentityEventAttributesInput } from '@sitecore-cloudsdk/events/browser';
+import { IdentityData } from '@sitecore-cloudsdk/events/browser';
 import Cookies from 'js-cookie';
 
 import { context } from 'lib/context';
@@ -19,7 +19,7 @@ export const identifyVisitor = async (
   lastName = '',
   phone = ''
 ): Promise<EPResponse> => {
-  const eventData: IdentityEventAttributesInput = {
+  const eventData: IdentityData = {
     email,
     channel,
     currency,
@@ -42,14 +42,14 @@ export const identifyVisitor = async (
 
 export const logAudiencePreferenceEvent = async (audience: string): Promise<EPResponse> => {
   const Events = await context.getSDK('Events');
-  return Events?.event(
-    CDP_CUSTOM_EVENTS.audiencePreference.type,
-    {
+  return Events?.event({
+    type: CDP_CUSTOM_EVENTS.audiencePreference.type,
+    extensionData: {
       channel,
       currency,
+      audience,
     },
-    { audience }
-  );
+  });
 };
 
 export const logTicketPurchase = async (ticketId: number): Promise<EPResponse> => {
@@ -58,41 +58,55 @@ export const logTicketPurchase = async (ticketId: number): Promise<EPResponse> =
   const Events = await context.getSDK('Events');
 
   // Log PAYMENT_FORM_COMPLETED custom event
-  await Events?.event(CDP_CUSTOM_EVENTS.paymentFormCompleted.type, {
-    channel,
-    currency,
-  });
-
-  // Log PAYMENT_SUCCESSFUL custom event
-  await Events?.event(CDP_CUSTOM_EVENTS.paymentSuccessful.type, {
-    channel,
-    currency,
-  });
-
-  // Log TICKET_PURCHASED custom event
-  return Events?.event(
-    CDP_CUSTOM_EVENTS.ticketPurchased.type,
-    {
+  await Events?.event({
+    type: CDP_CUSTOM_EVENTS.paymentFormCompleted.type,
+    extensionData: {
       channel,
       currency,
     },
-    { ticketId, ticketName: purchasedTicketItem.name, pricePaid: purchasedTicketItem.price }
-  );
+  });
+
+  // Log PAYMENT_SUCCESSFUL custom event
+  await Events?.event({
+    type: CDP_CUSTOM_EVENTS.paymentSuccessful.type,
+    extensionData: {
+      channel,
+      currency,
+    },
+  });
+
+  // Log TICKET_PURCHASED custom event
+  return Events?.event({
+    type: CDP_CUSTOM_EVENTS.ticketPurchased.type,
+    extensionData: {
+      channel,
+      currency,
+      ticketId,
+      ticketName: purchasedTicketItem.name,
+      pricePaid: purchasedTicketItem.price,
+    },
+  });
 };
 
 export const logAttendeeFormCompleted = async (): Promise<EPResponse> => {
   const Events = await context.getSDK('Events');
-  return Events?.event(CDP_CUSTOM_EVENTS.attendeeFormCompleted.type, {
-    channel,
-    currency,
+  return Events?.event({
+    type: CDP_CUSTOM_EVENTS.attendeeFormCompleted.type,
+    extensionData: {
+      channel,
+      currency,
+    },
   });
 };
 
 export const logTicketSelected = async (): Promise<EPResponse> => {
   const Events = await context.getSDK('Events');
-  return Events?.event(CDP_CUSTOM_EVENTS.ticketSelected.type, {
-    channel,
-    currency,
+  return Events?.event({
+    type: CDP_CUSTOM_EVENTS.ticketSelected.type,
+    extensionData: {
+      channel,
+      currency,
+    },
   });
 };
 
@@ -132,12 +146,12 @@ export const logSearchProfileData = async (payload: {
   };
 
   const Events = await context.getSDK('Events');
-  return Events?.event(
-    CDP_CUSTOM_EVENTS.searchProfileData.type,
-    {
+  return Events?.event({
+    type: CDP_CUSTOM_EVENTS.searchProfileData.type,
+    extensionData: {
       channel,
       currency,
+      ...extensionData,
     },
-    { ...extensionData }
-  );
+  });
 };

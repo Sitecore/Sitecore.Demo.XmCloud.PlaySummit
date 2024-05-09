@@ -11,7 +11,7 @@ import {
 } from '../../components/Sessions/SessionInformation';
 import { Speaker } from 'src/types/speaker';
 import { mockFooterProps, mockHeaderProps } from './PageStoriesCommon';
-import SpeakerList from '../../components/Speakers/SpeakerList';
+import { Default as SpeakerList } from '../../components/Speakers/SpeakerList';
 import SessionInformationPageHero from '../../components/Sessions/SessionInformationPageHero';
 
 export default {

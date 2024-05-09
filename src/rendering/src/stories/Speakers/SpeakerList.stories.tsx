@@ -1,6 +1,6 @@
 import { Meta } from '@storybook/react';
 
-import SpeakerList from '../../components/Speakers/SpeakerList';
+import { Default as SpeakerList } from '../../components/Speakers/SpeakerList';
 import { Speaker } from 'src/types/speaker';
 
 export default {

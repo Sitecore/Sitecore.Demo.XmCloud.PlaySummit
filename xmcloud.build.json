@@ -16,28 +16,33 @@
             "targetPath": "/"
         }
     ],
+    "deployItems": {
+      "modules": [
+        "renderinghost",
+        "InitItems",
+        "HeadlessSxaWebsite",
+        "HeadlessSxaWebsite-Content"
+      ]
+    },
     "postActions": {
         "actions":{
+          "scsModules": {
+            "modules": [
+              "HeadlessSxaWebsite-Media"
+            ]
+          },
           "warmUpCm": {
             "urls": [
-              "/sitecore/shell",
-              "/sitecore/shell/Applications/Content%20Editor.aspx?sc_bw=1",
-              "/sitecore/client/Applications/Launchpad",
+              "/Utilities/Restart.aspx",
               "/Utilities/InitializeComponentsLibraryId.aspx",
               "/Utilities/InitializePointOfSale.aspx"
             ]
           },
           "populateSchema": {
-            "indexNames": [
-              "sitecore_core_index",
-              "sitecore_master_index"
-            ]
+            "indexNames": []
           },
           "reindex": {
-            "indexNames": [
-              "sitecore_core_index",
-              "sitecore_master_index"
-            ]
+            "indexNames": []
           },
           "publish": {
             "path": "/sitecore",
