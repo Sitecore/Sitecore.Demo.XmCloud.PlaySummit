@@ -43,16 +43,6 @@
           },
           "reindex": {
             "indexNames": []
-          },
-          "publish": {
-            "path": "/sitecore",
-            "languages": [
-              "en",
-              "fr-CA"
-            ],
-            "itemIds": [],
-            "targets": ["Edge"],
-            "republish": false
           }
         }
     }
