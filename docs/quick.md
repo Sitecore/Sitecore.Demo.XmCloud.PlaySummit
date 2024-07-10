@@ -11,7 +11,7 @@ The only prerequisite is Nodejs 18.x (20.x should work too).
 First, go to the `\src\rendering\.env` file and set the `SITECORE_EDGE_CONTEXT_ID` variable:
 
 ```bash
-SITECORE_EDGE_CONTEXT_ID=3B1p99jVz92LVcp7gpRc9N
+SITECORE_EDGE_CONTEXT_ID=5n2TNfi7hbOownczapLi2
 ```
 
 This setting might change in future, so make sure you have the latest one if you run into any issues starting the app.
