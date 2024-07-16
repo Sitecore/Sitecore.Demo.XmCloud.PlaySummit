@@ -37,9 +37,6 @@
               "/Utilities/InitializeComponentsLibraryId.aspx",
               "/Utilities/InitializePointOfSale.aspx"
             ]
-          },
-          "populateSchema": {
-            "indexNames": []
           }
         }
     }
