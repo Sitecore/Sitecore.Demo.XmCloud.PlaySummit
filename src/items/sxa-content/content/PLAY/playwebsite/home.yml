@@ -73,6 +73,22 @@ SharedFields:
             <ruleset
               s:pet="true">
               <rule
+                uid="{076C2160-8CFF-44DD-B06A-5274BFA113DE}"
+                s:name="445bdf88528b4f90a9553c836d119d04">
+                <conditions>
+                  <condition
+                    uid="4B906FE7408C4CC087906408C359DBCF"
+                    s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                    s:VariantName="445bdf88528b4f90a9553c836d119d04" />
+                </conditions>
+                <actions>
+                  <action
+                    uid="{1530D0C0-2C13-4783-BA4F-09FD01221109}"
+                    s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                    s:DataSource="7fca0f0a-4237-417f-ac85-d5a0e8a56a2f" />
+                </actions>
+              </rule>
+              <rule
                 uid="{C780A82F-B7C2-47D4-A1D2-0740BD9B9F4A}"
                 s:name="e00bc338be054fce846ca4454c96a52d">
                 <conditions>
@@ -159,7 +175,7 @@ Languages:
       Value: home
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "75e4ec24-9649-4bdb-a24e-76c19ad4e22a"
+      Value: "bc5f6b0f-437e-4e1b-b7ce-e2885e400318"
 - Language: "fr-CA"
   Versions:
   - Version: 1
