@@ -1,0 +1,88 @@
+{
+  "clientKey": "98fb257c57fd74ae8022f5e56ce81919",
+  "href": "https://api-us.boxever.com/v3/flowDefinitions/d245c717-4daf-47f9-bd8c-f1436556e5cb",
+  "ref": "d245c717-4daf-47f9-bd8c-f1436556e5cb",
+  "name": "embedded_{scope}_2d1d7aca95975ca685b29b04907e4298_en",
+  "modifiedByRef": "auth0|63ed31bdc5dac322725263de",
+  "modifiedAt": "2024-07-23T17:13:03.916Z",
+  "revision": 2,
+  "archived": false,
+  "friendlyId": "embedded_{scope}_2d1d7aca95975ca685b29b04907e4298_en",
+  "type": "INTERACTIVE_API_FLOW",
+  "subtype": "EXPERIENCE",
+  "channels": [
+    "WEB"
+  ],
+  "triggers": [],
+  "dashboardLinks": [],
+  "tags": [],
+  "businessProcess": "interactive_v1",
+  "traffic": {
+    "type": "audienceTraffic",
+    "weightingAlgorithm": "USER_DEFINED",
+    "modifiedAt": "2024-07-23T17:13:04.055Z",
+    "splits": [
+      {
+        "template": "{\"variantId\": \"445bdf88528b4f90a9553c836d119d04\"}",
+        "variantName": "Completed Questionnaire",
+        "audienceName": "Completed Questionnaire",
+        "conditionGroups": [
+          {
+            "conditions": [
+              {
+                "templateId": "completed_questionnaire",
+                "params": {}
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "variants": [],
+  "transpiledVariants": [
+    {
+      "ref": "e8053ea2-876f-45cb-9b7b-e5002d0c0ff0",
+      "name": "Completed Questionnaire",
+      "tasks": [
+        {
+          "implementation": "templateRenderTask",
+          "input": {
+            "inputType": "templateRenderTaskInput",
+            "type": "application/json",
+            "template": "{\"variantId\": \"445bdf88528b4f90a9553c836d119d04\"}"
+          }
+        },
+        {
+          "implementation": "conditionsTask",
+          "input": {
+            "inputType": "conditionsTaskInput",
+            "rules": [
+              {
+                "id": "scriptCondition",
+                "name": "Combined condition groups",
+                "description": "Combined templates within condition group for targeted experience",
+                "ruleData": {
+                  "expression": "(function() {\r\n  if (!guest.sessions || guest.sessions.length === 0) {\r\n    return false;\r\n  }\r\n  var session = guest.sessions[0];\r\n\r\n  if (session) {\r\n    if (session.status === 'OPEN') {\r\n      for (var j = 0; j < session.events.length; j++) {\r\n\r\n        if (session.events[j].type === 'AUDIENCE_PREFERENCE') {\r\n          var event = session.events[j].arbitraryData;\r\n          return true;\r\n        }\r\n      }\r\n    }\r\n  }\r\n\r\n  return false;\r\n})();"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "status": "PRODUCTION",
+  "schedule": {
+    "type": "simpleSchedule",
+    "startDate": "2024-07-23T17:05:22.235Z"
+  },
+  "revisions": {
+    "href": "https://api-us.boxever.com/v3/flowDefinitions/d245c717-4daf-47f9-bd8c-f1436556e5cb/revisions"
+  },
+  "sampleSizeConfig": {
+    "baseValue": 0.15,
+    "minimumDetectableDifference": 0.02,
+    "confidenceLevel": 0.95
+  }
+}
