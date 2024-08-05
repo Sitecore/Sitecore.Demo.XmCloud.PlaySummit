@@ -38,87 +38,118 @@ SharedFields:
           uid="{EB2C8403-F00A-4976-8C26-75224DD8EBD1}"
           p:before="*"
           s:id="{D356E8D0-3AF5-483B-AE0D-2693BA87FFD1}"
-          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1" />
         <r
           uid="{74A3507D-B718-58C6-8C54-5DFA30D2A4E8}"
           p:after="r[@uid='{EB2C8403-F00A-4976-8C26-75224DD8EBD1}']"
-          s:rname="HeroSection"
           s:ds="{F2A3B54C-4474-4F5C-8B4E-3E049975000E}"
           s:id="{C8BE3A17-798F-5054-B012-4772CB23AC88}"
           s:par=""
-          s:ph="/headless-main/sxa-main/container-1"
-          s:ccb="Clear on publish" />
+          s:ph="/headless-main/sxa-main/container-1" />
         <r
           uid="{9079BFE6-D63C-4BAC-AD53-5D0B06100CD1}"
           p:after="r[@uid='{74A3507D-B718-58C6-8C54-5DFA30D2A4E8}']"
-          s:rname="HeroSectionCta"
           s:ds="{B505E955-F7BB-4A56-A956-A41FB1AE202D}"
           s:id="{99F2FFE7-28C6-4B88-A52B-BD9B6B44C3C1}"
-          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles"
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles"
           s:ph="/headless-main/sxa-main/container-1/jss-hero-section-content-{74A3507D-B718-58C6-8C54-5DFA30D2A4E8}-0" />
         <r
           uid="{368C89F1-3640-58A1-BDE0-A1C0E8426D3E}"
           p:after="r[@uid='{9079BFE6-D63C-4BAC-AD53-5D0B06100CD1}']"
-          s:rname="ThreeColumnsSection"
           s:ds="{5F6ADEE8-F8E2-4A92-85E3-0C1D0A82FAF1}"
           s:id="{279A5772-ADFA-5260-88E6-AB97D5C4D90A}"
           s:par=""
-          s:ph="/headless-main/sxa-main/container-1"
-          s:ccb="Clear on publish" />
+          s:ph="/headless-main/sxa-main/container-1" />
         <r
           uid="{45FCA8EC-2A99-531D-B270-0389AB473563}"
           p:after="r[@uid='{368C89F1-3640-58A1-BDE0-A1C0E8426D3E}']"
-          s:rname="FullImageSection"
           s:ds="{11DC106C-D27B-4A4A-BA72-80DDEBBB23D2}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
+          s:pt="personalizationTest"
           s:par="FieldNames&amp;Styles=%7B3F519D06-67AE-4072-9ABA-ECBC5EE7DF04%7D&amp;RenderingIdentifier&amp;CSSStyles"
-          s:ph="/headless-main/sxa-main/container-1"
-          s:ccb="Clear on publish" />
+          s:ph="/headless-main/sxa-main/container-1">
+          <rls>
+            <ruleset
+              s:pet="true">
+              <rule
+                uid="{076C2160-8CFF-44DD-B06A-5274BFA113DE}"
+                s:name="445bdf88528b4f90a9553c836d119d04">
+                <conditions>
+                  <condition
+                    uid="4B906FE7408C4CC087906408C359DBCF"
+                    s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                    s:VariantName="445bdf88528b4f90a9553c836d119d04" />
+                </conditions>
+                <actions>
+                  <action
+                    uid="{1530D0C0-2C13-4783-BA4F-09FD01221109}"
+                    s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                    s:DataSource="7fca0f0a-4237-417f-ac85-d5a0e8a56a2f" />
+                </actions>
+              </rule>
+              <rule
+                uid="{C780A82F-B7C2-47D4-A1D2-0740BD9B9F4A}"
+                s:name="e00bc338be054fce846ca4454c96a52d">
+                <conditions>
+                  <condition
+                    uid="D1AA2259A022450F8814FFC2953E780E"
+                    s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                    s:VariantName="e00bc338be054fce846ca4454c96a52d" />
+                </conditions>
+                <actions>
+                  <action
+                    uid="{D9136D72-4278-4027-A59D-F79C59905DC9}"
+                    s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                    s:DataSource="7fca0f0a-4237-417f-ac85-d5a0e8a56a2f" />
+                </actions>
+              </rule>
+              <rule
+                uid="{00000000-0000-0000-0000-000000000000}"
+                s:name="Default">
+                <conditions>
+                  <condition
+                    uid="98E1B6CEE64341A1B2D868677F630016"
+                    s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                </conditions>
+              </rule>
+            </ruleset>
+          </rls>
+        </r>
         <r
           uid="{004EEEA1-32B0-4582-BD0C-FA7EFFB14182}"
           p:after="r[@uid='{45FCA8EC-2A99-531D-B270-0389AB473563}']"
           s:ds="{105AB476-3EDF-5A27-A49A-A5604BB6ACA2}"
           s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
-          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles=%7b98006F93-D19D-44C8-A25D-CEC93528F129%7d&amp;CSSStyles"
-          s:ph="/headless-main/sxa-main/container-1"
-          s:ccb="Clear on publish" />
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;Styles=%7B98006F93-D19D-44C8-A25D-CEC93528F129%7D&amp;CSSStyles"
+          s:ph="/headless-main/sxa-main/container-1" />
         <r
           uid="{9FEB8407-087F-50FC-BCDD-4741F69796CC}"
           p:after="r[@uid='{004EEEA1-32B0-4582-BD0C-FA7EFFB14182}']"
-          s:rname="FullImageSection"
           s:ds="{3FDC9247-F940-5DE3-BB56-9242835DD87B}"
           s:id="{0E094D67-EC7C-50AF-A8F2-24CF724F4B77}"
-          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles=%7b3BC9EBFD-3ACD-4994-8D61-0BFEF358A70E%7d&amp;CSSStyles"
-          s:ph="/headless-main/sxa-main/container-1"
-          s:ccb="Clear on publish" />
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;Styles=%7B3BC9EBFD-3ACD-4994-8D61-0BFEF358A70E%7D&amp;CSSStyles"
+          s:ph="/headless-main/sxa-main/container-1" />
         <r
           uid="{47F9A467-6F47-5D35-9F6F-70D4FA338EC6}"
           p:after="r[@uid='{9FEB8407-087F-50FC-BCDD-4741F69796CC}']"
-          s:rname="Section"
           s:ds="{0EC6C306-FE31-5479-B740-8E4D7CA071F9}"
           s:id="{2F9D05FD-8E58-56CC-B586-41A3EC155CD7}"
-          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles=%7b98006F93-D19D-44C8-A25D-CEC93528F129%7d%7c%7b1F69B9FA-24A7-435F-AFE5-16E05F34A21A%7d&amp;CSSStyles"
-          s:ph="/headless-main/sxa-main/container-1"
-          s:ccb="Clear on publish" />
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;Styles=%7B98006F93-D19D-44C8-A25D-CEC93528F129%7D%7C%7B1F69B9FA-24A7-435F-AFE5-16E05F34A21A%7D&amp;CSSStyles"
+          s:ph="/headless-main/sxa-main/container-1" />
         <r
           uid="{F9156FD3-6D12-4E0B-9B1F-0D4AC1A772C7}"
           p:after="r[@uid='{47F9A467-6F47-5D35-9F6F-70D4FA338EC6}']"
-          s:rname="FeaturedSpeakers"
           s:ds="{4EC83342-656D-4CF7-A404-0F36DF25128E}"
           s:id="{2DA4EF2D-BADE-52AB-9D3B-82D2EB08C53A}"
-          s:par="FieldNames&amp;CacheClearingBehavior=Clear+on+publish&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles"
-          s:ph="/headless-main/sxa-main/container-1/jss-section-content-{004EEEA1-32B0-4582-BD0C-FA7EFFB14182}-0"
-          s:ccb="Clear on publish" />
+          s:par="FieldNames&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles"
+          s:ph="/headless-main/sxa-main/container-1/jss-section-content-{004EEEA1-32B0-4582-BD0C-FA7EFFB14182}-0" />
         <r
           uid="{9C37536D-E2AA-5BF2-8103-FA15D43F5121}"
           p:after="*[1=2]"
-          s:rname="ProductCategoriesGrid"
-          s:ds=""
           s:id="{B00B0079-2FAF-4BFA-AF3C-4E98EF164C9F}"
           s:par="Items=6&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
-          s:ph="/headless-main/sxa-main/container-1/jss-section-content-{47F9A467-6F47-5D35-9F6F-70D4FA338EC6}-0"
-          s:ccb="Clear on publish" />
+          s:ph="/headless-main/sxa-main/container-1/jss-section-content-{47F9A467-6F47-5D35-9F6F-70D4FA338EC6}-0" />
       </d>
     </r>
 Languages:
@@ -144,7 +175,7 @@ Languages:
       Value: home
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "93e39e8f-98c8-483f-94cf-19ff53285bfb"
+      Value: "bc5f6b0f-437e-4e1b-b7ce-e2885e400318"
 - Language: "fr-CA"
   Versions:
   - Version: 1
