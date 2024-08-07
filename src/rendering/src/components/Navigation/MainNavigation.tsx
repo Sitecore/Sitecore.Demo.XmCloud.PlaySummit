@@ -47,7 +47,7 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
 
   return (
     <nav className={`main-navigation ${sxaStyles}`}>
-      <div className="navigation-content flex items-center">
+      <div className="navigation-content flex items-center  container">
         <div className="controls-container">
           <Link href="/" className="logo-link">
             <Image

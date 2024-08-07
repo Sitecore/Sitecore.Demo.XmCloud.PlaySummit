@@ -57,36 +57,14 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
       ));
 
   const newsGrid = hasNews && (
-    <div className={`section-news-grid ${sxaStyles} bg-[#f8f8f8] container`}>
-      <div className="news-tweet bg-[#fff]">
-        {/* <img
-          src={`${publicUrl}/assets/img/news/conference-image.jpg`}
-          alt="News"
-          width="465px"
-          height="388px"
-          className="tweet-img"
-          loading="lazy"
-        />
-        <div className="tweet-content">
-          <div className="tweet-profile">
-            <Image
-              src={profile}
-              alt="News"
-              width="60px"
-              className="tweet-profile-pic"
-              loading="lazy"
-            />
-            <div className="tweet-profile-content">
-              <p>John Doe - @jdoe</p>
-              <p>1h ago</p>
-            </div>
-          </div>
-          <p className="tweet-content-body">Hyped for this year&apos;s edition of Play! Summit</p>
-          <p className="tweet-content-link">#play! #sports</p>
-          <p className="tweet-content-comments">View all 50 comments</p>
-        </div> */}
+    <div className={`section-news-grid ${sxaStyles} bg-[#f8f8f8] container 2xl:`}>
+      <div className="news-tweet">
+        <h2 className="NewsHeading">NEWS HIGHLIGHTS</h2>
+        <Link href={'/news'} className="news-tweet-button">
+          Visit The Newsroom
+        </Link>
       </div>
-      <div className="news-grid-container ">
+      <div className="news-grid-container">
         <div className="news-grid">{newsCards}</div>
       </div>
     </div>
