@@ -1,14 +1,14 @@
-import profile from '../../../public/assets/img/news/profile-pic.jpg';
+// import profile from '../../../public/assets/img/news/profile-pic.jpg';
 import Link from 'next/link';
 import {
-  Image,
+  // Image,
   withDatasourceCheck,
   LayoutServicePageState,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { News } from 'src/types/news';
-import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
+// import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 type NewsGridProps = ComponentProps & {
   fields: {
@@ -21,7 +21,7 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
 
   const isPageEditing = sitecoreContext.pageState === LayoutServicePageState.Edit;
   const hasNews = !!props.fields;
-  const publicUrl = getPublicAssetUrl();
+  // const publicUrl = getPublicAssetUrl();
 
   const sxaStyles = `${props.params?.styles || ''}`;
 
@@ -54,7 +54,7 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
   const newsGrid = hasNews && (
     <div className={`section-news-grid ${sxaStyles}`}>
       <div className="news-tweet">
-        <img
+        {/* <img
           src={`${publicUrl}/assets/img/news/conference-image.jpg`}
           alt="News"
           width="465px"
@@ -73,13 +73,13 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
             />
             <div className="tweet-profile-content">
               <p>John Doe - @jdoe</p>
-              <p>2h ago</p>
+              <p>1h ago</p>
             </div>
           </div>
           <p className="tweet-content-body">Hyped for this year&apos;s edition of Play! Summit</p>
           <p className="tweet-content-link">#play! #sports</p>
           <p className="tweet-content-comments">View all 50 comments</p>
-        </div>
+        </div> */}
       </div>
       <div className="news-grid-container">
         <div className="news-grid">{newsCards}</div>
