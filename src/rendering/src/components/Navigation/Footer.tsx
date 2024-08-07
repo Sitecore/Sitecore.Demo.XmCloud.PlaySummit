@@ -62,57 +62,70 @@ const socialIcons = {
 */
 
 const Footer = (props: FooterProps): JSX.Element => {
-  const newDate = new Date();
   const sxaStyles = `${props.params?.styles || ''}`;
   const { t } = useI18n();
 
   return (
-    <div className={`footer container ${sxaStyles}`}>
-      <div className="footer-banner">
-        <Link href="/">
-          <Image
-            field={props.fields?.data.item.footerLogo.jsonValue}
-            alt={props.fields?.data.item.footerLogo.alt}
-            loading="lazy"
-          />
-        </Link>
-      </div>
-      <footer className="footer-content">
-        {props.fields?.data?.links?.children?.results?.map((item, index) => (
-          <ul key={index} className="footer-content-col">
-            <li>{item.displayName}</li>
-            {item.children.results.map((footerLink, footerLinkIndex) => (
-              <li key={footerLinkIndex}>
-                {/* Commenting out cause of error: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 
+    <section className="bg-dpworld-footer-bg">
+      <div
+        className={`footer container ${sxaStyles}`}
+        style={{
+          backgroundImage:
+            "url('https://dpwprod.azureedge.net/-/media/themes/dpwg/dpwg-tenant/shared/dpwg-theme/images/footerlines.svg')",
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: '100% 100%',
+          backgroundSize: '2260px',
+        }}
+      >
+        <div className="footer-banner">
+          <Link href="/">
+            <Image
+              field={props.fields?.data.item.footerLogo.jsonValue}
+              alt={props.fields?.data.item.footerLogo.alt}
+              loading="lazy"
+            />
+          </Link>
+        </div>
+        <footer className="footer-content">
+          {props.fields?.data?.links?.children?.results?.map((item, index) => (
+            <ul key={index} className="footer-content-col">
+              <li>{item.displayName}</li>
+              {item.children.results.map((footerLink, footerLinkIndex) => (
+                <li key={footerLinkIndex}>
+                  {/* Commenting out cause of error: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 
                 {footerLink.icon.value && (
                   <FontAwesomeIcon icon={socialIcons[footerLink.displayName.toLowerCase()]} />
                 )}
                 */}
-                <Link href={footerLink.field?.jsonValue?.value?.href ?? '#'}>
-                  {footerLink.title.value ? footerLink.title.value : footerLink.displayName}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        ))}
-      </footer>
-      <div className="footer-legal">
-        <div className="footer-legal-links">
-          <div>
-            <p>
-              {t('Copyright') || 'Copyright'} © 2014-{newDate.getFullYear()}{' '}
-              {t('PLAY! Summit') || 'PLAY! Summit'}
-            </p>
-          </div>
-          <div>
-            <Link href="/privacy">{t('Privacy Policy') || 'Privacy Policy'}</Link>
-          </div>
-          <div>
-            <Link href="/terms">{t('Terms of Use') || 'Terms of Use'}</Link>
+                  <Link href={footerLink.field?.jsonValue?.value?.href ?? '#'}>
+                    {footerLink.title.value ? footerLink.title.value : footerLink.displayName}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ))}
+        </footer>
+        <div className="footer-legal">
+          <div className="footer-legal-links">
+            <div>
+              <Link href="/privacy">{t('Privacy Policy') || 'Privacy Policy'}</Link>
+            </div>
+            <div>
+              <Link href="/sitemap">{t('Sitemap') || 'Sitemap'}</Link>
+            </div>
+            <div>
+              <Link href="/terms">{t('Terms and Conditions') || 'Terms and Conditions'}</Link>
+            </div>
+            <div>
+              <Link href="/hotline">{t('Whistleblowing Hotline') || 'Whistleblowing Hotline'}</Link>
+            </div>
+            <div>
+              <Link href="/act">{t('Modern Slavery Act') || 'Modern Slavery Act'}</Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
