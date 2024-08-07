@@ -1,44 +1,29 @@
 .section-news-grid {
-  @apply grid grid-cols-1 w-full gap-10 my-16;
-  @apply md:grid-cols-2;
-  @apply lg:grid-cols-3;
+  @apply flex flex-col w-full my-16 gap-16 lg:gap-10 lg:flex-row;
 
   .news-tweet {
-    @apply col-span-1 bg-white-dark;
-    @apply sm:block;
-    @apply md:hidden;
-    @apply lg:block;
+    @apply h-max static lg:top-[35vh] lg:sticky;
 
-    .tweet-img {
-      @apply w-full;
+    h2.NewsHeading {
+      @apply text-[50px] w-full lg:w-fit font-bold md:text-[60px] lg:text-[56px] leading-[48px] md:leading-[60px] text-black uppercase mb-[32px] md:pt-[60px];
     }
 
-    .tweet-content {
-      @apply p-4;
-
-      p {
-        @apply my-2;
-      }
-
-      .tweet-profile {
-        @apply flex items-center;
-
-        &-pic {
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          margin-right: 10px;
-          box-shadow: 0 0 2px rgba(23, 23, 23, 0.2);
-        }
-      }
-
-      &-body {
-        @apply mt-5;
-      }
-
-      &-comments {
-        @apply text-gray-dark;
-      }
+    &-button {
+      font-weight: bold;
+      position: relative;
+      display: inline-block !important;
+      text-transform: capitalize;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      background: transparent
+        linear-gradient(270deg, #1e1343 0%, #261d5e 23%, #312a82 54%, #5154b6 100%) 0% 0% no-repeat
+        padding-box;
+      color: #fff;
+      border-radius: 50px;
+      padding: 6px 25px 7px 25px;
+      font-size: 18px;
+      line-height: 36px;
     }
   }
 
@@ -47,19 +32,43 @@
     @apply md:col-span-2;
 
     .news-grid {
-      @apply grid grid-cols-2 gap-10 h-full;
+      @apply flex flex-col w-full h-full;
 
       .item-image {
-        @apply h-52 object-cover overflow-hidden;
+        @apply h-full object-cover overflow-hidden;
       }
 
       &-item {
-        @apply w-full shadow content-center align-middle text-white overflow-hidden items-center justify-center text-left box-border no-underline cursor-pointer leading-normal font-semibold text-xl;
+        @apply w-full flex flex-grow flex-col-reverse md:flex-row justify-center items-center  md:gap-6 px-[12px] md:pl-[0px] py-[30px] mb-[30px];
+        flex: 1 0 auto;
 
-        a:hover,
-        a:focus,
-        a:active {
-          color: inherit;
+        img.item-image {
+          @apply w-full md:w-[40%];
+        }
+
+        div.item-data {
+          @apply w-full md:w-[50%] md:pr-[40px] lg:pr-[60px] pb-[20px] md:pb-[40px];
+          h3 {
+            @apply text-[#000] font-bold mb-[28px] md:mb-[32px] leading-[28px] md:leading-[36px] text-[24px] md:text-[28px];
+          }
+          a.item-data-button {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            background-color: #f8f8f8;
+            position: relative;
+            display: inline-block !important;
+            border-radius: 50px;
+            text-transform: capitalize;
+            color: #3e3c90;
+            padding: 12px 24px 13px 24px;
+            transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            overflow: hidden;
+            cursor: pointer;
+          }
         }
       }
     }

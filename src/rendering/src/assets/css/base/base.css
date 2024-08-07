@@ -1,5 +1,5 @@
 body {
-  @apply overflow-x-hidden;
+  @apply overflow-x-hidden bg-[#f8f8f8];
 }
 
 /**
@@ -26,6 +26,6 @@ a:focus {
   line-height: 1;
 }
 
-.dpworld-btn{
+.dpworld-btn {
   @apply bg-custom-gradient text-white font-bold py-2 px-6 rounded-[50px] transition duration-300 ease-in-out hover:bg-opacity-80 w-fit;
 }

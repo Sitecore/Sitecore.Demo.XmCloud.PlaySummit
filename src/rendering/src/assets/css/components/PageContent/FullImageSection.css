@@ -1,5 +1,5 @@
 .full-image-section {
-  @apply relative bg-white bg-center bg-no-repeat bg-cover;
+  @apply relative bg-[#f8f8f8] bg-center bg-no-repeat bg-cover;
 
   padding: 7em 0;
   box-shadow: 0 0 10px rgba(23, 23, 23, 0.3);
@@ -24,7 +24,6 @@
     @apply relative h-full z-10;
 
     .content-card {
-
       @apply flex flex-col;
 
       @apply text-left bg-white-light;
