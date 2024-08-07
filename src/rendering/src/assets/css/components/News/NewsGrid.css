@@ -47,20 +47,50 @@
     @apply md:col-span-2;
 
     .news-grid {
-      @apply grid grid-cols-2 gap-10 h-full;
+      @apply grid grid-cols-1 h-full;
 
       .item-image {
-        @apply h-52 object-cover overflow-hidden;
+        @apply object-cover overflow-hidden;
       }
 
       &-item {
-        @apply w-full shadow content-center align-middle text-white overflow-hidden items-center justify-center text-left box-border no-underline cursor-pointer leading-normal font-semibold text-xl;
+        @apply w-full flex flex-grow flex-col-reverse md:flex-row justify-center items-center  md:gap-6 pl-[24px] pt-[56px] pb-[30px] mb-[30px];
+        flex: 1 0 auto;
 
-        a:hover,
-        a:focus,
-        a:active {
-          color: inherit;
+        /* div.news-item-card {
+          @apply w-full flex flex-grow flex-col-reverse md:flex-row justify-center items-center  md:gap-6 pl-[24px] pt-[56px] mb-[60px];
+          /* w-full flex-col-reverse md:flex-row  shadow content-center align-middle text-white overflow-hidden items-center justify-center text-left box-border no-underline cursor-pointer leading-normal font-semibold text-xl
+          flex: 1 0 auto; */
+
+        img.item-image {
+          @apply w-full md:w-[40%];
         }
+
+        div.item-data {
+          @apply w-full md:w-[60%] pr-[60px] pb-[40px];
+          h3 {
+            @apply text-[#000] font-bold mb-[28px] md:mb-[32px] leading-[28px] md:leading-[36px] text-[24px] md:text-[28px];
+          }
+          a.item-data-button {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            background-color: #f8f8f8;
+            position: relative;
+            display: inline-block !important;
+            border-radius: 50px;
+            text-transform: capitalize;
+            color: #3e3c90;
+            padding: 12px 24px 13px 24px;
+            transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            overflow: hidden;
+            cursor: pointer;
+          }
+        }
+        /* } */
       }
     }
   }

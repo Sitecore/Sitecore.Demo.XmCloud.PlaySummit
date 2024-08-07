@@ -36,24 +36,29 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
       .reverse()
       .slice(0, 4)
       .map((news, index) => (
-        <div key={index} className="news-grid-item">
-          <Link href={news.url} passHref>
-            <img
-              className="item-image"
-              src={news.fields.Image?.value?.src}
-              alt="News"
-              width="465px"
-              height="260px"
-              loading="lazy"
-            />
-            {news.fields.Title?.value}
-          </Link>
+        <div key={index} className="news-grid-item bg-[#fff]">
+          {/* <div className="news-item-card"> */}
+          <img
+            className="item-image"
+            src={news.fields.Image?.value?.src}
+            alt="News"
+            width="465px"
+            height="260px"
+            loading="lazy"
+          />
+          <div className="item-data">
+            <h3>{news.fields.Title?.value}</h3>
+            <Link href={news.url} passHref className="item-data-button">
+              Read More
+            </Link>
+          </div>
+          {/* </div> */}
         </div>
       ));
 
   const newsGrid = hasNews && (
-    <div className={`section-news-grid ${sxaStyles}`}>
-      <div className="news-tweet">
+    <div className={`section-news-grid ${sxaStyles} bg-[#f8f8f8] container`}>
+      <div className="news-tweet bg-[#fff]">
         {/* <img
           src={`${publicUrl}/assets/img/news/conference-image.jpg`}
           alt="News"
@@ -81,7 +86,7 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
           <p className="tweet-content-comments">View all 50 comments</p>
         </div> */}
       </div>
-      <div className="news-grid-container">
+      <div className="news-grid-container ">
         <div className="news-grid">{newsCards}</div>
       </div>
     </div>
