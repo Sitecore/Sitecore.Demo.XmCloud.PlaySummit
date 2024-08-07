@@ -1,3 +1,9 @@
+//   **************************************************************
+//
+//Please Note: not removing commented code so that it can be used in future.
+//
+//   **************************************************************
+
 import { Placeholder, SitecoreContextValue } from '@sitecore-jss/sitecore-jss-nextjs';
 
 // import Link from 'next/link';
@@ -12,8 +18,6 @@ export type HeaderContentProps = HeaderProps & {
   query?: string | ParsedUrlQueryInput;
   sitecoreContext: SitecoreContextValue;
 };
-
-//Please Note: not removing commented code so that it can be used in future.
 
 const HeaderContent = (props: HeaderContentProps): JSX.Element => {
   // const router = useRouter();
