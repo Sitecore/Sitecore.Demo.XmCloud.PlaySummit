@@ -116,6 +116,7 @@ module.exports = {
         'play-element-color': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='290.333' height='347.475' viewBox='0 0 290.333 347.475'%3E%3Cg id='featured-section-element-right' transform='translate(-1)' opacity='0.3'%3E%3Cpath id='Path_53' data-name='Path 53' d='M703.844,136.166,462.176,381.111,414.3,268.33,546.913,136.173Z' transform='translate(-413.299 -136.166)' fill='%23ffb059'/%3E%3Cpath id='Path_54' data-name='Path 54' d='M656.01,282.9v123.63L413.382,304.005l85.31-86.761Z' transform='translate(-364.677 -59.059)' fill='%233d94ff'/%3E%3C/g%3E%3C/svg%3E%0A\")",
         'play-element-full-color': "url(\"data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_2' data-name='Layer 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 61.3 73.4'%3E%3Cg id='Layer_2-2' data-name='Layer 2'%3E%3Cg%3E%3Cpolygon fill='%23ff8d00' points='61.3 27.9 51.2 51.7 .3 0 33.4 0 61.3 27.9'/%3E%3Cpolygon fill='%231c80ff' points='0 73.4 0 47.3 33.2 33.4 51.2 51.7 0 73.4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
         'custom-gradient': 'linear-gradient(270deg, #1e1343 0%, #261d5e 23%, #312a82 54%, #5154b6 100%)',
+        'dpworld-footer-bg':'linear-gradient(90deg, #1e1343 0%, #312a82 53%, #5154b6 100%)',
       }
     },
   },
