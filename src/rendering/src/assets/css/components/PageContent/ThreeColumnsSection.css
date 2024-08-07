@@ -37,3 +37,14 @@
     }
   }
 }
+.dpworld-section{
+  @apply bg-black ;
+}
+.dpworld-section-content-title{
+  @apply font-bold text-[45px] leading-[48px] mb-[35px] !important ;
+  @apply text-white !important;
+}
+.dpworld-section-content-p{
+  @apply mb-[40px] text-[19px] leading-[36px] w-full !important ;
+  @apply text-white !important;
+}

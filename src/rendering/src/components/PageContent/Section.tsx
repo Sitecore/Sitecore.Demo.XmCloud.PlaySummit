@@ -37,7 +37,7 @@ const Section = (props: SectionProps): JSX.Element => {
   );
 
   return (
-    <section className={`section ${sxaStyles}`}>
+    <section className={`section`}>
       <div className="section-content container">
         {titleAndContent}
         {placeholder}
