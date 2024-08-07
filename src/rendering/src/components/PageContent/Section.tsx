@@ -17,8 +17,6 @@ type SectionProps = ComponentWithChildrenProps & {
 };
 
 const Section = (props: SectionProps): JSX.Element => {
-  const sxaStyles = `${props.params?.styles || ''}`;
-
   const titleAndContent = props.fields && (
     <>
       <Text tag="h2" field={props.fields.title} className="section-content-title" />
