@@ -28,14 +28,17 @@ const FullImageSection = ({ fields, params }: FullImageSectionProps): JSX.Elemen
   );
 
   return (
-    <section className={`section full-image-section ${sxaStyles}`}>
-      <Image field={fields.backgroundImage} alt={fields.title} loading="lazy" />
-      <div className="section-content full-image-section-content container">
-        <div className="content-card">
-          <Text tag="h5" field={fields.subtitle} />
-          <Text tag="h2" field={fields.title} />
-          <RichText field={fields.content} />
-          {callToAction}
+    <section className={`section flex items-center justify-center w-full`}>
+      <div className="flex flex-col lg:flex-row justify-evenly container">
+        <div>
+          <Image field={fields.backgroundImage} alt={fields.title} loading="lazy" className="" />
+        </div>
+        <div className="full-image-section-content w-fit">
+          <div className="content-card">
+            <Text tag="h2" field={fields.title} className="text-[36px]" />
+            <RichText field={fields.content} />
+            <button className="dpworld-btn">View Careers</button>
+          </div>
         </div>
       </div>
     </section>
