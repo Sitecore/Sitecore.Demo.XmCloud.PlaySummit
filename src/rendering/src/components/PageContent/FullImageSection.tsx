@@ -2,7 +2,7 @@ import {
   Field,
   Image,
   ImageField,
-  Link,
+  // Link,
   LinkField,
   RichText,
   Text,
@@ -20,12 +20,12 @@ type FullImageSectionProps = ComponentProps & {
   };
 };
 
-const FullImageSection = ({ fields, params }: FullImageSectionProps): JSX.Element => {
-  const sxaStyles = `${params?.styles || ''}`;
+const FullImageSection = ({ fields }: FullImageSectionProps): JSX.Element => {
+  // const sxaStyles = `${params?.styles || ''}`;
 
-  const callToAction = fields.callToActionLink && (
-    <Link field={fields.callToActionLink} className="btn-main" />
-  );
+  // const callToAction = fields.callToActionLink && (
+  //   <Link field={fields.callToActionLink} className="btn-main" />
+  // );
 
   return (
     <section className={`section flex items-center justify-center w-full`}>
