@@ -57,8 +57,8 @@ const PersonalizedPicks = ({ itemsToDisplay = 6, sxaStyles = '' }: PersonalizedP
                 alt={item?.description || `${item?.type} image`}
               />
               <span className="item-name">{item?.name}</span>
-              <span className='item-desscription mb-[20px]'>{item?.description}</span>
-              <button className='dpworld-btn'>Read more</button>
+              <span className="item-desscription mb-[20px]">{item?.description}</span>
+              <button className="dpworld-btn">Read more</button>
             </Link>
           </div>
         ))}

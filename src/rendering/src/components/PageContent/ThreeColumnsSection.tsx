@@ -3,9 +3,7 @@ import {
   Text,
   Field,
   LinkField,
-  Link,
   ImageField,
-  Image,
   withDatasourceCheck,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
@@ -25,9 +23,7 @@ export type ThreeColumnsSectionProps = ComponentProps & {
   };
 };
 
-const ThreeColumnsSection = ({ fields, params }: ThreeColumnsSectionProps): JSX.Element => {
-  const sxaStyles = `${params?.styles || ''}`;
-
+const ThreeColumnsSection = ({ fields }: ThreeColumnsSectionProps): JSX.Element => {
   return (
     <section className={`section dpworld-section`}>
       <div className="col-content container text-center">
@@ -37,7 +33,7 @@ const ThreeColumnsSection = ({ fields, params }: ThreeColumnsSectionProps): JSX.
         <p className="dpworld-section-content-p">
           <Text field={fields.Subtitle} />
         </p>
-        <button className='dpworld-btn'>Learn More About Us</button>
+        <button className="dpworld-btn">Learn More About Us</button>
       </div>
     </section>
   );
