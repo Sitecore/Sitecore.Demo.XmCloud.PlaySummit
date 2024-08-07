@@ -41,7 +41,6 @@ export type MainNavigationProps = ComponentProps & {
 };
 
 const MainNavigation = (props: MainNavigationProps): JSX.Element => {
-  console.log(props.fields?.data?.links?.children?.results);
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   const sxaStyles = `${props.params?.styles || ''}`;
