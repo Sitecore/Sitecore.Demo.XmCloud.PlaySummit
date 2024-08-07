@@ -3,9 +3,6 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import sendgrid from '@sendgrid/mail';
 
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string);
-// sendgrid.setApiKey(
-//   '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' as string
-// );
 
 type Data = {
   message?: string;
