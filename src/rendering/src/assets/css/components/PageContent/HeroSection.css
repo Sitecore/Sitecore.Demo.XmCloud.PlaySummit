@@ -1,5 +1,5 @@
 .hero-section {
-  @apply basis-full m-0 mb-2 bg-black bg-left bg-no-repeat bg-cover relative;
+  @apply basis-full m-0 bg-black bg-left bg-no-repeat bg-cover relative;
 
   .hero-background {
     @apply h-96 bg-black bg-left bg-no-repeat bg-cover relative;

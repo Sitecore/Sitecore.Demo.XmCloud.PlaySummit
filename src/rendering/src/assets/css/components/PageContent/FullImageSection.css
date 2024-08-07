@@ -24,16 +24,13 @@
     @apply relative h-full z-10;
 
     .content-card {
-      @include flex--center--column;
 
-      @apply text-center bg-white-light;
+      @apply flex flex-col;
 
-      padding: 3em;
-      max-width: 700px;
-      box-shadow: 0 0 20px rgba(23, 23, 23, 0.3);
+      @apply text-left bg-white-light;
 
       h2 {
-        @apply text-2xl font-bold text-black m-0;
+        @apply text-[36px] font-bold text-black m-0;
       }
 
       h5 {
