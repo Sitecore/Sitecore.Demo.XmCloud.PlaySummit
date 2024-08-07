@@ -31,8 +31,7 @@ const PersonalizedPicksWrapper = (props: PersonalizedPicksWrapperProps) => {
               alt="session"
             ></img>
             <span className="item-name">
-              From e-commerce to AI - 5 trends shaping Oceania&apos;s retail and consumer sector in
-              2024
+              From e-commerce to AI - 5 trends shaping Oceania&apos;s retail and consumer sector
             </span>
             <span className="item-description mb-[20px]">
               As ongoing economic uncertainty and rising costs of living reshape buyer behaviour,
@@ -52,7 +51,7 @@ const PersonalizedPicksWrapper = (props: PersonalizedPicksWrapperProps) => {
               Southeast Asia is growing as a global trade nexus - and its emerging markets have an
               important role
             </span>
-            <span className="item-description mb-[20px]">
+            <span className="item-description mb-[20px] mt:">
               From a small base, Southeast Asia has grown to become one of the world&apos;s most
               dynamic trading areas over the past three decades.
             </span>
@@ -67,9 +66,7 @@ const PersonalizedPicksWrapper = (props: PersonalizedPicksWrapperProps) => {
               alt="session"
             ></img>
             <span className="item-name">Empowering Humanitarian Logistics Resilience</span>
-            <br />
-            <br />
-            <span className="item-description mb-[20px]">
+            <span className="item-description mb-[20px] md:mt-[40px]">
               As the world faces increasing and unprecedented challenges, humanitarian logistics is
               the central element of crisis response when supply chains are disrupted.
             </span>
@@ -84,9 +81,7 @@ const PersonalizedPicksWrapper = (props: PersonalizedPicksWrapperProps) => {
               alt="session"
             ></img>
             <span className="item-name">Changing the Perception of Water</span>
-            <br />
-            <br />
-            <span className="item-description mb-[20px]">
+            <span className="item-description mb-[20px] md:mt-[45px] ">
               Water is crucial for life on Earth and vital for our well-being. Businesses, including
               ours, can play a significant role in changing how water is used.
             </span>
