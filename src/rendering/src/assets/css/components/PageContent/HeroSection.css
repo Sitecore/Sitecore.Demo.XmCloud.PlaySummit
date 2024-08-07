@@ -1,33 +1,22 @@
 .hero-section {
-  @apply basis-full m-0 bg-black bg-left bg-no-repeat bg-cover relative;
+  @apply basis-full m-0 mb-2 bg-black bg-left bg-no-repeat bg-cover relative;
 
   .hero-background {
-    @apply h-64 bg-black bg-left bg-no-repeat bg-cover;
+    @apply h-96 bg-black bg-left bg-no-repeat bg-cover relative;
     @apply md:hidden;
+    box-sizing: border-box;
   }
 
   .hero-container {
-    @apply flex items-center justify-end w-full my-0 mx-auto box-border overflow-hidden;
+    @apply flex items-end justify-start w-full my-10 mx-auto box-border overflow-hidden lg:max-w-[1364px];
 
     @media (max-width: 767px) {
       @apply px-0 mx-0 max-w-none;
     }
 
     .container-content {
-      @apply w-full bg-black-light;
+      @apply w-full;
       @apply md:w-45;
-
-      background:
-        linear-gradient(
-          135deg,
-          rgba(80, 80, 80, 1) 0%,
-          rgba(60, 60, 60, 1) 50%,
-          rgba(50, 50, 50, 1) 100%
-        );
-
-      @screen md {
-        box-shadow: 0 0 20px #232323;
-      }
 
       .btn-area {
         @apply p-6;
@@ -36,43 +25,20 @@
 
       .content-text {
         @apply p-6 relative;
-        @apply md:p-12;
-
-        @screen md {
-          &::after {
-            @apply w-0 h-0 border-solid right-0 top-0 absolute;
-
-            content: '';
-            border-width: 0 110px 110px 0;
-            border-color: transparent #1c80ff transparent transparent;
-          }
-        }
-
-        .slogan {
-          @apply text-white uppercase pb-5 font-extrabold;
-          @apply md:pt-4;
-
-          font-size: 1.5em;
-        }
-
-        .expo {
-          @apply text-orange;
-
-          font-weight: 600;
-          font-size: 1.5em;
-        }
 
         .title {
-          @apply text-4xl text-white uppercase py-3 m-0 font-bold;
+          @apply text-4xl text-white uppercase pt-3 m-0 font-bold mb-[32px];
           @apply md:text-5xl;
         }
 
         .subtitle {
-          @apply text-orange pt-2;
-          @apply md:py-2;
+          @apply text-white;
+          @apply md:pb-2;
 
-          font-size: 1em;
-          line-height: 1.2;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 26px;
         }
       }
     }
@@ -87,39 +53,28 @@
       }
     }
 
+    .hero-background::after {
+      @apply block;
+      content: '';
+      background: radial-gradient(
+        99.96% 99.96% at 0% 99.96%,
+        rgba(15, 15, 25, 0.8) 38%,
+        rgba(15, 15, 25, 0) 100%
+      );
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+    }
+
     .hero-container {
-      /*
-      NOTE: This is a way to make the content look like
-      it's inside of a container without it actually being in one
-      in order to allow editing the background image in EE and Pages
-      */
-      @screen md {
-        width: calc(768px / 2);
-        margin-right: calc((100vw - 768px) / 2);
-      }
-
-      @screen lg {
-        width: calc(1024px / 2);
-        margin-right: calc((100vw - 1024px) / 2);
-      }
-
-      @screen xl {
-        width: calc(1280px / 2);
-        margin-right: calc((100vw - 1280px) / 2);
-      }
-
-      @screen 2xl {
-        width: calc(1536px / 2);
-        margin-right: calc((100vw - 1536px) / 2);
-      }
-
-      /* END NOTE */
-
-      @apply relative flex items-center justify-end my-0 px-0 box-border overflow-hidden z-10;
+      @apply absolute top-0 md:relative flex items-end justify-start w-full lg:max-w-[1364px] mx-auto my-10 md:my-0 md:mt-14 md:mb-10 px-0 box-border overflow-hidden;
       @apply md:px-6 md:ml-auto;
 
       .container-content {
-        @apply md:w-full;
+        @apply md:w-[500px];
       }
     }
   }
