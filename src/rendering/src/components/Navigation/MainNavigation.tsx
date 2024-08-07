@@ -60,7 +60,8 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
             <div className={'text-menu-item px-3 block lg:hidden '}>
               <Link
                 href={
-                  props.fields?.data?.links?.children?.results?.field?.jsonValue?.value?.href ?? '#'
+                  '#'
+                  // props.fields?.data?.links?.children?.results?.field?.jsonValue?.value?.href ?? '#'
                 }
                 prefetch={false}
               >
@@ -70,7 +71,8 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
             <div className={'text-menu-item px-3 block lg:hidden'}>
               <Link
                 href={
-                  props.fields?.data?.links?.children?.results?.field?.jsonValue?.value?.href ?? '#'
+                  '#'
+                  // props.fields?.data?.links?.children?.results?.field?.jsonValue?.value?.href ?? '#'
                 }
                 prefetch={false}
               >
@@ -106,7 +108,8 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
             <li className={'text-menu-item md:px-3 hidden lg:block'}>
               <Link
                 href={
-                  props.fields?.data?.links?.children?.results?.field?.jsonValue?.value?.href ?? '#'
+                  '#'
+                  // props.fields?.data?.links?.children?.results?.field?.jsonValue?.value?.href ?? '#'
                 }
                 prefetch={false}
               >
@@ -116,7 +119,8 @@ const MainNavigation = (props: MainNavigationProps): JSX.Element => {
             <li className={'text-menu-item md:px-3 hidden lg:block'}>
               <Link
                 href={
-                  props.fields?.data?.links?.children?.results?.field?.jsonValue?.value?.href ?? '#'
+                  '#'
+                  // props.fields?.data?.links?.children?.results?.field?.jsonValue?.value?.href ?? '#'
                 }
                 prefetch={false}
               >
