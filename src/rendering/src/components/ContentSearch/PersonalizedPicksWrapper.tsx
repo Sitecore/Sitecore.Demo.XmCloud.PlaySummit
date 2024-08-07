@@ -31,11 +31,12 @@ const PersonalizedPicksWrapper = (props: PersonalizedPicksWrapperProps) => {
               alt="session"
             ></img>
             <span className="item-name">
-              From e-commerce to AI – 5 trends shaping Oceania’s retail and consumer sector in 2024
+              From e-commerce to AI - 5 trends shaping Oceania&apos;s retail and consumer sector in
+              2024
             </span>
             <span className="item-description mb-[20px]">
               As ongoing economic uncertainty and rising costs of living reshape buyer behaviour,
-              Oceania’s supply chains are being put to the test in new ways.
+              Oceania&apos;s supply chains are being put to the test in new ways.
             </span>
             <button className="dpworld-btn">Read more</button>
           </a>
@@ -48,12 +49,12 @@ const PersonalizedPicksWrapper = (props: PersonalizedPicksWrapperProps) => {
               alt="session"
             ></img>
             <span className="item-name">
-              Southeast Asia is growing as a global trade nexus – and its emerging markets have an
+              Southeast Asia is growing as a global trade nexus - and its emerging markets have an
               important role
             </span>
             <span className="item-description mb-[20px]">
-              From a small base, Southeast Asia has grown to become one of the world’s most dynamic
-              trading areas over the past three decades.
+              From a small base, Southeast Asia has grown to become one of the world&apos;s most
+              dynamic trading areas over the past three decades.
             </span>
             <button className="dpworld-btn">Read more</button>
           </a>

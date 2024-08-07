@@ -2,7 +2,6 @@ import {
   Field,
   Image,
   ImageField,
-  // Link,
   LinkField,
   RichText,
   Text,
@@ -21,12 +20,6 @@ type FullImageSectionProps = ComponentProps & {
 };
 
 const FullImageSection = ({ fields }: FullImageSectionProps): JSX.Element => {
-  // const sxaStyles = `${params?.styles || ''}`;
-
-  // const callToAction = fields.callToActionLink && (
-  //   <Link field={fields.callToActionLink} className="btn-main" />
-  // );
-
   return (
     <section className={`section flex items-center justify-center w-full`}>
       <div className="flex flex-col lg:flex-row justify-evenly container">

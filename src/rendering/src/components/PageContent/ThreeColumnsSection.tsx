@@ -3,9 +3,7 @@ import {
   Text,
   Field,
   LinkField,
-  // Link,
   ImageField,
-  // Image,
   withDatasourceCheck,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
@@ -26,8 +24,6 @@ export type ThreeColumnsSectionProps = ComponentProps & {
 };
 
 const ThreeColumnsSection = ({ fields }: ThreeColumnsSectionProps): JSX.Element => {
-  // const sxaStyles = `${params?.styles || ''}`;
-
   return (
     <section className={`section dpworld-section`}>
       <div className="col-content container text-center">
