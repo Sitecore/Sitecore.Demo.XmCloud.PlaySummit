@@ -2,69 +2,95 @@ import {
   RichText,
   Text,
   Field,
-  Link,
   Placeholder,
   LinkField,
+  ComponentRendering,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentWithChildrenProps } from 'lib/component-props';
 import { useEffect, useState } from 'react';
 
-type SectionProps = ComponentWithChildrenProps & {
+export type SectionProps = ComponentWithChildrenProps & {
   fields: {
     title: Field<string>;
     content: Field<string>;
     callToActionLink: LinkField;
   };
 };
-
 const Section = (props: SectionProps): JSX.Element => {
-  const [hiddenItem, setHiddenItem] = useState(false);
-  const renderHeading = (a: string) => {
-    props?.fields?.title?.value.toLowerCase().trim() === a.toLowerCase().trim()
-      ? setHiddenItem(true)
+  // to achieve dynamic heading, we have implemented logic to apply css according to incoming rendering component.
+
+  const [newsComponent, setNewsComponent] = useState(false);
+  const [insightsComponent, setInsightsComponent] = useState(false);
+
+  const contentArray = props.rendering.placeholders['jss-section-content'];
+
+  const compName = contentArray
+    .filter((item) => 'componentName' in item) // Check if componentName exists
+    .map((item) => (item as ComponentRendering).componentName);
+
+  useEffect(() => {
+    newsCompHeading('NewsGrid');
+    fInsightsHeading('PersonalizedPicksWrapper');
+  });
+
+  const newsCompHeading = (a: string) => {
+    compName[0].toLowerCase().trim() === a.toLowerCase().trim() ? setNewsComponent(true) : false;
+  };
+  const fInsightsHeading = (a: string) => {
+    compName[0].toLowerCase().trim() === a.toLowerCase().trim()
+      ? setInsightsComponent(true)
       : false;
   };
 
-  useEffect(() => {
-    renderHeading('NEWS HIGHLIGHTS');
-    renderHeading('Featured insights ');
-  });
-
-  const titleAndContent = props.fields && (
-    <>
-      <Text
-        tag="h2"
-        field={props.fields.title}
-        className={hiddenItem ? 'hidden ' : '' + ' section-content-title'}
-      />
-      {props.fields.content && (
-        <RichText
-          tag="div"
-          field={props.fields.content}
-          className={hiddenItem ? 'hidden ' : '' + ' section-content-p'}
+  const titleAndContentAndCta = props.fields && (
+    <div className={insightsComponent ? 'container' : ''}>
+      <div
+        className={
+          newsComponent
+            ? 'news-tweet'
+            : insightsComponent
+            ? ' featuredItems flex flex-col lg:flex-row justify-between items-center mb-[32px] '
+            : ' '
+        }
+      >
+        <Text
+          tag="h2"
+          field={props.fields.title}
+          className={
+            newsComponent
+              ? 'NewsHeading '
+              : insightsComponent
+              ? ' featured-heading text-[50px] font-bold md:text-[68px] leading-[48px] md:leading-[60px] text-center text-black uppercase  '
+              : ' ' + ' section-content-title'
+          }
         />
-      )}
-    </>
+        {props?.fields?.content && props?.fields?.content !== null && (
+          <RichText
+            tag="div"
+            field={props?.fields?.content}
+            // add className='news-tweet-button' for newsComponent after css removed after backend.
+            className={
+              newsComponent
+                ? ' '
+                : insightsComponent
+                ? ' mt-5 lg:mt-0 '
+                : ' ' + ' section-content-p'
+            }
+          />
+        )}
+      </div>
+    </div>
   );
-  // console.log(props);
+
   const placeholder = !!props.rendering && (
     <Placeholder name="jss-section-content" rendering={props.rendering} />
   );
-
-  const callToAction = !!props.fields?.callToActionLink?.value?.href && (
-    <Link
-      field={props.fields.callToActionLink}
-      className={hiddenItem ? 'hidden ' : '' + ' btn-main'}
-    />
-  );
-
   return (
     <section className={`section`}>
-      <div className="section-content">
-        {titleAndContent}
+      <div className={newsComponent ? 'section-news-container container ' : 'section-content'}>
+        {titleAndContentAndCta}
         {placeholder}
         {props.children}
-        {callToAction}
       </div>
     </section>
   );
