@@ -11,11 +11,15 @@ type Data = {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
   if (req.method === 'POST') {
+    const data = req?.query?.data;
+    const email = eval('(' + data + ')')?.email;
     // Hardcoded email details
     const fromAddress = 'kgholap@horizontal.com';
-    const toAddress = 'vshringarpure@horizontalintegration.com';
+    const toAddress = 'vthakur@horizontal.com';
     const subject = 'Test Email';
-    const text = 'Hey Varun, This is a test email sent from Kunal for DP World POC work.';
+    const text = `Hey Vikas, This is a test email sent from Kunal for DP World POC work.\n Test Form email:- ${email}`;
+
+    console.log(email);
 
     try {
       await sendgrid.send({
@@ -35,4 +39,3 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     res.status(405).end(`Method ${req.method} Not Allowed`);
   }
 }
-
