@@ -23,12 +23,12 @@ const SummitFeature = (props: SummitFeatureProps): JSX.Element => {
 
   return (
     <div className={`grid-item ${sxaStyles}`}>
-      <Link field={props.fields.Link}>
-        <Image field={props.fields.Logo} alt={props.fields.Title.value} />
+      <Link field={props?.fields?.Link}>
+        <Image field={props?.fields?.Logo} alt={props?.fields?.Title?.value} />
 
         <div className="item-details item-details-left">
-          <Text tag="div" className="item-title" field={props.fields.Title} />
-          <Text tag="p" className="item-description" field={props.fields.Description} />
+          <Text tag="div" className="item-title" field={props?.fields?.Title} />
+          <Text tag="p" className="item-description" field={props?.fields?.Description} />
         </div>
       </Link>
     </div>
