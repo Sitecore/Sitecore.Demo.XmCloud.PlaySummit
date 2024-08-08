@@ -1,14 +1,11 @@
-// import profile from '../../../public/assets/img/news/profile-pic.jpg';
 import Link from 'next/link';
 import {
-  // Image,
   withDatasourceCheck,
   LayoutServicePageState,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { News } from 'src/types/news';
-// import { getPublicAssetUrl } from '../../../src/helpers/PublicUrlHelper';
 
 type NewsGridProps = ComponentProps & {
   fields: {
@@ -21,7 +18,6 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
 
   const isPageEditing = sitecoreContext.pageState === LayoutServicePageState.Edit;
   const hasNews = !!props.fields;
-  // const publicUrl = getPublicAssetUrl();
 
   const sxaStyles = `${props.params?.styles || ''}`;
 
@@ -37,7 +33,6 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
       .slice(0, 4)
       .map((news, index) => (
         <div key={index} className="news-grid-item bg-[#fff]">
-          {/* <div className="news-item-card"> */}
           <img
             className="item-image"
             src={news.fields.Image?.value?.src}
@@ -52,22 +47,23 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
               Read More
             </Link>
           </div>
-          {/* </div> */}
         </div>
       ));
 
   const newsGrid = hasNews && (
-    <div className={`section-news-grid ${sxaStyles} bg-[#f8f8f8] container 2xl:`}>
-      <div className="news-tweet">
-        <h2 className="NewsHeading">NEWS HIGHLIGHTS</h2>
-        <Link href={'/news'} className="news-tweet-button">
-          Visit The Newsroom
-        </Link>
+    <section className={`section-news ${sxaStyles} bg-[#f8f8f8]`}>
+      <div className="container section-news-container">
+        <div className="news-tweet">
+          <h2 className="NewsHeading">NEWS HIGHLIGHTS</h2>
+          <Link href={'/news'} className="news-tweet-button">
+            Visit The Newsroom
+          </Link>
+        </div>
+        <div className="news-grid-container">
+          <div className="news-grid">{newsCards}</div>
+        </div>
       </div>
-      <div className="news-grid-container">
-        <div className="news-grid">{newsCards}</div>
-      </div>
-    </div>
+    </section>
   );
 
   return (
