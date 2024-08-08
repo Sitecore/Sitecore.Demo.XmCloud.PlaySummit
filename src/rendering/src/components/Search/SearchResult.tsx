@@ -37,7 +37,7 @@ const SearchResult = (): JSX.Element => {
           name="search"
           value={InputText}
           placeholder="Search..."
-          className="border-0 border-b-2 border-b-black-light focus:outline-0 w-full"
+          className="border-0 border-b-2 border-b-black-light focus:outline-0 w-full bg-transparent"
           id="search"
           onChange={HandleInputText}
         />

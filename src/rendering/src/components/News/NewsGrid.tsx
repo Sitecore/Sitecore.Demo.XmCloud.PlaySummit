@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import {
-  withDatasourceCheck,
+  Image,
+  Text,
   LayoutServicePageState,
   useSitecoreContext,
 } from '@sitecore-jss/sitecore-jss-nextjs';
@@ -33,16 +34,9 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
       .slice(0, 4)
       .map((news, index) => (
         <div key={index} className="news-grid-item bg-[#fff]">
-          <img
-            className="item-image"
-            src={news.fields.Image?.value?.src}
-            alt="News"
-            width="465px"
-            height="260px"
-            loading="lazy"
-          />
+          <Image className="item-image" field={news?.fields?.Image} alt="News" loading="lazy" />
           <div className="item-data">
-            <h3>{news.fields.Title?.value}</h3>
+            <Text tag="h3" field={news?.fields?.Title} />
             <Link href={news.url} passHref className="item-data-button">
               Read More
             </Link>
@@ -50,21 +44,7 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
         </div>
       ));
 
-  const newsGrid = hasNews && (
-    <section className={`section-news ${sxaStyles} bg-[#f8f8f8]`}>
-      <div className="container section-news-container">
-        <div className="news-tweet">
-          <h2 className="NewsHeading">NEWS HIGHLIGHTS</h2>
-          <Link href={'/news'} className="news-tweet-button">
-            Visit The Newsroom
-          </Link>
-        </div>
-        <div className="news-grid-container">
-          <div className="news-grid">{newsCards}</div>
-        </div>
-      </div>
-    </section>
-  );
+  const newsGrid = hasNews && <div className={`news-grid ${sxaStyles}`}>{newsCards}</div>;
 
   return (
     <>
@@ -74,4 +54,4 @@ const NewsGrid = (props: NewsGridProps): JSX.Element => {
   );
 };
 
-export const Default = withDatasourceCheck()<NewsGridProps>(NewsGrid);
+export default NewsGrid;
