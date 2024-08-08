@@ -1,14 +1,14 @@
 .hero-section {
-  @apply basis-full m-0 bg-black bg-left bg-no-repeat bg-cover relative;
+  @apply basis-full m-0  bg-left bg-no-repeat bg-cover relative;
 
   .hero-background {
-    @apply h-96 bg-black bg-left bg-no-repeat bg-cover relative;
+    @apply h-[614px]  bg-left bg-no-repeat bg-cover relative;
     @apply md:hidden;
     box-sizing: border-box;
   }
 
   .hero-container {
-    @apply flex items-end justify-start w-full my-10 mx-auto box-border overflow-hidden lg:max-w-[1364px];
+    @apply flex items-end justify-start w-full mx-auto box-border overflow-hidden lg:max-w-[1364px]  py-10 md:py-0 md:pt-14 md:pb-10;
 
     @media (max-width: 767px) {
       @apply px-0 mx-0 max-w-none;
@@ -46,7 +46,7 @@
 
   &.hero-section-editable {
     .hero-background {
-      @apply md:block md:absolute md:h-full md:top-0 md:bottom-0 md:left-0 md:right-0;
+      @apply md:block md:absolute md:h-full md:top-0 md:bottom-0 md:left-0 md:right-0 !h-[614px];
 
       img {
         @apply w-full h-full object-cover;
@@ -70,7 +70,7 @@
     }
 
     .hero-container {
-      @apply absolute top-0 md:relative flex items-end justify-start w-full lg:max-w-[1364px] mx-auto my-10 md:my-0 md:mt-14 md:mb-10 px-0 box-border overflow-hidden;
+      @apply absolute top-0 md:relative flex items-start lg:items-end justify-start w-full lg:max-w-[1364px] mx-auto  px-0 box-border overflow-hidden !h-[614px]  py-10 md:py-0 md:pt-14 md:pb-10;
       @apply md:px-6 md:ml-auto;
 
       .container-content {
