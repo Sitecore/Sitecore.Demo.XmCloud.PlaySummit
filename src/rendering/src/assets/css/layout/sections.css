@@ -1,6 +1,37 @@
 .section {
   @apply basis-full py-20 px-0 bg-[#f8f8f8];
 
+  .section-news-container {
+    @apply box-border flex flex-col w-full gap-16 lg:flex-row lg:gap-10 xl:gap-36;
+    background: url('../../assets/img/highlightsnews.png') no-repeat;
+
+    .news-tweet {
+      @apply h-max static lg:pt-[160px] xl:pt-[200px] lg:pb-[50px] lg:top-[0] xl:top-[10vh] lg:sticky;
+
+      h2.NewsHeading {
+        @apply text-[45px] w-full lg:w-fit font-bold md:text-[60px] leading-[48px] md:leading-[60px] text-black uppercase mb-[32px] lg:pt-[40px];
+      }
+
+      &-button {
+        font-weight: bold;
+        position: relative;
+        display: inline-block !important;
+        text-transform: capitalize;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        background: transparent
+          linear-gradient(270deg, #1e1343 0%, #261d5e 23%, #312a82 54%, #5154b6 100%) 0% 0%
+          no-repeat padding-box;
+        color: #fff;
+        border-radius: 50px;
+        padding: 6px 25px 7px 25px;
+        font-size: 18px;
+        line-height: 36px;
+      }
+    }
+  }
+
   &.section-full-left {
     .section-content {
       @apply max-w-[50em] my-0 mx-auto items-start;

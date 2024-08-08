@@ -23,18 +23,7 @@ const PersonalizedPicksWrapper = (props: PersonalizedPicksWrapperProps) => {
     />
   ) : (
     <>
-      <div className="container">
-        <div className="featuredItems flex flex-col lg:flex-row justify-between items-center mb-[32px]">
-          <h2 className="featured-heading text-[50px] font-bold md:text-[68px] leading-[48px] md:leading-[60px] text-center text-black uppercase ">
-            Featured Insights
-          </h2>
-          <div className="mt-5 lg:mt-0">
-            <Link href={'/insights'} className="dpworld-btn ">
-              See All Insights
-            </Link>
-          </div>
-        </div>
-      </div>
+      <div className="container"></div>
       <div className={`personalized-picks ${props.params.styles}`}>
         <div className="container flex justify-between gap-4 flex-wrap">
           <div className="flex flex-col w-full ">
