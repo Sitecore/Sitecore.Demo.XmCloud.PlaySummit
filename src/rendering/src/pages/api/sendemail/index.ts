@@ -11,7 +11,7 @@ type Data = {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
   if (req.method === 'POST') {
-    const data = req?.query?.data;
+    const data = req?.query;
     const email = eval('(' + data + ')')?.email;
     // Hardcoded email details
     const fromAddress = 'kgholap@horizontal.com';
@@ -19,7 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     const subject = 'Test Email';
     const text = `Hey Vikas, This is a test email sent from Kunal for DP World POC work.\n Test Form email:- ${email}`;
 
-    console.log(email);
+    console.log(req);
 
     try {
       await sendgrid.send({
