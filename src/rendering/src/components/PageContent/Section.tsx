@@ -1,4 +1,11 @@
-import { RichText, Text, Field, Placeholder, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  RichText,
+  Text,
+  Field,
+  Placeholder,
+  LinkField,
+  ComponentRendering,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentWithChildrenProps } from 'lib/component-props';
 import { useEffect, useState } from 'react';
 
@@ -10,6 +17,8 @@ export type SectionProps = ComponentWithChildrenProps & {
   };
 };
 const Section = (props: SectionProps): JSX.Element => {
+  // to achieve dynamic heading, we have implemented logic to apply css according to incoming rendering component.
+
   const [newsComponent, setNewsComponent] = useState(false);
   const [insightsComponent, setInsightsComponent] = useState(false);
 
@@ -17,7 +26,7 @@ const Section = (props: SectionProps): JSX.Element => {
 
   const compName = contentArray
     .filter((item) => 'componentName' in item) // Check if componentName exists
-    .map((item) => item.componentName);
+    .map((item) => (item as ComponentRendering).componentName);
 
   useEffect(() => {
     newsCompHeading('NewsGrid');

@@ -2,7 +2,6 @@ import { LayoutServicePageState, useSitecoreContext } from '@sitecore-jss/siteco
 import { isSearchSDKEnabled } from '../../services/SearchSDKService';
 import PersonalizedPicks from './PersonalizedPicks';
 import { ComponentProps } from 'lib/component-props';
-import Link from 'next/link';
 
 export type PersonalizedPicksWrapperProps = ComponentProps & {
   params: {
