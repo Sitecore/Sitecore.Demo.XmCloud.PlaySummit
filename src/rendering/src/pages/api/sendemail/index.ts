@@ -11,7 +11,7 @@ type Data = {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
   if (req.method === 'POST') {
-    const data = req?.query.data;
+    const data = req?.body;
     alert('data' + req);
     const email = eval('(' + data + ')')?.email;
     // Hardcoded email details
