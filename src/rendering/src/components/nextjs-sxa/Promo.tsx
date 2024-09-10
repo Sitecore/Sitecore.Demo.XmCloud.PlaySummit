@@ -1,7 +1,7 @@
 import React from 'react';
 // DEMO TEAM CUSTOMIZATION - Removed Field and Text. Added RichTextField.
 import {
-  Image as JssImage,
+  NextImage as JssImage,
   Link as JssLink,
   RichText as JssRichText,
   ImageField,
