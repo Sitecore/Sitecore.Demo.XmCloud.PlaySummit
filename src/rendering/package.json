@@ -8,10 +8,7 @@
     "rootPlaceholders": [
       "headless-header",
       "headless-main",
-      "headless-footer",
-      "sxa-header",
-      "sxa-main",
-      "sxa-footer"
+      "headless-footer"
     ],
     "sitecoreConfigPath": "/App_Config/Include/zzz",
     "graphQLEndpointPath": "/sitecore/api/graph/edge",
