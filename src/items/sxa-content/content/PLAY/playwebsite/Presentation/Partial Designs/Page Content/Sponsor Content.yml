@@ -12,8 +12,7 @@ SharedFields:
   Value: "sponsor-content"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
-  Value: |
-    <image mediaid="{A16646FA-8455-4C59-8B3B-8C48A3467365}" />
+  Value: 
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |

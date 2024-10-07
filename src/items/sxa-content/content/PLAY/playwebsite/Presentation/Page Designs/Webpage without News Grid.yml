@@ -12,8 +12,7 @@ SharedFields:
   Value: 
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
-  Value: |
-    <image mediaid="{BFF43100-5BBA-4157-9839-F53C995BD4B6}" />
+  Value: 
 Languages:
 - Language: en
   Versions:

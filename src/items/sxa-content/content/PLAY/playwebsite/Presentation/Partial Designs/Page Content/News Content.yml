@@ -12,8 +12,7 @@ SharedFields:
   Value: "news-content"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
-  Value: |
-    <image mediaid="{E78FB3B4-E5A1-40E6-A1AA-7EF90EEC7864}" />
+  Value: 
 Languages:
 - Language: en
   Versions:

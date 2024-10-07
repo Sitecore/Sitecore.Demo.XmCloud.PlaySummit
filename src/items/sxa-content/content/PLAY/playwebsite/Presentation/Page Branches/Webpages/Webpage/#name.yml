@@ -6,8 +6,7 @@ Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches/Webpages/Web
 SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
-  Value: |
-    <image mediaid="{B8273B08-E34C-4D64-8944-428A62D0C5B8}" />
+  Value: 
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
