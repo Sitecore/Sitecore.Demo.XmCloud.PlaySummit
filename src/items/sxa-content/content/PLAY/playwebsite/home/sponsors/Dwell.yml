@@ -11,8 +11,8 @@ SharedFields:
   Hint: __Workflow
   Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
-
-    <image mediaid="{A92E14D6-7EED-41CC-BB5D-BFB4C58036AB}" />
+  Hint: __Thumbnail
+  Value: 
 Languages:
 - Language: en
   Fields:
