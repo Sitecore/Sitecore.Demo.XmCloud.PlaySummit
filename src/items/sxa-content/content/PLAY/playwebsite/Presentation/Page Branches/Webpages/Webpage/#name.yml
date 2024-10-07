@@ -1,9 +1,8 @@
 ﻿---
-ID: "f0f59e9f-a9d5-4b8a-9a11-a1a0a08fc6c9"
-Parent: "2d1d7aca-9597-5ca6-85b2-9b04907e4298"
+ID: "0a29cce3-a1b2-41f8-8f3e-6ce0c7f0f7cd"
+Parent: "757e8bd1-9a5e-416c-ad3f-c7a22981d285"
 Template: "95cb88e7-8068-4a9c-9eeb-05f9a22c49d4"
-Path: "/sitecore/content/PLAY/playwebsite/home/session-finder"
-BranchID: "757e8bd1-9a5e-416c-ad3f-c7a22981d285"
+Path: /sitecore/content/PLAY/playwebsite/Presentation/Page Branches/Webpages/Webpage/$name
 SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
@@ -16,44 +15,51 @@ SharedFields:
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
         <r
-          uid="{0505E787-7CA7-4B7B-AEA4-7E32573D366F}"
+          uid="{3C7C4BD9-3DBD-4DD7-98BB-A479F662AA4B}"
           p:before="*"
-          s:ds="{04BFEC78-6A5E-4DED-B6B7-03B0CA932477}"
-          s:id="{AD585A50-95F5-46B4-A2DB-6D79530780CA}"
+          s:ds="local:/Data/Hero Image"
+          s:id="{2C13DBC0-415C-5DAA-A7D9-56928F1271C4}"
           s:par="FieldNames&amp;Styles&amp;CacheClearingBehavior=Clear on publish&amp;RenderingIdentifier&amp;CSSStyles"
-          s:ph="/headless-main/sxa-main/container-1/container-3" />
+          s:ph="/headless-main/sxa-main/container-1" />
+        <r
+          uid="{10FC9467-1FE3-465B-9930-3A5E9ECB08DA}"
+          p:after="r[@uid='{3C7C4BD9-3DBD-4DD7-98BB-A479F662AA4B}']"
+          s:id="{3836D951-BB14-43AC-9231-649B7F245DC5}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7BE76E9DCE-0FF3-486F-818E-E6F7C8B53EBA%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+          s:ph="/headless-main/sxa-main/container-1/container-1" />
+        <r
+          uid="{FA1A5714-5F36-44B5-B57F-19AA43834E20}"
+          p:after="r[@uid='{10FC9467-1FE3-465B-9930-3A5E9ECB08DA}']"
+          s:id="{C5F905F8-FD1F-444E-A9E5-AC6B774FF0DE}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames=%7B2181EB9E-2230-405F-AFDF-8D31773C123C%7D&amp;Styles&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+          s:ph="/headless-main/sxa-main/container-1/container-1" />
+        <r
+          uid="{A2E1B9C1-3EB5-46E7-9734-72F3A0D72472}"
+          p:after="r[@uid='{FA1A5714-5F36-44B5-B57F-19AA43834E20}']"
+          s:ds=""
+          s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B08C8BABD-CA64-41EE-B592-13E86CF8AE22%7D%7C%7BD5E6CD12-A4CA-49F7-B1C5-832320B2764C%7D&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+          s:ph="/headless-main/sxa-main/container-1"
+          s:ccb="Clear on publish" />
         <r
           uid="{26BB3FC5-7C36-4097-A052-2F88D2DFCE74}"
           p:after="*[1=2]"
           s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
-          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B52162748-AAD3-48C9-896F-EF05C3ED9902%7D%7C%7B991D310A-E240-4B14-9733-2F04BA61AFA2%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+          s:par="GridParameters=%7BF61E01E9-711A-4C99-AE30-4E28463E1DF7%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles=%7B991D310A-E240-4B14-9733-2F04BA61AFA2%7D&amp;CacheClearingBehavior=Clear%20on%20publish&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=3"
           s:ph="/headless-main/sxa-main/container-1" />
       </d>
     </r>
-- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
-  Hint: __Originator
-  Value: "{0A29CCE3-A1B2-41F8-8F3E-6CE0C7F0F7CD}"
 Languages:
 - Language: en
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Session Finder
   Versions:
   - Version: 1
     Fields:
     - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
       Hint: __Lock
       Value: <r />
-    - ID: "17707054-bc28-496c-925f-e614ba18f3e0"
-      Hint: Title
-      Value: Session Finder
-    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
-      Hint: NavigationTitle
-      Value: Session Finder
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2b0f7dd8-e8e3-4be8-998c-57c8212877b6"
+      Value: "79ba1a15-de33-4649-b179-f21b07324d74"
     - ID: "e0c0c8a4-0fea-4963-8b86-d47810b80efa"
       Hint: Content
       Value: |

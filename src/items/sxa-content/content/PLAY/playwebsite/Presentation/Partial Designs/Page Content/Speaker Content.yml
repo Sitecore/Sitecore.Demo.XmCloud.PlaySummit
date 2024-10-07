@@ -12,8 +12,7 @@ SharedFields:
   Value: "speaker-content"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
-  Value: |
-    <image mediaid="{C41CB2E3-0C60-4126-99AC-A0E2E36DB42A}" />
+  Value: 
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
