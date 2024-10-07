@@ -1,3 +1,4 @@
+import { EditMode } from '@sitecore-jss/sitecore-jss-nextjs';
 import { EditingConfigMiddleware } from '@sitecore-jss/sitecore-jss-nextjs/editing';
 import { components } from 'temp/componentBuilder';
 import metadata from 'temp/metadata.json';
@@ -10,6 +11,7 @@ import metadata from 'temp/metadata.json';
 const handler = new EditingConfigMiddleware({
   components,
   metadata,
+  pagesEditMode: EditMode.Chromes,
 }).getHandler();
 
 export default handler;
