@@ -14,7 +14,6 @@
     "defaultMaxRelativeItemPathLength": 100,
     "defaultModuleRelativeSerializationPath": "items",
     "removeOrphansForRoles": true,
-    "removeOrphansForUsers": true,
     "continueOnItemFailure": false,
     "excludedFields": [
       {
@@ -41,8 +40,6 @@
   },
   "settings": {
     "telemetryEnabled": false,
-    "cacheAuthenticationToken": true,
-    "versionComparisonEnabled": true,
-    "apiClientTimeoutInMinutes": 5
+    "versionComparingEnabled": true
   }
 }
