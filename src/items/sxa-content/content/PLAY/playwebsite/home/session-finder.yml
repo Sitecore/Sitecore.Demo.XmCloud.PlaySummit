@@ -7,8 +7,7 @@ BranchID: "757e8bd1-9a5e-416c-ad3f-c7a22981d285"
 SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
-  Value: |
-    <image mediaid="{03593861-88C7-48B2-8E9A-226C6B453F41}" />
+  Value: 
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -54,7 +53,7 @@ Languages:
       Value: Session Finder
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "df250ce0-fc7a-4481-ac4c-c27e535a1f85"
+      Value: "2b0f7dd8-e8e3-4be8-998c-57c8212877b6"
     - ID: "e0c0c8a4-0fea-4963-8b86-d47810b80efa"
       Hint: Content
       Value: |

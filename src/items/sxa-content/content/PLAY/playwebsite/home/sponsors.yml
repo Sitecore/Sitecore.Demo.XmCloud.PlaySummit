@@ -15,8 +15,7 @@ SharedFields:
   Value: 500
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
-  Value: |
-    <image mediaid="{F512DD94-1BD1-4370-8DCF-66D6C6C347C9}" />
+  Value: 
 - ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
   Hint: __Default workflow
   Value: "{8F0E1432-3729-462B-AD20-DAF067694BCB}"
@@ -68,4 +67,4 @@ Languages:
       Value: sponsors
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d7684a1f-9751-41a2-a05f-468295fe9404"
+      Value: "ab9a17b5-26be-40ac-9d29-ce1d868d54ca"
