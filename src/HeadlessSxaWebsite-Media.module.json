@@ -9,22 +9,6 @@
                 "path": "/sitecore/media library/Project",
                 "scope": "descendantsOnly",
                 "allowedPushOperations": "CreateOnly"
-            },
-            {
-                "name": "system-media",
-                "path": "/sitecore/media library/System",
-                "scope": "descendantsOnly",
-                "allowedPushOperations": "CreateOnly",
-                "rules": [
-                    {
-                        "path": "/Simulator Backgrounds",
-                        "scope": "ignored"
-                    },
-                    {
-                        "path": "/Template Thumbnails",
-                        "scope": "ignored"
-                    }
-                ]
             }
         ]
     }
