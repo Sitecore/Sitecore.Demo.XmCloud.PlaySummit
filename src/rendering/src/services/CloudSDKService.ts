@@ -1,8 +1,7 @@
-import { EPResponse } from '@sitecore-cloudsdk/core';
-import { IdentityData } from '@sitecore-cloudsdk/events/browser';
+import { EPResponse } from '@sitecore-cloudsdk/core/internal';
+import { IdentityData, event, identity } from '@sitecore-cloudsdk/events/browser';
 import Cookies from 'js-cookie';
 
-import { context } from 'lib/context';
 import { CDP_CUSTOM_EVENTS } from 'src/constants/cdp-custom-events';
 import { TICKETS } from 'src/models/mock-tickets';
 import config from 'temp/config';
@@ -36,13 +35,11 @@ export const identifyVisitor = async (
     ],
   };
 
-  const Events = await context.getSDK('Events');
-  return Events?.identity(eventData);
+  return identity(eventData);
 };
 
 export const logAudiencePreferenceEvent = async (audience: string): Promise<EPResponse> => {
-  const Events = await context.getSDK('Events');
-  return Events?.event({
+  return event({
     type: CDP_CUSTOM_EVENTS.audiencePreference.type,
     extensionData: {
       channel,
@@ -55,10 +52,8 @@ export const logAudiencePreferenceEvent = async (audience: string): Promise<EPRe
 export const logTicketPurchase = async (ticketId: number): Promise<EPResponse> => {
   const purchasedTicketItem = TICKETS[ticketId];
 
-  const Events = await context.getSDK('Events');
-
   // Log PAYMENT_FORM_COMPLETED custom event
-  await Events?.event({
+  await event({
     type: CDP_CUSTOM_EVENTS.paymentFormCompleted.type,
     extensionData: {
       channel,
@@ -67,7 +62,7 @@ export const logTicketPurchase = async (ticketId: number): Promise<EPResponse> =
   });
 
   // Log PAYMENT_SUCCESSFUL custom event
-  await Events?.event({
+  await event({
     type: CDP_CUSTOM_EVENTS.paymentSuccessful.type,
     extensionData: {
       channel,
@@ -76,7 +71,7 @@ export const logTicketPurchase = async (ticketId: number): Promise<EPResponse> =
   });
 
   // Log TICKET_PURCHASED custom event
-  return Events?.event({
+  return event({
     type: CDP_CUSTOM_EVENTS.ticketPurchased.type,
     extensionData: {
       channel,
@@ -89,8 +84,7 @@ export const logTicketPurchase = async (ticketId: number): Promise<EPResponse> =
 };
 
 export const logAttendeeFormCompleted = async (): Promise<EPResponse> => {
-  const Events = await context.getSDK('Events');
-  return Events?.event({
+  return event({
     type: CDP_CUSTOM_EVENTS.attendeeFormCompleted.type,
     extensionData: {
       channel,
@@ -100,8 +94,7 @@ export const logAttendeeFormCompleted = async (): Promise<EPResponse> => {
 };
 
 export const logTicketSelected = async (): Promise<EPResponse> => {
-  const Events = await context.getSDK('Events');
-  return Events?.event({
+  return event({
     type: CDP_CUSTOM_EVENTS.ticketSelected.type,
     extensionData: {
       channel,
@@ -145,8 +138,7 @@ export const logSearchProfileData = async (payload: {
     ...pageViews,
   };
 
-  const Events = await context.getSDK('Events');
-  return Events?.event({
+  return event({
     type: CDP_CUSTOM_EVENTS.searchProfileData.type,
     extensionData: {
       channel,
