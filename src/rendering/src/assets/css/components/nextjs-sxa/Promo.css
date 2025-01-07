@@ -93,6 +93,7 @@
       }
 
       .promo-text {
+        @apply relative z-10;
         @apply lg:-mr-20 lg:ml-0;
       }
 
