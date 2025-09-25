@@ -17,10 +17,6 @@ This repository is a Sitecore DXP demo that uses:
 - Tailwind CSS
 - Storybook
 
-## Live Demo
-
-View the live demo at [play-website.sitecoredemo.com](https://play-website.sitecoredemo.com/)
-
 ## Storybook
 
 View the [Storybook](https://github.com/storybookjs/storybook) at [play-website-storybook.sitecoredemo.com](https://play-website-storybook.sitecoredemo.com/)
