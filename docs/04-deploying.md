@@ -65,3 +65,13 @@ Please be aware that the Sitecore Demo Solutions team does not provide support f
 5. Configure required integrations (i.e. Vercel) and deploy the demo.
 6. Once the demo is ready, you will find the links to deployed apps at the details page. The apps will be deployed into provided Vercel instance.
 7. You will also find Content Hub ONE details at the details page, you can use the provided keys to enable Content Hub ONE datasources in Sitecore Comnponents settings.
+
+### Contents
+
+0. [Quick Start](00-quick.md)
+1. [Global Prerequisites](01-prerequisites.md)
+2. [Docker](02-docker.md)
+3. [PLAY! Summit website](03-website.md)
+4. Deploying to XM Cloud - You are here
+5. [Upgrading](05-upgrading.md)
+6. [Contributing](06-contributing.md)
