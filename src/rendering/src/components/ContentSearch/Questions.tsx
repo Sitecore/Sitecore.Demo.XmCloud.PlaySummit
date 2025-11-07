@@ -16,17 +16,17 @@ const mockData = {
   relatedQuestionsResponse: [
     {
       answer:
-        'There is no information available on what are the key elements in training like a professional mountain biker.',
+        'The key elements include cardiovascular endurance, strength training, technical skills, flexibility, and consistent practice. Training on various terrains and focusing on balance and agility are essential as well.',
       question: 'What are the key elements in training like a professional mountain biker?',
     },
     {
       answer:
-        'There is no information available on what are the key elements in training like a professional mountain biker.',
+        'To enhance endurance and stamina for mountain biking, engage in regular cycling and cardio activities like running or swimming. Interval training, where you alternate between high and low intensities, can also help improve stamina specific to biking.',
       question: 'How can one enhance endurance and stamina specifically for mountain biking?',
     },
     {
       answer:
-        'There is no information available on what are the key elements in training like a professional mountain biker.',
+        'Yes, consistent off-bike training, such as strength training and flexibility exercises like yoga, improves overall fitness and muscle coordination, leading to better performance on the trails.',
       question:
         'Can consistent training off the bike contribute to better performance on the trails?',
     },
